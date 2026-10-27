@@ -54,12 +54,14 @@
 |---|---|---|
 | 阿里 Qoder 1024 Community Boost | Welcome Pack 和各轮 SOTA Credit Pack | Welcome Pack 领取截止 2026-10-30 23:59，使用截止 2026-10-31 23:59；每轮 SOTA 包领取窗口为发放后 3 天内，且不晚于 2026-10-30 23:59，使用有效期为领取后 24 小时 |
 | DeepSeek Search / Fetch | 通过 DeepSeek Harness、Claude Code、Codex 的服务端搜索 / 抓取调用目前免费；模型 Token 仍按 API 计费；11 月 1 日起按每次成功请求 0.75 美元/千次计费 | 2026-11-01 00:00（北京时间）起开始按请求计费 |
+| OpenAI ChatGPT（学生优惠） | 仅限美国高校在读学生：4 个月 ChatGPT Plus（含 ChatGPT Work）免费，价值 80 美元；需经 SheerID 验证在读身份并添加支付方式，免费期后按 20 美元/月续费，请提前取消自动续费。官方领取链接：https://chatgpt.com/students/2026 | 2026-10-31 前领取 |
 
 ### 待确认线索：不进正文
 
 | 线索 | 为什么没进正文 |
 |---|---|
 | DeepSeek 新账号 5M 免费 Token、30 天有效 | 多个二手来源说法不一致：有的说新账号自动得 5M，有的说官方只写“granted balance”且不公布金额和有效期。必须先看 DeepSeek 官方平台页，确认不了就不进正文。 |
+| Claude Security：企业版客户每月 2.5 万美元免费额度、为期 2 个月，至 2026-12-31 | 多家二手报道说法一致，但未在 Anthropic / Claude 官方页上逐条核对额度、企业版资格与起止规则，暂不进正文；仅限 Claude Enterprise 客户的说法也待官方确认。 |
 
 ### 已过期归档
 
