@@ -19,9 +19,9 @@
 - 只有一个社媒爆料：只内部跟进，不公开发。
 - 正式发布前，每条都要回官方页复核一次，额度、截止以官方页为准。
 
-## 今日版：2026-10-30
+## 今日版：2026-10-31
 
-> 本版核实时间：2026-10-30 20:30（北京时间）；本晚新增 8 条正文：七牛云 Conatus Free 每日 1 亿 Token（官方活动页已核实）、蚂蚁数科 LingDT 限时免费延长至 11 月 11 日（官方模型市场页今晚实测，站点公告原文，未注年份/时刻/时区；中午所见“至 11 月 5 日”横幅已被新公告取代，以今晚为准）、豆包电脑版天天领额度（官方规则页已核实活动存在，具体数值以客户端活动页为准）、Entire 一次性 100 美元 Agent 试用（官方计费文档已核实，需验证卡）、AIVideoFree 新账号免费 credits（官网已核实）、Qoder DeepSeek-Flash 每日免费（官方活动页已核实，延至 10 月 31 日）、WorkBuddy 混元 Hy3 / Hy4 preview 限免（多源交叉、官方未核实，至 10 月 31 日）、Dreamina Basic 首月 0.29 美元（官方 FAQ 已核实，活动窗今日结束）；今日急报 5 条沿用中午版，其中 TokenPlan 夜间免费、EvoMap MiniMax 免费、Qoder Round 4 当日包均于今晚截止；OpenAI Pro / Business 用量翻倍为付费档用量规则调整、无可领免费额度，本晚不进正文。待确认线索新增 4 条（讯飞星火 10 亿 Token、AutoClaw 登录领 Token、商汤小浣熊限免、云知声 U2 Flash），均为单一来源、未进正文。其余沿用条目本次未逐条复核，以官方页为准。
+> 本版核实时间：2026-10-31 09:00（北京时间）；本次为上午急报检查，只更新“今日急报”区：新增蚂蚁百灵每日免费额度今日切换（官方升级说明已核实）、云知声 U2 Flash 限免最后一天与 OpenRouter Poolside Laguna 免费最后一天（均为多源交叉、官方未核实，已标注）、Vercel AI Gateway Laya 免费最后一天（官方 Changelog 已核实）；Qoder 每日 100 Credits 今日窗口照常；10-30 的 Qoder Round 4 当日包、ZCode 夜间窗口、TokenPlan 夜间免费最后一段、EvoMap MiniMax 免费均已截止，已从急报区移除；其余沿用条目本次未逐条复核，以官方页为准。
 > 历史版本见 `archive/`。
 
 ### 今日急报：只限当天
@@ -29,10 +29,10 @@
 | 厂商 / 产品 | 内容 | 额度 / 条件 | 截止 | 中国用户可达性 |
 |---|---|---|---|---|
 | 阿里 Qoder（国际版） | 每日手动领取 Credits | 个人账号每天领 100 Credits，每次领取有效期 30 天；当天不领就作废，不能补领；Qwen3.8-Flash 免费，费率为 0 | 每日领取，错过当天作废（领取窗口自北京时间 10:00 起） | 能直接领（需在 Qoder 应用内领取） |
-| 阿里 Qoder 1024 Community Boost Round 4（10-30 当日包） | 每日包 4,096 SOTA Credits，仅限 Sonus 模型使用；需 Round 4 已解锁（社区累计 20 万 Boost 点），领取时须符合资格：个人 Pro 及以上自动加入，免费用户需申请获批，Lite 不可领；每账号当日限领一份，先在活动页确认是否可领。官方规则页：http://docs.qoder.com/events/communityboost | 仅限 Sonus 模型；每账号当日限领一份 | 2026-10-30 23:59 领取截止，仅限当天使用、当天过期，不补领 | 以活动页是否可领为准 |
-| 智谱 ZCode（多源交叉、官方未核实） | 每日免费 GLM-5.3-Flash token；多家渠道说法一致（资讯站、社区、视频等转载同一说法，另有聚合站称已对照 ZCode 官方账号 10-26 公告），但未在 ZCode 官方页逐条核实额度、领取和可用时间，请以应用内实际显示为准 | 每位用户每天 3 亿 token，仅限 ZCode 内使用，每天可用 10 小时；需更新客户端、领取额度、切换到 Global Building、选择 GLM-5.3-Flash 模型 | 今日领取自北京时间 19:00 起，可用时间为今晚 23:00 至次日 09:00 | 需在 ZCode 内领取；具体资格以官方页为准 |
-| 国家超算互联网 TokenPlan（多源交叉、官方未核实） | 订阅用户夜间 Auto 模型免费调用；环球网、界面新闻等多家媒体同口径转载同一说法，但 TokenPlan 官方文档页未见该夜间免费条款原文，请以控制台实际显示为准。官方文档页：https://www.scnet.cn/ac/openapi/doc/2.0/moduleapi/plans/token-plan.html | 仅限已订阅 TokenPlan 的用户；每晚 21:00 至次日 09:00，Auto 模型免费调用；仅限工具内交互，禁脚本批量调用 | 活动窗至 2026-10-30；今晚 21:00 至 10-31 09:00 为最后一段，之后恢复计费 | 仅限已订阅用户；新客免费领不适用本条，以控制台为准 |
-| EvoMap EvoX Agent × MiniMax M3.1 Flash | EvoX Agent（Beta）内限时免费使用 MiniMax M3.1 Flash；EvoMap 官方 X 账号 10-28 发帖确认“Now free on EvoX Agent. Oct 28–30.”，MiniMax 官方账号转发未确认 | 仅限 EvoX Agent 内选用该模型，未提 API 调用；用量上限官方未公布；是否需绑卡 / 手机号未知 | 2026-10-30 为最后一天（官方写 Oct 28–30，未写具体时刻与时区） | 未知：EvoMap 为新加坡主体客户端，大陆直连与账号规则官方未说明，以实际为准 |
+| 蚂蚁百灵 / Ant Ling | 计费升级统一切换：原每日 50 万 Token 免费额度在今日 23:59:59（北京时间）后停止按日发放，改为每月 1 日发 1 张 10 元 Token 抵扣券（仅当月有效）；历史账户完成升级立即得 1 张 20 元消费券（60 天有效），新用户注册立即得 20 元消费券；切换后新钱包余额不足可能导致调用失败，请提前检查余额。官方升级说明：https://developer.ant-ling.com/zh-CN/docs/getting-started/changelog/billing-upgrade/ | 每日 50 万 Token（输入、输出、缓存命中不区分），当日未用不结转；升级后为月度抵扣券，按实际计费金额抵扣 | 2026-10-31 23:59:59（北京时间）统一切换 | 能直接用 |
+| 云知声 U2 Flash（多源交叉、官方未核实） | 限免最后一天：输入、缓存命中、输出均 0 元 / 百万 Tokens；多渠道说法一致（资讯站核对模型页、社区帖、博客），但本次抓取官方模型页未显示限免横幅与价格区，未逐条核实，请以模型页实际显示为准。官方模型页：https://maas.unisound.com/models/u2-flash | 1M 上下文、128K 输出；限速 20 RPM / 5,000,000 TPM（“无限量”指价格为 0，不取消限速）；需手机验证码注册并实名认证，新老用户均可 | 2026-09-30 至 2026-10-31（结束时刻官方未公布，以模型页为准） | 能直接领（需实名认证） |
+| Vercel AI Gateway · Laya（Convai Innovations） | 决策 / 评估模型免费最后一天：对共享上下文做 yes / no、选择或打分判断，返回结构化答案与概率；官方 Changelog 已核实。官方 Changelog：https://vercel.com/changelog/laya-decision-model-now-available-on-ai-gateway-free-through-october-31 | 模型 ID convaiinnovations/laya 与 convaiinnovations/laya-free 在 Boundless 侧均免费；-free ID 在活动后停止服务，标准 ID 开始计费 | 免费至 2026-10-31（未写具体时刻，以官方页为准） | 需 Vercel AI Gateway Key 或自带 Key；开发者向，国内直连与账号规则以实际为准 |
+| Poolside Laguna S 2.1 on OpenRouter（多源交叉、官方未核实） | 免费编码模型最后一天：OpenRouter 模型页已核实今日 $0、262,144 上下文、支持工具调用；“10 月 31 日下线”说法见多个聚合 / 博客渠道一致，但本次抓取 OpenRouter 页未显示下线日期，请以模型页为准；免费调用的输入输出可能被 Poolside 用于训练，勿传敏感内容。官方模型页：https://openrouter.ai/poolside/laguna-s-2.1:free | 118B 总参 / 8B 激活，262K 上下文、32K 输出；免费档限速（一般为每日 50 请求，累计购满 10 美元后 1000 请求，以 OpenRouter 免费档规则为准）；同系 Laguna XS 2.1 亦被报同日下线 | 2026-10-31 下线（多源交叉说法，官方页未核实） | 需 OpenRouter 账号；海外平台，以实际为准 |
 
 ### 进行中：能直接领
 
