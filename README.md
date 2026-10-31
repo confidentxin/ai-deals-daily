@@ -21,7 +21,7 @@
 
 ## 今日版：2026-10-31
 
-> 本版核实时间：2026-10-31 09:00（北京时间）；本次为上午急报检查，只更新“今日急报”区：新增蚂蚁百灵每日免费额度今日切换（官方升级说明已核实）、云知声 U2 Flash 限免最后一天与 OpenRouter Poolside Laguna 免费最后一天（均为多源交叉、官方未核实，已标注）、Vercel AI Gateway Laya 免费最后一天（官方 Changelog 已核实）；补处理 Grok 08:50 候选文件（该文件在首次 pull 后才推送到收件箱）：腾讯 WorkBuddy 开学季 1000 积分与 Upscale 万圣节创作挑战均经官方页直接核实后补推，云知声与 Grok 补充来源一致、仍保留未核实标注；Qoder 每日 100 Credits 今日窗口照常；10-30 的 Qoder Round 4 当日包、ZCode 夜间窗口、TokenPlan 夜间免费最后一段、EvoMap MiniMax 免费均已截止，已从急报区移除；其余沿用条目本次未逐条复核，以官方页为准。
+> 本版核实时间：2026-10-31 09:00（北京时间）；本次为上午急报检查，只更新“今日急报”区：新增蚂蚁百灵每日免费额度今日切换（官方升级说明已核实）、云知声 U2 Flash 限免最后一天与 OpenRouter Poolside Laguna 免费最后一天（均为多源交叉、官方未核实，已标注）、Vercel AI Gateway Laya 免费最后一天（官方 Changelog 已核实）；补处理 Grok 08:50 候选文件（该文件在首次 pull 后才推送到收件箱）：腾讯 WorkBuddy 开学季 1000 积分与 Upscale 万圣节创作挑战均经官方页直接核实后补推，云知声与 Grok 补充来源一致、仍保留未核实标注；Qoder 每日 100 Credits 今日窗口照常；10-30 的 Qoder Round 4 当日包、ZCode 夜间窗口、TokenPlan 夜间免费最后一段、EvoMap MiniMax 免费均已截止，已从急报区移除；其余沿用条目本次未逐条复核，以官方页为准。12:00 中午急报检查新增 1 条：腾讯 WorkBuddy 国际版 DeepSeek-V4.1-Flash-1017 限免最后一天（多源交叉、官方未核实，已标注）；收件箱无 11:50 候选文件，未等待、照常自搜。
 > 历史版本见 `archive/`。
 
 ### 今日急报：只限当天
@@ -34,6 +34,7 @@
 | 云知声 U2 Flash（多源交叉、官方未核实） | 限免最后一天：输入、缓存命中、输出均 0 元 / 百万 Tokens；多渠道说法一致（资讯站核对模型页、社区帖、博客），但本次抓取官方模型页未显示限免横幅与价格区，未逐条核实，请以模型页实际显示为准。官方模型页：https://maas.unisound.com/models/u2-flash | 1M 上下文、128K 输出；限速 20 RPM / 5,000,000 TPM（“无限量”指价格为 0，不取消限速）；需手机验证码注册并实名认证，新老用户均可 | 2026-09-30 至 2026-10-31（结束时刻官方未公布，以模型页为准） | 能直接领（需实名认证） |
 | Vercel AI Gateway · Laya（Convai Innovations） | 决策 / 评估模型免费最后一天：对共享上下文做 yes / no、选择或打分判断，返回结构化答案与概率；官方 Changelog 已核实。官方 Changelog：https://vercel.com/changelog/laya-decision-model-now-available-on-ai-gateway-free-through-october-31 | 模型 ID convaiinnovations/laya 与 convaiinnovations/laya-free 在 Boundless 侧均免费；-free ID 在活动后停止服务，标准 ID 开始计费 | 免费至 2026-10-31（未写具体时刻，以官方页为准） | 需 Vercel AI Gateway Key 或自带 Key；开发者向，国内直连与账号规则以实际为准 |
 | Poolside Laguna S 2.1 on OpenRouter（多源交叉、官方未核实） | 免费编码模型最后一天：OpenRouter 模型页已核实今日 $0、262,144 上下文、支持工具调用；“10 月 31 日下线”说法见多个聚合 / 博客渠道一致，但本次抓取 OpenRouter 页未显示下线日期，请以模型页为准；免费调用的输入输出可能被 Poolside 用于训练，勿传敏感内容。官方模型页：https://openrouter.ai/poolside/laguna-s-2.1:free | 118B 总参 / 8B 激活，262K 上下文、32K 输出；免费档限速（一般为每日 50 请求，累计购满 10 美元后 1000 请求，以 OpenRouter 免费档规则为准）；同系 Laguna XS 2.1 亦被报同日下线 | 2026-10-31 下线（多源交叉说法，官方页未核实） | 需 OpenRouter 账号；海外平台，以实际为准 |
+| 腾讯 WorkBuddy 国际版 · DeepSeek-V4.1-Flash-1017（多源交叉、官方未核实） | 限免最后一天：国际版客户端内该模型调用不扣积分、消耗倍率记 0；新闻、软件下载站、社区、聚合站多类渠道说法一致（仅国际版，国内版不参与），但本次打开官方首页未见该限免说法，未逐条核实，请以客户端模型列表实际显示为准；用户过多时可能限流。官方站：https://www.workbuddy.ai/ | 需下载国际版客户端；模型列表标 Free now；另有说法称国际版可领 350 积分，未经官方核实，不作承诺 | 免费至 2026-10-31（未写具体时刻，以客户端为准） | 仅国际版；海外版客户端，国内可达性以实际为准 |
 | Upscale AI Studio 万圣节创作挑战 | 每件有效参赛作品自动得 100 bonus credits，参赛次数不限（每件作品只能投一次）；88 个免费万圣节提示词均可参赛。官方活动页已核实（浏览器只读复核）。官方活动页：https://upscaleaistudio.com/halloween-special | 须登录账号参赛；生成作品照常消耗自有 credits（示例 Flux Schnell 每图 2 credits），提示词本身免费、预设不另收费；未登录的 5 张免费图片须登录后才能累计奖励；第 1 名 1 年 Pro + 10,000 credits，第 2 名 5,000，第 3 名 2,500；页面未见绑卡要求 | 投稿截止 2026-10-31 23:59 UTC（即 2026-11-01 07:59 北京时间）；投票至 11-01 23:59 UTC | 未知：海外站点，大陆可达性官方未说明，以实际为准 |
 
 ### 进行中：能直接领
