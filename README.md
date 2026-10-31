@@ -21,7 +21,7 @@
 
 ## 今日版：2026-10-31
 
-> 本版核实时间：2026-10-31 09:00（北京时间）；本次为上午急报检查，只更新“今日急报”区：新增蚂蚁百灵每日免费额度今日切换（官方升级说明已核实）、云知声 U2 Flash 限免最后一天与 OpenRouter Poolside Laguna 免费最后一天（均为多源交叉、官方未核实，已标注）、Vercel AI Gateway Laya 免费最后一天（官方 Changelog 已核实）；Qoder 每日 100 Credits 今日窗口照常；10-30 的 Qoder Round 4 当日包、ZCode 夜间窗口、TokenPlan 夜间免费最后一段、EvoMap MiniMax 免费均已截止，已从急报区移除；其余沿用条目本次未逐条复核，以官方页为准。
+> 本版核实时间：2026-10-31 09:00（北京时间）；本次为上午急报检查，只更新“今日急报”区：新增蚂蚁百灵每日免费额度今日切换（官方升级说明已核实）、云知声 U2 Flash 限免最后一天与 OpenRouter Poolside Laguna 免费最后一天（均为多源交叉、官方未核实，已标注）、Vercel AI Gateway Laya 免费最后一天（官方 Changelog 已核实）；补处理 Grok 08:50 候选文件（该文件在首次 pull 后才推送到收件箱）：腾讯 WorkBuddy 开学季 1000 积分经官方活动页直接核实后补推，云知声与 Grok 补充来源一致、仍保留未核实标注；Qoder 每日 100 Credits 今日窗口照常；10-30 的 Qoder Round 4 当日包、ZCode 夜间窗口、TokenPlan 夜间免费最后一段、EvoMap MiniMax 免费均已截止，已从急报区移除；其余沿用条目本次未逐条复核，以官方页为准。
 > 历史版本见 `archive/`。
 
 ### 今日急报：只限当天
@@ -29,6 +29,7 @@
 | 厂商 / 产品 | 内容 | 额度 / 条件 | 截止 | 中国用户可达性 |
 |---|---|---|---|---|
 | 阿里 Qoder（国际版） | 每日手动领取 Credits | 个人账号每天领 100 Credits，每次领取有效期 30 天；当天不领就作废，不能补领；Qwen3.8-Flash 免费，费率为 0 | 每日领取，错过当天作废（领取窗口自北京时间 10:00 起） | 能直接领（需在 Qoder 应用内领取） |
+| 腾讯 WorkBuddy 开学季新生福利 | 高校在读学生经微信学生身份认证领 1000 积分：官方活动页已核实。官方活动页：https://www.workbuddy.cn/events/campus-freshman/ | 每位学生限领一次，积分自领取起 3 个月有效；第一批限量 200 万份，先到先得；须在微信小程序内完成手机号授权与微信学生身份认证，登录微信与认证微信须同一账号；仅持二代身份证的中国大陆高校在读学生（含专科 / 本科 / 硕士 / 博士，研一新生学籍未更新可能报错），PC 端不支持直接领取 | 2026-10-31 23:59（北京时间） | 能直接领（仅限符合条件的在读学生，需微信小程序） |
 | 蚂蚁百灵 / Ant Ling | 计费升级统一切换：原每日 50 万 Token 免费额度在今日 23:59:59（北京时间）后停止按日发放，改为每月 1 日发 1 张 10 元 Token 抵扣券（仅当月有效）；历史账户完成升级立即得 1 张 20 元消费券（60 天有效），新用户注册立即得 20 元消费券；切换后新钱包余额不足可能导致调用失败，请提前检查余额。官方升级说明：https://developer.ant-ling.com/zh-CN/docs/getting-started/changelog/billing-upgrade/ | 每日 50 万 Token（输入、输出、缓存命中不区分），当日未用不结转；升级后为月度抵扣券，按实际计费金额抵扣 | 2026-10-31 23:59:59（北京时间）统一切换 | 能直接用 |
 | 云知声 U2 Flash（多源交叉、官方未核实） | 限免最后一天：输入、缓存命中、输出均 0 元 / 百万 Tokens；多渠道说法一致（资讯站核对模型页、社区帖、博客），但本次抓取官方模型页未显示限免横幅与价格区，未逐条核实，请以模型页实际显示为准。官方模型页：https://maas.unisound.com/models/u2-flash | 1M 上下文、128K 输出；限速 20 RPM / 5,000,000 TPM（“无限量”指价格为 0，不取消限速）；需手机验证码注册并实名认证，新老用户均可 | 2026-09-30 至 2026-10-31（结束时刻官方未公布，以模型页为准） | 能直接领（需实名认证） |
 | Vercel AI Gateway · Laya（Convai Innovations） | 决策 / 评估模型免费最后一天：对共享上下文做 yes / no、选择或打分判断，返回结构化答案与概率；官方 Changelog 已核实。官方 Changelog：https://vercel.com/changelog/laya-decision-model-now-available-on-ai-gateway-free-through-october-31 | 模型 ID convaiinnovations/laya 与 convaiinnovations/laya-free 在 Boundless 侧均免费；-free ID 在活动后停止服务，标准 ID 开始计费 | 免费至 2026-10-31（未写具体时刻，以官方页为准） | 需 Vercel AI Gateway Key 或自带 Key；开发者向，国内直连与账号规则以实际为准 |
