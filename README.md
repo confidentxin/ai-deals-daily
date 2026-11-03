@@ -19,9 +19,9 @@
 - 只有一个社媒爆料：只内部跟进，不公开发。
 - 正式发布前，每条都要回官方页复核一次，额度、截止以官方页为准。
 
-## 今日版：2026-11-02
+## 今日版：2026-11-03
 
-> 本版核实时间：2026-11-02 20:30（北京时间）；本次为晚间汇总：新增 5 条（TRAE 宝限时免费、智谱 GLM Coding Plan 体验卡、火山方舟 Managed Agents 首次开通赠送包、DeepSeek Harness 首次登录 6 元赠金，均在“能直接领”区；Command Code Ling 3.1 Flash 1019 免费档在“需要海外账号 / 地区受限”区，均已回官方页或多源交叉核实）；待确认线索新增 2 条（美团 LongCat-2.5 免费 Token、李佳琦直播间千问 Token 福利）；智谱 AutoClaw M10W4 已于 2026-11-01 23:59 失效、移入已过期归档；AtomCode Pro 体验版“扩至 150 人/日”说法经官方文档复核不成立（仍为 100 人/日），急报条目不变；今日无新增急报；Vercel Ling 3.1 Flash 1019 免费明日（11-03）到期、Command Code 同模型免费档 11-04 00:00（北京时间）到期；其余沿用条目本次未逐条复核，以官方页为准。
+> 本版核实时间：2026-11-03 12:00（北京时间）；本次为中午急报检查，只更新“今日急报”区：新增 Kilo Gateway Ling 3.1 Flash 1019 `-free` 今日到期入口（Kilo 官方模型列表 API 已核实，输入/输出/缓存读写均 $0）；阿里 Qoder 每日 100 Credits、AtomCode CodingPlan 每日限量名额、智谱 ZCode 每日 3 亿 Token 今日窗口照常；Vercel AI Gateway 同模型免费档今日到期、Command Code 同模型 `:free` 至 2026-11-04 00:00（北京时间），见“进行中：需要海外账号 / 地区受限”区；其余沿用条目本次未逐条复核，以官方页为准。
 > 历史版本见 `archive/`。
 
 ### 今日急报：只限当天
@@ -31,6 +31,7 @@
 | 阿里 Qoder（国际版） | 每日手动领取 Credits | 个人账号每天领 100 Credits，每次领取有效期 30 天；当天不领就作废，不能补领；Qwen3.8-Flash 免费，费率为 0 | 每日领取，错过当天作废（领取窗口自北京时间 10:00 起） | 能直接领（需在 Qoder 应用内领取） |
 | AtomGit AtomCode · CodingPlan 每日限量免费名额 | 在 AtomCode 客户端内执行 `/login` 自动申领当前可获得的最高权益：官方文档已核实。官方文档：https://atomcode.atomgit.com/docs/zh/login.html | Lite：30 天，限量 1000 人/日，支持 deepseek-v4-flash、Qwen3-VL-8B-Instruct；Pro 体验版：7 天，每日 10:00 限量 100 人，额外支持 GLM-5.2；Pro：30 天，需在活动仓库合入 PR，额外支持 GLM-5.2；调用额度按 5 小时滚动窗口计量；官方文档未提绑卡、实名要求；CodingPlan 活动页本次未能直接打开（抓取失败），档位与名额以官方文档为准，活动整体截止官方文档未写 | 每日名额当天领完即止（Pro 体验版每日 10:00 开放） | 能直接领（国内平台，需 AtomGit 账号认证） |
 | 智谱 ZCode · 每日 3 亿 GLM-5.3-Flash Token（多源交叉、官方未核实） | 每天在 ZCode 客户端内领取当天额度，仅限夜间窗口使用：官方 X 原帖经第三方镜像可见，另有媒体与多个独立聚合站口径一致；ZCode 官网已核实产品与下载入口、无单设活动页，本次未直接打开 x.com 原帖，细则以客户端内公告为准。官方产品页：https://zcode.z.ai/cn | 每人每天 3 亿 GLM-5.3-Flash Token，免费账号可领、无需订阅 Coding Plan；需更新到最新版客户端，领取后切换到 Global Building 通道并选 GLM-5.3-Flash，选错通道或模型会扣套餐额度；仅限 ZCode 客户端内使用，不能导出为 API Key；绑卡、实名要求各来源均未提及；官方未公布活动结束日期 | 每日领取：19:00 起领，23:00 至次日 09:00 可用，次日 09:00 清零、不结转，当天不领作废 | 能直接领（ZCode 官网可下载，智谱账号登录） |
+| Kilo Code（Kilo Gateway）· Ling 3.1 Flash 1019 `-free` | 在 Kilo Code / Kilo Gateway 用模型 `inclusionai/ling-3.1-flash-1019-free` 免费调用，1M 上下文、最长输出 262,144：Kilo 官方模型列表 API 已核实。官方站：https://kilo.ai ；与 Vercel AI Gateway、Command Code 同模型免费档为另一入口 | 输入、输出、缓存读写均 $0；需 Kilo 账号与 API Key；官方列表标 mayTrainOnYourPrompts 为 true，提示词可能被上游用于改进服务，敏感内容勿用；速率/用量上限与绑卡要求官方列表未写 | 免费至 2026-11-03（官方描述原句“provided free of charge by Novita AI until November 3, 2026”，未写具体时刻与时区） | 需海外账号（美元定价海外产品，大陆可达性未知） |
 
 ### 进行中：能直接领
 
