@@ -21,7 +21,7 @@
 
 ## 今日版：2026-11-03
 
-> 本版核实时间：2026-11-03 20:30（北京时间）；本次为晚间汇总：新增 Kiro（Kiroween 黑客松参与者 4000 Credits，Devpost 官方资源页已核实）1 条；Kilo Gateway 与 Vercel AI Gateway 的 Ling 3.1 Flash 1019 免费档今日到期，Kilo 官方模型列表 20:30 复核时已无 `-free` 变体，2 条移入“已过期归档”；Command Code 同模型 `:free` 至 2026-11-04 00:00（北京时间）仍保留在原区，今夜到期；MiniMax 与 LongCat 待确认线索口径已更新；新增 OVHcloud 免费端点下线提醒 1 条；其余沿用条目本次未逐条复核，以官方页为准。
+> 本版核实时间：2026-11-03 20:30（北京时间）；本次为晚间汇总：新增 5 条，均为官方页已核实——Kiroween 黑客松参与者 4000 Credits（Devpost 官方资源页），以及 Grok 20:20 档迟到到达后逐条回官方页核实补录的 4 条：阶跃星辰 StepAudio 3 系列限时免费至 11 月 8 日、Kimi API 文件接口限时免费、OpenCode Zen Pulse Alpha Free、Microsoft Foundry Copilot harness 运行时 12 月 1 日前免费；Kilo Gateway 与 Vercel AI Gateway 的 Ling 3.1 Flash 1019 免费档今日到期，Kilo 官方模型列表 20:30 复核时已无 `-free` 变体，2 条移入“已过期归档”；Command Code 同模型 `:free` 至 2026-11-04 00:00（北京时间）仍保留在原区，今夜到期；MiniMax 与 LongCat 待确认线索口径已更新；新增 OVHcloud 免费端点下线提醒 1 条；其余沿用条目本次未逐条复核，以官方页为准。
 > 历史版本见 `archive/`。
 
 ### 今日急报：只限当天
@@ -54,6 +54,9 @@
 | 火山方舟 · Managed Agents 首次开通赠送包（2026-11-02 20:30 新增，官方计费页已核实） | Managed Agents 首次开通即赠送免费额度包。官方计费页：https://docs.volcengine.com/docs/ark/model-pricing?redirect=1&lang=zh | 30 小时 Agent 运行时 + 500 次 web_search 调用；每个账号仅赠送一次，有效期 2 年；免费额度可抵扣 Managed Agents 后付费费用、调用时优先消耗；超出与其他费用以官方计费页为准；需火山引擎账号 | 长期机制；赠送额度自赠送起 2 年有效 |
 | DeepSeek Harness · 首次登录 6 元体验赠金（2026-11-02 20:30 补录，多源交叉、官方未核实） | 首次登录 DeepSeek Harness 自动到账赠金，抵扣 Harness 内任务调用费用；多家媒体与实测帖口径一致，官方赠金规则页本次未直接打开核实。官方产品页：https://www.deepseek.com/harness/ | 6 元/账号，限量发放、赠完即止；到账后 7 天内有效，过期作废；无需充值；是否仍可领以登录后显示为准 | 限量发放（2026-10-17 起）；到账后 7 天有效，具体以登录后显示为准 |
 
+| 阶跃星辰开放平台 · StepAudio 3 系列限时免费（2026-11-03 20:30 新增，官方 API 定价页已核实） | StepAudio 3 系列语音模型（realtime / tts / gen / music / asr-max）在限免期内免费调用，11 月 9 日起按公布单价正式计费（如 realtime 0.65 元/会话分钟）。官方定价页：https://platform.stepfun.com/docs/zh/guides/pricing/details | 限时免费；需注册开放平台并创建 API Key；绑卡、实名要求官方定价页未写；限免结束后续费单价以定价页为准，调用前请确认 | 限时免费至 2026-11-08 23:59:59（北京时间），自 2026-11-09 00:00:00 起正式计费 |
+| 月之暗面 Kimi API · 文件接口限时免费（2026-11-03 20:30 新增，官方定价页已核实） | 文件相关接口（文件内容抽取 / 文件存储）限时免费：只上传并抽取文档时文件接口本身不产生费用；抽取出的文档内容若作为模型 Input 仍按量计费。与 Kimi K3.1 Pro 免费档限量使用不是同一口径。官方定价页：https://platform.kimi.com/docs/pricing/chat | 文件接口本身免费，模型推理仍按 Token 计费；单文件上限等细则见文件 API 文档；绑卡要求官方定价页未提 | 截止未知（官方仅写“限时免费”，未公布结束日） |
+
 ### 进行中：需要海外账号 / 地区受限
 
 | 厂商 / 产品 | 内容 | 额度 / 条件 | 截止 | 限制说明 |
@@ -73,6 +76,9 @@
 | HeyGen Voice Turbo Free（2026-11-01 20:30 新增，官方博客与开发者文档已核实） | API 文字转语音模型 heygen-voice-1-turbo-free 免费调用，无需 credit 余额；须显式指定该模型名，默认模型和付费 Turbo 照常计费。官方博客：https://www.heygen.com/blog/heygen-voice-turbo ；开发者文档：https://developers.heygen.com/docs/voices/heygen-voice-speech | 免费，$0/百万字符；仅支持公共音色和 HeyGen Voice 1 instant clone，不支持专业克隆；默认每个端点每名工作区成员 30 次/分钟，共享容量满时返回 429，不保证可用性与延迟；官方博客 FAQ 写无需信用卡 | 免费至 2026-11-30（官方未注明具体时刻与时区，官方称变化前会提前通知） | 需海外账号，大陆可达性未知 |
 | Command Code · Ling 3.1 Flash 1019 `:free`（2026-11-02 20:30 新增，官方定价页已核实） | 在 Command Code 内选模型 `ling-3.1-flash-1019:free` 免费调用，1M 上下文；与 Vercel AI Gateway 同模型免费档为另一入口。官方定价页：https://commandcode.ai/docs/resources/pricing-limits | 输入、输出、缓存读取均为 $0；每账号每天最多 100 次（UTC 午夜重置）；开会话需账号内至少有 1 美元 credits；零数据保留（ZDR 会话）；免费期结束后改用付费 `ling-3.1-flash` | 免费至 2026-11-03 16:00 UTC（北京时间 2026-11-04 00:00） | 美元定价产品（Go 套餐 1 美元/月起）；大陆可达性与支付方式以账号实际为准 |
 | Kiro（AWS）· Kiroween 2026 黑客松参与者赠 credit（2026-11-03 20:30 新增，Devpost 官方资源页已核实） | 报名参加 Kiroween 2026 黑客松并提交 Kiro 用户 ID，可申请一次性 4000 Kiro Credits，在投稿期内使用；须有 Kiro 账号并在 Devpost 注册，官方称 48 个工作小时内审核发放。官方资源页：https://kiroween.devpost.com/resources | 4000 Credits，一次性发放、不补发；仅限黑客松参与者，非面向所有用户；绑卡要求官方资源页未提 | 申请截止 2026-12-01 12:00（PT，北京时间 12-02 04:00）；兑换码须在 2026-12-04 前兑换，兑换后 Credits 至 2026-12-31 23:59（PT）过期 | 需 Kiro 账号与 Devpost 注册；美元定价产品，大陆可达性以账号实际为准 |
+
+| OpenCode Zen · Pulse Alpha Free 隐身测试模型（2026-11-03 20:30 新增，官方 Zen 文档已核实） | 隐身测试模型 `pulse-alpha-free`，输入、输出、缓存读取均为 Free，仅限在 OpenCode 客户端内使用；免费期内收集的数据可能被保留并用于改进模型，敏感内容勿用。官方文档：https://opencode.ai/docs/zen/ | 限时免费；免费档聊天模型仅限 OpenCode 内使用；禁用地区名单（欧盟、冰岛、列支敦士登、挪威、古巴、伊朗、朝鲜、俄罗斯、乌克兰、委内瑞拉）未列中国，大陆可达性以账号实际为准 | 截止未知（官方写 limited time，未公布具体日期） | 需 OpenCode 客户端；免费模型名单以官方文档为准；与 OpenCode Zen 免费池总述条目为同一入口下的新增模型 |
+| Microsoft Foundry Agent Service · Copilot harness 运行时预览期免费（2026-11-03 20:30 新增，微软官方博客已核实） | 公共预览：在 Foundry Agent Service 中选用 Microsoft Copilot harness 时，harness 运行时（sandbox 算力/内存）在计费开始前免费；模型推理与另行计费的工具/连接服务仍按各自价格收费，创建 agent 时选定 harness、创建后暂不支持切换。官方博客：https://devblogs.microsoft.com/foundry/microsoft-copilot-harness-in-foundry/ | harness 运行时免费，模型与工具费用全程另计；需 Azure / Microsoft Foundry 项目；绑卡要求以 Azure 账号规则为准 | harness 运行时免费至 2026-12-01 前（官方写 Billing begins December 1, 2026，未注时区）；自 12 月 1 日起 sandbox 按约 $0.0994/vCPU-小时、$0.0118/GiB-小时计费，地区与协议可能不同 | 需海外账号 / Azure（美元定价，大陆可达性未知） |
 
 ### 即将到期：3–5 天内
 
