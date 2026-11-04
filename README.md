@@ -21,7 +21,7 @@
 
 ## 今日版：2026-11-04
 
-> 本版核实时间：2026-11-04 12:00（北京时间）；本次为中午急报检查，只更新“今日急报”区：新增 OpenRouter Inkling / Inkling Small `:free` 今日到期（官方模型列表 API 已核实，输入、输出定价均为 $0，`expiration_date` 为 2026-11-04）；阿里 Qoder 每日 100 Credits、AtomCode CodingPlan 每日限量名额、智谱 ZCode 每日 3 亿 Token 今日窗口照常；Command Code Ling 3.1 Flash 1019 `:free` 已于今日 00:00（北京时间）到期、OVHcloud Mistral-Nemo-Instruct-2407 下线日为今日，见原区条目，归档留晚间汇总；其余沿用条目本次未逐条复核，以官方页为准。
+> 本版核实时间：2026-11-04 20:30（北京时间）；本次为晚间汇总：新增 2 条，均为官方页已核实——腾讯 WorkBuddy / CodeBuddy 混元 Hy4 限时免费至 11 月 15 日（腾讯官方通稿）、OpenRouter 隐身模型 Crouton Alpha 免费调用（OpenRouter 官方模型页，截止未公布）；归档 2 条——Command Code Ling 3.1 Flash 1019 `:free` 已于今日 00:00（北京时间）到期、官方定价页已无 `:free` 变体，OVHcloud Mistral-Nemo-Instruct-2407 免费端点下线日为今日；OpenRouter Inkling / Inkling Small `:free` 的 `expiration_date` 虽为今日，但 20:30 复核时官方模型页仍显示 Free，本次保留在“今日急报”区、未归档；阿里 Qoder、AtomCode、智谱 ZCode 每日急报规则未变；其余沿用条目本次未逐条复核，以官方页为准。
 > 历史版本见 `archive/`。
 
 ### 今日急报：只限当天
@@ -31,7 +31,7 @@
 | 阿里 Qoder（国际版） | 每日手动领取 Credits | 个人账号每天领 100 Credits，每次领取有效期 30 天；当天不领就作废，不能补领；Qwen3.8-Flash 免费，费率为 0 | 每日领取，错过当天作废（领取窗口自北京时间 10:00 起） | 能直接领（需在 Qoder 应用内领取） |
 | AtomGit AtomCode · CodingPlan 每日限量免费名额 | 在 AtomCode 客户端内执行 `/login` 自动申领当前可获得的最高权益：官方文档已核实。官方文档：https://atomcode.atomgit.com/docs/zh/login.html | Lite：30 天，限量 1000 人/日，支持 deepseek-v4-flash、Qwen3-VL-8B-Instruct；Pro 体验版：7 天，每日 10:00 限量 100 人，额外支持 GLM-5.2；Pro：30 天，需在活动仓库合入 PR，额外支持 GLM-5.2；调用额度按 5 小时滚动窗口计量；官方文档未提绑卡、实名要求；CodingPlan 活动页本次未能直接打开（抓取失败），档位与名额以官方文档为准，活动整体截止官方文档未写 | 每日名额当天领完即止（Pro 体验版每日 10:00 开放） | 能直接领（国内平台，需 AtomGit 账号认证） |
 | 智谱 ZCode · 每日 3 亿 GLM-5.3-Flash Token（多源交叉、官方未核实） | 每天在 ZCode 客户端内领取当天额度，仅限夜间窗口使用：官方 X 原帖经第三方镜像可见，另有媒体与多个独立聚合站口径一致；ZCode 官网已核实产品与下载入口、无单设活动页，本次未直接打开 x.com 原帖，细则以客户端内公告为准。官方产品页：https://zcode.z.ai/cn | 每人每天 3 亿 GLM-5.3-Flash Token，免费账号可领、无需订阅 Coding Plan；需更新到最新版客户端，领取后切换到 Global Building 通道并选 GLM-5.3-Flash，选错通道或模型会扣套餐额度；仅限 ZCode 客户端内使用，不能导出为 API Key；绑卡、实名要求各来源均未提及；官方未公布活动结束日期 | 每日领取：19:00 起领，23:00 至次日 09:00 可用，次日 09:00 清零、不结转，当天不领作废 | 能直接领（ZCode 官网可下载，智谱账号登录） |
-| OpenRouter · Thinking Machines Inkling / Inkling Small `:free` | 在 OpenRouter 经 agentic harness 调用 `thinkingmachines/inkling:free` 与 `thinkingmachines/inkling-small:free`：官方模型列表 API 已核实。官方模型页：https://openrouter.ai/thinkingmachines/inkling:free ；https://openrouter.ai/thinkingmachines/inkling-small:free | 输入、输出定价均为 $0，1M 上下文；仅限 agentic harness 使用（第三方实测称直连 API 可能 403，须用 OpenClaw、Claude Code 等 harness）；提示词与输出会被记录并用于改进模型，请勿上传机密与个人数据，须同意 TML Free Research API 条款；免费档限速约 20 请求/分钟、每天 50 请求（累计购入满 10 美元后每天 1000 请求），以官方 Limits 页为准；绑卡要求官方模型页未写 | 官方 `expiration_date` 仅写 2026-11-04，未写时刻与时区，该日之后端点可能被移除，不保证整日可用 | 需海外账号；大陆直连可达性未知 |
+| OpenRouter · Thinking Machines Inkling / Inkling Small `:free` | 在 OpenRouter 经 agentic harness 调用 `thinkingmachines/inkling:free` 与 `thinkingmachines/inkling-small:free`：官方模型列表 API 已核实。官方模型页：https://openrouter.ai/thinkingmachines/inkling:free ；https://openrouter.ai/thinkingmachines/inkling-small:free | 输入、输出定价均为 $0，1M 上下文；仅限 agentic harness 使用（第三方实测称直连 API 可能 403，须用 OpenClaw、Claude Code 等 harness）；提示词与输出会被记录并用于改进模型，请勿上传机密与个人数据，须同意 TML Free Research API 条款；免费档限速约 20 请求/分钟、每天 50 请求（累计购入满 10 美元后每天 1000 请求），以官方 Limits 页为准；绑卡要求官方模型页未写 | 官方 `expiration_date` 仅写 2026-11-04，未写时刻与时区；2026-11-04 20:30 复核时官方模型页仍显示 Free，端点随时可能被移除 | 需海外账号；大陆直连可达性未知 |
 
 ### 进行中：能直接领
 
@@ -58,6 +58,8 @@
 | 阶跃星辰开放平台 · StepAudio 3 系列限时免费（2026-11-03 20:30 新增，官方 API 定价页已核实） | StepAudio 3 系列语音模型（realtime / tts / gen / music / asr-max）在限免期内免费调用，11 月 9 日起按公布单价正式计费（如 realtime 0.65 元/会话分钟）。官方定价页：https://platform.stepfun.com/docs/zh/guides/pricing/details | 限时免费；需注册开放平台并创建 API Key；绑卡、实名要求官方定价页未写；限免结束后续费单价以定价页为准，调用前请确认 | 限时免费至 2026-11-08 23:59:59（北京时间），自 2026-11-09 00:00:00 起正式计费 |
 | 月之暗面 Kimi API · 文件接口限时免费（2026-11-03 20:30 新增，官方定价页已核实） | 文件相关接口（文件内容抽取 / 文件存储）限时免费：只上传并抽取文档时文件接口本身不产生费用；抽取出的文档内容若作为模型 Input 仍按量计费。与 Kimi K3.1 Pro 免费档限量使用不是同一口径。官方定价页：https://platform.kimi.com/docs/pricing/chat | 文件接口本身免费，模型推理仍按 Token 计费；单文件上限等细则见文件 API 文档；绑卡要求官方定价页未提 | 截止未知（官方仅写“限时免费”，未公布结束日） |
 
+| 腾讯 WorkBuddy / CodeBuddy · 混元 Hy4 正式版限时免费（2026-11-04 20:30 新增，腾讯官方通稿已核实） | 11 月 4 日发布的 Hy4 正式版在 WorkBuddy / CodeBuddy 限时免费使用；Hy4 API 定价不变（输入 6 元/百万 Tokens、输出 18 元/百万 Tokens、缓存命中 0.3 元/百万 Tokens）。官方通稿：https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/ | 官方通稿只写 11 月 4 日至 15 日免费、未公布每人额度；多家媒体口径一致称免费额度有限、每日分配、触及限额后消耗积分继续使用、繁忙时排队，额度以客户端实际显示为准；Hy4 在腾讯云 TokenHub 同期 5 折至 12 月 31 日为付费折扣、非免费额度；Hy3 限免一并延长的说法官方通稿未写新截止，仍在待确认线索区 | 2026-11-04 至 2026-11-15（官方通稿未写时刻与时区） |
+
 ### 进行中：需要海外账号 / 地区受限
 
 | 厂商 / 产品 | 内容 | 额度 / 条件 | 截止 | 限制说明 |
@@ -75,15 +77,16 @@
 | AIVideoFree | 改版免费档：注册送免费 credits，可用全系视频/图像模型（官网首页与 FAQ 已核实，2026-10-30 20:30） | 新账号 10–88 credits（因国家而异，注册后可见），无需绑卡；无水印、credits 不过期、可商用；生成前请核对本次生成的费用显示，官网首页提示“生成前查看费用”。官网：https://www.aivideofree.com/ | 长期（官方未给截止日） | 海外站点（新加坡团队）；大陆可达性未知，免费额度因国家而异，以注册页显示为准 |
 | 智谱 AutoClaw 国际版 · Halloween / M11W1（2026-11-01 20:30 新增，官方博客已核实） | 登录 AutoClaw 国际版领本周 Tokens；上周未领的可一并领取。官方博客：https://autoclaw.z.ai/blog/news/M11W1/ | 本周 40M Tokens（4,000 credits），每账号限领一次；若上周奖励也未领，合计最多 80M Tokens（8,000 credits）；官方博客未提绑卡要求；与国内版金额、起止不同，两站分别以各自官方博客为准 | 活动 2026-10-31 00:00 至 2026-11-08 23:59（UTC+8）；本周奖励 11 月 8 日 23:59 失效 | 需海外账号（国际版海外站），大陆可达性未知 |
 | HeyGen Voice Turbo Free（2026-11-01 20:30 新增，官方博客与开发者文档已核实） | API 文字转语音模型 heygen-voice-1-turbo-free 免费调用，无需 credit 余额；须显式指定该模型名，默认模型和付费 Turbo 照常计费。官方博客：https://www.heygen.com/blog/heygen-voice-turbo ；开发者文档：https://developers.heygen.com/docs/voices/heygen-voice-speech | 免费，$0/百万字符；仅支持公共音色和 HeyGen Voice 1 instant clone，不支持专业克隆；默认每个端点每名工作区成员 30 次/分钟，共享容量满时返回 429，不保证可用性与延迟；官方博客 FAQ 写无需信用卡 | 免费至 2026-11-30（官方未注明具体时刻与时区，官方称变化前会提前通知） | 需海外账号，大陆可达性未知 |
-| Command Code · Ling 3.1 Flash 1019 `:free`（2026-11-02 20:30 新增，官方定价页已核实） | 在 Command Code 内选模型 `ling-3.1-flash-1019:free` 免费调用，1M 上下文；与 Vercel AI Gateway 同模型免费档为另一入口。官方定价页：https://commandcode.ai/docs/resources/pricing-limits | 输入、输出、缓存读取均为 $0；每账号每天最多 100 次（UTC 午夜重置）；开会话需账号内至少有 1 美元 credits；零数据保留（ZDR 会话）；免费期结束后改用付费 `ling-3.1-flash` | 免费至 2026-11-03 16:00 UTC（北京时间 2026-11-04 00:00） | 美元定价产品（Go 套餐 1 美元/月起）；大陆可达性与支付方式以账号实际为准 |
 | Kiro（AWS）· Kiroween 2026 黑客松参与者赠 credit（2026-11-03 20:30 新增，Devpost 官方资源页已核实） | 报名参加 Kiroween 2026 黑客松并提交 Kiro 用户 ID，可申请一次性 4000 Kiro Credits，在投稿期内使用；须有 Kiro 账号并在 Devpost 注册，官方称 48 个工作小时内审核发放。官方资源页：https://kiroween.devpost.com/resources | 4000 Credits，一次性发放、不补发；仅限黑客松参与者，非面向所有用户；绑卡要求官方资源页未提 | 申请截止 2026-12-01 12:00（PT，北京时间 12-02 04:00）；兑换码须在 2026-12-04 前兑换，兑换后 Credits 至 2026-12-31 23:59（PT）过期 | 需 Kiro 账号与 Devpost 注册；美元定价产品，大陆可达性以账号实际为准 |
 
 | OpenCode Zen · Pulse Alpha Free 隐身测试模型（2026-11-03 20:30 新增，官方 Zen 文档已核实） | 隐身测试模型 `pulse-alpha-free`，输入、输出、缓存读取均为 Free，仅限在 OpenCode 客户端内使用；免费期内收集的数据可能被保留并用于改进模型，敏感内容勿用。官方文档：https://opencode.ai/docs/zen/ | 限时免费；免费档聊天模型仅限 OpenCode 内使用；禁用地区名单（欧盟、冰岛、列支敦士登、挪威、古巴、伊朗、朝鲜、俄罗斯、乌克兰、委内瑞拉）未列中国，大陆可达性以账号实际为准 | 截止未知（官方写 limited time，未公布具体日期） | 需 OpenCode 客户端；免费模型名单以官方文档为准；与 OpenCode Zen 免费池总述条目为同一入口下的新增模型 |
 | Microsoft Foundry Agent Service · Copilot harness 运行时预览期免费（2026-11-03 20:30 新增，微软官方博客已核实） | 公共预览：在 Foundry Agent Service 中选用 Microsoft Copilot harness 时，harness 运行时（sandbox 算力/内存）在计费开始前免费；模型推理与另行计费的工具/连接服务仍按各自价格收费，创建 agent 时选定 harness、创建后暂不支持切换。官方博客：https://devblogs.microsoft.com/foundry/microsoft-copilot-harness-in-foundry/ | harness 运行时免费，模型与工具费用全程另计；需 Azure / Microsoft Foundry 项目；绑卡要求以 Azure 账号规则为准 | harness 运行时免费至 2026-12-01 前（官方写 Billing begins December 1, 2026，未注时区）；自 12 月 1 日起 sandbox 按约 $0.0994/vCPU-小时、$0.0118/GiB-小时计费，地区与协议可能不同 | 需海外账号 / Azure（美元定价，大陆可达性未知） |
 
+| OpenRouter · Crouton Alpha 隐身模型（2026-11-04 20:30 新增，官方模型页已核实） | 匿名第三方提供方在 OpenRouter 上线的隐身推理模型 `stealth/crouton-alpha`，面向高频重复的 Agent 子任务、工具调用与文档分析；支持文本、图像、视频、文件与音频输入，返回文本，支持工具调用与结构化输出。官方模型页：https://openrouter.ai/stealth/crouton-alpha | 输入、输出定价均为 $0，1M 上下文；提示词与输出可能被提供方保留、不用于训练，机密内容勿用；限速等细则官方模型页未写，以官方页为准；OpenCode Zen 官方文档本次未见该模型，不写 OpenCode 入口 | 截止未知（官方模型页未公布结束日；隐身预览期结束可能改价，以官方页为准） | 需海外账号；大陆直连可达性未知 |
+
 ### 即将到期：3–5 天内
 
-OVHcloud AI Endpoints · Mistral-Nemo-Instruct-2407 免费端点下线提醒（非新活动）：官方生命周期文档已核实该模型下线日为 2026-11-04，此后调用返回 404；此前目录标注的免账号匿名调用通道随之下线。官方文档：https://docs.ovhcloud.com/en/guides/public-cloud/ai-machine-learning/ai-endpoints-billing 。另：Command Code Ling 3.1 Flash 1019 `:free` 至 2026-11-04 00:00（北京时间），见“进行中：需要海外账号 / 地区受限”区；TRAE 宝与 AutoClaw（国内/国际）M11W1 均至 11 月 8 日，见各自条目。
+TRAE 宝个人助理限时免费、智谱 AutoClaw 国内版与国际版 M11W1、阶跃星辰 StepAudio 3 系列限时免费均至 11 月 8 日（4 天内），见各自条目。另：MiniMax M2 / M3 模型免费试用声称至 11 月 7 日，未经官方页逐条核实，见“待确认线索”区。
 
 ### 待确认线索：不进正文
 
@@ -92,11 +95,12 @@ OVHcloud AI Endpoints · Mistral-Nemo-Instruct-2407 免费端点下线提醒（�
 | DeepSeek 新账号 5M 免费 Token、30 天有效 | 多个二手来源说法不一致：有的说新账号自动得 5M，有的说官方只写“granted balance”且不公布金额和有效期。必须先看 DeepSeek 官方平台页，确认不了就不进正文。 |
 | Claude Security：企业版客户每月 2.5 万美元免费额度、为期 2 个月，至 2026-12-31 | 多家二手报道说法一致，但未在 Anthropic / Claude 官方页上逐条核对额度、企业版资格与起止规则，暂不进正文；仅限 Claude Enterprise 客户的说法也待官方确认。 |
 | 讯飞星火 Spark-X2.6：注册 + 实名领 10 亿 Token、31 天内有效 | 仅 LINUX DO 单一社区帖说法，未在讯飞官方页逐条核对额度、有效期与适用模型；另有报道称 X2.6-4B 推理定价限时免费，与“10 亿 Token”是否为同一口径未确认。 |
-| 腾讯 WorkBuddy · 混元 Hy3 限免延至 11 月 15 日 | 仅单一聚合站称客户端模型卡现标“限时免费·至 11 月 15 日”，未见新官方延期公告；官方 9 月 30 日公告仍为延至 10 月 31 日，多家渠道亦同此口径。说法冲突，未确认前仍按 10 月 31 日到期处理。 |
+| 腾讯 WorkBuddy · 混元 Hy3 限免延至 11 月 15 日 | 2026-11-04 多家媒体在 Hy4 发布报道中称 Hy3 限免时间一并延长，但腾讯官方 Hy4 通稿只写 WorkBuddy / CodeBuddy 11 月 4 日至 15 日免费、未写 Hy3 的新截止；官方 9 月 30 日公告仍为延至 10 月 31 日。Hy3 新截止未确认前不进正文，Hy4 正式版限免已单独进正文。 |
 | MiniMax 开放平台 · M2 / M3 模型免费试用至 11 月 7 日 | 厂商 M2 发布公告（经艾瑞网译文转载）称 M2 免费试用期延长至 11 月 7 日 00:00 UTC（北京时间 11 月 7 日 08:00）；聚合清单站同口径称 M3 / M2 免费试用至 11 月 7 日，但 M3 是否同在免费试用范围内两处口径不一致，且 MiniMax 官方平台页本次仍未直接读到逐条核实，适用模型与额度未确认 |
 | 腾讯 Buddy One 关联礼 · 100 积分 | 多家媒体同口径转述 10 月 29 日发布：WorkBuddy PC 端升到 5.9.0+ 后关联账号即送 100 积分、四端通用；但未在腾讯官方页核对领取入口、资格与截止（媒体称官方仅称“近期”），未确认前不进正文。 |
 | 美团 LongCat-2.5 · 免费 Token（声称新用户 1000 万 / 老用户 500 万或 1000 万，口径冲突） | 口径仍冲突：仅单一英文资讯站转述另一资讯站称老用户获 500 万免费 Token；Grok 12:00 档提供的官方 X 原帖（@Meituan_LongCat，2026-11-02）原句为新用户 1000 万、老用户额外 1000 万、自动到账，与 500 万口径不同；另有用户反馈未看到赠送；今日多家新闻只报模型发布、未提免费额度，官方新闻稿未写赠送数量，官方平台页未直接核实额度、截止与领取方式。未确认前不进正文。 |
 | 天猫双 11 李佳琦直播间 · 千问 Token 福利（声称发放 20 万亿 Token，2026-11-02 19:30 直播） | 多家新闻转载同一“天猫活动预告”，时间与总量口径一致，但始终未见天猫/千问官方活动页与领取链接，未公布每人额度、领取方式、适用模型与有效期；直播主线为首次售卖 Token 商品；直播开始后未见可核实的领取细则公布。只记录，不当可领活动。 |
+| MonkeyCode · 每日 500 亿 Token 全站共享免费池（声称每日 10:00 投放） | 口径冲突：仅单一博客文章（2026-11-04）称全站共享 500 亿 Token 免费池、高峰期烧穿后按个人积分扣费；MonkeyCode 官方定价页只写 Basic 免费档每日 10M Token，未见共享池规则。未回官方页核实共享池前不进正文。 |
 
 ### 已过期归档
 
@@ -118,6 +122,8 @@ OVHcloud AI Endpoints · Mistral-Nemo-Instruct-2407 免费端点下线提醒（�
 
 | Kilo Code（Kilo Gateway）· Ling 3.1 Flash 1019 `-free` | 模型 `inclusionai/ling-3.1-flash-1019-free` 输入/输出/缓存读写均 $0，免费至 2026-11-03 | 免费至 2026-11-03；2026-11-03 20:30 复核时 Kilo 官方模型列表已无该 `-free` 变体，仅剩付费版 `inclusionai/ling-3.1-flash`，移入归档 |
 | Vercel AI Gateway · Ling 3.1 Flash 1019 | 同模型限时免费上架，免费请求不计费，11 月 3 日起按公布价收费 | 免费至 2026-11-03（未写具体时刻）；2026-11-03 20:30 晚间汇总时移入归档 |
+| Command Code · Ling 3.1 Flash 1019 `:free` | 在 Command Code 内选模型 `ling-3.1-flash-1019:free` 免费调用，1M 上下文 | 免费至 2026-11-03 16:00 UTC（北京时间 2026-11-04 00:00）；2026-11-04 20:30 复核时官方定价页已无 `:free` 变体、该模型已按 $0.30/$0.90 标价，移入归档 |
+| OVHcloud AI Endpoints · Mistral-Nemo-Instruct-2407 免费端点 | 官方生命周期文档所列免费端点下线，此后调用返回 404 | 下线日 2026-11-04（官方下线表已核实）；2026-11-04 20:30 晚间汇总时移入归档 |
 ## 提醒
 
 - 所有额度、截止和领取条件都可能随时变，以厂商官方页为准。
