@@ -19,9 +19,9 @@
 - 只有一个社媒爆料：只内部跟进，不公开发。
 - 正式发布前，每条都要回官方页复核一次，额度、截止以官方页为准。
 
-## 今日版：2026-11-03
+## 今日版：2026-11-04
 
-> 本版核实时间：2026-11-03 20:30（北京时间）；本次为晚间汇总：新增 5 条，均为官方页已核实——Kiroween 黑客松参与者 4000 Credits（Devpost 官方资源页），以及 Grok 20:20 档迟到到达后逐条回官方页核实补录的 4 条：阶跃星辰 StepAudio 3 系列限时免费至 11 月 8 日、Kimi API 文件接口限时免费、OpenCode Zen Pulse Alpha Free、Microsoft Foundry Copilot harness 运行时 12 月 1 日前免费；Kilo Gateway 与 Vercel AI Gateway 的 Ling 3.1 Flash 1019 免费档今日到期，Kilo 官方模型列表 20:30 复核时已无 `-free` 变体，2 条移入“已过期归档”；Command Code 同模型 `:free` 至 2026-11-04 00:00（北京时间）仍保留在原区，今夜到期；MiniMax 与 LongCat 待确认线索口径已更新；新增 OVHcloud 免费端点下线提醒 1 条；其余沿用条目本次未逐条复核，以官方页为准。
+> 本版核实时间：2026-11-04 12:00（北京时间）；本次为中午急报检查，只更新“今日急报”区：新增 OpenRouter Inkling / Inkling Small `:free` 今日到期（官方模型列表 API 已核实，输入、输出定价均为 $0，`expiration_date` 为 2026-11-04）；阿里 Qoder 每日 100 Credits、AtomCode CodingPlan 每日限量名额、智谱 ZCode 每日 3 亿 Token 今日窗口照常；Command Code Ling 3.1 Flash 1019 `:free` 已于今日 00:00（北京时间）到期、OVHcloud Mistral-Nemo-Instruct-2407 下线日为今日，见原区条目，归档留晚间汇总；其余沿用条目本次未逐条复核，以官方页为准。
 > 历史版本见 `archive/`。
 
 ### 今日急报：只限当天
@@ -31,6 +31,7 @@
 | 阿里 Qoder（国际版） | 每日手动领取 Credits | 个人账号每天领 100 Credits，每次领取有效期 30 天；当天不领就作废，不能补领；Qwen3.8-Flash 免费，费率为 0 | 每日领取，错过当天作废（领取窗口自北京时间 10:00 起） | 能直接领（需在 Qoder 应用内领取） |
 | AtomGit AtomCode · CodingPlan 每日限量免费名额 | 在 AtomCode 客户端内执行 `/login` 自动申领当前可获得的最高权益：官方文档已核实。官方文档：https://atomcode.atomgit.com/docs/zh/login.html | Lite：30 天，限量 1000 人/日，支持 deepseek-v4-flash、Qwen3-VL-8B-Instruct；Pro 体验版：7 天，每日 10:00 限量 100 人，额外支持 GLM-5.2；Pro：30 天，需在活动仓库合入 PR，额外支持 GLM-5.2；调用额度按 5 小时滚动窗口计量；官方文档未提绑卡、实名要求；CodingPlan 活动页本次未能直接打开（抓取失败），档位与名额以官方文档为准，活动整体截止官方文档未写 | 每日名额当天领完即止（Pro 体验版每日 10:00 开放） | 能直接领（国内平台，需 AtomGit 账号认证） |
 | 智谱 ZCode · 每日 3 亿 GLM-5.3-Flash Token（多源交叉、官方未核实） | 每天在 ZCode 客户端内领取当天额度，仅限夜间窗口使用：官方 X 原帖经第三方镜像可见，另有媒体与多个独立聚合站口径一致；ZCode 官网已核实产品与下载入口、无单设活动页，本次未直接打开 x.com 原帖，细则以客户端内公告为准。官方产品页：https://zcode.z.ai/cn | 每人每天 3 亿 GLM-5.3-Flash Token，免费账号可领、无需订阅 Coding Plan；需更新到最新版客户端，领取后切换到 Global Building 通道并选 GLM-5.3-Flash，选错通道或模型会扣套餐额度；仅限 ZCode 客户端内使用，不能导出为 API Key；绑卡、实名要求各来源均未提及；官方未公布活动结束日期 | 每日领取：19:00 起领，23:00 至次日 09:00 可用，次日 09:00 清零、不结转，当天不领作废 | 能直接领（ZCode 官网可下载，智谱账号登录） |
+| OpenRouter · Thinking Machines Inkling / Inkling Small `:free` | 在 OpenRouter 经 agentic harness 调用 `thinkingmachines/inkling:free` 与 `thinkingmachines/inkling-small:free`：官方模型列表 API 已核实。官方模型页：https://openrouter.ai/thinkingmachines/inkling:free ；https://openrouter.ai/thinkingmachines/inkling-small:free | 输入、输出定价均为 $0，1M 上下文；仅限 agentic harness 使用（第三方实测称直连 API 可能 403，须用 OpenClaw、Claude Code 等 harness）；提示词与输出会被记录并用于改进模型，请勿上传机密与个人数据，须同意 TML Free Research API 条款；免费档限速约 20 请求/分钟、每天 50 请求（累计购入满 10 美元后每天 1000 请求），以官方 Limits 页为准；绑卡要求官方模型页未写 | 官方 `expiration_date` 仅写 2026-11-04，未写时刻与时区，该日之后端点可能被移除，不保证整日可用 | 需海外账号；大陆直连可达性未知 |
 
 ### 进行中：能直接领
 
