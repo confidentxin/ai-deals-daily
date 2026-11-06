@@ -21,7 +21,7 @@
 
 ## 今日版：2026-11-06
 
-> 本版核实时间：2026-11-06 09:00（北京时间）；本次为上午急报检查：无新增当日急报；Token360 MiniMax M3.1 Flash 促销免费额度已于今日 01:00（北京时间）到期，从“进行中：需要海外账号 / 地区受限”移入“已过期归档”（官方促销条款页 09:00 复核，促销窗为 11 月 2 日 9:00 PT 至 11 月 5 日 9:00 PT）；Grok 08:50 档候选文件截至 09:00 仍未到达，按规则不等、照常自己搜；阿里 Qoder 每日 100 Credits、AtomCode CodingPlan 每日限量名额、智谱 ZCode 每日 3 亿 Token 今日窗口照常；其余沿用条目本次未逐条复核，以官方页为准。
+> 本版核实时间：2026-11-06 20:30（北京时间）；本次为晚间汇总：新增 6 条——蚂蚁百灵 Ling-3.2-flash 上线前两周限时免费（官方定价页与更新日志已核实）、Perch AI 4 条（DeepSeek V4.1 Flash 24 小时无限、Crouton Alpha 全档位限时免费、Qwen 3.8 Max 免费上 Starter、DeepSeek V4.1 Flash 1017 奖励 PT，均官方公告页已核实）、OpenCode Zen Crouton Alpha Free 入口（官方 Zen 文档已核实，明确不含中国）；Lexsi Labs AI 安全黑客松报名已于今日 19:59（北京时间）截止，从“进行中：需要海外账号 / 地区受限”移入“已过期归档”；Grok 20:20 档候选文件截至 20:30 仍未到达，按规则不等、照常自己搜；今日无新增当日急报；阿里 Qoder 每日 100 Credits、AtomCode CodingPlan 每日限量名额、智谱 ZCode 每日 3 亿 Token 今日窗口照常；其余沿用条目本次未逐条复核，以官方页为准。
 > 历史版本见 `archive/`。
 
 ### 今日急报：只限当天
@@ -65,6 +65,8 @@
 
 | 智谱 ZCode · 新用户 5 天试用（2026-11-05 20:30 新增，官方文档已核实） | 在 ZCode 内连接 BigModel 账号后自动获得试用额度，用于 GLM 模型试用；与“每日 3 亿 GLM-5.3-Flash Token”（今日急报区）不是同一口径，两者额度分开显示。官方文档：https://zcode.z.ai/en/docs/configuration | 新用户每天 800 万 Token：GLM-5.3 每天 300 万 + GLM-5.3-Flash 每天 500 万，每日刷新；仅限连接 BigModel 账号后的前 5 天，5 天后过期、需订阅 GLM Coding Plan；无需付款；绑卡、实名要求官方文档未写 | 试用期自首次连接起 5 天；活动整体截止官方文档未写 |
 
+| 蚂蚁百灵 Ling-3.2-flash · 上线前两周限时免费（2026-11-06 20:30 新增，官方定价页与更新日志已核实） | 11 月 5 日发布的原生多模态 MoE（560B 总参 / 25B 激活、1M 上下文，图/文/视频输入），上线前两周 API 免费调用，兼容 OpenAI 与 Anthropic 协议；对话页可先试用。官方定价页：https://developer.ant-ling.com/zh-CN/docs/models/price/ ；更新日志：https://developer.ant-ling.com/zh-CN/docs/getting-started/changelog/ | 上线前 2 周免费，模型 ID `Ling-3.2-flash`，在 developer.ant-ling.com 创建 Token 调用；免费是否适用全部调用、有无用量上限等细则官方页未写；恢复后原价官方定价表暂未列出 | 上线前 2 周（自 2026-11-05 起约两周；官方只写相对期限，未写具体结束日与时刻，以官方页为准） |
+
 ### 进行中：需要海外账号 / 地区受限
 
 | 厂商 / 产品 | 内容 | 额度 / 条件 | 截止 | 限制说明 |
@@ -87,20 +89,28 @@
 | OpenCode Zen · Pulse Alpha Free 隐身测试模型（2026-11-03 20:30 新增，官方 Zen 文档已核实） | 隐身测试模型 `pulse-alpha-free`，输入、输出、缓存读取均为 Free，仅限在 OpenCode 客户端内使用；免费期内收集的数据可能被保留并用于改进模型，敏感内容勿用。官方文档：https://opencode.ai/docs/zen/ | 限时免费；免费档聊天模型仅限 OpenCode 内使用；禁用地区名单（欧盟、冰岛、列支敦士登、挪威、古巴、伊朗、朝鲜、俄罗斯、乌克兰、委内瑞拉）未列中国，大陆可达性以账号实际为准 | 截止未知（官方写 limited time，未公布具体日期） | 需 OpenCode 客户端；免费模型名单以官方文档为准；与 OpenCode Zen 免费池总述条目为同一入口下的新增模型 |
 | Microsoft Foundry Agent Service · Copilot harness 运行时预览期免费（2026-11-03 20:30 新增，微软官方博客已核实） | 公共预览：在 Foundry Agent Service 中选用 Microsoft Copilot harness 时，harness 运行时（sandbox 算力/内存）在计费开始前免费；模型推理与另行计费的工具/连接服务仍按各自价格收费，创建 agent 时选定 harness、创建后暂不支持切换。官方博客：https://devblogs.microsoft.com/foundry/microsoft-copilot-harness-in-foundry/ | harness 运行时免费，模型与工具费用全程另计；需 Azure / Microsoft Foundry 项目；绑卡要求以 Azure 账号规则为准 | harness 运行时免费至 2026-12-01 前（官方写 Billing begins December 1, 2026，未注时区）；自 12 月 1 日起 sandbox 按约 $0.0994/vCPU-小时、$0.0118/GiB-小时计费，地区与协议可能不同 | 需海外账号 / Azure（美元定价，大陆可达性未知） |
 
-| OpenRouter · Crouton Alpha 隐身模型（2026-11-04 20:30 新增，官方模型页已核实） | 匿名第三方提供方在 OpenRouter 上线的隐身推理模型 `stealth/crouton-alpha`，面向高频重复的 Agent 子任务、工具调用与文档分析；支持文本、图像、视频、文件与音频输入，返回文本，支持工具调用与结构化输出。官方模型页：https://openrouter.ai/stealth/crouton-alpha | 输入、输出定价均为 $0，1M 上下文；提示词与输出可能被提供方保留、不用于训练，机密内容勿用；限速等细则官方模型页未写，以官方页为准；OpenCode Zen 官方文档本次未见该模型，不写 OpenCode 入口 | 截止未知（官方模型页未公布结束日；隐身预览期结束可能改价，以官方页为准） | 需海外账号；大陆直连可达性未知 |
+| OpenRouter · Crouton Alpha 隐身模型（2026-11-04 20:30 新增，官方模型页已核实） | 匿名第三方提供方在 OpenRouter 上线的隐身推理模型 `stealth/crouton-alpha`，面向高频重复的 Agent 子任务、工具调用与文档分析；支持文本、图像、视频、文件与音频输入，返回文本，支持工具调用与结构化输出。官方模型页：https://openrouter.ai/stealth/crouton-alpha | 输入、输出定价均为 $0，1M 上下文；提示词与输出可能被提供方保留、不用于训练，机密内容勿用；限速等细则官方模型页未写，以官方页为准；OpenCode Zen 入口见本区新增条目（`crouton-alpha-free`，明确不含中国） | 截止未知（官方模型页未公布结束日；隐身预览期结束可能改价，以官方页为准） | 需海外账号；大陆直连可达性未知 |
 
 
 | Fish Audio · S2.1 Pro Free 语音 API（2026-11-04 20:30 补录，官方博客已核实） | 顶级语音模型 S2.1 Pro 经 Fish API 以模型名 `s2.1-pro-free` 免费调用，83 种语言，支持语音克隆与多说话人对话。官方博客：https://fish.audio/blog/s2-1-pro-free-api/ | 免费，无硬字符上限、受合理使用政策约束；无 SLA 与延迟保证，请求可能被用于改进模型，机密内容勿用；年收入超 100 万美元的产品等部分商业场景有限制，商用前请核对定价与限速页；绑卡要求官方博客未提（写明无需信用卡、无候补名单） | 免费至 2026-11-30（官方博客已核实；该限免自 2026 年 6 月起多次延期至此） | 需海外账号；大陆可达性未知 |
 
 | IteraCompute · Qwen3.8-27B 每月 30M Token 免费（2026-11-05 20:30 新增，官方站已核实） | 注册并验证邮箱（或 Google 登录）后，经 IteraCompute API 或 OpenCode / Cline 内置入口调用 `qwen/qwen3.8-27b`；仅限该模型，其他模型另计费。官方免费页：https://iteracompute.com/free/ | 每月 30M Token（输入 + 输出含推理合计，按 UTC 自然月重置、不结转），128K 上下文、输出上限 8192 Token、160K TPM；无需绑卡、无需充值；超额直接返回 429、不自动扣费；共享算力，繁忙时可能排队、无 SLA。注意：运营商身份未公开（域名 2026 年 8 月注册），请勿用其调用敏感内容 | 免费推广至 2026-11-24 00:00（PT，北京时间 2026-11-24 16:00） | 需海外账号；邮箱或 Google 注册，大陆可达性未知 |
 
-| Lexsi Labs · AI Safety and Alignment 黑客松（2026-11-05 20:30 新增，官方黑客松页已核实；Grok 20:20 档提供线索） | 线上黑客松（合作方 Cohere Labs、Hugging Face）：用 Lexsi 开源后训练/安全工具链 + Cohere Labs 开源权重模型做对齐、红队、Agent 微调；1–3 人组队；注册并加入 Discord 的队伍可领 Hugging Face GPU credits。官方黑客松页：https://hackathon.lexsi.ai/ | 参与免费、无需报名费；注册且加入 Discord：前 800 队各 $20 HF credits（先兑先得，兑后 30 天有效；HF 兑券可能要求绑支付方式）；入围 Demo Day（最多 20 队）另得 $200 HF credits；名次奖为 Lexsi / Cohere credits + HF Pro，以官网 Prizes 为准 | 报名截止 2026-11-05 日末（AoE，约合北京时间 2026-11-06 19:59）；作品提交 2026-11-14 日末（AoE）；Demo Day 2026-11-22 | 仅限黑客松参与者；需海外 Discord / Hugging Face 账号，大陆可达性未知 |
-
 | XCrawl · 新账号 1000 credits 试用（2026-11-05 20:30 新增，官方定价页已核实；Grok 20:20 档提供线索） | AI 向网页抓取 API（非模型推理：抓取/爬取/SERP，输出 JSON / Markdown / AI-ready 格式、MCP），新账号送 1000 credits 试用。官方定价页：https://www.xcrawl.com/buy/ | 新账号一次性 1000 credits，无需绑卡；每次请求按复杂度扣 credits（如 Scrape 1 积分/页、Search 1 积分/10 条结果）；免费套餐标注为 30 天试用，积分过期规则官方文档未进一步写死，以官方页为准 | 免费套餐标注 30 天试用（自注册起，具体以官方页为准）；活动整体截止官方页未写 | 需海外账号；大陆可达性未知 |
+
+| Perch AI · DeepSeek V4.1 Flash 24 小时无限（2026-11-06 20:30 新增，官方公告页已核实） | Pro / Ultra 用户在桌面端模型菜单选 DeepSeek V4.1 Flash (Promo)，24 小时内不限量调用、不计入套餐额度与用量上限；每账号同时最多 3 个请求。官方公告页：https://www.perchai.app/announcements | 24 小时无限，不计入套餐额度；需 Pro 或 Ultra 订阅 | 至北京时间 2026-11-07 14:00（美东 11 月 7 日 01:00）；之后促销模型下架，常规 DeepSeek V4.1 Flash 1017 照常用套餐额度 | 需 Pro（10 美元/月）或 Ultra（30 美元/月）付费订阅；海外产品，大陆可达性未知 |
+
+| Perch AI · Crouton Alpha 全档位限时免费（2026-11-06 20:30 新增，官方公告页已核实） | 隐身推理模型 Crouton Alpha，1M 上下文，图/文输入，面向 Agent 子任务、工具调用与文档分析；Starter（含免费档）至 Ultra 全档位可用，Starter 计入免费档额度、Pro / Ultra 不计入手动模型额度。官方公告页：https://www.perchai.app/announcements | 限时免费，无需绑卡（Starter 免费档可用）；提示词与输出可能被提供方保留、不用于训练，机密内容勿用 | 限时免费，官方未公布结束日（自 2026-11-03 起） | 海外产品，大陆可达性未知 |
+
+| Perch AI · Qwen 3.8 Max 免费上 Starter（2026-11-06 20:30 新增，官方公告页已核实） | Qwen 3.8 家族顶级模型，262K 上下文，图输入；在 Perch 免费 Starter 档可用，计入 Starter 额度。官方公告页：https://www.perchai.app/announcements | 免费档可用，无需绑卡；Pro 档为常规固定模型 | 至 2026-11-20 12:00（美东，北京时间 11 月 21 日 01:00）；到期后离开 Starter 阵容 | 海外产品，大陆可达性未知 |
+
+| Perch AI · DeepSeek V4.1 Flash 1017 奖励 PT（2026-11-06 20:30 新增，官方公告页已核实） | Pro 额外得 50,000 PT、Ultra 额外得 150,000 PT 的 DeepSeek V4.1 Flash 1017 奖励额度，在套餐额度之外、优先消耗；每 5 小时最多用掉奖励额度的 10%。官方公告页：https://www.perchai.app/announcements | Pro +50,000 PT、Ultra +150,000 PT，不计入套餐额度 | 至 2026-11-30；用完或到期后恢复用套餐额度 | 需 Pro 或 Ultra 付费订阅；海外产品，大陆可达性未知 |
+
+| OpenCode Zen · Crouton Alpha Free（2026-11-06 20:30 新增，官方 Zen 文档已核实） | 隐身推理模型 `crouton-alpha-free`，1M 上下文，多模态输入，面向 Agent 子任务、工具调用与文档分析；仅限 OpenCode 内使用。官方文档：https://opencode.ai/docs/zen/ | 输入、输出、缓存读取均免费；免费期内数据保留 30 天、不用于训练，机密内容勿用 | 限时免费；@opencode 11 月 3 日公告称“free for the next week”（约至 11 月 10 日），官方文档未写具体结束日 | 明确不含中国（含港澳）等地区（官方文档地区名单）；需海外账号 |
 
 ### 即将到期：3–5 天内
 
-MiniMax M2 API 免费试用至 11 月 7 日 08:00（北京时间），见“进行中：能直接领”区。TRAE 宝个人助理限时免费、智谱 AutoClaw 国内版与国际版 M11W1、阶跃星辰 StepAudio 3 系列限时免费均至 11 月 8 日（4 天内），见各自条目。另：MiniMax M3 是否同在免费试用范围内仍未经官方页核实，见“待确认线索”区。Lexsi Labs AI 安全黑客松报名截止 11 月 6 日 19:59（北京时间），见“进行中：需要海外账号 / 地区受限”区。
+Perch AI DeepSeek V4.1 Flash 24 小时无限至 11 月 7 日 14:00（北京时间），MiniMax M2 API 免费试用至 11 月 7 日 08:00（北京时间），见各自条目。TRAE 宝个人助理限时免费、智谱 AutoClaw 国内版与国际版 M11W1、阶跃星辰 StepAudio 3 系列限时免费均至 11 月 8 日（4 天内），见各自条目。OpenCode Zen Crouton Alpha Free 免费期按 @opencode 公告约至 11 月 10 日，见“进行中：需要海外账号 / 地区受限”区。另：MiniMax M3 是否同在免费试用范围内仍未经官方页核实，见“待确认线索”区。
 
 ### 待确认线索：不进正文
 
@@ -137,6 +147,8 @@ MiniMax M2 API 免费试用至 11 月 7 日 08:00（北京时间），见“进�
 | 智谱 AutoClaw 国内版 · 每周福利 M10W4 | 上一周福利，已由 M11W1（2026-11-02 起领）接替 | 2026-11-01 23:59 失效，已归档，不当成可领活动发 |
 | OpenRouter · Thinking Machines Inkling / Inkling Small `:free` | 经 agentic harness 调用的免费档，输入、输出定价曾为 $0 | 官方 `expiration_date` 为 2026-11-04；2026-11-05 12:00 复核官方模型列表 API 已无 `:free` 变体，仅剩付费版（营销页仍显示 Free 疑为缓存，以 API 为准）；2026-11-05 中午急报检查时移入归档 |
 | Token360 · MiniMax M3.1 Flash 促销免费额度 | 注册并验证邮箱后，经 Token360 API 或 Playground 调用 `minimax-m3.1-flash` 可消耗促销免费额度；每计费账号活动期内合计最多 1 亿免费 Token，保存有效支付方式或有成功充值记录可提至 5 亿 | 活动 2026-11-02 09:00 至 2026-11-05 09:00（PT，北京时间 2026-11-03 01:00 至 2026-11-06 01:00）；2026-11-06 09:00 复核官方促销条款页确认已到期，移入归档 |
+
+| Lexsi Labs · AI Safety and Alignment 黑客松 | 线上黑客松（合作方 Cohere Labs、Hugging Face）：注册并加入 Discord 的队伍可领 Hugging Face GPU credits（前 800 队各 $20 HF credits） | 报名截止 2026-11-05 日末（AoE，北京时间 2026-11-06 19:59），报名通道已关闭；作品提交仍至 2026-11-14 日末（AoE），但无报名入口后不再作为可领活动；2026-11-06 20:30 晚间汇总时移入归档 |
 
 | Kilo Code（Kilo Gateway）· Ling 3.1 Flash 1019 `-free` | 模型 `inclusionai/ling-3.1-flash-1019-free` 输入/输出/缓存读写均 $0，免费至 2026-11-03 | 免费至 2026-11-03；2026-11-03 20:30 复核时 Kilo 官方模型列表已无该 `-free` 变体，仅剩付费版 `inclusionai/ling-3.1-flash`，移入归档 |
 | Vercel AI Gateway · Ling 3.1 Flash 1019 | 同模型限时免费上架，免费请求不计费，11 月 3 日起按公布价收费 | 免费至 2026-11-03（未写具体时刻）；2026-11-03 20:30 晚间汇总时移入归档 |
