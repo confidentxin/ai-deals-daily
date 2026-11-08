@@ -55,7 +55,7 @@
 | 火山方舟 · Managed Agents 首次开通赠送包（2026-11-02 20:30 新增，官方计费页已核实） | Managed Agents 首次开通即赠送免费额度包。官方计费页：https://docs.volcengine.com/docs/ark/model-pricing?redirect=1&lang=zh | 30 小时 Agent 运行时 + 500 次 web_search 调用；每个账号仅赠送一次，有效期 2 年；免费额度可抵扣 Managed Agents 后付费费用、调用时优先消耗；超出与其他费用以官方计费页为准；需火山引擎账号 | 长期机制；赠送额度自赠送起 2 年有效 |
 | DeepSeek Harness · 首次登录 6 元体验赠金（2026-11-02 20:30 补录，多源交叉、官方未核实） | 首次登录 DeepSeek Harness 自动到账赠金，抵扣 Harness 内任务调用费用；多家媒体与实测帖口径一致，官方赠金规则页本次未直接打开核实。官方产品页：https://www.deepseek.com/harness/ | 6 元/账号，限量发放、赠完即止；到账后 7 天内有效，过期作废；无需充值；是否仍可领以登录后显示为准 | 限量发放（2026-10-17 起）；到账后 7 天有效，具体以登录后显示为准 |
 
-| 阶跃星辰开放平台 · StepAudio 3 系列限时免费（2026-11-03 20:30 新增，官方 API 定价页已核实） | StepAudio 3 系列语音模型（realtime / tts / gen / music / asr-max）在限免期内免费调用，11 月 9 日起按公布单价正式计费（如 realtime 0.65 元/会话分钟）。官方定价页：https://platform.stepfun.com/docs/zh/guides/pricing/details | 限时免费；需注册开放平台并创建 API Key；绑卡、实名要求官方定价页未写；限免结束后续费单价以定价页为准，调用前请确认 | 限时免费至 2026-11-08 23:59:59（北京时间），自 2026-11-09 00:00:00 起正式计费 |
+| 阶跃星辰开放平台 · StepAudio 3 系列限时免费（2026-11-03 20:30 新增，官方 API 定价页已核实；2026-11-08 12:00 复核官方定价页确认延期） | StepAudio 3 系列语音模型（realtime / tts / gen / music / asr-max）在限免期内免费调用，11 月 17 日 12:00 起按公布新价正式计费（如 realtime 0.65 元/会话分钟）。官方定价页：https://platform.stepfun.com/docs/zh/guides/pricing/details | 限时免费；需注册开放平台并创建 API Key；绑卡、实名要求官方定价页未写；限免结束后续费单价以定价页为准，调用前请确认；部分语音模型价格因上游算力成本上涨调整，新价与计费同日生效 | 限时免费至 2026-11-17 11:59:59（北京时间），自 2026-11-17 12:00:00 起正式计费（原定 11 月 8 日截止，官方定价页 11 月 7 日更新为延期） |
 | 月之暗面 Kimi API · 文件接口限时免费（2026-11-03 20:30 新增，官方定价页已核实） | 文件相关接口（文件内容抽取 / 文件存储）限时免费：只上传并抽取文档时文件接口本身不产生费用；抽取出的文档内容若作为模型 Input 仍按量计费。与 Kimi K3.1 Pro 免费档限量使用不是同一口径。官方定价页：https://platform.kimi.com/docs/pricing/chat | 文件接口本身免费，模型推理仍按 Token 计费；单文件上限等细则见文件 API 文档；绑卡要求官方定价页未提 | 截止未知（官方仅写“限时免费”，未公布结束日） |
 
 | 腾讯 WorkBuddy / CodeBuddy · 混元 Hy4 正式版限时免费（2026-11-04 20:30 新增，腾讯官方通稿已核实） | 11 月 4 日发布的 Hy4 正式版在 WorkBuddy / CodeBuddy 限时免费使用；Hy4 API 定价不变（输入 6 元/百万 Tokens、输出 18 元/百万 Tokens、缓存命中 0.3 元/百万 Tokens）。官方通稿：https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/ | 官方通稿只写 11 月 4 日至 15 日免费、未公布每人额度；多家媒体口径一致称免费额度有限、每日分配、触及限额后消耗积分继续使用、繁忙时排队，额度以客户端实际显示为准；Hy4 在腾讯云 TokenHub 同期 5 折至 12 月 31 日为付费折扣、非免费额度；Hy3 限免一并延长的说法官方通稿未写新截止，仍在待确认线索区 | 2026-11-04 至 2026-11-15（官方通稿未写时刻与时区） |
@@ -124,7 +124,7 @@
 
 ### 即将到期：3–5 天内
 
-TRAE 宝个人助理限时免费、智谱 AutoClaw 国内版与国际版 M11W1、阶跃星辰 StepAudio 3 系列限时免费均至 11 月 8 日，见各自条目。Perch AI DeepSeek V4.1 Flash 无限调用至 11 月 9 日 12:59（北京时间）、智谱 ZCode WEEKEND BUILD 第八轮至 11 月 9 日 09:00、OpenCode Zen Crouton Alpha Free 按 @opencode 公告约至 11 月 10 日、fal FLUX 3 Max 周末免费至 11 月 10 日 04:00（北京时间）、国家超算 MaaS 特惠专场至 11 月 10 日 23:59、蚂蚁 LingDT-Decision-1.0 限时免费延长至 11 月 11 日，见各自条目。
+TRAE 宝个人助理限时免费、智谱 AutoClaw 国内版与国际版 M11W1 均至 11 月 8 日，见各自条目。Perch AI DeepSeek V4.1 Flash 无限调用至 11 月 9 日 12:59（北京时间）、智谱 ZCode WEEKEND BUILD 第八轮至 11 月 9 日 09:00、OpenCode Zen Crouton Alpha Free 按 @opencode 公告约至 11 月 10 日、fal FLUX 3 Max 周末免费至 11 月 10 日 04:00（北京时间）、国家超算 MaaS 特惠专场至 11 月 10 日 23:59、蚂蚁 LingDT-Decision-1.0 限时免费延长至 11 月 11 日，见各自条目。
 
 ### 待确认线索：不进正文
 
