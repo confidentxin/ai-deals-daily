@@ -19,9 +19,9 @@
 - 只有一个社媒爆料：只内部跟进，不公开发。
 - 正式发布前，每条都要回官方页复核一次，额度、截止以官方页为准。
 
-## 今日版：2026-11-07
+## 今日版：2026-11-08
 
-> 本版核实时间：2026-11-07 20:30（北京时间）；本次为晚间汇总：新增 7 条——阿里 Qoder CN（国内版）Qoduck 每日免费额度（官方活动文档已核实）、智谱 ZCode WEEKEND BUILD 第八轮（多源交叉、官方未核实；由待确认线索区升入正文）、fal FLUX 3 Max 周末免费视频生成（官方产品页已核实）、Maritaca AI S5-free（官方 GitHub 定价文档已核实）、OpenCode Zen Iceman Free / Inkling 2 Small Free（官方文档已核实）、OpenRouter LiquidAI LFM2.5-2.6B 与 LFM3-1.7B `:free`（官方模型页已核实）、Google 学生优惠 1 年免费 Google AI Plus / Pro（官方博客与条款已核实，须绑支付方式、到期自动续费请提前取消）；过期 1 条——OpenCode Zen Pulse Alpha Free 已于 11 月 6 日下线（官方 Deprecated 表已核实），移入“已过期归档”；Grok 13:50 与 20:20 两档候选文件均已逐条回官方页核实并处理；阿里 Qoder 每日 100 Credits、AtomCode CodingPlan 每日限量名额、智谱 ZCode 每日 3 亿 Token 今日窗口照常；其余沿用条目本次未逐条复核，以官方页为准。
+> 本版核实时间：2026-11-08 20:30（北京时间）；本次为晚间汇总：新增 10 条——智谱 AutoClaw 国内版 M11W2（11 月 9 日起领 50M Tokens，官方博客已核实）、小米 MiMo TTS 系列限时免费（官方定价页已核实）、腾讯 EdgeOne Makers 每月 50 万 Token 内置模型免费额度（官方配额文档已核实）、智谱 AutoClaw 国际版 M11W2（11 月 9 日起领 100M Tokens，官方博客已核实）、Parallel Decisions Fast 上架 OpenRouter 免费 7 天（官方博客已核实）、Fireworks Muse Glimmer 30B SFT 训练免费至 11 月 30 日（官方博客已核实）、Vercel AI Gateway Nemotron 3.5 Lightning Free 与 Reflection Beam 上线期免费（官方 changelog 已核实）、Hetzner Inference API 实验期免费（官方文档已核实；社区转述的 12 月 8 日结束与停发新 token 未见官方页佐证）、KRAFTON Raon-1 mini preview 托管 API 免费（官方文档已核实）；补录 2 条——Daytona 新用户 200 美元沙箱算力（官方定价页已核实，非模型推理额度）、Google Vids 个人账号每月免费 AI 视频剪辑（多源交叉、官方未逐条核实）；今日无新增急报；过期 0 条——智谱 AutoClaw M11W1 国内版与国际版、字节 TRAE 宝均至今晚 23:59，仍在今日有效期内，明日汇总时移入归档；Grok 20:20 档候选文件已逐条回官方页核实并处理；其余沿用条目本次未逐条复核，以官方页为准。
 > 历史版本见 `archive/`。
 
 ### 今日急报：只限当天
@@ -69,6 +69,12 @@
 | 蚂蚁百灵 Ling-3.2-flash · 上线前两周限时免费（2026-11-06 20:30 新增，官方定价页与更新日志已核实） | 11 月 5 日发布的原生多模态 MoE（560B 总参 / 25B 激活、1M 上下文，图/文/视频输入），上线前两周 API 免费调用，兼容 OpenAI 与 Anthropic 协议；对话页可先试用。官方定价页：https://developer.ant-ling.com/zh-CN/docs/models/price/ ；更新日志：https://developer.ant-ling.com/zh-CN/docs/getting-started/changelog/ | 上线前 2 周免费，模型 ID `Ling-3.2-flash`，在 developer.ant-ling.com 创建 Token 调用；免费是否适用全部调用、有无用量上限等细则官方页未写；恢复后原价官方定价表暂未列出 | 上线前 2 周（自 2026-11-05 起约两周；官方只写相对期限，未写具体结束日与时刻，以官方页为准） |
 
 | 阿里 Qoder CN（国内版）· 匿名模型 Qoduck 每日免费额度（2026-11-07 20:30 新增，官方活动文档已核实） | 2026 年 11 月 7 日起，Qoder CN 新老个人用户每日赠送 Qoduck 免费使用额度；额度内计费系数 0.5×→0.0×、不消耗 Credits（含思考强度「极高 / 最大」），也不扣每日领取的 100 通用 Credits；自动生效无需领取；免费账号与 Credits 为 0 亦可参与；仅 Qoder CN 本体（IDE / JetBrains 插件 / CLI 暂不支持）。官方活动页：https://docs.qoder.cn/events/qoduck-free | 每日一定次数（具体次数官方未写，付费订阅高于免费用户）；用尽后可按原 0.5× 用 Credits 继续；企业订阅（团队版 / 企业标准版 / 企业专属版）不适用；需更新到最新版 | 活动自 2026-11-07 起，结束时间待定（官方称会提前通知）；每日额度当天用尽即止、次日恢复 |
+
+| 智谱 AutoClaw 国内版 · 每周福利 M11W2（2026-11-08 20:30 新增，官方博客已核实） | 11 月 9 日起登录国内版 AutoClaw 领取下一期 Tokens，接替今晚 23:59 失效的 M11W1。官方博客：https://autoclaw.zhipuai.cn/blog/news/M11W2/ | 活动期间登录即得 50M Tokens，每个账号限领一次；官方博客未提绑卡、实名、充值要求，适用模型官方页未写明；奖励逾期自动失效 | 活动 2026-11-09 00:00 至 2026-11-15 23:59（北京时间），积分有效期至 11 月 15 日 23:59 |
+
+| 小米 MiMo 开放平台 · TTS 系列限时免费（2026-11-08 20:30 新增，官方定价页已核实） | `mimo-v2.5-tts`、`mimo-v2.5-tts-voiceclone`、`mimo-v2.5-tts-voicedesign` 在开放平台按量接口中标为限时免费；ASR 系列按音频时长另行计费，不属于本条；Studio 可先试听。官方定价页：https://mimo.mi.com/docs/zh-CN/price/pay-as-you-go | 限时免费，需注册开放平台并创建 API Key；官方定价页未写每人额度上限、绑卡或实名要求；缓存写入亦标限时免费 | 截止未知（官方只写“限时免费”，未公布结束日与时刻） |
+
+| 腾讯 EdgeOne Makers · 内置模型免费额度（2026-11-08 20:30 新增，官方配额文档已核实） | 免费版通过 Models 网关调用内置模型，每账号每月 50 万 Token，同账号项目共享；兼容 OpenAI / Anthropic 协议；新用户获赠 50 万免费 Token（限时赠送），无需信用卡或支付方式。官方配额文档：https://pages.edgeone.ai/document/limits-and-quotas ；免费 LLM API 说明：https://pages.edgeone.ai/zh/use-cases/free-llm-api | 免费版配额：内置模型 500,000 tokens/month；内置模型包括 `@makers/hy3`、`@makers/hy3-preview`、`@makers/deepseek-v4-pro`、`@makers/deepseek-v4-flash`、`@makers/deepseek-v4.1-flash`、`@makers/minimax-m3`、`@makers/minimax-m2.7`、`@makers/kimi-k2.6`、`@makers/zhuque-text`；自带其他厂商密钥调用外部模型仍由原厂商计费；腾讯云文档称属初创扶持、请勿在生产环境使用 | 截止未知（官方写免费版配额在商业化后可能调整，将通过控制台公告更新；未公布结束日） |
 
 | 智谱 ZCode · WEEKEND BUILD 第八轮（2026-11-07 20:30 新增，多源交叉、官方未核实） | 周末包 5 亿 GLM-5.3-Flash Token，仅限 ZCode 客户端内使用；与每日 3 亿额度为并行活动、额度独立；多个渠道口径一致（聚合站 aipromonow、mydealz 转述、LINUX DO 社区帖 2026-11-07），官方活动页与客户端卡片本次未直接核实；另有来源称下周末还有一轮 5 亿、两轮共 10 亿，以客户端内卡片为准。官方产品页：https://zcode.z.ai/cn | 每人 5 亿 GLM-5.3-Flash Token；领取后切换到 Global Building 通道并选 GLM-5.3-Flash；免费账号可领、无需订阅 Coding Plan；绑卡、实名要求各来源均未提及 | 声称 2026-11-06 23:00 生效、至 2026-11-09 09:00（北京时间）作废；未用完不结转 |
 
@@ -122,9 +128,27 @@
 
 | Google · 学生优惠 1 年免费 Google AI Plus / Pro（2026-11-07 20:30 新增，官方博客与条款已核实） | 符合条件的高校学生可领 12 个月免费方案：美国学生为 Google AI Pro（含 Gemini Omni、约 4× 用量、5TB 存储等）；美国以外 140+ 市场为 Google AI Plus（含 Gemini Omni、约 2× 用量、400GB 存储）。官方博客：https://blog.google/innovation-and-ai/products/gemini-app/student-offer-google-ai/ ；领取页：https://one.google.com/ai-student | 须 SheerID 学生验证（学校邮箱）、个人 Google 账号，并在注册时添加有效付款方式；须年满 18 岁、高等教育在读；免费期后自动按月扣费，请提前取消自动续费；中国大陆是否在适用市场以内以领取页实际资格为准 | 须在 2026-12-31 前兑换（官方条款口径）；免费期自兑换日起 12 个月 | 仅限学生；需海外 Google 服务与支付方式；中国大陆资格以领取页为准 |
 
+| 智谱 AutoClaw 国际版 · Weekly Perk M11W2（2026-11-08 20:30 新增，官方博客已核实） | 11 月 9 日起登录国际版 AutoClaw 领取本周 Tokens，接替今晚 23:59 失效的 M11W1。官方博客：https://autoclaw.z.ai/blog/news/M11W2/ | 登录领取 100M Tokens（官方写 worth 10,000 credits），每账号限领一次；官方博客未提绑卡要求；与国内版金额不同，两站分别以各自博客为准 | 活动 2026-11-09 00:00 至 2026-11-15 23:59（UTC+8，即北京时间同时段）；奖励 11 月 15 日 23:59（UTC+8）失效 | 需海外账号（国际版海外站），大陆可达性未知 |
+
+| Parallel · Decisions Fast（OpenRouter `:free`）（2026-11-08 20:30 新增，官方博客已核实） | Parallel Decisions API 上架 OpenRouter，一次请求可对同一 `state` 提最多 100 个问题、联网调研后返回结构化答案（概率 / 选项 / 评分）与引用；走 Decisions API 而非普通 chat completions。官方博客：https://parallel.ai/blog/decisions-openrouter ；模型页：https://openrouter.ai/parallel/decisions-fast:free | 模型 ID `parallel/decisions-fast:free`，OpenRouter 模型页输入/输出定价均为 Free / $0，32K 上下文；需已有或新建 OpenRouter API Key，无需另开 Parallel 账号；免费 `:free` 端点受 OpenRouter 常规限速（累计购买不足约 10 美元时约 20 请求/分钟、每天 50 请求）；官方未写绑卡要求 | 官方博客（2026-11-06）写“Try Parallel Decisions free for 7 days on OpenRouter”，自发布日起约至 2026-11-13，未写具体时刻；以官方页当前展示为准 | 需海外账号（OpenRouter），大陆直连可达性未知 |
+
+| Fireworks · Muse Glimmer 30B 监督微调（SFT）限免（2026-11-08 20:30 新增，官方博客已核实） | 在 Fireworks UI 与 Serverless Training API 上对 Muse Glimmer 30B 做 SFT 训练免费；属训练算力免费，不是推理免费用量。官方博客：https://fireworks.ai/blog/train-muse-glimmer-for-free | 官方博客写通过 11 月 30 日免费、无需信用卡；推理（含评估调用）另行计费；cookbook 写促销适用于在 2026-12-01T00:00:00-08:00 之前启动的 LoRA SFT 任务（北京时间 2026-12-01 16:00），RL / DPO / 全参数训练、部署与训练外推理不在范围内 | 官方博客写 through November 30（未注时区）；cookbook 以 2026-12-01T00:00:00-08:00 为拒绝新启动的时间点，换算为北京时间 2026-12-01 16:00 | 需海外账号（Fireworks），大陆可达性未知 |
+
+| Vercel AI Gateway · Nemotron 3.5 Lightning Free（2026-11-08 20:30 新增，官方 changelog 已核实） | NVIDIA 的 Nemotron 3.5 Lightning 在 AI Gateway 免费提供；30B 总参 / 每 token 激活 3B，1M 上下文，支持工具调用与结构化输出。官方 changelog：https://vercel.com/changelog/nemotron-3-5-lightning-now-available-on-ai-gateway-for-free | 模型 ID `nvidia/nemotron-3.5-lightning-free`；需 Vercel / AI Gateway API Key；官方 changelog 写“The provider may retain prompts for model improvement”，机密内容勿用；官方未写每人额度数字与绑卡要求 | 截止未知（2026-10-14 起免费上架，changelog 未公布结束日） | 需海外账号（Vercel），大陆可达性未知 |
+
+| Vercel AI Gateway · Reflection Beam 上线期免费（2026-11-08 20:30 新增，官方 changelog 已核实） | Reflection AI 的 Beam（曾用隐身名 `stealth/cat-jam`）在 AI Gateway 上线期内免费；Apache 2.0 开源权重，1M 上下文，面向编程与 agent 任务。官方 changelog：https://vercel.com/changelog/reflection-ai-beam-now-available-on-ai-gateway-for-free | 两种免费用法：`reflection/beam`（免费期结束后自动转付费、无中断）或 `reflection/beam-free`（免费期结束即停止服务）；需 AI Gateway API Key；官方未写每人额度数字 | 截止未知（官方写“free to use for a limited time during the launch period”，changelog 发布于 2026-10-16，未公布具体结束日） | 需海外账号（Vercel），大陆可达性未知 |
+
+| Hetzner · Inference API 实验期免费（2026-11-08 20:30 新增，官方文档已核实） | 实验性 OpenAI 兼容推理 API，当前提供 `Qwen/Qwen3.6-35B-A3B-FP8` 与 `Qwen3.8-27B`，262K 上下文，文本+图像；官方写不存储请求/响应正文。官方文档：https://docs.hetzner.com/general/company-and-policy/experiments/inference/ | 实验期内免费；每 API Key 每 60 秒最多 10 次请求、4M 输入 Token、100k 输出 Token，超限返回 429；旧 Base URL `https://inference.hetzner.com/api/v1` | 截止未知（官方文档只写实验期内免费、状态变化会提前邮件通知，未公布结束日）；社区转述一封声称来自 Hetzner 的邮件称不再发放新 experiment token、实验至 2026-12-08 结束、旧 Base URL 仅用至 2026-11-10，该邮件全文未出现在官方文档页，未获官方页证实，新用户能否申领请以控制台为准 | 需海外账号；若邮件属实则新用户可能无法再领 experiment token，大陆可达性未知 |
+
+| KRAFTON Raon-1 mini preview · 托管 API 预览期免费（2026-11-08 20:30 新增，官方文档已核实） | `raon-1-mini-preview`（约 30B-A4B，韩英）通过托管 API 免费调用，兼容 OpenAI Chat Completions / Responses 与 Anthropic Messages；模型权重另以 Apache 2.0 在 Hugging Face 开源，与托管 API 条款分开。官方文档：https://raon-mini.krafton.ai/en/docs.md | 官方文档写“The model price is zero during this preview. Token usage and rate limits still apply.”；条款写 beta 期间免费，结束后收费前会通知；需在 Raon 控制台创建 API Key；Base URL `https://raon-api.krafton.ai`；官方文档未写每人 Token 总量上限（有速率限制与 262,144 上下文）；官方入门页未见邀请制说明，以官网申请入口为准；绑卡要求官方页未提 | 截止未知（条款：beta 持续至 KRAFTON 宣布结束或终止项目；未公布具体日期） | 需海外账号；大陆可达性未知 |
+
+| Daytona · 新用户 200 美元沙箱算力（2026-11-08 20:30 补录，官方定价页已核实） | 新用户获赠 200 美元免费沙箱算力；属沙箱算力额度，不是模型推理免费。官方定价页：https://www.daytona.io/pricing | 官方定价页写“$200 in free compute included”；聚合站补充称 100 美元验邮箱即得、另 100 美元需绑卡后发放，仅限 CPU 沙箱、不可用于 GPU，该分两部分发放的细节官方定价页文本未见，以聚合站口径为准；未公布过期日 | 截止未知（官方未公布过期日） | 需海外账号；大陆可达性未知 |
+
+| Google Vids · 个人账号每月免费 AI 视频剪辑（2026-11-08 20:30 补录，多源交叉、官方未核实） | 个人 Google 账号可在 vids.new 用 Gemini Omni 1.1 Flash 免费生成 AI 视频剪辑；多个独立来源口径一致，均引 Google 帮助中心/可用性页，本次未直接打开 Google 官方帮助页逐字核对 | 个人账号每月 6 条 AI 视频/头像生成（合计约 60 秒）+ 50 credits（配音/图片等），每月 1 日重置、不结转 | 月度额度（自 2026 年 9 月 23 日起上线）；长期机制，以官方页为准 | 需海外 Google 服务；中国大陆资格以实际可用为准 |
+
 ### 即将到期：3–5 天内
 
-TRAE 宝个人助理限时免费、智谱 AutoClaw 国内版与国际版 M11W1 均至 11 月 8 日，见各自条目。Perch AI DeepSeek V4.1 Flash 无限调用至 11 月 9 日 12:59（北京时间）、智谱 ZCode WEEKEND BUILD 第八轮至 11 月 9 日 09:00、OpenCode Zen Crouton Alpha Free 按 @opencode 公告约至 11 月 10 日、fal FLUX 3 Max 周末免费至 11 月 10 日 04:00（北京时间）、国家超算 MaaS 特惠专场至 11 月 10 日 23:59、蚂蚁 LingDT-Decision-1.0 限时免费延长至 11 月 11 日，见各自条目。
+TRAE 宝个人助理限时免费、智谱 AutoClaw 国内版与国际版 M11W1 均至 11 月 8 日，见各自条目。Perch AI DeepSeek V4.1 Flash 无限调用至 11 月 9 日 12:59（北京时间）、智谱 ZCode WEEKEND BUILD 第八轮至 11 月 9 日 09:00、OpenCode Zen Crouton Alpha Free 按 @opencode 公告约至 11 月 10 日、fal FLUX 3 Max 周末免费至 11 月 10 日 04:00（北京时间）、国家超算 MaaS 特惠专场至 11 月 10 日 23:59、蚂蚁 LingDT-Decision-1.0 限时免费延长至 11 月 11 日、Parallel Decisions Fast 免费 7 天约至 11 月 13 日，见各自条目。
 
 ### 待确认线索：不进正文
 
