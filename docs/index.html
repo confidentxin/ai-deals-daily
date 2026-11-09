@@ -47,6 +47,11 @@ details summary { cursor: pointer; font-size: 15px; font-weight: 600; }
 details ul { margin: 10px 0 2px 18px; font-size: 13px; color: #57606a; line-height: 2; }
 .foot { color: #8b949e; font-size: 12px; line-height: 1.8; margin-top: 34px; border-top: 1px solid #e3e5e8; padding-top: 16px; }
 
+.main { max-width: none; }
+.wrap { max-width: 980px; margin: 0 auto; }
+@media (min-width: 1500px) { .wrap { max-width: 1180px; } }
+@media (min-width: 1800px) { .wrap { max-width: 1360px; } }
+
 @media (max-width: 720px) {
   .sidebar { position: static; width: auto; padding: 14px 16px 8px; border-right: none; border-bottom: 1px solid #e3e5e8; overflow: visible; }
   .logo { padding: 2px 4px 10px; font-size: 18px; }
@@ -56,6 +61,7 @@ details ul { margin: 10px 0 2px 18px; font-size: 13px; color: #57606a; line-heig
   .nav a em { float: none; margin-left: 4px; }
   .sidefoot { display: none; }
   .main { margin-left: 0; padding: 16px 16px 40px; }
+  .wrap { max-width: none; }
   .topbar input { max-width: none; }
   .hero { padding: 16px; margin: 14px 0 18px; }
   .hero h1 { font-size: 20px; }
@@ -78,6 +84,7 @@ details ul { margin: 10px 0 2px 18px; font-size: 13px; color: #57606a; line-heig
   <div class="sidefoot">数据来自 AI 厂商活动日报<br>每天 9:00 / 12:00 / 14:00 / 20:30 更新</div>
 </aside>
 <main class="main">
+<div class="wrap">
   <div class="topbar">
     <input id="q" type="search" placeholder="搜索标题和摘要">
   </div>
@@ -771,6 +778,7 @@ details ul { margin: 10px 0 2px 18px; font-size: 13px; color: #57606a; line-heig
 <li>OVHcloud AI Endpoints · Mistral-Nemo-Instruct-2407 免费端点 —— 下线日 2026-11-04（官方下线表已核实）；2026-11-04 20:30 晚间汇总时移入归档</li>
 <li>OpenCode Zen · Pulse Alpha Free 隐身测试模型 —— 下线日 2026-11-06（官方 Zen 文档 Deprecated 表已核实）；2026-11-07 20:30 晚间汇总时移入归档</li>
 </ul></details></section>
+</div>
 </main>
 <script>
 function filterCards(q, sec) {
