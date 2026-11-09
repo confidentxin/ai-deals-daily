@@ -47,6 +47,12 @@
 - 截止：每日领取：19:00 起领，23:00 至次日 09:00 可用，次日 09:00 清零、不结转，当天不领作废
 - 可达性：能直接领（ZCode 官网可下载，智谱账号登录）
 
+#### Ollama Cloud · Reflection Beam（2026-11-09 12:00 新增，官方已核实）
+- 内容：Reflection 开源模型 Beam（501B MoE、1M 上下文）在 Ollama Cloud 限时免费调用，`ollama run beam:cloud` 即可用；本地运行仍免费（Apache 2.0）；与 Vercel AI Gateway 的 Beam 免费档不是同一渠道。官方模型页：https://ollama.com/library/beam
+- 额度：免费调用至截止；截止后按量计费：输入 $0.125/百万 Tokens、缓存输入 $0.015、输出 $0.40；需 Ollama 账号与 API Key；绑卡要求官方页未写
+- 截止：免费至 2026-11-09 16:01（北京时间；官方模型页原文 Nov 9, 2026 12:01 AM PST）
+- 可达性：需海外账号（Ollama Cloud；大陆直连可达性因人而异）
+
 <a name="direct"></a>
 ### 进行中：能直接领
 
