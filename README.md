@@ -1,3 +1,5 @@
+![AI 厂商活动日报](assets/banner.png)
+
 # AI 厂商活动日报 / AI Deals Daily
 
 给中国用户的全球 AI 免费额度与限时活动日报。
