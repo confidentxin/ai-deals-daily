@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 厂商活动日报</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; background: #f7f7f8; color: #1f2328; }
+a { color: #0969da; text-decoration: none; }
+.sidebar { position: fixed; left: 0; top: 0; bottom: 0; width: 232px; background: #fff; border-right: 1px solid #e3e5e8; padding: 22px 16px; overflow-y: auto; }
+.logo { font-size: 19px; font-weight: 800; padding: 2px 10px 18px; letter-spacing: .5px; }
+.logo small { display: block; font-size: 11px; color: #8b949e; font-weight: 500; margin-top: 5px; letter-spacing: 1px; }
+.nav h4 { font-size: 11px; color: #8b949e; font-weight: 600; letter-spacing: 1px; padding: 14px 10px 7px; }
+.nav a { display: block; padding: 8px 10px; border-radius: 8px; color: #24292f; font-size: 14px; }
+.nav a:hover { background: #f0f2f4; }
+.nav a em { float: right; font-style: normal; color: #8b949e; font-size: 12px; }
+.sidefoot { margin-top: 26px; padding: 12px 10px; border-top: 1px solid #eceef0; font-size: 12px; color: #656d76; line-height: 1.8; }
+.main { margin-left: 232px; padding: 26px 34px 60px; max-width: 980px; }
+.topbar { display: flex; gap: 10px; align-items: center; margin-bottom: 18px; }
+.topbar input { flex: 1; max-width: 420px; padding: 9px 13px; border: 1px solid #d8dbdf; border-radius: 9px; font-size: 14px; background: #fff; outline: none; }
+.pills { display: flex; gap: 8px; flex-wrap: wrap; }
+.pill { border: 1px solid #d8dbdf; background: #fff; border-radius: 999px; padding: 6px 14px; font-size: 13px; cursor: pointer; color: #24292f; }
+.pill.on { background: #0969da; border-color: #0969da; color: #fff; }
+.hero { background: #fff; border: 1px solid #e3e5e8; border-radius: 12px; padding: 20px 22px; margin: 18px 0 22px; }
+.hero h1 { font-size: 24px; }
+.hero p { color: #57606a; font-size: 14px; margin-top: 8px; }
+.stats { display: flex; gap: 26px; margin-top: 14px; flex-wrap: wrap; }
+.stats b { font-size: 22px; display: block; }
+.stats span { font-size: 12px; color: #656d76; }
+section { margin-bottom: 30px; }
+section h2 { font-size: 19px; margin-bottom: 12px; }
+section h2 em { font-style: normal; font-size: 13px; color: #8b949e; font-weight: 500; }
+.card { background: #fff; border: 1px solid #e3e5e8; border-radius: 12px; padding: 16px 18px; margin-bottom: 12px; }
+.chead { display: flex; align-items: center; gap: 10px; }
+.chead h3 { font-size: 16px; line-height: 1.45; }
+.vlogo { width: 28px; height: 28px; border-radius: 7px; border: 1px solid #e3e5e8; background: #fff; flex: none; object-fit: contain; padding: 2px; }
+.badge { width: 28px; height: 28px; border-radius: 7px; background: #eef2f6; color: #0969da; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; font-size: 15px; flex: none; }
+.card .c { font-size: 14px; color: #38424c; line-height: 1.65; margin-top: 8px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.card .m { font-size: 13px; color: #57606a; line-height: 1.6; margin-top: 6px; }
+.card .m span { display: inline-block; min-width: 46px; color: #8b949e; }
+.card .go { display: inline-block; margin-top: 12px; font-size: 13px; font-weight: 600; background: #0969da; color: #fff; padding: 7px 15px; border-radius: 8px; }
+.card.extra { display: none; }
+.more { width: 100%; padding: 11px; border: 1px solid #d8dbdf; background: #fff; border-radius: 10px; font-size: 14px; cursor: pointer; color: #24292f; }
+details { background: #fff; border: 1px solid #e3e5e8; border-radius: 12px; padding: 14px 18px; }
+details summary { cursor: pointer; font-size: 15px; font-weight: 600; }
+details ul { margin: 10px 0 2px 18px; font-size: 13px; color: #57606a; line-height: 2; }
+.foot { color: #8b949e; font-size: 12px; line-height: 1.8; margin-top: 34px; border-top: 1px solid #e3e5e8; padding-top: 16px; }
+
+.main { max-width: none; }
+.wrap { max-width: 980px; margin: 0 auto; }
+@media (min-width: 1500px) { .wrap { max-width: 1180px; } }
+@media (min-width: 1800px) { .wrap { max-width: 1360px; } }
+
+@media (max-width: 720px) {
+  .sidebar { position: static; width: auto; padding: 14px 16px 8px; border-right: none; border-bottom: 1px solid #e3e5e8; overflow: visible; }
+  .logo { padding: 2px 4px 10px; font-size: 18px; }
+  .logo small { display: inline; margin: 0 0 0 8px; }
+  .nav h4 { display: none; }
+  .nav a { display: inline-block; padding: 6px 10px; margin: 0 2px 6px 0; font-size: 13px; }
+  .nav a em { float: none; margin-left: 4px; }
+  .sidefoot { display: none; }
+  .main { margin-left: 0; padding: 16px 16px 40px; }
+  .wrap { max-width: none; }
+  .topbar input { max-width: none; }
+  .hero { padding: 16px; margin: 14px 0 18px; }
+  .hero h1 { font-size: 20px; }
+  .stats { gap: 18px; }
+  section h2 { font-size: 17px; }
+  .card { padding: 14px; }
+  .chead h3 { font-size: 15px; }
+}
+
+.board-note { font-size: 13px; color: #57606a; line-height: 1.65; margin: -4px 0 12px; }
+.board .card .m span { margin-right: 8px; }
+
+#deals > h2, section.board > h2 { font-size: 23px; padding-bottom: 10px; border-bottom: 2px solid #d8dbdf; margin-bottom: 18px; }
+.nav a.top { font-weight: 700; }
+.nav a.sub { padding-left: 22px; font-size: 13px; color: #57606a; }
+.pills.subrow { margin-top: 8px; }
+.pills-label { font-size: 12px; color: #8b949e; align-self: center; }
+.pill.sub { font-size: 12px; padding: 5px 12px; }
+.value { font-size: 21px; font-weight: 800; color: #1a7f37; line-height: 1.25; margin: 6px 0 8px; }
+.value small { font-size: 12px; font-weight: 600; color: #656d76; margin-right: 6px; }
+@media (max-width: 720px) {
+  .value { font-size: 18px; }
+  #deals > h2, section.board > h2 { font-size: 20px; }
+}
+
+.nav a.on { color: #0969da; }
+a.pill { text-decoration: none; }
+.subsec > h2 { cursor: pointer; }
+.subsec.closed .card { display: none; }
+.subsec .tw { float: right; color: #8b949e; font-size: 15px; }
+details summary::-webkit-details-marker { display: none; }
+details summary { list-style: none; }
+</style>
+</head>
+<body>
+<aside class="sidebar">
+  <div class="logo">AI 厂商活动日报<small>AI DEALS DAILY</small></div>
+  <nav class="nav"><h4>栏目</h4>
+  <a href="index.html" class="top">薅羊毛</a>
+  <a href="index.html#urgent" class="sub" data-sub="urgent">今日急报 <em>4</em></a>
+  <a href="index.html#direct" class="sub" data-sub="direct">进行中 · 能直接领 <em>32</em></a>
+  <a href="index.html#overseas" class="sub" data-sub="overseas">进行中 · 需海外账号 <em>43</em></a>
+  <a href="index.html#expiring" class="sub" data-sub="expiring">即将到期 <em>7</em></a>
+  <a href="index.html#pending" class="sub" data-sub="pending">待确认线索 <em>12</em></a>
+  <a href="index.html#archived" class="sub" data-sub="archived">已过期归档 <em>29</em></a>
+  <a href="ai-news.html" class="top">AI讯息 <em>7</em></a>
+  <a href="github-weekly.html" class="top on">GitHub周榜 <em>20</em></a>
+  <a href="github-skills.html" class="top">GitHub Skill榜单 <em>15</em></a>
+  <h4>更多</h4>
+  <a href="https://github.com/confidentxin/ai-deals-daily/tree/main/archive" target="_blank" rel="noopener">日报归档</a>
+  <a href="#">关于</a>
+  <a href="https://github.com/confidentxin/ai-deals-daily" target="_blank" rel="noopener">GitHub 开源 ↗</a>
+  </nav>
+  <div class="sidefoot">数据来自 AI 厂商活动日报<br>每天 9:00 / 12:00 / 14:00 / 20:30 更新</div>
+</aside>
+<main class="main">
+<div class="wrap">
+  <div class="topbar">
+    <input id="q" type="search" placeholder="搜索标题和摘要">
+  </div>
+  <div class="pills">
+    <a class="pill top" data-top="deals" href="index.html">薅羊毛</a>
+    <a class="pill top" data-top="ai-news" href="ai-news.html">AI讯息</a>
+    <a class="pill top on" data-top="github-weekly" href="github-weekly.html">GitHub周榜</a>
+    <a class="pill top" data-top="github-skills" href="github-skills.html">GitHub Skill榜单</a>
+  </div>
+<section id="github-weekly" class="board" data-feed="data/stars-latest.json"><h2>GitHub周榜 <em>2026-W45 · 20 条</em></h2>
+  <p class="board-note">数据说明：窗口为北京时间 2026-11-02 00:00 至 2026-11-09 00:00；本周新增星由官方星标历史按 UTC 11-02 至 11-08 加总；总星是 2026-11-10 上午写入本榜的快照，不是现在打开 GitHub 时的实时星数。排序仍按本周新增星，不按发布时间。每条上的 2026-W45 就是这个窗口。介绍根据当日能打开的 README、仓库简介、许可证和主页字段写成；没读到的功能、数字和链接不写。</p>
+  <div class="board-cards">
+  <article class="card" data-sec="github-weekly" data-title="morluto/rea REA（Reverse Engineer Anything）是一套给智能体用的逆向分析 MCP。README 的定位是：看到一个想了解的功能后，从应用行为一直看到原生二进制。官方获取渠道只写了本仓库、rea.tools 和 npm 上的 rea-agents，并提醒同名仓库不代表是正版。 TypeScript"><div class="chead"><span class="badge">1</span><img class="vlogo" alt="" src="https://github.com/morluto.png" onerror="this.remove()"><h3>morluto/rea</h3></div><p class="c">REA（Reverse Engineer Anything）是一套给智能体用的逆向分析 MCP。README 的定位是：看到一个想了解的功能后，从应用行为一直看到原生二进制。官方获取渠道只写了本仓库、rea.tools 和 npm 上的 rea-agents，并提醒同名仓库不代表是正版。</p><p class="m"><span>本周新增星</span>25,432</p><p class="m"><span>总星</span>447,236</p><p class="m"><span>语言</span>TypeScript</p><a class="go" href="https://github.com/morluto/rea" target="_blank" rel="noopener">去 GitHub ↗</a></article>
+  <article class="card" data-sec="github-weekly" data-title="storytold/craft-anything Craft Anything 让你指向网站、应用或游戏，先用检查工具弄清它如何工作，再让你自己的编程智能体做出一个新项目。默认是洁净室：不读原作的代码和文件。仓库写明仍是早期 alpha，引擎用纯 Rust 写成。 Rust"><div class="chead"><span class="badge">2</span><img class="vlogo" alt="" src="https://github.com/storytold.png" onerror="this.remove()"><h3>storytold/craft-anything</h3></div><p class="c">Craft Anything 让你指向网站、应用或游戏，先用检查工具弄清它如何工作，再让你自己的编程智能体做出一个新项目。默认是洁净室：不读原作的代码和文件。仓库写明仍是早期 alpha，引擎用纯 Rust 写成。</p><p class="m"><span>本周新增星</span>21,527</p><p class="m"><span>总星</span>24,696</p><p class="m"><span>语言</span>Rust</p><a class="go" href="https://github.com/storytold/craft-anything" target="_blank" rel="noopener">去 GitHub ↗</a></article>
+  <article class="card" data-sec="github-weekly" data-title="pingdotgg/t3code T3 Code 是一块「智能体控制台」：用 iOS、Android、网页或 Electron 桌面，去控制你电脑上已经登录的 Claude Code、Codex、Cursor、Grok Build、OpenCode、Google Antigravity 和 fx。README 写明不卖东西，项目免费，也希望你在方向不对时可以 fork。 TypeScript"><div class="chead"><span class="badge">3</span><img class="vlogo" alt="" src="https://github.com/pingdotgg.png" onerror="this.remove()"><h3>pingdotgg/t3code</h3></div><p class="c">T3 Code 是一块「智能体控制台」：用 iOS、Android、网页或 Electron 桌面，去控制你电脑上已经登录的 Claude Code、Codex、Cursor、Grok Build、OpenCode、Google Antigravity 和 fx。README 写明不卖东西，项目免费，也希望你在方向不对时可以 fork。</p><p class="m"><span>本周新增星</span>14,120</p><p class="m"><span>总星</span>54,281</p><p class="m"><span>语言</span>TypeScript</p><a class="go" href="https://github.com/pingdotgg/t3code" target="_blank" rel="noopener">去 GitHub ↗</a></article>
+  <article class="card" data-sec="github-weekly" data-title="vercel-labs/agent-desktop Vercel Labs 的 agent-desktop 是一个没有内置模型的桌面 Computer Use CLI：通过操作系统的无障碍树读取 macOS、Windows 和 Linux 上的桌面应用，再按元素引用去点击或输入，不靠截图对像素。循环由你自己的智能体来跑。 Rust"><div class="chead"><span class="badge">4</span><img class="vlogo" alt="" src="https://github.com/vercel-labs.png" onerror="this.remove()"><h3>vercel-labs/agent-desktop</h3></div><p class="c">Vercel Labs 的 agent-desktop 是一个没有内置模型的桌面 Computer Use CLI：通过操作系统的无障碍树读取 macOS、Windows 和 Linux 上的桌面应用，再按元素引用去点击或输入，不靠截图对像素。循环由你自己的智能体来跑。</p><p class="m"><span>本周新增星</span>12,432</p><p class="m"><span>总星</span>20,576</p><p class="m"><span>语言</span>Rust</p><a class="go" href="https://github.com/vercel-labs/agent-desktop" target="_blank" rel="noopener">去 GitHub ↗</a></article>
+  <article class="card" data-sec="github-weekly" data-title="ccch1mneyyy/dsh-Go DSH Go 是 DeepSeek Harness 的第三方 Android 客户端：手机上能自己跑一套 DSH 环境，也能用 SSH 或 DSHarness Remote 去连电脑上的 DSH。README 要求 Android 8.0 及以上，许可证是 AGPL-3.0，并带有桌宠外观。 Dart"><div class="chead"><span class="badge">5</span><img class="vlogo" alt="" src="https://github.com/ccch1mneyyy.png" onerror="this.remove()"><h3>ccch1mneyyy/dsh-Go</h3></div><p class="c">DSH Go 是 DeepSeek Harness 的第三方 Android 客户端：手机上能自己跑一套 DSH 环境，也能用 SSH 或 DSHarness Remote 去连电脑上的 DSH。README 要求 Android 8.0 及以上，许可证是 AGPL-3.0，并带有桌宠外观。</p><p class="m"><span>本周新增星</span>11,606</p><p class="m"><span>总星</span>17,694</p><p class="m"><span>语言</span>Dart</p><a class="go" href="https://github.com/ccch1mneyyy/dsh-Go" target="_blank" rel="noopener">去 GitHub ↗</a></article>
+  <article class="card" data-sec="github-weekly" data-title="deepseek-ai/dsh-superagent-prototype DeepSeek 团队公开的研究原型：面向一个 GitHub 仓库的主动编程智能体，监听 GitHub，可选飞书。被允许的人提出工作后，它开一项任务，在自己的会话和目录里做，再回到原来的对话，例如带回一个 PR。README 写明不是正式产品，也不是生产就绪。 TypeScript"><div class="chead"><span class="badge">6</span><img class="vlogo" alt="" src="https://github.com/deepseek-ai.png" onerror="this.remove()"><h3>deepseek-ai/dsh-superagent-prototype</h3></div><p class="c">DeepSeek 团队公开的研究原型：面向一个 GitHub 仓库的主动编程智能体，监听 GitHub，可选飞书。被允许的人提出工作后，它开一项任务，在自己的会话和目录里做，再回到原来的对话，例如带回一个 PR。README 写明不是正式产品，也不是生产就绪。</p><p class="m"><span>本周新增星</span>11,369</p><p class="m"><span>总星</span>21,793</p><p class="m"><span>语言</span>TypeScript</p><a class="go" href="https://github.com/deepseek-ai/dsh-superagent-prototype" target="_blank" rel="noopener">去 GitHub ↗</a></article>
+  <article class="card" data-sec="github-weekly" data-title="Ebony-Vinyl/dsh-our-free-model 这是一个 DeepSeek Harness 插件。README 称装上之后不必登录、注册或填写 API Key，即可使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的模型，并写明免费车道来自 OpenCode Zen，Kilo 渠道来自 Kilo AI 的公共网关。状态徽章是 beta，请先读免责声明。 JavaScript"><div class="chead"><span class="badge">7</span><img class="vlogo" alt="" src="https://github.com/Ebony-Vinyl.png" onerror="this.remove()"><h3>Ebony-Vinyl/dsh-our-free-model</h3></div><p class="c">这是一个 DeepSeek Harness 插件。README 称装上之后不必登录、注册或填写 API Key，即可使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的模型，并写明免费车道来自 OpenCode Zen，Kilo 渠道来自 Kilo AI 的公共网关。状态徽章是 beta，请先读免责声明。</p><p class="m"><span>本周新增星</span>11,109</p><p class="m"><span>总星</span>67,483</p><p class="m"><span>语言</span>JavaScript</p><a class="go" href="https://github.com/Ebony-Vinyl/dsh-our-free-model" target="_blank" rel="noopener">去 GitHub ↗</a></article>
+  <article class="card" data-sec="github-weekly" data-title="cloudflare/security-audit-skill Cloudflare 开源的编程智能体安全审计 skill。README 把它写成六段流程：侦察、按覆盖面排查、独立验证候选、写成 findings.json、再核验记录、最后出中立报告。它是 Cloudflare 漏洞发现流水线的单仓库起点，不是那套全舰队系统本身。 JavaScript"><div class="chead"><span class="badge">8</span><img class="vlogo" alt="" src="https://github.com/cloudflare.png" onerror="this.remove()"><h3>cloudflare/security-audit-skill</h3></div><p class="c">Cloudflare 开源的编程智能体安全审计 skill。README 把它写成六段流程：侦察、按覆盖面排查、独立验证候选、写成 findings.json、再核验记录、最后出中立报告。它是 Cloudflare 漏洞发现流水线的单仓库起点，不是那套全舰队系统本身。</p><p class="m"><span>本周新增星</span>10,674</p><p class="m"><span>总星</span>68,156</p><p class="m"><span>语言</span>JavaScript</p><a class="go" href="https://github.com/cloudflare/security-audit-skill" target="_blank" rel="noopener">去 GitHub ↗</a></article>
+  <article class="card" data-sec="github-weekly" data-title="NVIDIA/auto-ontology NVIDIA Auto Ontology 用企业元数据搭语义本体和知识图谱，把各系统里不一致的业务定义对齐，再经 MCP、CLI 和 API 交给智能体，用来核对查询、追溯来源。它是 Python 框架，许可证 Apache-2.0，组件里包括由 NVIDIA NIM 驱动的自然语言查数。 Python"><div class="chead"><span class="badge">9</span><img class="vlogo" alt="" src="https://github.com/NVIDIA.png" onerror="this.remove()"><h3>NVIDIA/auto-ontology</h3></div><p class="c">NVIDIA Auto Ontology 用企业元数据搭语义本体和知识图谱，把各系统里不一致的业务定义对齐，再经 MCP、CLI 和 API 交给智能体，用来核对查询、追溯来源。它是 Python 框架，许可证 Apache-2.0，组件里包括由 NVIDIA NIM 驱动的自然语言查数。</p><p class="m"><span>本周新增星</span>9,937</p><p class="m"><span>总星</span>11,067</p><p class="m"><span>语言</span>Python</p><a class="go" href="https://github.com/NVIDIA/auto-ontology" target="_blank" rel="noopener">去 GitHub ↗</a></article>
+  <article class="card" data-sec="github-weekly" data-title="mattpocock/skills Matt Pocock 的 Skills for Real Engineers：从他每天用的 .agents 目录里拆出来的小 skill，分成工程和效率等目录，强调可改、可组合，不把整套开发流程夺走。可用官方插件市场或 npx skills 装到多种编程智能体。 Shell"><div class="chead"><span class="badge" style="font-size:12px">10</span><img class="vlogo" alt="" src="https://github.com/mattpocock.png" onerror="this.remove()"><h3>mattpocock/skills</h3></div><p class="c">Matt Pocock 的 Skills for Real Engineers：从他每天用的 .agents 目录里拆出来的小 skill，分成工程和效率等目录，强调可改、可组合，不把整套开发流程夺走。可用官方插件市场或 npx skills 装到多种编程智能体。</p><p class="m"><span>本周新增星</span>9,726</p><p class="m"><span>总星</span>319,838</p><p class="m"><span>语言</span>Shell</p><a class="go" href="https://github.com/mattpocock/skills" target="_blank" rel="noopener">去 GitHub ↗</a></article>
+  <article class="card extra" data-sec="github-weekly" data-title="sherlock-project/sherlock Sherlock 是一个开源命令行工具，按用户名在 400 多个社交网站上查找公开账号。官网是 sherlockproject.xyz。它本身不是 AI 项目，这周因为星标增量进入本榜。 Python"><div class="chead"><span class="badge" style="font-size:12px">11</span><img class="vlogo" alt="" src="https://github.com/sherlock-project.png" onerror="this.remove()"><h3>sherlock-project/sherlock</h3></div><p class="c">Sherlock 是一个开源命令行工具，按用户名在 400 多个社交网站上查找公开账号。官网是 sherlockproject.xyz。它本身不是 AI 项目，这周因为星标增量进入本榜。</p><p class="m"><span>本周新增星</span>9,714</p><p class="m"><span>总星</span>107,271</p><p class="m"><span>语言</span>Python</p><a class="go" href="https://github.com/sherlock-project/sherlock" target="_blank" rel="noopener">去 GitHub ↗</a></article>
+  <article class="card extra" data-sec="github-weekly" data-title="deepseek-ai/deepseek-harness DeepSeek Harness（dsh）是 DeepSeek 开源的智能体运行时，架构是「一切皆插件」，底层用 Cordis。可以用 npx @deepseek-ai/dsh web 在本机打开 Web UI。README 标明仍是开发者预览，会有不兼容变更，跑之前要读 SAFETY.md。 TypeScript"><div class="chead"><span class="badge" style="font-size:12px">12</span><img class="vlogo" alt="" src="https://github.com/deepseek-ai.png" onerror="this.remove()"><h3>deepseek-ai/deepseek-harness</h3></div><p class="c">DeepSeek Harness（dsh）是 DeepSeek 开源的智能体运行时，架构是「一切皆插件」，底层用 Cordis。可以用 npx @deepseek-ai/dsh web 在本机打开 Web UI。README 标明仍是开发者预览，会有不兼容变更，跑之前要读 SAFETY.md。</p><p class="m"><span>本周新增星</span>8,419</p><p class="m"><span>总星</span>277,454</p><p class="m"><span>语言</span>TypeScript</p><a class="go" href="https://github.com/deepseek-ai/deepseek-harness" target="_blank" rel="noopener">去 GitHub ↗</a></article>
+  <article class="card extra" data-sec="github-weekly" data-title="D4Vinci/Scrapling Scrapling 是一个 Python 网页抓取框架，从单次请求覆盖到成规模的爬取。README 强调页面改版后仍能定位元素，并提供给智能体用的 MCP 服务和 Agent Skill。文档在 scrapling.readthedocs.io，许可证 BSD-3-Clause。 Python"><div class="chead"><span class="badge" style="font-size:12px">13</span><img class="vlogo" alt="" src="https://github.com/D4Vinci.png" onerror="this.remove()"><h3>D4Vinci/Scrapling</h3></div><p class="c">Scrapling 是一个 Python 网页抓取框架，从单次请求覆盖到成规模的爬取。README 强调页面改版后仍能定位元素，并提供给智能体用的 MCP 服务和 Agent Skill。文档在 scrapling.readthedocs.io，许可证 BSD-3-Clause。</p><p class="m"><span>本周新增星</span>8,285</p><p class="m"><span>总星</span>100,613</p><p class="m"><span>语言</span>Python</p><a class="go" href="https://github.com/D4Vinci/Scrapling" target="_blank" rel="noopener">去 GitHub ↗</a></article>
+  <article class="card extra" data-sec="github-weekly" data-title="milind-soni/OpenMausBot OpenMausBot 是一个开源桌面聊天应用，把本机运行的 Claude 或 Codex 等智能体做成侧边栏里的联系人。README 写明它是独立项目，灵感来自 Grok Bot，并自称是 Meta Muse、OpenAI dots 和 Manus Cue 的开源替代，与 xAI、Meta、OpenAI、Manus 都没有隶属关系。 TypeScript"><div class="chead"><span class="badge" style="font-size:12px">14</span><img class="vlogo" alt="" src="https://github.com/milind-soni.png" onerror="this.remove()"><h3>milind-soni/OpenMausBot</h3></div><p class="c">OpenMausBot 是一个开源桌面聊天应用，把本机运行的 Claude 或 Codex 等智能体做成侧边栏里的联系人。README 写明它是独立项目，灵感来自 Grok Bot，并自称是 Meta Muse、OpenAI dots 和 Manus Cue 的开源替代，与 xAI、Meta、OpenAI、Manus 都没有隶属关系。</p><p class="m"><span>本周新增星</span>8,061</p><p class="m"><span>总星</span>19,820</p><p class="m"><span>语言</span>TypeScript</p><a class="go" href="https://github.com/milind-soni/OpenMausBot" target="_blank" rel="noopener">去 GitHub ↗</a></article>
+  <article class="card extra" data-sec="github-weekly" data-title="debpalash/VoiceStudio VoiceStudio 是以本地运行为主的开源语音工作室，README 称可在笔记本、桌面、服务器和手机上做声音克隆、声音设计、视频配音、听写、转写，以及 646 种语言的旁白。官网 voicestudio.sh。许可证 AGPL-3.0。另有 Pro 和 Cloud，不是全部功能都在本地免费版里。 Python"><div class="chead"><span class="badge" style="font-size:12px">15</span><img class="vlogo" alt="" src="https://github.com/debpalash.png" onerror="this.remove()"><h3>debpalash/VoiceStudio</h3></div><p class="c">VoiceStudio 是以本地运行为主的开源语音工作室，README 称可在笔记本、桌面、服务器和手机上做声音克隆、声音设计、视频配音、听写、转写，以及 646 种语言的旁白。官网 voicestudio.sh。许可证 AGPL-3.0。另有 Pro 和 Cloud，不是全部功能都在本地免费版里。</p><p class="m"><span>本周新增星</span>7,238</p><p class="m"><span>总星</span>106,263</p><p class="m"><span>语言</span>Python</p><a class="go" href="https://github.com/debpalash/VoiceStudio" target="_blank" rel="noopener">去 GitHub ↗</a></article>
+  <article class="card extra" data-sec="github-weekly" data-title="heydamir/unslop unslop 是 Damir Sokolovsky 做的设计 skill，给 Claude Code、Codex 和 Google Antigravity 用。它先找出紫渐变、发光、emoji 标签、喊叫文案和间距不均这些「AI 页面痕迹」，再按产品方向一轮轮改，像设计师做红线。 JavaScript"><div class="chead"><span class="badge" style="font-size:12px">16</span><img class="vlogo" alt="" src="https://github.com/heydamir.png" onerror="this.remove()"><h3>heydamir/unslop</h3></div><p class="c">unslop 是 Damir Sokolovsky 做的设计 skill，给 Claude Code、Codex 和 Google Antigravity 用。它先找出紫渐变、发光、emoji 标签、喊叫文案和间距不均这些「AI 页面痕迹」，再按产品方向一轮轮改，像设计师做红线。</p><p class="m"><span>本周新增星</span>7,026</p><p class="m"><span>总星</span>12,803</p><p class="m"><span>语言</span>JavaScript</p><a class="go" href="https://github.com/heydamir/unslop" target="_blank" rel="noopener">去 GitHub ↗</a></article>
+  <article class="card extra" data-sec="github-weekly" data-title="stablyai/orca Orca 用来并行编排 Claude Code、Codex 等编程智能体：每个智能体在自己的 git worktree 里跑，可以在聊天和原始终端之间切换，笔记本或云端都能跑，并把 diff、浏览器和命令行放在同一个应用里。支持 macOS、Windows 和 Linux。 TypeScript"><div class="chead"><span class="badge" style="font-size:12px">17</span><img class="vlogo" alt="" src="https://github.com/stablyai.png" onerror="this.remove()"><h3>stablyai/orca</h3></div><p class="c">Orca 用来并行编排 Claude Code、Codex 等编程智能体：每个智能体在自己的 git worktree 里跑，可以在聊天和原始终端之间切换，笔记本或云端都能跑，并把 diff、浏览器和命令行放在同一个应用里。支持 macOS、Windows 和 Linux。</p><p class="m"><span>本周新增星</span>6,926</p><p class="m"><span>总星</span>120,512</p><p class="m"><span>语言</span>TypeScript</p><a class="go" href="https://github.com/stablyai/orca" target="_blank" rel="noopener">去 GitHub ↗</a></article>
+  <article class="card extra" data-sec="github-weekly" data-title="pbakaus/impeccable Impeccable 是给编程智能体的一套设计词表。用 polish、bolder 这类命令改方向，用 critique 和 audit 做审查，在发版前抓住常见的 AI 界面习惯。安装命令是 npx impeccable install，文档在 impeccable.style。 Rust"><div class="chead"><span class="badge" style="font-size:12px">18</span><img class="vlogo" alt="" src="https://github.com/pbakaus.png" onerror="this.remove()"><h3>pbakaus/impeccable</h3></div><p class="c">Impeccable 是给编程智能体的一套设计词表。用 polish、bolder 这类命令改方向，用 critique 和 audit 做审查，在发版前抓住常见的 AI 界面习惯。安装命令是 npx impeccable install，文档在 impeccable.style。</p><p class="m"><span>本周新增星</span>6,821</p><p class="m"><span>总星</span>106,945</p><p class="m"><span>语言</span>Rust</p><a class="go" href="https://github.com/pbakaus/impeccable" target="_blank" rel="noopener">去 GitHub ↗</a></article>
+  <article class="card extra" data-sec="github-weekly" data-title="google/elephant-goldfish-model Google 开源的 Elephant-Goldfish Model 是一个设计与审查插件。大象带着项目上下文起草规格，金鱼在没有先前对话的情况下审查草稿和引用材料，用来暴露没说出口的假设。架构取舍仍由人批准。 Python"><div class="chead"><span class="badge" style="font-size:12px">19</span><img class="vlogo" alt="" src="https://github.com/google.png" onerror="this.remove()"><h3>google/elephant-goldfish-model</h3></div><p class="c">Google 开源的 Elephant-Goldfish Model 是一个设计与审查插件。大象带着项目上下文起草规格，金鱼在没有先前对话的情况下审查草稿和引用材料，用来暴露没说出口的假设。架构取舍仍由人批准。</p><p class="m"><span>本周新增星</span>6,101</p><p class="m"><span>总星</span>16,527</p><p class="m"><span>语言</span>Python</p><a class="go" href="https://github.com/google/elephant-goldfish-model" target="_blank" rel="noopener">去 GitHub ↗</a></article>
+  <article class="card extra" data-sec="github-weekly" data-title="Nutlope/hallmark Hallmark 是 Together AI 做的网页设计 skill，给 Claude Code、Codex、Cursor 和 OpenCode 用。它从五十种主题材料里发三张，按页面要完成的动作来搭，并在真实浏览器里做分层检查。网站是 usehallmark.com。 CSS"><div class="chead"><span class="badge" style="font-size:12px">20</span><img class="vlogo" alt="" src="https://github.com/Nutlope.png" onerror="this.remove()"><h3>Nutlope/hallmark</h3></div><p class="c">Hallmark 是 Together AI 做的网页设计 skill，给 Claude Code、Codex、Cursor 和 OpenCode 用。它从五十种主题材料里发三张，按页面要完成的动作来搭，并在真实浏览器里做分层检查。网站是 usehallmark.com。</p><p class="m"><span>本周新增星</span>6,066</p><p class="m"><span>总星</span>51,850</p><p class="m"><span>语言</span>CSS</p><a class="go" href="https://github.com/Nutlope/hallmark" target="_blank" rel="noopener">去 GitHub ↗</a></article>
+  </div>
+  <button type="button" class="more">查看其余 10 条</button></section>
+  <footer class="foot">本站由 AI 厂商活动日报整理发布 · 感谢开源项目 <a href="https://github.com/KKKKhazix/AIHOT" target="_blank" rel="noopener">KKKKhazix/AIHOT</a>（MIT 协议）</footer>
+</div>
+</main>
+<script>
+const BOARD_ID = 'github-weekly';
+const DEALS_SECS = ['urgent', 'direct', 'overseas', 'expiring', 'pending'];
+function boardFilter() {
+  return {
+    top: BOARD_ID,
+    sub: '',
+    q: (document.getElementById('q').value || '').trim()
+  };
+}
+function filterCards(q, top, sub) {
+  const query = (q || '').trim();
+  const ql = query.toLowerCase();
+  const allowed = sub ? [sub] : (top === 'deals' ? DEALS_SECS : (top ? [top] : null));
+  document.querySelectorAll('.card').forEach(c => {
+    const okSec = !allowed || allowed.indexOf(c.dataset.sec) !== -1;
+    // 搜索不区分大小写：搜 TRAE / trae / Trae 都能找到“Trae 国内版”。
+    const okQ = !query || (c.dataset.title || '').toLowerCase().includes(ql) || c.textContent.toLowerCase().includes(ql);
+    const board = c.closest('section.board');
+    const collapsed = !query && c.classList.contains('extra') && board && board.dataset.expanded !== '1';
+    c.style.display = (okSec && okQ && !collapsed) ? 'block' : 'none';
+  });
+  document.querySelectorAll('section').forEach(s => {
+    const cards = s.querySelectorAll('.card');
+    const anyVisible = [...cards].some(c => c.style.display !== 'none');
+    const noCards = cards.length === 0;
+    s.style.display = (anyVisible || (noCards && (top === '' || top === 'deals'))) ? 'block' : 'none';
+  });
+  document.querySelectorAll('.hero').forEach(e => e.style.display = (!top && !sub && !query) ? 'block' : 'none');
+  document.querySelectorAll('section.board .more').forEach(btn => {
+    const s = btn.closest('section');
+    btn.style.display = (s.dataset.expanded !== '1' && s.style.display !== 'none' && !query) ? '' : 'none';
+  });
+}
+document.getElementById('q').addEventListener('input', e => {
+  const f = boardFilter();
+  filterCards(e.target.value, f.top, f.sub);
+});
+
+document.addEventListener('click', e => {
+  const btn = e.target.closest && e.target.closest('section.board .more');
+  if (!btn) return;
+  const section = btn.closest('section');
+  section.dataset.expanded = '1';
+  section.querySelectorAll('.card.extra').forEach(c => {
+    c.classList.remove('extra');
+    if (c.style.display === 'none') c.style.display = '';
+  });
+  btn.remove();
+  const f = boardFilter();
+  if (f.top || f.sub || f.q) filterCards(f.q, f.top, f.sub);
+});
+
+function loadBoards() {
+  const feeds = {
+    'ai-news': 'data/news-latest.json',
+    'github-weekly': 'data/stars-latest.json',
+    'github-skills': 'data/skills-latest.json'
+  };
+  Object.keys(feeds).forEach(id => {
+    const section = document.getElementById(id);
+    if (!section) return;
+    const url = section.getAttribute('data-feed') || feeds[id];
+    fetch(url, { cache: 'no-cache' }).then(r => {
+      if (!r.ok) throw new Error(String(r.status));
+      return r.json();
+    }).then(data => {
+      renderBoard(section, data);
+      section.dataset.source = 'json';
+      const f = boardFilter();
+      if (f.top || f.sub || f.q) filterCards(f.q, f.top, f.sub);
+    }).catch(() => { section.dataset.source = 'fallback'; });
+  });
+}
+function esc(s) {
+  return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+function fmt(n) {
+  return (typeof n === 'number' && isFinite(n)) ? n.toLocaleString('en-US') : esc(n);
+}
+function renderBoard(section, data) {
+  const kind = section.id === 'ai-news' ? 'news' : (section.id === 'github-skills' ? 'skills' : 'stars');
+  const items = Array.isArray(data.items) ? data.items : [];
+  const empty = !!data.empty || (kind === 'news' && items.length === 0);
+  const n = empty ? 0 : items.length;
+  const preview = typeof data.preview === 'number' ? data.preview : 10;
+  const expanded = section.dataset.expanded === '1';
+  const em = section.querySelector('h2 em');
+  if (em) em.textContent = empty ? '暂无' : (data.week ? (data.week + ' · ' + n + ' 条') : (n + ' 条'));
+  const nav = document.querySelector('.nav a[href="#' + section.id + '"] em');
+  if (nav) nav.textContent = empty ? '0' : String(n);
+  const note = section.querySelector('.board-note');
+  if (note && data.note) note.textContent = data.note;
+  let box = section.querySelector('.board-cards');
+  if (!box) {
+    box = document.createElement('div');
+    box.className = 'board-cards';
+    section.appendChild(box);
+  }
+  if (empty) {
+    const msg = data.emptyMessage || '今日暂无重要资讯，晚间 19:30 起每日更新';
+    box.innerHTML = '<article class="card" data-sec="ai-news" data-title="' + esc(msg) + '"><p class="m">' + esc(msg) + '</p></article>';
+  } else if (kind === 'news') {
+    box.innerHTML = items.map((item, i) => newsCard(item, i, preview, expanded)).join('');
+  } else {
+    box.innerHTML = items.map((item, i) => repoCard(item, i, section.id, preview, expanded)).join('');
+  }
+  const hidden = (empty || expanded) ? 0 : Math.max(0, items.length - preview);
+  let more = section.querySelector('.more');
+  if (hidden > 0) {
+    if (!more) {
+      more = document.createElement('button');
+      more.type = 'button';
+      more.className = 'more';
+      section.appendChild(more);
+    }
+    more.textContent = '查看其余 ' + hidden + ' 条';
+    more.style.display = '';
+  } else if (more) more.remove();
+}
+function repoCard(item, index, sec, preview, expanded) {
+  const rank = item.rank || (index + 1);
+  const extra = (!expanded && rank > preview) ? ' extra' : '';
+  const repo = item.repo || '';
+  const owner = repo.split('/')[0] || '';
+  const intro = item.intro || '';
+  let title = repo + ' ' + intro;
+  if (item.agents) title += ' ' + item.agents;
+  if (item.language) title += ' ' + item.language;
+  const badgeStyle = String(rank).length > 1 ? ' style="font-size:12px"' : '';
+  let rows = '<p class="m"><span>本周新增星</span>' + fmt(item.weeklyStars) + '</p>'
+    + '<p class="m"><span>总星</span>' + fmt(item.totalStars) + '</p>';
+  if (item.language) rows += '<p class="m"><span>语言</span>' + esc(item.language) + '</p>';
+  if (item.agents) rows += '<p class="m"><span>适用</span>' + esc(item.agents) + '</p>';
+  return '<article class="card' + extra + '" data-sec="' + esc(sec) + '" data-title="' + esc(title) + '">'
+    + '<div class="chead"><span class="badge"' + badgeStyle + '>' + esc(rank) + '</span>'
+    + '<img class="vlogo" alt="" src="https://github.com/' + encodeURIComponent(owner) + '.png" onerror="this.remove()">'
+    + '<h3>' + esc(repo) + '</h3></div>'
+    + '<p class="c">' + esc(intro) + '</p>' + rows
+    + '<a class="go" href="' + esc(item.url || ('https://github.com/' + repo)) + '" target="_blank" rel="noopener">去 GitHub ↗</a></article>';
+}
+function newsCard(item, index, preview, expanded) {
+  const extra = (!expanded && (index + 1) > preview) ? ' extra' : '';
+  const title = item.title || '';
+  const summary = item.summary || '';
+  const bits = [title, summary, item.time || '', item.source || '', item.confidence || ''].join(' ');
+  let rows = '';
+  if (item.time) rows += '<p class="m"><span>时间</span>' + esc(item.time) + '</p>';
+  if (item.source || item.confidence) {
+    rows += '<p class="m"><span>来源</span>' + esc([item.source, item.confidence ? ('置信度 ' + item.confidence) : ''].filter(Boolean).join(' · ')) + '</p>';
+  }
+  return '<article class="card' + extra + '" data-sec="ai-news" data-title="' + esc(bits) + '">'
+    + '<div class="chead"><span class="badge">' + esc(item.badge || '讯') + '</span><h3>' + esc(title) + '</h3></div>'
+    + '<p class="c">' + esc(summary) + '</p>' + rows
+    + '<a class="go" href="' + esc(item.url || '#') + '" target="_blank" rel="noopener">去官方页 ↗</a></article>';
+}
+loadBoards();</script>
+</body>
+</html>

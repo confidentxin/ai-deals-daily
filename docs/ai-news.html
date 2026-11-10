@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 厂商活动日报</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; background: #f7f7f8; color: #1f2328; }
+a { color: #0969da; text-decoration: none; }
+.sidebar { position: fixed; left: 0; top: 0; bottom: 0; width: 232px; background: #fff; border-right: 1px solid #e3e5e8; padding: 22px 16px; overflow-y: auto; }
+.logo { font-size: 19px; font-weight: 800; padding: 2px 10px 18px; letter-spacing: .5px; }
+.logo small { display: block; font-size: 11px; color: #8b949e; font-weight: 500; margin-top: 5px; letter-spacing: 1px; }
+.nav h4 { font-size: 11px; color: #8b949e; font-weight: 600; letter-spacing: 1px; padding: 14px 10px 7px; }
+.nav a { display: block; padding: 8px 10px; border-radius: 8px; color: #24292f; font-size: 14px; }
+.nav a:hover { background: #f0f2f4; }
+.nav a em { float: right; font-style: normal; color: #8b949e; font-size: 12px; }
+.sidefoot { margin-top: 26px; padding: 12px 10px; border-top: 1px solid #eceef0; font-size: 12px; color: #656d76; line-height: 1.8; }
+.main { margin-left: 232px; padding: 26px 34px 60px; max-width: 980px; }
+.topbar { display: flex; gap: 10px; align-items: center; margin-bottom: 18px; }
+.topbar input { flex: 1; max-width: 420px; padding: 9px 13px; border: 1px solid #d8dbdf; border-radius: 9px; font-size: 14px; background: #fff; outline: none; }
+.pills { display: flex; gap: 8px; flex-wrap: wrap; }
+.pill { border: 1px solid #d8dbdf; background: #fff; border-radius: 999px; padding: 6px 14px; font-size: 13px; cursor: pointer; color: #24292f; }
+.pill.on { background: #0969da; border-color: #0969da; color: #fff; }
+.hero { background: #fff; border: 1px solid #e3e5e8; border-radius: 12px; padding: 20px 22px; margin: 18px 0 22px; }
+.hero h1 { font-size: 24px; }
+.hero p { color: #57606a; font-size: 14px; margin-top: 8px; }
+.stats { display: flex; gap: 26px; margin-top: 14px; flex-wrap: wrap; }
+.stats b { font-size: 22px; display: block; }
+.stats span { font-size: 12px; color: #656d76; }
+section { margin-bottom: 30px; }
+section h2 { font-size: 19px; margin-bottom: 12px; }
+section h2 em { font-style: normal; font-size: 13px; color: #8b949e; font-weight: 500; }
+.card { background: #fff; border: 1px solid #e3e5e8; border-radius: 12px; padding: 16px 18px; margin-bottom: 12px; }
+.chead { display: flex; align-items: center; gap: 10px; }
+.chead h3 { font-size: 16px; line-height: 1.45; }
+.vlogo { width: 28px; height: 28px; border-radius: 7px; border: 1px solid #e3e5e8; background: #fff; flex: none; object-fit: contain; padding: 2px; }
+.badge { width: 28px; height: 28px; border-radius: 7px; background: #eef2f6; color: #0969da; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; font-size: 15px; flex: none; }
+.card .c { font-size: 14px; color: #38424c; line-height: 1.65; margin-top: 8px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.card .m { font-size: 13px; color: #57606a; line-height: 1.6; margin-top: 6px; }
+.card .m span { display: inline-block; min-width: 46px; color: #8b949e; }
+.card .go { display: inline-block; margin-top: 12px; font-size: 13px; font-weight: 600; background: #0969da; color: #fff; padding: 7px 15px; border-radius: 8px; }
+.card.extra { display: none; }
+.more { width: 100%; padding: 11px; border: 1px solid #d8dbdf; background: #fff; border-radius: 10px; font-size: 14px; cursor: pointer; color: #24292f; }
+details { background: #fff; border: 1px solid #e3e5e8; border-radius: 12px; padding: 14px 18px; }
+details summary { cursor: pointer; font-size: 15px; font-weight: 600; }
+details ul { margin: 10px 0 2px 18px; font-size: 13px; color: #57606a; line-height: 2; }
+.foot { color: #8b949e; font-size: 12px; line-height: 1.8; margin-top: 34px; border-top: 1px solid #e3e5e8; padding-top: 16px; }
+
+.main { max-width: none; }
+.wrap { max-width: 980px; margin: 0 auto; }
+@media (min-width: 1500px) { .wrap { max-width: 1180px; } }
+@media (min-width: 1800px) { .wrap { max-width: 1360px; } }
+
+@media (max-width: 720px) {
+  .sidebar { position: static; width: auto; padding: 14px 16px 8px; border-right: none; border-bottom: 1px solid #e3e5e8; overflow: visible; }
+  .logo { padding: 2px 4px 10px; font-size: 18px; }
+  .logo small { display: inline; margin: 0 0 0 8px; }
+  .nav h4 { display: none; }
+  .nav a { display: inline-block; padding: 6px 10px; margin: 0 2px 6px 0; font-size: 13px; }
+  .nav a em { float: none; margin-left: 4px; }
+  .sidefoot { display: none; }
+  .main { margin-left: 0; padding: 16px 16px 40px; }
+  .wrap { max-width: none; }
+  .topbar input { max-width: none; }
+  .hero { padding: 16px; margin: 14px 0 18px; }
+  .hero h1 { font-size: 20px; }
+  .stats { gap: 18px; }
+  section h2 { font-size: 17px; }
+  .card { padding: 14px; }
+  .chead h3 { font-size: 15px; }
+}
+
+.board-note { font-size: 13px; color: #57606a; line-height: 1.65; margin: -4px 0 12px; }
+.board .card .m span { margin-right: 8px; }
+
+#deals > h2, section.board > h2 { font-size: 23px; padding-bottom: 10px; border-bottom: 2px solid #d8dbdf; margin-bottom: 18px; }
+.nav a.top { font-weight: 700; }
+.nav a.sub { padding-left: 22px; font-size: 13px; color: #57606a; }
+.pills.subrow { margin-top: 8px; }
+.pills-label { font-size: 12px; color: #8b949e; align-self: center; }
+.pill.sub { font-size: 12px; padding: 5px 12px; }
+.value { font-size: 21px; font-weight: 800; color: #1a7f37; line-height: 1.25; margin: 6px 0 8px; }
+.value small { font-size: 12px; font-weight: 600; color: #656d76; margin-right: 6px; }
+@media (max-width: 720px) {
+  .value { font-size: 18px; }
+  #deals > h2, section.board > h2 { font-size: 20px; }
+}
+
+.nav a.on { color: #0969da; }
+a.pill { text-decoration: none; }
+.subsec > h2 { cursor: pointer; }
+.subsec.closed .card { display: none; }
+.subsec .tw { float: right; color: #8b949e; font-size: 15px; }
+details summary::-webkit-details-marker { display: none; }
+details summary { list-style: none; }
+</style>
+</head>
+<body>
+<aside class="sidebar">
+  <div class="logo">AI 厂商活动日报<small>AI DEALS DAILY</small></div>
+  <nav class="nav"><h4>栏目</h4>
+  <a href="index.html" class="top">薅羊毛</a>
+  <a href="index.html#urgent" class="sub" data-sub="urgent">今日急报 <em>4</em></a>
+  <a href="index.html#direct" class="sub" data-sub="direct">进行中 · 能直接领 <em>32</em></a>
+  <a href="index.html#overseas" class="sub" data-sub="overseas">进行中 · 需海外账号 <em>43</em></a>
+  <a href="index.html#expiring" class="sub" data-sub="expiring">即将到期 <em>7</em></a>
+  <a href="index.html#pending" class="sub" data-sub="pending">待确认线索 <em>12</em></a>
+  <a href="index.html#archived" class="sub" data-sub="archived">已过期归档 <em>29</em></a>
+  <a href="ai-news.html" class="top on">AI讯息 <em>7</em></a>
+  <a href="github-weekly.html" class="top">GitHub周榜 <em>20</em></a>
+  <a href="github-skills.html" class="top">GitHub Skill榜单 <em>15</em></a>
+  <h4>更多</h4>
+  <a href="https://github.com/confidentxin/ai-deals-daily/tree/main/archive" target="_blank" rel="noopener">日报归档</a>
+  <a href="#">关于</a>
+  <a href="https://github.com/confidentxin/ai-deals-daily" target="_blank" rel="noopener">GitHub 开源 ↗</a>
+  </nav>
+  <div class="sidefoot">数据来自 AI 厂商活动日报<br>每天 9:00 / 12:00 / 14:00 / 20:30 更新</div>
+</aside>
+<main class="main">
+<div class="wrap">
+  <div class="topbar">
+    <input id="q" type="search" placeholder="搜索标题和摘要">
+  </div>
+  <div class="pills">
+    <a class="pill top" data-top="deals" href="index.html">薅羊毛</a>
+    <a class="pill top on" data-top="ai-news" href="ai-news.html">AI讯息</a>
+    <a class="pill top" data-top="github-weekly" href="github-weekly.html">GitHub周榜</a>
+    <a class="pill top" data-top="github-skills" href="github-skills.html">GitHub Skill榜单</a>
+  </div>
+<section id="ai-news" class="board" data-feed="data/news-latest.json"><h2>AI讯息 <em>7 条</em></h2>
+  <p class="board-note">2026-11-10（北京时间）整理，只收录当时能打开的官方博客。有机器可读发表时间的已换算成北京时间，并按从新到旧排列：亚马逊云科技博客 article:published_time 为 2026-11-09T12:04:37-08:00（北京时间 11 月 10 日 04:04）；NVIDIA article:published_time 为 2026-11-09T14:00:01+00:00（北京时间 11 月 9 日 22:00）；Google 的 published_time 为 2026-11-09T13:00:00+00:00（北京时间 11 月 9 日 21:00）。Anthropic、Meta、字节 Seed、OpenAI 的页面只标明 2026-11-09。Meta 的 article:published_time 为当天 00:00:00.000Z，像只精确到日期的占位，不当成北京时间 08:00。这四条排在同日有钟点的条目之后，彼此不按钟点排序。置信度 A 表示来自官方原文。</p>
+  <div class="board-cards">
+  <article class="card" data-sec="ai-news" data-title="Claude Fable 5.2 登上 Amazon Bedrock 亚马逊云科技在官方博客宣布，Claude Fable 5.2 与 Mythos 5.2 已在 Amazon Bedrock 的 US Geo CRIS、Global CRIS，以及 AWS 上的 Claude Platform 提供。页面署名是 11 月 9 日，HTML 发表时间换算后是北京时间 11 月 10 日 04:04；Fable 5.2 被标为 Covered Model，调用前要先把账号或项目设为 aws_review。  亚马逊云科技官方博客 A"><div class="chead"><span class="badge">W</span><h3>Claude Fable 5.2 登上 Amazon Bedrock</h3></div><p class="c">亚马逊云科技在官方博客宣布，Claude Fable 5.2 与 Mythos 5.2 已在 Amazon Bedrock 的 US Geo CRIS、Global CRIS，以及 AWS 上的 Claude Platform 提供。页面署名是 11 月 9 日，HTML 发表时间换算后是北京时间 11 月 10 日 04:04；Fable 5.2 被标为 Covered Model，调用前要先把账号或项目设为 aws_review。</p><p class="m"><span>来源</span>亚马逊云科技官方博客 · 置信度 A</p><a class="go" href="https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-2-on-aws/" target="_blank" rel="noopener">去官方页 ↗</a></article>
+  <article class="card" data-sec="ai-news" data-title="NVIDIA 发布 GR00T 2 与 Isaac Lab 3.0 NVIDIA 在机器人学习会议 CoRL 上介绍开源世界动作模型 GR00T 2、Isaac Lab 3.0，以及 DexBench、VABAR 等开放基准。页面发表时间是北京时间 11 月 9 日 22:00。官方称 GR00T 2 在 50 项任务里有 40 项至少完成过一次（无任务示范），给 1 次示范时平均成功率 71%，5 次示范升至 95%。  NVIDIA 官方博客 A"><div class="chead"><span class="badge">N</span><h3>NVIDIA 发布 GR00T 2 与 Isaac Lab 3.0</h3></div><p class="c">NVIDIA 在机器人学习会议 CoRL 上介绍开源世界动作模型 GR00T 2、Isaac Lab 3.0，以及 DexBench、VABAR 等开放基准。页面发表时间是北京时间 11 月 9 日 22:00。官方称 GR00T 2 在 50 项任务里有 40 项至少完成过一次（无任务示范），给 1 次示范时平均成功率 71%，5 次示范升至 95%。</p><p class="m"><span>来源</span>NVIDIA 官方博客 · 置信度 A</p><a class="go" href="https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl/" target="_blank" rel="noopener">去官方页 ↗</a></article>
+  <article class="card" data-sec="ai-news" data-title="Google 推出 TPU 8tx 与 TPU 8i Max Google 扩充第八代 TPU：TPU 8tx 做机密推理，计算过程中仍保护敏感数据和模型权重；TPU 8i Max 把两颗 TPU 8i 放进同一封装，算力、SRAM 与 HBM 带宽都是 TPU 8i 的两倍。页面可见日期是 11 月 9 日，published_time 换算为北京时间 21:00。官方称这是同一年里的第四套 TPU 系统。  Google 官方博客 A"><div class="chead"><span class="badge">G</span><h3>Google 推出 TPU 8tx 与 TPU 8i Max</h3></div><p class="c">Google 扩充第八代 TPU：TPU 8tx 做机密推理，计算过程中仍保护敏感数据和模型权重；TPU 8i Max 把两颗 TPU 8i 放进同一封装，算力、SRAM 与 HBM 带宽都是 TPU 8i 的两倍。页面可见日期是 11 月 9 日，published_time 换算为北京时间 21:00。官方称这是同一年里的第四套 TPU 系统。</p><p class="m"><span>来源</span>Google 官方博客 · 置信度 A</p><a class="go" href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/" target="_blank" rel="noopener">去官方页 ↗</a></article>
+  <article class="card" data-sec="ai-news" data-title="Claude Fable 5.2 与 Mythos 5.2 Anthropic 于 2026-11-09 发布 Fable 5.2 与 Mythos 5.2。官方写明二者是同一底层模型：Fable 面向一般用户，Mythos 需通过生命科学或网络安全核验。生成速度最多比 5.1 快 30%，标价为每百万 token 输入 8 美元、输出 40 美元；可选快速模式最高约 2.5 倍速，价格再翻倍。页面没有标钟点。  Anthropic 官方博客 A"><div class="chead"><span class="badge">A</span><h3>Claude Fable 5.2 与 Mythos 5.2</h3></div><p class="c">Anthropic 于 2026-11-09 发布 Fable 5.2 与 Mythos 5.2。官方写明二者是同一底层模型：Fable 面向一般用户，Mythos 需通过生命科学或网络安全核验。生成速度最多比 5.1 快 30%，标价为每百万 token 输入 8 美元、输出 40 美元；可选快速模式最高约 2.5 倍速，价格再翻倍。页面没有标钟点。</p><p class="m"><span>来源</span>Anthropic 官方博客 · 置信度 A</p><a class="go" href="https://www.anthropic.com/claude-fable-and-mythos-5-2" target="_blank" rel="noopener">去官方页 ↗</a></article>
+  <article class="card" data-sec="ai-news" data-title="Meta 发布 Muse Ember Meta 发布最小、最省的 Muse Ember，用来做工具调用、编码子任务、路由、抽取和长文档解析。API 名为 muse-ember-1.0，当天可在 Muse Code 与 Meta Model API 使用。标价为每百万 token 输入 0.10 美元、缓存输入 0.004 美元、输出 0.50 美元；上下文 100 万，输出最多 51.2 万 token。页面只标明 11 月 9 日。  Meta 官方研究博客 A"><div class="chead"><span class="badge">M</span><h3>Meta 发布 Muse Ember</h3></div><p class="c">Meta 发布最小、最省的 Muse Ember，用来做工具调用、编码子任务、路由、抽取和长文档解析。API 名为 muse-ember-1.0，当天可在 Muse Code 与 Meta Model API 使用。标价为每百万 token 输入 0.10 美元、缓存输入 0.004 美元、输出 0.50 美元；上下文 100 万，输出最多 51.2 万 token。页面只标明 11 月 9 日。</p><p class="m"><span>来源</span>Meta 官方研究博客 · 置信度 A</p><a class="go" href="https://research.meta.ai/blog/muse-ember" target="_blank" rel="noopener">去官方页 ↗</a></article>
+  <article class="card" data-sec="ai-news" data-title="字节 Seedream 5.5 字节跳动 Seed 团队发布图像模型 Seedream 5.5，面向需要反复改稿、透明背景素材和更真实成片的视觉生产。官方称未改区域按像素级保留，从而支持约 100 轮连续编辑；可直接生成带透明通道的 RGBA；真实感与小字也有改进。页面日期是 2026-11-09，没有钟点。  字节跳动 Seed 团队官方博客 A"><div class="chead"><span class="badge">字</span><h3>字节 Seedream 5.5</h3></div><p class="c">字节跳动 Seed 团队发布图像模型 Seedream 5.5，面向需要反复改稿、透明背景素材和更真实成片的视觉生产。官方称未改区域按像素级保留，从而支持约 100 轮连续编辑；可直接生成带透明通道的 RGBA；真实感与小字也有改进。页面日期是 2026-11-09，没有钟点。</p><p class="m"><span>来源</span>字节跳动 Seed 团队官方博客 · 置信度 A</p><a class="go" href="https://seed.bytedance.com/en/blog/more-realistic-images-more-stable-editing-across-100-rounds-introducing-seedream-5-5" target="_blank" rel="noopener">去官方页 ↗</a></article>
+  <article class="card" data-sec="ai-news" data-title="ChatGPT Enterprise 进入 AWS Marketplace OpenAI 宣布 ChatGPT Enterprise 已在 AWS Marketplace 上架。组织可以用现有的 AWS 采购和账单购买，并把符合条件的支出计入 AWS 承诺消费。官方称 Marketplace 版本与直接向 OpenAI 购买的功能和模型同步更新；符合条件的客户也可经此购买 ChatGPT for Healthcare 与 ChatGPT for Financial Services。页面只标明 11 月 9 日。  OpenAI 官方博客 A"><div class="chead"><span class="badge">O</span><h3>ChatGPT Enterprise 进入 AWS Marketplace</h3></div><p class="c">OpenAI 宣布 ChatGPT Enterprise 已在 AWS Marketplace 上架。组织可以用现有的 AWS 采购和账单购买，并把符合条件的支出计入 AWS 承诺消费。官方称 Marketplace 版本与直接向 OpenAI 购买的功能和模型同步更新；符合条件的客户也可经此购买 ChatGPT for Healthcare 与 ChatGPT for Financial Services。页面只标明 11 月 9 日。</p><p class="m"><span>来源</span>OpenAI 官方博客 · 置信度 A</p><a class="go" href="https://openai.com/index/chatgpt-enterprise-aws-marketplace/" target="_blank" rel="noopener">去官方页 ↗</a></article>
+  </div></section>
+  <footer class="foot">本站由 AI 厂商活动日报整理发布 · 感谢开源项目 <a href="https://github.com/KKKKhazix/AIHOT" target="_blank" rel="noopener">KKKKhazix/AIHOT</a>（MIT 协议）</footer>
+</div>
+</main>
+<script>
+const BOARD_ID = 'ai-news';
+const DEALS_SECS = ['urgent', 'direct', 'overseas', 'expiring', 'pending'];
+function boardFilter() {
+  return {
+    top: BOARD_ID,
+    sub: '',
+    q: (document.getElementById('q').value || '').trim()
+  };
+}
+function filterCards(q, top, sub) {
+  const query = (q || '').trim();
+  const ql = query.toLowerCase();
+  const allowed = sub ? [sub] : (top === 'deals' ? DEALS_SECS : (top ? [top] : null));
+  document.querySelectorAll('.card').forEach(c => {
+    const okSec = !allowed || allowed.indexOf(c.dataset.sec) !== -1;
+    // 搜索不区分大小写：搜 TRAE / trae / Trae 都能找到“Trae 国内版”。
+    const okQ = !query || (c.dataset.title || '').toLowerCase().includes(ql) || c.textContent.toLowerCase().includes(ql);
+    const board = c.closest('section.board');
+    const collapsed = !query && c.classList.contains('extra') && board && board.dataset.expanded !== '1';
+    c.style.display = (okSec && okQ && !collapsed) ? 'block' : 'none';
+  });
+  document.querySelectorAll('section').forEach(s => {
+    const cards = s.querySelectorAll('.card');
+    const anyVisible = [...cards].some(c => c.style.display !== 'none');
+    const noCards = cards.length === 0;
+    s.style.display = (anyVisible || (noCards && (top === '' || top === 'deals'))) ? 'block' : 'none';
+  });
+  document.querySelectorAll('.hero').forEach(e => e.style.display = (!top && !sub && !query) ? 'block' : 'none');
+  document.querySelectorAll('section.board .more').forEach(btn => {
+    const s = btn.closest('section');
+    btn.style.display = (s.dataset.expanded !== '1' && s.style.display !== 'none' && !query) ? '' : 'none';
+  });
+}
+document.getElementById('q').addEventListener('input', e => {
+  const f = boardFilter();
+  filterCards(e.target.value, f.top, f.sub);
+});
+
+document.addEventListener('click', e => {
+  const btn = e.target.closest && e.target.closest('section.board .more');
+  if (!btn) return;
+  const section = btn.closest('section');
+  section.dataset.expanded = '1';
+  section.querySelectorAll('.card.extra').forEach(c => {
+    c.classList.remove('extra');
+    if (c.style.display === 'none') c.style.display = '';
+  });
+  btn.remove();
+  const f = boardFilter();
+  if (f.top || f.sub || f.q) filterCards(f.q, f.top, f.sub);
+});
+
+function loadBoards() {
+  const feeds = {
+    'ai-news': 'data/news-latest.json',
+    'github-weekly': 'data/stars-latest.json',
+    'github-skills': 'data/skills-latest.json'
+  };
+  Object.keys(feeds).forEach(id => {
+    const section = document.getElementById(id);
+    if (!section) return;
+    const url = section.getAttribute('data-feed') || feeds[id];
+    fetch(url, { cache: 'no-cache' }).then(r => {
+      if (!r.ok) throw new Error(String(r.status));
+      return r.json();
+    }).then(data => {
+      renderBoard(section, data);
+      section.dataset.source = 'json';
+      const f = boardFilter();
+      if (f.top || f.sub || f.q) filterCards(f.q, f.top, f.sub);
+    }).catch(() => { section.dataset.source = 'fallback'; });
+  });
+}
+function esc(s) {
+  return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+function fmt(n) {
+  return (typeof n === 'number' && isFinite(n)) ? n.toLocaleString('en-US') : esc(n);
+}
+function renderBoard(section, data) {
+  const kind = section.id === 'ai-news' ? 'news' : (section.id === 'github-skills' ? 'skills' : 'stars');
+  const items = Array.isArray(data.items) ? data.items : [];
+  const empty = !!data.empty || (kind === 'news' && items.length === 0);
+  const n = empty ? 0 : items.length;
+  const preview = typeof data.preview === 'number' ? data.preview : 10;
+  const expanded = section.dataset.expanded === '1';
+  const em = section.querySelector('h2 em');
+  if (em) em.textContent = empty ? '暂无' : (data.week ? (data.week + ' · ' + n + ' 条') : (n + ' 条'));
+  const nav = document.querySelector('.nav a[href="#' + section.id + '"] em');
+  if (nav) nav.textContent = empty ? '0' : String(n);
+  const note = section.querySelector('.board-note');
+  if (note && data.note) note.textContent = data.note;
+  let box = section.querySelector('.board-cards');
+  if (!box) {
+    box = document.createElement('div');
+    box.className = 'board-cards';
+    section.appendChild(box);
+  }
+  if (empty) {
+    const msg = data.emptyMessage || '今日暂无重要资讯，晚间 19:30 起每日更新';
+    box.innerHTML = '<article class="card" data-sec="ai-news" data-title="' + esc(msg) + '"><p class="m">' + esc(msg) + '</p></article>';
+  } else if (kind === 'news') {
+    box.innerHTML = items.map((item, i) => newsCard(item, i, preview, expanded)).join('');
+  } else {
+    box.innerHTML = items.map((item, i) => repoCard(item, i, section.id, preview, expanded)).join('');
+  }
+  const hidden = (empty || expanded) ? 0 : Math.max(0, items.length - preview);
+  let more = section.querySelector('.more');
+  if (hidden > 0) {
+    if (!more) {
+      more = document.createElement('button');
+      more.type = 'button';
+      more.className = 'more';
+      section.appendChild(more);
+    }
+    more.textContent = '查看其余 ' + hidden + ' 条';
+    more.style.display = '';
+  } else if (more) more.remove();
+}
+function repoCard(item, index, sec, preview, expanded) {
+  const rank = item.rank || (index + 1);
+  const extra = (!expanded && rank > preview) ? ' extra' : '';
+  const repo = item.repo || '';
+  const owner = repo.split('/')[0] || '';
+  const intro = item.intro || '';
+  let title = repo + ' ' + intro;
+  if (item.agents) title += ' ' + item.agents;
+  if (item.language) title += ' ' + item.language;
+  const badgeStyle = String(rank).length > 1 ? ' style="font-size:12px"' : '';
+  let rows = '<p class="m"><span>本周新增星</span>' + fmt(item.weeklyStars) + '</p>'
+    + '<p class="m"><span>总星</span>' + fmt(item.totalStars) + '</p>';
+  if (item.language) rows += '<p class="m"><span>语言</span>' + esc(item.language) + '</p>';
+  if (item.agents) rows += '<p class="m"><span>适用</span>' + esc(item.agents) + '</p>';
+  return '<article class="card' + extra + '" data-sec="' + esc(sec) + '" data-title="' + esc(title) + '">'
+    + '<div class="chead"><span class="badge"' + badgeStyle + '>' + esc(rank) + '</span>'
+    + '<img class="vlogo" alt="" src="https://github.com/' + encodeURIComponent(owner) + '.png" onerror="this.remove()">'
+    + '<h3>' + esc(repo) + '</h3></div>'
+    + '<p class="c">' + esc(intro) + '</p>' + rows
+    + '<a class="go" href="' + esc(item.url || ('https://github.com/' + repo)) + '" target="_blank" rel="noopener">去 GitHub ↗</a></article>';
+}
+function newsCard(item, index, preview, expanded) {
+  const extra = (!expanded && (index + 1) > preview) ? ' extra' : '';
+  const title = item.title || '';
+  const summary = item.summary || '';
+  const bits = [title, summary, item.time || '', item.source || '', item.confidence || ''].join(' ');
+  let rows = '';
+  if (item.time) rows += '<p class="m"><span>时间</span>' + esc(item.time) + '</p>';
+  if (item.source || item.confidence) {
+    rows += '<p class="m"><span>来源</span>' + esc([item.source, item.confidence ? ('置信度 ' + item.confidence) : ''].filter(Boolean).join(' · ')) + '</p>';
+  }
+  return '<article class="card' + extra + '" data-sec="ai-news" data-title="' + esc(bits) + '">'
+    + '<div class="chead"><span class="badge">' + esc(item.badge || '讯') + '</span><h3>' + esc(title) + '</h3></div>'
+    + '<p class="c">' + esc(summary) + '</p>' + rows
+    + '<a class="go" href="' + esc(item.url || '#') + '" target="_blank" rel="noopener">去官方页 ↗</a></article>';
+}
+loadBoards();</script>
+</body>
+</html>

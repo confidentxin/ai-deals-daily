@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 厂商活动日报</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; background: #f7f7f8; color: #1f2328; }
+a { color: #0969da; text-decoration: none; }
+.sidebar { position: fixed; left: 0; top: 0; bottom: 0; width: 232px; background: #fff; border-right: 1px solid #e3e5e8; padding: 22px 16px; overflow-y: auto; }
+.logo { font-size: 19px; font-weight: 800; padding: 2px 10px 18px; letter-spacing: .5px; }
+.logo small { display: block; font-size: 11px; color: #8b949e; font-weight: 500; margin-top: 5px; letter-spacing: 1px; }
+.nav h4 { font-size: 11px; color: #8b949e; font-weight: 600; letter-spacing: 1px; padding: 14px 10px 7px; }
+.nav a { display: block; padding: 8px 10px; border-radius: 8px; color: #24292f; font-size: 14px; }
+.nav a:hover { background: #f0f2f4; }
+.nav a em { float: right; font-style: normal; color: #8b949e; font-size: 12px; }
+.sidefoot { margin-top: 26px; padding: 12px 10px; border-top: 1px solid #eceef0; font-size: 12px; color: #656d76; line-height: 1.8; }
+.main { margin-left: 232px; padding: 26px 34px 60px; max-width: 980px; }
+.topbar { display: flex; gap: 10px; align-items: center; margin-bottom: 18px; }
+.topbar input { flex: 1; max-width: 420px; padding: 9px 13px; border: 1px solid #d8dbdf; border-radius: 9px; font-size: 14px; background: #fff; outline: none; }
+.pills { display: flex; gap: 8px; flex-wrap: wrap; }
+.pill { border: 1px solid #d8dbdf; background: #fff; border-radius: 999px; padding: 6px 14px; font-size: 13px; cursor: pointer; color: #24292f; }
+.pill.on { background: #0969da; border-color: #0969da; color: #fff; }
+.hero { background: #fff; border: 1px solid #e3e5e8; border-radius: 12px; padding: 20px 22px; margin: 18px 0 22px; }
+.hero h1 { font-size: 24px; }
+.hero p { color: #57606a; font-size: 14px; margin-top: 8px; }
+.stats { display: flex; gap: 26px; margin-top: 14px; flex-wrap: wrap; }
+.stats b { font-size: 22px; display: block; }
+.stats span { font-size: 12px; color: #656d76; }
+section { margin-bottom: 30px; }
+section h2 { font-size: 19px; margin-bottom: 12px; }
+section h2 em { font-style: normal; font-size: 13px; color: #8b949e; font-weight: 500; }
+.card { background: #fff; border: 1px solid #e3e5e8; border-radius: 12px; padding: 16px 18px; margin-bottom: 12px; }
+.chead { display: flex; align-items: center; gap: 10px; }
+.chead h3 { font-size: 16px; line-height: 1.45; }
+.vlogo { width: 28px; height: 28px; border-radius: 7px; border: 1px solid #e3e5e8; background: #fff; flex: none; object-fit: contain; padding: 2px; }
+.badge { width: 28px; height: 28px; border-radius: 7px; background: #eef2f6; color: #0969da; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; font-size: 15px; flex: none; }
+.card .c { font-size: 14px; color: #38424c; line-height: 1.65; margin-top: 8px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.card .m { font-size: 13px; color: #57606a; line-height: 1.6; margin-top: 6px; }
+.card .m span { display: inline-block; min-width: 46px; color: #8b949e; }
+.card .go { display: inline-block; margin-top: 12px; font-size: 13px; font-weight: 600; background: #0969da; color: #fff; padding: 7px 15px; border-radius: 8px; }
+.card.extra { display: none; }
+.more { width: 100%; padding: 11px; border: 1px solid #d8dbdf; background: #fff; border-radius: 10px; font-size: 14px; cursor: pointer; color: #24292f; }
+details { background: #fff; border: 1px solid #e3e5e8; border-radius: 12px; padding: 14px 18px; }
+details summary { cursor: pointer; font-size: 15px; font-weight: 600; }
+details ul { margin: 10px 0 2px 18px; font-size: 13px; color: #57606a; line-height: 2; }
+.foot { color: #8b949e; font-size: 12px; line-height: 1.8; margin-top: 34px; border-top: 1px solid #e3e5e8; padding-top: 16px; }
+
+.main { max-width: none; }
+.wrap { max-width: 980px; margin: 0 auto; }
+@media (min-width: 1500px) { .wrap { max-width: 1180px; } }
+@media (min-width: 1800px) { .wrap { max-width: 1360px; } }
+
+@media (max-width: 720px) {
+  .sidebar { position: static; width: auto; padding: 14px 16px 8px; border-right: none; border-bottom: 1px solid #e3e5e8; overflow: visible; }
+  .logo { padding: 2px 4px 10px; font-size: 18px; }
+  .logo small { display: inline; margin: 0 0 0 8px; }
+  .nav h4 { display: none; }
+  .nav a { display: inline-block; padding: 6px 10px; margin: 0 2px 6px 0; font-size: 13px; }
+  .nav a em { float: none; margin-left: 4px; }
+  .sidefoot { display: none; }
+  .main { margin-left: 0; padding: 16px 16px 40px; }
+  .wrap { max-width: none; }
+  .topbar input { max-width: none; }
+  .hero { padding: 16px; margin: 14px 0 18px; }
+  .hero h1 { font-size: 20px; }
+  .stats { gap: 18px; }
+  section h2 { font-size: 17px; }
+  .card { padding: 14px; }
+  .chead h3 { font-size: 15px; }
+}
+
+.board-note { font-size: 13px; color: #57606a; line-height: 1.65; margin: -4px 0 12px; }
+.board .card .m span { margin-right: 8px; }
+
+#deals > h2, section.board > h2 { font-size: 23px; padding-bottom: 10px; border-bottom: 2px solid #d8dbdf; margin-bottom: 18px; }
+.nav a.top { font-weight: 700; }
+.nav a.sub { padding-left: 22px; font-size: 13px; color: #57606a; }
+.pills.subrow { margin-top: 8px; }
+.pills-label { font-size: 12px; color: #8b949e; align-self: center; }
+.pill.sub { font-size: 12px; padding: 5px 12px; }
+.value { font-size: 21px; font-weight: 800; color: #1a7f37; line-height: 1.25; margin: 6px 0 8px; }
+.value small { font-size: 12px; font-weight: 600; color: #656d76; margin-right: 6px; }
+@media (max-width: 720px) {
+  .value { font-size: 18px; }
+  #deals > h2, section.board > h2 { font-size: 20px; }
+}
+
+.nav a.on { color: #0969da; }
+a.pill { text-decoration: none; }
+.subsec > h2 { cursor: pointer; }
+.subsec.closed .card { display: none; }
+.subsec .tw { float: right; color: #8b949e; font-size: 15px; }
+details summary::-webkit-details-marker { display: none; }
+details summary { list-style: none; }
+</style>
+</head>
+<body>
+<aside class="sidebar">
+  <div class="logo">AI 厂商活动日报<small>AI DEALS DAILY</small></div>
+  <nav class="nav"><h4>栏目</h4>
+  <a href="index.html" class="top">薅羊毛</a>
+  <a href="index.html#urgent" class="sub" data-sub="urgent">今日急报 <em>4</em></a>
+  <a href="index.html#direct" class="sub" data-sub="direct">进行中 · 能直接领 <em>32</em></a>
+  <a href="index.html#overseas" class="sub" data-sub="overseas">进行中 · 需海外账号 <em>43</em></a>
+  <a href="index.html#expiring" class="sub" data-sub="expiring">即将到期 <em>7</em></a>
+  <a href="index.html#pending" class="sub" data-sub="pending">待确认线索 <em>12</em></a>
+  <a href="index.html#archived" class="sub" data-sub="archived">已过期归档 <em>29</em></a>
+  <a href="ai-news.html" class="top">AI讯息 <em>7</em></a>
+  <a href="github-weekly.html" class="top">GitHub周榜 <em>20</em></a>
+  <a href="github-skills.html" class="top on">GitHub Skill榜单 <em>15</em></a>
+  <h4>更多</h4>
+  <a href="https://github.com/confidentxin/ai-deals-daily/tree/main/archive" target="_blank" rel="noopener">日报归档</a>
+  <a href="#">关于</a>
+  <a href="https://github.com/confidentxin/ai-deals-daily" target="_blank" rel="noopener">GitHub 开源 ↗</a>
+  </nav>
+  <div class="sidefoot">数据来自 AI 厂商活动日报<br>每天 9:00 / 12:00 / 14:00 / 20:30 更新</div>
+</aside>
+<main class="main">
+<div class="wrap">
+  <div class="topbar">
+    <input id="q" type="search" placeholder="搜索标题和摘要">
+  </div>
+  <div class="pills">
+    <a class="pill top" data-top="deals" href="index.html">薅羊毛</a>
+    <a class="pill top" data-top="ai-news" href="ai-news.html">AI讯息</a>
+    <a class="pill top" data-top="github-weekly" href="github-weekly.html">GitHub周榜</a>
+    <a class="pill top on" data-top="github-skills" href="github-skills.html">GitHub Skill榜单</a>
+  </div>
+<section id="github-skills" class="board" data-feed="data/skills-latest.json"><h2>GitHub Skill榜单 <em>2026-W45 · 15 条</em></h2>
+  <p class="board-note">数据说明：窗口为北京时间 2026-11-02 00:00 至 2026-11-09 00:00；本周新增星由官方星标历史按 UTC 11-02 至 11-08 加总；总星是 2026-11-10 上午写入本榜的快照，不是实时星数。语言方面，涨星榜已写明的仓库沿用该榜；其余为 2026-11-10 从 GitHub 仓库接口读到的当前主要语言。本榜只收 Agent Skill 仓库，按本周新增星排序。每条卡片上的 2026-W45 就是这个窗口。介绍根据当日打开的 README 和它点名的 SKILL.md 路径写成。</p>
+  <div class="board-cards">
+  <article class="card" data-sec="github-skills" data-title="cloudflare/security-audit-skill Cloudflare 的 security-audit 是单仓库安全审计 skill，也是其漏洞发现流水线的起点形态。它用六段流程把侦察、覆盖式排查、独立证伪、findings.json、记录核验和中立报告拆开，避免同一个智能体既发现又给自己作证。 支持 Agent Skills 的编程智能体（README 按 coding-agent skill 介绍，可与 Claude Code、Codex 等能加载 skill 的工具一起用）。 JavaScript"><div class="chead"><span class="badge">1</span><img class="vlogo" alt="" src="https://github.com/cloudflare.png" onerror="this.remove()"><h3>cloudflare/security-audit-skill</h3></div><p class="c">Cloudflare 的 security-audit 是单仓库安全审计 skill，也是其漏洞发现流水线的起点形态。它用六段流程把侦察、覆盖式排查、独立证伪、findings.json、记录核验和中立报告拆开，避免同一个智能体既发现又给自己作证。</p><p class="m"><span>本周新增星</span>10,674</p><p class="m"><span>总星</span>68,156</p><p class="m"><span>语言</span>JavaScript</p><p class="m"><span>适用</span>支持 Agent Skills 的编程智能体（README 按 coding-agent skill 介绍，可与 Claude Code、Codex 等能加载 skill 的工具一起用）。</p><a class="go" href="https://github.com/cloudflare/security-audit-skill" target="_blank" rel="noopener">去 GitHub ↗</a></article>
+  <article class="card" data-sec="github-skills" data-title="mattpocock/skills Matt Pocock 的技能合集，目录分 engineering 与 productivity。skill 被做成小块：有的只能人敲出来做编排，有的会在任务匹配时被智能体自己拿起。他用这些块处理对齐、啰嗦、代码不能跑和架构长成泥球，而不是换上一套总流程。 Claude Code（官方插件市场）、Codex、GitHub Copilot（CLI 与 VS Code）、Gemini CLI；也可以用 npx skills 装到 Cursor、OpenCode、Devin、Windsurf、Amp、Pi 等。 Shell"><div class="chead"><span class="badge">2</span><img class="vlogo" alt="" src="https://github.com/mattpocock.png" onerror="this.remove()"><h3>mattpocock/skills</h3></div><p class="c">Matt Pocock 的技能合集，目录分 engineering 与 productivity。skill 被做成小块：有的只能人敲出来做编排，有的会在任务匹配时被智能体自己拿起。他用这些块处理对齐、啰嗦、代码不能跑和架构长成泥球，而不是换上一套总流程。</p><p class="m"><span>本周新增星</span>9,726</p><p class="m"><span>总星</span>319,838</p><p class="m"><span>语言</span>Shell</p><p class="m"><span>适用</span>Claude Code（官方插件市场）、Codex、GitHub Copilot（CLI 与 VS Code）、Gemini CLI；也可以用 npx skills 装到 Cursor、OpenCode、Devin、Windsurf、Amp、Pi 等。</p><a class="go" href="https://github.com/mattpocock/skills" target="_blank" rel="noopener">去 GitHub ↗</a></article>
+  <article class="card" data-sec="github-skills" data-title="heydamir/unslop unslop 是 Damir Sokolovsky 写的设计 skill。它先列出紫渐变、发光、emoji 标签、喊叫文案和间距不均这些痕迹并给出方向，确认后再按间距、颜色、图标、文案、字体和版式分轮改。Claude Code 用 /unslop，Codex 用 $unslop；页面如果已经够好，它会直接说明，而不是强行重做。 Claude Code（~/.claude/skills 或项目内 .claude/skills；对话里用 /unslop）、Codex（$skill-installer 或 ~/.agents/skills；对话里用 $unslop）、Google Antigravity（~/.gemini/antigravity/skills）。 JavaScript"><div class="chead"><span class="badge">3</span><img class="vlogo" alt="" src="https://github.com/heydamir.png" onerror="this.remove()"><h3>heydamir/unslop</h3></div><p class="c">unslop 是 Damir Sokolovsky 写的设计 skill。它先列出紫渐变、发光、emoji 标签、喊叫文案和间距不均这些痕迹并给出方向，确认后再按间距、颜色、图标、文案、字体和版式分轮改。Claude Code 用 /unslop，Codex 用 $unslop；页面如果已经够好，它会直接说明，而不是强行重做。</p><p class="m"><span>本周新增星</span>7,026</p><p class="m"><span>总星</span>12,803</p><p class="m"><span>语言</span>JavaScript</p><p class="m"><span>适用</span>Claude Code（~/.claude/skills 或项目内 .claude/skills；对话里用 /unslop）、Codex（$skill-installer 或 ~/.agents/skills；对话里用 $unslop）、Google Antigravity（~/.gemini/antigravity/skills）。</p><a class="go" href="https://github.com/heydamir/unslop" target="_blank" rel="noopener">去 GitHub ↗</a></article>
+  <article class="card" data-sec="github-skills" data-title="pbakaus/impeccable Impeccable 给编程智能体一套 24 条的设计词表：bolder、quieter 用来改方向，critique 和 audit 用来审查，polish 用来做发版前的最后一遍。装上之后在智能体里跑 /impeccable init，Codex 上是 $impeccable init。 README 列出 Claude Code、Cursor、Codex CLI、GitHub Copilot、Devin、Replit Agent、Gemini CLI、Grok Build、OpenCode、Google Antigravity、Kiro、Trae、Rovo Dev、Qoder、Mistral Vibe、Pi、Hermes Agent、DeepSeek Harness 和 Veto。 Rust"><div class="chead"><span class="badge">4</span><img class="vlogo" alt="" src="https://github.com/pbakaus.png" onerror="this.remove()"><h3>pbakaus/impeccable</h3></div><p class="c">Impeccable 给编程智能体一套 24 条的设计词表：bolder、quieter 用来改方向，critique 和 audit 用来审查，polish 用来做发版前的最后一遍。装上之后在智能体里跑 /impeccable init，Codex 上是 $impeccable init。</p><p class="m"><span>本周新增星</span>6,821</p><p class="m"><span>总星</span>106,945</p><p class="m"><span>语言</span>Rust</p><p class="m"><span>适用</span>README 列出 Claude Code、Cursor、Codex CLI、GitHub Copilot、Devin、Replit Agent、Gemini CLI、Grok Build、OpenCode、Google Antigravity、Kiro、Trae、Rovo Dev、Qoder、Mistral Vibe、Pi、Hermes Agent、DeepSeek Harness 和 Veto。</p><a class="go" href="https://github.com/pbakaus/impeccable" target="_blank" rel="noopener">去 GitHub ↗</a></article>
+  <article class="card" data-sec="github-skills" data-title="Nutlope/hallmark Hallmark 是 Together AI 的网页设计 skill。它从五十种材料主题里发三张，按页面要完成的动作来搭，再用真实浏览器做三层门禁：Floor 永不放行，Reflex 可以有记录地破例，Finish 不挡发布。 Claude Code、Codex、Cursor、OpenCode。 CSS"><div class="chead"><span class="badge">5</span><img class="vlogo" alt="" src="https://github.com/Nutlope.png" onerror="this.remove()"><h3>Nutlope/hallmark</h3></div><p class="c">Hallmark 是 Together AI 的网页设计 skill。它从五十种材料主题里发三张，按页面要完成的动作来搭，再用真实浏览器做三层门禁：Floor 永不放行，Reflex 可以有记录地破例，Finish 不挡发布。</p><p class="m"><span>本周新增星</span>6,066</p><p class="m"><span>总星</span>51,850</p><p class="m"><span>语言</span>CSS</p><p class="m"><span>适用</span>Claude Code、Codex、Cursor、OpenCode。</p><a class="go" href="https://github.com/Nutlope/hallmark" target="_blank" rel="noopener">去 GitHub ↗</a></article>
+  <article class="card" data-sec="github-skills" data-title="Donchitos/Claude-Code-Game-Studios Claude Code Game Studios 把 Claude Code 配成一个做浏览器游戏的小工作室。你用一句话描述游戏，它问一轮关键选择，写成一页设计简报，再做出可以双击打开的原型，并用无头浏览器做基础验收。仓库简介写 49 个智能体和 72 个流程技能；README 正文写的是 75 个技能，另有三个旧名。 以 Claude Code 为主。需要在带 CLAUDE.md 与 project.yaml 的项目根目录里打开；仓库按工作室角色组织技能。 Shell"><div class="chead"><span class="badge">6</span><img class="vlogo" alt="" src="https://github.com/Donchitos.png" onerror="this.remove()"><h3>Donchitos/Claude-Code-Game-Studios</h3></div><p class="c">Claude Code Game Studios 把 Claude Code 配成一个做浏览器游戏的小工作室。你用一句话描述游戏，它问一轮关键选择，写成一页设计简报，再做出可以双击打开的原型，并用无头浏览器做基础验收。仓库简介写 49 个智能体和 72 个流程技能；README 正文写的是 75 个技能，另有三个旧名。</p><p class="m"><span>本周新增星</span>4,444</p><p class="m"><span>总星</span>37,618</p><p class="m"><span>语言</span>Shell</p><p class="m"><span>适用</span>以 Claude Code 为主。需要在带 CLAUDE.md 与 project.yaml 的项目根目录里打开；仓库按工作室角色组织技能。</p><a class="go" href="https://github.com/Donchitos/Claude-Code-Game-Studios" target="_blank" rel="noopener">去 GitHub ↗</a></article>
+  <article class="card" data-sec="github-skills" data-title="obra/superpowers Superpowers 是一套压在可组合技能上的软件开发方法。它在开工前先问清你到底要什么，规格确认后再写细到能执行的计划，然后用子智能体按测试驱动来做和复查。技能会在对应步骤自己出现，不必每次点名。 README 的安装目录覆盖 Claude Code、Antigravity、Codex App、Codex CLI、Cursor、Devin CLI、Factory Droid、Gemini CLI、GitHub Copilot CLI、Grok Build CLI、Kimi Code、OpenCode、Pi、Qwen Code、Hermes Agent 和 Muse。 Shell"><div class="chead"><span class="badge">7</span><img class="vlogo" alt="" src="https://github.com/obra.png" onerror="this.remove()"><h3>obra/superpowers</h3></div><p class="c">Superpowers 是一套压在可组合技能上的软件开发方法。它在开工前先问清你到底要什么，规格确认后再写细到能执行的计划，然后用子智能体按测试驱动来做和复查。技能会在对应步骤自己出现，不必每次点名。</p><p class="m"><span>本周新增星</span>4,230</p><p class="m"><span>总星</span>315,201</p><p class="m"><span>语言</span>Shell</p><p class="m"><span>适用</span>README 的安装目录覆盖 Claude Code、Antigravity、Codex App、Codex CLI、Cursor、Devin CLI、Factory Droid、Gemini CLI、GitHub Copilot CLI、Grok Build CLI、Kimi Code、OpenCode、Pi、Qwen Code、Hermes Agent 和 Muse。</p><a class="go" href="https://github.com/obra/superpowers" target="_blank" rel="noopener">去 GitHub ↗</a></article>
+  <article class="card" data-sec="github-skills" data-title="Leonxlnx/taste-skill taste-skill 当前的主技能是 design-taste-frontend，版本说明写的是 2.5。它先把业务分成软件、游戏、科技、产品、服务或场所，再发配色、字体和英雄区布局，用真实照片或产品界面片段搭页面，最后在无头 Chrome 里检查。 可用 npx skills 安装；仓库同时提供 Claude Code 与 Codex 插件，以及面向多款智能体的安装说明。具体名单以 README 的 Install 为准。 JavaScript"><div class="chead"><span class="badge">8</span><img class="vlogo" alt="" src="https://github.com/Leonxlnx.png" onerror="this.remove()"><h3>Leonxlnx/taste-skill</h3></div><p class="c">taste-skill 当前的主技能是 design-taste-frontend，版本说明写的是 2.5。它先把业务分成软件、游戏、科技、产品、服务或场所，再发配色、字体和英雄区布局，用真实照片或产品界面片段搭页面，最后在无头 Chrome 里检查。</p><p class="m"><span>本周新增星</span>4,210</p><p class="m"><span>总星</span>112,567</p><p class="m"><span>语言</span>JavaScript</p><p class="m"><span>适用</span>可用 npx skills 安装；仓库同时提供 Claude Code 与 Codex 插件，以及面向多款智能体的安装说明。具体名单以 README 的 Install 为准。</p><a class="go" href="https://github.com/Leonxlnx/taste-skill" target="_blank" rel="noopener">去 GitHub ↗</a></article>
+  <article class="card" data-sec="github-skills" data-title="anthropics/skills anthropics/skills 是 Anthropic 公开的 Agent Skills 示例仓库。每个技能是一个带 SKILL.md 的文件夹。里面既有创意、技术和企业沟通的演示，也有实际驱动 Claude 文档能力的 docx、pdf、pptx 和 xlsx。仓库声明这些实现可能和产品内置的不一样。 Claude Code 可以用 /plugin marketplace add anthropics/skills。Claude.ai 和 Anthropic API 按各自的技能文档使用。格式同时被写成给遵循 agentskills.io 的其他智能体作参考。 Python"><div class="chead"><span class="badge">9</span><img class="vlogo" alt="" src="https://github.com/anthropics.png" onerror="this.remove()"><h3>anthropics/skills</h3></div><p class="c">anthropics/skills 是 Anthropic 公开的 Agent Skills 示例仓库。每个技能是一个带 SKILL.md 的文件夹。里面既有创意、技术和企业沟通的演示，也有实际驱动 Claude 文档能力的 docx、pdf、pptx 和 xlsx。仓库声明这些实现可能和产品内置的不一样。</p><p class="m"><span>本周新增星</span>3,610</p><p class="m"><span>总星</span>191,109</p><p class="m"><span>语言</span>Python</p><p class="m"><span>适用</span>Claude Code 可以用 /plugin marketplace add anthropics/skills。Claude.ai 和 Anthropic API 按各自的技能文档使用。格式同时被写成给遵循 agentskills.io 的其他智能体作参考。</p><a class="go" href="https://github.com/anthropics/skills" target="_blank" rel="noopener">去 GitHub ↗</a></article>
+  <article class="card" data-sec="github-skills" data-title="nextlevelbuilder/ui-ux-pro-max-skill UI UX Pro Max 是一个设计智能 skill，用行业推理规则、可检索的界面风格、配色、字体和堆栈建议，帮智能体生成成套设计系统，而不是只回答「好看一点」。站点是 uupm.cc。README 同时区分这个仓库里的基础版和另售的 Premium。 支持安装 Agent Skills 的编程智能体。README 有多语言版本和安装一节；常见用法是 Claude Code、Cursor、Codex 等能加载技能目录的工具。以仓库当前安装说明为准。 Python"><div class="chead"><span class="badge" style="font-size:12px">10</span><img class="vlogo" alt="" src="https://github.com/nextlevelbuilder.png" onerror="this.remove()"><h3>nextlevelbuilder/ui-ux-pro-max-skill</h3></div><p class="c">UI UX Pro Max 是一个设计智能 skill，用行业推理规则、可检索的界面风格、配色、字体和堆栈建议，帮智能体生成成套设计系统，而不是只回答「好看一点」。站点是 uupm.cc。README 同时区分这个仓库里的基础版和另售的 Premium。</p><p class="m"><span>本周新增星</span>3,241</p><p class="m"><span>总星</span>147,408</p><p class="m"><span>语言</span>Python</p><p class="m"><span>适用</span>支持安装 Agent Skills 的编程智能体。README 有多语言版本和安装一节；常见用法是 Claude Code、Cursor、Codex 等能加载技能目录的工具。以仓库当前安装说明为准。</p><a class="go" href="https://github.com/nextlevelbuilder/ui-ux-pro-max-skill" target="_blank" rel="noopener">去 GitHub ↗</a></article>
+  <article class="card extra" data-sec="github-skills" data-title="blader/humanizer Humanizer 按维基百科的「AI 写作迹象」改写文本，去掉套话和假热情，尽量不改原意。README 写明它面对的是人类读者，不是用来躲开 AI 检测器，检测器仍然会把大部分输出判成机器写的。 Claude Code、Codex、pi，以及 Claude.ai、Claude Desktop 和其他支持 skills 的智能体。安装分节写在 README。 Python"><div class="chead"><span class="badge" style="font-size:12px">11</span><img class="vlogo" alt="" src="https://github.com/blader.png" onerror="this.remove()"><h3>blader/humanizer</h3></div><p class="c">Humanizer 按维基百科的「AI 写作迹象」改写文本，去掉套话和假热情，尽量不改原意。README 写明它面对的是人类读者，不是用来躲开 AI 检测器，检测器仍然会把大部分输出判成机器写的。</p><p class="m"><span>本周新增星</span>3,154</p><p class="m"><span>总星</span>67,157</p><p class="m"><span>语言</span>Python</p><p class="m"><span>适用</span>Claude Code、Codex、pi，以及 Claude.ai、Claude Desktop 和其他支持 skills 的智能体。安装分节写在 README。</p><a class="go" href="https://github.com/blader/humanizer" target="_blank" rel="noopener">去 GitHub ↗</a></article>
+  <article class="card extra" data-sec="github-skills" data-title="lemomo-ai/lemo-opuscar Lemo-Opuscar 是一套用代码做成的影片风格工具箱：66 种现成风格，也可以自己做。选定风格、带上故事，让编程智能体当导演去生成短片。仓库同时有从真实镜头、文档和数据剪出来的 Edit &amp; Documentary 等分组。 README 写明主要为 Claude 调校，尤其是 Claude Opus 5.5。其他模型可能不稳定。使用入口是 Claude Code 一类能加载该技能的编程智能体。 JavaScript"><div class="chead"><span class="badge" style="font-size:12px">12</span><img class="vlogo" alt="" src="https://github.com/lemomo-ai.png" onerror="this.remove()"><h3>lemomo-ai/lemo-opuscar</h3></div><p class="c">Lemo-Opuscar 是一套用代码做成的影片风格工具箱：66 种现成风格，也可以自己做。选定风格、带上故事，让编程智能体当导演去生成短片。仓库同时有从真实镜头、文档和数据剪出来的 Edit &amp; Documentary 等分组。</p><p class="m"><span>本周新增星</span>3,091</p><p class="m"><span>总星</span>14,107</p><p class="m"><span>语言</span>JavaScript</p><p class="m"><span>适用</span>README 写明主要为 Claude 调校，尤其是 Claude Opus 5.5。其他模型可能不稳定。使用入口是 Claude Code 一类能加载该技能的编程智能体。</p><a class="go" href="https://github.com/lemomo-ai/lemo-opuscar" target="_blank" rel="noopener">去 GitHub ↗</a></article>
+  <article class="card extra" data-sec="github-skills" data-title="emilkowalski/skills Emil Kowalski 的界面与动效技能合集，对象是设计师和工程师。技能覆盖从零做动画、按他的规则审查、找出该动和不该动的地方，以及删掉不需要的动画。材料来自他在 Vercel 和 Linear 的实践。 用 npx skills@latest add emilkowalski/skills 安装到支持该安装器的智能体，例如 Claude Code、Cursor 和 Codex。 Markdown"><div class="chead"><span class="badge" style="font-size:12px">13</span><img class="vlogo" alt="" src="https://github.com/emilkowalski.png" onerror="this.remove()"><h3>emilkowalski/skills</h3></div><p class="c">Emil Kowalski 的界面与动效技能合集，对象是设计师和工程师。技能覆盖从零做动画、按他的规则审查、找出该动和不该动的地方，以及删掉不需要的动画。材料来自他在 Vercel 和 Linear 的实践。</p><p class="m"><span>本周新增星</span>2,256</p><p class="m"><span>总星</span>55,465</p><p class="m"><span>语言</span>Markdown</p><p class="m"><span>适用</span>用 npx skills@latest add emilkowalski/skills 安装到支持该安装器的智能体，例如 Claude Code、Cursor 和 Codex。</p><a class="go" href="https://github.com/emilkowalski/skills" target="_blank" rel="noopener">去 GitHub ↗</a></article>
+  <article class="card extra" data-sec="github-skills" data-title="google/skills google/skills 是 Google 官方的产品与技术技能仓库，重心在 Google Cloud：入门和 IAM、解决方案架构、多智能体安全、跨云的智能体分析，以及数据湖仓。安装器是 npx skills add google/skills。 运行 npx skills add google/skills 时，可以选择技能、要配置的目标智能体，以及项目级或全局安装。 Python"><div class="chead"><span class="badge" style="font-size:12px">14</span><img class="vlogo" alt="" src="https://github.com/google.png" onerror="this.remove()"><h3>google/skills</h3></div><p class="c">google/skills 是 Google 官方的产品与技术技能仓库，重心在 Google Cloud：入门和 IAM、解决方案架构、多智能体安全、跨云的智能体分析，以及数据湖仓。安装器是 npx skills add google/skills。</p><p class="m"><span>本周新增星</span>1,974</p><p class="m"><span>总星</span>23,781</p><p class="m"><span>语言</span>Python</p><p class="m"><span>适用</span>运行 npx skills add google/skills 时，可以选择技能、要配置的目标智能体，以及项目级或全局安装。</p><a class="go" href="https://github.com/google/skills" target="_blank" rel="noopener">去 GitHub ↗</a></article>
+  <article class="card extra" data-sec="github-skills" data-title="AgriciDaniel/claude-seo Claude SEO 是 Agrici Daniel 做的免费开源 SEO 审计技能，在 Claude Code 里运行。仓库说明写有 26 个子技能和 19 个专项智能体，覆盖技术 SEO、Core Web Vitals、E-E-A-T、Schema.org、面向 AI 搜索的 GEO，以及本地、电商和国际化。 Claude Code。README 把它写成 Claude Code 里的 SEO 技能。 Python"><div class="chead"><span class="badge" style="font-size:12px">15</span><img class="vlogo" alt="" src="https://github.com/AgriciDaniel.png" onerror="this.remove()"><h3>AgriciDaniel/claude-seo</h3></div><p class="c">Claude SEO 是 Agrici Daniel 做的免费开源 SEO 审计技能，在 Claude Code 里运行。仓库说明写有 26 个子技能和 19 个专项智能体，覆盖技术 SEO、Core Web Vitals、E-E-A-T、Schema.org、面向 AI 搜索的 GEO，以及本地、电商和国际化。</p><p class="m"><span>本周新增星</span>1,863</p><p class="m"><span>总星</span>27,740</p><p class="m"><span>语言</span>Python</p><p class="m"><span>适用</span>Claude Code。README 把它写成 Claude Code 里的 SEO 技能。</p><a class="go" href="https://github.com/AgriciDaniel/claude-seo" target="_blank" rel="noopener">去 GitHub ↗</a></article>
+  </div>
+  <button type="button" class="more">查看其余 5 条</button></section>
+  <footer class="foot">本站由 AI 厂商活动日报整理发布 · 感谢开源项目 <a href="https://github.com/KKKKhazix/AIHOT" target="_blank" rel="noopener">KKKKhazix/AIHOT</a>（MIT 协议）</footer>
+</div>
+</main>
+<script>
+const BOARD_ID = 'github-skills';
+const DEALS_SECS = ['urgent', 'direct', 'overseas', 'expiring', 'pending'];
+function boardFilter() {
+  return {
+    top: BOARD_ID,
+    sub: '',
+    q: (document.getElementById('q').value || '').trim()
+  };
+}
+function filterCards(q, top, sub) {
+  const query = (q || '').trim();
+  const ql = query.toLowerCase();
+  const allowed = sub ? [sub] : (top === 'deals' ? DEALS_SECS : (top ? [top] : null));
+  document.querySelectorAll('.card').forEach(c => {
+    const okSec = !allowed || allowed.indexOf(c.dataset.sec) !== -1;
+    // 搜索不区分大小写：搜 TRAE / trae / Trae 都能找到“Trae 国内版”。
+    const okQ = !query || (c.dataset.title || '').toLowerCase().includes(ql) || c.textContent.toLowerCase().includes(ql);
+    const board = c.closest('section.board');
+    const collapsed = !query && c.classList.contains('extra') && board && board.dataset.expanded !== '1';
+    c.style.display = (okSec && okQ && !collapsed) ? 'block' : 'none';
+  });
+  document.querySelectorAll('section').forEach(s => {
+    const cards = s.querySelectorAll('.card');
+    const anyVisible = [...cards].some(c => c.style.display !== 'none');
+    const noCards = cards.length === 0;
+    s.style.display = (anyVisible || (noCards && (top === '' || top === 'deals'))) ? 'block' : 'none';
+  });
+  document.querySelectorAll('.hero').forEach(e => e.style.display = (!top && !sub && !query) ? 'block' : 'none');
+  document.querySelectorAll('section.board .more').forEach(btn => {
+    const s = btn.closest('section');
+    btn.style.display = (s.dataset.expanded !== '1' && s.style.display !== 'none' && !query) ? '' : 'none';
+  });
+}
+document.getElementById('q').addEventListener('input', e => {
+  const f = boardFilter();
+  filterCards(e.target.value, f.top, f.sub);
+});
+
+document.addEventListener('click', e => {
+  const btn = e.target.closest && e.target.closest('section.board .more');
+  if (!btn) return;
+  const section = btn.closest('section');
+  section.dataset.expanded = '1';
+  section.querySelectorAll('.card.extra').forEach(c => {
+    c.classList.remove('extra');
+    if (c.style.display === 'none') c.style.display = '';
+  });
+  btn.remove();
+  const f = boardFilter();
+  if (f.top || f.sub || f.q) filterCards(f.q, f.top, f.sub);
+});
+
+function loadBoards() {
+  const feeds = {
+    'ai-news': 'data/news-latest.json',
+    'github-weekly': 'data/stars-latest.json',
+    'github-skills': 'data/skills-latest.json'
+  };
+  Object.keys(feeds).forEach(id => {
+    const section = document.getElementById(id);
+    if (!section) return;
+    const url = section.getAttribute('data-feed') || feeds[id];
+    fetch(url, { cache: 'no-cache' }).then(r => {
+      if (!r.ok) throw new Error(String(r.status));
+      return r.json();
+    }).then(data => {
+      renderBoard(section, data);
+      section.dataset.source = 'json';
+      const f = boardFilter();
+      if (f.top || f.sub || f.q) filterCards(f.q, f.top, f.sub);
+    }).catch(() => { section.dataset.source = 'fallback'; });
+  });
+}
+function esc(s) {
+  return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+function fmt(n) {
+  return (typeof n === 'number' && isFinite(n)) ? n.toLocaleString('en-US') : esc(n);
+}
+function renderBoard(section, data) {
+  const kind = section.id === 'ai-news' ? 'news' : (section.id === 'github-skills' ? 'skills' : 'stars');
+  const items = Array.isArray(data.items) ? data.items : [];
+  const empty = !!data.empty || (kind === 'news' && items.length === 0);
+  const n = empty ? 0 : items.length;
+  const preview = typeof data.preview === 'number' ? data.preview : 10;
+  const expanded = section.dataset.expanded === '1';
+  const em = section.querySelector('h2 em');
+  if (em) em.textContent = empty ? '暂无' : (data.week ? (data.week + ' · ' + n + ' 条') : (n + ' 条'));
+  const nav = document.querySelector('.nav a[href="#' + section.id + '"] em');
+  if (nav) nav.textContent = empty ? '0' : String(n);
+  const note = section.querySelector('.board-note');
+  if (note && data.note) note.textContent = data.note;
+  let box = section.querySelector('.board-cards');
+  if (!box) {
+    box = document.createElement('div');
+    box.className = 'board-cards';
+    section.appendChild(box);
+  }
+  if (empty) {
+    const msg = data.emptyMessage || '今日暂无重要资讯，晚间 19:30 起每日更新';
+    box.innerHTML = '<article class="card" data-sec="ai-news" data-title="' + esc(msg) + '"><p class="m">' + esc(msg) + '</p></article>';
+  } else if (kind === 'news') {
+    box.innerHTML = items.map((item, i) => newsCard(item, i, preview, expanded)).join('');
+  } else {
+    box.innerHTML = items.map((item, i) => repoCard(item, i, section.id, preview, expanded)).join('');
+  }
+  const hidden = (empty || expanded) ? 0 : Math.max(0, items.length - preview);
+  let more = section.querySelector('.more');
+  if (hidden > 0) {
+    if (!more) {
+      more = document.createElement('button');
+      more.type = 'button';
+      more.className = 'more';
+      section.appendChild(more);
+    }
+    more.textContent = '查看其余 ' + hidden + ' 条';
+    more.style.display = '';
+  } else if (more) more.remove();
+}
+function repoCard(item, index, sec, preview, expanded) {
+  const rank = item.rank || (index + 1);
+  const extra = (!expanded && rank > preview) ? ' extra' : '';
+  const repo = item.repo || '';
+  const owner = repo.split('/')[0] || '';
+  const intro = item.intro || '';
+  let title = repo + ' ' + intro;
+  if (item.agents) title += ' ' + item.agents;
+  if (item.language) title += ' ' + item.language;
+  const badgeStyle = String(rank).length > 1 ? ' style="font-size:12px"' : '';
+  let rows = '<p class="m"><span>本周新增星</span>' + fmt(item.weeklyStars) + '</p>'
+    + '<p class="m"><span>总星</span>' + fmt(item.totalStars) + '</p>';
+  if (item.language) rows += '<p class="m"><span>语言</span>' + esc(item.language) + '</p>';
+  if (item.agents) rows += '<p class="m"><span>适用</span>' + esc(item.agents) + '</p>';
+  return '<article class="card' + extra + '" data-sec="' + esc(sec) + '" data-title="' + esc(title) + '">'
+    + '<div class="chead"><span class="badge"' + badgeStyle + '>' + esc(rank) + '</span>'
+    + '<img class="vlogo" alt="" src="https://github.com/' + encodeURIComponent(owner) + '.png" onerror="this.remove()">'
+    + '<h3>' + esc(repo) + '</h3></div>'
+    + '<p class="c">' + esc(intro) + '</p>' + rows
+    + '<a class="go" href="' + esc(item.url || ('https://github.com/' + repo)) + '" target="_blank" rel="noopener">去 GitHub ↗</a></article>';
+}
+function newsCard(item, index, preview, expanded) {
+  const extra = (!expanded && (index + 1) > preview) ? ' extra' : '';
+  const title = item.title || '';
+  const summary = item.summary || '';
+  const bits = [title, summary, item.time || '', item.source || '', item.confidence || ''].join(' ');
+  let rows = '';
+  if (item.time) rows += '<p class="m"><span>时间</span>' + esc(item.time) + '</p>';
+  if (item.source || item.confidence) {
+    rows += '<p class="m"><span>来源</span>' + esc([item.source, item.confidence ? ('置信度 ' + item.confidence) : ''].filter(Boolean).join(' · ')) + '</p>';
+  }
+  return '<article class="card' + extra + '" data-sec="ai-news" data-title="' + esc(bits) + '">'
+    + '<div class="chead"><span class="badge">' + esc(item.badge || '讯') + '</span><h3>' + esc(title) + '</h3></div>'
+    + '<p class="c">' + esc(summary) + '</p>' + rows
+    + '<a class="go" href="' + esc(item.url || '#') + '" target="_blank" rel="noopener">去官方页 ↗</a></article>';
+}
+loadBoards();</script>
+</body>
+</html>
