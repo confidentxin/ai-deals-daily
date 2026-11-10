@@ -1,0 +1,73 @@
+{
+  "asOf": "2026-11-10",
+  "timezone": "Asia/Shanghai",
+  "preview": 10,
+  "empty": false,
+  "emptyMessage": "今日暂无重要资讯，晚间 19:30 起每日更新",
+  "note": "2026-11-10（北京时间）整理，只收录能打开的官方博客或更新日志。下列页面的标明日期都是 2026-11-09，原文没有具体时刻，这里不补钟点。置信度 A 表示来自官方原文。",
+  "items": [
+    {
+      "title": "Claude Fable 5.2 与 Mythos 5.2",
+      "badge": "A",
+      "summary": "Anthropic 发布 Fable 5.2 与 Mythos 5.2（同一底层模型），官方称编码、推理和视觉有提升，生成速度最多比 5.1 快 30%，标价为每百万 token 输入 8 美元、输出 40 美元，另有最高约 2.5 倍速的快速模式。Fable 面向一般用户，Mythos 需通过生命科学或网络安全核验申请。",
+      "time": "2026-11-09",
+      "source": "Anthropic 官方博客",
+      "confidence": "A",
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+    },
+    {
+      "title": "Claude Fable 5.2 登上 Amazon Bedrock",
+      "badge": "W",
+      "summary": "亚马逊云科技宣布 Claude Fable 5.2 与 Mythos 5.2 已在 Amazon Bedrock（US Geo CRIS 与 Global CRIS）以及 AWS 上的 Claude Platform 提供。官方写明 Fable 5.2 被标为 Covered Model，默认需要最多保留 30 天并经人工安全复核；在 Bedrock 上须先把账号或项目设为 aws_review。",
+      "time": "2026-11-09",
+      "source": "亚马逊云科技官方博客",
+      "confidence": "A",
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-2-on-aws/"
+    },
+    {
+      "title": "Meta 发布 Muse Ember",
+      "badge": "M",
+      "summary": "Meta 发布面向工具调用、编码子任务和长文档解析的 Muse Ember，API 名称为 muse-ember-1.0，今天可在 Muse Code 与 Meta Model API 使用。官方标价为每百万 token 输入 0.10 美元、缓存输入 0.004 美元、输出 0.50 美元（提示超过 20 万 token 后另有价格），上下文 100 万、输出最多 51.2 万 token。",
+      "time": "2026-11-09",
+      "source": "Meta 官方研究博客",
+      "confidence": "A",
+      "url": "https://research.meta.ai/blog/muse-ember"
+    },
+    {
+      "title": "字节 Seedream 5.5",
+      "badge": "字",
+      "summary": "字节跳动 Seed 团队发布图像模型 Seedream 5.5。官方称其支持约 100 轮连续编辑且未改区域按像素级保留，可直接生成带透明通道的 RGBA 素材，并改进真实感与小字渲染。",
+      "time": "2026-11-09",
+      "source": "字节跳动 Seed 团队官方博客",
+      "confidence": "A",
+      "url": "https://seed.bytedance.com/en/blog/more-realistic-images-more-stable-editing-across-100-rounds-introducing-seedream-5-5"
+    },
+    {
+      "title": "ChatGPT Enterprise 进入 AWS Marketplace",
+      "badge": "O",
+      "summary": "OpenAI 宣布 ChatGPT Enterprise 已在 AWS Marketplace 上架，组织可用现有 AWS 采购和账单购买，并把符合条件的支出计入 AWS 承诺消费。官方称 Marketplace 版本与直接向 OpenAI 购买的功能同步更新，符合条件的客户也可经此购买 ChatGPT for Healthcare 与 ChatGPT for Financial Services。",
+      "time": "2026-11-09",
+      "source": "OpenAI 官方博客",
+      "confidence": "A",
+      "url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace/"
+    },
+    {
+      "title": "Google 推出 TPU 8tx 与 TPU 8i Max",
+      "badge": "G",
+      "summary": "Google 公布第八代 TPU 的两个新系统：TPU 8tx 面向机密推理，在计算过程中保护敏感数据与模型权重；TPU 8i Max 把两颗 TPU 8i 合在一颗封装上，算力、SRAM 与 HBM 带宽均为 TPU 8i 的两倍。官方称这是同一年内推出的第四套 TPU 系统。",
+      "time": "2026-11-09",
+      "source": "Google 官方博客",
+      "confidence": "A",
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/"
+    },
+    {
+      "title": "NVIDIA 发布 GR00T 2 与 Isaac Lab 3.0",
+      "badge": "N",
+      "summary": "NVIDIA 在 CoRL 介绍基于 Cosmos 的开源世界动作模型 GR00T 2，以及 Isaac Lab 3.0 和 DexBench、VABAR 等开放基准。官方称 GR00T 2 在 50 项评测任务里有 40 项至少完成过一次（无任务示范），给 1 次示范时平均成功率 71%，5 次示范升至 95%。",
+      "time": "2026-11-09",
+      "source": "NVIDIA 官方博客",
+      "confidence": "A",
+      "url": "https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl/"
+    }
+  ]
+}

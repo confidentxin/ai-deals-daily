@@ -1,0 +1,189 @@
+{
+  "week": "2026-W45",
+  "asOf": "2026-11-10",
+  "timezone": "Asia/Shanghai",
+  "preview": 10,
+  "note": "数据说明：窗口为北京时间 2026-11-02 00:00 至 2026-11-09 00:00；本周新增星由官方星标历史按 UTC 11-02 至 11-08 加总；总星截至 2026-11-10 上午。",
+  "items": [
+    {
+      "rank": 1,
+      "repo": "morluto/rea",
+      "url": "https://github.com/morluto/rea",
+      "weeklyStars": 25432,
+      "totalStars": 447236,
+      "language": "TypeScript",
+      "intro": "REA（Reverse Engineer Anything）是一套面向智能体的逆向工程 MCP：看到喜欢的功能后，可以从应用行为一直分析到原生二进制。适合安全研究、逆向工程和需要「看懂别人软件怎么做的」开发者。"
+    },
+    {
+      "rank": 2,
+      "repo": "storytold/craft-anything",
+      "url": "https://github.com/storytold/craft-anything",
+      "weeklyStars": 21527,
+      "totalStars": 24696,
+      "language": "Rust",
+      "intro": "Craft Anything 让你指向一个网站、应用或游戏，用真实检查工具研究原作，再让编程智能体用纯 Rust 的洁净室引擎做出你自己的版本，并对照原作打磨。适合想「先看懂再重做」的开发者与创作者，而不是直接拷贝代码。"
+    },
+    {
+      "rank": 3,
+      "repo": "pingdotgg/t3code",
+      "url": "https://github.com/pingdotgg/t3code",
+      "weeklyStars": 14120,
+      "totalStars": 54281,
+      "language": "TypeScript",
+      "intro": "T3 Code 是开源的「智能体控制台」：用 iOS / Android、网页或 Electron 桌面应用，远程操控你本机已经登录的 Claude Code、Codex、Cursor、Grok Build、OpenCode、Antigravity 等。适合已经订阅这些 CLI、希望出门或换一块屏幕也能指挥它们的人。项目声明免费、可 fork。"
+    },
+    {
+      "rank": 4,
+      "repo": "vercel-labs/agent-desktop",
+      "url": "https://github.com/vercel-labs/agent-desktop",
+      "weeklyStars": 12432,
+      "totalStars": 20576,
+      "language": "Rust",
+      "intro": "Vercel Labs 的桌面 Computer Use CLI：通过操作系统无障碍树读取并点击、输入 macOS / Windows / Linux 上的桌面应用，不靠截图或像素匹配。工具本身不含模型，循环由你的智能体驱动。适合要给智能体加「操作本机图形界面」能力的开发者。"
+    },
+    {
+      "rank": 5,
+      "repo": "ccch1mneyyy/dsh-Go",
+      "url": "https://github.com/ccch1mneyyy/dsh-Go",
+      "weeklyStars": 11606,
+      "totalStars": 17694,
+      "language": "Dart",
+      "intro": "DeepSeek Harness（dsh）的 Android 客户端：可以在手机上直接跑，也可以遥控电脑上的 DSH，并带有「Deepy / 鲸娘」这类桌面宠物式状态提示。适合已经在用 DSH、想把工作流装进口袋的用户。"
+    },
+    {
+      "rank": 6,
+      "repo": "deepseek-ai/dsh-superagent-prototype",
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+      "weeklyStars": 11369,
+      "totalStars": 21793,
+      "language": "TypeScript",
+      "intro": "DeepSeek 团队公开的研究原型（README 写明不是正式产品、非生产就绪）：面向单个 GitHub 仓库的主动编程智能体，可监听 GitHub，也可选飞书；在被允许后开启任务、在独立会话里干活，并回到原对话（例如开出 PR）。适合想参考「少占用注意力、多交付结果」超级智能体设计的人。"
+    },
+    {
+      "rank": 7,
+      "repo": "Ebony-Vinyl/dsh-our-free-model",
+      "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
+      "weeklyStars": 11109,
+      "totalStars": 67483,
+      "language": "JavaScript",
+      "intro": "一个 DeepSeek Harness 插件。README 称安装后无需登录、注册或填写 API Key，即可通过公开网关（文中写明来源为 OpenCode Zen 与 Kilo AI 公共网关）使用 DeepSeek V4.1 Flash、Kimi K3 等模型，并附本地 OpenAI 兼容转发端口。适合 DSH 用户做试用；可用性取决于本机网络与上游网关，请先读仓库中的上游说明和免责声明。"
+    },
+    {
+      "rank": 8,
+      "repo": "cloudflare/security-audit-skill",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "weeklyStars": 10674,
+      "totalStars": 68156,
+      "language": "JavaScript",
+      "intro": "Cloudflare 开源的编程智能体安全审计 skill。它按六阶段组织侦察、覆盖式排查、候选验证、结构化输出、独立记录核验和中立报告，写出机器可读的 `findings.json`。适合要用智能体对代码库做系统安全审计的安全与工程团队。"
+    },
+    {
+      "rank": 9,
+      "repo": "NVIDIA/auto-ontology",
+      "url": "https://github.com/NVIDIA/auto-ontology",
+      "weeklyStars": 9937,
+      "totalStars": 11067,
+      "language": "Python",
+      "intro": "NVIDIA 的 Auto Ontology 从企业元数据构建语义本体与知识图谱，调和各系统里不一致的业务定义，再通过 MCP、CLI 和 API 交给智能体，用来做查询校验、血缘追溯和更可解释的分析。适合要给分析型 / 智能体工作流加一层「可信数据上下文」的数据与平台团队。"
+    },
+    {
+      "rank": 10,
+      "repo": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "weeklyStars": 9726,
+      "totalStars": 319838,
+      "language": "Shell",
+      "intro": "Matt Pocock 的「给真工程师用」的可组合 Agent Skills，分成 engineering 与 productivity 等目录，强调小而可改、不把整套流程抢走。可用官方插件或 skills.sh 装到 Claude Code、Codex、GitHub Copilot、Gemini CLI、Cursor、OpenCode 等。适合想改进排错、测试和任务管理，又不想被重型方法论绑死的人。"
+    },
+    {
+      "rank": 11,
+      "repo": "sherlock-project/sherlock",
+      "url": "https://github.com/sherlock-project/sherlock",
+      "weeklyStars": 9714,
+      "totalStars": 107271,
+      "language": "Python",
+      "intro": "用一个用户名在 400 多个社交网络上查找公开账号的开源 OSINT 命令行工具，可用 pipx、Docker 等安装。适合安全研究、情报收集和账号排查。本周后段日增量很高；它本身不是 AI 项目。"
+    },
+    {
+      "rank": 12,
+      "repo": "deepseek-ai/deepseek-harness",
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "weeklyStars": 8419,
+      "totalStars": 277454,
+      "language": "TypeScript",
+      "intro": "DeepSeek 开源的智能体运行时（dsh），采用「一切皆插件」架构，可用 `npx @deepseek-ai/dsh web` 启动本地 Web UI。README 标明仍是开发者预览，可能出现不兼容变更，使用前应阅读安全说明。适合想自建或扩展 DeepSeek 智能体工作台的开发者。"
+    },
+    {
+      "rank": 13,
+      "repo": "D4Vinci/Scrapling",
+      "url": "https://github.com/D4Vinci/Scrapling",
+      "weeklyStars": 8285,
+      "totalStars": 100613,
+      "language": "Python",
+      "intro": "现代 Python 网页抓取框架，覆盖从单次请求到大规模爬取，强调页面改版后仍能定位元素，并提供面向 AI 工具的 skill 与 MCP 入口。适合需要自适应选择、反爬处理和智能体集成的 Python 开发者。"
+    },
+    {
+      "rank": 14,
+      "repo": "milind-soni/OpenMausBot",
+      "url": "https://github.com/milind-soni/OpenMausBot",
+      "weeklyStars": 8061,
+      "totalStars": 19820,
+      "language": "TypeScript",
+      "intro": "开源的 Grok Bot 类桌面聊天应用（独立项目，与 xAI / Meta / OpenAI 等无关）：把本地运行的 Claude 或 Codex 等智能体做成侧边栏「联系人」，各自有人格、模型、云电脑和已连接应用，你可以对话、观察并审批关键操作。适合想要本地优先、自带一队机器人的桌面工作台的人。"
+    },
+    {
+      "rank": 15,
+      "repo": "debpalash/VoiceStudio",
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "weeklyStars": 7238,
+      "totalStars": 106263,
+      "language": "Python",
+      "intro": "开源、以本地运行为主的语音工作室，可在笔记本、桌面、服务器或手机上做声音克隆、声音设计、视频配音、听写、转写，以及号称覆盖 646 种语言的旁白。适合想离线或自托管语音能力、替代云端语音套件的用户。"
+    },
+    {
+      "rank": 16,
+      "repo": "heydamir/unslop",
+      "url": "https://github.com/heydamir/unslop",
+      "weeklyStars": 7026,
+      "totalStars": 12803,
+      "language": "JavaScript",
+      "intro": "面向 Claude Code、Codex 和 Google Antigravity 的 skill：先找出紫渐变、发光、emoji 标签、夸张文案和间距不均等「AI 界面味道」，再按你的产品方向把页面改成更有个性的设计，支持常见前端栈，也可以对着线上链接做。适合要把 vibe coding 出来的 UI「去 slop」的人。"
+    },
+    {
+      "rank": 17,
+      "repo": "stablyai/orca",
+      "url": "https://github.com/stablyai/orca",
+      "weeklyStars": 6926,
+      "totalStars": 120512,
+      "language": "TypeScript",
+      "intro": "Orca 用来并行编排 Claude Code、Codex 等编程智能体：每个智能体在独立 worktree 里跑，可在聊天界面或原始终端之间切换，也可在笔记本或云端运行，并把 diff、浏览器和 CLI 放在一个应用里。适合要同时开多个智能体、自己当编排者的开发者。"
+    },
+    {
+      "rank": 18,
+      "repo": "pbakaus/impeccable",
+      "url": "https://github.com/pbakaus/impeccable",
+      "weeklyStars": 6821,
+      "totalStars": 106945,
+      "language": "Rust",
+      "intro": "给编程智能体用的设计词表：用 `polish` / `bolder` 转向，用 `critique` / `audit` 审查，在发版前抓住常见 AI slop。可用 `npx impeccable install` 接入 Claude Code、Cursor、Codex、GitHub Copilot 等。适合希望智能体做出有风格、而不是「默认好看模板」界面的设计与前端。"
+    },
+    {
+      "rank": 19,
+      "repo": "google/elephant-goldfish-model",
+      "url": "https://github.com/google/elephant-goldfish-model",
+      "weeklyStars": 6101,
+      "totalStars": 16527,
+      "language": "Python",
+      "intro": "Google 开源的「大象 + 金鱼」设计评审插件：大象带着项目上下文起草规格，金鱼在没有先前对话的情况下审查草稿和引用材料，用来暴露隐含假设；架构取舍仍由人批准。可装到 ChatGPT / Codex 桌面、Antigravity 等。适合用智能体写软件规格、又希望有一轮「新鲜眼神」审查的人。"
+    },
+    {
+      "rank": 20,
+      "repo": "Nutlope/hallmark",
+      "url": "https://github.com/Nutlope/hallmark",
+      "weeklyStars": 6066,
+      "totalStars": 51850,
+      "language": "CSS",
+      "intro": "Together AI 推出的反「AI 模板味」网页设计 skill，面向 Claude Code、Codex、Cursor 和 OpenCode。它从五十种主题材料里出牌，按「这个页面要完成的任务」来搭建，并在真实浏览器里做分层检查（对比度、假表单、千篇一律的英雄区等）。适合不想做出一眼假页面的前端与产品开发者。"
+    }
+  ]
+}
