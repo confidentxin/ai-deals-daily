@@ -3,187 +3,637 @@
   "asOf": "2026-11-10",
   "timezone": "Asia/Shanghai",
   "preview": 10,
-  "note": "数据说明：窗口为北京时间 2026-11-02 00:00 至 2026-11-09 00:00；本周新增星由官方星标历史按 UTC 11-02 至 11-08 加总；总星截至 2026-11-10 上午。",
+  "window": {
+    "label": "2026-W45 · 北京时间 11月2日 00:00 至 11月9日 00:00",
+    "start": "2026-11-02T00:00:00+08:00",
+    "end": "2026-11-09T00:00:00+08:00",
+    "display": "2026-W45 · 北京时间 11月2日 00:00 至 11月9日 00:00"
+  },
+  "note": "数据说明：窗口为北京时间 2026-11-02 00:00 至 2026-11-09 00:00；本周新增星由官方星标历史按 UTC 11-02 至 11-08 加总；总星是 2026-11-10 上午写入本榜的快照，不是现在打开 GitHub 时的实时星数。排序仍按本周新增星，不按发布时间。每条上的 2026-W45 就是这个窗口。介绍根据当日能打开的 README、仓库简介、许可证和主页字段写成；没读到的功能、数字和链接不写。",
   "items": [
     {
+      "id": "morluto-rea",
       "rank": 1,
       "repo": "morluto/rea",
       "url": "https://github.com/morluto/rea",
       "weeklyStars": 25432,
       "totalStars": 447236,
       "language": "TypeScript",
-      "intro": "REA（Reverse Engineer Anything）是一套面向智能体的逆向工程 MCP：看到喜欢的功能后，可以从应用行为一直分析到原生二进制。适合安全研究、逆向工程和需要「看懂别人软件怎么做的」开发者。"
+      "week": "2026-W45",
+      "windowLabel": "2026-W45 · 北京时间 11月2日 00:00 至 11月9日 00:00",
+      "summary": "REA（Reverse Engineer Anything）是一套给智能体用的逆向分析 MCP。README 的定位是：看到一个想了解的功能后，从应用行为一直看到原生二进制。官方获取渠道只写了本仓库、rea.tools 和 npm 上的 rea-agents，并提醒同名仓库不代表是正版。",
+      "intro": "REA（Reverse Engineer Anything）是一套给智能体用的逆向分析 MCP。README 的定位是：看到一个想了解的功能后，从应用行为一直看到原生二进制。官方获取渠道只写了本仓库、rea.tools 和 npm 上的 rea-agents，并提醒同名仓库不代表是正版。",
+      "detail": "## 它是什么\n\nGitHub 简介写的是：用智能体逆向分析任何东西，从应用行为一直到原生二进制。README 标题是 REA: Reverse Engineer Anything，副标题是一个覆盖二进制、应用和运行时行为的 MCP。面向读者的那句是：看到喜欢的功能，弄清它如何实现，一直到二进制这一层。\n\n仓库主语言在本榜记录里是 TypeScript，许可证字段是 MIT。主页字段指向 https://rea.tools/ 。README 同时给出指南和案例页 rea.tools/guides/ 与 rea.tools/showcase/ 。\n\n## 它做什么\n\n它把分析交给已经接上的智能体，而不是在 README 里把自己写成一个带模型的聊天产品。入口命令写的是 npx rea-agents setup。README 画了一张在 Hopper 里检查原生二进制的图，说明它会把分析桥接到现有的二进制工具里；具体接哪些工具、每一步怎么操作，以指南原文为准，这里不转写。\n\nREADME 还单列了给智能体搭强化学习环境的方向，以及 FAQ 和文档。多语言说明里有简体中文版 docs/readme/README_zh.md。\n\n## 适合谁\n\n适合已经在用编程智能体、希望它按官方工具去理解一个软件功能如何实现的安全研究和逆向工程读者。README 没有把它写成可以拿来抄代码或绕过授权的产品，本榜也不补充这类用法。\n\n获取渠道被单独写成重要提示：只从 morluto/rea、rea.tools 或 npm 包 rea-agents 安装，并跟着这些官方来源的安装和发布链接走。名字相似或 README 被抄走，不能说明下载是官方的。\n\n## 这一周为什么上榜\n\n本榜按这个窗口里的新增星排序，数字是 2026-11-10 上午写入榜单的快照。下面的名次只说明它在这一周的星标增量里排在哪里，不代表产品已经可上生产，也不把实时星数写进来。\n\n这一窗口里它的新增星是 25,432，总星快照 447,236，排在本榜第 1。增量远高于同榜第二名，是这周 GitHub 周榜的头条，但星数本身不证明工具在每一类二进制上都能给出可靠结论。\n\n## 可以核对的事实\n\n语言 TypeScript，许可证 MIT，主页 https://rea.tools/ 。\n\n社区入口包括 Discord，邀请链接写在 README 里。\n\n本介绍没有摘录反汇编步骤、脚本或示例目标。\n",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/morluto/rea"
+        },
+        {
+          "label": "官网 rea.tools",
+          "url": "https://rea.tools/"
+        },
+        {
+          "label": "指南",
+          "url": "https://rea.tools/guides/"
+        },
+        {
+          "label": "案例",
+          "url": "https://rea.tools/showcase/"
+        },
+        {
+          "label": "npm：rea-agents",
+          "url": "https://www.npmjs.com/package/rea-agents"
+        },
+        {
+          "label": "简体中文 README",
+          "url": "https://github.com/morluto/rea/blob/HEAD/docs/readme/README_zh.md"
+        }
+      ]
     },
     {
+      "id": "storytold-craft-anything",
       "rank": 2,
       "repo": "storytold/craft-anything",
       "url": "https://github.com/storytold/craft-anything",
       "weeklyStars": 21527,
       "totalStars": 24696,
       "language": "Rust",
-      "intro": "Craft Anything 让你指向一个网站、应用或游戏，用真实检查工具研究原作，再让编程智能体用纯 Rust 的洁净室引擎做出你自己的版本，并对照原作打磨。适合想「先看懂再重做」的开发者与创作者，而不是直接拷贝代码。"
+      "week": "2026-W45",
+      "windowLabel": "2026-W45 · 北京时间 11月2日 00:00 至 11月9日 00:00",
+      "summary": "Craft Anything 让你指向网站、应用或游戏，先用检查工具弄清它如何工作，再让你自己的编程智能体做出一个新项目。默认是洁净室：不读原作的代码和文件。仓库写明仍是早期 alpha，引擎用纯 Rust 写成。",
+      "intro": "Craft Anything 让你指向网站、应用或游戏，先用检查工具弄清它如何工作，再让你自己的编程智能体做出一个新项目。默认是洁净室：不读原作的代码和文件。仓库写明仍是早期 alpha，引擎用纯 Rust 写成。",
+      "detail": "## 它是什么\n\nGitHub 简介是：弄清任何软件如何工作，然后做出你自己的。README 里的产品名也叫 ArtCraft，网站是 getartcraft.com。它同时有桌面应用、命令行和 MCP 服务。\n\n默认模式叫洁净室。README 写明这种模式下不读取原作内部，不读它的代码、文件或页面源码；只根据你能看见的东西工作，例如你加上的图片、访客眼里的网页（截图、可见文字、量到的版式、颜色、字体和间距、打开的菜单），以及在你允许时应用窗口的一张图。会往内部看的工具会被拒绝，并告诉你怎样打开 Deep 模式。\n\n## 它做什么\n\n使用分成两档。Simple 是默认：选一个网站、应用或游戏，写下要做什么，按开始。项目页按 Study、Build、Check、Ready 四步显示智能体正在做什么、提问和批准卡，以及结果有多像，并可以打开结果或它所在的文件夹。还有一个「只看里面」的入口，用来提问而不进入制作。\n\nDeep 模式被写成私人使用：程序的代码和文件会用内置引擎读取，装了 Ghidra 时也会用到，网页的 JavaScript 会被读取并观察起始页。洁净室是产品提供或拒绝哪些工具的规则，README 明确说它不是操作系统沙箱，不能隔离你的电脑；智能体仍然以你的身份行动。\n\n引擎部分写的是纯 Rust，共 320 个工具，其中 300 个在引擎里，其余来自 AI 和安装层，覆盖原生程序、.NET、Java、Android、Apple、Electron/JavaScript、网站、固件、抓包、数据库和游戏文件。自带解码器、反汇编器和反编译器，不依赖外部程序；Deep 模式会用上它们。同一套引擎支撑 egui 桌面、命令行和 MCP，一部分还可以在浏览器里以 WebAssembly 运行。工具全表在 docs/tools.md。这里不列举具体分析步骤。\n\n## 适合谁\n\n适合想先看懂再重做、并且接受默认不读取原作源码的开发者和创作者。制作阶段需要你电脑上已经登录的编程智能体。README 写 Claude Code 是首先支持的：它运行你自己的、未改动的 claude 程序，Craft Anything 看不到你的账号。Codex 适配器存在，但还没有在真实安装上验证。GitHub Copilot 可以通过已安装的 Copilot CLI 走 ACP，Grok Build 可以走已安装的 grok。其他会说 ACP 的智能体包括 Gemini CLI、Qwen Code、opencode、goose、Hermes、Maki 和 Devin。\n\n状态栏写的是早期 alpha。今天能用的包括桌面（Simple 和 Advanced）、命令行和 MCP，以及用 Claude Code 当建造者、对网站和应用做 Study 到 Refine 的流程，网站会在三种屏幕宽度上检查，游戏重建可以走 Unity、Unreal 或 Godot。用 API key 和其他智能体建造被标成「部分完成，还没有实机跑过」。\n\n## 这一周为什么上榜\n\n本榜按这个窗口里的新增星排序，数字是 2026-11-10 上午写入榜单的快照。下面的名次只说明它在这一周的星标增量里排在哪里，不代表产品已经可上生产，也不把实时星数写进来。\n\n本周新增星 21,527，总星快照只有 24,696，说明星标大部分集中在这一窗口，而不是一个长年累积的老项目。排名第 2。总星远小于第一名 REA，但周增量接近。\n\n## 可以核对的事实\n\n许可证字段 Apache-2.0，主语言 Rust。README 要求 Rust 1.97 或更新，因为某个依赖需要它。\n\n生成图片和三维模型是可选的，要自备 fal.ai 的 key。插件可以是 MCP 服务，带 wasm-plugins 选项的构建还可以用 WASM 组件。\n\n简体中文 README 文件名是 README.zh.md。\n",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/storytold/craft-anything"
+        },
+        {
+          "label": "网站 getartcraft.com",
+          "url": "https://getartcraft.com/"
+        },
+        {
+          "label": "简体中文 README",
+          "url": "https://github.com/storytold/craft-anything/blob/HEAD/README.zh.md"
+        }
+      ]
     },
     {
+      "id": "pingdotgg-t3code",
       "rank": 3,
       "repo": "pingdotgg/t3code",
       "url": "https://github.com/pingdotgg/t3code",
       "weeklyStars": 14120,
       "totalStars": 54281,
       "language": "TypeScript",
-      "intro": "T3 Code 是开源的「智能体控制台」：用 iOS / Android、网页或 Electron 桌面应用，远程操控你本机已经登录的 Claude Code、Codex、Cursor、Grok Build、OpenCode、Antigravity 等。适合已经订阅这些 CLI、希望出门或换一块屏幕也能指挥它们的人。项目声明免费、可 fork。"
+      "week": "2026-W45",
+      "windowLabel": "2026-W45 · 北京时间 11月2日 00:00 至 11月9日 00:00",
+      "summary": "T3 Code 是一块「智能体控制台」：用 iOS、Android、网页或 Electron 桌面，去控制你电脑上已经登录的 Claude Code、Codex、Cursor、Grok Build、OpenCode、Google Antigravity 和 fx。README 写明不卖东西，项目免费，也希望你在方向不对时可以 fork。",
+      "intro": "T3 Code 是一块「智能体控制台」：用 iOS、Android、网页或 Electron 桌面，去控制你电脑上已经登录的 Claude Code、Codex、Cursor、Grok Build、OpenCode、Google Antigravity 和 fx。README 写明不卖东西，项目免费，也希望你在方向不对时可以 fork。",
+      "detail": "## 它是什么\n\nREADME 把 T3 Code 定义成 agent harness control surface。它不自带模型订阅，而是控制你机器上已经配好的那些智能体。官方表面有 iOS 应用、Android 应用、网页 app.t3.codes，以及基于 Electron 的桌面，网站是 t3.codes。\n\n作者写了一段「我们在卖什么」：什么都不卖。他们想要一个够快、能远程、真正开放的使用方式，灵感来自 Codex 桌面、Conductor、Claude Desktop 和 Cursor Glass，但觉得都没达到自己的标准。如果项目走偏，希望用户有足够的代码自己 fork。\n\n## 它做什么\n\n它把手机、浏览器和桌面变成同一套本机智能体的遥控器。支持列表在正文和警告框里是一致的：Codex、Claude Code、Cursor、Grok Build、OpenCode、Google Antigravity 和 fx。使用前至少要安装并登录其中一个。文档目录里还有远程访问、权限模式、多账号（Codex 与 Claude 分开写）、把外部的 Claude Code、Codex、ChatGPT 或其他智能体经 MCP 接进来，以及把 T3 Code 当成后台服务跑。\n\n文档目前就在仓库的 docs/ 目录，README 写明还没有文档站。和贡献相关的态度也很明确：项目还非常早，会有 bug；基本上不接受贡献，小修可能考虑，大功能不会收。\n\n## 适合谁\n\n适合已经在为上面这些命令行付费、希望离开电脑时还能用手机或另一块屏幕接着指挥的人。不适合指望它赠送模型额度，或把它当成新的模型厂商。\n\nGitHub 主页字段是 https://t3.codes ，仓库简介当时是空的，产品定义以 README 为准。\n\n## 这一周为什么上榜\n\n本榜按这个窗口里的新增星排序，数字是 2026-11-10 上午写入榜单的快照。下面的名次只说明它在这一周的星标增量里排在哪里，不代表产品已经可上生产，也不把实时星数写进来。\n\n本周新增星 14,120，总星快照 54,281，排第 3。它比后面的桌面控制类项目更强调「用你已经登录的订阅」，这也是同一周好几款智能体外壳同时上涨时，它被 README 反复强调的差别。\n\n## 可以核对的事实\n\n许可证 MIT，主语言 TypeScript。\n\niOS：App Store 上的 T3 Code；Android 包名 com.t3tools.t3code；网页 https://app.t3.codes 。\n\n从源码构建的说明在 README 后半，要求先看他们写给贡献者的警告。\n",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/pingdotgg/t3code"
+        },
+        {
+          "label": "网站 t3.codes",
+          "url": "https://t3.codes"
+        },
+        {
+          "label": "网页应用",
+          "url": "https://app.t3.codes"
+        },
+        {
+          "label": "iOS",
+          "url": "https://apps.apple.com/us/app/t3-code-remote-claude-more/id6787819824"
+        },
+        {
+          "label": "Android",
+          "url": "https://play.google.com/store/apps/details?id=com.t3tools.t3code"
+        }
+      ]
     },
     {
+      "id": "vercel-labs-agent-desktop",
       "rank": 4,
       "repo": "vercel-labs/agent-desktop",
       "url": "https://github.com/vercel-labs/agent-desktop",
       "weeklyStars": 12432,
       "totalStars": 20576,
       "language": "Rust",
-      "intro": "Vercel Labs 的桌面 Computer Use CLI：通过操作系统无障碍树读取并点击、输入 macOS / Windows / Linux 上的桌面应用，不靠截图或像素匹配。工具本身不含模型，循环由你的智能体驱动。适合要给智能体加「操作本机图形界面」能力的开发者。"
+      "week": "2026-W45",
+      "windowLabel": "2026-W45 · 北京时间 11月2日 00:00 至 11月9日 00:00",
+      "summary": "Vercel Labs 的 agent-desktop 是一个没有内置模型的桌面 Computer Use CLI：通过操作系统的无障碍树读取 macOS、Windows 和 Linux 上的桌面应用，再按元素引用去点击或输入，不靠截图对像素。循环由你自己的智能体来跑。",
+      "intro": "Vercel Labs 的 agent-desktop 是一个没有内置模型的桌面 Computer Use CLI：通过操作系统的无障碍树读取 macOS、Windows 和 Linux 上的桌面应用，再按元素引用去点击或输入，不靠截图对像素。循环由你自己的智能体来跑。",
+      "detail": "## 它是什么\n\n仓库简介是 Computer use CLI for AI agents。README 第一段写明：让智能体看见并操作 macOS、Windows 和 Linux 上的桌面应用，途径是操作系统的无障碍树。它是 Vercel Labs 的产品，许可证 Apache-2.0，同时提供 CLI 和 C 库。\n\nGitHub 主页字段指向 https://agent-browser.dev/desktop 。npm 包名是 agent-desktop。\n\n## 它做什么\n\n它读取一个桌面应用的无障碍树，变成 JSON，树上每个能操作的元素都有一个 ref。智能体对 ref 点击或输入，然后重新读界面确认结果，再重复。README 强调循环在你的智能体里，agent-desktop 内部没有模型。\n\n因此它不是「看屏幕截图点坐标」的那一类。快照、剪贴板、截图、命令输出和调试产物都可能含有桌面上的私人内容。README 要求不要把它们放进公开日志或上传。安装命令是 npm install -g agent-desktop，随后可以用 agent-desktop status 看平台、权限和支持的界面。\n\nREADME 还有 MCP 一节，给已经会接 MCP 的智能体使用，以及按平台分别写的支持范围。具体子命令以仓库 Documentation 一节为准。\n\n## 适合谁\n\n适合要给现有编程智能体加上「操作本机图形界面」能力、并且希望用无障碍树而不是像素匹配的开发者。不适合把它当成一个自带大模型的桌面助手，也不适合在没看权限提示的情况下让它读整个桌面。\n\n因为产物里会有私人界面内容，团队使用时要先定日志和上传的边界。这是 README 的原话方向，不是本榜加的使用条款。\n\n## 这一周为什么上榜\n\n本榜按这个窗口里的新增星排序，数字是 2026-11-10 上午写入榜单的快照。下面的名次只说明它在这一周的星标增量里排在哪里，不代表产品已经可上生产，也不把实时星数写进来。\n\n本周新增星 12,432，总星快照 20,576，排第 4。同一窗口里 T3 Code 解决的是「远程指挥已经登录的编码智能体」，这一条解决的是「让智能体点本机其他桌面软件」。两个都在涨，但不是同一层工具。\n\n## 可以核对的事实\n\n主语言 Rust，许可证 Apache-2.0。\n\nnpm 包 https://www.npmjs.com/package/agent-desktop 。\n\n没有在 README 开头写支持的模型名单，因为它不含模型。\n",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/vercel-labs/agent-desktop"
+        },
+        {
+          "label": "文档站（GitHub 主页字段）",
+          "url": "https://agent-browser.dev/desktop"
+        },
+        {
+          "label": "npm：agent-desktop",
+          "url": "https://www.npmjs.com/package/agent-desktop"
+        }
+      ]
     },
     {
+      "id": "ccch1mneyyy-dsh-go",
       "rank": 5,
       "repo": "ccch1mneyyy/dsh-Go",
       "url": "https://github.com/ccch1mneyyy/dsh-Go",
       "weeklyStars": 11606,
       "totalStars": 17694,
       "language": "Dart",
-      "intro": "DeepSeek Harness（dsh）的 Android 客户端：可以在手机上直接跑，也可以遥控电脑上的 DSH，并带有「Deepy / 鲸娘」这类桌面宠物式状态提示。适合已经在用 DSH、想把工作流装进口袋的用户。"
+      "week": "2026-W45",
+      "windowLabel": "2026-W45 · 北京时间 11月2日 00:00 至 11月9日 00:00",
+      "summary": "DSH Go 是 DeepSeek Harness 的第三方 Android 客户端：手机上能自己跑一套 DSH 环境，也能用 SSH 或 DSHarness Remote 去连电脑上的 DSH。README 要求 Android 8.0 及以上，许可证是 AGPL-3.0，并带有桌宠外观。",
+      "intro": "DSH Go 是 DeepSeek Harness 的第三方 Android 客户端：手机上能自己跑一套 DSH 环境，也能用 SSH 或 DSHarness Remote 去连电脑上的 DSH。README 要求 Android 8.0 及以上，许可证是 AGPL-3.0，并带有桌宠外观。",
+      "detail": "## 它是什么\n\n仓库简介写的是：把 DeepSeek Harness 装进口袋，手机本机运行，也能遥控电脑。README 明确它是基于 deepseek-ai/deepseek-harness 的第三方项目。跑在手机上的是 DSH 引擎，模型请求仍然发给你自己配置的模型提供方。\n\n许可证徽章是 AGPL-3.0。安装包面向 Android 8.0（API 26）及以上。常见 64 位手机用 Release 里的 arm64 包；x86_64 设备和模拟器的 x64 包在发布说明末尾。仓库没有 32 位 ARM 构建。\n\n## 它做什么\n\n本机运行：在 App 里安装 Ubuntu、Node.js 和 DSH 运行环境，不需要 Root，也不必另装 Termux。远程连接：通过 SSH，或李国宝开发的 DSHarness Remote，去使用电脑和服务器上的 DSH。\n\n聊天侧可以切换模型、发图片、语音输入，并处理工具审批和提问，有聊天界面和网页模式。插件侧提供适配 DSH Go 的原生工具卡、表单和面板，仓库里有 SDK、教程和示例。手机操控只在你打开权限之后，让本机引擎读取屏幕、点按和输入，并可以随时停止。另外可以分享、导出和回放对话，改主题、图标和桌宠。\n\n能力随主机和连接方式变化。README 写明 DSHarness Remote 当前只支持图片附件，不能在 App 里打开网页版，插件管理只限于开关，也不支持 DS Bot 和对话日志导出。对照说明在 docs/guide/zh/03-engine-hosts.md。\n\n## 适合谁\n\n适合已经在用 DeepSeek Harness、想在 Android 手机上继续同一套工作流的人。不适合把它当成 DeepSeek 官方客户端，也不适合指望它自带模型额度。\n\n论坛写的是 forum.dshtui.com，下载页写的是 go.dshtui.com。README 另有风险提示与免责声明、授权范围与再发布两节，使用前应读原文，而不是只看功能列表。\n\n## 这一周为什么上榜\n\n本榜按这个窗口里的新增星排序，数字是 2026-11-10 上午写入榜单的快照。下面的名次只说明它在这一周的星标增量里排在哪里，不代表产品已经可上生产，也不把实时星数写进来。\n\n本周新增星 11,606，总星快照 17,694，排第 5。同一周 DeepSeek Harness 本体、超级智能体原型和免费模型插件都在榜上，DSH Go 是其中把这套运行时装进手机的那一条。\n\n## 可以核对的事实\n\n主语言 Dart。GitHub 仓库路径是 ccch1mneyyy/dsh-Go，包名大小写以仓库为准。\n\n英文说明在 README.en.md。\n\nQQ 群号 1132118290 写在 README 徽章里。\n",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/ccch1mneyyy/dsh-Go"
+        },
+        {
+          "label": "GitHub Releases",
+          "url": "https://github.com/ccch1mneyyy/dsh-Go/releases/latest"
+        },
+        {
+          "label": "论坛",
+          "url": "https://forum.dshtui.com"
+        },
+        {
+          "label": "本机引擎与远程主机",
+          "url": "https://github.com/ccch1mneyyy/dsh-Go/blob/HEAD/docs/guide/zh/03-engine-hosts.md"
+        }
+      ]
     },
     {
+      "id": "deepseek-ai-dsh-superagent-prototype",
       "rank": 6,
       "repo": "deepseek-ai/dsh-superagent-prototype",
       "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
       "weeklyStars": 11369,
       "totalStars": 21793,
       "language": "TypeScript",
-      "intro": "DeepSeek 团队公开的研究原型（README 写明不是正式产品、非生产就绪）：面向单个 GitHub 仓库的主动编程智能体，可监听 GitHub，也可选飞书；在被允许后开启任务、在独立会话里干活，并回到原对话（例如开出 PR）。适合想参考「少占用注意力、多交付结果」超级智能体设计的人。"
+      "week": "2026-W45",
+      "windowLabel": "2026-W45 · 北京时间 11月2日 00:00 至 11月9日 00:00",
+      "summary": "DeepSeek 团队公开的研究原型：面向一个 GitHub 仓库的主动编程智能体，监听 GitHub，可选飞书。被允许的人提出工作后，它开一项任务，在自己的会话和目录里做，再回到原来的对话，例如带回一个 PR。README 写明不是正式产品，也不是生产就绪。",
+      "intro": "DeepSeek 团队公开的研究原型：面向一个 GitHub 仓库的主动编程智能体，监听 GitHub，可选飞书。被允许的人提出工作后，它开一项任务，在自己的会话和目录里做，再回到原来的对话，例如带回一个 PR。README 写明不是正式产品，也不是生产就绪。",
+      "detail": "## 它是什么\n\n仓库开头的提示写得很直：这是只供参考的研究原型，不是 DeepSeek 官方产品。代码从团队日常开发里长出来，很多工程由编程智能体完成，可能还有 bug，风格也不一致。它被改过以便发表，所以和内部版本、以及文章 Exploring Super-agent Design: Towards a More Autonomous Agent System 里的实现不完全一样。文章里的有些设计只是后续方向，原型里没有。\n\n它被打包成 DeepSeek Harness 的一个 bundle，产品页指向 https://www.deepseek.com/en/harness/ 。原则是尽量少占人的注意力、尽量多交出结果：能为整个团队行动的智能体也可能浪费整个团队的注意力，所以只在有人提出，或团队自己写的规则允许时才行动，只在必须有人处理或结果用得上时才说话。这篇原则在 docs/000-philosophy.md。\n\n## 它做什么\n\n范围是一个 GitHub 仓库。它听 GitHub，也可以听飞书。允许名单上的人把工作交给它之后，它建立工作项，在独立的智能体会话和目录里做完，再在原来的对话里回复。一个网页面板用来显示哪些事需要人看。\n\n安装步骤很多，README 不建议手敲，而是让你的编程智能体读仓库里的 SETUP.md，一次问一个短问题，先把完整计划展示一次，再安装和配置。文档目录在 README 的 Documentation 一节。\n\n## 适合谁\n\n适合想读「少打扰、多交付」这种超级智能体怎么拆模块的研究读者，以及愿意在非生产环境里试验的 Harness 用户。不适合直接当成团队的正式代码机器人。作者要求使用前先审查和改写。\n\n许可证字段是 MIT。这不取消开头的「非官方产品、非生产就绪」声明。\n\n## 这一周为什么上榜\n\n本榜按这个窗口里的新增星排序，数字是 2026-11-10 上午写入榜单的快照。下面的名次只说明它在这一周的星标增量里排在哪里，不代表产品已经可上生产，也不把实时星数写进来。\n\n本周新增星 11,369，总星快照 21,793，排第 6。它和同周上榜的 DeepSeek Harness 本体不是替代关系：本体是运行时，这个仓库是跑在上面的一种主动式工作方式的研究样例。\n\n## 可以核对的事实\n\n主语言 TypeScript。\n\n网页面板用来露出需要人处理的事项，README 没有把它描述成另一套模型。\n\n与内部系统的差异被明确写出，不能把博客文章里的每个设计都当成这个仓库已经实现。\n",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/deepseek-ai/dsh-superagent-prototype"
+        },
+        {
+          "label": "DeepSeek Harness 产品页",
+          "url": "https://www.deepseek.com/en/harness/"
+        },
+        {
+          "label": "原则说明",
+          "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/HEAD/docs/000-philosophy.md"
+        },
+        {
+          "label": "SETUP.md",
+          "url": "https://github.com/deepseek-ai/dsh-superagent-prototype/blob/HEAD/SETUP.md"
+        }
+      ]
     },
     {
+      "id": "ebony-vinyl-dsh-our-free-model",
       "rank": 7,
       "repo": "Ebony-Vinyl/dsh-our-free-model",
       "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
       "weeklyStars": 11109,
       "totalStars": 67483,
       "language": "JavaScript",
-      "intro": "一个 DeepSeek Harness 插件。README 称安装后无需登录、注册或填写 API Key，即可通过公开网关（文中写明来源为 OpenCode Zen 与 Kilo AI 公共网关）使用 DeepSeek V4.1 Flash、Kimi K3 等模型，并附本地 OpenAI 兼容转发端口。适合 DSH 用户做试用；可用性取决于本机网络与上游网关，请先读仓库中的上游说明和免责声明。"
+      "week": "2026-W45",
+      "windowLabel": "2026-W45 · 北京时间 11月2日 00:00 至 11月9日 00:00",
+      "summary": "这是一个 DeepSeek Harness 插件。README 称装上之后不必登录、注册或填写 API Key，即可使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的模型，并写明免费车道来自 OpenCode Zen，Kilo 渠道来自 Kilo AI 的公共网关。状态徽章是 beta，请先读免责声明。",
+      "intro": "这是一个 DeepSeek Harness 插件。README 称装上之后不必登录、注册或填写 API Key，即可使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的模型，并写明免费车道来自 OpenCode Zen，Kilo 渠道来自 Kilo AI 的公共网关。状态徽章是 beta，请先读免责声明。",
+      "detail": "## 它是什么\n\n仓库简介的中文是：在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型，并称完全免费、不限量。英文 README 在 README_EN.md。许可证 MIT，徽章写零依赖、无构建步骤，适配的 dsh 范围是 0.1.5 到 0.1.7-rc.2，状态为 beta。\n\n它不是 DeepSeek 官方客户端。模型能不能用，取决于 README 写明的上游网关和你当时的网络出口。\n\n## 它做什么\n\n亮点一节写的来源是公开的：免费车道来自 OpenCode 的 Zen 网关（opencode.ai），Kilo 渠道来自 Kilo AI 的公共网关（kilo.ai），均直连、不经作者自己的第三方中转。模型集合、上下文长度和能力在每次刷新时向上游重拉，插件不保存静态快照。上游已经声明、但网关明确拒绝路由的模型会从选择器里拿掉，只在设置页留拒因；网关自己的 5xx、429、超时和断网不算模型不可用。被地区策略拦住的放进 region-limited 分组。\n\n设置页分成模型清单、EAC 渠道授权、公告中心、用量看板、本地转发、插件设置、插件升级和首次启动公告。本地转发是一个 OpenAI 兼容的本地端口，README 写了开关、地址、端口和可轮换的本地 API Key。EAC 渠道要做 GitHub 登录和 star 校验，未授权时模型卡上锁，但免费车道的模型不受这道锁影响。另有一个仍在开发的独立本地服务入口，和 DSH 插件不是同一个安装路径。\n\n升级流程写的是：下载、SHA-256 校验、备份、原子替换、回读，任一步失败就回到上一版，并支持热重载。公告可以由维护者推 JSON，urgent 级别会全屏弹出。\n\n## 适合谁\n\n适合已经在用 DeepSeek Harness、想按 README 所说用公开网关试模型的人。不适合把它理解成 DeepSeek 或月之暗面的官方免费额度，也不适合忽略「上游是哪些源」和免责声明两节。\n\n可用性会随网关、地区和 dsh 版本变化。徽章上的适配范围只到 0.1.7-rc.2，更新的 Harness 是否仍兼容，以仓库当时的说明为准。\n\n## 这一周为什么上榜\n\n本榜按这个窗口里的新增星排序，数字是 2026-11-10 上午写入榜单的快照。下面的名次只说明它在这一周的星标增量里排在哪里，不代表产品已经可上生产，也不把实时星数写进来。\n\n本周新增星 11,109，总星快照 67,483，排第 7。总星已经不低，这一周仍有五位数的新增，说明它不只是旧热度。README 还引用了 Trendshift 在 2026-10-05 至 2026-10-11 的 JavaScript 周榜第一，那是更早一个窗口，不是本榜的 W45 数字。\n\n## 可以核对的事实\n\n上游页面：https://opencode.ai 与 https://kilo.ai 。\n\n选择器分组只有两类：当前网络出口可直接使用的，以及上游对该地区不放行、但仍可见的 region-limited。\n\n本介绍不转写本地转发的调用示例。\n",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model"
+        },
+        {
+          "label": "英文 README",
+          "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model/blob/HEAD/README_EN.md"
+        },
+        {
+          "label": "OpenCode",
+          "url": "https://opencode.ai"
+        },
+        {
+          "label": "Kilo AI",
+          "url": "https://kilo.ai"
+        }
+      ]
     },
     {
+      "id": "cloudflare-security-audit-skill",
       "rank": 8,
       "repo": "cloudflare/security-audit-skill",
       "url": "https://github.com/cloudflare/security-audit-skill",
       "weeklyStars": 10674,
       "totalStars": 68156,
       "language": "JavaScript",
-      "intro": "Cloudflare 开源的编程智能体安全审计 skill。它按六阶段组织侦察、覆盖式排查、候选验证、结构化输出、独立记录核验和中立报告，写出机器可读的 `findings.json`。适合要用智能体对代码库做系统安全审计的安全与工程团队。"
+      "week": "2026-W45",
+      "windowLabel": "2026-W45 · 北京时间 11月2日 00:00 至 11月9日 00:00",
+      "summary": "Cloudflare 开源的编程智能体安全审计 skill。README 把它写成六段流程：侦察、按覆盖面排查、独立验证候选、写成 findings.json、再核验记录、最后出中立报告。它是 Cloudflare 漏洞发现流水线的单仓库起点，不是那套全舰队系统本身。",
+      "intro": "Cloudflare 开源的编程智能体安全审计 skill。README 把它写成六段流程：侦察、按覆盖面排查、独立验证候选、写成 findings.json、再核验记录、最后出中立报告。它是 Cloudflare 漏洞发现流水线的单仓库起点，不是那套全舰队系统本身。",
+      "detail": "## 它是什么\n\n仓库简介是：一个编程智能体 skill，用来做多阶段安全审计，发现要经过独立核验，并且机器可读。README 标题是 security-audit。它把智能体编排成安全审计员，阶段包括侦察、按覆盖面带领的排查、候选验证、结构化输出、独立的记录核验，以及与具体目标中立的报告。\n\nREADME 说，这个 skill 是 Cloudflare 漏洞发现流水线的种子，那篇说明在博客 Build your own vulnerability harness。流水线后来长成多阶段、覆盖整个舰队的系统；这个仓库保留的是它演化之前的单仓库形态。许可证 MIT，主语言 JavaScript。\n\n## 它做什么\n\n六个阶段的名字和产物，README 写的是：第一段把架构、信任边界、输入面、已有证据和确定性覆盖写进 architecture.md 与 coverage-ledger.json。第二段按台账上的单元派出互相隔离的排查者，并让覆盖批评者找缺口。第三段把每个独特候选交给一个新的验证者，任务是设法推翻它。第四段把 confirmed、needs_validation 和 rejected 写进 findings.json，并用 report-schema.json 校验。第五段换一批智能体核验最终的源码主张，材料被替换时再换一个独立验证者。第六段从已经核验的记录和覆盖台账导出 REPORT.md、FINDINGS-DETAIL.md 和 NEEDS-VALIDATION.md。\n\n三种结论被故意分开：confirmed 要有完整的源码追溯和有边界的观察结果；needs_validation 只有一个还没解决的准确事实，不写严重性；rejected 记录被推翻的候选。父流程会在台账创建和每次更新后跑覆盖校验，在第四段以及第五段每次替换后再校验 findings。\n\n安装、用法和要求在 README 的后三节。本介绍只保留阶段结构，不转写命令，也不描述如何构造或复现具体问题。\n\n## 适合谁\n\n适合要用编程智能体对一个代码库做有台账、有独立核验的安全审计，并且需要机器可读结果的安全与工程团队。README 的定位是 coding-agent skill，能加载这种 skill 的智能体都可以按仓库的安装说明接入。\n\n不适合把它当成已经替你完成披露或修复的扫描器。结论的等级是 skill 自己的定义，严重性和是否可利用要以核验记录里的证据为准。\n\n## 这一周为什么上榜\n\n本榜按这个窗口里的新增星排序，数字是 2026-11-10 上午写入榜单的快照。下面的名次只说明它在这一周的星标增量里排在哪里，不代表产品已经可上生产，也不把实时星数写进来。\n\n本周新增星 10,674，总星快照 68,156，在周榜排第 8，在只收 Agent Skill 的榜上排第 1。同一个仓库因此出现在两个榜里：周榜看星标增量，Skill 榜看它作为 skill 的写法。\n\n## 可以核对的事实\n\n设计原则和联系方式在 README 末尾。\n\n博客链接是 README 给出的 https://blog.cloudflare.com/build-your-own-vulnerability-harness 。本榜没有另写那篇文章的操作细节。\n\n输出文件名是仓库公开写明的：findings.json、architecture.md、coverage-ledger.json，以及三份 Markdown 报告。\n",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/cloudflare/security-audit-skill"
+        },
+        {
+          "label": "Cloudflare：Build your own vulnerability harness",
+          "url": "https://blog.cloudflare.com/build-your-own-vulnerability-harness"
+        }
+      ]
     },
     {
+      "id": "nvidia-auto-ontology",
       "rank": 9,
       "repo": "NVIDIA/auto-ontology",
       "url": "https://github.com/NVIDIA/auto-ontology",
       "weeklyStars": 9937,
       "totalStars": 11067,
       "language": "Python",
-      "intro": "NVIDIA 的 Auto Ontology 从企业元数据构建语义本体与知识图谱，调和各系统里不一致的业务定义，再通过 MCP、CLI 和 API 交给智能体，用来做查询校验、血缘追溯和更可解释的分析。适合要给分析型 / 智能体工作流加一层「可信数据上下文」的数据与平台团队。"
+      "week": "2026-W45",
+      "windowLabel": "2026-W45 · 北京时间 11月2日 00:00 至 11月9日 00:00",
+      "summary": "NVIDIA Auto Ontology 用企业元数据搭语义本体和知识图谱，把各系统里不一致的业务定义对齐，再经 MCP、CLI 和 API 交给智能体，用来核对查询、追溯来源。它是 Python 框架，许可证 Apache-2.0，组件里包括由 NVIDIA NIM 驱动的自然语言查数。",
+      "intro": "NVIDIA Auto Ontology 用企业元数据搭语义本体和知识图谱，把各系统里不一致的业务定义对齐，再经 MCP、CLI 和 API 交给智能体，用来核对查询、追溯来源。它是 Python 框架，许可证 Apache-2.0，组件里包括由 NVIDIA NIM 驱动的自然语言查数。",
+      "detail": "## 它是什么\n\nREADME 开篇写的问题是：智能体可以查文档、查数据库，但分析是否可信取决于口径。一个收入指标答得更快，如果数字是错的就没有价值。智能体需要一层上下文，说明数据在哪、是什么意思、该不该用、怎么用、从哪来、和什么相似。Auto Ontology 就是从企业元数据把这一层建出来，并和客户已经有的语义模型互补。\n\nGitHub 简介把它称为在数据之上构建语义、基于图的推理层的 Python 框架。许可证 Apache-2.0，版权声明为 2026 NVIDIA。\n\n## 它做什么\n\nREADME 把能力收成五步。Discover：从元数据生成企业本体，接上已有本体和语义模型，建成可供 AI 使用的知识图谱。Ground：把指标、实体和关系的业务含义交给智能体，并调和系统之间不一致的定义。Validate：用已认证的定义和血缘检查生成的查询，每个回答都带来源。Expose：通过 MCP、CLI 和 API 把上下文提供给任何智能体框架。Learn：把认证过的更正和使用情况折回本体。\n\n关键功能一节还写了更具体的产品形态：用自然语言问结构化数据，问题被翻成 SQL，在接上的数据库上执行，这一步由 NVIDIA NIM 驱动；语义目录和本体层盖在关系型数据源上，和它所描述的目录一起放在 Postgres；用 Better Auth 做认证和 RBAC；Web UI 包含聊天、分析、数据目录、分析和设置；部署可以是 Kubernetes 的 Helm chart，或本地的 Docker Compose。\n\n组件表写明：前端是 Next.js 16（React 19、TypeScript、Tailwind CSS 4）、Better Auth 和 Prisma，默认端口 3000；后端是 FastAPI（Python 3.12+）和 LangChain，默认 3001；摄取 worker 也是 FastAPI，写嵌入，默认 3002；库是带 pgvector 的 Postgres。\n\n## 适合谁\n\n适合要给分析型智能体加一层「口径和血缘」的数据与平台团队，尤其是已经有多套对不上的业务定义的企业。不适合把它理解成另一个通用聊天机器人。\n\n智能体接入写在 Use it from your agent，下面分 MCP server、Agent skills 和 REST API。Quickstart 和 Benchmarks 在同一篇 README，数字和步骤以原文为准。\n\n## 这一周为什么上榜\n\n本榜按这个窗口里的新增星排序，数字是 2026-11-10 上午写入榜单的快照。下面的名次只说明它在这一周的星标增量里排在哪里，不代表产品已经可上生产，也不把实时星数写进来。\n\n本周新增星 9,937，总星快照 11,067，排第 9。总星和周增量几乎同级，说明这个仓库的关注主要集中在近期，而不是旧项目的长尾。\n\n## 可以核对的事实\n\n主语言 Python。\n\n自然语言查数依赖 NVIDIA NIM，README 没有说可以在没有 NIM 的情况下得到同一条 SQL 路径。\n\n默认端口 3000、3001、3002 来自组件表，部署时可以改，这里只是原文的默认值。\n",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/NVIDIA/auto-ontology"
+        },
+        {
+          "label": "Better Auth",
+          "url": "https://github.com/better-auth/better-auth"
+        }
+      ]
     },
     {
+      "id": "mattpocock-skills",
       "rank": 10,
       "repo": "mattpocock/skills",
       "url": "https://github.com/mattpocock/skills",
       "weeklyStars": 9726,
       "totalStars": 319838,
       "language": "Shell",
-      "intro": "Matt Pocock 的「给真工程师用」的可组合 Agent Skills，分成 engineering 与 productivity 等目录，强调小而可改、不把整套流程抢走。可用官方插件或 skills.sh 装到 Claude Code、Codex、GitHub Copilot、Gemini CLI、Cursor、OpenCode 等。适合想改进排错、测试和任务管理，又不想被重型方法论绑死的人。"
+      "week": "2026-W45",
+      "windowLabel": "2026-W45 · 北京时间 11月2日 00:00 至 11月9日 00:00",
+      "summary": "Matt Pocock 的 Skills for Real Engineers：从他每天用的 .agents 目录里拆出来的小 skill，分成工程和效率等目录，强调可改、可组合，不把整套开发流程夺走。可用官方插件市场或 npx skills 装到多种编程智能体。",
+      "intro": "Matt Pocock 的 Skills for Real Engineers：从他每天用的 .agents 目录里拆出来的小 skill，分成工程和效率等目录，强调可改、可组合，不把整套开发流程夺走。可用官方插件市场或 npx skills 装到多种编程智能体。",
+      "detail": "## 它是什么\n\n仓库简介是 Skills for Real Engineers，Straight from my .agents directory。README 说这些是他每天用来做真实工程、而不是 vibe coding 的 skill。对比的对象是 GSD、BMAD 和 Spec-Kit 这类试图把流程整个接走的方法：那些方法在接手流程的同时拿走控制权，流程自己的 bug 也难修。他的设计目标是小、好改、可组合，不绑定某一个模型。\n\nGitHub 主页字段是 https://aihero.dev/skills 。许可证 MIT，主语言 Shell。通讯订阅页写在 README 里，他称大约有 6 万名开发者在名单上，这是作者自己的数字。\n\n## 它做什么\n\nREADME 用四个失败模式解释这些 skill 为什么存在。第一是智能体没做你要的事，因为人和智能体没对齐。他的办法是 grilling：让智能体反过来把问题问细。非代码用 /grill-me，代码场景有对应的工程 skill。第二是太啰嗦，第三是代码不能跑，第四是做成了一团泥。每一段都指向一个具体 skill，而不是一篇原则短文。\n\nReference 一节把 skill 分成只能由人敲出来的 user-invoked，以及人可以敲、任务匹配时智能体也会自己拿起的 model-invoked。前者负责编排，后者放可复用的纪律。user-invoked 可以去调用 model-invoked，但不能再调用另一个 user-invoked。\n\n工程目录里能核对到的例子包括 ask-matt（帮你选该用哪个 skill）、grill-with-docs（边问边写项目的领域模型，更新 GLOSSARY.md 和 ADR）、triage（处理工单）。安装分三步：先拿到 skill，再跑 /setup-matt-pocock-skills，然后就可以用。Claude Code 走官方插件市场；其他智能体的路径 README 写了 Codex、GitHub Copilot CLI 和 VS Code、Gemini CLI，以及用 npx skills 装到 Cursor、OpenCode 等。完整名单以 Installation 一节为准。\n\n## 适合谁\n\n适合想补上对齐、分诊、测试和设计讨论这些具体缺口，又不想换一套重型方法论的工程师。不适合想要一个从需求到上线全包的流程框架，那正是这篇 README 故意不做的事。\n\n作者鼓励改这些 skill。它们被描述成从几十年工程经验里来的个人实践，不是标准委员会的规范。\n\n## 这一周为什么上榜\n\n本榜按这个窗口里的新增星排序，数字是 2026-11-10 上午写入榜单的快照。下面的名次只说明它在这一周的星标增量里排在哪里，不代表产品已经可上生产，也不把实时星数写进来。\n\n本周新增星 9,726，总星快照 319,838，周榜排第 10，Skill 榜排第 2。总星已经是榜单前列，这一周的增量仍然接近一万，说明它不是只靠旧星数停在榜上。\n\n## 可以核对的事实\n\n代表 skill 路径包括 skills/engineering/ask-matt/SKILL.md、skills/engineering/grill-with-docs/SKILL.md、skills/engineering/triage/SKILL.md、skills/productivity/grill-me/SKILL.md。\n\n通讯是作者用来通知 skill 更新的渠道，不是安装所必需的。\n\nSkill 榜上的那一条会把安装面再写细一些，避免两个榜的正文完全重复。\n",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/mattpocock/skills"
+        },
+        {
+          "label": "aihero.dev/skills",
+          "url": "https://aihero.dev/skills"
+        },
+        {
+          "label": "ask-matt/SKILL.md",
+          "url": "https://github.com/mattpocock/skills/blob/HEAD/skills/engineering/ask-matt/SKILL.md"
+        },
+        {
+          "label": "triage/SKILL.md",
+          "url": "https://github.com/mattpocock/skills/blob/HEAD/skills/engineering/triage/SKILL.md"
+        }
+      ]
     },
     {
+      "id": "sherlock-project-sherlock",
       "rank": 11,
       "repo": "sherlock-project/sherlock",
       "url": "https://github.com/sherlock-project/sherlock",
       "weeklyStars": 9714,
       "totalStars": 107271,
       "language": "Python",
-      "intro": "用一个用户名在 400 多个社交网络上查找公开账号的开源 OSINT 命令行工具，可用 pipx、Docker 等安装。适合安全研究、情报收集和账号排查。本周后段日增量很高；它本身不是 AI 项目。"
+      "week": "2026-W45",
+      "windowLabel": "2026-W45 · 北京时间 11月2日 00:00 至 11月9日 00:00",
+      "summary": "Sherlock 是一个开源命令行工具，按用户名在 400 多个社交网站上查找公开账号。官网是 sherlockproject.xyz。它本身不是 AI 项目，这周因为星标增量进入本榜。",
+      "intro": "Sherlock 是一个开源命令行工具，按用户名在 400 多个社交网站上查找公开账号。官网是 sherlockproject.xyz。它本身不是 AI 项目，这周因为星标增量进入本榜。",
+      "detail": "## 它是什么\n\nGitHub 简介是：按用户名在社交网络上追查公开账号。README 的那一行写的是 Hunt down social media accounts by username across 400+ social networks，400 多个站点的名单在 https://sherlockproject.xyz/sites 。\n\n它是命令行工具，许可证 MIT，主语言 Python，主页 sherlockproject.xyz。安装、用法和贡献分别有独立文档页。\n\n## 它做什么\n\n给定一个用户名，它到公开网站上查看是否存在同名账号，用来做公开来源的账号排查。README 没有把它描述成入侵工具，也没有写绕过登录。本介绍同样停在这一层，不转写命令参数。\n\n文档分三处：安装 https://sherlockproject.xyz/installation ，用法 https://sherlockproject.xyz/usage ，贡献 https://sherlockproject.xyz/contribute 。\n\n## 适合谁\n\n适合做安全研究、新闻核查或自己的账号排查、并且只查询公开页面的人。不适合用它去收集不公开的个人信息，README 的定位也不是这个。\n\n使用任何这类工具之前，都要单独看目标网站的条款和当地法律。仓库许可证只覆盖软件本身。\n\n## 这一周为什么上榜\n\n本榜按这个窗口里的新增星排序，数字是 2026-11-10 上午写入榜单的快照。名次只说明星标增量，不代表生产可用性，也不使用此刻打开 GitHub 看到的实时星数。\n\n本周新增星 9,714，总星快照 107,271，排第 11。它不是 AI 仓库。把它留在榜上，是因为周增量的计算没有按主题剔除；介绍里写明这一点，避免把它读成新的模型项目。\n\n## 可以核对的事实\n\n站点覆盖数以 sherlockproject.xyz/sites 的当时名单为准，README 写的是 400+。\n\n演示图在仓库 images/demo.png。\n\n本榜不提供查询示例。\n",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/sherlock-project/sherlock"
+        },
+        {
+          "label": "官网",
+          "url": "https://sherlockproject.xyz/"
+        },
+        {
+          "label": "支持的站点",
+          "url": "https://sherlockproject.xyz/sites"
+        },
+        {
+          "label": "安装文档",
+          "url": "https://sherlockproject.xyz/installation"
+        },
+        {
+          "label": "用法文档",
+          "url": "https://sherlockproject.xyz/usage"
+        }
+      ]
     },
     {
+      "id": "deepseek-ai-deepseek-harness",
       "rank": 12,
       "repo": "deepseek-ai/deepseek-harness",
       "url": "https://github.com/deepseek-ai/deepseek-harness",
       "weeklyStars": 8419,
       "totalStars": 277454,
       "language": "TypeScript",
-      "intro": "DeepSeek 开源的智能体运行时（dsh），采用「一切皆插件」架构，可用 `npx @deepseek-ai/dsh web` 启动本地 Web UI。README 标明仍是开发者预览，可能出现不兼容变更，使用前应阅读安全说明。适合想自建或扩展 DeepSeek 智能体工作台的开发者。"
+      "week": "2026-W45",
+      "windowLabel": "2026-W45 · 北京时间 11月2日 00:00 至 11月9日 00:00",
+      "summary": "DeepSeek Harness（dsh）是 DeepSeek 开源的智能体运行时，架构是「一切皆插件」，底层用 Cordis。可以用 npx @deepseek-ai/dsh web 在本机打开 Web UI。README 标明仍是开发者预览，会有不兼容变更，跑之前要读 SAFETY.md。",
+      "intro": "DeepSeek Harness（dsh）是 DeepSeek 开源的智能体运行时，架构是「一切皆插件」，底层用 Cordis。可以用 npx @deepseek-ai/dsh web 在本机打开 Web UI。README 标明仍是开发者预览，会有不兼容变更，跑之前要读 SAFETY.md。",
+      "detail": "## 它是什么\n\nREADME 写：DeepSeek Harness（dsh）是 DeepSeek AI 开发的开源智能体框架，建在一切皆插件的架构上，由 Cordis 驱动。Cordis 的设计论文是 A Programming Paradigm for Spatiotemporal Composability，arXiv 编号 2608.25512。\n\n文档站是 https://deepseek-harness.github.io/deepseek-harness/ 。产品页是 https://deepseek.com/harness 。许可证 MIT。中文 README 在 README.zh.md。\n\n## 它做什么\n\n从 npm 启动的命令是 npx @deepseek-ai/dsh web。本机启动时，Web UI 默认在 http://127.0.0.1:3080 ，并会打开浏览器。经 SSH 启动时只打印主机上的 URL，因为本地转发地址由 SSH 客户端或编辑器占用。--no-open 可以不打开浏览器。\n\n从源码跑要先 git clone，再用 pnpm install、pnpm run build，然后 pnpm dsh web。build 只准备仓库产物，pnpm dsh web 使用这些产物，不会再构建一次。\n\n开发者预览的原话是：迭代很快，将会有不兼容的破坏性变更。运行前要读 SAFETY.md。社区方面可以用 GitHub Discussions 反馈，给插件仓库加上 dsh-plugin 话题，或加入 README 里的 Discord。\n\n## 适合谁\n\n适合想自建或写插件扩展 DeepSeek 智能体工作台的开发者。同一周榜上的 DSH Go、超级智能体原型和免费模型插件都声明自己建在这套运行时上或旁边。\n\n不适合把它当成稳定的生产发行版。预览声明就是为了拦住这个预期。\n\n## 这一周为什么上榜\n\n本榜按这个窗口里的新增星排序，数字是 2026-11-10 上午写入榜单的快照。名次只说明星标增量，不代表生产可用性，也不使用此刻打开 GitHub 看到的实时星数。\n\n本周新增星 8,419，总星快照 277,454，排第 12。总星很高，周增量仍足够留在前 20。它是同榜好几条 DeepSeek 相关项目的底座，所以单看周增量会低估它在这一窗口里的位置。\n\n## 可以核对的事实\n\n主语言 TypeScript。\n\n引用论文：https://arxiv.org/abs/2608.25512 。\n\n架构文档入口写在 docs/architecture ，开发指南在 docs/development.md。路径以仓库当时的链接为准。\n",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/deepseek-ai/deepseek-harness"
+        },
+        {
+          "label": "文档站",
+          "url": "https://deepseek-harness.github.io/deepseek-harness/"
+        },
+        {
+          "label": "产品页",
+          "url": "https://deepseek.com/harness"
+        },
+        {
+          "label": "中文 README",
+          "url": "https://github.com/deepseek-ai/deepseek-harness/blob/HEAD/README.zh.md"
+        },
+        {
+          "label": "Cordis 论文",
+          "url": "https://arxiv.org/abs/2608.25512"
+        },
+        {
+          "label": "安全说明 SAFETY.md",
+          "url": "https://github.com/deepseek-ai/deepseek-harness/blob/HEAD/SAFETY.md"
+        }
+      ]
     },
     {
+      "id": "d4vinci-scrapling",
       "rank": 13,
       "repo": "D4Vinci/Scrapling",
       "url": "https://github.com/D4Vinci/Scrapling",
       "weeklyStars": 8285,
       "totalStars": 100613,
       "language": "Python",
-      "intro": "现代 Python 网页抓取框架，覆盖从单次请求到大规模爬取，强调页面改版后仍能定位元素，并提供面向 AI 工具的 skill 与 MCP 入口。适合需要自适应选择、反爬处理和智能体集成的 Python 开发者。"
+      "week": "2026-W45",
+      "windowLabel": "2026-W45 · 北京时间 11月2日 00:00 至 11月9日 00:00",
+      "summary": "Scrapling 是一个 Python 网页抓取框架，从单次请求覆盖到成规模的爬取。README 强调页面改版后仍能定位元素，并提供给智能体用的 MCP 服务和 Agent Skill。文档在 scrapling.readthedocs.io，许可证 BSD-3-Clause。",
+      "intro": "Scrapling 是一个 Python 网页抓取框架，从单次请求覆盖到成规模的爬取。README 强调页面改版后仍能定位元素，并提供给智能体用的 MCP 服务和 Agent Skill。文档在 scrapling.readthedocs.io，许可证 BSD-3-Clause。",
+      "detail": "## 它是什么\n\nGitHub 简介称它是能从单次请求做到完整爬取的网页抓取框架。页面标题下的一句是 Effortless Web Scraping for the Modern Web。文档站是 https://scrapling.readthedocs.io 。许可证 BSD-3-Clause。\n\nREADME 有阿拉伯语、西班牙语和巴西葡萄牙语版本，文件在 docs/ 目录。MCP 标识写的是 io.github.D4Vinci/Scrapling。\n\n## 它做什么\n\nWhat you can do 一节分成四块，每块都链到文档。抓取与交互：快速 HTTP、隐蔽浏览器、JavaScript 渲染、Cloudflare Turnstile 和 Interstitial 的处理、持久会话，以及后台 API 捕获。解析：CSS、XPath、文本和正则、自适应元素跟踪、相似元素匹配，以及干净的 Markdown 输出。爬取与导出：并发蜘蛛、代理轮换、重试、AutoThrottle、暂停和恢复、流式输出、现成模板，以及 JSON、JSONL、CSV、XML 导出。给 AI 或终端用：一个供智能体浏览和抽取的 MCP 服务，以及一个 Agent Skill。\n\n自适应元素跟踪是它和「写死选择器」的框架之间的差别：页面改版后仍试图找到原来的元素。具体算法在解析文档里，这里不转写。处理验证码或反爬页面的能力被列在功能表中，不在本介绍里展开步骤。\n\n## 适合谁\n\n适合需要自适应选择器、从一次请求长到爬虫、并把抓取交给智能体的 Python 开发者。使用抓取工具要遵守目标网站的条款和机器人规则，这是使用者的责任，不是许可证授予的。\n\n赞助商墙在 README 里，和功能说明分开。\n\n## 这一周为什么上榜\n\n本榜按这个窗口里的新增星排序，数字是 2026-11-10 上午写入榜单的快照。名次只说明星标增量，不代表生产可用性，也不使用此刻打开 GitHub 看到的实时星数。\n\n本周新增星 8,285，总星快照 100,613，排第 13。它是这一窗里少数以抓取框架、而不是编码智能体外壳上榜的仓库，Skill 与 MCP 是它进入 AI 讨论的原因。\n\n## 可以核对的事实\n\n主语言 Python。\n\n四块功能各自的文档入口都在 README 的链接里，例如解析文档 https://scrapling.readthedocs.io/en/latest/parsing/selection.html ，MCP 文档 https://scrapling.readthedocs.io/en/latest/ai/mcp-server.html 。\n\n本介绍不包含绕过站点防护的参数。\n",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/D4Vinci/Scrapling"
+        },
+        {
+          "label": "文档站",
+          "url": "https://scrapling.readthedocs.io/en/latest/"
+        },
+        {
+          "label": "解析文档",
+          "url": "https://scrapling.readthedocs.io/en/latest/parsing/selection.html"
+        },
+        {
+          "label": "MCP 文档",
+          "url": "https://scrapling.readthedocs.io/en/latest/ai/mcp-server.html"
+        }
+      ]
     },
     {
+      "id": "milind-soni-openmausbot",
       "rank": 14,
       "repo": "milind-soni/OpenMausBot",
       "url": "https://github.com/milind-soni/OpenMausBot",
       "weeklyStars": 8061,
       "totalStars": 19820,
       "language": "TypeScript",
-      "intro": "开源的 Grok Bot 类桌面聊天应用（独立项目，与 xAI / Meta / OpenAI 等无关）：把本地运行的 Claude 或 Codex 等智能体做成侧边栏「联系人」，各自有人格、模型、云电脑和已连接应用，你可以对话、观察并审批关键操作。适合想要本地优先、自带一队机器人的桌面工作台的人。"
+      "week": "2026-W45",
+      "windowLabel": "2026-W45 · 北京时间 11月2日 00:00 至 11月9日 00:00",
+      "summary": "OpenMausBot 是一个开源桌面聊天应用，把本机运行的 Claude 或 Codex 等智能体做成侧边栏里的联系人。README 写明它是独立项目，灵感来自 Grok Bot，并自称是 Meta Muse、OpenAI dots 和 Manus Cue 的开源替代，与 xAI、Meta、OpenAI、Manus 都没有隶属关系。",
+      "intro": "OpenMausBot 是一个开源桌面聊天应用，把本机运行的 Claude 或 Codex 等智能体做成侧边栏里的联系人。README 写明它是独立项目，灵感来自 Grok Bot，并自称是 Meta Muse、OpenAI dots 和 Manus Cue 的开源替代，与 xAI、Meta、OpenAI、Manus 都没有隶属关系。",
+      "detail": "## 它是什么\n\n仓库简介是：开源的 Grok Bot 替代，带一台机器人可以使用的虚拟机。README 的自我介绍更长：每个侧边栏机器人都是一个真的智能体，底层是本机运行的 Claude 或 Codex，各自有人格、模型、云电脑和已连接的应用。你可以像联系人一样和它们说话，看着它们工作，并批准关键操作。\n\n它也叫 MausBot，以前叫 OpenGrokBot。许可证 Apache-2.0。README 给的网站是 openmausbot.com；GitHub 主页字段是 https://www.mausbot.com/ 。两个地址都来自官方元数据或 README，本榜都列出来，不判断哪一个是当前主站。\n\n## 它做什么\n\n功能小节的标题包括：每个机器人自选一个「大脑」、每个机器人一台电脑、行动前先问人、连接应用、像聊天一样管理机器人、密钥配一次就点亮、用频道区分上下文，以及一个叫 Jev 的快速决策功能。README 把「自带密钥、本地优先、用你已经有的模型」写成和它所对标的产品之间的差别。\n\nMac Apple silicon 的 dmg 可以从 GitHub Releases 下载，链接写在 README 的徽章里。其他平台以下载页为准。\n\n## 适合谁\n\n适合想要一个本地优先的桌面工作台、把已经能在本机跑的 Claude 或 Codex 收成一队可审批的机器人的人。不适合把它当成 xAI、Meta 或 OpenAI 的客户端，README 已声明没有隶属关系。\n\n比较文在 https://www.openmausbot.com/blog/grok-bot-vs-openmausbot ，那是项目自己的对比，不是独立评测。\n\n## 这一周为什么上榜\n\n本榜按这个窗口里的新增星排序，数字是 2026-11-10 上午写入榜单的快照。名次只说明星标增量，不代表生产可用性，也不使用此刻打开 GitHub 看到的实时星数。\n\n本周新增星 8,061，总星快照 19,820，排第 14。同一窗口里 T3 Code 和 Orca 也在做「指挥多个编码智能体」，OpenMausBot 的界面隐喻是聊天通讯录，而不是终端或 diff 工作台。\n\n## 可以核对的事实\n\n主语言 TypeScript。\n\n下载页 README 写的是 https://www.openmausbot.com/download 。\n\n云电脑和已连接应用的范围，以功能小节的原文为准，这里不把标题扩写成支持清单。\n",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/milind-soni/OpenMausBot"
+        },
+        {
+          "label": "openmausbot.com",
+          "url": "https://www.openmausbot.com"
+        },
+        {
+          "label": "GitHub 主页字段 mausbot.com",
+          "url": "https://www.mausbot.com/"
+        },
+        {
+          "label": "下载页",
+          "url": "https://www.openmausbot.com/download"
+        },
+        {
+          "label": "项目自己的对比文",
+          "url": "https://www.openmausbot.com/blog/grok-bot-vs-openmausbot"
+        }
+      ]
     },
     {
+      "id": "debpalash-voicestudio",
       "rank": 15,
       "repo": "debpalash/VoiceStudio",
       "url": "https://github.com/debpalash/VoiceStudio",
       "weeklyStars": 7238,
       "totalStars": 106263,
       "language": "Python",
-      "intro": "开源、以本地运行为主的语音工作室，可在笔记本、桌面、服务器或手机上做声音克隆、声音设计、视频配音、听写、转写，以及号称覆盖 646 种语言的旁白。适合想离线或自托管语音能力、替代云端语音套件的用户。"
+      "week": "2026-W45",
+      "windowLabel": "2026-W45 · 北京时间 11月2日 00:00 至 11月9日 00:00",
+      "summary": "VoiceStudio 是以本地运行为主的开源语音工作室，README 称可在笔记本、桌面、服务器和手机上做声音克隆、声音设计、视频配音、听写、转写，以及 646 种语言的旁白。官网 voicestudio.sh。许可证 AGPL-3.0。另有 Pro 和 Cloud，不是全部功能都在本地免费版里。",
+      "intro": "VoiceStudio 是以本地运行为主的开源语音工作室，README 称可在笔记本、桌面、服务器和手机上做声音克隆、声音设计、视频配音、听写、转写，以及 646 种语言的旁白。官网 voicestudio.sh。许可证 AGPL-3.0。另有 Pro 和 Cloud，不是全部功能都在本地免费版里。",
+      "detail": "## 它是什么\n\nGitHub 简介称它是开源、完全本地的 ElevenLabs 替代，覆盖声音克隆、声音设计、视频配音等。README 的标题是 AI voice studio. On your device. 下一行写：以 646 种语言做克隆、设计、配音、听写、转写和旁白。运行位置包括笔记本、桌面、服务器、手机和平板。\n\n许可证 AGPL-3.0。官网 https://voicestudio.sh/ 。README 另有 VoiceStudio Pro 和 VoiceStudio Cloud 的入口，所以「完全本地」描述的是开源工作室这条线，不自动覆盖 Pro 和 Cloud 的条款。\n\n## 它做什么\n\n功能格里能核对到的两项是：声音克隆，把一段干净的参考录音变成熟悉声音的语音，说明在 docs/audio-quality.md；视频配音，按原片时间翻译并配音，说明在 docs/electron-dubbing.md。同一节还继续写声音设计等，截断的 README 摘录没有把每一格的正文都留下，未读到的格子这里不补。\n\n平台说明里有一条实验性的 Windows ROCm：支持部分 RDNA 2 RX 6000，目标 gfx1030、gfx1031 或 gfx1032，RX 6500 XT（gfx1034）被排除。GPU 转写使用仓库从上游源码构建并按哈希固定的 CTranslate2，安装时会检查 GPU 内核是否真的能跑。RX 6700 XT 的测试还覆盖原生 Torch 语音生成和 PyTorch Whisper。ROCm 10 的 faster-whisper 用单独的推理进程，以便 CPU 选择和回退仍然安全。其他显卡和工作负载保留指南里的资格限制。性能预设会在保存前，用离线子进程验证换过的引擎，运行时失败则保留回退。\n\n## 适合谁\n\n适合希望把声音克隆、配音或转写放在自己设备上、少依赖云端语音套件的用户。646 种语言是 README 的表述，本榜没有逐种核对。\n\nREADME 感谢星标越过 10 万。那是项目自己的里程碑句子，和本榜快照里的 106,263 总星是同一量级，但不是同一个计数时刻。\n\n## 这一周为什么上榜\n\n本榜按这个窗口里的新增星排序，数字是 2026-11-10 上午写入榜单的快照。名次只说明星标增量，不代表生产可用性，也不使用此刻打开 GitHub 看到的实时星数。\n\n本周新增星 7,238，总星快照 106,263，排第 15。它是这一窗里少数以本地语音、而不是编码智能体上榜的仓库。\n\n## 可以核对的事实\n\n主语言 Python。\n\n下载入口是 GitHub Releases：https://github.com/debpalash/VoiceStudio/releases/latest 。\n\nCloud 应用写的是 https://app.voicestudio.sh/ ，Pro 在 https://voicestudio.sh/pro 。\n",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/debpalash/VoiceStudio"
+        },
+        {
+          "label": "官网",
+          "url": "https://voicestudio.sh/"
+        },
+        {
+          "label": "Releases",
+          "url": "https://github.com/debpalash/VoiceStudio/releases/latest"
+        },
+        {
+          "label": "Pro",
+          "url": "https://voicestudio.sh/pro"
+        },
+        {
+          "label": "Cloud",
+          "url": "https://app.voicestudio.sh/"
+        }
+      ]
     },
     {
+      "id": "heydamir-unslop",
       "rank": 16,
       "repo": "heydamir/unslop",
       "url": "https://github.com/heydamir/unslop",
       "weeklyStars": 7026,
       "totalStars": 12803,
       "language": "JavaScript",
-      "intro": "面向 Claude Code、Codex 和 Google Antigravity 的 skill：先找出紫渐变、发光、emoji 标签、夸张文案和间距不均等「AI 界面味道」，再按你的产品方向把页面改成更有个性的设计，支持常见前端栈，也可以对着线上链接做。适合要把 vibe coding 出来的 UI「去 slop」的人。"
+      "week": "2026-W45",
+      "windowLabel": "2026-W45 · 北京时间 11月2日 00:00 至 11月9日 00:00",
+      "summary": "unslop 是 Damir Sokolovsky 做的设计 skill，给 Claude Code、Codex 和 Google Antigravity 用。它先找出紫渐变、发光、emoji 标签、喊叫文案和间距不均这些「AI 页面痕迹」，再按产品方向一轮轮改，像设计师做红线。",
+      "intro": "unslop 是 Damir Sokolovsky 做的设计 skill，给 Claude Code、Codex 和 Google Antigravity 用。它先找出紫渐变、发光、emoji 标签、喊叫文案和间距不均这些「AI 页面痕迹」，再按产品方向一轮轮改，像设计师做红线。",
+      "detail": "## 它是什么\n\nGitHub 简介是：一个 Claude skill，把 vibe coding 出来的、看起来像 AI 的界面改成有设计的界面。作者是 Damir Sokolovsky（@heydamir），他在 X 上有一个 Unslopping 系列。许可证字段是 CC-BY-4.0。\n\nREADME 写它支持 Claude Code、Codex 和 Google Antigravity。适用的界面包括仪表盘、应用和落地页，技术栈写成 Next.js、React、Vue、Svelte、Tailwind 或普通 HTML/CSS，也可以只给一个线上链接。\n\n## 它做什么\n\n工作顺序是先找 slop，再定方向，再改。README 点名的痕迹有：紫色渐变、发光、emoji 标签、喊叫式文案、不均匀的间距。方向来自你的产品，而不是一套通用模板。修改按轮进行，类比是设计师拿着红线审校。\n\nClaude Code 的安装是把 skills/unslop 拷进 ~/.claude/skills，或项目里的 .claude/skills。Codex 则是让它从这个仓库直接安装 skill。Antigravity 的路径 README 写在 Install 一节后部。Skill 榜会把三条路径再列清楚。\n\n## 适合谁\n\n适合已经用智能体生成了界面、希望按自己的产品气质改掉默认「AI 味」的人。不适合把它当成组件库或视觉识别系统，它是一套审查和修改指令。\n\n作者另有一节 Hire the unslopper，那是服务介绍，和开源 skill 本身分开。\n\n## 这一周为什么上榜\n\n本榜按这个窗口里的新增星排序，数字是 2026-11-10 上午写入榜单的快照。名次只说明星标增量，不代表生产可用性，也不使用此刻打开 GitHub 看到的实时星数。\n\n本周新增星 7,026，总星快照 12,803，周榜第 16，Skill 榜第 3。同一窗口里 impeccable 和 Hallmark 也在处理「AI 味界面」，unslop 的写法是先点名痕迹，再按产品做红线。\n\n## 可以核对的事实\n\n主语言 JavaScript。\n\n技能目录是 skills/unslop。\n\nX 系列的起点帖是 README 给出的 https://x.com/heydamir/status/2115063463063998736 。\n",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/heydamir/unslop"
+        },
+        {
+          "label": "作者的 Unslopping 系列",
+          "url": "https://x.com/heydamir/status/2115063463063998736"
+        }
+      ]
     },
     {
+      "id": "stablyai-orca",
       "rank": 17,
       "repo": "stablyai/orca",
       "url": "https://github.com/stablyai/orca",
       "weeklyStars": 6926,
       "totalStars": 120512,
       "language": "TypeScript",
-      "intro": "Orca 用来并行编排 Claude Code、Codex 等编程智能体：每个智能体在独立 worktree 里跑，可在聊天界面或原始终端之间切换，也可在笔记本或云端运行，并把 diff、浏览器和 CLI 放在一个应用里。适合要同时开多个智能体、自己当编排者的开发者。"
+      "week": "2026-W45",
+      "windowLabel": "2026-W45 · 北京时间 11月2日 00:00 至 11月9日 00:00",
+      "summary": "Orca 用来并行编排 Claude Code、Codex 等编程智能体：每个智能体在自己的 git worktree 里跑，可以在聊天和原始终端之间切换，笔记本或云端都能跑，并把 diff、浏览器和命令行放在同一个应用里。支持 macOS、Windows 和 Linux。",
+      "intro": "Orca 用来并行编排 Claude Code、Codex 等编程智能体：每个智能体在自己的 git worktree 里跑，可以在聊天和原始终端之间切换，笔记本或云端都能跑，并把 diff、浏览器和命令行放在同一个应用里。支持 macOS、Windows 和 Linux。",
+      "detail": "## 它是什么\n\nGitHub 简介是：用你自己的订阅，跑一队编码智能体，例如 Claude Code 和 Codex。README 的标题句是 The AI Orchestrator for 100x builders。正文写：并行运行 Claude Code、Codex 以及任何其他编码智能体，每个在自己的 worktree 里；聊天或终端；笔记本或云端；diff、浏览器和 CLI 在一个应用里。\n\n许可证 MIT。README 的网站链接是 https://onOrca.dev 。GitHub 主页字段是 https://orca.dev 。徽章写明 macOS、Windows 和 Linux。中文 README 在 docs/readme/README.zh-CN.md。\n\n## 它做什么\n\n功能目录包括：聊天或终端两种界面、编排多个智能体、随处运行、移动应用、审阅 AI 输出、Git 集成、并行 worktree、设计模式、原生的 GitHub 和 Linear、Orca CLI，以及插件。并行 worktree 是它和「开很多终端窗口」的差别：每个智能体的改动落在隔离的工作树里，而不是抢同一个目录。\n\n它使用你自己的订阅，README 没有说它代付模型费用。移动应用被列为功能，具体商店链接以 README 该节为准，摘录里没有单独的商店 URL，这里不补。\n\n## 适合谁\n\n适合要同时开多个编码智能体、自己当编排者，并希望 diff 和浏览器不要散落在不同窗口的开发者。不适合想换掉模型订阅的人。\n\nDiscord 写的是 https://discord.gg/fzjDKHxv8Q ，X 是 @orca_build。\n\n## 这一周为什么上榜\n\n本榜按这个窗口里的新增星排序，数字是 2026-11-10 上午写入榜单的快照。名次只说明星标增量，不代表生产可用性，也不使用此刻打开 GitHub 看到的实时星数。\n\n本周新增星 6,926，总星快照 120,512，排第 17。总星已经过十万，这一周的增量仍高于榜单末段。它和 T3 Code 同周上榜：T3 Code 强调手机遥控本机已登录的智能体，Orca 强调一队智能体加 worktree。\n\n## 可以核对的事实\n\n主语言 TypeScript。\n\n下载量徽章指向 GitHub Releases。\n\n两个官网地址都保留：README 里的 onOrca.dev，以及仓库主页字段 orca.dev。\n",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/stablyai/orca"
+        },
+        {
+          "label": "onOrca.dev（README）",
+          "url": "https://onOrca.dev"
+        },
+        {
+          "label": "orca.dev（GitHub 主页字段）",
+          "url": "https://orca.dev"
+        },
+        {
+          "label": "中文 README",
+          "url": "https://github.com/stablyai/orca/blob/HEAD/docs/readme/README.zh-CN.md"
+        }
+      ]
     },
     {
+      "id": "pbakaus-impeccable",
       "rank": 18,
       "repo": "pbakaus/impeccable",
       "url": "https://github.com/pbakaus/impeccable",
       "weeklyStars": 6821,
       "totalStars": 106945,
       "language": "Rust",
-      "intro": "给编程智能体用的设计词表：用 `polish` / `bolder` 转向，用 `critique` / `audit` 审查，在发版前抓住常见 AI slop。可用 `npx impeccable install` 接入 Claude Code、Cursor、Codex、GitHub Copilot 等。适合希望智能体做出有风格、而不是「默认好看模板」界面的设计与前端。"
+      "week": "2026-W45",
+      "windowLabel": "2026-W45 · 北京时间 11月2日 00:00 至 11月9日 00:00",
+      "summary": "Impeccable 是给编程智能体的一套设计词表。用 polish、bolder 这类命令改方向，用 critique 和 audit 做审查，在发版前抓住常见的 AI 界面习惯。安装命令是 npx impeccable install，文档在 impeccable.style。",
+      "intro": "Impeccable 是给编程智能体的一套设计词表。用 polish、bolder 这类命令改方向，用 critique 和 audit 做审查，在发版前抓住常见的 AI 界面习惯。安装命令是 npx impeccable install，文档在 impeccable.style。",
+      "detail": "## 它是什么\n\nREADME 的定义是：编程智能体的设计词表。用 polish 和 bolder 掌舵，用 critique 和 audit 复查，在 AI slop 发出去之前抓住它。许可证 Apache-2.0，主语言 Rust，网站 https://impeccable.style ，文档 https://impeccable.style/docs 。\n\nREADME 用同一模型和同一份简报做了对照：一间利古里亚海岸、十四个房间的家庭客栈。不用 Impeccable 时，得到的是奶油色页面、细衬线、斜体强调和胶囊按钮。用了之后，页面围绕一张夜景图来组织。对照图上的模型被写成 Fable 5.1。这是作者的示例，不是第三方评测。\n\n## 它做什么\n\nREADME 列出 24 条命令，分成五组。掌舵：bolder、quieter、distill、colorize、typeset、layout、animate、delight、overdrive。复查：critique 是打分的 UX 审查，audit 是技术质量报告。收尾：polish、harden、clarify、adapt、optimize、onboard。现场迭代：live 让你在浏览器里点一个元素并循环变体，generate 对一个指名的元素产出变体。计划与搭建：shape 在写代码前规划 UX，init 写 PRODUCT.md，document 写 DESIGN.md，extract 把重复模式收进设计系统。\n\n安装是在项目根执行 npx impeccable install，重载编程工具后，在智能体里运行 /impeccable init；Codex 上是 $impeccable init。支持列表写的是 Claude Code、Cursor、Codex CLI、GitHub Copilot、Devin、Replit Agent、Gemini CLI、Grok Build、OpenCode、Google Antigravity、Kiro、Trae、Rovo Dev、Qoder、Mistral Vibe、Pi、Hermes Agent、DeepSeek Harness 和 Veto。\n\n还有 Live 模式，以及三种跑检测器的方式。项目文件一节说明哪些产物进 git、哪些是临时状态。忽略片段用 impeccable-ignore 标记。\n\n## 适合谁\n\n适合希望智能体按一套可复用的设计指令做界面、而不是每次都靠一句「好看一点」的前端和设计师。不适合想要一个现成组件库的人，它提供的是词表和工作流。\n\n24 条命令的具体提示词在仓库和文档里。本介绍只保留命令名字和 README 给的那一句分工。\n\n## 这一周为什么上榜\n\n本榜按这个窗口里的新增星排序，数字是 2026-11-10 上午写入榜单的快照。名次只说明星标增量，不代表生产可用性，也不使用此刻打开 GitHub 看到的实时星数。\n\n本周新增星 6,821，总星快照 106,945，周榜第 18，Skill 榜第 4。总星过十万，和 Hallmark、unslop 一起构成这一周「反 AI 模板味」工具的一组。\n\n## 可以核对的事实\n\n主语言是 Rust，但使用者接触到的安装方式是 npx。\n\n对照示例明确写了模型 Fable 5.1，不是 5.2。\n\n文档站 https://impeccable.style/docs 。\n",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/pbakaus/impeccable"
+        },
+        {
+          "label": "impeccable.style",
+          "url": "https://impeccable.style"
+        },
+        {
+          "label": "文档",
+          "url": "https://impeccable.style/docs"
+        }
+      ]
     },
     {
+      "id": "google-elephant-goldfish-model",
       "rank": 19,
       "repo": "google/elephant-goldfish-model",
       "url": "https://github.com/google/elephant-goldfish-model",
       "weeklyStars": 6101,
       "totalStars": 16527,
       "language": "Python",
-      "intro": "Google 开源的「大象 + 金鱼」设计评审插件：大象带着项目上下文起草规格，金鱼在没有先前对话的情况下审查草稿和引用材料，用来暴露隐含假设；架构取舍仍由人批准。可装到 ChatGPT / Codex 桌面、Antigravity 等。适合用智能体写软件规格、又希望有一轮「新鲜眼神」审查的人。"
+      "week": "2026-W45",
+      "windowLabel": "2026-W45 · 北京时间 11月2日 00:00 至 11月9日 00:00",
+      "summary": "Google 开源的 Elephant-Goldfish Model 是一个设计与审查插件。大象带着项目上下文起草规格，金鱼在没有先前对话的情况下审查草稿和引用材料，用来暴露没说出口的假设。架构取舍仍由人批准。",
+      "intro": "Google 开源的 Elephant-Goldfish Model 是一个设计与审查插件。大象带着项目上下文起草规格，金鱼在没有先前对话的情况下审查草稿和引用材料，用来暴露没说出口的假设。架构取舍仍由人批准。",
+      "detail": "## 它是什么\n\n仓库简介是：用智能体设计和审查软件的开源插件。README 的口号是 Design with an elephant. Review with a goldfish. 网站是 https://egm.dev 。许可证 Apache-2.0。\n\n分工写得很具体。Elephant 持有项目上下文并起草规格。Goldfish 审查者不看之前的对话，只看草稿和被引用的原材料，用来暴露未声明的假设和盲点。人来做架构取舍，并在实现之前批准规格。\n\n## 它做什么\n\n内置的起草和设计审查流程针对的是软件规格。其他文档可以用 /egm-review-loop 自己选审查者和标准。引导和漂移报告适用于软件代码库。\n\n安装一节分了 ChatGPT 与 Codex 桌面、Antigravity CLI、Claude Code 和 Codex CLI。第一次设计有单独的快速开始。文档在 docs/getting_started.md。\n\nChoose a skill 一节用来在不同审查技能之间选择。本介绍不把没读到的技能名单补全。\n\n## 适合谁\n\n适合用智能体写软件规格、又希望有一轮「没参加前面讨论的人」来挑假设的团队。不适合想把批准权交给插件的人。README 把批准留在人这一侧。\n\n它是 Google 组织下的开源仓库。这不表示它是某个云产品的正式控制台，产品边界以 README 为准。\n\n## 这一周为什么上榜\n\n本榜按这个窗口里的新增星排序，数字是 2026-11-10 上午写入榜单的快照。名次只说明星标增量，不代表生产可用性，也不使用此刻打开 GitHub 看到的实时星数。\n\n本周新增星 6,101，总星快照 16,527，排第 19。同一周 Google 还有官方的 google/skills 仓库出现在 Skill 榜上，那个仓库是 Google Cloud 的技能包，和这只「大象与金鱼」不是同一个项目。\n\n## 可以核对的事实\n\n主语言 Python。\n\n网站 https://egm.dev 。\n\n入门文档路径是仓库里的 docs/getting_started.md。\n",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/google/elephant-goldfish-model"
+        },
+        {
+          "label": "egm.dev",
+          "url": "https://egm.dev"
+        },
+        {
+          "label": "入门文档",
+          "url": "https://github.com/google/elephant-goldfish-model/blob/HEAD/docs/getting_started.md"
+        }
+      ]
     },
     {
+      "id": "nutlope-hallmark",
       "rank": 20,
       "repo": "Nutlope/hallmark",
       "url": "https://github.com/Nutlope/hallmark",
       "weeklyStars": 6066,
       "totalStars": 51850,
       "language": "CSS",
-      "intro": "Together AI 推出的反「AI 模板味」网页设计 skill，面向 Claude Code、Codex、Cursor 和 OpenCode。它从五十种主题材料里出牌，按「这个页面要完成的任务」来搭建，并在真实浏览器里做分层检查（对比度、假表单、千篇一律的英雄区等）。适合不想做出一眼假页面的前端与产品开发者。"
+      "week": "2026-W45",
+      "windowLabel": "2026-W45 · 北京时间 11月2日 00:00 至 11月9日 00:00",
+      "summary": "Hallmark 是 Together AI 做的网页设计 skill，给 Claude Code、Codex、Cursor 和 OpenCode 用。它从五十种主题材料里发三张，按页面要完成的动作来搭，并在真实浏览器里做分层检查。网站是 usehallmark.com。",
+      "intro": "Hallmark 是 Together AI 做的网页设计 skill，给 Claude Code、Codex、Cursor 和 OpenCode 用。它从五十种主题材料里发三张，按页面要完成的动作来搭，并在真实浏览器里做分层检查。网站是 usehallmark.com。",
+      "detail": "## 它是什么\n\nREADME 第一句是：一个拒绝看起来像 AI 生成物的设计 skill，对象是 Claude Code、Codex、Cursor 和 OpenCode。作者是 Together AI。网站 https://www.usehallmark.com 。许可证 MIT，主语言在本榜记录里是 CSS。\n\nGitHub 简介写的是 Anti-AI-slop design skill for Claude Code, Cursor, and Codex。README 正文多写了 OpenCode。两处都保留。\n\n## 它做什么\n\n一次构建的过程是：从五十种材料主题里发三张，围绕访客来这个页面要做的事来搭，然后在真实浏览器里对照那些会被看成机器做的痕迹做检查。README 点名的痕迹包括：每个标题上方都有一条 eyebrow、字距很大的全大写标签、标题里单独一个彩色词、一整页空框或只有照片、英雄区没有撑满屏幕、每页结尾都有一个邮件订阅、以及一个说谢谢但其实没有提交的表单。最后由一个没有先前上下文的审查者收尾。\n\n门禁分三层。Floor 永不放行：对比度、焦点、减弱动效、编造的事实、坏掉的手机布局。Reflex 是模型容易掉进去的默认习惯，一次构建如果有理由，可以写在记录里破例。Finish 是工艺细节，不阻挡发布。\n\nv2 写明五十个主题，每个主题是一套材料：纸、字体、颜色、表面、自己的组件和纹理，并附一张完成页的图，构建再在这个材料里排自己的页面。页面按任务来：预订页要能订，商店要能卖，通讯要能订阅，行动放在这个品类该放的位置，页面也结束在这个行动上。另外支持按名字做 redesign 和 audit，以及按要求做自定义主题。\n\n## 适合谁\n\n适合不想让落地页一眼看上去像同一套 AI 模板的前端和产品开发者。不适合把它当成通用组件库。主题是材料，不是行业解决方案目录。\n\nInspired by 一节在 README 后部，摘录没有展开名单，这里不补名字。\n\n## 这一周为什么上榜\n\n本榜按这个窗口里的新增星排序，数字是 2026-11-10 上午写入榜单的快照。名次只说明星标增量，不代表生产可用性，也不使用此刻打开 GitHub 看到的实时星数。\n\n本周新增星 6,066，总星快照 51,850，周榜第 20，Skill 榜第 5。它是这一窗周榜的最后一条，也是 Skill 榜前五里第三款专门处理界面「AI 味」的仓库。\n\n## 可以核对的事实\n\n五十种主题、发三张、三层门禁，都是 README 的 v2 描述。\n\n网站 https://www.usehallmark.com/ 。\n\n安装步骤在 README 的 Install 一节，本介绍不转写命令，以免和 Skill 榜的安装说明重复到失真。Skill 榜会写支持的智能体，但不发明额外的安装器。\n",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/Nutlope/hallmark"
+        },
+        {
+          "label": "usehallmark.com",
+          "url": "https://www.usehallmark.com/"
+        }
+      ]
     }
   ]
 }
