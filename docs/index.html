@@ -97,6 +97,17 @@ details summary { list-style: none; }
 </style>
 </head>
 <body>
+<script id="board-hash-redirect">
+(function () {
+  function go() {
+    var m = /^#\/(ai-news|github-weekly|github-skills)\/([a-z0-9-]+)$/.exec(location.hash || '');
+    if (!m) return;
+    location.replace(m[1] + '.html#/' + m[2]);
+  }
+  go();
+  window.addEventListener('hashchange', go);
+})();
+</script>
 <aside class="sidebar">
   <div class="logo">AI 厂商活动日报<small>AI DEALS DAILY</small></div>
   <nav class="nav"><h4>栏目</h4>
