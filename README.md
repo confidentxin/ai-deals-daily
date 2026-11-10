@@ -14,10 +14,10 @@
 - [已过期归档](#archived)
 - [说明](#notes)
 
-## 今日版：2026-11-09
+## 今日版：2026-11-10
 
-- 核实时间：2026-11-09 20:30（北京时间）
-- 新增：5 条；补录：8 条；急报：0 条；过期：6 条
+- 核实时间：2026-11-10 20:30（北京时间）
+- 新增：4 条；补录：0 条；急报：0 条；过期：2 条
 - 历史版本见 [`archive/`](archive/)。
 
 <a name="urgent"></a>
@@ -88,7 +88,7 @@
 #### 国家超算互联网 · MaaS 特惠专场
 - 内容：新客尝鲜：活动期间首次注册免费领 1000 万 Token 量包（官方活动页已核实，2026-10-31 20:30）
 - 额度：实时到账，到账后 30 天有效；每账号限领 1 次，总量有限先到先得；同一自然人多账号不重复计新人；实际发放模型可能调整，以到账显示为准；赠送 Token 优先使用，用尽后自动扣现金余额，不想扣费请在用尽前停用。官方活动页：https://www.scnet.cn/home/subject/maas/index.html
-- 截止：活动期 2026-08-13 至 2026-12-31 23:59（北京时间；2026-11-09 20:30 复核官方活动页确认已由 11 月 10 日延期至 12 月 31 日）
+- 截止：活动期 2026-08-13 至 2026-12-31 23:59（北京时间；2026-11-10 20:30 复核官方活动页确认仍为第三期，至 12 月 31 日）
 
 #### 华为云码道 CodeArts 代码智能体
 - 内容：每日签到得积分（官方活动页已核实，2026-10-31 20:30）
@@ -339,18 +339,6 @@
 - 截止：至 2026-11-30；用完或到期后恢复用套餐额度
 - 限制：需 Pro 或 Ultra 付费订阅；海外产品，大陆可达性未知
 
-#### OpenCode Zen · Crouton Alpha Free（2026-11-06 20:30 新增，官方 Zen 文档已核实）
-- 内容：隐身推理模型 `crouton-alpha-free`，1M 上下文，多模态输入，面向 Agent 子任务、工具调用与文档分析；仅限 OpenCode 内使用。官方文档：https://opencode.ai/docs/zen/
-- 额度：输入、输出、缓存读取均免费；免费期内数据保留 30 天、不用于训练，机密内容勿用
-- 截止：限时免费；@opencode 11 月 3 日公告称“free for the next week”（约至 11 月 10 日），官方文档未写具体结束日
-- 限制：明确不含中国（含港澳）等地区（官方文档地区名单）；需海外账号
-
-#### fal · FLUX 3 Max 周末免费视频生成（2026-11-07 20:30 新增，官方产品页已核实）
-- 内容：11 月 6 日 09:00 PST 至 11 月 9 日 12:00 PST，FLUX 3 Max 文生视频 / 图生视频 / 关键帧在 playground 与 sandbox 每日免费额度；单条最长 15 秒、720p、带声音；额度按首次生成后 24 小时滚动恢复；API 请求仍按量计费。官方产品页：https://fal.ai/flux-3-max
-- 额度：不登录每天 3 条、登录免费账号 4 条、验证付款方式 5 条；验证付款方式档需绑卡；免费期后按秒计费（720p 约 $0.0425/秒）；75% 折扣至 11 月 7 日为付费折扣、非本条主体
-- 截止：至 2026-11-09 12:00 PST（北京时间 2026-11-10 04:00）
-- 限制：海外站点；可不登录领 3 条/天，大陆可达性因人而异；验证付款方式档需海外支付方式
-
 #### Maritaca AI · S5-free（2026-11-07 20:30 新增，官方 GitHub 定价文档已核实）
 - 内容：巴西 Maritaca 新一代 S5 上线附带限时免费 API 模型 `S5-free`：不收 Token 费用；仅文本；不含 Batch API、Flex 与内置工具。官方定价文档：https://github.com/maritaca-ai/maritalk-api/blob/main/documentation/docs/pt/precos.md
 - 额度：注册平台账号并创建 API Key；base_url `https://chat.maritaca.ai/api`；速率见官方 Rate Limits（聚合站称约 60 次/分钟）；绑卡要求官方定价页未写
@@ -462,7 +450,7 @@
 #### Synthesia Syren · 上线赠额（2026-11-09 20:30 新增，额度官方定价页已核实、截止日未复核）
 - 内容：每位用户一次性的 Syren-only launch credits，仅 Syren 内用；用完/过期后改扣账户标准 credits；约 1 分钟视频约用 1,000–2,000 credits。官方定价页：https://www.synthesia.io/pricing ；帮助中心：https://help.synthesia.io/en/articles/17697950-how-do-syren-credits-work
 - 额度：按档区分：Basic 1,000、Starter 1,500、Pro 1,500、Enterprise 每用户 2,000；各档用户自动获得，Basic 免费版也可领；官方页未写需绑卡；上线初期曾统一给 2,000，现行定价页已按档区分
-- 截止：口径冲突：帮助中心旧版曾写固定日期 2026-11-09 23:59 BST（按 BST=UTC+1 换算为北京时间 11 月 10 日 06:59；但英国已于 10 月 25 日结束夏令时，11 月 9 日当地实为 GMT，换算存在 1 小时歧义），定价页现写“valid for 1 month”（有效期 1 个月），现行帮助中心（2026-11-05 更新）已不再显示固定日期，未能复核；按旧口径约今晚到期，请以账号内显示为准
+- 截止：官方定价页现行口径（2026-11-10 20:30 复核）：Syren 上线赠额按档发放、每位用户一次性、仅 Syren 内用，自领取起有效期 1 个月，标注“limited time only”；旧版帮助中心曾写的固定日期 2026-11-09 23:59 BST 已不在现行页面出现，不再按该口径到期处理，请以账号内显示为准
 - 限制：需海外账号；Basic 版视频带水印；大陆可达性未知
 
 #### Simular Box · 免费云端电脑（2026-11-09 20:30 补录，多源交叉、官方未核实）
@@ -471,16 +459,40 @@
 - 截止：官方页未写截止日/有效期；未承诺该额度长期不变
 - 限制：需海外账号；注册目前仅支持 Google / GitHub 登录；官方页未写需绑卡；另需自备各 Agent 自身的用量（如 Claude Code、Codex 的额度）
 
+#### LG K-EXAONE 2.5 · 托管 API 免费开放（2026-11-10 20:30 新增，多源交叉、官方未核实）
+- 内容：LG AI Research 2026 年 11 月 9 日在 NVIDIA AI Day Seoul 2026 发布：K-EXAONE 2.5（750B 总参 / 31B 激活，韩英双语，512K 上下文）通过 EXAONE API Platform 托管 API 免费调用，OpenAI 兼容，模型名 `k-exaone_v2.5`；多家韩媒与英文媒体同口径引官方 changelog 原话“currently free of charge”，本次未直接打开 changelog 原文。官方文档：https://docs.exaone.ai
+- 额度：当前免费调用；免费期多久、每人额度与限速官方未公布；仅限非商业用途，不得接入向第三方提供调用的产品；需注册平台取 Key
+- 截止：截止未知（官方未公布结束日；“当前免费”不等于永久免费）
+- 限制：需海外账号；仅韩英双语、仅文本；大陆可达性未知
+
+#### Inception · Mercury 3 新账号 100M 免费 Token（2026-11-10 20:30 新增，官方博客已核实）
+- 内容：每新 API Key 一次性 100M 免费 Token，全站模型共享；当前主力为 Mercury 3（扩散式 LLM，1M 上下文，OpenAI 兼容，base URL `https://api.inceptionlabs.ai/v1`，模型 `mercury-3`）；Mercury 2 / 2.5 已不对新用户开放。官方博客：https://www.inceptionlabs.ai/blog/mercury-2-10x-free-tokens
+- 额度：一次性 100M Token；无需绑卡、无需付款信息即可注册领取；用完后按公布价计费（Mercury 3 上线价输入 $0.10 / 输出 $0.35 每百万 Token，5 折）；免费档限速每分钟 1000 请求、100 万输入 Token、10 万输出 Token
+- 截止：赠额本身官方未写有效期与领取截止日（上线价 5 折结束日亦未公布）
+- 限制：需海外账号；仅文本模型，大陆可达性未知
+
+#### Google Cloud · Vertex AI Express Mode 90 天免费层（2026-11-10 20:30 新增，官方文档已核实）
+- 内容：新用户用 @gmail.com 账号注册 Express Mode 免费层，90 天内在配额内免费调用支持 Express Mode 的 Vertex AI / Gemini Enterprise Agent Platform API，无需提供结算信息；与需绑卡的 300 美元免费试用是两条不同路线。官方文档：https://cloud.google.com/vertex-ai/generative-ai/docs/start/express-mode/overview
+- 额度：90 天免费层，配额内免费（具体配额见官方文档）；90 天后或绑卡后转付费层，按量计费
+- 截止：自注册起 90 天；90 天后不绑卡则无法继续使用 Express Mode，30 天后数据标记删除
+- 限制：仅限 Google Cloud 新用户与 @gmail.com 账号；需海外 Google 服务，中国大陆可达性以实际为准
+
+#### OpenCode Zen · 新一批免费模型（2026-11-10 20:30 新增，官方 Zen 文档已核实）
+- 内容：MiniMax M3.1 Flash Free（@opencode 2026 年 11 月 10 日宣布）、Beam Free、Flint 40B Free、LongCat 2.5 Free、MiMo-V2.6-Flash Free、Nemotron 3 Ultra Free、Nemotron 3.5 Super VL Free、Jev 1.13 Free、Big Pickle（隐身模型）输入、输出、缓存读取均为 Free，仅限 OpenCode 内使用。官方文档：https://opencode.ai/docs/zen/
+- 额度：限时免费；LongCat 2.5 Free 每日 100 请求上限、托管在中国、零保留；MiniMax M3.1 Flash Free、DeepSeek V4.1 Flash Free、GLM-5.3-Flash Free 的提供方均为零保留、不用于训练；Beam Free、Flint 40B Free、MiMo-V2.6-Flash Free、Nemotron 系列免费期内数据保留政策见官方文档，机密内容勿用
+- 截止：限时免费，官方未公布结束日
+- 限制：Beam Free 不含中国（含港澳）等地区；其余免费模型地区限制见官方文档；需海外账号（OpenCode），大陆可达性以账号实际为准
+
 <a name="expiring"></a>
 ### 即将到期：3–5 天内
 
-- Synthesia Syren 上线赠额约今晚到期（截止口径冲突，见正文）。
-- OpenCode Zen Crouton Alpha Free 按 @opencode 公告约至 11 月 10 日。
-- fal FLUX 3 Max 周末免费至 11 月 10 日 04:00（北京时间）。
 - 蚂蚁 LingDT-Decision-1.0 限时免费延长至 11 月 11 日。
 - 天工 SkyProduction 双 11 视频模型 0 积分至 11 月 11 日 24:00。
 - Nous Portal LongCat-2.5 免费约至 11 月 13 日。
 - Parallel Decisions Fast 免费 7 天约至 11 月 13 日。
+- 腾讯 WorkBuddy / CodeBuddy 混元 Hy4 正式版限时免费至 11 月 15 日。
+- Pika H3 Flex 每日免费生成至 11 月 15 日。
+- 智谱 AutoClaw 每周福利 M11W2（国内版 50M / 国际版 100M）至 11 月 15 日 23:59。
 
 <a name="pending"></a>
 ### 待确认线索：不进正文
@@ -639,6 +651,14 @@
 #### Ollama Cloud · Reflection Beam
 - 内容：Reflection 开源模型 Beam（501B MoE、1M 上下文）在 Ollama Cloud 限时免费调用，`ollama run beam:cloud` 即可用；本地运行仍免费（Apache 2.0）。官方模型页：https://ollama.com/library/beam
 - 截止：免费至 2026-11-09 16:01（北京时间）已到期，之后按量计费（输入 $0.125/百万 Tokens、缓存输入 $0.015、输出 $0.40）；2026-11-09 20:30 晚间汇总时移入归档
+
+#### OpenCode Zen · Crouton Alpha Free
+- 内容：隐身推理模型 `crouton-alpha-free`，1M 上下文，多模态输入，面向 Agent 子任务、工具调用与文档分析；仅限 OpenCode 内使用；输入、输出、缓存读取均免费。官方文档：https://opencode.ai/docs/zen/
+- 截止：下线日 2026-11-09（官方 Zen 文档 Deprecated 表已核实）；2026-11-10 20:30 晚间汇总时移入归档
+
+#### fal · FLUX 3 Max 周末免费视频生成
+- 内容：11 月 6 日 09:00 PST 至 11 月 9 日 12:00 PST，FLUX 3 Max 文生视频 / 图生视频 / 关键帧在 playground 与 sandbox 每日免费额度；单条最长 15 秒、720p、带声音。官方产品页：https://fal.ai/flux-3-max
+- 截止：至 2026-11-09 12:00 PST（北京时间 2026-11-10 04:00）已到期；2026-11-10 20:30 晚间汇总时移入归档
 
 <a name="notes"></a>
 ## 说明
