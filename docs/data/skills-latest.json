@@ -1,0 +1,174 @@
+{
+  "week": "2026-W45",
+  "asOf": "2026-11-10",
+  "timezone": "Asia/Shanghai",
+  "preview": 10,
+  "note": "数据说明：窗口为北京时间 2026-11-02 00:00 至 2026-11-09 00:00；本周新增星由官方星标历史按 UTC 11-02 至 11-08 加总；总星截至 2026-11-10 上午。 语言方面，涨星榜已写明的仓库沿用该榜；其余为 2026-11-10 从 GitHub 仓库接口读到的当前主要语言。 本榜只收 Agent Skill 仓库，按本周新增星排序。",
+  "items": [
+    {
+      "rank": 1,
+      "repo": "cloudflare/security-audit-skill",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "weeklyStars": 10674,
+      "totalStars": 68156,
+      "language": "JavaScript",
+      "languageSource": "stars-2026-W45",
+      "intro": "这是一个单仓库安全审计 skill（也是 Cloudflare 漏洞发现流水线的起点形态）。它组织六个阶段：侦察并写出架构与覆盖台账、按覆盖单元派出隔离的「猎人」、用新鲜验证者证伪候选、把结果写成机器可读的 `findings.json`，再独立核验并生成中立报告。",
+      "agents": "支持 Agent Skills 的编程智能体（README 按 coding-agent skill 介绍；可与 Claude Code、Codex 等能加载 skill 的工具一起用）。"
+    },
+    {
+      "rank": 2,
+      "repo": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "weeklyStars": 9726,
+      "totalStars": 319838,
+      "language": "Shell",
+      "languageSource": "stars-2026-W45",
+      "intro": "「Skills for Real Engineers」合集，目录包括 `engineering` 与 `productivity` 等。设计成小而可组合的技能，用来处理对齐（如 `/setup-matt-pocock-skills`、工单分诊）、测试与排错、设计讨论等常见失败模式，而不是用一套重型流程接管整个开发。",
+      "agents": "Claude Code（官方插件市场）、Codex、GitHub Copilot（CLI / VS Code）、Gemini CLI；也可用 `npx skills` 装到 Cursor、OpenCode、Devin、Windsurf、Amp、Pi 等。"
+    },
+    {
+      "rank": 3,
+      "repo": "heydamir/unslop",
+      "url": "https://github.com/heydamir/unslop",
+      "weeklyStars": 7026,
+      "totalStars": 12803,
+      "language": "JavaScript",
+      "languageSource": "stars-2026-W45",
+      "intro": "核心是名为 `unslop` 的设计 skill。它先找出紫渐变、发光、emoji 标签、喊叫文案、间距不均等「AI 页面痕迹」，再按产品方向像设计师改红线一样分轮修改，可用于仪表盘、应用和落地页，也可以对着线上链接做。",
+      "agents": "Claude Code（`~/.claude/skills`）、Codex（`~/.agents/skills` 或 skill-installer）、Google Antigravity（`~/.gemini/antigravity/skills`）。"
+    },
+    {
+      "rank": 4,
+      "repo": "pbakaus/impeccable",
+      "url": "https://github.com/pbakaus/impeccable",
+      "weeklyStars": 6821,
+      "totalStars": 106945,
+      "language": "Rust",
+      "languageSource": "stars-2026-W45",
+      "intro": "给编程智能体用的设计词表与工作流：用 `polish`、`bolder` 转向，用 `critique`、`audit` 审查，在发版前抓住常见 AI slop。安装后在智能体里运行 `/impeccable init`（Codex 上为 `$impeccable init`）。",
+      "agents": "README 列出 Claude Code、Cursor、Codex CLI、GitHub Copilot、Devin、Replit Agent、Gemini CLI、Grok Build、OpenCode、Google Antigravity、Kiro、Trae、Rovo Dev、Qoder、Mistral Vibe、Pi、Hermes Agent、DeepSeek Harness、Veto 等。"
+    },
+    {
+      "rank": 5,
+      "repo": "Nutlope/hallmark",
+      "url": "https://github.com/Nutlope/hallmark",
+      "weeklyStars": 6066,
+      "totalStars": 51850,
+      "language": "CSS",
+      "languageSource": "stars-2026-W45",
+      "intro": "反「AI 模板味」的网页设计 skill（Hallmark）。从五十种主题材料中出牌，按页面要完成的任务（预订、购买、订阅等）来搭建，并在真实浏览器里做分层门禁：对比度与无障碍是硬门槛，默认「模型习惯」可有记录地破例，收尾检查不阻断发布。还支持按名做 redesign / audit。",
+      "agents": "Claude Code、Codex、Cursor、OpenCode。"
+    },
+    {
+      "rank": 6,
+      "repo": "Donchitos/Claude-Code-Game-Studios",
+      "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+      "weeklyStars": 4444,
+      "totalStars": 37618,
+      "language": "Shell",
+      "languageSource": "github-repo-api-2026-11-10",
+      "intro": "把 Claude Code 配成一个小游戏工作室：用 `/prototype`、`/start`、`/brainstorm`、`/next-step` 等工作流，从一句话想法问清关键选择、写出一页设计简报、做出可双击打开的浏览器游戏，并用无头浏览器做基础验收。仓库按工作室分工组织角色与流程 skill（README 同时提到完整的协调体系）。",
+      "agents": "以 Claude Code 为主（需在含 `CLAUDE.md` 与 `project.yaml` 的项目根目录打开）。"
+    },
+    {
+      "rank": 7,
+      "repo": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "weeklyStars": 4230,
+      "totalStars": 315201,
+      "language": "Shell",
+      "languageSource": "github-repo-api-2026-11-10",
+      "intro": "一套建立在可组合 skills 上的软件开发方法论：先逼问真正要做的事并分段确认规格，再写出足够具体的实现计划，然后用子智能体做带 TDD / YAGNI / DRY 的开发与检查。技能会自动触发，不必每次手动点名。",
+      "agents": "README 安装说明覆盖 Claude Code、Antigravity、Codex（App 与 CLI）、Cursor、Devin CLI、Factory Droid、Gemini CLI、GitHub Copilot CLI、Grok Build CLI、Kimi Code、OpenCode、Pi、Qwen Code、Hermes Agent、Muse 等。"
+    },
+    {
+      "rank": 8,
+      "repo": "Leonxlnx/taste-skill",
+      "url": "https://github.com/Leonxlnx/taste-skill",
+      "weeklyStars": 4210,
+      "totalStars": 112567,
+      "language": "JavaScript",
+      "languageSource": "github-repo-api-2026-11-10",
+      "intro": "当前仓库主 skill 是 `design-taste-frontend`。智能体先给业务分类（软件、游戏、科技、产品、服务或场所），再发配色、字体和英雄区布局，用真实照片或产品 UI 片段搭页面，最后在无头 Chrome 里按多个宽度做一致性、对比度和性能检查。旧版若干 skill 已迁到 `taste-skill-classics`、`imagegen-skills` 等独立仓库。",
+      "agents": "可用 `npx skills` 安装；也提供 Claude Code 与 Codex 插件，以及 `--all-agents` 链接安装。"
+    },
+    {
+      "rank": 9,
+      "repo": "anthropics/skills",
+      "url": "https://github.com/anthropics/skills",
+      "weeklyStars": 3610,
+      "totalStars": 191109,
+      "language": "Python",
+      "languageSource": "github-repo-api-2026-11-10",
+      "intro": "Anthropic 官方的 Agent Skills 示例与规范仓库。每个 skill 是带 `SKILL.md` 的文件夹，覆盖创意设计、开发技术、企业沟通，以及实际驱动 Claude 文档能力的 `docx` / `pdf` / `pptx` / `xlsx` 等文档 skill；另含 Agent Skills 规范与模板。仓库强调这些是演示与教育用途，行为可能与产品内置实现不同。",
+      "agents": "Claude Code（`/plugin marketplace add anthropics/skills`）、Claude.ai 与 Anthropic API；遵循 agentskills.io 的其他智能体也可以参考这套格式。"
+    },
+    {
+      "rank": 10,
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+      "weeklyStars": 3241,
+      "totalStars": 147408,
+      "language": "Python",
+      "languageSource": "github-repo-api-2026-11-10",
+      "intro": "UI UX Pro Max 是一个给智能体用的设计智能 skill，用来在多种平台和框架上做出更专业的界面，而不是只给一句「好看一点」。README 将其定位为跨端 UI/UX 设计知识库型 skill。",
+      "agents": "支持安装 Agent Skills 的编程智能体（常见用法是 Claude Code、Cursor、Codex 等能加载 skill 目录的工具；请以仓库当前安装说明为准）。"
+    },
+    {
+      "rank": 11,
+      "repo": "blader/humanizer",
+      "url": "https://github.com/blader/humanizer",
+      "weeklyStars": 3154,
+      "totalStars": 67157,
+      "language": "Python",
+      "languageSource": "github-repo-api-2026-11-10",
+      "intro": "Humanizer 这个 skill 按维基百科「AI 写作迹象」来改写文本：去掉套话和假热情，尽量不改变原意，让 AI 草稿读起来更像人写的。README 明确说它面向人类读者，不是为了规避 AI 检测器，检测器仍可能把它判为机器生成。",
+      "agents": "Claude Code、Codex，以及其他支持 skills 的智能体。"
+    },
+    {
+      "rank": 12,
+      "repo": "lemomo-ai/lemo-opuscar",
+      "url": "https://github.com/lemomo-ai/lemo-opuscar",
+      "weeklyStars": 3091,
+      "totalStars": 14107,
+      "language": "JavaScript",
+      "languageSource": "github-repo-api-2026-11-10",
+      "intro": "Lemo-Opuscar 提供 66 种「用代码做成的影片风格」工具箱（另可自制风格）：选定风格、带上故事，让编程智能体当导演去生成短片。仓库还包含从真实镜头、文档和数据剪出来的 Edit & Documentary 等风格。README 写明主要为 Claude 调校，尤其是 Claude Opus 5.5，其他模型效果可能不稳定。",
+      "agents": "以 Claude（尤其 Claude Code + Opus）为主。"
+    },
+    {
+      "rank": 13,
+      "repo": "emilkowalski/skills",
+      "url": "https://github.com/emilkowalski/skills",
+      "weeklyStars": 2256,
+      "totalStars": 55465,
+      "language": "Markdown",
+      "languageSource": "github-repo-api-2026-11-10",
+      "intro": "面向设计师与工程师的界面 / 动效 skill 合集，例如 `emil-design-eng`、`animate`、`animate-expo`、`review-animations`、`improve-animations`、`find-animation-opportunities`、`remove-animations`、`break-ui`、`ask-sonner` 等，用来纠正 easing、阴影、动效滥用等智能体常犯的品味错误。",
+      "agents": "可用 `npx skills@latest add emilkowalski/skills` 装到支持该安装器的智能体（如 Claude Code、Cursor、Codex 等）。"
+    },
+    {
+      "rank": 14,
+      "repo": "google/skills",
+      "url": "https://github.com/google/skills",
+      "weeklyStars": 1974,
+      "totalStars": 23781,
+      "language": "Python",
+      "languageSource": "github-repo-api-2026-11-10",
+      "intro": "Google 官方的产品与技术 Agent Skills，重点在 Google Cloud：入门与 IAM、解决方案架构、多智能体安全、数据湖仓与 RAG、GKE 推理迁移，以及 Agent Platform 上的评测、推理、模型注册、调优、提示与排错等一大组 skill。",
+      "agents": "`npx skills add google/skills` 时可选择要配置的目标智能体（项目级或全局）。"
+    },
+    {
+      "rank": 15,
+      "repo": "AgriciDaniel/claude-seo",
+      "url": "https://github.com/AgriciDaniel/claude-seo",
+      "weeklyStars": 1863,
+      "totalStars": 27740,
+      "language": "Python",
+      "languageSource": "github-repo-api-2026-11-10",
+      "intro": "免费开源的 Claude Code SEO 插件，宣称对一个网站做 10–15 分钟审计并给出按优先级排序的行动计划。覆盖技术 SEO、E-E-A-T 与内容质量、Schema.org、面向 AI 搜索的 GEO、本地与电商 SEO 等；README 写明含 26 个 sub-skills 和 19 个专项智能体。",
+      "agents": "Claude Code。"
+    }
+  ]
+}
