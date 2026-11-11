@@ -4,7 +4,7 @@
   "preview": 10,
   "empty": false,
   "emptyMessage": "今日暂无重要资讯，晚间 19:30 起每日更新",
-  "note": "2026-11-11 晚报（北京时间）整理，在早报 10 条基础上并入 9 条新内容，去重后按公告时间从新到旧排列。早报窗口（2026-11-10 19:52 至 2026-11-11 08:00）的条目及其原有时刻说明仍保留。晚报新条目的时刻说明见各条 timeNote：Qwen4-Max 采用官方 X @Alibaba_Qwen 的 created_at 2026-11-11T02:01:09.000Z（北京时间 10:01）；Qwen Code 1.0 Preview 的 GitHub Release Published 为 2026-11-11T03:55:44Z（北京时间 11:55）；ERNIE 5.5 Flash Preview 与元宝搜索网页版的官方页只有日期，sortAt 分别采用 IT之家报道时间 14:35:18 与 14:47:56（北京时间），只用于排序；Odessia 收购的 sortAt 采用 TechCrunch article:published_time 2026-11-10T21:08:52+00:00（北京时间 11 月 11 日 05:08），不是官方交易时刻；ChatGPT 语音停用通知的官方页只有日期，sortAt 使用 2026-11-10T15:59:00+00:00 仅用于排序；Alpamayo 2 Edge 的 datePublished 为 2026-11-10T16:00:00+00:00（北京时间 11 月 11 日 00:00）；Railway 事故报告的 article:published_time 为 2026-11-10T14:00:00.000Z（北京时间 22:00）；ElevenLabs Scribe v3 的 datePublished 为 2026-11-10T12:00:00.000Z（北京时间 20:00）。置信度 A 表示来自官方原文，B 表示可靠媒体或被收购公司公告、官方未发博文。",
+  "note": "2026-11-11 晚报（北京时间）整理，在早报 10 条基础上并入 12 条新内容，去重后按公告时间从新到旧排列。早报窗口（2026-11-10 19:52 至 2026-11-11 08:00）的条目及其原有时刻说明仍保留。晚报新条目的时刻说明见各条 timeNote：Qwen4-Max 采用官方 X @Alibaba_Qwen 的 created_at 2026-11-11T02:01:09.000Z（北京时间 10:01）；Qwen Code 1.0 Preview 的 GitHub Release Published 为 2026-11-11T03:55:44Z（北京时间 11:55）；ERNIE 5.5 Flash Preview 与元宝搜索网页版的官方页只有日期，sortAt 分别采用 IT之家报道时间 14:35:18 与 14:47:56（北京时间），只用于排序；纽约 RAISE 门户与 Odessia 收购的 sortAt 分别采用 TechCrunch article:published_time 2026-11-10T20:52:13+00:00（北京时间 11 月 11 日 04:52）和 2026-11-10T21:08:52+00:00（北京时间 11 月 11 日 05:08），不是官方时刻；Gemini in Gmail 官方博客只有日期，sortAt 使用 2026-11-10T17:00:00+00:00 仅用于排序；ChatGPT 语音停用通知的官方页只有日期，sortAt 使用 2026-11-10T15:59:00+00:00 仅用于排序；Meta TLX 的 article:published_time 为 2026-11-10T16:59:31+00:00（北京时间 11 月 11 日 00:59）；Alpamayo 2 Edge 的 datePublished 为 2026-11-10T16:00:00+00:00（北京时间 11 月 11 日 00:00）；Railway 事故报告的 article:published_time 为 2026-11-10T14:00:00.000Z（北京时间 22:00）；ElevenLabs Scribe v3 的 datePublished 为 2026-11-10T12:00:00.000Z（北京时间 20:00）。置信度 A 表示来自官方原文，B 表示可靠媒体或被收购公司公告、官方未发博文。",
   "items": [
     {
       "id": "tencent-yuanbao-search-web",
@@ -39,7 +39,7 @@
       "id": "baidu-ernie-5-5-flash-preview",
       "title": "百度发布 ERNIE 5.5 Flash Preview",
       "badge": "Bd",
-      "summary": "百度文心发布基于 ERNIE 5.5 Flash Base 的首个后训练版本，总参数 280B、激活 14B，支持 1M 上下文。API 已在千帆上线；中文发布页写明权重将于 11 月 25 日前开源，英文页写 Apache 2.0、时间用词是 soon。官方页面只写 11 月 11 日；IT之家报道时间是 14:35，只用于排序。",
+      "summary": "百度文心发布基于 ERNIE 5.5 Flash Base 的首个后训练版本，总参数 280B、激活 14B，支持 1M 上下文。API 已在千帆上线；中文发布页写明权重将于 11 月 25 日前开源，英文页写 Apache 2.0、时间用词是 soon。千帆计费页同时列出该 Preview 的按量原价与活动价。官方页面只写 11 月 11 日；IT之家报道时间是 14:35，只用于排序。",
       "publishedAt": "2026-11-11",
       "sortAt": "2026-11-11T06:35:18+00:00",
       "timeLabel": "2026-11-11（原文未标钟点）",
@@ -64,9 +64,13 @@
         {
           "label": "IT之家报道",
           "url": "https://www.ithome.com/1/025/451.htm"
+        },
+        {
+          "label": "千帆模型服务计费",
+          "url": "https://cloud.baidu.com/doc/qianfan/s/wmh4sv6ya"
         }
       ],
-      "detail": "## 它是什么\n\n这是百度文心在 2026 年 11 月 11 日发布的 ERNIE 5.5 Flash Preview。官方写明，它是基于此前发布的 ERNIE 5.5 Flash Base 的首个后训练版本，总参数 280B，激活参数 14B，支持 1M 上下文，并称在编程、3D 建模、知识工作、内容创作等方面表现出色。\n\n中文发布页写明：模型 API 已在千帆平台上线，权重将于 11 月 25 日前开源。英文页补充，权重将以 Apache 2.0 开源，时间用词是 soon。两页都把这篇发布的日期写成 11 月 11 日，但没有给出钟点。\n\n## 它做什么\n\n官方把这版模型写成兼顾能力与推理效率，在多项基准测试中取得具有竞争力的得分，同时保持解码速度。发布页用一组在 Agent 框架中端到端完成的例子说明用途，包括用 Unreal Engine 5.8 写武侠游戏、按设计文档做近百款小游戏，在 Blender 和 FreeCAD 里做场景与零件建模，以及生成研究报告、交响乐和科普视频。官方同时声明，这些作品过程中用到的外部素材和工具在对应部分说明。\n\n官方也写明限制：这是后训练过程中的一个中间版本，尽管已取得同尺寸模型中较有竞争力的表现，仍可能存在因训练不充分导致的能力缺陷；后训练仍在进行，会根据真实使用和用户反馈在正式版中优化。\n\n## 适合谁\n\n适合想通过千帆 API 试用这版后训练模型的开发者，以及等待 Apache 2.0 权重、计划在 11 月 25 日前跟进开源发布的研究与工程团队。它被定位在编程、三维建模、知识工作和内容创作，而不是通用聊天的全新品牌。\n\n## 这一窗口里为什么值得看\n\n这是 11 月 11 日早报之后，国内实验室最完整的一次模型发布。11 月 9 日晚报已经写过 ERNIE Evolve，以及它被用于仍在研发的 ERNIE 5.5 Flash 推理优化；那是研究博客，不是这一版后训练模型的上线。今日发布把 Preview 模型、千帆 API 和开源排期放在同一页上。\n\n官方页还链到了 OpenRouter 上的 `ernie-5.5-flash-preview:free`。这只说明官方放了链接，本榜没有核对该第三方端点的额度、地区限制或是否长期免费，也不把「免费」写成百度官方承诺。\n\n## 可以核对的事实\n\n日期：官方中英文页均为 2026-11-11。规格：总参数 280B，激活 14B，上下文 1M。API：千帆。开源：中文页为 11 月 25 日前；英文页为 Apache 2.0，时间用词 soon。\n\n官方自称为后训练中间版本，正式版仍在打磨。基准分数和示例质量以发布页为准，本榜未复测。\n"
+      "detail": "## 它是什么\n\n这是百度文心在 2026 年 11 月 11 日发布的 ERNIE 5.5 Flash Preview。官方写明，它是基于此前发布的 ERNIE 5.5 Flash Base 的首个后训练版本，总参数 280B，激活参数 14B，支持 1M 上下文，并称在编程、3D 建模、知识工作、内容创作等方面表现出色。\n\n中文发布页写明：模型 API 已在千帆平台上线，权重将于 11 月 25 日前开源。英文页补充，权重将以 Apache 2.0 开源，时间用词是 soon。两页都把这篇发布的日期写成 11 月 11 日，但没有给出钟点。\n\n## 它做什么\n\n官方把这版模型写成兼顾能力与推理效率，在多项基准测试中取得具有竞争力的得分，同时保持解码速度。发布页用一组在 Agent 框架中端到端完成的例子说明用途，包括用 Unreal Engine 5.8 写武侠游戏、按设计文档做近百款小游戏，在 Blender 和 FreeCAD 里做场景与零件建模，以及生成研究报告、交响乐和科普视频。官方同时声明，这些作品过程中用到的外部素材和工具在对应部分说明。\n\n官方也写明限制：这是后训练过程中的一个中间版本，尽管已取得同尺寸模型中较有竞争力的表现，仍可能存在因训练不充分导致的能力缺陷；后训练仍在进行，会根据真实使用和用户反馈在正式版中优化。\n\n千帆官方计费页列出了模型名 ERNIE-5.5-Flash-Preview 的按量价格，单位是元/千 tokens。按官方单价乘以 1000 换算成每百万 Token 后：高峰时段 8:00–22:00，输入原价 2 元、活动价 1 元，命中缓存原价 0.2 元、活动价 0.1 元，输出原价 8 元、活动价 4 元；空闲时段 22:00–次日 8:00，输入原价 1 元、活动价 0.5 元，命中缓存原价 0.1 元、活动价 0.05 元，输出原价 4 元、活动价 2 元。该计费页标注更新时间为 2026-11-10，没有写明活动价截止日期。\n\n## 适合谁\n\n适合想通过千帆 API 试用这版后训练模型的开发者，以及等待 Apache 2.0 权重、计划在 11 月 25 日前跟进开源发布的研究与工程团队。它被定位在编程、三维建模、知识工作和内容创作，而不是通用聊天的全新品牌。\n\n## 这一窗口里为什么值得看\n\n这是 11 月 11 日早报之后，国内实验室最完整的一次模型发布。11 月 9 日晚报已经写过 ERNIE Evolve，以及它被用于仍在研发的 ERNIE 5.5 Flash 推理优化；那是研究博客，不是这一版后训练模型的上线。今日发布把 Preview 模型、千帆 API 和开源排期放在同一页上。\n\n官方页还链到了 OpenRouter 上的 `ernie-5.5-flash-preview:free`。这只说明官方放了链接，本榜没有核对该第三方端点的额度、地区限制或是否长期免费，也不把「免费」写成百度官方承诺。\n\n## 可以核对的事实\n\n日期：官方中英文页均为 2026-11-11。规格：总参数 280B，激活 14B，上下文 1M。API：千帆。开源：中文页为 11 月 25 日前；英文页为 Apache 2.0，时间用词 soon。\n\n官方自称为后训练中间版本，正式版仍在打磨。基准分数和示例质量以发布页为准，本榜未复测。千帆活动价以计费页为准，页面未写截止日期。\n"
     },
     {
       "id": "qwen-code-1-0-preview",
@@ -105,7 +109,7 @@
       "id": "qwen4-max-preview",
       "title": "通义开放 Qwen4-Max-Preview",
       "badge": "Qw",
-      "summary": "通义官方账号于北京时间 11 月 11 日 10:01 宣布，新一代旗舰模型 Qwen4-Max 已在阿里 Token Plan 开放预览。官方文档写明预览期为 11 月 11 日 10:00 至 11 月 25 日 24:00（UTC+8），仅支持 Token Plan，不支持按量计费，上下文 1M Token。",
+      "summary": "通义官方账号于北京时间 11 月 11 日 10:01 宣布，新一代旗舰模型 Qwen4-Max 已在阿里 Token Plan 开放预览。官方文档写明预览期为 11 月 11 日 10:00 至 11 月 25 日 24:00（UTC+8），仅支持 Token Plan，不支持按量计费，上下文 1M Token。同一套餐文档还给出个人版定价，以及该预览模型限时低至 2 折、夜间再打 4 折的 Credits 活动。",
       "publishedAt": "2026-11-11T02:01:09.000Z",
       "sortAt": "2026-11-11T02:01:09.000Z",
       "timeLabel": "2026-11-11 10:01（北京时间）",
@@ -124,6 +128,10 @@
           "url": "https://help.aliyun.com/zh/model-studio/qwen4-max-preview"
         },
         {
+          "label": "Token Plan 个人版说明",
+          "url": "https://help.aliyun.com/zh/model-studio/token-plan-personal-overview"
+        },
+        {
           "label": "Alibaba Cloud 文档（英文）",
           "url": "https://www.alibabacloud.com/help/en/model-studio/qwen4-max-preview"
         },
@@ -132,7 +140,7 @@
           "url": "https://technode.com/2026/11/11/alibaba-opens-qwen4-max-preview-with-a-million-token-context-window/"
         }
       ],
-      "detail": "## 它是什么\n\n这是通义千问新一代旗舰多模态模型 Qwen4-Max 的预览版。官方 X 账号 @Alibaba_Qwen 在 2026-11-11T02:01:09.000Z（北京时间 10:01）发帖称「Qwen4 is coming」，并写明 Qwen4-Max 已在阿里 Token Plan 开放预览。\n\n阿里云帮助中心同期给出规格：模型 ID 为 `qwen4-max-preview`；融合文本生成、图片与视频理解及深度思考，面向编程开发、办公、前端设计与复杂智能体任务。\n\n## 它做什么\n\n按官方文档，模型支持联网搜索、工具调用和结构化输出，兼容 OpenAI 的 Chat Completions、Responses 以及 Anthropic Messages API。上下文长度为 1M Token，最大输出 393,216 Token，思考内容与最终回答共享这一预算。思考默认开启，可用 `reasoning_effort` 在 `low`、`medium`、`xhigh`（默认）之间调节，且不能与 `thinking_budget` 同时设置。\n\n文档还提醒：从该模型起，`max_tokens` 与 `max_completion_tokens` 等价，都限制思考加回答的总量；如果仍按「只够回答」来设上限，输出可能被提前截断。多轮对话中，Chat Completions 默认开启 `preserve_thinking`，需要把历史思考放在 `reasoning_content` 里完整回传。\n\n接入方面，当前仅为预览版，只支持 Token Plan，不支持按量计费。预览期为 2026 年 11 月 11 日 10:00 至 11 月 25 日 24:00（UTC+8），期间不做变更，预览结束后下线。中文文档给出的套餐专用 Base URL 是 `https://token-plan.cn-beijing.maas.aliyuncs.com`，英文国际文档是 `https://token-plan.ap-southeast-1.maas.aliyuncs.com`。\n\n## 适合谁\n\n适合已经使用或准备开通阿里 Token Plan，想试用下一代通义旗舰模型的开发者和团队。因为它只在套餐里开放、预览结束后会下线，不适合把它当成将长期按量计费的生产模型。部分媒体还写到可在通义相关应用里抢先使用，这些渠道没有写进本榜核对过的官方文档和官方 X，因此不写成已经上线的事实。\n\n## 这一窗口里为什么值得看\n\n这是 11 月 11 日早报之后最重要的基础模型预览。通义把「Qwen4 即将到来」和「Max 已在 Token Plan 预览」放在同一条公告里，同时用文档把预览窗口、计费限制和 1M 上下文写清楚。对开发者，现在就能按文档接入；对最终形态和转正后的价格，官方还没有说。\n\n## 可以核对的事实\n\n官方 X：https://x.com/Alibaba_Qwen/status/2120335993643684315 ，发帖时间 2026-11-11T02:01:09.000Z。\n\n模型 ID：`qwen4-max-preview`。预览期：2026-11-11 10:00 至 2026-11-25 24:00（UTC+8），仅 Token Plan，不支持按量计费，预览结束后下线。上下文 1M Token，最大输出 393,216 Token。\n"
+      "detail": "## 它是什么\n\n这是通义千问新一代旗舰多模态模型 Qwen4-Max 的预览版。官方 X 账号 @Alibaba_Qwen 在 2026-11-11T02:01:09.000Z（北京时间 10:01）发帖称「Qwen4 is coming」，并写明 Qwen4-Max 已在阿里 Token Plan 开放预览。\n\n阿里云帮助中心同期给出规格：模型 ID 为 `qwen4-max-preview`；融合文本生成、图片与视频理解及深度思考，面向编程开发、办公、前端设计与复杂智能体任务。\n\n## 它做什么\n\n按官方文档，模型支持联网搜索、工具调用和结构化输出，兼容 OpenAI 的 Chat Completions、Responses 以及 Anthropic Messages API。上下文长度为 1M Token，最大输出 393,216 Token，思考内容与最终回答共享这一预算。思考默认开启，可用 `reasoning_effort` 在 `low`、`medium`、`xhigh`（默认）之间调节，且不能与 `thinking_budget` 同时设置。\n\n文档还提醒：从该模型起，`max_tokens` 与 `max_completion_tokens` 等价，都限制思考加回答的总量；如果仍按「只够回答」来设上限，输出可能被提前截断。多轮对话中，Chat Completions 默认开启 `preserve_thinking`，需要把历史思考放在 `reasoning_content` 里完整回传。\n\n接入方面，当前仅为预览版，只支持 Token Plan，不支持按量计费。预览期为 2026 年 11 月 11 日 10:00 至 11 月 25 日 24:00（UTC+8），期间不做变更，预览结束后下线。中文文档给出的套餐专用 Base URL 是 `https://token-plan.cn-beijing.maas.aliyuncs.com`，英文国际文档是 `https://token-plan.ap-southeast-1.maas.aliyuncs.com`。Token Plan 个人版文档还写明：该预览模型的别名是 `qwen4.0-max-preview`，两个 ID 都可以调用，账单统一显示为后者；限时活动期间 Credits 消耗低至 2 折（相当于增加 5 倍用量），每晚 22:00 至次日 08:00 再享 4 折（即原标准的 0.8 折）。同一页列出的个人版定价是：Lite 39 元/月（新用户限时价 19.5 元/月）、Essential 79 元/月（新用户限时价 39.5 元/月）、Standard 139 元/月、Pro 312 元/月；新用户限时价有效期至 2026-11-30 23:59:59（UTC+8），只限从未购买过个人版的账号。文档同时规定，个人版只限在编程和智能体工具里交互式使用，不能用于自动化脚本、自定义应用后端或非交互式批量调用。\n\n## 适合谁\n\n适合已经使用或准备开通阿里 Token Plan，想试用下一代通义旗舰模型的开发者和团队。因为它只在套餐里开放、预览结束后会下线，不适合把它当成将长期按量计费的生产模型。部分媒体还写到可在通义相关应用里抢先使用，这些渠道没有写进本榜核对过的官方文档和官方 X，因此不写成已经上线的事实。\n\n## 这一窗口里为什么值得看\n\n这是 11 月 11 日早报之后最重要的基础模型预览。通义把「Qwen4 即将到来」和「Max 已在 Token Plan 预览」放在同一条公告里，同时用文档把预览窗口、计费限制和 1M 上下文写清楚。对开发者，现在就能按文档接入；预览期结束后模型会下线。套餐本身的价格，以及这次预览专属的 Credits 折扣，以 Token Plan 文档为准。\n\n## 可以核对的事实\n\n官方 X：https://x.com/Alibaba_Qwen/status/2120335993643684315 ，发帖时间 2026-11-11T02:01:09.000Z。\n\n模型 ID：`qwen4-max-preview`，别名 `qwen4.0-max-preview`。预览期：2026-11-11 10:00 至 2026-11-25 24:00（UTC+8），仅 Token Plan，不支持按量计费，预览结束后下线。上下文 1M Token，最大输出 393,216 Token。个人版新用户限时价截止于 2026-11-30 23:59:59（UTC+8）。\n"
     },
     {
       "id": "openai-odessia-acquisition",
@@ -158,6 +166,35 @@
         }
       ],
       "detail": "## 它是什么\n\n旅行智能体创业公司 Odessia 在官网宣布：「OpenAI has acquired Odessia」。同一页写明，作为交接的一部分，Odessia 服务已停止；既有预订和行程可联系 support@odessia.com。\n\nTechCrunch 报道称，创始人 Francis Davidson 发帖宣布交易，并表示已到 OpenAI 负责旅行方向。OpenAI 发言人向 TechCrunch 确认欢迎其加入，评价他是有经验的旅行领域创始人，但未公布交易条款，也未宣布新的旅行产品计划。因此本榜把收购和服务停运写成可核对事实，把「OpenAI 将推出旅行产品」只当作尚未说明的后续可能，可信度记为 B。\n\n## 它做什么\n\n对 Odessia 的用户，目前可核对的变化是服务停运，以及既有行程改由原团队邮箱处理。对 OpenAI 用户，官方没有同步的产品博文，也没有说会把 Odessia 的能力并进 ChatGPT。\n\nTechCrunch 还写到：Odessia 运营约一年，曾由 Sequoia 领投 600 万美元 pre-seed，产品约五个月前上线，现已关闭。这些细节来自该报道，本榜未另查融资文件。\n\n## 适合谁\n\n主要与 Odessia 既有用户有关：需要改期、取消或取出行程的人，应按官网提供的邮箱联系。对关注 OpenAI 产品线的人，目前只能记下「旅行方向有一位新加入的创始人」，还看不到可试用的新功能。\n\n## 这一窗口里为什么值得看\n\n这是早报之后、落在 11 月 11 日凌晨媒体报道里的一桩收购。它说明 OpenAI 在旅行代理方向做了人员和技术收编，但官方刻意没有把它写成一次产品发布。\n\n## 可以核对的事实\n\nOdessia 官网宣布已被 OpenAI 收购，并称服务已停止。TechCrunch 引述 OpenAI 发言人确认创始人 Francis Davidson 加入 OpenAI。交易条款和后续旅行产品计划，官方均未说明。\n"
+    },
+    {
+      "id": "ny-raise-portal-nycairr",
+      "title": "纽约州开放 RAISE 登记门户",
+      "badge": "NY",
+      "summary": "纽约州州长府宣布成立 AI 责任与研究中心，并由 DIGIT 办公室开放 RAISE 门户，大型前沿开发者须在 2027 年 1 月 1 日前登记。官方新闻稿只写 11 月 10 日；TechCrunch 发表时间换算后是北京时间 11 月 11 日 04:52，只用于排序。",
+      "publishedAt": "2026-11-10",
+      "sortAt": "2026-11-10T20:52:13+00:00",
+      "timeLabel": "2026-11-10（原文未标钟点）",
+      "timePrecision": "date",
+      "timeNote": "纽约州州长府新闻稿只写 November 10, 2026，没有机器可读钟点。TechCrunch 的 article:published_time 为 2026-11-10T20:52:13+00:00，即北京时间 2026-11-11 04:52。sortAt 采用这一媒体发表时间，只用于排序，不是官方公布的发布时间。",
+      "source": "纽约州州长府与 DFS 官方页面",
+      "confidence": "A",
+      "url": "https://www.governor.ny.gov/news/governor-hochul-declares-ny-will-lead-nation-ai-science-and-safety-launches-new-research",
+      "links": [
+        {
+          "label": "纽约州州长府新闻稿",
+          "url": "https://www.governor.ny.gov/news/governor-hochul-declares-ny-will-lead-nation-ai-science-and-safety-launches-new-research"
+        },
+        {
+          "label": "DFS：前沿开发者说明",
+          "url": "https://www.dfs.ny.gov/digit/Frontier-Developers"
+        },
+        {
+          "label": "TechCrunch 报道",
+          "url": "https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect/"
+        }
+      ],
+      "detail": "## 它是什么\n\n纽约州州长 Kathy Hochul 在 11 月 10 日的新闻稿里宣布了两项安排。第一，在 SUNY Binghamton 成立 New York Center for AI Responsibility and Research（NYCAIRR），由 Cornell Tech 的 Greg Morrisett 与哥伦比亚大学的 Jeannette Wing 担任临时联合主任，汇集全州 80 余名研究者，利用 Empire AI 的算力独立测评前沿系统与安全框架。第二，新成立的 Office of Digital Innovation, Governance, Integrity, and Trust（DIGIT）开放 RAISE Portal，供大型前沿开发者登记并履行 RAISE 法案的安全、透明和报告要求。\n\n该中心今年 1 月已经宣布过，资金包括以 Tom Secunda 为首的 3000 万美元捐赠、SUNY 的 2500 万美元研究投入，以及纽约州运营资金。Empire AI 在新闻稿里被写成州长推动的 5 亿美元公私合作倡议。\n\n## 它做什么\n\n对在纽约运营的前沿开发者，眼下最具体的变化是门户已经打开。州长府写明，大型前沿开发者须在 2027 年 1 月 1 日前登记；从 1 月起，大型开发者还须在网站上公布安全框架，所有前沿开发者须报告关键安全事件并发布模型透明度报告。\n\n更细的法定义务写在纽约金融服务部（DFS）的说明页上。前沿模型被定义为训练算力超过 10^26 次整数或浮点运算的基础模型，算力统计包含原训练以及后续微调、强化学习或其他实质性改动。大型前沿开发者指其与关联方在前一日历年的年收入合计超过 5 亿美元的前沿开发者。所有前沿开发者须发布模型透明度报告，并在认定或有合理理由相信发生关键安全事件后 72 小时内通过门户报告；若事件存在即死或重伤的紧迫风险，须在 24 小时内向有管辖权的执法或公共安全机构披露。大型开发者还须公布并至少每年更新安全框架，每季度结束后 30 天内向 DIGIT 提交内部使用带来的灾难性风险评估摘要。登记需要 NY.gov ID。\n\n## 适合谁\n\n主要面向在纽约开发、部署或运营前沿模型的实验室和公司，尤其是可能被定义为「大型前沿开发者」的机构。对关注政策的读者，这是把此前已经通过的 RAISE 法案落到可登记、可报告的执行层，而不是又立一部新法。\n\n## 这一窗口里为什么值得看\n\n发表日期是 11 月 10 日，媒体报道落在北京时间 11 月 11 日凌晨，早报没有收录。它和 11 月 10 日晚报已写过的澳大利亚 AI 安全立法是不同法域的安排：纽约这次给出了门户、登记截止日和可核对的报告时限。\n\n## 可以核对的事实\n\n官方日期：2026-11-10。中心地点：SUNY Binghamton。临时联合主任：Greg Morrisett、Jeannette Wing。大型开发者登记截止：2027-01-01。关键安全事件报告：72 小时；有即死或重伤紧迫风险时：24 小时。训练算力门槛：10^26 次运算。大型开发者收入门槛：前一日历年（含关联方）超过 5 亿美元。\n"
     },
     {
       "id": "anthropic-claude-sheets-whiteboards-data",
@@ -191,6 +228,56 @@
         }
       ],
       "detail": "## 它是什么\n\n这是 Anthropic 在 Claude 产品页发布的一组办公向功能：Claude Whiteboards 和 Claude Sheets 以测试版推出，10 月以测试版上线的 Claude Dashboards 正式更名为 Claude Data，并转为正式版。官方写明这三项在所有付费方案提供，可在网页、桌面和移动端使用。Claude Data 需要先连接数据仓库或 CRM 一类的数据源。\n\n另一篇官方说明还提到交互式连接器升级，以及 Claude Meetings 即将推出。The Verge 和 TechCrunch 在北京时间 11 月 11 日凌晨的报道里，把 Meetings 写成已在 Team 和 Enterprise 以测试版上线，并称先支持 Google Meet。这与产品页「即将推出」的表述不一致，本榜不以媒体说法把 Meetings 写成已经上线。\n\n## 它做什么\n\nWhiteboards 让团队和 Claude 在同一块白板上讨论。官方的例子是：把还比较乱的计划讲给 Claude，由它整理成带时间线、负责人和日期的看板；在复盘会上大家先写笔记，再让 Claude 按主题归类并起草每人的待办。也可以框选板子的一部分向 Claude 提问。讨论结束后，Claude 可以把白板变成文档或幻灯片，或接到 Lucid、Miro、Zoho Vani 里继续改。\n\nSheets 可以从一句提示生成表格，例如活动跟踪表或招聘预算，并带上标签页、公式、格式和下拉菜单。Claude 会直接在单元格里修改，并标出每一处改动，方便回溯。官方承认目前功能仍偏基础；需要完整 Excel 能力时，可以导出为 .xlsx 或 CSV，使用 Claude for Excel，或转到 Airtable、Asana、monday.com、Smartsheet 等合作工具。\n\nClaude Data 能连接 Amazon Redshift、BigQuery、ClickHouse，以及另一页提到的 Snowflake、Salesforce。正式版补充了几项能力：数据团队可以认证指标查询，基于这些指标的图表会带 certified 标记；可以在 Claude 里起草数据故事或解说视频，审过再分享；实况分享让同事打开仪表盘时看到已批准查询的最新结果，即使他们没有底层连接器权限，也不能用分享者的权限另跑查询；还支持设计系统、按仪表盘设置的缓存刷新，以及变更追踪和回滚。认证查询与实况分享仍是测试版。合作方包括 Amplitude、Mixpanel、Omni、PostHog 和 Sigma。\n\n交互式连接器从当天起可以在对话旁边或全屏打开完整应用，官方举例包括 Adobe、Atlassian、Box 和 Notion。另一页还提到 Salesforce、NetSuite、Workday 的插件（部分为测试版），以及 Marketplace 上超过 9000 个连接器和插件，这个数字来自官方页面，本榜未另行清点。\n\n## 适合谁\n\n适合已经在用付费 Claude、希望少把结果拷到外部表格或白板里的团队。Team 方案下这三项默认打开。Enterprise 方案下 Whiteboards 与 Sheets 默认关闭，Claude Data 将在 2026 年 11 月 19 日默认打开，管理员可以在 Organization settings 的 Artifacts 里随时改。\n\n## 这一窗口里为什么值得看\n\n这是 11 月 10 日晚报之后，Anthropic 在产品侧最完整的一组办公功能更新，时间上紧挨着同一天启动的拟议 IPO 路演。它把 Claude 从「生成一段文字再导出」往「文件留在 Claude 里、团队和模型一起改」推进一步，并和已有的文档、幻灯片、Design、Motion 放在同一套工件里。\n\n需要单独记住的限制是：Sheets 官方自己说功能还简单；Claude Data 的认证查询和实况分享仍是测试版；Meetings 以官方「即将推出」为准，不按部分媒体写成已经能进 Google Meet。\n\n## 可以核对的事实\n\n上线范围：所有付费方案；网页、桌面、移动端。Claude Data 需要数据连接器。Enterprise 默认策略和 11 月 19 日开关见官方产品页。\n\nMeetings 的官方表述是即将推出，用来在通话中记录并更新团队正在写的文档。The Verge、TechCrunch 另有已上线的说法，二者不一致，本榜不把后一种写成事实。\n"
+    },
+    {
+      "id": "google-workspace-gemini-gmail",
+      "title": "更多 Workspace 账号可用 Gemini in Gmail",
+      "badge": "G",
+      "summary": "Google 将部分 Gemini in Gmail 功能扩大到所有 18 岁及以上的 Workspace 用户，包括长邮件线程的 AI Overview 摘要，以及非个性化的 Help me write。官方博客只写 11 月 10 日，并写明从当日起分批推送。The Verge 跟进时间换算后是北京时间 11 月 11 日 17:41，不是官方时刻。",
+      "publishedAt": "2026-11-10",
+      "sortAt": "2026-11-10T17:00:00+00:00",
+      "timeLabel": "2026-11-10（原文未标钟点）",
+      "timePrecision": "date",
+      "timeNote": "Google Workspace Updates 只写 November 10, 2026，并写明从 2026-11-10 起在 Rapid Release 和 Scheduled Release 域分批推送，没有 article:published_time。The Verge 的 article:published_time 为 2026-11-11T09:41:02+00:00，即北京时间 17:41，只是媒体跟进时间。sortAt 使用 2026-11-10T17:00:00+00:00，仅把该条排在 11 月 10 日日期条目中，不是官方公布的发布时间。",
+      "source": "Google Workspace 官方更新博客",
+      "confidence": "A",
+      "url": "https://workspaceupdates.googleblog.com/2026/11/expanding-gemini-in-gmail-to-more-Google-Workspace-users.html",
+      "links": [
+        {
+          "label": "Google Workspace Updates 原文",
+          "url": "https://workspaceupdates.googleblog.com/2026/11/expanding-gemini-in-gmail-to-more-Google-Workspace-users.html"
+        },
+        {
+          "label": "The Verge 报道",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1031489/google-is-bringing-gmails-help-me-write-ai-tool-to-work-accounts"
+        }
+      ],
+      "detail": "## 它是什么\n\nGoogle 在 Workspace Updates 博客宣布，把部分此前主要面向消费者账号和特定 Workspace 版本的 Gemini in Gmail 功能，扩大到所有 18 岁及以上的 Workspace 用户。官方写明，范围也包括 Workspace Individual，以及已开启 Gmail 智能功能的个人账号。\n\n这是现有功能的使用范围扩大，不是新的基础模型，也不是新的 Gemini 版本。\n\n## 它做什么\n\n此次明确新增两项。一是长邮件线程顶部的 AI Overview 会话摘要，用来归纳要点和回复。二是非个性化的 Help me write，可以按简单提示生成完整草稿，或改写语气与清晰度。官方举例是「Draft a professional follow-up and thank-you for the interview」。\n\n这些功能默认打开，用户可以自行关闭，管理员也可以在管理控制台禁用。推送从 2026 年 11 月 10 日开始，在 Rapid Release 和 Scheduled Release 域渐进进行，最多约 15 天可见。\n\n## 适合谁\n\n适合使用工作或学校 Workspace 账号、此前还用不上这些 Gmail Gemini 功能的人，以及 Workspace 管理员。如果已经在用消费者账号或本来就开放了这些功能的版本，这次主要是覆盖面变化。\n\n## 这一窗口里为什么值得看\n\n官方博客的日期是 11 月 10 日，早报没有收录；The Verge 在北京时间 11 月 11 日下午跟进，说明它仍在当天的讨论里。对大量工作邮箱用户，这比新的行业演示更直接可感，但不要把它写成一次模型发布。\n\n## 可以核对的事实\n\n官方日期：2026-11-10。推送：从当日开始，Rapid / Scheduled Release，最多约 15 天可见。新增两项：AI Overview 会话摘要；非个性化 Help me write。对象：18 岁及以上的所有 Workspace 用户，以及 Workspace Individual 和已开启 Gmail 智能功能的个人账号。默认打开，用户和管理员都可以关。\n"
+    },
+    {
+      "id": "meta-tlx-gpu-compiler",
+      "title": "Meta 介绍开源 GPU 编译扩展 TLX",
+      "badge": "M",
+      "summary": "Meta 工程博客介绍 Triton Low-Level Extensions（TLX），在 Triton 上增加对现代 GPU 执行编排的显式控制，并称已在生产环境运行数月。页面发表时间是北京时间 11 月 11 日 00:59。",
+      "publishedAt": "2026-11-10T16:59:31+00:00",
+      "sortAt": "2026-11-10T16:59:31+00:00",
+      "timeLabel": "2026-11-11 00:59（北京时间）",
+      "timePrecision": "datetime",
+      "timeNote": "工程博客可见日期为 November 10, 2026。HTML 的 article:published_time 与 datePublished 均为 2026-11-10T16:59:31+00:00，即北京时间 2026-11-11 00:59。",
+      "source": "Meta 官方工程博客",
+      "confidence": "A",
+      "url": "https://engineering.fb.com/2026/11/10/open-source/tlx-a-hardware-native-gpu-compiler-for-production-ml/",
+      "links": [
+        {
+          "label": "Meta 工程博客原文",
+          "url": "https://engineering.fb.com/2026/11/10/open-source/tlx-a-hardware-native-gpu-compiler-for-production-ml/"
+        },
+        {
+          "label": "TLX 文档站",
+          "url": "https://facebookexperimental.github.io/triton/website/tlx.html"
+        }
+      ],
+      "detail": "## 它是什么\n\n这是 Meta 工程博客介绍的 Triton Low-Level Extensions（TLX）。它不是新的基础模型，而是 Triton 的一层扩展：在保留 Triton 的 Python 编程和自动调优的同时，给开发者对现代 GPU 执行编排的显式控制，包括 warp group、同步、异步内存和 TMA、张量核，以及 cluster 级执行。\n\n官方写明，当前目标硬件包括 NVIDIA Hopper、Blackwell 以及 AMD MI300 和 MI350x，并计划扩展到更多架构和 Meta 自家的 MTIA。博客称 TLX 已经在 Meta 的生产环境运行数月。\n\n## 它做什么\n\n按官方的说法，Triton 回答「计算什么」，TLX 回答「如何编排这些计算」。开发者仍用熟悉的 Triton 张量操作写计算，只在需要显式控制执行、搬运或同步时才使用 TLX。\n\n博客给出三则生产案例，数字都来自官方原文：GEM 广告基础模型训练在数千块 Blackwell 上达到 20–25% 的端到端 MFU；推荐推理的 In-Kernel Broadcast Optimization，在共设计模型上最高可把计算密集净延迟降低约三分之二，其中线性压缩核在 H100 上有 4 倍加速；用于大模型预训练 MoE 的分布式 grouped GEMM，已经在大规模机群上长期运行。官方还提到下一步：支持更多硬件、自动推断编排，以及作为 `torch.compile` 后端。这些性能数字本榜没有复测。\n\n## 适合谁\n\n适合已经在 Triton 上写和调 GPU 内核、希望在不退回大量 CUDA 编排代码的前提下使用 Hopper / Blackwell 等新执行特性的工程团队。普通模型和产品用户不必把它当成一次要换模型的发布。\n\n## 这一窗口里为什么值得看\n\n发表钟点是北京时间 11 月 11 日 00:59，落在早报窗口里但早报没有收录。它和已介绍的 Muse Ember 不是同一件事：一条是小模型，一条是生产级编译与内核基础设施。\n\n## 可以核对的事实\n\n发表时间：2026-11-10T16:59:31+00:00。名称：Triton Low-Level Extensions（TLX）。官方自称已在生产运行数月。目标硬件：NVIDIA Hopper / Blackwell，AMD MI300 / MI350x。案例中的 20–25% MFU、约三分之二延迟下降和 4 倍加速，以博客为准，本榜未复测。\n"
     },
     {
       "id": "minimax-h3-image",
