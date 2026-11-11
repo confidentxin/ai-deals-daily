@@ -16,8 +16,8 @@
 
 ## 今日版：2026-11-11
 
-- 核实时间：2026-11-11 12:00（北京时间）
-- 新增：1 条；补录：0 条；急报：1 条；过期：2 条
+- 核实时间：2026-11-11 20:30（北京时间）
+- 新增：5 条；补录：1 条；急报：0 条；过期：0 条
 - 历史版本见 [`archive/`](archive/)。
 
 <a name="urgent"></a>
@@ -305,7 +305,7 @@
 - 限制：需海外账号；大陆可达性未知
 
 #### IteraCompute · Qwen3.8-27B 每月 30M Token 免费（2026-11-05 20:30 新增，官方站已核实）
-- 内容：注册并验证邮箱（或 Google 登录）后，经 IteraCompute API 或 OpenCode / Cline 内置入口调用 `qwen/qwen3.8-27b`；仅限该模型，其他模型另计费。官方免费页：https://iteracompute.com/free/
+- 内容：注册并验证邮箱（或 Google 登录）后，经 IteraCompute API 或 OpenCode / Cline 内置入口调用 `qwen/qwen3.8-27b`；仅限该模型，其他模型另计费。同一免费额度也可用模型 ID `Auto` 调用，在 Qwen3.8-27B、DeepSeek V4.1 等开源模型间按空闲算力自动路由（官方免费页已核实）。官方免费页：https://iteracompute.com/free/
 - 额度：每月 30M Token（输入 + 输出含推理合计，按 UTC 自然月重置、不结转），128K 上下文、输出上限 8192 Token、160K TPM；无需绑卡、无需充值；超额直接返回 429、不自动扣费；共享算力，繁忙时可能排队、无 SLA。注意：运营商身份未公开（域名 2026 年 8 月注册），请勿用其调用敏感内容
 - 截止：免费推广至 2026-11-24 00:00（PT，北京时间 2026-11-24 16:00）
 - 限制：需海外账号；邮箱或 Google 注册，大陆可达性未知
@@ -478,16 +478,56 @@
 - 截止：限时免费，官方未公布结束日
 - 限制：Beam Free 不含中国（含港澳）等地区；其余免费模型地区限制见官方文档；需海外账号（OpenCode），大陆可达性以账号实际为准
 
+#### Vercel AI Gateway · Ampersand v0.1 免费至 11 月 13 日（2026-11-11 20:30 新增，官方 changelog 已核实）
+- 内容：Humans& 的群聊协作模型 Ampersand v0.1（基于 Z.ai 开源权重 GLM 5.3 训练、1M 上下文）在 Vercel AI Gateway 限时免费；模型名 `humansand/ampersand-v0.1`，可用 AI SDK、OpenAI 兼容接口或编码 Agent 调用。官方 changelog：https://vercel.com/changelog/humans-and-ampersand-now-available-on-ai-gateway
+- 额度：免费期内调用免费；官方未写每人额度数字；免费期后按公布价计费（输入 $1.00 / 输出 $5.20 每百万 Token）
+- 截止：免费至 2026-11-13（官方未注具体时刻与时区）
+- 限制：需海外账号（Vercel），大陆可达性未知
+
+#### Anthropic Claude · Fable 5.2 上线周免费试用（2026-11-11 20:30 新增，官方帮助中心已核实）
+- 内容：11 月 9 日发布的 Claude Fable 5.2 上线优惠：Pro 计划与 Team 标准席位在 11 月 9 日至 16 日期间可把 Fable 系列模型（5.2 / 5.1 / 5）计入套餐周限额、上限为周限额的 50%，无需另购 usage credits；另得一次 Fable 额度重置；Max、Ultra 与 Team 高级席位按付费时长得 1–3 次 Fable 重置；重置均需在设置里手动领取，不自动发放。官方帮助中心《Claude Fable 5.2 launch offers》：https://support.claude.com/en/articles/17506494-claude-fable-5-2-launch-offers
+- 额度：Pro / Team 标准席位：Fable 用量上限为周限额的 50% + 1 次 Fable 重置；Max / Ultra / Team 高级席位：1–3 次 Fable 重置（付费不满 6 个月 1 次、6–12 个月 2 次、12 个月以上 3 次）；重置只恢复已用的 Fable 额度、不提高限额
+- 截止：Pro 上线周与 Fable 重置至 2026-11-16 23:59（PT，北京时间 11 月 17 日 15:59）；Max / Ultra 的 Fable 重置至 2027-03-08 23:59（PT）
+- 限制：仅限付费订阅用户，免费版不含；须在 2026-11-09 10:00（PT）前已有付费账单；中国大陆不在 Claude 付费计划销售地区内，需海外账号
+
+#### Anthropic Claude · 全量额度一次免费重置（2026-11-11 20:30 新增，多源交叉、官方未核实）
+- 内容：11 月 10 日 Anthropic 官方开发者账号宣布：为 Pro、Max、Ultra、Team 用户提供一次全模型、全限额的完整免费重置，作为此前计费 Bug 多扣额度的补偿，与 Fable 专项重置分开；领取入口在设置 → Usage → Limit resets，或 clau.de/reset；须手动领取，领取后不可撤销。官方开发者账号原帖：https://x.com/ClaudeDevs/status/2120275296637321476
+- 额度：一次完整重置，恢复全部已用额度；不提高限额、不退还已扣的额外 usage 费用；降级或取消订阅前未领则失效
+- 截止：须在 2026-12-10 14:00（PT，北京时间 12 月 11 日 06:00）前领取使用
+- 限制：仅限 Pro、Max、Ultra、Team 付费用户，免费版与 Enterprise 未提及；中国大陆不在 Claude 付费计划销售地区内，需海外账号
+
+#### Zro · Zro Day 全站模型 24 小时免费（2026-11-11 20:30 新增，官方 Product Hunt 发帖已核实）
+- 内容：11 月 11 日 Zro Day：Pro 与 Max 用户全站自有模型免费推理 24 小时，最多 2 路并发请求免费，超出按常规价计费；合作方模型（如 Gemini）除外；无需兑换码。官方发帖：https://www.producthunt.com/p/zro/happy-zro-day ；官方站：https://zro.moonmath.ai/
+- 额度：Pro / Max 用户全站模型免费推理，最多 2 并发
+- 截止：至 2026-11-12 11:00（UTC，北京时间 11 月 12 日 19:00）
+- 限制：仅限 Pro 与 Max 付费用户；合作方模型除外；需海外账号，大陆可达性未知
+
+#### fal · MiniMax H3 Max 沙盒每日 5 次免费生成（2026-11-11 20:30 补录，多源交叉、官方未核实）
+- 内容：fal 沙盒里 MiniMax H3 Max（fal 基于 MiniMax H3 开源权重后训练的视频模型）每天 5 次免费生成，每次 5 秒 768p 带同步音频，文生视频与图生视频均可；fal 官方页确认沙盒有免费次数、超出后用账号 credits 按量计费；每日 5 次、每次 5 秒的口径来自多家第三方一致转述。官方页：https://fal.ai/minimax-h3-max
+- 额度：每天 5 次免费生成，每次 5 秒 768p；API 调用按量计费，不在免费范围内
+- 截止：每日免费次数每 24 小时重置；官方页未写活动结束日
+- 限制：需注册 fal 账号登录；需海外账号，大陆可达性未知
+
+#### Traycer · Gemini Carbon Launch 每账号 $100 免费额度（2026-11-11 20:30 新增，官方活动页已核实）
+- 内容：庆祝 Gemini 4 Carbon 上线：每账号领 $100 免费额度，总额 $50,000、共 500 个名额，先到先得；额度仅用于 Traycer Inference 内的 Gemini 模型（含 Gemini 4 Carbon、Gemini 4 Argon、Gemini 3.8 Flash），不覆盖其他模型与自带 API Key；此前领过 Gemini Weekend 的账号也可再领本次。官方活动页：https://traycer.ai/campaigns/free-gemini-carbon
+- 额度：每账号 $100，一次性领取；未用完的额度在活动结束时过期
+- 截止：2026-11-10 11:30 至 2026-11-12 11:29（PT，北京时间 11 月 11 日 03:30 至 11 月 13 日 03:29）；500 个名额领完提前结束
+- 限制：仅限 credit-based 付费计划的个人账号领取，团队账号不含；领取本身免费、无需绑卡；需海外账号，大陆可达性未知
+
 <a name="expiring"></a>
 ### 即将到期：3–5 天内
 
 - 蚂蚁 LingDT-Decision-1.0 限时免费延长至 11 月 11 日。
 - 天工 SkyProduction 双 11 视频模型 0 积分至 11 月 11 日 24:00。
+- Zro Day 全站模型免费至 11 月 12 日 19:00（北京时间）。
+- Traycer Gemini Carbon Launch 每账号 $100 至 11 月 13 日 03:29（北京时间）。
+- Vercel Ampersand v0.1 免费至 11 月 13 日。
 - Nous Portal LongCat-2.5 免费约至 11 月 13 日。
 - Parallel Decisions Fast 免费 7 天约至 11 月 13 日。
 - 腾讯 WorkBuddy / CodeBuddy 混元 Hy4 正式版限时免费至 11 月 15 日。
 - Pika H3 Flex 每日免费生成至 11 月 15 日。
 - 智谱 AutoClaw 每周福利 M11W2（国内版 50M / 国际版 100M）至 11 月 15 日 23:59。
+- Claude Fable 5.2 Pro 上线周免费至 11 月 16 日 23:59（PT，北京时间 11 月 17 日 15:59）。
 
 <a name="pending"></a>
 ### 待确认线索：不进正文
@@ -524,6 +564,9 @@
 
 #### UnoRouter · 一批 `:free` 端点（2026-11-08 上线，第三方聚合路由、非原厂商授权免费）
 - 原因：UnoRouter 官方模型页直读确认 `claude-haiku-4-5-20251001:free` 等端点真实存在、标价 $0，约每分钟 1 请求限流，Discord 或 GitHub 注册、无需信用卡；但 UnoRouter 官方博客自述聚合了约 50 家上游的免费通道，包括官方免费档、开源模型托管方、社区网络以及自接的免费网页产品，即这不是 OpenAI / Anthropic 等原厂商的授权免费，是第三方路由把各路免费池拼在一起转发；其模型页还提示至少一家上游会把输入用于自身用途（如训练模型）。收录口径待定：如进正文必须写明“第三方聚合路由、非原厂商授权免费”，仅作测试用途、勿传敏感内容。官方页：https://unorouter.com/en/models/anthropic/claude-haiku-4-5-20251001
+
+#### 蚂蚁数科 DTMaaS · Atria Dawn 及 Preview（声称免费至 2026-11-13 10:00）
+- 原因：仅 Grok 单一线索称免费期至 2026-11-13 10:00，未在 DTMaaS 官方模型页直读核实（站点为 SPA，未能直读正文），额度、适用模型与领取方式均未确认。未确认前不进正文。官方页：https://maas.antdigital.com/models
 
 #### 火山引擎 · 11.11 AI 智选 2500 万 Tokens 免费领（声称，官方活动页未直接核到原文）
 - 原因：多篇公众号带官方活动页与方舟控制台截图（活动页写“豆包旗舰模型 19 元起，更有 2500 万 Tokens 免费领取”“单模型 50 万 Tokens，去领取”；控制台写“领取个人权益 每日单模型 200 万免费 tokens”“活动二：协作奖励计划每日最高赠送 500 万 tokens”），但二手文给的短链实测 302 跳到了“火山剧创秋季拉新”页，volcengine.com 上未能直接抓到 11.11 AI 智选活动页原文；此前按线索核的官方文档 1465347 实为《安心体验模式细则说明》（每模型一次性 50 万，第 1 期已收录）。未直接读到官方活动页原文前不进正文。官方页：https://www.volcengine.com/product/ark
