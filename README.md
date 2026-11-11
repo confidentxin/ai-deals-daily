@@ -14,10 +14,10 @@
 - [已过期归档](#archived)
 - [说明](#notes)
 
-## 今日版：2026-11-10
+## 今日版：2026-11-11
 
-- 核实时间：2026-11-10 20:30（北京时间）
-- 新增：4 条；补录：0 条；急报：0 条；过期：2 条
+- 核实时间：2026-11-11 12:00（北京时间）
+- 新增：1 条；补录：0 条；急报：1 条；过期：2 条
 - 历史版本见 [`archive/`](archive/)。
 
 <a name="urgent"></a>
@@ -28,12 +28,6 @@
 - 额度：个人账号每天领 100 Credits，每次领取有效期 30 天；当天不领就作废，不能补领；Qwen3.8-Flash 免费，费率为 0
 - 截止：每日领取，错过当天作废（领取窗口自北京时间 10:00 起）
 - 可达性：能直接领（需在 Qoder 应用内领取）
-
-#### 阿里 Qoder（国际版）· 匿名模型 Qoduck 每日免费额度（2026-11-07 09:00 新增，官方活动文档已核实）
-- 内容：2026 年 11 月 7 日起，国际版个人用户每日赠送 Qoduck 免费使用次数；额度内计费系数 0.0×、不消耗 Credits（含思考强度「极高」）；自动生效无需领取；免费账号与 Credits 为 0 亦可参与；仅国际版 Web（IDE / JetBrains 插件 / CLI 暂不支持）。官方活动页：https://docs.qoder.com/zh/events/qoduck-free
-- 额度：每日限量免费次数（具体次数官方未写死数字，付费档高于免费档，以客户端显示为准）；用尽后可按原 0.5× 用 Credits 继续，不扣每日领取的 100 通用 Credits；Teams / Enterprise 不可用
-- 截止：活动自 2026-11-07 起，结束时间待定（官方称会提前通知）；每日额度当天用尽即止、次日恢复
-- 可达性：能直接领（Qoder 国际版个人账号；中国用户可达性以实际登录为准）
 
 #### AtomGit AtomCode · CodingPlan 每日限量免费名额
 - 内容：在 AtomCode 客户端内执行 `/login` 自动申领当前可获得的最高权益：官方文档已核实。官方文档：https://atomcode.atomgit.com/docs/zh/login.html
@@ -46,6 +40,12 @@
 - 额度：每人每天 3 亿 GLM-5.3-Flash Token，免费账号可领、无需订阅 Coding Plan；需更新到最新版客户端，领取后切换到 Global Building 通道并选 GLM-5.3-Flash，选错通道或模型会扣套餐额度；仅限 ZCode 客户端内使用，不能导出为 API Key；绑卡、实名要求各来源均未提及；官方未公布活动结束日期
 - 截止：每日领取：19:00 起领，23:00 至次日 09:00 可用，次日 09:00 清零、不结转，当天不领作废
 - 可达性：能直接领（ZCode 官网可下载，智谱账号登录）
+
+#### MangoBoost · Mango Inference 新用户 $10 赠金 + 全站模型 7 折（2026-11-11 12:00 新增，官方平台页已核实）
+- 内容：上线首发活动：新用户注册送 $10 免费额度（每账号限一次，不可兑现/转赠）；全站模型限时 7 折（30% off），所列单价已含折扣；OpenAI 兼容 API，控制台即时签发 API Key。官方平台页：https://www.mangoboost.io/platform/mango-inference ；官方上线公告：https://www.mangoboost.io/resources/blog/mangoboost-launches-mango-inference-emerging-as-a-key-partner-powering-amds-enterprise-ai-ecosystem
+- 额度：新用户 $10 免费额度；全站模型 7 折至 11 月 11 日；官方写促销可能变更或提前结束；官方平台页与定价页均未写需绑卡
+- 截止：7 折至 2026-11-11（官方未注时区；按韩国时间约北京时间 23:00，按 UTC 日末约 11 月 12 日 08:00）；$10 赠金为上线首发活动的一部分，官方未另写单独截止日，以活动页为准
+- 可达性：需海外账号（韩国基础设施；中国大陆可达性未知）
 
 <a name="direct"></a>
 ### 进行中：能直接领
@@ -159,11 +159,6 @@
 - 内容：11 月 5 日发布的原生多模态 MoE（560B 总参 / 25B 激活、1M 上下文，图/文/视频输入），上线前两周 API 免费调用，兼容 OpenAI 与 Anthropic 协议；对话页可先试用。官方定价页：https://developer.ant-ling.com/zh-CN/docs/models/price/ ；更新日志：https://developer.ant-ling.com/zh-CN/docs/getting-started/changelog/
 - 额度：上线前 2 周免费，模型 ID `Ling-3.2-flash`，在 developer.ant-ling.com 创建 Token 调用；免费是否适用全部调用、有无用量上限等细则官方页未写；恢复后原价官方定价表暂未列出
 - 截止：上线前 2 周（自 2026-11-05 起约两周；官方只写相对期限，未写具体结束日与时刻，以官方页为准）
-
-#### 阿里 Qoder CN（国内版）· 匿名模型 Qoduck 每日免费额度（2026-11-07 20:30 新增，官方活动文档已核实）
-- 内容：2026 年 11 月 7 日起，Qoder CN 新老个人用户每日赠送 Qoduck 免费使用额度；额度内计费系数 0.5×→0.0×、不消耗 Credits（含思考强度「极高 / 最大」），也不扣每日领取的 100 通用 Credits；自动生效无需领取；免费账号与 Credits 为 0 亦可参与；仅 Qoder CN 本体（IDE / JetBrains 插件 / CLI 暂不支持）。官方活动页：https://docs.qoder.cn/events/qoduck-free
-- 额度：每日一定次数（具体次数官方未写，付费订阅高于免费用户）；用尽后可按原 0.5× 用 Credits 继续；企业订阅（团队版 / 企业标准版 / 企业专属版）不适用；需更新到最新版
-- 截止：活动自 2026-11-07 起，结束时间待定（官方称会提前通知）；每日额度当天用尽即止、次日恢复
 
 #### 智谱 AutoClaw 国内版 · 每周福利 M11W2（2026-11-08 20:30 新增，官方博客已核实）
 - 内容：11 月 9 日起登录国内版 AutoClaw 领取下一期 Tokens，接替今晚 23:59 失效的 M11W1。官方博客：https://autoclaw.zhipuai.cn/blog/news/M11W2/
@@ -659,6 +654,14 @@
 #### fal · FLUX 3 Max 周末免费视频生成
 - 内容：11 月 6 日 09:00 PST 至 11 月 9 日 12:00 PST，FLUX 3 Max 文生视频 / 图生视频 / 关键帧在 playground 与 sandbox 每日免费额度；单条最长 15 秒、720p、带声音。官方产品页：https://fal.ai/flux-3-max
 - 截止：至 2026-11-09 12:00 PST（北京时间 2026-11-10 04:00）已到期；2026-11-10 20:30 晚间汇总时移入归档
+
+#### 阿里 Qoder（国际版）· 匿名模型 Qoduck 每日免费额度
+- 内容：国际版个人用户每日赠送 Qoduck 免费使用次数；额度内计费系数 0.0×、不消耗 Credits（含思考强度「极高」）；自动生效无需领取；免费账号与 Credits 为 0 亦可参与；仅国际版 Web。官方活动页：https://docs.qoder.com/zh/events/qoduck-free
+- 截止：活动 2026-11-07 至 2026-11-11 10:00（北京时间）已结束，Qoduck 已下线；2026-11-11 12:00 复核官方活动文档确认已到期，移入归档
+
+#### 阿里 Qoder CN（国内版）· 匿名模型 Qoduck 每日免费额度
+- 内容：Qoder CN 新老个人用户每日赠送 Qoduck 免费使用额度；额度内计费系数 0.5×→0.0×、不消耗 Credits（含思考强度「极高 / 最大」）；自动生效无需领取；仅 Qoder CN 本体。官方活动页：https://docs.qoder.cn/events/qoduck-free
+- 截止：活动 2026-11-07 至 2026-11-11 10:00（北京时间）已结束，Qoduck 已下线；2026-11-11 12:00 复核官方活动文档确认已到期，移入归档
 
 <a name="notes"></a>
 ## 说明
