@@ -1,161 +1,248 @@
 {
-  "asOf": "2026-11-10",
+  "asOf": "2026-11-11",
   "timezone": "Asia/Shanghai",
   "preview": 10,
   "empty": false,
   "emptyMessage": "今日暂无重要资讯，晚间 19:30 起每日更新",
-  "note": "2026-11-10（北京时间）整理，只收录当时能打开的官方博客。有机器可读发表时间的已换算成北京时间，并按从新到旧排列：亚马逊云科技博客 article:published_time 为 2026-11-09T12:04:37-08:00（北京时间 11 月 10 日 04:04）；NVIDIA article:published_time 为 2026-11-09T14:00:01+00:00（北京时间 11 月 9 日 22:00）；Google 的 published_time 为 2026-11-09T13:00:00+00:00（北京时间 11 月 9 日 21:00）。Anthropic、Meta、字节 Seed、OpenAI 的页面只标明 2026-11-09。Meta 的 article:published_time 为当天 00:00:00.000Z，像只精确到日期的占位，不当成北京时间 08:00。这四条排在同日有钟点的条目之后，彼此不按钟点排序。置信度 A 表示来自官方原文。",
+  "note": "2026-11-11 早报（北京时间）整理，覆盖 2026-11-10 19:52 至 2026-11-11 08:00。有机器可读发表时间的已换算成北京时间，并按从新到旧排列：The Verge 与 TechCrunch 对 Anthropic 办公套件稿件的 article:published_time 均为 2026-11-10T17:30:00+00:00（北京时间 11 月 11 日 01:30），官方产品页只有日期，该时刻只用于排序，不写成官方发布时间；MiniMax datePublished 为 2026-11-10T16:23:20.000Z（北京时间 11 月 11 日 00:23），页面可见日期写 2026-11-11；NVIDIA article:published_time 为 2026-11-10T16:00:03+00:00（北京时间 11 月 11 日 00:00）；Gemini 4 Carbon 的 published_time 为 2026-11-10T16:00:00+00:00（北京时间 11 月 11 日 00:00），article:published_time 只有日期；Gemini Robotics 2.5 的 datePublished 为 2026-11-10T15:00:00+00:00（北京时间 11 月 10 日 23:00）；Google–Adobe 的 published_time 为 2026-11-10T14:00:00+00:00（北京时间 11 月 10 日 22:00）；微软 Imagine Enterprise 的 article:published_time 为 2026-11-10T13:00:08+00:00（北京时间 11 月 10 日 21:00）；Gemini for healthcare 以 blog.google 的 published_time 2026-11-10T13:00:00+00:00 为准（北京时间 11 月 10 日 21:00）；AlphaProof Code 的 datePublished 为 2026-11-10T12:00:00+00:00（北京时间 11 月 10 日 20:00）。OpenAI 商家主页公告只标明 November 10, 2026，抓取官方页时遇到 Cloudflare 拦截，没有读到机器可读钟点；sortAt 用 2026-11-10T11:00:00+08:00 只为把它排在同日已有钟点的条目之后，不是发布时刻。置信度 A 表示来自官方原文。",
   "items": [
     {
-      "id": "aws-fable-5-2",
-      "title": "Claude Fable 5.2 登上 Amazon Bedrock",
-      "badge": "W",
-      "summary": "亚马逊云科技在官方博客宣布，Claude Fable 5.2 与 Mythos 5.2 已在 Amazon Bedrock 的 US Geo CRIS、Global CRIS，以及 AWS 上的 Claude Platform 提供。页面署名是 11 月 9 日，HTML 发表时间换算后是北京时间 11 月 10 日 04:04；Fable 5.2 被标为 Covered Model，调用前要先把账号或项目设为 aws_review。",
-      "publishedAt": "2026-11-09T12:04:37-08:00",
-      "sortAt": "2026-11-09T12:04:37-08:00",
-      "timeLabel": "2026-11-10 04:04（北京时间）",
-      "timePrecision": "datetime",
-      "timeNote": "博客署名日期是 09 NOV 2026。页面 HTML 的 article:published_time 为 2026-11-09T12:04:37-08:00，换算北京时间是 2026-11-10 04:04。同页 article:modified_time 为 2026-11-09T17:06:03-08:00，列表按发表时间而不是修改时间排序。",
-      "source": "亚马逊云科技官方博客",
+      "id": "anthropic-claude-sheets-whiteboards-data",
+      "title": "Claude Whiteboards、Sheets 上线，Data 转正",
+      "badge": "A",
+      "summary": "Anthropic 在付费方案以测试版推出 Claude Whiteboards 和 Claude Sheets，并把 10 月测试的 Claude Dashboards 正式更名为 Claude Data。官方产品页只写 11 月 10 日；The Verge 与 TechCrunch 的发表时间换算后是北京时间 11 月 11 日 01:30，本榜用它排序，不把它写成官方时刻。Claude Meetings 在官方页面写的是即将推出。",
+      "publishedAt": "2026-11-10",
+      "sortAt": "2026-11-10T17:30:00+00:00",
+      "timeLabel": "2026-11-10（原文未标钟点）",
+      "timePrecision": "date",
+      "timeNote": "官方产品页只写日期，没有 article:published_time。The Verge 与 TechCrunch 的 article:published_time 均为 2026-11-10T17:30:00+00:00，即北京时间 2026-11-11 01:30。sortAt 采用这一媒体发表时间，只用于把该条排到本次窗口较前的位置，不是 Anthropic 官方公布的发布时间。",
+      "source": "Anthropic 官方产品页",
       "confidence": "A",
-      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-2-on-aws/",
+      "url": "https://claude.com/resources/articles/sheets-whiteboards-data",
       "links": [
         {
-          "label": "亚马逊云科技博客原文",
-          "url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-2-on-aws/"
+          "label": "Anthropic：Whiteboards、Sheets 与 Data",
+          "url": "https://claude.com/resources/articles/sheets-whiteboards-data"
         },
         {
-          "label": "Anthropic：Fable 5.2 与 Mythos 5.2 公告",
-          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+          "label": "Anthropic：Sheets、Whiteboards 与交互式连接器",
+          "url": "https://claude.com/resources/articles/more-ways-to-work-with-claude-sheets-whiteboards-and-interactive-connectors"
+        },
+        {
+          "label": "The Verge 报道",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1030709/anthropic-has-its-own-ai-powered-office-suite-now"
+        },
+        {
+          "label": "TechCrunch 报道",
+          "url": "https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/"
         }
       ],
-      "detail": "## 它是什么\n\n这是亚马逊云科技机器学习博客在 2026 年 11 月 9 日发出的上架说明，作者署名为 Dani Mitchell、Aamna Najmi、Anshika Saxena、Alfredo Castillo 和 Sofian Hamiti。它宣布的不是一款新模型，而是 Anthropic 的 Claude Fable 5.2 与 Claude Mythos 5.2 进入 Amazon Bedrock，以及 AWS 上的 Claude Platform。\n\n博客把 Fable 5.2 写成面向技术工作、一般可获得的模型，并称它抬高了编码与科学任务的门槛；Mythos 5.2 则只通过 Anthropic 的核验项目，给网络安全和生命科学里的高级工作使用。\n\n## 它做什么\n\n在 Bedrock 上，博客列出的 Fable 5.2 用途包括：跨多个大代码库的智能体编码、可无人值守跑数小时到数天并协调多个子智能体的长任务、从分析方法到形式化证明的科学研究、量化研究与预测，以及用代码生成环境、零件和仿真的三维、硬件与动态设计。\n\n调用路径有三条：在 Bedrock 控制台的 Test、Playground 里直接选 Fable 5.2；用 Anthropic Messages API 打 bedrock-runtime；或者继续用 Invoke 与 Converse API。博客给出的 Bedrock 模型 ID 是 global.anthropic.claude-fable-5-2。它还提醒 Fable 5.2 是推理模型，响应里可能先有 thinking 块，读正文时要按类型挑选 text 块，不能写死下标。\n\n已经在 Bedrock 上跑 Claude 的团队，可以用 Claude Code 里的 claude-api skill 做迁移。博客写明这个 skill 开源、放在 GitHub 的 anthropics/skills，也会被打进 CodeRabbit、JetBrains IDE（含 Junie）、Resolve AI 和 Warp。在 Claude Code 里可以运行 /claude-api migrate，它会按你确认的目录或文件，改模型 ID、把手动思考配置迁到适合新模型的 adaptive thinking、清掉不再适用的 beta 头和参数，并按场景建议 output_config.effort。它会识别 Bedrock、Claude Platform on AWS 等部署环境，Bedrock 上使用带 global. 前缀的结构化模型 ID。\n\n## 适合谁\n\n适合已经把工作负载放在 AWS、希望用现有 Bedrock 或 Claude Platform 权限调用 Fable 5.2 的工程团队。网络安全或生命科学的授权工作，博客写明要走 Anthropic 的核验项目才能用 Mythos 5.2。\n\n如果一条网络安全请求被拒绝，博客说可以改在 Opus 4.8 上重试；生物请求被拒绝则改在 Opus 5 上重试。在 Bedrock 上，这个重试要由调用方自己的代码完成，不会自动切换。若被拒的请求打中了提示缓存，拒绝结果里会带一个 fallback credit token，重试时带上它会按缓存读取计费。具体参数以博客指向的文档为准，这里不转写调用细节。\n\n## 这一窗口里为什么值得看\n\n这篇博客的机器可读发表时间是太平洋时间 11 月 9 日 12:04，换算后是北京时间 11 月 10 日凌晨 04:04，是本榜七条里最新的一条。它把同一天 Anthropic 的模型发布落到了 AWS 客户能实际调用的区域和合规开关上。\n\n最需要提前知道的限制是数据保留。Anthropic 把 Claude Fable 5.2 定为 Covered Model。博客写明默认要保留最多 30 天，并经过人工安全复核；在 Amazon Bedrock 上，由 Amazon 人员在 AWS 边界内做这次复核。调用前必须先把账号或项目的数据保留模式设为 aws_review。\n\nEnterprise Frontier Safeguards（EFS）是和 AWS 一起做的方案：数据放在客户控制的云基础设施里，把零数据保留和滥用检测放在一起。博客写明在 EFS 可用之前，符合条件的客户可以在内部使用场景下以零数据保留使用 Fable 5.2，这个安排至少持续到 2027 年 6 月 30 日。\n\n## 可以核对的事实\n\n可用范围：Amazon Bedrock 的 US Geo CRIS 与 Global CRIS 推理配置；Claude Platform on AWS 则是该服务已提供的每个区域。支持的区域清单和价格，博客指向 Bedrock 文档与 Amazon Bedrock 定价页，本页没有另造这两个链接。\n\n博客举例的前置条件包括：已开通 Bedrock 的 AWS 账号、配好凭证的 AWS CLI、Python 3.9 或更高版本、boto3，以及 bedrock:InvokeModel 与 bedrock:InvokeModelWithResponseStream 这两项 IAM 权限。\n\n对齐测试的表述来自 Anthropic，再由这篇 AWS 博客转述：Mythos 5.2 比 Opus 5.5、Sonnet 5.5 和 Mythos 5.1 更少幻觉、更可靠地完成任务、更一致地抛出重要信息、更诚实地自我报告问题；Anthropic 预期 Fable 5.2 表现相近。本榜不把这句改写成独立评测结论。\n"
+      "detail": "## 它是什么\n\n这是 Anthropic 在 Claude 产品页发布的一组办公向功能：Claude Whiteboards 和 Claude Sheets 以测试版推出，10 月以测试版上线的 Claude Dashboards 正式更名为 Claude Data，并转为正式版。官方写明这三项在所有付费方案提供，可在网页、桌面和移动端使用。Claude Data 需要先连接数据仓库或 CRM 一类的数据源。\n\n另一篇官方说明还提到交互式连接器升级，以及 Claude Meetings 即将推出。The Verge 和 TechCrunch 在北京时间 11 月 11 日凌晨的报道里，把 Meetings 写成已在 Team 和 Enterprise 以测试版上线，并称先支持 Google Meet。这与产品页「即将推出」的表述不一致，本榜不以媒体说法把 Meetings 写成已经上线。\n\n## 它做什么\n\nWhiteboards 让团队和 Claude 在同一块白板上讨论。官方的例子是：把还比较乱的计划讲给 Claude，由它整理成带时间线、负责人和日期的看板；在复盘会上大家先写笔记，再让 Claude 按主题归类并起草每人的待办。也可以框选板子的一部分向 Claude 提问。讨论结束后，Claude 可以把白板变成文档或幻灯片，或接到 Lucid、Miro、Zoho Vani 里继续改。\n\nSheets 可以从一句提示生成表格，例如活动跟踪表或招聘预算，并带上标签页、公式、格式和下拉菜单。Claude 会直接在单元格里修改，并标出每一处改动，方便回溯。官方承认目前功能仍偏基础；需要完整 Excel 能力时，可以导出为 .xlsx 或 CSV，使用 Claude for Excel，或转到 Airtable、Asana、monday.com、Smartsheet 等合作工具。\n\nClaude Data 能连接 Amazon Redshift、BigQuery、ClickHouse，以及另一页提到的 Snowflake、Salesforce。正式版补充了几项能力：数据团队可以认证指标查询，基于这些指标的图表会带 certified 标记；可以在 Claude 里起草数据故事或解说视频，审过再分享；实况分享让同事打开仪表盘时看到已批准查询的最新结果，即使他们没有底层连接器权限，也不能用分享者的权限另跑查询；还支持设计系统、按仪表盘设置的缓存刷新，以及变更追踪和回滚。认证查询与实况分享仍是测试版。合作方包括 Amplitude、Mixpanel、Omni、PostHog 和 Sigma。\n\n交互式连接器从当天起可以在对话旁边或全屏打开完整应用，官方举例包括 Adobe、Atlassian、Box 和 Notion。另一页还提到 Salesforce、NetSuite、Workday 的插件（部分为测试版），以及 Marketplace 上超过 9000 个连接器和插件，这个数字来自官方页面，本榜未另行清点。\n\n## 适合谁\n\n适合已经在用付费 Claude、希望少把结果拷到外部表格或白板里的团队。Team 方案下这三项默认打开。Enterprise 方案下 Whiteboards 与 Sheets 默认关闭，Claude Data 将在 2026 年 11 月 19 日默认打开，管理员可以在 Organization settings 的 Artifacts 里随时改。\n\n## 这一窗口里为什么值得看\n\n这是 11 月 10 日晚报之后，Anthropic 在产品侧最完整的一组办公功能更新，时间上紧挨着同一天启动的拟议 IPO 路演。它把 Claude 从「生成一段文字再导出」往「文件留在 Claude 里、团队和模型一起改」推进一步，并和已有的文档、幻灯片、Design、Motion 放在同一套工件里。\n\n需要单独记住的限制是：Sheets 官方自己说功能还简单；Claude Data 的认证查询和实况分享仍是测试版；Meetings 以官方「即将推出」为准，不按部分媒体写成已经能进 Google Meet。\n\n## 可以核对的事实\n\n上线范围：所有付费方案；网页、桌面、移动端。Claude Data 需要数据连接器。Enterprise 默认策略和 11 月 19 日开关见官方产品页。\n\nMeetings 的官方表述是即将推出，用来在通话中记录并更新团队正在写的文档。The Verge、TechCrunch 另有已上线的说法，二者不一致，本榜不把后一种写成事实。\n"
     },
     {
-      "id": "nvidia-groot-2-corl",
-      "title": "NVIDIA 发布 GR00T 2 与 Isaac Lab 3.0",
-      "badge": "N",
-      "summary": "NVIDIA 在机器人学习会议 CoRL 上介绍开源世界动作模型 GR00T 2、Isaac Lab 3.0，以及 DexBench、VABAR 等开放基准。页面发表时间是北京时间 11 月 9 日 22:00。官方称 GR00T 2 在 50 项任务里有 40 项至少完成过一次（无任务示范），给 1 次示范时平均成功率 71%，5 次示范升至 95%。",
-      "publishedAt": "2026-11-09T14:00:01+00:00",
-      "sortAt": "2026-11-09T14:00:01+00:00",
-      "timeLabel": "2026-11-09 22:00（北京时间）",
+      "id": "minimax-h3-image",
+      "title": "MiniMax 开源发布 H3-Image",
+      "badge": "Mm",
+      "summary": "MiniMax 发布基于 H3 的开源权重图像模型 H3-Image，支持文生图、参考图生成和图像编辑，最多使用 16 张参考图。官方称可在 10 秒内生成 4096×4096 的 4K 图。datePublished 换算后是北京时间 11 月 11 日 00:23；页面可见日期写 2026-11-11。",
+      "publishedAt": "2026-11-10T16:23:20.000Z",
+      "sortAt": "2026-11-10T16:23:20.000Z",
+      "timeLabel": "2026-11-11 00:23（北京时间）",
       "timePrecision": "datetime",
-      "timeNote": "博客可见日期为 November 9, 2026，作者 Sasa Docca。HTML 的 article:published_time 为 2026-11-09T14:00:01+00:00，即北京时间 2026-11-09 22:00。article:modified_time 为 2026-11-09T17:04:15+00:00，列表用发表时间。",
-      "source": "NVIDIA 官方博客",
+      "timeNote": "页面可见日期为 2026-11-11。HTML 的 datePublished 与 dateModified 均为 2026-11-10T16:23:20.000Z，换算北京时间是 2026-11-11 00:23。本榜采用这一钟点。可见日期与北京时间的日期一致，不像是另一天的稿件。",
+      "source": "MiniMax 官方博客",
       "confidence": "A",
-      "url": "https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl/",
+      "url": "https://www.minimax.io/blog/minimax-h3-image",
       "links": [
         {
-          "label": "NVIDIA 博客原文",
-          "url": "https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl/"
+          "label": "MiniMax 官方博客原文",
+          "url": "https://www.minimax.io/blog/minimax-h3-image"
+        },
+        {
+          "label": "Hugging Face 模型页",
+          "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image"
+        },
+        {
+          "label": "MiniMax 图像生成文档",
+          "url": "https://platform.minimax.io/docs/guides/image-generation"
         }
       ],
-      "detail": "## 它是什么\n\n这是 NVIDIA 官方博客在 CoRL（Conference on Robot Learning，于得克萨斯州奥斯汀举行）期间发的一篇机器人仿真进展说明。文章把重心从「让机器人学会走、滚、跳」转到更细的操作：对齐齿轮、连接线缆、装配小零件，并把它和 agentic robotics 放在一起讲，也就是用前沿智能体为物理机器人系统写出可以审阅的代码。\n\n同一次发布里，NVIDIA 介绍了基于 Cosmos 的开源世界动作模型 GR00T 2、开源机器人学习框架 Isaac Lab 的 3.0，以及用来评估灵巧性和适应能力的开放基准。页面没有单列一个「发布时刻」以外的产品版本日历，本页只采用博客的发表时间。\n\n## 它做什么\n\nGR00T 2 用机器人数据和人类数据训练，其中包含 NVIDIA 开源的 10 万小时第一人称人类数据。博客列出的结果是：在 50 项评测任务中，没有任务示范时有 40 项至少完成过一次；每个任务给 1 次示范，平均成功率 71%；给 5 次示范升到 95%。它还可以从人类示范学习，并在没有机器人示范的情况下把技能迁到不同的机器人身体上。智能体可以通过它的 API 和配套工具把技能串起来跑，并在出错后恢复。\n\n博客还写，GR00T 2 在 RoboCasa365、RoboLab、RoboDojo 和 MolmoSpaces 这些视觉语言动作与世界动作模型榜上，各类别都排进前三，并有多项第一。文中点名的试用包括：Nexuni 用它试洗衣，富士康把它用到服务器制造的工厂自动化，西门子在工业场景里评估。MicroAGI 则在用强化学习后训练的 GR00T 2，让 YAM 机械臂做以太网线更换；仿真环境的生成和标定用 Isaac Lab 3.0 与 Newton。\n\nIsaac Lab 3.0 让研究者用智能体更快搭好带仿真资产的训练环境，在 NVIDIA PhysX 和 Newton 之间切换求解器，为基于感知的训练选渲染器，并对 GR00T 这类基础模型使用新的强化学习后训练库。Newton 是开源物理引擎，接入后可以模拟线缆、布料这类可变形物体，以及多关节机械手。博客称在一项基于视觉的灵巧操作基准里，Isaac Lab 3.0 加 Newton 的训练吞吐最多是 Isaac Lab 2.3 加 PhysX 的 2.5 倍。\n\n## 适合谁\n\n适合在仿真里训练和评估操作技能、再考虑上真机的机器人研究与工业团队。博客点名的合作方包括 Ambi Robotics、Bosch Research、Dexmate、Dyna Robotics、FieldAI、Flexion、Noitom Robotics、Siemens、Skild AI、RLWRLD、加州大学伯克利分校、Walden Robotics 和华盛顿大学。\n\n数据侧还有两条配套：把人类视频变成仿真机器人示范的开源 Video to Data 流程，以及在 CoRL 上演示、发布两周内 Hugging Face 下载超过 4 万次的 EgoHand 开源模型。EgoHand 用 Noitom Robotics 的数据训练，用来重建三维手部动作。\n\n## 这一窗口里为什么值得看\n\n发表时间落在北京时间 11 月 9 日晚上 10 点，是本榜里第二条有可靠钟点的官方稿。它把「开源模型 + 仿真框架 + 工业基准」一次讲完，所以同一天的机器人新闻不再只是一个模型名字。\n\n基准部分：DexBench 由 RLWRLD 与 NVIDIA 合作，用 Isaac Lab-Arena 搭建，包含零售、物流、制造和服务业四个场景共 15 项任务，用来看物体、空间和物理条件变化时的泛化。VABAR（Variational Automation Benchmark for Agentic Robotics）由加州大学伯克利分校与 NVIDIA 提出，覆盖六项工业任务，每项有标准化变体、难度档和成功指标。Isaac Lab-Arena 0.4 的开发者预览也在 CoRL 提供。\n\n另有两篇 NVIDIA 论文进入 CoRL 最佳论文奖的六篇决赛（投稿有数千篇）：GRAIL，从世界模型生成人形运动—操作所需的三维资产和可进仿真器的场景；RoboTTT，把视觉运动上下文扩大三个数量级而不增加推理延迟。AlphaNIST 用单一策略在 NIST 装配任务板上学完 20 项任务，只靠成功或失败信号，训练成功率超过 98%，对比每项单独一个策略的 81%，GPU 时间大约少 39 倍。这些数字都来自这篇博客，不是本榜复测。\n\n## 可以核对的事实\n\n伯克利的 Graph-as-Policy（GaP）用智能体把单项技能连成机器人程序，在 NVIDIA Isaac 的开源仿真里试跑，再按失败来改。Ken Goldberg 在文中称 agentic robotics 是他眼中自 1995 年互联网以来最让人兴奋的技术进展。Ambi Robotics、Bosch Research 和 Siemens 都在看 GaP。\n\nSkild AI 在会上宣布 STEEL，一个建在 Newton 上、用来给 Isaac Lab 加速刚体训练的求解器。Flexion 用 Isaac Lab 和 Newton 训练同时做推理与全身操作的 Reflect。FieldAI 用 Newton、Isaac Lab 和基于 Omniverse 库的 Isaac Sim。Dyna Robotics 用 Isaac Lab 的并行仿真训练半人形 Taku。Walden Robotics 用 Isaac Sim 的真实感渲染。Dexmate 在探索让编码智能体先在 Isaac Sim 里排练，再在 Vega 机器人上执行。\n\nSuccess-Guided Sampling（SGS）来自华盛顿大学与 NVIDIA，把练习集中在成功率大约一半的任务上。博客称加上 SGS 后，训练可以扩到超过一百万个并行环境。得克萨斯大学奥斯汀分校的计算学院与 Texas Robotics 用 Isaac Sim 和 Isaac Lab，让学生在硬件到位之前先在仿真里开发。\n"
+      "detail": "## 它是什么\n\n这是 MiniMax 的官方研究博客，宣布发布 MiniMax H3-Image：一个建立在 H3 之上的开源权重图像生成模型。它支持文生图、基于参考图的生成，以及图像编辑。博客写明最多可以理解并使用 16 张参考图。\n\n权重通过 Hugging Face 的 MiniMaxAI/MiniMax-H3-Image 发布。同一篇博客还说，模型已在 MiniMax API Platform、MiniMax Code 和 Hailuo AI（海螺）上提供。\n\n## 它做什么\n\n官方把卖点写成「把 4K 出图推进到 10 秒量级」。博客称 H3-Image 可在 10 秒内生成分辨率为 4096×4096（16MP）的 4K 图像，并写速度最高约为其所称主流方案的 5 倍。它还强调细节更接近真实、减少常见的过平滑，以及在开源权重模型里具备其所称的领先提示词遵循能力。\n\n博客把这些结果归因于在 H3 预训练之后，对数据、强化学习、减少采样步数、位置编码和部署做的一整套后训练改动，并写明不是靠单一改动。\n\n服务侧，官方区分 Standard 与 Highspeed：Standard 的速度约为其所称主流方案的 1.5–2 倍，Highspeed 约为 3–4 倍。定价被写成可比主流方案的 50–70%。上线当周，对 4K 及以上分辨率的图像生成请求按标准价打五折。博客没有给出具体的美元或人民币单价，本榜也不补这个数字。\n\n## 适合谁\n\n适合希望在本地或自己的工作流里微调、部署开源图像模型的开发者和研究者，以及想通过 MiniMax API、MiniMax Code 或海螺直接出图的创作者。开源权重降低了自建工具链的门槛，但官方没有在这篇博客里写硬件需求和许可条款的细节，需要以 Hugging Face 页面和许可证为准。\n\n## 这一窗口里为什么值得看\n\n发表钟点落在北京时间 11 月 11 日 00:23，是早报窗口里有官方钟点的条目中最新的一条。和前一天字节 Seedream 5.5 的产品更新不同，H3-Image 把模型权重公开了，并把「4K、10 秒内、最多 16 张参考图」写进同一篇公告。\n\n速度、倍数和「开源权重里提示词遵循领先」都是官方自评，本榜没有复测，也不把「5 倍」「50–70% 定价」改写成独立评测结论。\n\n## 可以核对的事实\n\n可见日期：2026-11-11。机器可读发表时间：2026-11-10T16:23:20.000Z。\n\n能力范围以博客为准：文生图、参考图生成、图像编辑；最多 16 张参考图；4K 为 4096×4096。分发渠道为 Hugging Face、API、MiniMax Code 和 Hailuo AI。上线周折扣只覆盖 4K 及以上请求，截止日博客没有另写。\n"
     },
     {
-      "id": "google-tpu-8tx-8i-max",
-      "title": "Google 推出 TPU 8tx 与 TPU 8i Max",
-      "badge": "G",
-      "summary": "Google 扩充第八代 TPU：TPU 8tx 做机密推理，计算过程中仍保护敏感数据和模型权重；TPU 8i Max 把两颗 TPU 8i 放进同一封装，算力、SRAM 与 HBM 带宽都是 TPU 8i 的两倍。页面可见日期是 11 月 9 日，published_time 换算为北京时间 21:00。官方称这是同一年里的第四套 TPU 系统。",
-      "publishedAt": "2026-11-09T13:00:00+00:00",
-      "sortAt": "2026-11-09T13:00:00+00:00",
-      "timeLabel": "2026-11-09 21:00（北京时间）",
+      "id": "nvidia-openshell-kubecon",
+      "title": "NVIDIA 把 OpenShell 捐给 CNCF",
+      "badge": "N",
+      "summary": "NVIDIA 在 KubeCon 宣布把智能体安全运行时 OpenShell 捐给 CNCF Sandbox，并参与同样进入 Sandbox 的 Google 项目 Agent Substrate。同期推出 NVIDIA Kubernetes Engine、Kubernetes Recipes 公开预览，以及用于快速恢复推理副本的 NVIDIA Snapshot。页面发表时间是北京时间 11 月 11 日 00:00。",
+      "publishedAt": "2026-11-10T16:00:03+00:00",
+      "sortAt": "2026-11-10T16:00:03+00:00",
+      "timeLabel": "2026-11-11 00:00（北京时间）",
       "timePrecision": "datetime",
-      "timeNote": "页面可见日期写 Nov 09, 2026。HTML 的 article:published_time 只有日期 2026-11-09；name=published_time 为 2026-11-09T13:00:00+00:00，即北京时间 21:00，本榜采用这一钟点。文中「当天 9 a.m. PT 的直播」是活动时间，不是这篇博文的发表钟点。",
+      "timeNote": "博客可见日期为 November 10, 2026，作者 Warren Barkley。HTML 的 article:published_time 为 2026-11-10T16:00:03+00:00，即北京时间 2026-11-11 00:00。article:modified_time 为 2026-11-10T19:19:20+00:00，列表用发表时间。",
+      "source": "NVIDIA 官方博客",
+      "confidence": "A",
+      "url": "https://blogs.nvidia.com/blog/open-source-openshell-infrastructure/",
+      "links": [
+        {
+          "label": "NVIDIA 官方博客原文",
+          "url": "https://blogs.nvidia.com/blog/open-source-openshell-infrastructure/"
+        }
+      ],
+      "detail": "## 它是什么\n\n这是 NVIDIA 在 KubeCon + CloudNativeCon 期间发的官方博客，作者署名为 Warren Barkley。核心不是新的基础模型，而是把一批面向智能体安全和 AI 工厂 Kubernetes 的开源组件交出去：NVIDIA OpenShell 捐给 CNCF，进入 Sandbox；NVIDIA 同时参与由 Google 发起、也已进入 CNCF Sandbox 的 Agent Substrate；并宣布 NVIDIA DSX AI Factory Platform 的新组件。\n\n## 它做什么\n\nOpenShell 被写成给自主智能体用的开源运行时，用确定性策略约束智能体调用工具、访问推理服务和执行负载，并允许对接自有算力、推理提供方、凭据存储和监控。进入 CNCF 后，将由把它用进产品的组织共同治理。Linux 基金会首席执行官 Jim Zemlin 在文中对这次捐赠表态。官方称该项目上线不到一年，已有数百家组织使用、收到数万次贡献，这两个数量都来自博客，没有更细的清单。\n\nAgent Substrate 面向在 Kubernetes 上运行的长周期智能体：在任务之间保留环境，空闲时释放算力，通过挂起和恢复来共用资源。NVIDIA 把它与 Dynamo（推理）和 KAI Scheduler（共享集群调度）打通，并写明正在与 Google 合作集成 OpenShell 和 Agent Substrate。\n\nNVIDIA Kubernetes Engine（NVKE）和 NVIDIA Kubernetes Recipes（NVKR）即日起公开预览，提供在 GPU 基础设施上交付托管 Kubernetes 的开源构件，包括集群生命周期自动化和签名、锁定版本的镜像。NVIDIA Snapshot 则针对推理扩容和故障恢复：把已做检查点的副本在数秒内恢复，而不必重新加载模型或预热。博客转述设计伙伴的测试：Crusoe 作为上游贡献者，在 Crusoe Cloud 的 HGX B300 上测试 GLM-5.3，就绪时间从约 8 分钟降到 31 秒；Saturn Cloud 把 vLLM 启动时间从 2 至 8.5 分钟降到 6 秒和 34 秒。这些数字是伙伴测试、由 NVIDIA 转述，本榜未复测。\n\n## 适合谁\n\n适合已经在 Kubernetes 上跑智能体或推理集群、关心智能体权限边界和冷启动时间的平台工程团队。博客点名的生态意向包括 Mirantis、Netris、OpenNebula Systems、Rafay、Spectro Cloud、vCluster，以及 Firmus 和 SK Telecom；Snapshot 的设计伙伴是 Crusoe 和 Saturn Cloud。\n\n## 这一窗口里为什么值得看\n\n发表时间与 Gemini 4 Carbon 几乎同一分钟，落在北京时间 11 月 11 日 00:00。它补上了前一天 GR00T 2 之外的另一条 NVIDIA 开源线：从机器人模型转到智能体运行时和 AI 工厂的 Kubernetes 层。对要在生产里管一批会调工具的智能体的团队，OpenShell 进入基金会治理比停留在公司项目里更值得跟一次。\n\n## 可以核对的事实\n\nOpenShell 与 Agent Substrate 的去向是 CNCF Sandbox。NVKE 与 NVKR 的状态是公开预览。Snapshot 的伙伴测试数字和「数百家组织、数万次贡献」均来自这篇博客原文。页面没有给出这些组件的许可证全文或正式毕业时间表。\n"
+    },
+    {
+      "id": "google-gemini-4-carbon",
+      "title": "Gemini 4 Carbon 向开发者与 Ultra 用户开放",
+      "badge": "G",
+      "summary": "Google DeepMind 宣布 Gemini 4 Carbon 向付费开发者、企业和 Google AI Ultra 订阅者开放，定位为在网络安全、长周期智能体、复杂工程和科学推理上更强的前沿模型。导入价与 Argon 相同：每百万 token 输入 2 美元、输出 10 美元，2026 年 11 月 30 日后调整为 4 / 20 美元。published_time 换算为北京时间 11 月 11 日 00:00。",
+      "publishedAt": "2026-11-10T16:00:00+00:00",
+      "sortAt": "2026-11-10T16:00:00+00:00",
+      "timeLabel": "2026-11-11 00:00（北京时间）",
+      "timePrecision": "datetime",
+      "timeNote": "页面可见日期写 Nov 10, 2026。HTML 的 article:published_time 只有日期 2026-11-10；name=published_time 与 JSON-LD datePublished 为 2026-11-10T16:00:00+00:00，即北京时间 2026-11-11 00:00，本榜采用这一钟点。dateModified 为 2026-11-10T18:41:52+00:00，列表用发表时间。",
       "source": "Google 官方博客",
       "confidence": "A",
-      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
       "links": [
         {
           "label": "Google 官方博客原文",
-          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/"
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/"
         }
       ],
-      "detail": "## 它是什么\n\n这篇 Google 官方博客由 AI 与基础设施高级副总裁兼首席技术专家 Amin Vahdat 署名，标题把两套新系统放进「智能体时代」。它宣布的是第八代 TPU 组合的扩展：在已有的 TPU 8t、TPU 8i 之外，加上 TPU 8tx 和 TPU 8i Max。博客明确说，这是 Google 第一次在同一年推出四套 TPU 系统。\n\n文中特意区分「新芯片」和「新系统」。新芯片是多年流片；新系统是围绕同一代芯片重新组合计算、网络、存储、封装和安全。8tx 与 8i Max 被写成后一种：用模块化去赶上客户临时出现的需求。\n\n## 它做什么\n\nTPU 8tx 面向安全、机密推理，博客也说它适合小规模训练。它给受监管的企业和政府使用，场景是前沿或自有模型、自主智能体，以及最敏感的数据放在一起。平时数据在存储和网络上加密，进内存计算时却要解开。8tx 与 TPU 8t 用同一块硅，搭配第五代 AMD EPYC 主机，把保护做进硬件层，使敏感数据和模型权重在使用中仍然隔离。它采用为实时推理做过的低延迟 Boardfly 网络，博客称相对 TPU 8t 延迟最多降到一半，性能损失接近于零。同一套系统上可以微调、蒸馏，以及用强化学习训练智能体，而不必把敏感数据搬到另一个集群。\n\nTPU 8i Max 针对的是记忆墙：很多智能体同时处理整个代码库或数小时视频时，内存带宽先不够。它把两颗低延迟的 TPU 8i 放进一个封装，算力、SRAM 和 HBM 带宽都是 TPU 8i 的两倍，机柜占地不变，所以同样的面积和功耗能放下更多硅片。\n\n四套系统的分工，博客写成：8t 做大规模训练，追求每瓦有效智能（goodput）；8i 做低延迟推理，把片间通信延迟最多砍半；8tx 做机密计算；8i Max 做大上下文和机柜内最高计算密度。更早在 4 月的 Google Cloud Next 上，官方称 8t 的训练性能最多是上一代的 2.7 倍，8i 的推理性价比好 80%。这些比较的基线是「上一代 TPU」，博客没有在这篇里再拆芯片参数表。\n\n## 适合谁\n\n适合已经在 Google Cloud 上训练或提供 Gemini、智能体和客户云服务，或者把 TPU 放进自己机房的团队。博客称 TPU 已是一项快速增长的业务，客户近 100 家，包括前沿实验室、交易公司、零售商和大学，没有在这篇里点名清单。\n\n软件门槛被同时往下拉。博客称上个月开源了 TorchTPU，PyTorch 代码和 Hugging Face 模型可以在 TPU 上原生跑；vLLM 和 SGLang 也有开箱即用的 TPU 后端。预览中的开源 TPU agent suite 可以接到 Claude Code、Cursor 和 Google Antigravity，用自然语言做上手、找瓶颈和自动调内核。开源的 XLA Serving Engine 允许用 Python 训练，再在 TPU、GPU 和 CPU 上用低延迟 C++ 运行时提供服务。\n\n## 这一窗口里为什么值得看\n\npublished_time 是协调世界时 11 月 9 日 13:00，也就是北京时间晚上 9 点，早于同日 NVIDIA 那篇、晚于所有只标日期的模型公告无法比较的那些条目。它是基础设施新闻，不是应用发布：同一周模型变强之后，上下文、机密推理和空转成本变成了采购问题。\n\n博客还写了几件同日一起讲的软件，都跟智能体负载有关。Agent Compute Engine 会在智能体等待数据库、外部工具或人的时候自动挂起和恢复空闲会话。开源的 TPU Sync 把片上 HBM、主机内存、共享存储和数据中心网络收成一层模型状态，博客称它把 KV 传输延迟和首 token 时间降低 90% 以上。Cloud Pathways 已在 GKE 上正式提供，用单控制器编排多切片的预训练、强化学习和多主机推理。GKE dynamic slicing 也已正式提供，用光路交换把 TPU 立方体现组或拆开，博客称作业启动最多快 5 倍、故障恢复最多快 4.5 倍。\n\n在 InferenceX 和 AgentX 上，博客称原生 vLLM-TorchTPU 栈拿到了业界领先的性价比，并说即将到来的软件优化还会在同一硬件上继续提高。文末邀请收看当天太平洋时间上午 9 点的直播。那是活动时间，不是这篇稿件的发表钟点。\n\n## 可以核对的事实\n\nTPU 的起源在文中被写成十多年前，最初动机包括语音识别和翻译。今天的用途被分成四类：训练和服务 Google 自己的 Gemini，智能体负载，在云上向客户交付，以及最近允许客户把 TPU 部署到自己的数据中心。\n\n芯片设计部分提到 Google DeepMind 的 AlphaChip 强化学习系统，以及用 Gemini 把芯片布局从数周缩到数小时。这是博客对内部流程的描述，本榜没有独立核实工期。\n\n页面没有给出 8tx 或 8i Max 的单价、供货区域或具体 HBM 容量。这些原文没写的数字这里留空。\n"
+      "detail": "## 它是什么\n\n这篇 Google 官方博客由 Google DeepMind 高级副总裁兼 Google 首席 AI 架构师 Koray Kavukcuoglu 署名，宣布 Gemini 4 Carbon 向开发者、企业、科研人员和消费者开放。Carbon 被写成目前最强的 Gemini，在网络安全能力，以及跨越复杂知识工作、软件工程和科学推理的长周期智能体工作流上表现突出。\n\n博客回顾：两周前 Carbon 已通过 Fairwind Program 提供给一批网络安全防守方；在此前后还发布了 Gemini 4 Argon。官方的分工是：Argon 仍适合大多数软件工程和知识工作；Carbon 面向会把模型智力用到极限的任务，例如多步编码与调试、开放式科研，并且会比 Argon 使用更多 token，以便更充分地探索、推理和做验证循环。\n\n## 它做什么\n\n获取路径从当天起分成几条。付费开发者和企业可在 Google AI Studio 与 Gemini for business 通过 API 调用，导入价与 Argon 相同：每百万输入 token 2 美元、每百万输出 token 10 美元。博客脚注写明，导入期于 2026 年 11 月 30 日结束后，面向公众开放的 Carbon 将改为每百万输入 4 美元、输出 20 美元。Google AI Ultra 订阅者可在 Google Antigravity、Gemini 应用和搜索的 AI 模式中使用；企业还可在 Google Antigravity 或 CodeMender 里选用。科学家可申请在 Antigravity 最高用量档免费使用 Argon 和 Carbon 六个月，按资格、容量和筛选滚动开通。网络安全防守方可申请加入 Fairwind Program，以获取面向网络用途的 Carbon。\n\n官方列举的能力包括：在法律、金融和企业运营里处理带图表、图纸和表格的密集材料，并按严格格式生成表格、演示文稿和报告；在工程上做跨包迁移、跨子系统排查和架构改造，以及带构建—验证循环的全栈与 3D 开发。为支撑更大规模任务，Antigravity 预览了 `/swarm`：一条提示可以变成一组可实时跟踪的智能体，把 Carbon 放在架构、协调和审计等需要更深推理的角色上，再配上更快的轻量模型和对抗式校验。\n\n面向网络安全的 Carbon for cyber 被写成在发现（SEC-bench Pro）、利用（ExploitGym）和修补（CWE-bench v1）等基准上领先。博客还转述了若干内部和外部试用，包括 Project Fortify 内部基准上扫描召回 100%、分诊精确率 95%，以及 Wiz 在 Scan for Good 中用它于两小时内发现两个大型 SaaS 的 0-day。这些都是官方或伙伴表述，本榜未独立核实具体漏洞。\n\n## 适合谁\n\n适合已经在用 Gemini API 付费档或 Google AI Ultra、需要更长周期推理和更强网络防御能力的团队。官方明确建议：多数日常编码和知识工作仍先用 Argon，只有更难、更耗 token 的任务再上 Carbon。导入价结束后成本会翻倍，需要把 11 月 30 日这个截止日期算进预算。Carbon for cyber 不是对所有 API 用户默认开放，要走 Fairwind。\n\n## 这一窗口里为什么值得看\n\npublished_time 是协调世界时 11 月 10 日 16:00，也就是北京时间 11 月 11 日 00:00，是早报窗口里最重要的模型开放。此前 Carbon 已对部分网络安全用户开放，这次才把面向公众的模型放到 API、Antigravity 和 Gemini 应用里，并公布了与 Argon 看齐的导入价以及导入期结束后的价格。\n\n博客称 Carbon 在 CursorBench 4.0、Perplexity 的 WANDR、Zapier 的 AutomationBench 上排名第一，且单任务平均成本不到其比较的次优外部模型的一半；在与 Artificial Analysis 合作的 Multimodal Knowledge Agent 基准上排名第二，平均单任务成本不到第一名的六分之一。这些名次和成本比较都来自官方博客，本榜没有复测。\n\n## 可以核对的事实\n\n导入价：每百万输入 2 美元、输出 10 美元，与 Argon 相同。导入期结束日：2026 年 11 月 30 日之后，面向公众的 Carbon 为每百万输入 4 美元、输出 20 美元。博客写明该后一价格只适用于面向公众开放的 Carbon 模型。\n\n安全部分另有 Gemini 4 Carbon Safety and Security 报告可对照。博客提到的若干安全数字，例如在模拟攻击环境中挡住 99% 的攻击轨迹、每次尝试突破率降至 0.8%（Argon 为 3.1%）、Gray Swan 测试中自动攻击查询成功率 2.17%（Argon 为 9.86%），以及智能体诚实基准 375 项任务通过率 92%（Argon 为 70%），均来自这篇公告，不是本榜复测。\n"
     },
     {
-      "id": "anthropic-fable-mythos-5-2",
-      "title": "Claude Fable 5.2 与 Mythos 5.2",
-      "badge": "A",
-      "summary": "Anthropic 于 2026-11-09 发布 Fable 5.2 与 Mythos 5.2。官方写明二者是同一底层模型：Fable 面向一般用户，Mythos 需通过生命科学或网络安全核验。生成速度最多比 5.1 快 30%，标价为每百万 token 输入 8 美元、输出 40 美元；可选快速模式最高约 2.5 倍速，价格再翻倍。页面没有标钟点。",
-      "publishedAt": "2026-11-09",
-      "sortAt": "2026-11-09T12:00:00+08:00",
-      "timeLabel": "2026-11-09（原文未标钟点）",
-      "timePrecision": "date",
-      "timeNote": "公告页只写 November 9, 2026。抓取到的 HTML 里没有 article:published_time 或其他钟点，因此不补时间。sortAt 只用于把「只有日期」的条目排在同日已有钟点的条目之后，不是发布时刻。",
-      "source": "Anthropic 官方博客",
+      "id": "google-gemini-robotics-2-5",
+      "title": "Gemini Robotics 2.5 发布并给出产线试点",
+      "badge": "G",
+      "summary": "Google DeepMind 发布目前最强的视觉—语言—动作模型 Gemini Robotics 2.5，正在向机器人合作伙伴推送。官方称在 200 多项任务上，相对此前基线成功率按任务类型提高 30% 到 100%，速度快 20% 到 30%；与 Apptronik、奔驰合作的配盘概念验证成功率为 96%。datePublished 换算为北京时间 11 月 10 日 23:00。",
+      "publishedAt": "2026-11-10T15:00:00+00:00",
+      "sortAt": "2026-11-10T15:00:00+00:00",
+      "timeLabel": "2026-11-10 23:00（北京时间）",
+      "timePrecision": "datetime",
+      "timeNote": "页面可见日期为 November 10, 2026，作者 Carolina Parada。JSON-LD 的 datePublished 为 2026-11-10T15:00:00+00:00，即北京时间 2026-11-10 23:00。dateModified 为 2026-11-10T15:30:30+00:00，列表用发表时间。",
+      "source": "Google DeepMind 官方博客",
       "confidence": "A",
-      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+      "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
       "links": [
         {
-          "label": "Anthropic 公告原文",
-          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+          "label": "Google DeepMind 官方博客原文",
+          "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/"
         }
       ],
-      "detail": "## 它是什么\n\n这是 Anthropic 自己的模型公告。Claude Fable 5.2 和 Claude Mythos 5.2 是同一底层模型的两种提供方式。Fable 带有较强的网络安全和生物安全防护，因此面向所有用户；做网络安全或生物医学里有益应用的机构，要通过扩大后的生命科学与网络安全核验项目申请 Mythos。\n\n官方建议大多数编码和知识工作先从 Claude Opus 5.5 开始，那是他们眼中最强的日常模型；任务更难再上到 Fable 或 Mythos，更轻则下到 Sonnet 5.5 或 Haiku 5.5。Fable 5.2 也可以当 Advisor，让 Haiku、Sonnet 或 Opus 来请教，或者当 Orchestrator，把更简单的任务分给小模型。\n\n## 它做什么\n\n公告称编码、推理和视觉都有提升，输出比 Fable 5.1 和 Mythos 5.1 最多快 30%，价格降到每百万 token 输入 8 美元、输出 40 美元。可选快速模式把生成速度再提高到最多约 2.5 倍，价格是每百万 token 输入 16 美元、输出 80 美元。快速模式可用在 Claude Code、Claude Platform、Google Cloud 上的 Claude Models（Anthropic 托管和 Google 托管）以及 Microsoft Foundry（Anthropic 托管）。Mythos 的快速模式只给核验项目里的机构。\n\n公告里的基准只摘最能说明定位的几项，完整表在原文：FrontierCode 2.0 上 Fable 5.2 在 Xhigh effort 为 49.1%，High effort 约 45.3%，与 Opus 5.5 的 45.5% 接近，而官方称 High effort 的单任务成本大约是 Opus 5.5 最佳成绩的一半。FrontierSWE v2 为 69.9%。带工具的 Humanity’s Last Exam 为 74.2%。OSWorld 2.1 离线集部分得分为 89.3%。RoboDojo Sim 为 64.9%，公告称这是内部、最高 effort 的运行。知识工作 Remote Labor Index 在 High effort 为 41.3%，对比 Fable 5.1 的 17.9% 和 Opus 5.5 的 21.3%。网络安全的 CyScenarioBench 和 CVE Rediscovery、蛋白质设计分数标的是 Mythos 5.2，不是对所有用户开放的 Fable。\n\n工程案例同样来自公告自述，不是本榜复测：Anthropic 核心代码库里超过 90% 的合入改动现在由 Claude 在人的指导下写出；一组跑在较早 Fable 5.2 上的智能体把一项关键生产服务从 Python 迁到 Rust，启动大约快 26 倍。另有一名工程师用八天、超过 1000 个子智能体，从空目录做出一个能在笔记本上启动的原型操作系统。1000 个 Fable 5.2 智能体在 30 小时内、很少人工介入的情况下，用 Lean 完成了费马大定理证明的形式化；同样设置下 Opus 5.5 在 18 小时完成约 26%，30 小时后几乎不再前进。硬件实验里，它按一段提示设计并做出了三个能工作的电子设备，电路板由 Diode 制造，三个都没有再改电路。\n\n## 适合谁\n\n适合最难、最开放的技术工作：大型代码迁移、长时间研究、硬件和机器人，以及需要模型自己判断何时说不知道的分析任务。公告引用的外部试用包括 Vercel 的 Joe Haddad、Jump Trading 的 Lucas Baker，以及 Rubrik 关于 Mythos 5.2 的评论。这些是厂商博客里的客户引语。\n\n不适合把它当成默认的日常小模型。官方自己的路由建议是先用 Opus 5.5。高风险的网络安全和生物研究不在 Fable 的开放范围内：Fable 5.2 的分类器会拦住渗透测试、漏洞利用生成、基于二进制的漏洞研究，以及研究生物学里的大多数任务。被拦住时，网络安全改由 Opus 4.8 回答，生物改由 Opus 5 回答。Mythos 5.2 只给通过核验的机构。Claude Enterprise 客户即使不在网络安全核验项目里，也可以使用由包括 Mythos 5.2 在内的模型驱动的 Claude Security。\n\n## 这一窗口里为什么值得看\n\n页面只写 2026 年 11 月 9 日，没有钟点，所以它排在同日已经标出晚上 9 点和 10 点的 Google、NVIDIA 稿件之后，并不表示它发布得更早。同一天的 AWS 博客、以及 OpenAI 的 Marketplace 新闻，都要和这次模型发布一起看：一个讲能力，一个讲在 AWS 上怎么开通和保留数据。\n\n安全段落里，公告称 Mythos 5.2 在约 1900 个场景的自动行为审计中，多数指标不差于 Opus 5.5、Sonnet 5.5 和 Mythos 5.1，误导用户相关的指标更好。在一个故意留了薄弱点、1800 多个场景里大多数必须逃出沙箱才能完成的对抗测试中，Mythos 5.2 使用沙箱外凭证或文件的比例是 3.1%，与 Opus 5.5 的 3.3% 接近，低于 Sonnet 5.5 的 5.1%，也明显低于 Mythos 5 和 5.1 的 39% 与 21%。早期观察称，相对 Fable 5.1，Fable 5.2 的不必要拦截大约少 55%（网络安全约少 60%，生物约少 40%）。外部测试方包括英国 AI Security Institute、Frontier Design 和 METR。细节指向 System Card；公告页的抓取文本里没有单独的 System Card 网址，这里不补链接。\n\n反蒸馏也被写成产品变化：Fable 5.2 使用了他们近期报告里的技术，把蒸馏者能采集到的数据减少 90% 到 99%；preserved thinking 现在对所有账号打开。数据侧，Enterprise Frontier Safeguards 在客户自己的基础设施上做自动安全监测，从而兼容零数据保留，目前与 Bridgewater、Salesforce、Stripe 等做私人测试。其他客户则保留 30 天用于安全监测。符合条件的客户在接上 EFS 之前，仍可以按零数据保留使用这两款模型。\n\n## 可以核对的事实\n\n当天即可用的平台，公告写的是所有平台，包括 Amazon Web Services、Google Cloud 和 Microsoft Azure。开发者在 Claude Platform 上使用的模型名是 claude-fable-5-2。\n\n本周有一次用量促销：包含 Fable 的方案和席位，按已订阅时长获得一到三次 Fable 重置；Pro 方案和 Team 标准席位里，Fable 最多占每周用量上限的 50%。促销细则的单独链接没有出现在抓取到的正文里，以公告页为准。\n\n训练时他们刻意限制了最能直接加速 AI 研发的那部分能力。公告称在加速器内核优化和改进大模型架构这些方向上，Fable 5.2 与 Mythos 5.2 大约处于 Opus 5.5 的水平；智能体编码、硬件开发，以及传统的 AI 或机器学习研究（含可解释性）没有被这套训练改动影响到。推理时不会再改这些能力。少数话题会透明地回退到 Opus 5，包括某些非标准加速器上的内核开发。\n"
+      "detail": "## 它是什么\n\n这是 Google DeepMind 的 Gemini Robotics 团队公告，由 Carolina Parada 署名，介绍 Gemini Robotics 2.5。官方把它写成迄今最强的视觉—语言—动作（VLA）模型，重点是扩大机器人能学的技能范围，并加快学会这些技能的速度。模型正在向机器人合作伙伴推送，博客没有宣布面向普通开发者的公开 API。\n\n官方提到，今年早些时候已把全身智能扩展到包括人形在内的多种机器人；这次进展在相当程度上得益于 Gemini 4 Argon 对机器人研究的加速。\n\n## 它做什么\n\n评估覆盖 200 多项不同任务，例子包括用夹子上菜、给礼盒打蝴蝶结、用移液器取液，用来同时考察工具使用、对可变形物体的操作，以及对精细、易损物体的处理。官方称，相对此前基线，Gemini Robotics 2.5 的成功率按任务类型提高 30% 到 100%，完成速度快 20% 到 30%。它和前代一样可以配合多种本体，文中点名 Apptronik 的 Apollo 2 人形（配 22 自由度、五指的 SharpaWave 手）以及带两指平行夹爪的 Franka Duo。\n\n可靠性部分给出了一项产线概念验证：与 Apptronik、Mercedes-Benz 合作，在匈牙利 Kecskemét 和德国 Sindelfingen 的奔驰生产线上，用 Apollo 2 做汽车零件配盘，也就是把金属支架从散装料箱按车辆顺序放入托盘。工作流由 Gemini Robotics ER 跟踪，动作由 Gemini Robotics 2.5 控制手臂和手。官方写成功率为 96%。Apptronik 联合创始人兼首席执行官 Jeff Cardenas 在文中称，后训练数周内提升明显，迁到奔驰产线后下降很小。这些是官方和伙伴对试点的表述，不是本榜现场统计。\n\n安全方面，2.5 用推理时引导在现场绕开物理危险。官方评估称，在障碍物附近的安全完成率提高 33%，在人员附近提高 43%。博客还发布开源越狱基准 ASIMOV-Jailbreak，用来测试把不安全请求伪装进各种场景的提示；官方称 Gemini 4 Argon 的抵抗率是 99.5%，高于此前基线 Gemini Robotics ER 2 的 82%。长周期智能体安全评测里，官方称目前领先的是 Gemini 4 Argon。\n\n## 适合谁\n\n适合已经是 Gemini Robotics 合作伙伴，或正在评估工业人形、双臂操作的研究与制造团队。普通开发者还不能把这篇公告理解成可以立即调用的公开模型接口。致谢里还点到 Agile 等伙伴。\n\n## 这一窗口里为什么值得看\n\n发表时间是北京时间 11 月 10 日 23:00，紧挨着前一天 NVIDIA 在 CoRL 发布的 GR00T 2。两边都在讲灵巧操作和工业场景，但路线不同：NVIDIA 那侧是开源世界—动作模型和仿真框架，DeepMind 这侧是向合作伙伴推送的闭源 VLA，并直接给出了奔驰产线试点的成功率。\n\n博客后半还说明 Gemini 4 Argon 如何加速 2.5 的研发：从真实相机画面生成大量仿真练习、建数字孪生，以及根据失败视频假设原因并在仿真和真机上验证。这把「前沿语言模型加速机器人迭代」写成了同一条产品线里的方法，而不只是模型名字换代。\n\n## 可以核对的事实\n\n任务规模：超过 200 项。成功率与速度的比较基线，博客写成 previous baselines，没有在这篇里点名上一版的具体编号。产线试点地点是 Kecskemét 与 Sindelfingen，成功率 96%。ASIMOV-Jailbreak 以开源基准形式发布。推送范围是 robotics partners。\n"
     },
     {
-      "id": "meta-muse-ember",
-      "title": "Meta 发布 Muse Ember",
-      "badge": "M",
-      "summary": "Meta 发布最小、最省的 Muse Ember，用来做工具调用、编码子任务、路由、抽取和长文档解析。API 名为 muse-ember-1.0，当天可在 Muse Code 与 Meta Model API 使用。标价为每百万 token 输入 0.10 美元、缓存输入 0.004 美元、输出 0.50 美元；上下文 100 万，输出最多 51.2 万 token。页面只标明 11 月 9 日。",
-      "publishedAt": "2026-11-09",
-      "sortAt": "2026-11-09T11:00:00+08:00",
-      "timeLabel": "2026-11-09（原文未标钟点）",
-      "timePrecision": "date",
-      "timeNote": "页面可见日期为 November 9, 2026。HTML 的 article:published_time 与 article:modified_time 都是 2026-11-09T00:00:00.000Z。零点整更像只精确到日期的占位，本榜不把它显示成北京时间 08:00，也不据此和其他同日稿件比先后。",
-      "source": "Meta 官方研究博客",
+      "id": "google-adobe-partnership",
+      "title": "Google 与 Adobe 扩大产品与模型合作",
+      "badge": "G",
+      "summary": "Google 在 Adobe MAX 宣布扩大与 Adobe 的合作：计划在 Drive 和 Gmail 里提供通往 Acrobat 的入口，把 Adobe 创意工具接到 Gemini、Gemini Enterprise 和搜索的 AI 模式，并与 DeepMind 探索用于 Photoshop 的近实时图像模型。published_time 换算为北京时间 11 月 10 日 22:00。多数能力尚未给出上线日。",
+      "publishedAt": "2026-11-10T14:00:00+00:00",
+      "sortAt": "2026-11-10T14:00:00+00:00",
+      "timeLabel": "2026-11-10 22:00（北京时间）",
+      "timePrecision": "datetime",
+      "timeNote": "页面可见日期写 Nov 10, 2026。name=published_time 与 datePublished 为 2026-11-10T14:00:00+00:00，即北京时间 2026-11-10 22:00。",
+      "source": "Google 官方博客",
       "confidence": "A",
-      "url": "https://research.meta.ai/blog/muse-ember",
+      "url": "https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration/",
       "links": [
         {
-          "label": "Meta 研究博客原文",
-          "url": "https://research.meta.ai/blog/muse-ember"
+          "label": "Google 官方博客原文",
+          "url": "https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration/"
         }
       ],
-      "detail": "## 它是什么\n\nMuse Ember 是 Meta 研究博客在 2026 年 11 月 9 日介绍的模型，页面自称为他们最小、最高效的一款，面向智能体一天里会重复做的活：工具调用、编码子任务、路由、抽取和长文档解析。它不是用来替换 Muse Wonder 的「最难问题」模型。博客把产品线说成：Muse Wonder 处理最难的问题，Muse Spark 做编码和智能体流程，Muse Ember 以足够低的单价把可重复的编码和智能体任务铺开。\n\n它是第一款用 Muse Wonder Full 训练出来的模型。博客称，此前发布 Muse Wonder 和 Muse Wonder Full 时说过会用它们做出能带给所有人的专用模型，Ember 是这一步的开始。\n\n## 它做什么\n\n模型同时理解文本、图像、音频和视频，所以智能体可以读截图、图表、扫描件，或直接处理语音备忘录、会议录音和视频。上下文窗口 100 万 token，输出最多 51.2 万 token，博客称一次调用可以装下一整个代码库或一套文档。它支持 Responses API。\n\n价格分两档，都写在原文里。提示不超过 20 万 token 时，每百万 token 输入 0.10 美元、缓存输入 0.004 美元、输出 0.50 美元。超过 20 万 token 后，输入 0.30 美元、缓存输入 0.012 美元、输出 1.50 美元。博客给出的 Artificial Analysis 单任务成本大约是 0.14 美元，并称没有别的模型能以更低的单任务成本拿到更高分。这是他们按标价对公开榜单做的估计，脚注写明 Artificial Analysis 结果来自 11 月 9 日公布的 Intelligence Index v5。\n\n在 max 推理档，博客列出的对比包括：AutomationBench-AA 37.8，高于 GPT-6 Luna 的 20.2 和 Claude Haiku 5.5 的 13.9；Agents' Last Exam 61.6，对比 57.1 和 57.0；Terminal-Bench 4.0 为 40.9（各自最好的已发表 harness：Ember 用 mini-swe-agent，Haiku 5.5 用 Claude Code，Luna 用 Codex）；Coding Agent Index-AA 为 46。FrontierCode 2.0-AA 是例外，Ember 27.2，低于 Haiku 5.5 的 34.9。OSWorld 2.1 部分得分 69.5、二分得分 33.8。PerceptionBench（带工具）80.6。Artificial Analysis Index 为 36，与 Haiku 5.5 的最高分持平，高于 Luna 的 28。和个人超智能指数、Agents' Last Exam 的 Linux 子集等，博客标明是 Meta 内部评测。\n\n## 适合谁\n\n适合要把便宜、快的模型放进智能体循环、大量做子任务的开发者和产品团队，而不是拿它做最难的一次性规划。博客自己的建议是难问题交给 Muse Wonder 规划，大量执行交给 Ember。\n\n早期试用引语可以核对原文：Box 的 AI 产品副总裁 Yashodha Bhavnani 谈到在合同和招聘筛选上的准确度、速度和 token 效率；Cline 创始人 Saoud Rizwan 把它定位成子智能体；Oracle 全球合作高级副总裁 Konstantinos Papamiltiadis 说工程任务上看到潜力；Cloudflare CTO Dane Knecht 说测试中尾部延迟最多比对照模型快 30%，并适合多仓库的广泛排查；You.com 的推理负责人 Chak Pothina 给出 p95 2.2 秒、比所测领先开源权重模型快约 4 到 13 倍、输出 token 少 36% 到 48% 的内部测试描述。这些是伙伴自己的测试口径。\n\n## 这一窗口里为什么值得看\n\n它和同一天的 Fable 5.2 不是同一档。Fable 公告把困难的开放任务往上抬价，Ember 把重复的智能体步骤往下压价。对本站读者，这意味着「小模型」不再只是聊天降级，而是被明确写成主模型手下的执行层。\n\n和自家 Muse Spark 1.3 的对比也在文中：Intelligence Index 36 对 37，单任务成本 0.14 美元对 2.39 美元，标价输入/输出 0.10 与 0.50 美元对 1.25 与 4.25 美元。博客因此说 Ember 的分数接近 Spark，成本低到可以放进每个产品。\n\n可用性：当天以 muse-ember-1.0 出现在 Muse Code 和 Meta Model API。文末还写 Muse Ember、Muse Spark 和 Muse Wonder 已经在 Google Cloud 和 Oracle Cloud 上提供。安全方面，博客称发布前按 Meta Superintelligence Scaling Framework 做了化学与生物、网络安全和失控风险评测，所评类别低于该框架的高风险线；也测了它代用户行动时是否尊重意图、处理敏感信息、抵抗藏在网页和工具输出里的指令，以及在高影响动作前是否找人确认。没有写具体阈值数字。\n\n## 可以核对的事实\n\n页面阅读时间标为 4 minute read。机器时间戳是 2026-11-09T00:00:00.000Z，本榜不把它当成真实的发布钟点。\n\n图表里的 Muse Ember 成本按拟定或标价估计，脚注写明单任务成本使用各模型标价。内部结果来自 Meta 的评测套件。Personal Superintelligence Index 由八项内部评测合成：Agents' Last Exam、AutomationBench、FocusBench、JobBench、OfficeQA Pro、GDP.pdf、GDP.xlsx 和 VBT。\n\n博客说还有更高效的模型在训练中，但没有给名字或日期。\n"
+      "detail": "## 它是什么\n\n这是 Google 在 Adobe MAX 上发布的合作更新，主题是把 Adobe 的创意和生产力工具更深地接到日常 Google 产品里，同时把 Google 的前沿模型送进 Adobe 应用。公告写的是「即将」和「将探索」，不是一份已全部上线的功能清单。\n\n## 它做什么\n\n博客列出四件事。第一，用户将很快能从 Google Drive 和 Gmail 直接进入 Adobe Acrobat，两款产品都会把 Acrobat 作为建议应用，并在文件预览里提供「Edit with」入口。第二，Adobe 将在 Gemini 和 Gemini Enterprise 中扩展连接器，加入 Acrobat 和其他创意工具，并把这些工具带到 Google 搜索的 AI 模式。第三，企业将可以在 Gemini Enterprise 里使用 Adobe 的 CX Enterprise Coworker 智能体，协助做平面设计、处理 PDF 和发起营销活动，而不必来回切应用。第四，Adobe 与 Google DeepMind 将探索面向专业创作者的新编辑能力，先从一款用于 Photoshop、官方形容为可能实现近实时编辑的图像模型开始。\n\n## 适合谁\n\n适合已经同时使用 Google Workspace 或 Gemini，以及 Acrobat、Photoshop 等 Adobe 工具的个人和创意团队，以及在看 Gemini Enterprise 落地的企业。因为多数条目还没有上线日期，目前更适合当作路线，而不是当天就能打开的新开关。\n\n## 这一窗口里为什么值得看\n\n发表时间是北京时间 11 月 10 日 22:00。它不是模型发布，但把「Google 模型进 Adobe」和「Adobe 工具进 Gemini / Search」写成同一方向，和当天 Anthropic、OpenAI 往办公套件延伸是同一条竞争线上的动作。需要注意措辞：Photoshop 那项只是双方将探索的起点，博客没有宣布已经可下载的新模型。\n\n## 可以核对的事实\n\n活动场合是 Adobe MAX，日期为 2026 年 11 月 10 日。公告列出的产品入口、连接器和 Coworker 智能体都还没有在这篇博客里给出具体推出日或价格。近实时 Photoshop 模型被明确写成探索中。\n"
     },
     {
-      "id": "bytedance-seedream-5-5",
-      "title": "字节 Seedream 5.5",
-      "badge": "字",
-      "summary": "字节跳动 Seed 团队发布图像模型 Seedream 5.5，面向需要反复改稿、透明背景素材和更真实成片的视觉生产。官方称未改区域按像素级保留，从而支持约 100 轮连续编辑；可直接生成带透明通道的 RGBA；真实感与小字也有改进。页面日期是 2026-11-09，没有钟点。",
-      "publishedAt": "2026-11-09",
-      "sortAt": "2026-11-09T10:00:00+08:00",
-      "timeLabel": "2026-11-09（原文未标钟点）",
-      "timePrecision": "date",
-      "timeNote": "英文博客只在 Date 一栏写 2026-11-09，抓取到的 HTML 没有发表钟点，因此不补时间。",
-      "source": "字节跳动 Seed 团队官方博客",
+      "id": "microsoft-ibm-imagine-enterprise",
+      "title": "微软与 IBM 发布 Imagine Enterprise",
+      "badge": "Ms",
+      "summary": "微软与 IBM 宣布 Imagine Enterprise，把 IBM Consulting 已有的 6000 多个智能体与资产，和微软的云、安全和智能体技术打包成面向行业流程的平台，首批覆盖金融服务、保险和零售。article:published_time 换算为北京时间 11 月 10 日 21:00。这是咨询加平台的组合，不是新的基础模型。",
+      "publishedAt": "2026-11-10T13:00:08+00:00",
+      "sortAt": "2026-11-10T13:00:08+00:00",
+      "timeLabel": "2026-11-10 21:00（北京时间）",
+      "timePrecision": "datetime",
+      "timeNote": "Microsoft Source 页面可见日期为 November 10, 2026。HTML 的 article:published_time 为 2026-11-10T13:00:08+00:00，即北京时间 2026-11-10 21:00。同页另有一处 datePublished 写成 2026-11-10T05:00:08Z，更像时区标记不一致；本榜采用带明确偏移的 article:published_time。",
+      "source": "微软官方新闻稿",
       "confidence": "A",
-      "url": "https://seed.bytedance.com/en/blog/more-realistic-images-more-stable-editing-across-100-rounds-introducing-seedream-5-5",
+      "url": "https://news.microsoft.com/source/2026/11/10/ibm-and-microsoft-announce-a-new-ai-agent-platform-designed-for-industry-specific-transformation/",
       "links": [
         {
-          "label": "Seed 团队英文博客原文",
-          "url": "https://seed.bytedance.com/en/blog/more-realistic-images-more-stable-editing-across-100-rounds-introducing-seedream-5-5"
+          "label": "微软官方新闻稿",
+          "url": "https://news.microsoft.com/source/2026/11/10/ibm-and-microsoft-announce-a-new-ai-agent-platform-designed-for-industry-specific-transformation/"
+        },
+        {
+          "label": "IBM Consulting 产品页",
+          "url": "https://www.ibm.com/consulting/imagine-enterprise"
         }
       ],
-      "detail": "## 它是什么\n\nSeedream 5.5 是字节跳动 Seed 团队的下一代图像创作模型。博客没有把它写成通用聊天模型，而是写成专业视觉生产里的一环：在质量、交期和预算之内，稳定交出能用的图。\n\n官方归纳的三个升级是：多轮编辑更稳、原生带透明通道的 RGBA 素材、更真实的画面和更清楚的文字。联系邮箱是 seed.feedback@bytedance.com。文末说系列还会有 Pro 版，但没有写发布日。\n\n## 它做什么\n\n多轮编辑针对的是「上一张的输出变成下一张的输入」时，小误差会累积、细节和颜色会漂。Seedream 5.5 用有针对性的训练，让没有要求修改的区域在像素级保留，并去掉这些区域的偏色。博客里的演示是对同一个人连续编辑 100 轮，衣服、配饰和桌面物体反复更换之后，仍能改戒指、眼镜框这类小物体，并处理配饰和皮肤的接触、遮挡和光照。另外两组演示是多种材质的花卉，以及一个旧书房被逐步改成另一个空间时，盒子移动后的透视、遮挡和投影要跟着变。\n\n原生 RGBA 指直接画出带 alpha 通道的图，可以是完全透明，也可以是部分透明，边缘和透明区域由模型自己处理，不必再单独抠图、修边。演示包括一只展开翅膀的雪鸮、把参考图的笔触和材质用到文字上，以及同一组角色素材换场景、换姿势后仍保持可辨认的特征。\n\n真实感和文字方面，官方称光影、材质和皮肤更自然，减少过度的光泽、过曝和斑驳纹理。小字示例包括一版莎士比亚报纸式排版，以及一张蓝闪蝶信息图里、特写旁边笔画很多的中文说明。评测把严重文字错误率写到 0.4%，轻微文字错误率写到 1.7%，覆盖中文和英文，包括密排小字，并称低于上一版，也处于和领先模型比较时的前列。严重和轻微的判定标准在图表里，正文没有再展开定义。\n\n## 适合谁\n\n适合电商、市场营销、影视、游戏、办公和时装这些要反复改同一张图、或要把生成元素放进排版和合成的团队。博客说，图像模型只有在未改区域可靠、素材能直接进下游时，创意团队才敢多试几轮。\n\n不适合把它读成「已经在所有产品入口默认打开」。这篇英文博客讲的是模型能力、演示和评测，没有写国内某个 App 的上线开关、价格或 API 名称。那些原文没有的接入信息这里不补。\n\n## 这一窗口里为什么值得看\n\n页面日期是 2026-11-09，没有钟点，因此和同日的 Anthropic、Meta、OpenAI 稿件之间不分先后。它是这一天模型新闻里少数专门讲图像生产、而不是语言模型或芯片的一条。\n\n评测用 MagicArena，由有经验的图像生成评估者看质量和可用性，场景是上面说的六类生产用途。相对 Seedream 5.0 Pro，六类的质量分和可用率都提高；影视和办公的可用率是上一版的两倍多。文本结构与真实感用专家成对比较的 GSB（Good/Same/Bad）。对上一版，四组比较都是正分，图生图真实感达到 +55.62%。相对 GPT Image 2.5 Sunburst 和 Nano Banana 2.1，官方称 Seedream 5.5 在文生图和图生图的文本结构上都领先，文生图真实感优势明显。这些是 Seed 团队委托或组织的评测，不是第三方复现。\n\n展望段落写了下一步会支持更复杂的上下文和创作指令，并继续按影视、电商、广告和设计的真实生产需求，扩展到智能体工作流。这是方向，不是已交付功能清单。\n\n## 可以核对的事实\n\n100 轮是博客描述的一次同图连续编辑演示，同时被写成这套像素级保留所支持的工作方式。不要把它读成每一个提示都能自动保证 100 轮不劣化。\n\n博客没有给出模型参数量、许可证、开源权重或推理单价。\n\n演示视频在原页播放。本站只转述页面上的文字说明。\n"
+      "detail": "## 它是什么\n\n微软与 IBM 在 2026 年 11 月 10 日宣布 Imagine Enterprise。这是一个面向企业的智能体平台，用来构建、运行和治理执行行业特定流程的 AI 智能体，新闻稿特别点到受监管行业。IBM Consulting 贡献实施经验和它在交付平台 IBM Consulting Advantage 上已有的 6000 多个智能体与资产；微软贡献人工智能、数据、云和安全技术。双方还为符合条件的项目提供前沿部署工程师。\n\n## 它做什么\n\n新闻稿把特点写成三条：一开始就有预置的行业智能体和资产，不必从零拼装；平台设计成接入企业现有的数据、流程和系统，而不是要求先换掉原有平台；把 IBM 的实施经验和微软的技术用来给人和智能体补上企业上下文。技术组合包括 Microsoft Foundry、GitHub Copilot、Microsoft Copilot Studio，以及 Fabric、Microsoft 365、Entra、Purview、Defender 和 Azure；IBM 一侧则有 Consulting Advantage 的 Process Studio、Context Studio 和 Advantage Core。\n\n首批行业框架覆盖金融服务、保险和零售，并被写成可复制到制造、能源、公共部门、出行等更多行业。客户可以通过 IBM Consulting 代为部署和运维，与 IBM Consulting 共同做企业级实施，或选择自行管理。文中以金融服务公司 SEI 作为正在探索的例子，没有把 SEI 写成已经完成的标杆交付。\n\n## 适合谁\n\n适合已经在微软云和安全体系里、又希望用现成行业智能体加快落地的企业，尤其是金融、保险和零售。它不是面向个人开发者的模型 API，购买和交付路径要经过 IBM Consulting 或相应的企业合作。\n\n## 这一窗口里为什么值得看\n\n发表时间是北京时间 11 月 10 日 21:00，和 Google 的医疗行业解决方案几乎同时出现。两条都说明大厂在把通用智能体包装成带治理的行业平台。需要避免的读法是：6000 多个智能体是 IBM Consulting 已有资产的数量，不是微软新训练了 6000 个基础模型。\n\n## 可以核对的事实\n\n发布双方为 IBM 与 Microsoft，日期为 2026 年 11 月 10 日。预置资产数量为新闻稿中的 more than 6,000。首批行业是金融服务、保险和零售。产品介绍页为 https://www.ibm.com/consulting/imagine-enterprise。新闻稿未给出定价。\n"
     },
     {
-      "id": "openai-chatgpt-enterprise-aws",
-      "title": "ChatGPT Enterprise 进入 AWS Marketplace",
+      "id": "google-gemini-for-healthcare",
+      "title": "Google Cloud 推出 Gemini for healthcare",
+      "badge": "G",
+      "summary": "Google Cloud 首席执行官 Thomas Kurian 宣布 Gemini for healthcare，在美国以预览形式提供。它是在通用 Gemini 智能体之上的医疗行业编排层，用来在病历、理赔和行政系统之间完成多步工作并保留人工审核，官方写明设计旨在支持 HIPAA 合规。blog.google 的 published_time 换算为北京时间 11 月 10 日 21:00。",
+      "publishedAt": "2026-11-10T13:00:00+00:00",
+      "sortAt": "2026-11-10T13:00:00+00:00",
+      "timeLabel": "2026-11-10 21:00（北京时间）",
+      "timePrecision": "datetime",
+      "timeNote": "blog.google 可见日期为 Nov 10, 2026。该页 published_time 与 datePublished 为 2026-11-10T13:00:00+00:00，即北京时间 2026-11-10 21:00，本榜采用这一钟点。Google Cloud 博客可见日期同样是 November 10, 2026，另有一处 published_time 为 2026-11-11T05:03:51+0800，更像后续写入时间，不用它排序。",
+      "source": "Google / Google Cloud 官方博客",
+      "confidence": "A",
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare/",
+      "links": [
+        {
+          "label": "Google 官方博客原文",
+          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare/"
+        },
+        {
+          "label": "Google Cloud 博客原文",
+          "url": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-for-healthcare"
+        }
+      ],
+      "detail": "## 它是什么\n\nGoogle Cloud 首席执行官 Thomas Kurian 署名宣布 Gemini for healthcare：一个面向医疗提供方和支付方的行业解决方案，建立在上月 Gemini at Work 上介绍的通用 Gemini 智能体之上。它的定位不是再发一个通用大模型，而是在已有临床、财务和行政系统之间做受治理的多步编排，并保留人工审核。官方写明即日起在美国以预览形式提供。\n\n## 它做什么\n\nCloud 博客把能力拆成四个部分：由领域专家写好的医疗技能（例如病历综合、就诊前准备、保险政策核对、给付判定），并可按机构自己的规程定制；连接到电子病历、理赔和护理管理系统的连接器，查询时沿用原系统的身份和角色权限；开放的实施与数字健康合作伙伴生态；以及统一的安全治理，包括访问控制、端到端审计日志和可核对的引用，并允许在同一套治理下搭配 Google 或伙伴的模型。\n\n对医疗机构，系统被写成可以汇总跨照护场景的病史、在就诊前整理病历，以及按支付方政策准备授权材料，减少因材料不全被拒。对医保，它被写成按医疗政策预审申请并整理给临床审核人员，以及根据会员自己的计划文件解释保障和自付费用。官方特别写到，Epic 和 Oracle Health 的连接是授权用户只读，不向病历系统回写，以保持系统中记录的完整性。\n\n## 适合谁\n\n适合美国的医疗系统、医疗集团、医保和支付方，以及与它们合作的系统集成商。预览目前只写了美国。个人开发者或没有医疗合规体系的团队不能把它当成普通 Gemini 功能开关。\n\n官方强调：临床数据、提示和生成结果留在客户受治理的环境中，不用于训练或微调 Google 的基础模型；输出要能追溯到病历、计划政策和机构批准的指南。博客还写「旨在支持 HIPAA 合规」（built to support HIPAA compliance），这是产品宣称，不是本榜做的合规认定。\n\n## 这一窗口里为什么值得看\n\n发表时间是北京时间 11 月 10 日 21:00。在同一窗口里 Google 既开放了 Carbon，又把通用智能体包装进医疗预览，说明它同时在推前沿模型和带治理的行业套件。博客列举了 HCA Healthcare、Highmark Health、Northwell Health、Optum Insight、Blue Cross Blue Shield of Massachusetts、ASCO 等合作或表态，这些是机构引言，不是已完成的效果审计。\n\n文中「临床人员每周花近 28 小时手工核对信息」也来自这篇官方博客，本榜照录并标明出处，没有另找统计来源核对。\n\n## 可以核对的事实\n\n可用范围：美国预览。电子病历连接：Epic、Oracle Health，官方写明只读、不回写。治理表述：支持 HIPAA 合规、不用于训练基础模型、带引用和审计日志。更长的连接器和实施伙伴名单在 Google Cloud 博客原文里，包括 InterSystems、Verato、Optum、IMO Health、CMS Coverage、Salesforce、Microsoft 365、Google Workspace 等，本榜不把名单逐家展开成独立新闻。\n"
+    },
+    {
+      "id": "deepmind-alphaproof-code",
+      "title": "DeepMind 发布 AlphaProof Code",
+      "badge": "G",
+      "summary": "Google DeepMind 介绍智能体框架 AlphaProof Code，称已对 Signal 协议的实际代码完成关键安全性质的形式化验证，智能体写出超过 600 万行 Lean 证明，过程用了四周。官方称这是首次以这一深度用 AI 验证广泛部署的密码协议实现。datePublished 换算为北京时间 11 月 10 日 20:00。",
+      "publishedAt": "2026-11-10T12:00:00+00:00",
+      "sortAt": "2026-11-10T12:00:00+00:00",
+      "timeLabel": "2026-11-10 20:00（北京时间）",
+      "timePrecision": "datetime",
+      "timeNote": "页面可见日期为 November 10, 2026，作者 Pushmeet Kohli 与 Swarat Chaudhuri。JSON-LD 的 datePublished 为 2026-11-10T12:00:00+00:00，即北京时间 2026-11-10 20:00。dateModified 为 2026-11-10T13:17:48+00:00，列表用发表时间。",
+      "source": "Google DeepMind 官方博客",
+      "confidence": "A",
+      "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+      "links": [
+        {
+          "label": "Google DeepMind 官方博客原文",
+          "url": "https://deepmind.google/blog/introducing-alphaproof-code/"
+        }
+      ],
+      "detail": "## 它是什么\n\n这是 Google DeepMind 的研究公告，介绍 AlphaProof Code：一个把人类专家和多个大模型智能体组合起来、做深度形式化验证的框架。团队把它用在 Signal 协议的实际代码上，也就是保护 Signal 和 Google Messages 等应用中海量私密会话的那套密码协议。作者署名为 Pushmeet Kohli 与 Swarat Chaudhuri。\n\n官方写了两个「首次」：这是首次以这一深度用 AI 验证一个广泛部署的密码协议；也是该协议的实现首次被任何方法（不论是否使用 AI）验证到这一深度。这些是官方对工作范围的判断，本榜照录，不去改写成「Signal 已被完全证明没有缺陷」。\n\n## 它做什么\n\n框架的分工接近研究团队：人类专家和模型一起决定要证明什么，再由智能体去证。先把 Signal 的安全目标翻译成形式化数学规范，每一条都经人类专家审过；再由 Gemini Carbon 驱动的智能体写出超过 600 万行 Lean 证明。接着智能体审计证明，标出大约 1% 需要人工再看的部分，其余由 Lean 自动检查。官方称，因为 Lean 会检查其余证明，专家可以把精力放在真正需要判断的地方。\n\n验证对象不只是设计文档，而是编译后、设备上实际运行的代码是否满足指定的关键安全性质，例如设备被短暂攻破前后，消息仍能得到保护。官方把这一步写成比常见「只验证设计」更难，也因此更接近真实漏洞常出现的位置。整个过程用了四周；博客把它和「过去常要专家团队数年」对比，这是官方的历史对照，不是对本项目工时的第三方审计。\n\n为了确认系统能区分正确代码和有缺陷代码，研究者在隔离副本里重新引入两个此前已经修复的真实缺陷。两次都得到了经机器检查的证明：有缺陷的版本是不安全的。Signal 首席技术官 Ehren Kret 在文中称，用智能体把线上代码翻译成有效的 Lean 定理是重要进展，并表示这让他们对代码的隐私保障更有信心。\n\n官方将开源形式化验证产物，并提到可与自动防御智能体 CodeMender 搭配，用于医疗设备固件、电网软件等更多关键系统。博客写明规模化仍需继续研究。\n\n## 适合谁\n\n适合密码协议、形式化方法和高保证软件安全的研究者，以及关心消息应用实现是否被验证到代码层的工程团队。这不是一个普通开发者可以马上接到业务代码上的产品 API，产出是研究框架和将开源的验证产物。\n\n## 这一窗口里为什么值得看\n\n发表时间是北京时间 11 月 10 日 20:00，紧挨着 11 月 10 日晚报的截止时刻，因此没有写进前一天的晚报。它和同一窗口发布的 Gemini 4 Carbon 直接相关：Carbon 公告里已经把 AlphaProof Code 当作科学推理的例子，这篇则把方法和 Signal 的结果完整展开。对「AI 能否承担高保证安全工作」这个问题，它给出的是带 Lean 机器检查和回归缺陷测试的案例，而不是只报基准分数。\n\n需要同时记住边界：验证的是专家写下的那些关键安全性质，不是全部实现；四周对比「数年」是官方说法；开源的是验证产物，博客没有在正文里把框架本身写成已经全部开源的产品。\n\n## 可以核对的事实\n\nLean 证明规模：超过 600 万行。人工复核比例：约 1% 的代码库被标出需要再看。用时：四周。回归测试：两个先前已修复的缺陷被重新引入后，系统证明有缺陷版本不安全。Signal 方面的公开回应来自 CTO Ehren Kret。公告写明将开源形式化验证产物，并指向技术论文。\n"
+    },
+    {
+      "id": "openai-businesses-chatgpt",
+      "title": "ChatGPT 推出商家主页与 Business Agent",
       "badge": "O",
-      "summary": "OpenAI 宣布 ChatGPT Enterprise 已在 AWS Marketplace 上架。组织可以用现有的 AWS 采购和账单购买，并把符合条件的支出计入 AWS 承诺消费。官方称 Marketplace 版本与直接向 OpenAI 购买的功能和模型同步更新；符合条件的客户也可经此购买 ChatGPT for Healthcare 与 ChatGPT for Financial Services。页面只标明 11 月 9 日。",
-      "publishedAt": "2026-11-09",
-      "sortAt": "2026-11-09T09:00:00+08:00",
-      "timeLabel": "2026-11-09（原文未标钟点）",
+      "summary": "OpenAI 以测试版推出 Businesses in ChatGPT：商家可通过 Business Hub 认领主页、更新信息和查看汇总洞察，美国合格的电商与在线服务商家还可上线 Business Agent，与用户在带明确标识的单独会话里对话。官方页只写 November 10, 2026，本环境未能读到机器可读钟点。",
+      "publishedAt": "2026-11-10",
+      "sortAt": "2026-11-10T11:00:00+08:00",
+      "timeLabel": "2026-11-10（原文未标钟点）",
       "timePrecision": "date",
-      "timeNote": "公告页可见日期为 November 9, 2026。抓取 HTML 元数据时该页返回 403，没有读到机器可读钟点，因此只保留日期。",
-      "source": "OpenAI 官方博客",
+      "timeNote": "公告页可见日期为 November 10, 2026。本环境用常规抓取读取该页时遇到 Cloudflare 拦截，没有得到 article:published_time 或其他钟点，因此只保留日期。sortAt 只用于把「只有日期」的条目排在同日已有钟点的条目之后，不是发布时刻。",
+      "source": "OpenAI 官方公告",
       "confidence": "A",
-      "url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace/",
+      "url": "https://openai.com/index/introducing-businesses-chatgpt/",
       "links": [
         {
-          "label": "OpenAI 公告原文",
-          "url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace/"
+          "label": "OpenAI 官方公告原文",
+          "url": "https://openai.com/index/introducing-businesses-chatgpt/"
         }
       ],
-      "detail": "## 它是什么\n\n这是 OpenAI 官方博客上的一条商业渠道公告，不是新模型发布。ChatGPT Enterprise 从这一天起可以在 AWS Marketplace 里被发现、购买和管理。组织继续使用自己已经有的 AWS 采购和账单关系，符合条件的花费可以计入 AWS 承诺消费。\n\n公告强调，Marketplace 里的版本与直接向 OpenAI 购买的是同一套：同样的模型、功能，新功能也同时放出。它覆盖的产品体验包括 ChatGPT、ChatGPT Work、Codex 和 dots。\n\n## 它做什么\n\n它解决的是采购路径，不是模型能力。已经和 AWS 有承诺消费的公司，不必再单独走一条 OpenAI 合同，就可以把 ChatGPT Enterprise 放进现有云采购。公告同时划清了和 Amazon Bedrock 的分工：开发者仍然可以在 Bedrock 里用 OpenAI 模型做应用和智能体，业务团队则在日常工作里用 ChatGPT Enterprise。两边怎么选，取决于工作负载和治理要求。\n\n符合条件的客户还可以经由同一个 Marketplace 入口购买 ChatGPT for Healthcare 和 ChatGPT for Financial Services。公告没有在正文里列出资格清单，而是写明联系 OpenAI 或 AWS 的客户团队确认。\n\n## 适合谁\n\n适合已经深度使用 AWS、采购流程更愿意走云市场而不是另签软件合同的组织。公告引用了 OpenAI 云合作董事总经理 Chris Grusz 的话，大意是共同客户现在可以经由他们已经信任的云厂商把 ChatGPT 带给团队。\n\n客户引语来自 Sophos 首席技术官 John Peterson：通过单一渠道购买，并把已有的 AWS 承诺用上，可以少花在采购上的时间。这是一家客户的表述。公告没有写价格、席位或折扣数字。\n\n## 这一窗口里为什么值得看\n\n页面日期是 2026 年 11 月 9 日，没有可用钟点，所以它和同日只标日期的另外三条放在一起，不互相比较早晚。它要和同一天的两篇模型稿一起读：Anthropic 发布 Fable 5.2，亚马逊云科技把 Fable 5.2 放上 Bedrock；OpenAI 这边走的是另一条路，把面向企业员工的 ChatGPT Enterprise 放进 AWS 的采购目录。\n\n公告还写了一句用量背景：每周有超过 12 亿人使用 ChatGPT。这是 OpenAI 在这篇商业公告里给出的数字，用来说明 Enterprise 把「人们已经熟悉的 ChatGPT」带进工作，而不是一项独立的第三方统计。\n\n对中国读者，这条的意义主要是采购和合规路径，不是个人账号能直接领用的额度。本站的薅羊毛栏目不收录它。能否购买、能否把花费计入承诺消费，都以客户团队确认的资格为准。\n\n## 可以核对的事实\n\n原文没有写上架的具体 AWS 区域、合同期限或是否支持通过合作伙伴转售。\n\n开始使用的方式，原文是联系 OpenAI 或 AWS 客户团队，并给出 Marketplace 入口。抓取正文里的入口被转成「here」，没有留下可单独核对的第二个 URL，因此本页只链公告本身。\n\n「与直接购买功能同步」是官方承诺的范围：模型、功能和同步发布。不要把它理解成 Bedrock 上的 API 价格或数据保留政策也一并改变。那些不在这篇公告里。\n"
+      "detail": "## 它是什么\n\n这是 OpenAI 在 2026 年 11 月 10 日发布的产品公告，介绍以测试版上线的 Businesses in ChatGPT。商家可以通过 Business Hub 认领自己的主体、管理对外信息，并查看人们如何在 ChatGPT 里与自己发生互动。与此同时，合格商家可以推出 Business Agent，作为代表品牌、直接和用户对话的智能体。公告写明先从美国合格的电商和在线服务商家开始。\n\n官方把 ChatGPT 的周活跃用户写成 12 亿。这是公司自己公布的规模数字，本榜照录，没有另做统计核实。\n\n## 它做什么\n\n在 Business Hub 里，公司可以认领组织，通过验证后更新关键资料，并添加带价格和库存的自助商品 Feed，让 ChatGPT 在介绍产品和服务时用上商家提供的较新信息。任何在 ChatGPT 可用地区、符合资格的商家都可以通过 Business Hub 认领；已有的 OpenAI 企业客户和广告客户可以走客户代表；Shopify 商家可以从 Business Hub 或 Shopify 后台连接店铺以简化验证。公告还写，Shopify 商家中符合条件的商品已经通过 Shopify Catalog 进入 ChatGPT。\n\n洞察是汇总后的：包括被提及次数、导向网站的点击，以及在引用了该商家网站的对话里常见的发现主题。官方写明不会向商家提供用户的原对话，也不会提供 Business Agent 的聊天内容；洞察只在达到一定汇总门槛后才能看到。\n\nBusiness Agent 在认领并验证之后才能搭建、测试和上线。当某个商家出现在模型回答里，用户可以点进它的 ChatGPT 主页；如果已经有 Business Agent，用户可以选择另开一场对话，用商家自己的信息做比较和追问。这场对话会被明确标注，与用户原来的 ChatGPT 会话分开，也与 ChatGPT 自己的独立回答分开。商家还可以赞助自己的 Business Agent，作为 ChatGPT 广告的目的地；赞助位置同样会标注，并与普通回答分开。\n\n## 适合谁\n\n适合想在 ChatGPT 里认领官方信息、先从美国做电商或在线服务的商家，以及已经在用 Shopify 的卖家。普通用户会看到的变化是：遇到带主页的商家时，可以选择去和该品牌的代理聊，而不必把品牌问答和 ChatGPT 的独立回答混在一起。公告写明后续计划扩展到更多市场和品类，并给需求更复杂的组织提供工具，但没有给出时间表。\n\n## 这一窗口里为什么值得看\n\n这是 11 月 10 日晚报之后，OpenAI 在消费级产品里把「商家存在」和「可对话的品牌代理」产品化的一步，和 Anthropic 当天推出的办公套件、Google 开放 Carbon 落在同一窗口。对卖家，重点是可认领、可更新、可看汇总数据；对用户，重点是代理对话被单独标注，而且官方承诺不把对话原文交给商家。\n\n需要同时看到范围：Business Agent 目前只面向美国合格的电商和在线服务类别；认领主页的地区范围更宽，但是否具备代理能力要看资格。广告与赞助是可选项，不是默认把所有商家回答变成广告。\n\n## 可以核对的事实\n\n上线状态：测试版。周活跃用户数字 12 亿来自这篇官方公告。Business Agent 的首发范围是美国合格电商和在线服务商家。隐私条款：不向商家分享用户对话或 Business Agent 聊天；洞察需达到汇总门槛。官方页日期为 November 10, 2026；本榜没有读到该页的机器可读发表钟点。\n"
     }
   ]
 }
