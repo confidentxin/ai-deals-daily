@@ -4,8 +4,145 @@
   "preview": 10,
   "empty": false,
   "emptyMessage": "今日暂无重要资讯，晚间 19:30 起每日更新",
-  "note": "2026-11-12 早报（北京时间）整理，收录上次晚报（约 19:30）之后至本次早报窗口内的官方发布，共 2 条，按公告时间从新到旧排列。Google Labs Tabletop 的 JSON-LD datePublished 为 2026-11-11T16:00:00+00:00（北京时间 11 月 12 日 00:00）；页面可见日期与 article:published_time 只写 2026-11-11，本榜采用 JSON-LD 钟点。AlphaGenome 2 的 article:published_time / datePublished 为 2026-11-11T15:00:00+00:00（北京时间 11 月 11 日 23:00）。置信度 A 表示来自官方原文。",
+  "note": "2026-11-12 晚报（北京时间）整理，在早报 2 条基础上并入 8 条新内容（其中 Gemini Decisions API、Runway Praxis-1 等落在早报窗口但早报漏收，晚报补入），去重后共 10 条，按公告时间从新到旧排列。早报条目及其时刻说明保留。带精确钟点的条目取自官方页面 JSON-LD datePublished；原文未标钟点的条目 timeLabel 只写日期，sortAt 采用媒体发表时间或当日零点，仅用于排序，详见各条 timeNote。置信度 A 表示来自官方原文，B 表示可靠媒体报道、官方未单独核实。",
   "items": [
+    {
+      "id": "nvidia-board-huang-meeting",
+      "title": "NVIDIA 董事会开会讨论 CEO 黄仁勋去留",
+      "badge": "N",
+      "summary": "CNBC 报道，NVIDIA 董事会已开会讨论是否撤换 CEO 黄仁勋，截至报道时未公布结果；美股盘前股价下跌约 5%，多家券商下调目标价。属于媒体报道，NVIDIA 尚无官方结论。",
+      "publishedAt": "2026-11-12",
+      "sortAt": "2026-11-12T11:06:41+00:00",
+      "timeLabel": "2026-11-12（原文未标钟点）",
+      "timePrecision": "date",
+      "timeNote": "这是持续进展中的媒体报道，不是 NVIDIA 官方公告。CNBC 报道的 datePublished 为 2026-11-12T11:06:41+00:00（北京时间 11 月 12 日 19:06），sortAt 采用这一媒体时间，只用于排序。截至该报道，董事会未公布任何决定。",
+      "source": "CNBC 报道",
+      "confidence": "B",
+      "url": "https://www.cnbc.com/2026/11/12/nvidia-boards-crisis-meeting.html",
+      "links": [
+        {
+          "label": "CNBC：董事会会议进展",
+          "url": "https://www.cnbc.com/2026/11/12/nvidia-boards-crisis-meeting.html"
+        },
+        {
+          "label": "CNBC：分析师观点",
+          "url": "https://www.cnbc.com/2026/11/12/jensen-huang-nvidia-affair-ceo.html"
+        }
+      ],
+      "detail": "## 它是什么\n\n这是一条公司治理层面的突发新闻。据 CNBC 11 月 12 日报道，NVIDIA 董事会已开会讨论是否撤换联合创始人兼 CEO 黄仁勋。起因是《纽约时报》等媒体关于其个人关系的报道。截至 CNBC 这篇报道，董事会没有公布任何结果，NVIDIA 也没有发布官方结论。\n\n## 它做什么（对市场的直接影响）\n\nCNBC 写到：NVIDIA 股价在美股盘前下跌约 5%；Bernstein、Baird 等机构下调评级或目标价，Morgan Stanley 把它移出「首选」名单。报道还提到，有美国参议员公开要求黄仁勋辞职，也有参议员办公室要求政府保留与 NVIDIA 对华出口先进 AI 芯片相关的文件。\n\n## 适合谁关注\n\n依赖 NVIDIA GPU、CUDA 生态的开发者和企业，以及关注 AI 算力供应与对华芯片出口管制的读者。短期内不会改变已有产品与软件的可用性，但可能影响公司战略和政策环境。\n\n## 为什么值得看\n\nNVIDIA 是 AI 算力的核心供应商，CEO 去留会影响路线图、对外合作与出口管制讨论。本条只是事态进展，最终以 NVIDIA 官方公告为准。\n\n## 可以核对的事实\n\nCNBC 报道：https://www.cnbc.com/2026/11/12/nvidia-boards-crisis-meeting.html （datePublished 2026-11-12T11:06:41+00:00）。截至报道，董事会无公开决定。本条未收录未经证实的传闻细节。"
+    },
+    {
+      "id": "openai-india-local-inference",
+      "title": "OpenAI API 在印度开放本地推理",
+      "badge": "O",
+      "summary": "OpenAI 宣布印度企业和开发者可让 GPT-6 Luna 的 API 请求在印度境内处理和推理，内容也存于印度。仅支持 Responses 与 Chat Completions，需开启零数据保留（ZDR）。",
+      "publishedAt": "2026-11-12",
+      "sortAt": "2026-11-12T07:47:00+00:00",
+      "timeLabel": "2026-11-12（原文未标钟点）",
+      "timePrecision": "date",
+      "timeNote": "多家印度媒体（PTI 通稿、The Economic Times、The Hindu）均写 OpenAI 于 11 月 12 日（周四）宣布，未给官方钟点。The Economic Times 最后更新时间为 2026-11-12 13:17 IST（北京时间 15:47），sortAt 采用这一媒体时间，只用于排序。",
+      "source": "PTI 通稿、The Economic Times、The Hindu 报道（引述 OpenAI 声明）",
+      "confidence": "B",
+      "url": "https://economictimes.indiatimes.com/ai/ai-insights/openai-brings-local-inference-to-india-starting-with-gpt-6-luna/articleshow/135760461.cms",
+      "links": [
+        {
+          "label": "The Economic Times 报道",
+          "url": "https://economictimes.indiatimes.com/ai/ai-insights/openai-brings-local-inference-to-india-starting-with-gpt-6-luna/articleshow/135760461.cms"
+        },
+        {
+          "label": "The Hindu 报道",
+          "url": "https://www.thehindu.com/business/openai-now-allows-enterprises-to-process-ai-requests-within-india/article71692799.ece"
+        },
+        {
+          "label": "CRN Asia：资格要求（ZDR）",
+          "url": "https://www.crnasia.com/india/news/2026/openai-brings-api-inference-residency-to-india-addresses-enterprise-data-localisation-needs"
+        }
+      ],
+      "detail": "## 它是什么\n\nOpenAI 把 API 的「数据驻留」从印度境内存储扩展到印度境内推理：符合条件的企业和开发者，可以让 API 请求的处理以及生成回复的模型计算都发生在印度，受支持的客户内容也存放在印度。印度的数据存储驻留选项最早于 2025 年 5 月推出。\n\n## 它做什么\n\n据 PTI 通稿和多家媒体引述的 OpenAI 声明：目前只支持 GPT-6 Luna，经 Responses API 和 Chat Completions API 的直接 API 调用；用法是新建一个 API 项目，存储和处理区域都选印度，并使用对应的印度区域端点。媒体引述 OpenAI 文档称，印度区域处理目前只对已开启零数据保留（ZDR）的组织开放，只支持标准按量付费，托管工具不可用。\n\n## 适合谁\n\n在印度有数据本地化合规要求的企业，尤其是金融服务等受监管行业。对中国开发者没有直接影响，但能看出 OpenAI 正在把区域推理逐步扩到日本、澳大利亚、印度等市场。\n\n## 为什么值得看\n\n很多受监管行业迟迟不上线 AI，卡在「数据在哪里被处理」而不只是「存在哪里」。OpenAI 印度企业负责人 Nitin Bawankule 在声明中也是这么说的。区域推理是大模型进入金融、政务场景的前提之一。\n\n## 可以核对的事实\n\nThe Economic Times：https://economictimes.indiatimes.com/ai/ai-insights/openai-brings-local-inference-to-india-starting-with-gpt-6-luna/articleshow/135760461.cms ；The Hindu：https://www.thehindu.com/business/openai-now-allows-enterprises-to-process-ai-requests-within-india/article71692799.ece 。本报告未找到 openai.com 上的单独公告页，故标 B。"
+    },
+    {
+      "id": "baidu-world-2026-app-models",
+      "title": "百度世界 2026 发布两款文心应用模型",
+      "badge": "Bd",
+      "summary": "11 月 12 日百度世界 2026 开幕式上，百度发布文心闪电深度思考模型与文心一镜微表情大模型，同步上线千帆平台向企业开放 API。李彦宏称坚持「模体并行、协同进化」。",
+      "publishedAt": "2026-11-12",
+      "sortAt": "2026-11-12T03:09:13+00:00",
+      "timeLabel": "2026-11-12（原文未标钟点）",
+      "timePrecision": "date",
+      "timeNote": "发布于 11 月 12 日百度世界 2026 开幕式，未查到带精确时刻的官方新闻稿。每日经济新闻报道时间为 2026-11-12 11:09:13（北京时间），sortAt 采用这一媒体时间，只用于排序。",
+      "source": "每日经济新闻、新华财经、快科技报道",
+      "confidence": "B",
+      "url": "https://www.nbd.com.cn/articles/2026-11-12/4645732.html",
+      "links": [
+        {
+          "label": "每日经济新闻报道",
+          "url": "https://www.nbd.com.cn/articles/2026-11-12/4645732.html"
+        },
+        {
+          "label": "新华财经快讯",
+          "url": "https://www.cnfin.com/kx/detail/20261112/4494509_1.html"
+        },
+        {
+          "label": "快科技：千帆上线与定价",
+          "url": "https://news.mydrivers.com/1/1165/1165303.htm"
+        }
+      ],
+      "detail": "## 它是什么\n\n百度在 11 月 12 日的百度世界 2026 开幕式上发布两款「文心应用模型」：文心闪电深度思考模型、文心一镜微表情大模型。李彦宏在会上表示，大模型一面要「向上突破」推高智能上限，一面要「向实扎根」，百度会坚持「模体并行、协同进化」，让大模型为应用而优化。\n\n## 它做什么\n\n据快科技报道：文心闪电深度思考模型最初为百度搜索研发，要求兼顾复杂需求理解、推理和工具调用，同时能快速响应海量请求。文心一镜微表情大模型面向高情感表现力的视频创作，文本、视觉、语音三态一体建模，支持最长 4000 字文本驱动，用覆盖 6 大维度、200 个子维度的描述体系刻画面部表情、肢体动作和情绪变化。两款模型同步上线百度智能云千帆平台，面向企业客户和合作伙伴开放 API。\n\n## 适合谁\n\n在千帆平台上做搜索问答、智能体、数字人或视频内容生产的企业开发者。个人用户暂无明确的免费入口信息。\n\n## 为什么值得看\n\n这是百度在昨天发布文心 5.5 Flash Preview 之后，又把面向具体场景的应用模型推上 API。快科技同时提到，文心 5.5 Flash Preview 在千帆的 API 限时五折，权重计划 11 月 25 日开源（文心 5.5 Flash Preview 已在 11 月 11 日晚报收录）。\n\n## 可以核对的事实\n\n每日经济新闻：https://www.nbd.com.cn/articles/2026-11-12/4645732.html ；新华财经：https://www.cnfin.com/kx/detail/20261112/4494509_1.html 。两款新模型的价格与评测数字，本报告未在公开报道中查到，不写。"
+    },
+    {
+      "id": "fractile-720m-series-c",
+      "title": "英国 AI 芯片公司 Fractile 融资 7.2 亿美元",
+      "badge": "Fr",
+      "summary": "英国推理芯片初创公司 Fractile 完成 7.2 亿美元 C 轮，英国主权 AI 基金参投，Thrive Capital、Founders Fund 等领投，估值据报约 70 亿美元。计划明年交付首批芯片和系统。",
+      "publishedAt": "2026-11-11",
+      "sortAt": "2026-11-11T19:34:55+00:00",
+      "timeLabel": "2026-11-11（原文未标钟点）",
+      "timePrecision": "date",
+      "timeNote": "未查到 Fractile 带精确时刻的官方新闻稿。TechCrunch 报道 datePublished 为 2026-11-11T19:34:55+00:00（北京时间 11 月 12 日 03:34），sortAt 采用这一媒体时间，只用于排序。",
+      "source": "TechCrunch、SiliconANGLE 报道（引述英国政府声明）",
+      "confidence": "B",
+      "url": "https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips/",
+      "links": [
+        {
+          "label": "TechCrunch 报道",
+          "url": "https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips/"
+        },
+        {
+          "label": "SiliconANGLE 报道",
+          "url": "https://siliconangle.com/2026/11/11/inference-chip-developer-fractile-raises-720m-in-funding/"
+        }
+      ],
+      "detail": "## 它是什么\n\nFractile 是一家做 AI 推理芯片的英国初创公司。据 TechCrunch，它完成 7.2 亿美元 C 轮融资，由 Thrive Capital、Founders Fund、Lightspeed Venture Partners 和 Redpoint 领投，英国主权 AI 基金参与。英国政府称估值「超过 50 亿英镑」，《金融时报》和路透社消息源报道约 70 亿美元。\n\n## 它做什么\n\nFractile 走全栈路线：除了芯片，还有让大模型在其芯片上跑得更快的机器学习编译器。硬件上，它在转型后把最常见的 DRAM 堆叠在每颗芯片之上，想绕开内存容量与速度之间的取舍；这种取舍在长链条智能体任务里尤其突出。CEO Walter Goodwin 表示，这笔钱将用于明年交付首批芯片和系统。\n\n## 适合谁关注\n\n关注推理成本、AI 芯片格局和欧洲算力自主的读者。目前还没有可购买或可试用的产品。\n\n## 为什么值得看\n\n推理正在成为 AI 成本的大头，专用推理芯片是降低成本的方向之一。这笔融资让 Fractile 与 Etched、Axelera 等一起成为融资最多的 AI 芯片初创公司之一，也是英国政府押注本土 AI 硬件的信号。\n\n## 可以核对的事实\n\nTechCrunch：https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips/ 。约 70 亿美元的估值来自媒体报道，英国政府原话是「超过 50 亿英镑」。"
+    },
+    {
+      "id": "gemini-decisions-api",
+      "title": "Google 推出 Gemini Decisions API",
+      "badge": "G",
+      "summary": "Google 发布 Gemini Decisions API 和新模型 Gemini Decision 1：不生成文字，而是一次对最多 1000 个是非、选择或打分问题给出校准概率，输入每百万 token 0.1 美元，输出不计费。",
+      "publishedAt": "2026-11-11T18:00:00+00:00",
+      "sortAt": "2026-11-11T18:00:00+00:00",
+      "timeLabel": "2026-11-12 02:00（北京时间）",
+      "timePrecision": "datetime",
+      "timeNote": "官方博客页面可见日期与 article:published_time 只写 2026-11-11；JSON-LD datePublished 为 2026-11-11T18:00:00+00:00，即北京时间 11 月 12 日 02:00，本榜采用这一钟点。dateModified 为 2026-11-11T18:15:48+00:00。该条落在今天早报窗口内，早报漏收，晚报补入。",
+      "source": "Google 官方博客与 Google AI Studio 文档",
+      "confidence": "A",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+      "links": [
+        {
+          "label": "Google 官方博客原文",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
+        },
+        {
+          "label": "Decisions API 官方文档",
+          "url": "https://aistudio.google.com/docs/decisions-api"
+        },
+        {
+          "label": "VentureBeat 报道",
+          "url": "https://venturebeat.com/technology/googles-gemini-decision-1-model-scores-up-to-1-000-questions-in-one-api-call"
+        }
+      ],
+      "detail": "## 它是什么\n\nGoogle DeepMind 产品经理 Min Choi 与首席科学家 Felix Yu 署名宣布 Gemini Decisions API，背后是新模型 Gemini Decision 1（`gemini-decision-1`），通过 Google AI Studio 里的 Gemini API（v1beta）提供。它不是聊天模型：不逐字生成答案，而是对你给出的候选答案打分。\n\n## 它做什么\n\n一次请求包含一份共享输入（文本、图片、音频、视频或 PDF，最多 256K token）和最多 1000 个相互独立的问题。问题分三类：`noul`（是/否，返回为「是」的概率）、`choice`（2 到 255 个选项中选一个，返回各选项概率）、`score`（按有序评分表打分）。每个答案都附 0 到 1 的置信度，方便把拿不准的情况交给后备流程或人工。官方称端到端延迟 150–250 毫秒，价格为每百万输入 token 0.10 美元，输出 token 为零、不计费。需要 google-genai SDK 3.2 或更高版本。\n\n## 适合谁\n\n做智能体和自动化流程的开发者：工具选择、策略合规检查、模型路由、上下文质量评分、内容审核和工单分类等「小决策」。不适合需要生成文本的场景，也不提供开放权重或自托管。\n\n## 为什么值得看\n\n智能体里大量调用其实只是在做分支判断，用生成式模型再解析文本既慢又不稳。这个 API 直接返回可用于 if 判断的概率，成本和延迟都低得多，是一种新的模型调用形态。\n\n## 可以核对的事实\n\n官方博客：https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/ （datePublished 2026-11-11T18:00:00+00:00）。文档：https://aistudio.google.com/docs/decisions-api 。延迟与价格为官方表述，本报告未实测。"
+    },
     {
       "id": "google-labs-tabletop",
       "title": "Google Labs 推出协作实验 Tabletop",
@@ -34,6 +171,27 @@
         }
       ],
       "detail": "## 它是什么\n\n这是 Google Labs 的一篇产品公告，作者署名为设计与工程负责人 Roman Nurik。官方把 Tabletop 写成一个面向实时协作的 Google Labs 实验：让一群人在同一个空间里一起筹划、讨论和做决定。\n\n它不是新的基础模型，也不是已经全面开放的正式产品，目前仍处在实验室内测阶段。\n\n## 它做什么\n\n按官方博客，使用者可以把链接、文件和想法放进一个空间，然后用 `@tabletop` 提示，或选择起始模板，生成可交互的旅行行程、聚餐投票、费用分摊和比赛对阵表。空间就绪后，把邀请链接发到群聊，其他人可以像在 Google 文档里那样同时使用。\n\n官方写明：Tabletop 正在美国向 18 岁及以上用户通过等候名单逐步开放，登记地址是 labs.google/tabletop。\n\n## 适合谁\n\n适合人在美国、年满 18 岁，并愿意排队试用 Google Labs 实验的小组：例如要一起订行程、投票或分摊费用的朋友和团队。目前没有对美国以外地区开放，也不能把它当成可在生产环境长期依赖的办公套件。\n\n## 这一窗口里为什么值得看\n\nJSON-LD 的发表时间是协调世界时 11 月 11 日 16:00，也就是北京时间 11 月 12 日 00:00，落在上次晚报之后到本次早报之间。这是 Google 在 Labs 里新开的协作入口，和已收录的 Workspace 功能扩大不是同一件事。因为仍要排队，而且仅限美国成人，对多数中文用户目前主要是了解动向，还不能直接使用。\n\n## 可以核对的事实\n\n官方博客：https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop/ ，datePublished 为 2026-11-11T16:00:00+00:00。等候名单：https://labs.google/tabletop 。开放范围：美国，18 岁以上，通过 waitlist 逐步推出。"
+    },
+    {
+      "id": "openai-children-safety-research",
+      "title": "OpenAI 出资 200 万美元支持儿童 AI 安全研究",
+      "badge": "O",
+      "summary": "OpenAI 在巴黎和平论坛签署《更安全儿童 AI 参与宪章》，承诺出资 200 万美元支持相关联盟的科研网络，研究 AI 对儿童安全与身心发展的影响，结果包括负面结论都将公开。",
+      "publishedAt": "2026-11-12",
+      "sortAt": "2026-11-11T16:00:00+00:00",
+      "timeLabel": "2026-11-12（原文未标钟点）",
+      "timePrecision": "date",
+      "timeNote": "OpenAI 官方页面只写 November 12, 2026，没有找到机器可读的发表时刻。sortAt 取北京时间 11 月 12 日 00:00，只用于排序，不是官方发布时间。签约本身发生在本周早些时候的巴黎和平论坛。",
+      "source": "OpenAI 官方公告",
+      "confidence": "A",
+      "url": "https://openai.com/index/children-first-declaration",
+      "links": [
+        {
+          "label": "OpenAI 官方公告",
+          "url": "https://openai.com/index/children-first-declaration"
+        }
+      ],
+      "detail": "## 它是什么\n\nOpenAI 官方公告：本周早些时候在巴黎和平论坛上，OpenAI 签署了《Charter of Engagement for Safer AI for Children》（更安全儿童 AI 参与宪章），并承诺出资 200 万美元，支持「AI 时代儿童权利与保护联盟」下的科研网络。\n\n## 它做什么\n\n这笔钱用于共享的测量工作：开发研究者可用的工具，更好地衡量 AI 给儿童带来的风险与机会，为更安全的产品和政策提供依据。宪章规定了安全、适龄 AI 的共同原则，并设有研究计划和保障研究独立性的机制：研究团队自主决定结论，结果会公开发表，包括负面或无结论的结果。OpenAI 还表示期待在欧盟《儿童法案》（EU Kids Act）制定过程中与欧洲政策制定者沟通。\n\n## 适合谁关注\n\n家长、教育工作者、做面向未成年人产品的团队，以及关注 AI 监管的读者。\n\n## 为什么值得看\n\n青少年使用 AI 的安全问题正成为各国立法焦点。OpenAI 在公告里重申支持全面的青少年 AI 安全立法，包括默认适龄保护、家长工具、定期风险评估等，这是判断行业规则走向的一个参考。\n\n## 可以核对的事实\n\n官方公告：https://openai.com/index/children-first-declaration （页面日期 November 12, 2026），金额 200 万美元。"
     },
     {
       "id": "deepmind-alphagenome-2",
@@ -71,6 +229,68 @@
         }
       ],
       "detail": "## 它是什么\n\n这是 Google DeepMind 的研究公告，介绍 AlphaGenome 2：新一代 DNA 序列模型，用来预测 DNA 序列及其变异如何影响特定人类细胞类型，从而帮助寻找疾病在细胞层面的驱动因素。作者署名为 Adam Gayoso、Natasha Latysheva、Pushmeet Kohli 与 Žiga Avsec。\n\n它接续去年发布的 AlphaGenome，以及后来的 AlphaGenome Atlas。Atlas 对人类基因组全部约 90 亿种单碱基变化做了预计算。第一代模型对一段约 100 万个碱基的 DNA，并行给出多种组织与细胞系的结果；AlphaGenome 2 改成条件模型，在同样长度的序列之外，还把目标生物学条件（组织、细胞类型或状态）作为输入，一次预测一种条件。\n\n## 它做什么\n\n官方导语把训练数据写成 1 亿多个细胞图谱、覆盖 68 种组织；后文训练部分写超过 1.07 亿个单细胞图谱，并同时使用了人和小鼠的批量与单细胞数据。官方称，它比此前最强模型多识别出近一倍会改变细胞中基因表达的变异。在 TenK10K 这一覆盖 28 种主要免疫细胞的单细胞数据集上，官方给出的对照是：相对在单细胞数据上微调后的原版 AlphaGenome 及其他专门工具，它识别出的因果变异为 30% 对 16%，方向性基因效应为 43% 对 23%。这些数字来自官方博客，本榜未复测。\n\n它还能在不重新训练的情况下泛化到新的单细胞实验。研究者可上传只包含几十个细胞的单细胞 RNA-seq 快照，模型把基因表达压缩成细胞状态表示后再做条件预测。预测的核心读数仍包括基因表达、组蛋白修饰和染色质可及性，并新增了 DNA 甲基化；也可以根据一种已测读数去补全未测读数。公告举了两个例子：它在计算上复现了肠道巨噬细胞中 ETS2 相关炎症性肠病变异的发现；在未见过的新冠 mRNA 疫苗研究单细胞数据上，区分了活化与静息的 T 细胞，并显示与重症相关的变异在活化状态下对基因活动的干扰更强。\n\n获取路径方面，官方写明 AlphaGenome 2 即日起通过 AlphaGenome API 向非商业研究开放，商业研究为私人预览。配套文档把每次调用写成针对一种参考条件，或使用至多 256 个自有单细胞做表达条件化。博客还提到，稍后将在 Google Antigravity 中放出 AlphaGenome 2 Skills。官方同时声明：该模型仅供研究使用，尚未经过临床或诊断用途的验证或批准。\n\n## 适合谁\n\n适合做人类遗传学、单细胞生物学和药物靶点研究的科研人员，以及已经在使用 AlphaGenome API 或 Atlas 的实验室。这不是面向普通开发者的通用对话模型，也不能用于临床诊断。商业研究目前只是私人预览，需要按官方渠道申请。\n\n## 这一窗口里为什么值得看\n\n发表时间是协调世界时 11 月 11 日 15:00，也就是北京时间 11 月 11 日 23:00，落在上次晚报截稿之后，是本窗口最重要的基础科研模型发布。它把预测从组织平均值推进到特定细胞类型和细胞状态，并允许用研究者自己的单细胞数据做条件化，而不必重新训练。需要同时记住边界：评测与案例都是官方表述；模型明确不做临床用途。\n\n## 可以核对的事实\n\n官方博客：https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/ ，datePublished 为 2026-11-11T15:00:00+00:00。输入序列长度：约 100 万个碱基，一次预测一种条件。训练数据：导语为 1 亿多个细胞图谱、68 种组织，后文为超过 1.07 亿个单细胞图谱。TenK10K 对照：因果变异 30% 对 16%，方向性基因效应 43% 对 23%。API：非商业研究即日开放，商业研究为私人预览；文档写明自有单细胞条件化上限为 256 个细胞。仅供研究使用，未批准用于临床或诊断。"
+    },
+    {
+      "id": "runway-praxis-1-open-weights",
+      "title": "Runway 开放机器人模型 Praxis-1 权重",
+      "badge": "Rn",
+      "summary": "Runway 以 Apache 2.0 许可开放 27B 参数世界动作模型 Praxis-1，可商用，附推理与微调代码。官方称在 NVIDIA RoboLab-120 榜单上成功率 46.2%，在世界动作模型中排第一。",
+      "publishedAt": "2026-11-11T15:00:00.000Z",
+      "sortAt": "2026-11-11T15:00:00+00:00",
+      "timeLabel": "2026-11-11 23:00（北京时间）",
+      "timePrecision": "datetime",
+      "timeNote": "Runway 官方新闻页 JSON-LD datePublished 与 dateModified 均为 2026-11-11T15:00:00.000Z，即北京时间 11 月 11 日 23:00。官方 X @runwayml 同日发帖。该条落在今天早报窗口内，早报漏收，晚报补入。",
+      "source": "Runway 官方新闻与研究页",
+      "confidence": "A",
+      "url": "https://runway.com/news/company-news/praxis-1-is-now-available",
+      "links": [
+        {
+          "label": "Runway 官方公告",
+          "url": "https://runway.com/news/company-news/praxis-1-is-now-available"
+        },
+        {
+          "label": "Runway 研究文章",
+          "url": "https://runway.com/research/praxis-1-video-pretraining-to-robot-control"
+        },
+        {
+          "label": "GIGAZINE 报道",
+          "url": "https://gigazine.net/gsc_news/en/20261112-praxis-1"
+        }
+      ],
+      "detail": "## 它是什么\n\nPraxis-1 是视频生成公司 Runway 的第一个「世界动作模型」，9 月首次亮相，11 月 11 日起以 Apache 2.0 许可开放权重，商用也可以。它是一个 270 亿参数的混合专家扩散 Transformer，同时预测视频和机器人动作，建立在 Runway 通用世界模型同样的大规模视频预训练之上。\n\n## 它做什么\n\n模型先从大量视频里学会物体如何运动、任务如何展开，再用来控制真实机器人。官方数字：在 NVIDIA RoboLab-120 榜单上，1200 个回合成功率 46.2%，高于 FLUX 3 Action 的 42.9%、Cosmos3 Nano 的 36.8% 和 π0.5 的 28.0%；在训练中从未见过的 Google RT-1 机器人上微调后，SimplerEnv 成功率 80.0%，原版 RT-1 策略为 52.4%。权重、推理和微调代码（支持全量微调与 LoRA）都已开放，可在 GitHub、Hugging Face（原生支持 LeRobot）、vLLM-Omni 获取，也可在 Reactor 上托管推理；硬件覆盖 H100、B200、RTX 5090、RTX PRO 6000 到机器人端的 Jetson Thor。\n\n## 适合谁\n\n机器人和具身智能方向的研究者、硬件团队和小型创业公司。需要有自己的机器人或仿真环境才能真正用起来。\n\n## 为什么值得看\n\nRunway 的研究称，普通网络视频作为预训练数据，对策略效果的帮助与机器人遥操作视频相当。若属实，训练可用的机器人策略就不再被昂贵的遥操作数据卡住，小团队也能做。这也是视频生成公司跨进机器人领域的一个具体落地。\n\n## 可以核对的事实\n\n官方公告：https://runway.com/news/company-news/praxis-1-is-now-available （datePublished 2026-11-11T15:00:00.000Z）。评测数字均为 Runway 官方表述，本报告未复测。"
+    },
+    {
+      "id": "openai-yang-mills-panel",
+      "title": "Gross 委员会确认 OpenAI 杨-米尔斯证明",
+      "badge": "O",
+      "summary": "诺奖得主 David Gross 牵头的委员会发布文件，确认 OpenAI 模型生成、经 Lean 形式化验证的证明，按标准表述证明了纯杨-米尔斯理论的存在；但并未证明质量间隙。Lean 源码已公开。",
+      "publishedAt": "2026-11-11",
+      "sortAt": "2026-11-11T12:30:00+00:00",
+      "timeLabel": "2026-11-11（原文未标钟点）",
+      "timePrecision": "date",
+      "timeNote": "据《科学美国人》，委员会 11 月 9 日发声明预告结论，并于美国时间 11 月 10 日晚发布说明文件和 Lean 验证确认。《科学美国人》报道 datePublished 为 2026-11-11T07:30:00-05:00（北京时间 11 月 11 日 20:30），sortAt 采用这一媒体时间，只用于排序。",
+      "source": "《科学美国人》报道；委员会 GitHub 仓库与 KITP 声明",
+      "confidence": "B",
+      "url": "https://github.com/yang-mills-group/OpenAI-YM-20261028",
+      "links": [
+        {
+          "label": "Lean 证明与验证材料（GitHub）",
+          "url": "https://github.com/yang-mills-group/OpenAI-YM-20261028"
+        },
+        {
+          "label": "委员会声明（KITP）",
+          "url": "https://www.kitp.ucsb.edu/sites/default/files/3rd-Statement-About-Quantum-YangMills-Theory_Nov-9.pdf"
+        },
+        {
+          "label": "《科学美国人》报道",
+          "url": "https://www.scientificamerican.com/article/openais-shepherds-affirm-blockbuster-physics-result/"
+        },
+        {
+          "label": "Science 报道",
+          "url": "https://www.science.org/content/article/ai-rivals-tackle-one-physics-deepest-mathematical-challenges"
+        }
+      ],
+      "detail": "## 它是什么\n\nOpenAI 此前用大模型做出一份关于杨-米尔斯理论的数学证明。杨-米尔斯问题是克雷研究所千禧年大奖难题之一，也是粒子物理标准模型的数学基础。为避免像 10 月一次性放出 700 多篇 AI 证明那样引发争议，OpenAI 请理论物理学家、诺奖得主 David Gross 牵头一个五人委员会，负责审阅和发布这份证明。\n\n## 它做什么\n\n据《科学美国人》：委员会 11 月 9 日发声明预告结论，美国时间 11 月 10 日晚发布说明证明思路的文件，并确认证明已在形式化证明语言 Lean 中通过验证。委员会认为，该结果「按物理和数学的标准问题表述，证明了纯杨-米尔斯理论的存在」，即作为四维 Wilson 格点规范理论的标度极限存在。但它没有证明无限体积极限的唯一性，也没有证明「质量间隙」，而质量间隙正是千禧年难题要求的关键部分。Lean 源码和验证材料已放在 GitHub。\n\n## 适合谁关注\n\n关注 AI 做数学与科研能力的读者、数学和物理研究者。\n\n## 为什么值得看\n\n这是大模型产出的结果第一次在千禧年难题相关问题上获得顶级物理学家组成的委员会确认，并且有机器可复核的 Lean 证明。同时也有数学家批评这种「委员会把关后再发布」的做法不够开放，认为应让社区直接审阅。\n\n## 可以核对的事实\n\nGitHub：https://github.com/yang-mills-group/OpenAI-YM-20261028 ；《科学美国人》：https://www.scientificamerican.com/article/openais-shepherds-affirm-blockbuster-physics-result/ 。本条不代表千禧年大奖难题已被解决：质量间隙未被证明。"
     }
   ]
 }
