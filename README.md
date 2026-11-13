@@ -16,8 +16,8 @@
 
 ## 今日版：2026-11-13
 
-- 核实时间：2026-11-13 09:00（北京时间）
-- 新增：0 条；补录：0 条；急报：1 条；过期：2 条
+- 核实时间：2026-11-13 12:00（北京时间）
+- 新增：0 条；补录：0 条；急报：1 条；过期：3 条
 - 历史版本见 [`archive/`](archive/)。
 
 <a name="urgent"></a>
@@ -204,11 +204,6 @@
 - 内容：火山引擎 11.11 AI 智选活动：官方活动页写“豆包旗舰模型 19 元起，更有 2500 万 Tokens 免费领取”；官方规则确认活动名称为「11.11 AI 智选」、面向中国大陆用户；但 2500 万 Tokens 的分项拆分（每模型多少、是否每日刷新、是否须关闭安心体验模式）官方规则正文未写，以活动页与方舟控制台公示为准，不要把二手文中的“每模型 50 万 / 每日 200 万”当成已核实口径。官方活动页：https://www.volcengine.com/activity/ai618 ；官方规则：https://docs.volcengine.com/docs/acitvity-rule/mega-sale
 - 额度：官方活动页写 2500 万 Tokens 免费领取；分项额度、适用模型、是否须实名以活动页与控制台公示为准
 - 截止：活动至 2026-11-30 23:59:59（北京时间）；免费 Token 领取是否与付费档同一截止，规则正文未单列，以活动页为准
-
-#### 蚂蚁数科 DTMaaS · Atria Dawn 及 Preview 免费至 11 月 13 日（2026-11-11 20:30 新增，官方站点公告已核实）
-- 内容：Atria Dawn 及 Preview 限时免费调用；免费期结束后 Preview 请求将路由至正式版。官方站点公告接口：https://maas.antdigital.com/api/site-notice ；官方模型市场页：https://maas.antdigital.com/models
-- 额度：限时免费调用；官方站点公告未写每人 Token 总量、是否需绑卡或实名，额度与单价以控制台 / 模型页为准
-- 截止：免费至 2026-11-13 10:00（北京时间）
 
 #### 字节 TRAE 中国版 · 会员续享 TRAE 宝限免（2026-11-11 20:30 新增，官方活动页已核实）
 - 内容：11 月 9 日至 15 日，TRAE 会员继续限免使用开发者个人助理 TRAE 宝问答与下任务，不消耗积分；与 11 月 2 日至 8 日面向全部用户的限免周不是同一档，会员续期单独计；需 TRAE 桌面端 3.4.13 及以上；暂不支持视频生成。官方活动页：https://docs.trae.cn/ide_use-trae-bao-for-free-with-no-credits-required
@@ -546,7 +541,6 @@
 ### 即将到期：3–5 天内
 
 - OpenRouter LiquidAI LFM2.5-2.6B `:free` 今日到期（2026-11-13，官方模型接口已核实）。
-- 蚂蚁数科 DTMaaS Atria Dawn 及 Preview 免费至 11 月 13 日 10:00。
 - Vercel Ampersand v0.1 免费至 11 月 13 日。
 - Nous Portal LongCat-2.5 免费约至 11 月 13 日。
 - Parallel Decisions Fast 免费 7 天约至 11 月 13 日。
@@ -754,6 +748,10 @@
 #### LLMTR · Qwen3.8-Max 免费
 - 内容：LLMTR 模型页列出 Qwen3.8-Max（Ücretsiz，即免费）免费调用。官方模型页：https://llmtr.com/models
 - 截止：约至 2026-11-13 08:00（北京时间；官方模型页未写截止，截止口径来自多家第三方一致转述）；2026-11-13 09:00 复核官方模型目录已无 `qwen/qwen3.8-max-free`，仅剩付费版 `qwen/qwen3.8-max`，移入归档
+
+#### 蚂蚁数科 DTMaaS · Atria Dawn 及 Preview 免费
+- 内容：Atria Dawn 及 Preview 限时免费调用；免费期结束后 Preview 请求将路由至正式版。官方站点公告接口：https://maas.antdigital.com/api/site-notice
+- 截止：免费至 2026-11-13 10:00（北京时间）已到期；2026-11-13 12:00 复核官方站点公告接口确认免费期已结束，移入归档
 
 <a name="notes"></a>
 ## 说明
