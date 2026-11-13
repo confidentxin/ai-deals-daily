@@ -16,8 +16,8 @@
 
 ## 今日版：2026-11-13
 
-- 核实时间：2026-11-13 12:00（北京时间）
-- 新增：0 条；补录：0 条；急报：1 条；过期：3 条
+- 核实时间：2026-11-13 20:30（北京时间）
+- 新增：8 条；补录：1 条；急报：0 条；过期：0 条
 - 历史版本见 [`archive/`](archive/)。
 
 <a name="urgent"></a>
@@ -209,6 +209,11 @@
 - 内容：11 月 9 日至 15 日，TRAE 会员继续限免使用开发者个人助理 TRAE 宝问答与下任务，不消耗积分；与 11 月 2 日至 8 日面向全部用户的限免周不是同一档，会员续期单独计；需 TRAE 桌面端 3.4.13 及以上；暂不支持视频生成。官方活动页：https://docs.trae.cn/ide_use-trae-bao-for-free-with-no-credits-required
 - 额度：限免 Query 次数 1000；达到次数后若继续执行将开始消耗个人积分
 - 截止：2026-11-09 00:00 至 2026-11-15 23:59:59（北京时间）
+
+#### MOSS API · Nex-N2.6 限时免费（2026-11-13 20:30 新增，多源交叉、官方未核实）
+- 内容：基于 GLM-5.3-Flash 后训练的多模态智能体模型 Nex-N2.6（模型 ID `nex-n2.6`，固定版本 `nex-n2.6-2026-11-05`）在 MOSS API 限时免费调用，每次请求消耗 0 Credits；兼容 OpenAI Chat Completions / Responses 与 Anthropic Messages；权重已在 GitHub / Hugging Face 公开。聚合站、个人博客与 LINUX DO 三类渠道口径一致（0 Credits、未公布截止），官方模型文档本次未直读到原文，细则以官方页为准。官方平台：https://platform.moss.cn/
+- 额度：每次请求 0 Credits；持有有效 MOSS API Key 即可调用；每日次数 / Token 上限、是否需实名、绑卡要求各来源均未提及
+- 截止：截止未知（多源均称限时、未公布结束日期）
 
 <a name="overseas"></a>
 ### 进行中：需要海外账号 / 地区受限
@@ -417,11 +422,11 @@
 - 截止：月度额度（自 2026 年 9 月 23 日起上线）；长期机制，以官方页为准
 - 限制：需海外 Google 服务；中国大陆资格以实际可用为准
 
-#### Devin · SWE-2 Flash 免费至 11 月 30 日（2026-11-09 20:30 补录，官方博客已核实）
-- 内容：Cognition 官方博客 2026-11-04 发布：SWE-2 的轻量版编码模型 SWE-2 Flash（基于 Thinking Machines Inkling-Small，276B 总参 / 12B 激活），在 Devin Desktop 和 Devin CLI 内免费使用；仅限这两个客户端入口，无独立 API、无公开权重。官方博客：https://cognition.com/blog/swe-2-flash
-- 额度：免费使用，官方未公布每日次数或 Token 数字，也未公布免费期后的每 Token 单价（只说价格约为 SWE-2 的五分之一）；官方页未写需绑卡
-- 截止：免费至 2026-11-30（官方博客原文“Free through 11/30”）；精确时刻与时区官方页未写
-- 限制：需海外账号（Devin）；海外服务，账号、网络与数据合规请自行确认，公司代码勿乱传
+#### Devin · SWE-2 / SWE-2 Flash 免费规则更新（2026-11-13 20:30 更新，官方博客与文档已核实）
+- 内容：Cognition 官方博客 2026-11-04 发布：SWE-2 的轻量版编码模型 SWE-2 Flash（基于 Thinking Machines Inkling-Small，276B 总参 / 12B 激活），在 Devin Desktop 和 Devin CLI 内免费使用；仅限这两个客户端入口，无独立 API、无公开权重。2026-11-12 官方博客更新：SWE-2 在 Desktop / CLI 对 Teams / Pro / Max 付费套餐转为永久免费权益；Teams 新增 Free mode，每用户 2 个并发免费 SWE-2 云端会话；SWE-2 Flash 在 Free 档可用 Medium，High / Max 需付费档。官方博客：https://cognition.com/blog/swe-2-flash ；Teams 博客：https://devin.ai/blog/devin-teams-plan
+- 额度：免费使用，官方未公布每日次数或 Token 数字；SWE-2 Flash 免费期后官方文档写 $0.10 输入 / $0.50 输出每百万 Token（本次官方文档页未直接读到该价目，以文档页为准）；官方页未写需绑卡
+- 截止：SWE-2 Flash 免费至 2026-11-30（官方博客原文“Free through 11/30”）；SWE-2 自助套餐限免同样至 11 月 30 日，付费套餐（Teams / Pro / Max）内 Desktop / CLI 的免费 SWE-2 为永久权益；另有说法称 SWE-2 Flash 延至 12 月 4 日，本次官方文档页未见该句，待复核，暂按 11 月 30 日计
+- 限制：需海外账号（Devin）；海外服务，账号、网络与数据合规请自行确认，公司代码勿乱传；SWE-2 永久免费限付费套餐，免费档仅 SWE-2 Flash Medium 与 Teams Free mode 的 2 个并发会话
 
 #### Pika · H3 Flex 每日免费生成（2026-11-09 20:30 新增，官方页已核实）
 - 内容：Pika H3 Flex 视频生成模型（5–15 秒带同步音频）Launch Promo：每天 15 次免费生成；同期全部生成 5 折属付费折扣部分。官方页：https://pika.art/pika-h3-flex
@@ -536,6 +541,54 @@
 - 额度：新用户 $10 免费额度；官方平台页与定价页均未写需绑卡
 - 截止：$10 赠金为上线首发活动的一部分，官方未另写单独截止日，以活动页为准
 - 限制：需海外账号（韩国基础设施；中国大陆可达性未知）
+
+#### Google · Gemini 4 Hydrogen 免费层（2026-11-13 20:30 新增，官方定价页已核实）
+- 内容：11 月 12 日发布的 Gemini 4 家族快速模型 `gemini-4-hydrogen`（1M 上下文，新增 `xhigh` 思考档，面向日常编码与智能体工作流），Gemini API 免费层与 Google AI Studio 可免费调用；Gemini App 与 Google 搜索免费用户也可用。官方定价页：https://aistudio.google.com/docs/pricing ；官方新功能页：https://aistudio.google.com/docs/whats-new-gemini-4-hydrogen
+- 额度：免费层输入、输出、上下文缓存均为免费（Free of charge），受免费层限流；免费层数据会用于改进 Google 产品；Batch / Flex 无免费层；Search / Maps grounding 免费层不可用；付费层输入 $1.50 / 输出 $7.50 每百万 Token
+- 截止：长期免费层，无截止
+- 限制：需海外账号；Gemini API 免费层不支持中国大陆
+
+#### Perplexity · Decider v1.3 / Decider Flash v1.3 `:free`（OpenRouter）（2026-11-13 20:30 新增，官方模型页已核实免费状态；截止约 11 月 19 日为多源交叉）
+- 内容：11 月 12 日发布的结构化决策模型（是非概率 / 多选 / 打分，v1.3 新增 `locate` 抽取），OpenRouter 上 `perplexity/pplx-decider-v1.3:free` 与 `perplexity/pplx-decider-flash-v1.3:free` 输入、输出均免费，262K 上下文；走 OpenRouter Decisions API，非聊天接口。官方模型页：https://openrouter.ai/perplexity/pplx-decider-v1.3:free ；官方博客：https://www.perplexity.ai/hub/blog/perplexity-decider
+- 额度：输入、输出定价均为 $0；免费端点通用限流（未充值账号每日上限更低）；无需绑卡；Perplexity 自家 Decisions API 仍按 $0.02 / $0.01 每百万输入 Token 收费，不在免费范围
+- 截止：约 2026-11-19（Perplexity 官方 X 帖称 free on OpenRouter until November 19，精确时刻与时区未写；OpenRouter 模型页未写到期日）
+- 限制：需海外账号（OpenRouter）；大陆直连可达性未知
+
+#### Thinking Machines · Inkling 2 Small `:free`（OpenRouter）（2026-11-13 20:30 新增，官方模型页已核实）
+- 内容：OpenRouter 上线 `thinkingmachines/inkling-2-small:free`，输入、输出均 $0；与已收录的 OpenCode Zen `inkling-2-small-free` 是不同渠道：本条可用 OpenRouter API Key 在任意客户端调用，不限 OpenCode。模型为 594B 总参 / 17B 激活 MoE，图/文输入，支持工具调用与结构化输出。官方模型页：https://openrouter.ai/thinkingmachines/inkling-2-small:free
+- 额度：输入、输出定价均为 $0；1,048,576 上下文，最多 131,072 输出 Token；免费端点通用限流；无需绑卡；免费端点数据政策以模型页为准
+- 截止：截止未知（官方模型接口 expiration_date 为空；上线于 2026-11-09）
+- 限制：需海外账号（OpenRouter）；大陆直连可达性未知
+
+#### Novita AI · Apodex 1.1 Mini 免费（2026-11-13 20:30 新增，官方模型页已核实）
+- 内容：Apodex 1.1 Mini（模型 ID `apodex/apodex-1.1-mini`，约 35B 参数 MoE，262K 上下文，支持函数调用、结构化输出与推理）在 Novita Serverless API 上输入、输出均为 $0；官方模型页标注“TIME LIMITED FREE”，10 月 1 日上线博客称 $0 定价为上线推广、非永久，可能调整。官方模型页：https://novita.ai/models ；模型详情页：https://novita.ai/models/model-detail/apodex-apodex-1.1-mini
+- 额度：输入、输出均为 $0；需注册 Novita 账号并创建 API Key；限流与免费期时长官方页未公布具体数字
+- 截止：截止未知（官方只写限时免费，未公布结束日）
+- 限制：需海外账号；大陆可达性未知
+
+#### Rime · STT 免费至 11 月 19 日 + 免费档每月 $50（2026-11-13 20:30 新增，官方定价页已核实）
+- 内容：Rime STT（英语 / 西班牙语实时语音转文字）在所有套餐上免费至 2026 年 11 月 19 日；另 Free 档每月 $50 用量（可用于 Prism、Mist v3、Coda v2 与 STT），按月续期、不结转。官方定价页：https://www.rime.ai/pricing ；官方公告：https://www.rime.ai/resources/rime-announces-stt
+- 额度：STT 免费期内并发限制仍生效；Free 档每月 $50 用量，无需绑卡；11 月 20 日起 Flex $0.002/分钟、Scale $0.0016/分钟
+- 截止：STT 免费至 2026-11-19（官方写 through November 19, 2026，未注时区）；每月 $50 用量长期按月续期
+- 限制：需海外账号；大陆可达性未知
+
+#### AMD · Token Lab 免费 API Key（2026-11-13 20:30 新增，多源交叉、官方未核实）
+- 内容：加入免费的 AMD AI 开发者计划后可领 Token Lab API Key（`tl-` 开头），可调 DeepSeek V4 / GLM-5.3 / Qwen3.8 / Gemma 4 等跑在 AMD GPU 上的开源模型，OpenAI 兼容；与已收录的“AMD Radeon Cloud · Token Factory 中国站”是两个计划，不要混用。官方页只写“instant API access through Token Lab”，10 点额度与 30 天有效期官方页未见数字，由聚合站、LINUX DO 与 X 多源一致口径，额度以控制台实际显示为准。官方计划页：https://developer.amd.com/ai-developer-program/
+- 额度：多源称自带 10 点额度、激活后 30 天有效；各模型扣点费率未知；多源称无需绑卡
+- 截止：额度激活后 30 天（多源口径）；活动本身截止未知
+- 限制：需海外账号（全球版计划）；大陆可达性未知
+
+#### Fish Audio · Agents 新账号 $5 试用余额（2026-11-13 20:30 新增，官方文档已核实）
+- 内容：11 月 10 日推出 Live 3 语音智能体后，Fish Audio Agents 每个账号一次性 $5 试用余额（约 70 分钟对话），可用于网页会话、电话、号码租用、Token 计费模型与模拟测试；Builder 预览通话免费、不扣余额。与已收录的 Fish Audio S2.1 Pro Free 语音 API 不是同一口径。官方定价文档：https://docs.fish.audio/agents/pricing
+- 额度：每账号一次性 $5 试用余额，约 70 分钟对话；用完后从 API 预付余额扣费
+- 截止：长期（一次性试用余额，未写截止）
+- 限制：需海外账号；绑卡要求官方文档未提；大陆可达性未知
+
+#### IFM · K2 Horizon 每 Key 每天 1000 万 Token（2026-11-13 20:30 补录，多源交叉、官方未核实）
+- 内容：阿联酋 IFM 开源推理模型 K2 Horizon（`IFM/K2-Horizon-375B-A23B`，375B 总参 / 23B 激活），官方 API 每个 Key 每天 1000 万 Token 额度，OpenAI 兼容（api.ifm.ai/v1）；官方 Limits 页原句“Every API key gets 10,000,000 tokens per day”，但官方页未见“免费 / 价格”原句，“免费”由聚合站与 X 多源一致，是否收费请以控制台实际为准。官方 Limits 页：https://docs.ifm.ai/docs/limits.md ；快速开始：https://docs.ifm.ai/docs/quickstart.md
+- 额度：每 Key 每日 1000 万 Token（输入输出合计），00:00 UTC（北京时间 08:00）重置，超额返回 429；绑卡、付费价未知
+- 截止：截止未知（官方未写结束日；非今日新上线，官方 Limits 页 2026-09-02 更新）
+- 限制：需海外网络；大陆可达性未知
 
 <a name="expiring"></a>
 ### 即将到期：3–5 天内
