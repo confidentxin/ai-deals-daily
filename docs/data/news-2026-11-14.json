@@ -1,0 +1,209 @@
+{
+  "asOf": "2026-11-14",
+  "timezone": "Asia/Shanghai",
+  "preview": 10,
+  "empty": false,
+  "emptyMessage": "今日暂无重要资讯，晚间 19:30 起每日更新",
+  "note": "2026-11-14 早报（北京时间）整理，覆盖 11 月 13 日晚报之后至 11 月 14 日 08:00，另补录此前漏收的 Claude Meetings 与 DeepMind 数据集两条，共 7 条，按公告时间从新到旧排列。带精确钟点的条目 timeLabel 用北京时间；官方只给日期的条目 timePrecision 为 date，timeLabel 只写日期，sortAt 采用媒体发表时间或当日零点，仅用于排序，详见各条 timeNote。置信度 A 表示来自官方原文，B 表示可靠媒体报道、官方未单独核实。",
+  "items": [
+    {
+      "id": "nvidia-blackwell-traces-chinese-models",
+      "title": "TechCrunch：研究称多家中国开源模型权重带有 Blackwell 芯片痕迹",
+      "badge": "T",
+      "summary": "前 OpenAI 研究员 Will DePue 分析 DeepSeek、月之暗面、MiniMax、蚂蚁的开源权重，称 Kimi K3 系列和 DeepSeek V4 等带有在 Blackwell 上训练的“指纹”。TechCrunch 强调这不代表全程用 NVIDIA 芯片训练，也不等于违反出口管制。",
+      "publishedAt": "2026-11-14T02:40:00+08:00",
+      "sortAt": "2026-11-14T02:40:00+08:00",
+      "timeLabel": "2026-11-14 02:40（北京时间）",
+      "timePrecision": "minute",
+      "timeNote": "TechCrunch 标注 10:40 AM PST · November 13, 2026，即北京时间 11 月 14 日 02:40。这是媒体报道时间；研究本身的发布时刻未单独核实。",
+      "source": "TechCrunch、The Register",
+      "confidence": "B",
+      "url": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
+      "links": [
+        {
+          "label": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/"
+        },
+        {
+          "label": "The Register",
+          "url": "https://www.theregister.com/ai-and-ml/2026/11/13/chinese-ai-labs-are-training-models-on-nvidias-blackwell-despite-export-controls-says-ex-openai-engineer/5309891"
+        }
+      ],
+      "detail": "## 它是什么\n\nTechCrunch 报道了前 OpenAI 研究员、非营利研究组织 Unemployment Labs 负责人 Will DePue 的一项分析：他检查了 DeepSeek、月之暗面（Moonshot AI）、MiniMax 和蚂蚁集团公开发布的模型权重，称其中保留了与训练所用芯片配置相关的特征。\n\n## 它做什么（报道说了什么）\n\n- 报道称最受关注的模型，包括 Kimi K3 系列和 DeepSeek V4，带有在 Blackwell GPU 上训练的“指纹”。Blackwell 被美国禁止出口给中国或中资企业。\n- **TechCrunch 明确写到**：这不代表这些模型完全用 NVIDIA 芯片训练，也不代表一定违反出口管制——芯片可能位于海外数据中心（例如马来西亚）。\n- 报道引用 Epoch AI 估计：2024–2025 年约 200 万颗先进芯片通过隐藏最终去向的方式进入中国。\n\n## 适合谁\n\n关注中美芯片管制、国产大模型算力来源和 NVIDIA 合规风险的读者。\n\n## 为什么值得看\n\n这条研究与黄仁勋辞职、Megaspeed 事件同时发酵，可能成为美国国会听证和出口管制收紧的论据。\n\n## 可以核对的事实\n\n- TechCrunch 作者 Tim Fernholz，10:40 AM PST, Nov 13, 2026。\n- 研究方法与结论目前只是研究者主张，相关公司未在报道中回应，可信度 B（可靠媒体报道，结论未经独立验证）。"
+    },
+    {
+      "id": "nvidia-board-approached-rene-haas",
+      "title": "FT：NVIDIA 董事会接触 Arm CEO Rene Haas，物色黄仁勋继任者",
+      "badge": "N",
+      "summary": "路透转述英国《金融时报》报道：NVIDIA 董事会已接触 Arm CEO Rene Haas，作为接替黄仁勋的候选人之一；FT 称他只是几名候选人之一，不保证会获邀或接受。Colette Kress 仍是临时 CEO。",
+      "publishedAt": "2026-11-14T01:42:00+08:00",
+      "sortAt": "2026-11-14T01:42:00+08:00",
+      "timeLabel": "2026-11-14 01:42（北京时间）",
+      "timePrecision": "minute",
+      "timeNote": "Korea Times 转载的路透稿标注 Published Nov 14, 2026 2:42 am KST，即北京时间 11 月 14 日 01:42。这是路透转述 FT 报道的发稿时间，不是 NVIDIA 官方公告时间。美国财长 Bessent 的相关讲话为 CNBC 北京时间 11 月 13 日 18:00 发稿，列在详细介绍里作背景。",
+      "source": "路透（转述 FT）、CNBC",
+      "confidence": "B",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+      "links": [
+        {
+          "label": "路透稿（Korea Times 转载）",
+          "url": "https://www.koreatimes.co.kr/world/20261114/nvidia-approached-arm-ceo-haas-to-succeed-huang-ft-reports"
+        },
+        {
+          "label": "NVIDIA 官方：CEO 交接公告",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition"
+        },
+        {
+          "label": "CNBC：Bessent 谈 Megaspeed 与芯片外流",
+          "url": "https://www.cnbc.com/2026/11/13/us-inflation-outlook-federal-reserve-rate-hike.html"
+        }
+      ],
+      "detail": "## 它是什么\n\nNVIDIA 11 月 12 日宣布黄仁勋辞去 CEO 和董事职务，CFO Colette Kress 任临时 CEO，董事会启动正式 CEO 遴选，内外部候选人都会考虑（见官方公告）。北京时间 11 月 14 日凌晨，路透转述英国《金融时报》报道：NVIDIA 董事会已接触 Arm CEO Rene Haas，作为可能的继任者。\n\n## 它做什么（报道说了什么）\n\n- FT 引述知情人士称，Haas 是几名候选人之一，**不保证会获邀，也不保证会接受**。\n- Haas 曾在 NVIDIA 工作七年，做到计算产品业务副总裁兼总经理，2013 年加入 Arm。\n- Arm 拒绝置评；NVIDIA 未立即回应路透；路透表示无法独立核实该报道。\n\n背景：美国财长 Bessent 北京时间 11 月 13 日在 CNBC《Squawk Box》上说，财政部、国防部、国务院和 USTR 数月来都支持把 Megaspeed 列入实体清单，但由商务部负责；他还说「真正的问题应该是 NVIDIA 是否了解它的客户」，并认为公司里相关的人应被追责。CNBC 同稿写到，参议员 Tim Scott 称黄仁勋和商务部长 Lutnick 都被邀请下月到参院银行委员会作证。\n\n## 适合谁\n\n关注 NVIDIA 管理层、GPU 供应和美国对华芯片出口管制的读者、投资者和采购方。\n\n## 为什么值得看\n\n继任人选会影响 NVIDIA 的投资、并购和对华业务取向；同时，美国政府内部对出口管制执行的分歧正在公开化。NVIDIA 官方公告写明 11 月 17 日（美国太平洋时间）照常公布第三财季业绩。\n\n## 可以核对的事实\n\n- NVIDIA 官方公告（11 月 12 日）：黄仁勋辞职、Kress 任临时 CEO、Harvey C. Jones 任首位董事会主席、董事会启动 CEO 遴选。\n- Haas 被接触一事目前只有 FT 报道、路透转述，NVIDIA 未确认，可信度 B。\n- Bessent 讲话：CNBC，Published Fri, Nov 13 2026 5:00 AM EST。"
+    },
+    {
+      "id": "gemini-google-wallet",
+      "title": "Gemini 可连接 Google Wallet，给出个人理财分析",
+      "badge": "G",
+      "summary": "Google 宣布美国所有 Gemini 应用用户都可在 Personal Intelligence 里连接 Google Wallet，还可通过 Plaid 关联银行和信用卡账户，让 Gemini 分析消费、找出遗忘的订阅、做预算。连接是只读的，Gemini 不能转账或管理资金。",
+      "publishedAt": "2026-11-13",
+      "sortAt": "2026-11-14T01:00:00+08:00",
+      "timeLabel": "2026-11-13（美国时间）",
+      "timePrecision": "date",
+      "timeNote": "Google 官方博客只写 Nov 13, 2026，没有钟点。AIMap 收录时间为北京时间 11 月 14 日 01:00，sortAt 采用该时间，仅用于排序。",
+      "source": "Google 官方博客",
+      "confidence": "A",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/google-wallet-gemini-app/",
+      "links": [
+        {
+          "label": "Google 博客",
+          "url": "https://blog.google/innovation-and-ai/products/gemini-app/google-wallet-gemini-app/"
+        },
+        {
+          "label": "Plaid 博客",
+          "url": "https://plaid.com/blog/google-wallet-gemini-plaid/"
+        },
+        {
+          "label": "9to5Google",
+          "url": "https://9to5google.com/2026/11/13/gemini-google-wallet/"
+        }
+      ],
+      "detail": "## 它是什么\n\nGemini 的 Personal Intelligence 原本可以连接 Gmail、相册、YouTube、搜索等应用。Google 11 月 13 日把 Google Wallet 加入可连接的应用，面向美国所有 Gemini 应用用户推出，覆盖网页版及 Android、iOS。\n\n## 它做什么\n\n- 在对话里 @Google Wallet 提问，例如复盘上季度开支并生成现金流、资产配置、预算图表；\n- 找出各账户里的周期扣费，标出今年涨价的订阅；\n- 根据去年礼物和出行开支，建议今年的节日预算；\n- 可选通过 Plaid 把银行和信用卡账户关联到 Wallet，获得更深入的分析。\n- 同时推出 Memory Summary：在 Profile > Personal Intelligence > Memory Summary 查看、编辑 Gemini 记住的偏好和目标。\n\n## 适合谁\n\n美国的 Gemini 应用用户。中国用户目前无法使用。\n\n## 为什么值得看\n\n与同日 OpenAI 的 ChatGPT Wallet 一起，两大助手都在往个人财务和支付场景延伸；Google 这一步是只读分析，不涉及代付。\n\n## 可以核对的事实\n\n- 官方原文：连接后 Gemini 只能读取账户信息，不能转移、管理或投资资金；连接需用户主动开启，可随时关闭。\n- 官方日期 Nov 13, 2026。可信度 A。"
+    },
+    {
+      "id": "chatgpt-wallet",
+      "title": "OpenAI 推出 ChatGPT Wallet：让 dots 智能体代用户付款",
+      "badge": "O",
+      "summary": "OpenAI 与美国运通、万事达、Visa 合作推出 ChatGPT Wallet，dots 可以替用户完成购物结账；每笔都要用户复核并通过 Face ID/指纹等安全校验，商家和智能体拿不到真实卡号。首发仅限美国 18 岁以上 ChatGPT Pro 用户。",
+      "publishedAt": "2026-11-13",
+      "sortAt": "2026-11-14T00:00:00+08:00",
+      "timeLabel": "2026-11-13（美国时间）；TechCrunch 北京时间 11-14 00:00 发稿",
+      "timePrecision": "date",
+      "timeNote": "OpenAI 官方页只写 November 13, 2026，没有钟点。TechCrunch 报道标注 8:00 AM PST · November 13, 2026，即北京时间 11 月 14 日 00:00；sortAt 采用该时间，仅用于排序。",
+      "source": "OpenAI 官方博客",
+      "confidence": "A",
+      "url": "https://openai.com/index/introducing-chatgpt-wallet/",
+      "links": [
+        {
+          "label": "OpenAI：Introducing ChatGPT Wallet",
+          "url": "https://openai.com/index/introducing-chatgpt-wallet/"
+        },
+        {
+          "label": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/"
+        },
+        {
+          "label": "路透（Investing.com 转载）",
+          "url": "https://www.investing.com/news/stock-market-news/openai-launches-chatgpt-wallet-letting-ai-agents-pay-for-purchases-5026114"
+        }
+      ],
+      "detail": "## 它是什么\n\nChatGPT Wallet 是 OpenAI 给 dots（ChatGPT 里常驻的智能体）用的支付钱包，与 American Express、Mastercard、Visa 合作打造。官方称它是第一个让智能体在拿不到用户真实卡信息的情况下付款、并且每笔购买都要安全校验的钱包，同时保留原有信用卡积分和合格争议的保障。\n\n## 它做什么\n\n- 用户只需添加一次卡，之后让 dot 帮忙买东西；\n- 每次购买前，用户复核商品、总价和所选卡片，再用 Face ID 或指纹等安全校验批准，每次批准都会留下授权记录；\n- 批准后由支付网络生成支付令牌（替代真实卡号、安全码和有效期）扣款，钱包不会把真实卡信息给商家或智能体；\n- OpenAI 同时发布面向商家的工具和指南：网站要确保不误拦智能体，支付和风控系统要能识别智能体发起的合法购买。\n- TechCrunch 与路透写到，OpenAI 计划以后让用户设置消费上限、品类或时间段等参数，预先授权智能体在范围内自行购买。\n\n## 适合谁\n\n首发只面向美国 18 岁以上、持有符合条件的美国发卡行卡片的 ChatGPT Pro 订阅用户，在 dots 中逐步推出。中国用户目前用不上。\n\n## 为什么值得看\n\n这是主流 AI 助手把「智能体代付」做成正式产品的一步，用令牌化和逐笔生物识别来回应安全顾虑；商家是否放行智能体流量将决定它能走多远。\n\n## 可以核对的事实\n\n- 官方页日期 November 13, 2026；合作方 American Express、Mastercard、Visa；首发范围：美国、ChatGPT Pro、18 岁以上、美国发卡。\n- TechCrunch 发稿 8:00 AM PST, Nov 13（北京时间 11-14 00:00）。\n- 可信度 A（官方原文）。"
+    },
+    {
+      "id": "deepseek-app-api-suite",
+      "title": "DeepSeek 发布「全家桶应用 API」：联网搜索、文件、读链接、OCR/ASR/TTS 全开放",
+      "badge": "D",
+      "summary": "DeepSeek 把 App 里的联网搜索、深度思考搜索、文件输入、阅读链接和安全校验整合进原有 API，deepseek-flash 打开参数即可用；Search、Fetch、OCR、ASR、TTS 也可单独调用，并开源了可导入历史对话的前端 Demo。",
+      "publishedAt": "2026-11-13",
+      "sortAt": "2026-11-13T22:22:41+08:00",
+      "timeLabel": "2026-11-13（北京时间）",
+      "timePrecision": "date",
+      "timeNote": "DeepSeek API 文档新闻页（news261113）没有标注发布时刻。第一财经报道时间为 2026-11-13 22:22:41，sortAt 采用该时间，仅用于排序。",
+      "source": "DeepSeek API 文档官方新闻",
+      "confidence": "A",
+      "url": "https://api-docs.deepseek.com/zh-cn/news/news261113/",
+      "links": [
+        {
+          "label": "DeepSeek 官方公告",
+          "url": "https://api-docs.deepseek.com/zh-cn/news/news261113/"
+        },
+        {
+          "label": "示例代码 deepseek-ai/chat-demo",
+          "url": "https://github.com/deepseek-ai/chat-demo"
+        },
+        {
+          "label": "第一财经",
+          "url": "https://www.yicai.com/news/103440560.html"
+        }
+      ],
+      "detail": "## 它是什么\n\nDeepSeek 11 月 13 日正式开放「全家桶应用 API」，把 DeepSeek App（含网页端）对话里的配套能力搬进 API，官方说法是开发者可以「1:1 复刻出完整的 DeepSeek App」。\n\n## 它做什么\n\n目前 V4.1-Flash（`deepseek-flash`）在 `Messages`、`Responses`、`Chat Completions` 接口下支持：\n\n- **联网搜索**：非思考模式下打开 `deepseek_web_search`，自动发起网页或图片搜索并附引用；\n- **深度思考搜索**：思考模式下打开同一工具，多步推理中自主搜索和读链接；\n- **文件输入**：上传 PDF、Office、图片等，提取文本或图文混排解析后拼入上下文；\n- **阅读链接**：打开 `deepseek_read_url`，自动抓取消息中的网页；\n- **模型安全**：开启安全校验参数后提供基础风控，命中风险返回拒答标识。官方提醒对外提供服务务必开启，并承担内容审核、大模型登记、AI 标识等义务。\n\n此外 Search、Fetch、OCR、ASR、TTS 均可作为独立接口调用。官方还开源了轻量前端 Demo（支持导入 DeepSeek 历史对话）。\n\n## 适合谁\n\n国内外用 DeepSeek API 做聊天、搜索问答、文档解析和语音应用的开发者。\n\n## 为什么值得看\n\n以前要自己接搜索、OCR、语音等外部工具，现在由服务端自动完成工具调用和上下文拼接，接入成本明显下降。注意：除 Token 费外，调用扩展工具还会单独收费，价格以官方表格为准。\n\n## 可以核对的事实\n\n- 官方页：https://api-docs.deepseek.com/zh-cn/news/news261113/\n- Demo：https://cdn.deepseek.com/chat-demo ；代码：https://github.com/deepseek-ai/chat-demo\n- 可信度 A（官方原文）。"
+    },
+    {
+      "id": "claude-meetings-beta",
+      "title": "Anthropic 推出 Claude Meetings 测试版：Claude 进 Google Meet 会议边听边干活",
+      "badge": "A",
+      "summary": "Claude 可以作为可见参会者加入 Google Meet，回答提问、写笔记和待办，并在会中起草文档、白板，与会同事可同步修改。先向 Team 和 Enterprise 推出，测试期笔记和转写免费。此前日报漏收，本次补录。",
+      "publishedAt": "2026-11-12T14:53:00-08:00",
+      "sortAt": "2026-11-13T06:53:00+08:00",
+      "timeLabel": "2026-11-13 06:53（北京时间，VentureBeat 发稿）",
+      "timePrecision": "minute",
+      "timeNote": "Anthropic 官方文章页没有标注日期。VentureBeat 报道标注 2:53 pm PT, November 12, 2026，即北京时间 11 月 13 日 06:53；timeLabel 与 sortAt 采用该时间，不是官方发布时刻。此前早报、晚报未收录，本次补录。",
+      "source": "Claude 官方文章与帮助中心",
+      "confidence": "A",
+      "url": "https://claude.com/resources/articles/claude-meetings",
+      "links": [
+        {
+          "label": "Claude 官方：Introducing Claude Meetings",
+          "url": "https://claude.com/resources/articles/claude-meetings"
+        },
+        {
+          "label": "帮助中心：Use Claude Meetings",
+          "url": "https://support.claude.com/en/articles/18325154-use-claude-meetings"
+        },
+        {
+          "label": "VentureBeat",
+          "url": "https://venturebeat.com/technology/anthropic-brings-claude-into-google-meet-to-draft-documents-and-whiteboards-during-your-meetings"
+        }
+      ],
+      "detail": "## 它是什么\n\nClaude Meetings 让 Claude 作为可见参会者加入视频会议，跟着讨论在会中就开始干活。目前处于 beta，先支持 Google Meet，官方称其他会议平台即将支持。\n\n## 它做什么\n\n- 与会者可以口头或在聊天里向 Claude 提问，默认文字回答；经本人许可可调用其连接的工具；\n- 会中按要求起草文档、白板等 artifacts，邀请名单内的同事可同步修改；\n- 自动写笔记和待办；会后在 claude.ai 生成会议页面，含笔记、转写、摘要和会中产出，可以事后继续追问；\n- 只保存转写、摘要和屏幕描述，不保存音频；加入时会在会议聊天里发通知；\n- 默认不加入有外部人员的会议，外部人员中途加入时会离开（管理员可放开）；\n- 官方称正与 Gong、Attention、Granola、Fireflies.ai、Otter、Plaud 合作，以后可把转写发到这些工具。\n\n## 适合谁\n\nClaude Team（默认开启，管理员可关闭）和 Enterprise（需管理员开启）用户。启用零数据保留（ZDR）、HIPAA-ready 配置或客户自管密钥（CMEK）的组织暂不可用。\n\n## 为什么值得看\n\n会议助手从「会后发纪要」变成「会中产出可协作的文档和计划」，直接对标 Google Meet 的 Gemini 与 Teams 的 Facilitator。\n\n## 可以核对的事实\n\n- 官方原文：测试期笔记、转写和会中回答在 Team/Enterprise 免费；若回答使用了连接的工具，计入套餐用量；会中生成的文档、白板等免费至 2027 年 2 月 10 日。\n- 官方页无日期；VentureBeat 2:53 pm PT, Nov 12, 2026。可信度 A。"
+    },
+    {
+      "id": "deepmind-pardig-satweave",
+      "title": "Google DeepMind 开放 WeatherNext 3 背后的两套数据集 PARDIG 与 SatWeave",
+      "badge": "G",
+      "summary": "DeepMind 公开发布全球静止卫星拼接影像 SatWeave（17 个通道、每小时更新）和 AI 降水数据集 PARDIG（15 分钟、约 10 公里），提供实时数据流和历史档案，放在 Google Cloud Storage，PARDIG 历史数据也上了 Earth Engine。",
+      "publishedAt": "2026-11-13",
+      "sortAt": "2026-11-13T00:00:00+08:00",
+      "timeLabel": "2026-11-13",
+      "timePrecision": "date",
+      "timeNote": "DeepMind 博客只写 November 13, 2026，没有钟点；sortAt 用当日零点，仅用于排序。此前日报未收录，本次补录。",
+      "source": "Google DeepMind 官方博客",
+      "confidence": "A",
+      "url": "https://deepmind.google/blog/opening-the-datasets-behind-our-ai-weather-models/",
+      "links": [
+        {
+          "label": "DeepMind 博客",
+          "url": "https://deepmind.google/blog/opening-the-datasets-behind-our-ai-weather-models/"
+        },
+        {
+          "label": "PARDIG 开发者文档",
+          "url": "https://developers.google.com/weathernext/guides/pardig"
+        },
+        {
+          "label": "SatWeave 开发者文档",
+          "url": "https://developers.google.com/weathernext/guides/satweave"
+        }
+      ],
+      "detail": "## 它是什么\n\n这两套数据集是 DeepMind 最新天气模型 WeatherNext 3 的关键输入。DeepMind 11 月 13 日把它们公开，供气象、水文和气候应用使用。\n\n## 它做什么\n\n- **SatWeave**：把 GOES-East/West、Meteosat 0 与印度洋、Himawari 等静止卫星影像拼成全球统一视图，覆盖 17 个可见光、水汽和红外通道，每小时更新；发布实时数据流和十余年的历史档案。它让 WeatherNext 3 可以每小时出一次全球预报。\n- **PARDIG**（Precipitation AI Reanalysis: Densely Inferred GPM）：用与 WeatherNext 3 类似的 AI 架构，以 NASA GPM 星载雷达观测训练，输出 15 分钟、约 10 公里分辨率的全球降水，平均延迟约 5 小时；历史档案覆盖 1999–2026 年。官方称在小到中雨的小时降水检测技巧上比 NASA IMERG-Final 高 30% 以上。\n\n## 适合谁\n\n气象、水文、防灾、农业、新能源（光伏）预测的研究者和开发者，尤其是缺少地面雷达的地区。\n\n## 为什么值得看\n\n高质量、全球一致、实时更新的卫星与降水数据过去很难拿到，现在可以直接拿来训练和验证自己的模型。\n\n## 可以核对的事实\n\n- 数据放在 Google Cloud Storage，PARDIG 历史目录也在 Google Earth Engine。检索结果显示许可为 CC BY 4.0，需要 Google Cloud 账号访问（以官方文档为准）。\n- 官方日期 November 13, 2026。可信度 A。"
+    }
+  ]
+}
