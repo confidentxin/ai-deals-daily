@@ -41,12 +41,6 @@
 - 截止：每日领取：19:00 起领，23:00 至次日 09:00 可用，次日 09:00 清零、不结转，当天不领作废
 - 可达性：能直接领（ZCode 官网可下载，智谱账号登录）
 
-#### OpenRouter · LiquidAI LFM2.5-2.6B `:free`（2026-11-13 09:00 新增，官方模型接口已核实）
-- 内容：LiquidAI 免费端点 `liquid/lfm-2.5-2.6b:free`（约 66K 上下文，面向 agent / 抽取 / RAG）今日到期，今日是最后一天；同系列 `liquid/lfm-3-1.7b:free` 官方接口无 expiration_date，仍在线、不受影响，见“进行中：需要海外账号 / 地区受限”区。官方模型页：https://openrouter.ai/liquid/lfm-2.5-2.6b:free
-- 额度：输入、输出定价均为 $0；免费档约 20 请求/分钟、每天 50 请求，累计购买满 10 美元后每天可到 1000 请求；提示词与输出可能被 Liquid 保留并用于训练，机密内容勿用；官方不建议 LFM2.5-2.6B 用于 agentic coding 或知识密集型任务
-- 截止：2026-11-13（官方模型接口 `expiration_date` 字段，未写时刻与时区；若按 UTC 日末计约为北京时间 11 月 14 日 08:00，若按 UTC 日初则可能已于北京时间 11 月 13 日 08:00 下线，以官方模型页当前展示为准）
-- 可达性：需海外账号（OpenRouter）；大陆直连可达性未知
-
 <a name="direct"></a>
 ### 进行中：能直接领
 
@@ -356,7 +350,7 @@
 - 截止：截止未知（官方写 limited time，未公布具体日期）
 - 限制：需 OpenCode 客户端；大陆可达性以账号实际为准
 
-#### OpenRouter · LiquidAI LFM3-1.7B `:free`（2026-11-07 20:30 新增，官方模型页已核实；2026-11-13 09:00 更新：LFM2.5-2.6B 已拆出，见今日急报区）
+#### OpenRouter · LiquidAI LFM3-1.7B `:free`（2026-11-07 20:30 新增，官方模型页已核实；2026-11-13 09:00 更新：LFM2.5-2.6B 已拆出；2026-11-14 09:00 复核：LFM2.5-2.6B 已到期，见已过期归档区）
 - 内容：LiquidAI 免费端点 `liquid/lfm-3-1.7b:free`（262,144 上下文，支持工具调用与结构化输出，2026-11-06 发布）；输入、输出定价均为 $0。官方模型页：https://openrouter.ai/liquid/lfm-3-1.7b:free
 - 额度：免费端点有速率限制（免费档约 20 请求/分钟、每天 50 请求，累计购买满 10 美元后每天可到 1000 请求）；提示词与输出可能被 Liquid 保留并用于训练，机密内容勿用
 - 截止：截止未知（官方模型接口无 expiration_date；2026-11-13 09:00 复核仍在线）
@@ -373,12 +367,6 @@
 - 额度：登录领取 100M Tokens（官方写 worth 10,000 credits），每账号限领一次；官方博客未提绑卡要求；与国内版金额不同，两站分别以各自博客为准
 - 截止：活动 2026-11-09 00:00 至 2026-11-15 23:59（UTC+8，即北京时间同时段）；奖励 11 月 15 日 23:59（UTC+8）失效
 - 限制：需海外账号（国际版海外站），大陆可达性未知
-
-#### Parallel · Decisions Fast（OpenRouter `:free`）（2026-11-08 20:30 新增，官方博客已核实）
-- 内容：Parallel Decisions API 上架 OpenRouter，一次请求可对同一 `state` 提最多 100 个问题、联网调研后返回结构化答案（概率 / 选项 / 评分）与引用；走 Decisions API 而非普通 chat completions。官方博客：https://parallel.ai/blog/decisions-openrouter ；模型页：https://openrouter.ai/parallel/decisions-fast:free
-- 额度：模型 ID `parallel/decisions-fast:free`，OpenRouter 模型页输入/输出定价均为 Free / $0，32K 上下文；需已有或新建 OpenRouter API Key，无需另开 Parallel 账号；免费 `:free` 端点受 OpenRouter 常规限速（累计购买不足约 10 美元时约 20 请求/分钟、每天 50 请求）；官方未写绑卡要求
-- 截止：官方博客（2026-11-06）写“Try Parallel Decisions free for 7 days on OpenRouter”，自发布日起约至 2026-11-13，未写具体时刻；以官方页当前展示为准
-- 限制：需海外账号（OpenRouter），大陆直连可达性未知
 
 #### Fireworks · Muse Glimmer 30B 监督微调（SFT）限免（2026-11-08 20:30 新增，官方博客已核实）
 - 内容：在 Fireworks UI 与 Serverless Training API 上对 Muse Glimmer 30B 做 SFT 训练免费；属训练算力免费，不是推理免费用量。官方博客：https://fireworks.ai/blog/train-muse-glimmer-for-free
@@ -593,10 +581,8 @@
 <a name="expiring"></a>
 ### 即将到期：3–5 天内
 
-- OpenRouter LiquidAI LFM2.5-2.6B `:free` 今日到期（2026-11-13，官方模型接口已核实）。
 - Vercel Ampersand v0.1 免费至 11 月 13 日。
 - Nous Portal LongCat-2.5 免费约至 11 月 13 日。
-- Parallel Decisions Fast 免费 7 天约至 11 月 13 日。
 - 腾讯 WorkBuddy / CodeBuddy 混元 Hy4 正式版限时免费至 11 月 15 日。
 - Pika H3 Flex 每日免费生成至 11 月 15 日。
 - 字节 TRAE 中国版会员续享 TRAE 宝限免至 11 月 15 日 23:59。
@@ -805,6 +791,14 @@
 #### 蚂蚁数科 DTMaaS · Atria Dawn 及 Preview 免费
 - 内容：Atria Dawn 及 Preview 限时免费调用；免费期结束后 Preview 请求将路由至正式版。官方站点公告接口：https://maas.antdigital.com/api/site-notice
 - 截止：免费至 2026-11-13 10:00（北京时间）已到期；2026-11-13 12:00 复核官方站点公告接口确认免费期已结束，移入归档
+
+#### OpenRouter · LiquidAI LFM2.5-2.6B `:free`
+- 内容：LiquidAI 免费端点 `liquid/lfm-2.5-2.6b:free`（约 131K 上下文，面向 agent / 抽取 / RAG），输入、输出定价均为 $0；同系列 `liquid/lfm-3-1.7b:free` 仍在线、不受影响，见“进行中：需要海外账号 / 地区受限”区。官方模型页：https://openrouter.ai/liquid/lfm-2.5-2.6b:free
+- 截止：官方模型接口 `expiration_date` 为 2026-11-13；2026-11-14 09:00 复核官方模型端点接口已无可用端点（`endpoints: []`），同系列 LFM3-1.7B 仍有可用端点，移入归档
+
+#### Parallel · Decisions Fast（OpenRouter `:free`）
+- 内容：Parallel Decisions API 上架 OpenRouter，一次请求可对同一 `state` 提最多 100 个问题、联网调研后返回结构化答案（概率 / 选项 / 评分）与引用；走 Decisions API 而非普通 chat completions。官方博客：https://parallel.ai/blog/decisions-openrouter ；模型页：https://openrouter.ai/parallel/decisions-fast:free
+- 截止：官方博客（2026-11-06）写“Try Parallel Decisions free for 7 days on OpenRouter”，自发布日起约至 2026-11-13；2026-11-14 09:00 复核官方模型端点接口已无可用端点（`endpoints: []`），移入归档
 
 <a name="notes"></a>
 ## 说明
