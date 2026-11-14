@@ -14,10 +14,10 @@
 - [已过期归档](#archived)
 - [说明](#notes)
 
-## 今日版：2026-11-13
+## 今日版：2026-11-14
 
-- 核实时间：2026-11-13 20:30（北京时间）
-- 新增：8 条；补录：1 条；急报：0 条；过期：0 条
+- 核实时间：2026-11-14 20:30（北京时间）
+- 新增：4 条；补录：2 条；急报：2 条；过期：3 条
 - 历史版本见 [`archive/`](archive/)。
 
 <a name="urgent"></a>
@@ -177,9 +177,9 @@
 - 截止：截止未知（官方写免费版配额在商业化后可能调整，将通过控制台公告更新；未公布结束日）
 
 #### 国家超算互联网 SCNet · 新用户 1 亿词元（2026-11-09 20:30 新增，多源交叉、官方未核实）
-- 内容：11 月 9 日起，下载并登录最新版超算互联网客户端即可领取旗舰模型 1 亿 Tokens（客户端内权益，不是开放 API 的通用 Token，不能接进自己的代码）；另有客户端内旗舰模型“词元不限量、AI 调用不受限”权益，两条不要混为一条。来源为超算互联网官方微信公众号 11 月 6 日活动公告与多家媒体同口径转述，官方 MaaS 活动页本次未见“1 亿词元”字样，额度与适用范围以客户端内实际到账与显示为准。官方活动页：https://www.scnet.cn/home/subject/maas/index.html
-- 额度：一次性 1 亿 Tokens；媒体口径称限科学计算智能体应用额度（文献梳理／参数试算／结果解释），官方公告写“旗舰模型”，范围描述不完全一致；需注册并下载最新版客户端登录领取，只在官网注册、不装客户端可能看不到入口
-- 截止：领取起点 2026-11-09；结束口径不一致：官方活动会场标“即日起～12 月 31 日”，媒体引 SCNet 负责人称阶段性政策至 11 月 30 日，按 11 月 30 日规划最稳；1 亿额度本身的有效期各来源均未写
+- 内容：11 月 9 日起，下载并登录最新版超算互联网客户端即可领取旗舰模型 1 亿 Tokens（客户端内权益，不是开放 API 的通用 Token，不能接进自己的代码）；另有客户端内旗舰模型“词元不限量、AI 调用不受限”权益，两条不要混为一条。来源为超算互联网官方微信公众号 11 月 6 日活动公告与多家媒体同口径转述，官方 MaaS 活动页本次未见“1 亿词元”字样，额度与适用范围以客户端内实际到账与显示为准。2026-11-14 20:30 复核：多家独立实测贴出官方客户端截图，显示已可领取到账（11 月 11 日领取、12 月 11 日到期、状态“生效中”），默认可用模型 GLM-5.3-Flash；官方活动页仍为动态渲染、本次未直读到规则原文，以客户端实际显示为准。官方活动页：https://www.scnet.cn/home/subject/maas/index.html
+- 额度：一次性 1 亿 Tokens；媒体口径称限科学计算智能体应用额度（文献梳理／参数试算／结果解释），官方公告写“旗舰模型”，范围描述不完全一致；需注册并下载最新版客户端登录领取，只在官网注册、不装客户端可能看不到入口；每日限量，先到先得
+- 截止：领取起点 2026-11-09；活动会场标“即日起～12 月 31 日”；领取后 30 天有效（实测 11 月 11 日领、12 月 11 日到期），按领取日起 30 天规划
 
 #### 百度千帆 · 17 个模型各 100 万 Token（2026-11-09 20:30 补录，多源交叉、官方未核实）
 - 内容：首次开通千帆大模型时，平台自动发放指定模型的免费使用额度，按服务独立计算、互不挤占；仅抵扣预置模型在线推理消耗，不可用于批量推理。本次未能直接打开百度智能云官方文档页（域名被抓取策略屏蔽），口径来自官方文档《新用户免费额度》的多处独立转引，模型名单以官方文档表格为准。官方文档：https://cloud.baidu.com/doc/qianfan/s/Imi2rpirg
@@ -220,6 +220,16 @@
 - 内容：基于 GLM-5.3-Flash 后训练的多模态智能体模型 Nex-N2.6（模型 ID `nex-n2.6`，固定版本 `nex-n2.6-2026-11-05`）在 MOSS API 限时免费调用，每次请求消耗 0 Credits；兼容 OpenAI Chat Completions / Responses 与 Anthropic Messages；权重已在 GitHub / Hugging Face 公开。聚合站、个人博客与 LINUX DO 三类渠道口径一致（0 Credits、未公布截止），官方模型文档本次未直读到原文，细则以官方页为准。官方平台：https://platform.moss.cn/
 - 额度：每次请求 0 Credits；持有有效 MOSS API Key 即可调用；每日次数 / Token 上限、是否需实名、绑卡要求各来源均未提及
 - 截止：截止未知（多源均称限时、未公布结束日期）
+
+#### 讯飞开放平台 · SparkAudio 1.0 语音基座 API 认证免费包（2026-11-14 20:30 新增，多源交叉、官方未核实）
+- 内容：11 月 12 日上线的语音基座大模型 SparkAudio 1.0（文本 / 语音输入、文本输出，99 种语言、202 种方言；转写、翻译、方言识别、说话人分离、情感分析、音频问答），WebSocket 接口；官方 API 文档已核实接口与免费额度入口（“去产品页面获取免费额度”），200 万 Tokens 的具体数字本次未在官方服务页直接读到（页面动态渲染），以下数字为官方价目区原文的多方一致转述，以产品页与控制台实际显示为准。官方服务页：https://www.xfyun.cn/services/Spark_Audio_1.0 ；官方文档：https://www.xfyun.cn/doc/spark/spark_audio.html
+- 额度：个人认证免费包 200 万 Tokens、1 路并发；企业认证免费包 500 万 Tokens、1 路并发；需完成讯飞开放平台个人 / 企业实名认证；官方价目区标“免费”，绑卡要求官方页未写；超出需购买套餐（最低 2.5 亿 Tokens 3000 元）
+- 截止：领取后 1 年有效；活动本身截止未知（官方价目区标“限时特惠”，未写结束日）
+
+#### 摩尔线程 · AI Coding Plan 30 天免费体验（2026-11-14 20:30 补录，官方页已核实）
+- 内容：基于 MTT S5000 国产算力的编程套餐，提供 GLM-4.7，可接 Claude Code / Cursor / OpenCode / Cline / Kilo Code / Roo Code；官方新闻 2026-02-03 已发布，本次首次收录。官方页：https://code.mthreads.com/ ；官方新闻：https://www.mthreads.com/news/277
+- 额度：Free Trial ¥0，用量与 Lite Plan 相当；每日限量 100 名开发者，页面标“体验爆满，扩容中”；领取成功之日起 30 天有效；同一账号不可重复领取；实名 / 绑卡要求官方页未写；到期不自动续，付费档 Lite ¥120/季度起
+- 截止：领取后 30 天；活动本身截止未知（官方页未写）
 
 <a name="overseas"></a>
 ### 进行中：需要海外账号 / 地区受限
@@ -435,9 +445,9 @@
 - 限制：仅限 Pika API Club 会员与 Pika.art Creator / Fancy 套餐订阅者，非所有免费账号；需海外账号，大陆可达性未知
 
 #### Nous Portal · LongCat-2.5 免费一周（2026-11-09 20:30 新增，免费状态官方 Portal 页已核实；截止约 11 月 13 日为多源推断）
-- 内容：美团 LongCat-2.5（1.6T 总参、约 48B 激活、1M 上下文）在 Nous Portal 内免费使用一周；Portal 首页明确列出“LongCat-2.5:Free FREE”，即按 $0 计价的免费路由，无 Token 总量额度。官方 Portal：https://portal.nousresearch.com/
+- 内容：美团 LongCat-2.5（1.6T 总参、约 48B 激活、1M 上下文）在 Nous Portal 内免费使用一周；Portal 首页明确列出“LongCat-2.5:Free FREE”，即按 $0 计价的免费路由，无 Token 总量额度。2026-11-14 20:30 复核官方 Portal 页仍标 FREE、仍可免费调用。官方 Portal：https://portal.nousresearch.com/
 - 额度：免费路由，无 Token 总量；限流（RPM/TPM）官方公开页未写，需登录后看账号额度；美团 LongCat 官方平台自身的注册赠金数字（新用户 1000 万 / 老用户另加 1000 万等口径）与本条无关，见待确认线索区，不要混用
-- 截止：官方 Portal 页未写截止日；Nous 于 11 月 6 日在 X 宣布“free for one week”，多家第三方 11 月 6 日报道一致，据此推算约至 11 月 13 日，非官方写明的具体日期
+- 截止：官方 Portal 页未写截止日；Nous 于 11 月 6 日在 X 宣布“free for one week”，多家第三方 11 月 6 日报道一致，据此推算约至 11 月 13 日，但 2026-11-14 20:30 复核官方 Portal 页仍标“LongCat-2.5:Free FREE”、仍可免费调用，该估计未兑现，以页面当前展示为准
 - 限制：需海外账号（Nous Portal）；大陆可达性未知
 
 #### Docker Cloud Sandboxes · 新用户 $250 沙箱算力（2026-11-09 20:30 新增，官方页已核实）
@@ -590,17 +600,42 @@
 - 截止：截止未知（官方未写结束日；非今日新上线，官方 Limits 页 2026-09-02 更新）
 - 限制：需海外网络；大陆可达性未知
 
+#### Tavily · Search / Extract 免 Key 通道（2026-11-14 20:30 新增，官方文档已核实）
+- 内容：AI 搜索 API Tavily 开放免账号、免 API Key 调用 Search 与 Extract：请求头加 `X-Tavily-Access-Mode: keyless` 即可；远程 MCP 也支持；11 月发布的 `@tavily/cli` 1.0 同样免 Key 起步。官方文档：https://docs.tavily.com/documentation/keyless
+- 额度：免费但限速（具体速率官方未公布）；仅 /search 与 /extract，Crawl / Map / Research 需 Key；超限后可注册免费 Key（每月 1000 credits，官方称无需信用卡）
+- 截止：长期（官方未写截止）
+- 限制：需海外账号 / 网络，大陆可达性未知
+
+#### inclusionAI（蚂蚁）· Ling 3.2 Flash `:free`（OpenRouter）（2026-11-14 20:30 新增，官方模型页已核实）
+- 内容：OpenRouter 上线 `inclusionai/ling-3.2-flash:free`，输入、输出均 $0，1,048,576 上下文、最长 262,144 输出，支持图文输入、工具调用、结构化输出；由 Ant Digital 单一供应商提供；与已收录的“蚂蚁百灵 Ling-3.2-flash 官方平台上线前两周免费”是不同渠道。官方模型页：https://openrouter.ai/inclusionai/ling-3.2-flash:free
+- 额度：输入、输出定价均为 $0；OpenRouter 免费模型通用限流（未充值账号每日上限更低）；无需绑卡
+- 截止：截止未知（官方模型接口 expiration_date 为空；官方模型页写 Released Nov 13, 2026）
+- 限制：需海外账号 / 网络，大陆可达性未知
+
+#### Particle AI · Particle-1 `:free`（OpenRouter）（2026-11-14 20:30 补录，官方模型页已核实）
+- 内容：编码模型 Particle-1（官方 FAQ 写基于 DeepSeek V4.1 Flash 后训练，面向终端工作流、代码库修改与数据工程），OpenRouter 有 `particle-ai/particle-1:free` 免费端点，输入、输出 $0，1,048,576 上下文；付费端点 $0.05 / $0.50 每百万 Token。官方模型页：https://openrouter.ai/particle-ai/particle-1:free
+- 额度：输入、输出定价均为 $0；OpenRouter 免费模型通用限流；无需绑卡
+- 截止：截止未知（官方模型接口 expiration_date 为空；官方模型页写 Released Oct 28, 2026）
+- 限制：需海外账号 / 网络，大陆可达性未知
+
+#### Vercel AI Gateway · Parallel Decisions Fast 免费至 11-23（2026-11-14 20:30 新增，官方 changelog 已核实）
+- 内容：11 月 13 日 Vercel 官方 changelog：Parallel Decisions Fast（`parallel/parallel-decisions-fast`）上架 AI Gateway 并免费至 2026-11-23；联网回答结构化问题（是非概率 / 选项 / 评分）并返回引用；无需单独 Parallel 账号；与已归档的 OpenRouter 渠道 7 天免费（已于 11-13 结束）是不同渠道、新截止。官方 changelog：https://vercel.com/changelog/parallel-decisions-now-available-on-ai-gateway-for-free
+- 额度：走 Decisions API / AI SDK，非聊天接口；免费期内用量上限官方未写；绑卡要求官方未写
+- 截止：2026-11-23（官方写 free through November 23, 2026，时区未写）
+- 限制：需海外账号 / 网络，大陆可达性未知
+
 <a name="expiring"></a>
 ### 即将到期：3–5 天内
 
-- Vercel Ampersand v0.1 免费至 11 月 13 日。
-- Nous Portal LongCat-2.5 免费约至 11 月 13 日。
 - 腾讯 WorkBuddy / CodeBuddy 混元 Hy4 正式版限时免费至 11 月 15 日。
 - Pika H3 Flex 每日免费生成至 11 月 15 日。
 - 字节 TRAE 中国版会员续享 TRAE 宝限免至 11 月 15 日 23:59。
 - 智谱 AutoClaw 每周福利 M11W2（国内版 50M / 国际版 100M）至 11 月 15 日 23:59。
 - 阶跃星辰 StepAudio 3 系列限时免费至 11 月 17 日 11:59（北京时间）。
 - Claude Fable 5.2 Pro 上线周免费至 11 月 16 日 23:59（PT，北京时间 11 月 17 日 15:59）。
+- Perplexity Decider v1.3 / Decider Flash v1.3 `:free` 约至 11 月 19 日。
+- Rime STT 免费至 11 月 19 日。
+- 蚂蚁百灵 Ling-3.2-flash 官方平台上线前两周免费约至 11 月 19 日（官方只写相对期限，未写具体结束日）。
 
 <a name="pending"></a>
 ### 待确认线索：不进正文
@@ -640,6 +675,9 @@
 
 #### 移动云 · MobileClaw 双 11 最高 1 亿 Token 免费领
 - 原因：仅两处转载同一篇文章（实为单一来源），官方活动页未直读到；活动截止日、是否可开 API Key、绑卡要求均未知；同场 Coding Plan 首月 7.9 元、Agent Plan 85 折为付费折扣。未核实前不进正文。来源：https://m.163.com/dy/article/LBG44QPT0511A0V6.html ；http://www.xzclass.com/?p=4146
+
+#### PolyAI · Dialog-RSN-1 API 新账号 $100 免费额度
+- 原因：多源称新账号 $100（财经站转述官方 LinkedIn、两家聚合站、X 口径一致），但本次直读官方定价页仅见“$20 of free credit to get started”，未见 $100 横幅原句；截止口径也不一致（多源称 2026-11-19 前注册，聚合站称官方横幅只写“for a limited time”）；另有第三方实测领取入口按国家封锁。额度、截止与领取资格均未在官方页核实前不进正文。官方页：https://poly.ai/pricing
 
 <a name="archived"></a>
 ### 已过期归档
@@ -811,6 +849,10 @@
 #### Parallel · Decisions Fast（OpenRouter `:free`）
 - 内容：Parallel Decisions API 上架 OpenRouter，一次请求可对同一 `state` 提最多 100 个问题、联网调研后返回结构化答案（概率 / 选项 / 评分）与引用；走 Decisions API 而非普通 chat completions。官方博客：https://parallel.ai/blog/decisions-openrouter ；模型页：https://openrouter.ai/parallel/decisions-fast:free
 - 截止：官方博客（2026-11-06）写“Try Parallel Decisions free for 7 days on OpenRouter”，自发布日起约至 2026-11-13；2026-11-14 09:00 复核官方模型端点接口已无可用端点（`endpoints: []`），移入归档
+
+#### Vercel AI Gateway · Ampersand v0.1
+- 内容：Humans& 的群聊协作模型 Ampersand v0.1（基于 Z.ai 开源权重 GLM 5.3 训练、1M 上下文）在 Vercel AI Gateway 限时免费。官方 changelog：https://vercel.com/changelog/humans-and-ampersand-now-available-on-ai-gateway
+- 截止：免费至 2026-11-13（官方 changelog 已核实）；2026-11-14 20:30 晚间汇总时移入归档
 
 <a name="notes"></a>
 ## 说明
