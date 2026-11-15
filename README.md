@@ -14,10 +14,10 @@
 - [已过期归档](#archived)
 - [说明](#notes)
 
-## 今日版：2026-11-14
+## 今日版：2026-11-15
 
-- 核实时间：2026-11-14 20:30（北京时间）
-- 新增：4 条；补录：2 条；急报：2 条；过期：3 条
+- 核实时间：2026-11-15 20:30（北京时间）
+- 新增：4 条；补录：1 条；急报：0 条；过期：8 条
 - 历史版本见 [`archive/`](archive/)。
 
 <a name="urgent"></a>
@@ -46,18 +46,6 @@
 - 额度：每账号 5 亿 GLM-5.3-Flash Token；新老用户、免费账号均可领，无需订阅 Coding Plan；各来源均称免绑卡、不用预充值；需更新到最新版客户端
 - 截止：2026-11-16 09:00（北京时间）作废；周六、周日能否补领未确认，以客户端内显示为准
 - 可达性：能直接领（ZCode 官网可下载，智谱账号登录）
-
-#### 华为云码道 CodeArts · 邀请新用户双方各得 1000 积分（2026-11-15 09:00 新增，官方已核实）
-- 内容：通过专属邀请链接邀请新用户注册并登录码道代码智能体，邀请成功后邀请人和被邀请人各得 1000 积分；与新用户注册 4000 积分、每日签到是分开的奖励，可叠加。官方计费说明：https://support.huaweicloud.com/price-codeartsagent/codeartsagent_billing_0029.html
-- 额度：邀请人和被邀请人各 1000 积分，自发放起 30 天内有效；邀请人累计上限官方计费说明未写，以页面为准
-- 截止：2026-11-15 23:59:59（北京时间）
-- 可达性：能直接领（需华为云账号，国内用户）
-
-#### Google Cloud · $300 试用赠金用于 Gemini 平台的最后窗口（2026-11-15 09:00 新增，官方已核实）
-- 内容：条款变化、非新赠金：Google Cloud 免费试用 $300 赠金（90 天有效）自 2026 年 11 月 16 日起注册试用、或 11 月 16 日及之后升级为付费账号的，不能再用于支付 Gemini 平台（原 Vertex AI / Gemini Enterprise Agent Platform）费用；想用 $300 跑 Gemini 平台，需在今天内注册试用并升级为付费结算账号，已有未升级的试用账号同理。$300 赠金从来不能付 AI Studio 的 Gemini API 费用。官方文档：https://docs.cloud.google.com/free/docs/free-cloud-features
-- 额度：新用户 $300 赠金，90 天内有效；仅限从未付费使用过 Google Cloud / Maps / Firebase 且未领过试用的账号
-- 截止：2026-11-15 内完成注册并升级（官方原文 "on or after November 16, 2026"，未写时区；若按太平洋时间，最晚约北京时间 11 月 16 日 16:00，稳妥按今天完成）
-- 可达性：需海外账号与支付方式（注册须提供有效支付方式验证身份，临时预授权 $0–$1、非实际扣款；升级后超出赠金部分按量计费，请设预算提醒）
 
 <a name="direct"></a>
 ### 进行中：能直接领
@@ -142,11 +130,6 @@
 - 额度：文件接口本身免费，模型推理仍按 Token 计费；单文件上限等细则见文件 API 文档；绑卡要求官方定价页未提
 - 截止：截止未知（官方仅写“限时免费”，未公布结束日）
 
-#### 腾讯 WorkBuddy / CodeBuddy · 混元 Hy4 正式版限时免费（2026-11-04 20:30 新增，腾讯官方通稿已核实）
-- 内容：11 月 4 日发布的 Hy4 正式版在 WorkBuddy / CodeBuddy 限时免费使用；Hy4 API 定价不变（输入 6 元/百万 Tokens、输出 18 元/百万 Tokens、缓存命中 0.3 元/百万 Tokens）。官方通稿：https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/
-- 额度：官方通稿只写 11 月 4 日至 15 日免费、未公布每人额度；多家媒体口径一致称免费额度有限、每日分配、触及限额后消耗积分继续使用、繁忙时排队，额度以客户端实际显示为准；Hy4 在腾讯云 TokenHub 同期 5 折至 12 月 31 日为付费折扣、非免费额度；Hy3 限免一并延长的说法官方通稿未写新截止，仍在待确认线索区
-- 截止：2026-11-04 至 2026-11-15（官方通稿未写时刻与时区）
-
 #### MiniMax Agent（M2 驱动）· 限时免费开放（2026-11-07 09:00 更新，官方新闻页已核实；原 M2 API 免费试用条目拆分，API 试用已结束并移入归档）
 - 内容：MiniMax Agent（M2 驱动）限时免费开放。官方新闻页：https://www.minimax.io/news/minimax-m2
 - 额度：Agent 免费，官方新闻页未写具体额度数字，以产品实际显示为准；官方称免费至“服务器撑不住为止”，无明确截止；M2 API 试用结束后按公布价计费（输入 $0.30/百万 Tokens、输出 $1.20/百万 Tokens）；绑卡、实名要求官方新闻页未写
@@ -166,11 +149,6 @@
 - 内容：11 月 5 日发布的原生多模态 MoE（560B 总参 / 25B 激活、1M 上下文，图/文/视频输入），上线前两周 API 免费调用，兼容 OpenAI 与 Anthropic 协议；对话页可先试用。官方定价页：https://developer.ant-ling.com/zh-CN/docs/models/price/ ；更新日志：https://developer.ant-ling.com/zh-CN/docs/getting-started/changelog/
 - 额度：上线前 2 周免费，模型 ID `Ling-3.2-flash`，在 developer.ant-ling.com 创建 Token 调用；免费是否适用全部调用、有无用量上限等细则官方页未写；恢复后原价官方定价表暂未列出
 - 截止：上线前 2 周（自 2026-11-05 起约两周；官方只写相对期限，未写具体结束日与时刻，以官方页为准）
-
-#### 智谱 AutoClaw 国内版 · 每周福利 M11W2（2026-11-08 20:30 新增，官方博客已核实）
-- 内容：11 月 9 日起登录国内版 AutoClaw 领取下一期 Tokens，接替今晚 23:59 失效的 M11W1。官方博客：https://autoclaw.zhipuai.cn/blog/news/M11W2/
-- 额度：活动期间登录即得 50M Tokens，每个账号限领一次；官方博客未提绑卡、实名、充值要求，适用模型官方页未写明；奖励逾期自动失效
-- 截止：活动 2026-11-09 00:00 至 2026-11-15 23:59（北京时间），积分有效期至 11 月 15 日 23:59
 
 #### 小米 MiMo 开放平台 · TTS 系列限时免费（2026-11-08 20:30 新增，官方定价页已核实）
 - 内容：`mimo-v2.5-tts`、`mimo-v2.5-tts-voiceclone`、`mimo-v2.5-tts-voicedesign` 在开放平台按量接口中标为限时免费；ASR 系列按音频时长另行计费，不属于本条；Studio 可先试听。官方定价页：https://mimo.mi.com/docs/zh-CN/price/pay-as-you-go
@@ -217,11 +195,6 @@
 - 额度：官方活动页写 2500 万 Tokens 免费领取；分项额度、适用模型、是否须实名以活动页与控制台公示为准
 - 截止：活动至 2026-11-30 23:59:59（北京时间）；免费 Token 领取是否与付费档同一截止，规则正文未单列，以活动页为准
 
-#### 字节 TRAE 中国版 · 会员续享 TRAE 宝限免（2026-11-11 20:30 新增，官方活动页已核实）
-- 内容：11 月 9 日至 15 日，TRAE 会员继续限免使用开发者个人助理 TRAE 宝问答与下任务，不消耗积分；与 11 月 2 日至 8 日面向全部用户的限免周不是同一档，会员续期单独计；需 TRAE 桌面端 3.4.13 及以上；暂不支持视频生成。官方活动页：https://docs.trae.cn/ide_use-trae-bao-for-free-with-no-credits-required
-- 额度：限免 Query 次数 1000；达到次数后若继续执行将开始消耗个人积分
-- 截止：2026-11-09 00:00 至 2026-11-15 23:59:59（北京时间）
-
 #### MOSS API · Nex-N2.6 限时免费（2026-11-13 20:30 新增，多源交叉、官方未核实）
 - 内容：基于 GLM-5.3-Flash 后训练的多模态智能体模型 Nex-N2.6（模型 ID `nex-n2.6`，固定版本 `nex-n2.6-2026-11-05`）在 MOSS API 限时免费调用，每次请求消耗 0 Credits；兼容 OpenAI Chat Completions / Responses 与 Anthropic Messages；权重已在 GitHub / Hugging Face 公开。聚合站、个人博客与 LINUX DO 三类渠道口径一致（0 Credits、未公布截止），官方模型文档本次未直读到原文，细则以官方页为准。官方平台：https://platform.moss.cn/
 - 额度：每次请求 0 Credits；持有有效 MOSS API Key 即可调用；每日次数 / Token 上限、是否需实名、绑卡要求各来源均未提及
@@ -236,6 +209,16 @@
 - 内容：基于 MTT S5000 国产算力的编程套餐，提供 GLM-4.7，可接 Claude Code / Cursor / OpenCode / Cline / Kilo Code / Roo Code；官方新闻 2026-02-03 已发布，本次首次收录。官方页：https://code.mthreads.com/ ；官方新闻：https://www.mthreads.com/news/277
 - 额度：Free Trial ¥0，用量与 Lite Plan 相当；每日限量 100 名开发者，页面标“体验爆满，扩容中”；领取成功之日起 30 天有效；同一账号不可重复领取；实名 / 绑卡要求官方页未写；到期不自动续，付费档 Lite ¥120/季度起
 - 截止：领取后 30 天；活动本身截止未知（官方页未写）
+
+#### 智谱 AutoClaw 国内版 · 每周福利 M11W3（2026-11-15 20:30 新增，官方博客已核实）
+- 内容：11 月 16 日起登录国内版 AutoClaw 领取本周 Tokens，接替今晚 23:59 失效的 M11W2；属客户端内积分，不能导出为 API Key。官方博客：https://autoclaw.zhipuai.cn/blog/news/M11W3/
+- 额度：活动期间登录即得 100M Tokens（相当于 10,000 积分），每个账号限领一次；官方博客未提绑卡、实名要求；奖励逾期自动失效
+- 截止：活动 2026-11-16 00:00 至 2026-11-22 23:59（北京时间），奖励 11 月 22 日 23:59 失效；11 月 16 日 00:00 前领不到
+
+#### 魔搭 ModelScope × AMD 联合开发者激励计划 2.0 · 100 小时 AMD GPU Notebook（2026-11-15 20:30 新增，官方活动页已核实）
+- 内容：新注册 AMD AI 开发者计划（经魔搭「我的 Notebook」横幅进入、用魔搭账号授权）并完善资料、审核通过后，魔搭账号自动到账 100 小时 AMD GPU Notebook（MI300X/MI308X，单卡 192GB 显存）；开机计时、关机停计；另可发布与 AMD GPU、ROCm 或 AMD Model API 相关的原创实践并通过审核，每篇得 125 ADP 积分，每人最多 3 篇、累计最高 375 积分，可在 AMD 开发者计划平台兑换 Radeon Cloud 相关权益；与已收录的「AMD Radeon Cloud Token Factory 中国站」「AMD Token Lab」不是同一活动。官方活动页：https://modelscope.cn/events/247 ；计划说明：https://www.modelscope.cn/posts/437059
+- 额度：100 小时新人权益，每人一次；需 +86 手机号、邮箱验证、填写真实资料并审核；启动实例需绑阿里云账号并实名认证；用完或到期实例与数据清理；另有 10 次初始免费 API 调用，魔搭每日登录可得 200 魔粒值；无需绑卡（各来源均未提）
+- 截止：截止未知（官方活动页未公布结束日；1.0 的 1000 小时计划已下线）
 
 <a name="overseas"></a>
 ### 进行中：需要海外账号 / 地区受限
@@ -390,12 +373,6 @@
 - 截止：须在 2026-12-31 前兑换（官方条款口径）；免费期自兑换日起 12 个月
 - 限制：仅限学生；需海外 Google 服务与支付方式；中国大陆资格以领取页为准
 
-#### 智谱 AutoClaw 国际版 · Weekly Perk M11W2（2026-11-08 20:30 新增，官方博客已核实）
-- 内容：11 月 9 日起登录国际版 AutoClaw 领取本周 Tokens，接替今晚 23:59 失效的 M11W1。官方博客：https://autoclaw.z.ai/blog/news/M11W2/
-- 额度：登录领取 100M Tokens（官方写 worth 10,000 credits），每账号限领一次；官方博客未提绑卡要求；与国内版金额不同，两站分别以各自博客为准
-- 截止：活动 2026-11-09 00:00 至 2026-11-15 23:59（UTC+8，即北京时间同时段）；奖励 11 月 15 日 23:59（UTC+8）失效
-- 限制：需海外账号（国际版海外站），大陆可达性未知
-
 #### Fireworks · Muse Glimmer 30B 监督微调（SFT）限免（2026-11-08 20:30 新增，官方博客已核实）
 - 内容：在 Fireworks UI 与 Serverless Training API 上对 Muse Glimmer 30B 做 SFT 训练免费；属训练算力免费，不是推理免费用量。官方博客：https://fireworks.ai/blog/train-muse-glimmer-for-free
 - 额度：官方博客写通过 11 月 30 日免费、无需信用卡；推理（含评估调用）另行计费；cookbook 写促销适用于在 2026-12-01T00:00:00-08:00 之前启动的 LoRA SFT 任务（北京时间 2026-12-01 16:00），RL / DPO / 全参数训练、部署与训练外推理不在范围内
@@ -443,12 +420,6 @@
 - 额度：免费使用，官方未公布每日次数或 Token 数字；SWE-2 Flash 免费期后官方文档写 $0.10 输入 / $0.50 输出每百万 Token（本次官方文档页未直接读到该价目，以文档页为准）；官方页未写需绑卡
 - 截止：SWE-2 Flash 免费至 2026-11-30（官方博客原文“Free through 11/30”）；SWE-2 自助套餐限免同样至 11 月 30 日，付费套餐（Teams / Pro / Max）内 Desktop / CLI 的免费 SWE-2 为永久权益；另有说法称 SWE-2 Flash 延至 12 月 4 日，本次官方文档页未见该句，待复核，暂按 11 月 30 日计
 - 限制：需海外账号（Devin）；海外服务，账号、网络与数据合规请自行确认，公司代码勿乱传；SWE-2 永久免费限付费套餐，免费档仅 SWE-2 Flash Medium 与 Teams Free mode 的 2 个并发会话
-
-#### Pika · H3 Flex 每日免费生成（2026-11-09 20:30 新增，官方页已核实）
-- 内容：Pika H3 Flex 视频生成模型（5–15 秒带同步音频）Launch Promo：每天 15 次免费生成；同期全部生成 5 折属付费折扣部分。官方页：https://pika.art/pika-h3-flex
-- 额度：每天 15 次免费生成
-- 截止：至 2026-11-15（官方页原文“Until November 15th”）；年份、精确时刻与时区官方页未写
-- 限制：仅限 Pika API Club 会员与 Pika.art Creator / Fancy 套餐订阅者，非所有免费账号；需海外账号，大陆可达性未知
 
 #### Nous Portal · LongCat-2.5 免费一周（2026-11-09 20:30 新增，免费状态官方 Portal 页已核实；截止约 11 月 13 日为多源推断）
 - 内容：美团 LongCat-2.5（1.6T 总参、约 48B 激活、1M 上下文）在 Nous Portal 内免费使用一周；Portal 首页明确列出“LongCat-2.5:Free FREE”，即按 $0 计价的免费路由，无 Token 总量额度。2026-11-14 20:30 复核官方 Portal 页仍标 FREE、仍可免费调用。官方 Portal：https://portal.nousresearch.com/
@@ -503,12 +474,6 @@
 - 额度：限时免费；LongCat 2.5 Free 每日 100 请求上限、托管在中国、零保留；MiniMax M3.1 Flash Free、DeepSeek V4.1 Flash Free、GLM-5.3-Flash Free 的提供方均为零保留、不用于训练；Beam Free、Flint 40B Free、MiMo-V2.6-Flash Free、Nemotron 系列免费期内数据保留政策见官方文档，机密内容勿用
 - 截止：限时免费，官方未公布结束日
 - 限制：Beam Free 不含中国（含港澳）等地区；其余免费模型地区限制见官方文档；需海外账号（OpenCode），大陆可达性以账号实际为准
-
-#### Vercel AI Gateway · Ampersand v0.1 免费至 11 月 13 日（2026-11-11 20:30 新增，官方 changelog 已核实）
-- 内容：Humans& 的群聊协作模型 Ampersand v0.1（基于 Z.ai 开源权重 GLM 5.3 训练、1M 上下文）在 Vercel AI Gateway 限时免费；模型名 `humansand/ampersand-v0.1`，可用 AI SDK、OpenAI 兼容接口或编码 Agent 调用。官方 changelog：https://vercel.com/changelog/humans-and-ampersand-now-available-on-ai-gateway
-- 额度：免费期内调用免费；官方未写每人额度数字；免费期后按公布价计费（输入 $1.00 / 输出 $5.20 每百万 Token）
-- 截止：免费至 2026-11-13（官方未注具体时刻与时区）
-- 限制：需海外账号（Vercel），大陆可达性未知
 
 #### Anthropic Claude · Fable 5.2 上线周免费试用（2026-11-11 20:30 新增，官方帮助中心已核实）
 - 内容：11 月 9 日发布的 Claude Fable 5.2 上线优惠：Pro 计划与 Team 标准席位在 11 月 9 日至 16 日期间可把 Fable 系列模型（5.2 / 5.1 / 5）计入套餐周限额、上限为周限额的 50%，无需另购 usage credits；另得一次 Fable 额度重置；Max、Ultra 与 Team 高级席位按付费时长得 1–3 次 Fable 重置；重置均需在设置里手动领取，不自动发放。官方帮助中心《Claude Fable 5.2 launch offers》：https://support.claude.com/en/articles/17506494-claude-fable-5-2-launch-offers
@@ -630,13 +595,28 @@
 - 截止：2026-11-23（官方写 free through November 23, 2026，时区未写）
 - 限制：需海外账号 / 网络，大陆可达性未知
 
+#### 智谱 AutoClaw 国际版 · Weekly Perk M11W3（2026-11-15 20:30 新增，官方博客已核实）
+- 内容：11 月 16 日起登录国际版 AutoClaw 领取本周 Tokens，接替今晚 23:59 失效的 M11W2；与国内版账号体系独立，两版可各领一次（据二手来源）。官方博客：https://autoclaw.z.ai/en/blog/news/M11W3/
+- 额度：登录领取 100M Tokens（官方写 worth 10,000 credits），每账号限领一次；官方博客未提绑卡要求
+- 截止：活动 2026-11-16 00:00 至 2026-11-22 23:59（UTC+8，即北京时间同时段）；奖励 11 月 22 日 23:59（UTC+8）失效；11 月 16 日 00:00 前领不到
+- 限制：需海外账号（国际版海外站），大陆可达性未知
+
+#### World Labs · Atlas 世界模型全面开放，新账号 10,000 credits（2026-11-15 20:30 新增，多源交叉、官方未核实）
+- 内容：李飞飞创办的 World Labs 于 11 月 12 日将 Atlas 世界模型（Viewfinder、Chisel、Relight、Splat to mesh + 开发者 API）向所有人开放；媒体称新账号送 10,000 credits，官方页本次未见该数字，额度以注册后实际为准。官方页：https://worldlabs.ai/atlas ；https://atlas.worldlabs.ai
+- 额度：多源称新账号 10,000 credits（官方计价 1000 credits = 1 美元；完整 Gaussian splat 场景 5000 credits，约够 2 个完整场景）；注册需手机号验证；据二手来源使用地区需设为美国或加拿大才能正常访问，未经官方确认；免费账号产出归 World Labs、仅限个人非商用（据条款转述）；绑卡要求未知
+- 截止：截止未知（未见截止）
+- 限制：需海外账号 / 地区受限（据二手来源需美加地区设置，未经官方确认）
+
+#### Google AI Studio · Google Developer Program 云额度可在 AI Studio 内直接领取（2026-11-15 20:30 补录，官方博客已核实）
+- 内容：11 月 13 日 Google 官方宣布：Google AI Pro / Ultra 订阅附带的每月 Google Cloud 赠金，现可在 AI Studio 内一键创建开发者计划档案、绑定结算并领取，抵扣 Gemini API 付费层用量。属于既有订阅权益的领取入口变化，非新增赠金。官方博客：https://blog.google/innovation-and-ai/technology/developers-tools/google-cloud-credits-gdp-ai-studio/ ；官方说明：https://aistudio.google.com/learn/use-google-ai-plan-credits-in-ai-studio
+- 额度：AI Plus 无；AI Pro 每月 $10；Ultra 5x 每月 $40；Ultra 20x 每月 $100；每笔 12 个月滚动有效、可累积；需先在 AI Studio 预付至少 $5 才能动用赠金；仅主订阅人可用；需付费订阅 + 支付方式（订阅本身自动续费，请提前取消自动续费如不需要）
+- 截止：长期（每月发放，每笔 12 个月有效）
+- 限制：需海外账号与支付方式，且只限 Google AI Pro / Ultra 付费订阅用户（特定人群）
+
 <a name="expiring"></a>
 ### 即将到期：3–5 天内
 
-- 腾讯 WorkBuddy / CodeBuddy 混元 Hy4 正式版限时免费至 11 月 15 日。
-- Pika H3 Flex 每日免费生成至 11 月 15 日。
-- 字节 TRAE 中国版会员续享 TRAE 宝限免至 11 月 15 日 23:59。
-- 智谱 AutoClaw 每周福利 M11W2（国内版 50M / 国际版 100M）至 11 月 15 日 23:59。
+- 智谱 ZCode WEEKEND BUILD 周末卡至 11 月 16 日 09:00。
 - 阶跃星辰 StepAudio 3 系列限时免费至 11 月 17 日 11:59（北京时间）。
 - Claude Fable 5.2 Pro 上线周免费至 11 月 16 日 23:59（PT，北京时间 11 月 17 日 15:59）。
 - Perplexity Decider v1.3 / Decider Flash v1.3 `:free` 约至 11 月 19 日。
@@ -863,6 +843,38 @@
 #### 腾讯 WorkBuddy · 企业微信入口教师限免 2000 积分
 - 内容：已开通学校企业微信的教师，把企业微信桌面端升到 5.0.12 及以上，在左侧“智能机器人”里点 WorkBuddy“领取使用”，领 2000 积分限免名额；与长期开放的“WorkBuddy 教育公益版”公众号申领（每月 2000 积分、连续 12 个月）是两个渠道，积分不互通。官方帮助中心：https://open.work.weixin.qq.com/help2/pc/21744
 - 截止：2026-11-14 已到期（高校通知未写具体时刻）；2026-11-15 09:00 急报检查时移入归档
+
+#### 华为云码道 CodeArts · 邀请新用户双方各得 1000 积分
+- 内容：通过专属邀请链接邀请新用户注册并登录码道代码智能体，邀请成功后邀请人和被邀请人各得 1000 积分。官方计费说明：https://support.huaweicloud.com/price-codeartsagent/codeartsagent_billing_0029.html
+- 截止：2026-11-15 23:59:59（北京时间）已到期；2026-11-15 20:30 晚间汇总时移入归档
+
+#### Google Cloud · $300 试用赠金用于 Gemini 平台的最后窗口
+- 内容：Google Cloud 免费试用 $300 赠金（90 天有效）自 2026 年 11 月 16 日起注册试用、或 11 月 16 日及之后升级为付费账号的，不能再用于支付 Gemini 平台费用。官方文档：https://docs.cloud.google.com/free/docs/free-cloud-features
+- 截止：2026-11-15 内完成注册并升级（官方原文 "on or after November 16, 2026"）；2026-11-15 20:30 晚间汇总时移入归档
+
+#### 腾讯 WorkBuddy / CodeBuddy · 混元 Hy4 正式版限时免费
+- 内容：11 月 4 日发布的 Hy4 正式版在 WorkBuddy / CodeBuddy 限时免费使用。官方通稿：https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/
+- 截止：2026-11-04 至 2026-11-15 已到期；2026-11-15 20:30 晚间汇总时移入归档
+
+#### 字节 TRAE 中国版 · 会员续享 TRAE 宝限免
+- 内容：11 月 9 日至 15 日，TRAE 会员继续限免使用开发者个人助理 TRAE 宝问答与下任务，不消耗积分。官方活动页：https://docs.trae.cn/ide_use-trae-bao-for-free-with-no-credits-required
+- 截止：2026-11-09 00:00 至 2026-11-15 23:59:59（北京时间）已到期；2026-11-15 20:30 晚间汇总时移入归档
+
+#### 智谱 AutoClaw 国内版 · 每周福利 M11W2
+- 内容：11 月 9 日起登录国内版 AutoClaw 领取本周 Tokens，接替 M11W1。官方博客：https://autoclaw.zhipuai.cn/blog/news/M11W2/
+- 截止：活动 2026-11-09 00:00 至 2026-11-15 23:59（北京时间）已到期，已由 M11W3 接替；2026-11-15 20:30 晚间汇总时移入归档
+
+#### 智谱 AutoClaw 国际版 · Weekly Perk M11W2
+- 内容：11 月 9 日起登录国际版 AutoClaw 领取本周 Tokens，接替 M11W1。官方博客：https://autoclaw.z.ai/blog/news/M11W2/
+- 截止：活动 2026-11-09 00:00 至 2026-11-15 23:59（UTC+8）已到期，已由 M11W3 接替；2026-11-15 20:30 晚间汇总时移入归档
+
+#### Pika · H3 Flex 每日免费生成
+- 内容：Pika H3 Flex 视频生成模型 Launch Promo：每天 15 次免费生成。官方页：https://pika.art/pika-h3-flex
+- 截止：至 2026-11-15（官方页原文“Until November 15th”）已到期；2026-11-15 20:30 晚间汇总时移入归档
+
+#### Vercel AI Gateway · Ampersand v0.1 免费至 11 月 13 日
+- 内容：Humans& 的群聊协作模型 Ampersand v0.1 在 Vercel AI Gateway 限时免费。官方 changelog：https://vercel.com/changelog/humans-and-ampersand-now-available-on-ai-gateway
+- 截止：免费至 2026-11-13 已到期；2026-11-15 20:30 晚间汇总时移入归档
 
 <a name="notes"></a>
 ## 说明
