@@ -14,10 +14,10 @@
 - [已过期归档](#archived)
 - [说明](#notes)
 
-## 今日版：2026-11-15
+## 今日版：2026-11-16
 
-- 核实时间：2026-11-15 20:30（北京时间）
-- 新增：4 条；补录：1 条；急报：0 条；过期：8 条
+- 核实时间：2026-11-16 20:30（北京时间）
+- 新增：1 条；补录：3 条；急报：0 条；过期：3 条
 - 历史版本见 [`archive/`](archive/)。
 
 <a name="urgent"></a>
@@ -40,18 +40,6 @@
 - 额度：每人每天 3 亿 GLM-5.3-Flash Token，免费账号可领、无需订阅 Coding Plan；需更新到最新版客户端，领取后切换到 Global Building 通道并选 GLM-5.3-Flash，选错通道或模型会扣套餐额度；仅限 ZCode 客户端内使用，不能导出为 API Key；绑卡、实名要求各来源均未提及；官方未公布活动结束日期
 - 截止：每日领取：19:00 起领，23:00 至次日 09:00 可用，次日 09:00 清零、不结转，当天不领作废
 - 可达性：能直接领（ZCode 官网可下载，智谱账号登录）
-
-#### 智谱 ZCode · WEEKEND BUILD 周末卡（2026-11-14 09:00 新增，多源交叉、官方未核实）
-- 内容：本周末改发 5 亿 WEEKEND BUILD 卡，接替工作日每日 3 亿卡：11 月 13 日（周五）晚在客户端左下角卡片领取，11 月 13 日 23:00 生效，可用到 11 月 16 日（周一）09:00，中间不按日清零；与工作日每日 3 亿卡不叠加。领取后切换到 Start Plan 通道并选 GLM-5.3-Flash，选错通道或模型会扣套餐额度；仅限 ZCode 客户端内使用，不能导出为 API Key。官方产品页：https://zcode.z.ai/cn
-- 额度：每账号 5 亿 GLM-5.3-Flash Token；新老用户、免费账号均可领，无需订阅 Coding Plan；各来源均称免绑卡、不用预充值；需更新到最新版客户端
-- 截止：2026-11-16 09:00（北京时间）作废；周六、周日能否补领未确认，以客户端内显示为准
-- 可达性：能直接领（ZCode 官网可下载，智谱账号登录）
-
-#### Baseten · Sandboxes 上线免费期最后一天（2026-11-16 09:00 新增，官方已核实）
-- 内容：11 月 5 日发布的 Baseten Sandboxes（给 Agent 用的有状态隔离运行环境，可秒级暂停 / 恢复）免费运行至 11 月 16 日；属沙箱算力免费，不是模型推理免费。官方博客：https://www.baseten.co/blog/building-the-agent-cloud-introducing-baseten-sandboxes/ ；官方文档：https://docs.baseten.co/sandboxes/overview
-- 额度：免费期内运行 Sandboxes 不收费；免费期结束后继续运行按官方价目页计费（vCPU-hour、GB RAM-hour 与存储），请在到期前停掉或删除 sandbox 以免扣费；需注册 Baseten 账号；绑卡要求官方免费说明未提。官方价目页：https://www.baseten.co/pricing/
-- 截止：免费至 2026-11-16（官方原文“free to run until November 16th”，未写具体时刻与时区；Baseten 为美国公司，稳妥按北京时间今天内用完）
-- 可达性：需海外账号（英文海外开发者平台，国内访问与注册可用性未知，计费需国际支付方式）
 
 <a name="direct"></a>
 ### 进行中：能直接领
@@ -225,6 +213,21 @@
 - 内容：新注册 AMD AI 开发者计划（经魔搭「我的 Notebook」横幅进入、用魔搭账号授权）并完善资料、审核通过后，魔搭账号自动到账 100 小时 AMD GPU Notebook（MI300X/MI308X，单卡 192GB 显存）；开机计时、关机停计；另可发布与 AMD GPU、ROCm 或 AMD Model API 相关的原创实践并通过审核，每篇得 125 ADP 积分，每人最多 3 篇、累计最高 375 积分，可在 AMD 开发者计划平台兑换 Radeon Cloud 相关权益；与已收录的「AMD Radeon Cloud Token Factory 中国站」「AMD Token Lab」不是同一活动。官方活动页：https://modelscope.cn/events/247 ；计划说明：https://www.modelscope.cn/posts/437059
 - 额度：100 小时新人权益，每人一次；需 +86 手机号、邮箱验证、填写真实资料并审核；启动实例需绑阿里云账号并实名认证；用完或到期实例与数据清理；另有 10 次初始免费 API 调用，魔搭每日登录可得 200 魔粒值；无需绑卡（各来源均未提）
 - 截止：截止未知（官方活动页未公布结束日；1.0 的 1000 小时计划已下线）
+
+#### 腾讯混元 Hy4 flash · WorkBuddy 限时免费（2026-11-16 20:30 新增，官方已核实）
+- 内容：11 月 16 日发布的 Hy4 flash（224B 总参 / 64B Engram 参数 / 每 token 激活 12B，多模态，1M 上下文），在 WorkBuddy 限时免费使用；腾讯云 TokenHub API 同期限时 5 折（付费折扣，非免费额度）。官方研究页：https://hy.tencent.com/research/hy4-flash
+- 额度：WorkBuddy 内限时免费使用；官方研究页未写每日额度数值与领取条件细节，额度机制以 WorkBuddy 端内显示为准；登录 WorkBuddy 即可使用，绑卡要求官方未提
+- 截止：官方原文“11 月 30 日前，用户可在 WorkBuddy 限时免费使用”（未写具体时刻与年份，按文章发布日 2026-11-16 计为 2026-11-30 前）
+
+#### 阿里 Qoder CN（国内版）· 每日 100 通用 Credits（2026-11-16 20:30 补录，官方文档已核实）
+- 内容：Qoder CN 个人用户每天在桌面端主动领取 100 通用 Credits，可在 Qoder CN 全系产品使用；与今日急报区的阿里 Qoder（国际版）每日 100 Credits 是国内外两个版本，不要混用。官方文档：https://docs.qoder.cn/events/100credits
+- 额度：每账号每轮限领 1 次，每次 100 通用 Credits，需主动领取；每日 10:00 开新一轮、次日 10:00 前截止，错过不补；每笔自领取起 30 天有效、可跨天保留；免费 / 试用 / 个人付费 / 会员卡用户均可，企业订阅（团队版、企业标准版、企业专属版）不适用；仅桌面端可领；无需绑卡（官方未提）
+- 截止：长期（2026-09-18 10:00 起，结束时间“另行公告”）
+
+#### 月之暗面 Kimi 开放平台 · 新用户认证送 15 元 API 代金券（2026-11-16 20:30 补录，官方文档与帮助中心已核实）
+- 内容：国内手机号注册新用户完成实名（个人或企业）认证后获赠 15 元代金券，自动抵扣 API 调用。官方平台文档：https://platform.kimi.com/docs/guide/account-and-payments ；官方帮助中心：https://www.kimi.com/help/kimi-api/api-free-trial
+- 额度：15 元；自发放起 3 个月有效；国内手机号 + 实名认证；平台文档口径：可用于 Kimi K3.1 Pro 与 Kimi K3，不可用于高速版 Kimi K3.1 Pro Highspeed；帮助中心旧页仍写“不可用于体验 Kimi K3”，两处官方口径冲突，适用模型以平台文档 / 控制台为准；无需绑卡
+- 截止：长期新人福利；代金券自发放起 3 个月有效
 
 <a name="overseas"></a>
 ### 进行中：需要海外账号 / 地区受限
@@ -476,7 +479,7 @@
 - 限制：仅限 Google Cloud 新用户与 @gmail.com 账号；需海外 Google 服务，中国大陆可达性以实际为准
 
 #### OpenCode Zen · 新一批免费模型（2026-11-10 20:30 新增，官方 Zen 文档已核实）
-- 内容：MiniMax M3.1 Flash Free（@opencode 2026 年 11 月 10 日宣布）、Beam Free、Flint 40B Free、LongCat 2.5 Free、MiMo-V2.6-Flash Free、Nemotron 3 Ultra Free、Nemotron 3.5 Super VL Free、Jev 1.13 Free、Big Pickle（隐身模型）输入、输出、缓存读取均为 Free，仅限 OpenCode 内使用。官方文档：https://opencode.ai/docs/zen/
+- 内容：MiniMax M3.1 Flash Free（@opencode 2026 年 11 月 10 日宣布）、Beam Free、Flint 40B Free、LongCat 2.5 Free、MiMo-V2.6-Flash Free、Nemotron 3 Ultra Free、Nemotron 3.5 Super VL Free、Jev 1.13 Free、Hy4 flash Free（2026-11-16 20:30 复核官方文档新增）、Big Pickle（隐身模型）输入、输出、缓存读取均为 Free，仅限 OpenCode 内使用。官方文档：https://opencode.ai/docs/zen/
 - 额度：限时免费；LongCat 2.5 Free 每日 100 请求上限、托管在中国、零保留；MiniMax M3.1 Flash Free、DeepSeek V4.1 Flash Free、GLM-5.3-Flash Free 的提供方均为零保留、不用于训练；Beam Free、Flint 40B Free、MiMo-V2.6-Flash Free、Nemotron 系列免费期内数据保留政策见官方文档，机密内容勿用
 - 截止：限时免费，官方未公布结束日
 - 限制：Beam Free 不含中国（含港澳）等地区；其余免费模型地区限制见官方文档；需海外账号（OpenCode），大陆可达性以账号实际为准
@@ -619,10 +622,15 @@
 - 截止：长期（每月发放，每笔 12 个月有效）
 - 限制：需海外账号与支付方式，且只限 Google AI Pro / Ultra 付费订阅用户（特定人群）
 
+#### Exa · 每月 10 美元免费额度（2026-11-16 20:30 补录，官方定价页已核实）
+- 内容：AI 搜索 API（搜索 / 抓取 / 深度研究，MCP 与 ChatGPT 插件可用），Starter 档每月免费 10 美元额度；与待确认线索区的 Exa 兑换码（EXA20FREEBUFF 等，官方未背书）不是同一口径，不要混用。官方定价页：https://exa.ai/pricing
+- 额度：每月 10 美元免费额度（官方定价页原句）；每月重置规则与一次性迎新奖励官方定价页本次未见，以控制台显示为准；搜索 10 QPS、Agent 并发 50；绑卡要求官方定价页未写
+- 截止：长期每月发放（官方定价页未写结束日）
+- 限制：需海外账号；大陆可达性未知
+
 <a name="expiring"></a>
 ### 即将到期：3–5 天内
 
-- 智谱 ZCode WEEKEND BUILD 周末卡至 11 月 16 日 09:00。
 - 阶跃星辰 StepAudio 3 系列限时免费至 11 月 17 日 11:59（北京时间）。
 - Claude Fable 5.2 Pro 上线周免费至 11 月 16 日 23:59（PT，北京时间 11 月 17 日 15:59）。
 - Perplexity Decider v1.3 / Decider Flash v1.3 `:free` 约至 11 月 19 日。
@@ -640,9 +648,6 @@
 
 #### 讯飞星火 Spark-X2.6：注册 + 实名领 10 亿 Token、31 天内有效
 - 原因：仅 LINUX DO 单一社区帖说法，未在讯飞官方页逐条核对额度、有效期与适用模型；另有报道称 X2.6-4B 推理定价限时免费，与“10 亿 Token”是否为同一口径未确认。官方页：https://xinghuo.xfyun.cn/sparkapi
-
-#### 腾讯 WorkBuddy · 混元 Hy3 限免延至 11 月 15 日
-- 原因：2026-11-04 多家媒体在 Hy4 发布报道中称 Hy3 限免时间一并延长，但腾讯官方 Hy4 通稿只写 WorkBuddy / CodeBuddy 11 月 4 日至 15 日免费、未写 Hy3 的新截止；官方 9 月 30 日公告仍为延至 10 月 31 日。Hy3 新截止未确认前不进正文，Hy4 正式版限免已单独进正文。官方页：https://www.codebuddy.cn/pricing/
 
 #### 腾讯 Buddy One 关联礼 · 100 积分
 - 原因：多家媒体同口径转述 10 月 29 日发布：WorkBuddy PC 端升到 5.9.0+ 后关联账号即送 100 积分、四端通用；但未在腾讯官方页核对领取入口、资格与截止（媒体称官方仅称“近期”），未确认前不进正文。官方页：https://www.codebuddy.cn/pricing/
@@ -670,6 +675,9 @@
 
 #### PolyAI · Dialog-RSN-1 API 新账号 $100 免费额度
 - 原因：多源称新账号 $100（财经站转述官方 LinkedIn、两家聚合站、X 口径一致），但本次直读官方定价页仅见“$20 of free credit to get started”，未见 $100 横幅原句；截止口径也不一致（多源称 2026-11-19 前注册，聚合站称官方横幅只写“for a limited time”）；另有第三方实测领取入口按国家封锁。额度、截止与领取资格均未在官方页核实前不进正文。官方页：https://poly.ai/pricing
+
+#### 云知声 U2-Flash · 1 亿 Token 免费档（声称 11-20 到期）
+- 原因：仅一家聚合站（einkCN 11-16 清单）称 U2-Flash 有 1 亿 Token 免费档、11 月 20 日到期，未在云知声官方页核对额度与截止；此前同模型“限免至 10-31”的说法同样未核实、已归档。未确认前不进正文。官方页：https://maas.unisound.com/
 
 <a name="archived"></a>
 ### 已过期归档
@@ -881,6 +889,18 @@
 #### Vercel AI Gateway · Ampersand v0.1 免费至 11 月 13 日
 - 内容：Humans& 的群聊协作模型 Ampersand v0.1 在 Vercel AI Gateway 限时免费。官方 changelog：https://vercel.com/changelog/humans-and-ampersand-now-available-on-ai-gateway
 - 截止：免费至 2026-11-13 已到期；2026-11-15 20:30 晚间汇总时移入归档
+
+#### 智谱 ZCode · WEEKEND BUILD 周末卡
+- 内容：本周末改发 5 亿 WEEKEND BUILD 卡，接替工作日每日 3 亿卡；11 月 13 日 23:00 生效，可用到 11 月 16 日 09:00。官方产品页：https://zcode.z.ai/cn
+- 截止：2026-11-16 09:00（北京时间）已到期；2026-11-16 20:30 晚间汇总时移入归档
+
+#### Baseten · Sandboxes 上线免费期
+- 内容：11 月 5 日发布的 Baseten Sandboxes（给 Agent 用的有状态隔离运行环境）免费运行；属沙箱算力免费，不是模型推理免费。官方博客：https://www.baseten.co/blog/building-the-agent-cloud-introducing-baseten-sandboxes/
+- 截止：免费至 2026-11-16（官方原文“free to run until November 16th”）已到期；2026-11-16 20:30 晚间汇总时移入归档
+
+#### 腾讯 WorkBuddy · 混元 Hy3 限免延至 11 月 15 日（待确认线索，未获官方核实）
+- 内容：多家媒体称 Hy3 限免延至 11 月 15 日，官方通稿未写 Hy3 的新截止，始终未确认。官方页：https://www.codebuddy.cn/pricing/
+- 截止：声称截止 2026-11-15，已过且未核实，移出待确认线索区，只归档
 
 <a name="notes"></a>
 ## 说明
