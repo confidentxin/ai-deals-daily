@@ -1,0 +1,130 @@
+{
+  "asOf": "2026-11-16",
+  "timezone": "Asia/Shanghai",
+  "preview": 10,
+  "empty": false,
+  "emptyMessage": "今日暂无重要资讯，晚间 19:30 起每日更新",
+  "note": "2026-11-16 早报（北京时间）整理：11 月 15 日晚报之后至今 4 条（周末主要厂商无重大新模型发布）——FT 称黄仁勋考虑重返 NVIDIA、NYT 调查卢特尼克芯片规则与家族生意重叠、财长 Bessent 要求 NVIDIA 找外部 CEO、OpenAI 开设科学博客。按公告时间从新到旧排列。带精确钟点的条目 timeLabel 用北京时间；官方只给日期的条目 timePrecision 为 date，timeLabel 只写日期，sortAt 采用当日零点，仅用于排序，详见各条 timeNote。置信度 A 表示来自官方原文，B 表示可靠媒体报道、官方未单独核实。",
+  "items": [
+    {
+      "id": "ft-huang-considers-nvidia-return",
+      "title": "FT：黄仁勋考虑重返 NVIDIA，盟友组建「作战室」游说董事会",
+      "badge": "N",
+      "summary": "《金融时报》周日援引知情人士称，黄仁勋已和亲信讨论回归 CEO 的可能，盟友正组织硅谷高管「作战室」游说董事会并争取白宫支持；NVIDIA 未回应。支持复职的请愿签名已超过 15.6 万（自报数字）。",
+      "publishedAt": "2026-11-16T04:37:00+08:00",
+      "sortAt": "2026-11-16T04:37:00+08:00",
+      "timeLabel": "2026-11-16 04:37（北京时间）",
+      "timePrecision": "minute",
+      "timeNote": "FT 原文在付费墙后，未取得其发稿时刻；FT 报道于美国时间 11 月 15 日（周日）发出。此处用可核对的最早转载时间：Wccftech 标注 Nov 15, 2026 at 03:37pm EST，即北京时间 11 月 16 日 04:37。CNA 转载稿时间为新加坡时间 11 月 16 日 07:25（北京时间相同）。",
+      "source": "金融时报（经 CNA/路透、Wccftech、Seeking Alpha 转述）",
+      "confidence": "B",
+      "url": "https://www.channelnewsasia.com/world/jensen-huang-discusses-comback-nvidia-6553591",
+      "links": [
+        {
+          "label": "CNA（转述 FT）",
+          "url": "https://www.channelnewsasia.com/world/jensen-huang-discusses-comback-nvidia-6553591"
+        },
+        {
+          "label": "海峡时报",
+          "url": "https://www.straitstimes.com/business/companies-markets/jensen-huang-discusses-comeback-as-nvidia-ceo-with-allies-ft-reports"
+        },
+        {
+          "label": "Seeking Alpha",
+          "url": "https://seekingalpha.com/news/4672807-huang-weighs-nvidia-return-as-investors-urge-board-to-keep-options-open"
+        },
+        {
+          "label": "Wccftech",
+          "url": "https://wccftech.com/jensen-huang-considers-returning-to-nvidia-as-his-allies-assemble-a-war-room-to-lobby-on-his-behalf-and-a-petition-in-his-favor-crosses-156000-signatures/"
+        },
+        {
+          "label": "纽约邮报",
+          "url": "https://nypost.com/2026/11/15/business/jensen-huangs-allies-pushing-nvidia-board-to-re-appoint-him-days-after-he-resigned-over-chinese-spy-employee-affairs/"
+        }
+      ],
+      "detail": "## 它是什么\n\n《金融时报》（FT）美国时间 11 月 15 日（周日）的报道：11 月 12 日辞去 NVIDIA 总裁、CEO 和董事职务的黄仁勋，正在考虑回归。这是黄仁勋辞职事件的最新进展，目前只是媒体援引知情人士的报道，不是 NVIDIA 或黄仁勋本人的表态。\n\n## 它说了什么\n\n- 据 FT（经 CNA/路透转述），黄仁勋已和亲信讨论回归 CEO 的可能。\n- 一名黄仁勋的盟友对 FT 说，他们正在组建一个由硅谷高管组成的「作战室」（war room），游说董事会让他回归，并会争取白宫支持；这名人士称「科技圈里除了前沿实验室，所有重要的人都喜欢 Jensen」，并说这些努力得到了黄仁勋本人的支持。\n- 几天前 FT 曾报道，NVIDIA 董事会为物色继任者接触过 Arm CEO Rene Haas。\n- NVIDIA 在非工作时间未立即回应置评。\n- 据 Wccftech 发稿时的统计，「I Stand With Jensen」请愿网站显示签名 156,850 个，其中自称 NVIDIA 现员工超过 7,500 人（签名身份均为自报，未经核实）。\n\n## 适合谁\n\n关注 NVIDIA 管理层走向、GPU 供应稳定性和美股 AI 板块的读者。\n\n## 为什么值得看\n\n此前要求复职的声音来自员工内部帖、网络请愿和 Altimeter、Atreides 两家股东的公开信；这次是报道称黄仁勋本人在考虑回归、并有组织地游说董事会和白宫。与此同时美国财长 Bessent 公开要求董事会找外部 CEO（见同日另一条），两种力量方向相反。NVIDIA 将于北京时间 11 月 18 日清晨公布黄仁勋离任后的首份季度财报，董事会的独立调查结论和 12 月国会听证仍是后续关键节点。\n\n## 可以核对的事实\n\n- CNA 稿件时间：16 Nov 2026 07:25AM（新加坡时间，与北京时间相同），注明来源为 FT 周日报道。\n- Wccftech 稿件：Rohail Saleem，Nov 15, 2026 at 03:37pm EST，请愿签名 156,850 为其发稿时所见数字。\n- Seeking Alpha 稿件：Nov 15, 2026, 4:20 PM ET。\n- FT 原文未直接核读（付费墙），可信度 B（多家可靠媒体转述一致，官方未确认）。"
+    },
+    {
+      "id": "nyt-lutnick-chip-rules-cantor-semafor-china-trip",
+      "title": "纽约时报：卢特尼克推动放宽的芯片规则，与其家族公司生意重叠；他仍将随特朗普访华",
+      "badge": "Lu",
+      "summary": "NYT 调查称，美国商务部长卢特尼克一直主张从宽制定「向东南亚数据中心卖先进 AI 芯片」的规则，而他儿子掌管的 Cantor Fitzgerald 与这类为中国客户服务的数据中心公司（如 Bitdeer）有业务往来；商务部称其遵守了全部道德协议。Semafor 独家称卢特尼克仍将随特朗普本周赴华出席 APEC。",
+      "publishedAt": "2026-11-16T02:15:00+08:00",
+      "sortAt": "2026-11-16T02:15:00+08:00",
+      "timeLabel": "2026-11-16 02:15（北京时间）",
+      "timePrecision": "minute",
+      "timeNote": "NYT 原文发稿时刻未取得（美国时间 11 月 15 日）。此处用 Business Standard 转载 NYT 稿的首发时间 Nov 15 2026 11:45 PM IST，即北京时间 11 月 16 日 02:15。Semafor 独家稿标注 Updated Nov 15, 2026, 1:04pm EST，即北京时间 11 月 16 日 02:04。",
+      "source": "纽约时报（经 Business Standard 转载）/ Semafor",
+      "confidence": "B",
+      "url": "https://www.business-standard.com/world-news/nvidia-row-lutnick-pushed-to-weaken-chip-rules-linked-to-family-business-126111500775_1.html",
+      "links": [
+        {
+          "label": "Business Standard（转载 NYT）",
+          "url": "https://www.business-standard.com/world-news/nvidia-row-lutnick-pushed-to-weaken-chip-rules-linked-to-family-business-126111500775_1.html"
+        },
+        {
+          "label": "费城询问报（转载 NYT）",
+          "url": "https://www.inquirer.com/news/nation-world/howard-lutnick-commerce-secretary-rules-data-centers-nvidia-chips-china-southeast-asia-cantor-fitzgerald-20261115.html"
+        },
+        {
+          "label": "Semafor 独家",
+          "url": "https://www.semafor.com/article/11/15/2026/under-pressure-lutnick-joins-trump-in-china"
+        },
+        {
+          "label": "Seeking Alpha",
+          "url": "https://seekingalpha.com/news/4672784-lutnick-backs-narrower-ai-chip-controls-as-family-firm-s-business-draws-scrutiny"
+        }
+      ],
+      "detail": "## 它是什么\n\n《纽约时报》（作者 Ana Swanson、Aaron Krolik、Paul Mozur）的调查报道，以及 Semafor 同日的独家消息。两者都和 NVIDIA 芯片流向中国的争议有关，焦点是美国商务部长霍华德·卢特尼克（Howard Lutnick）。\n\n## 它说了什么\n\n- 美国禁止向中国企业直接出售最先进的 AI 芯片，但设在东南亚、向中国企业出租算力的数据中心是合法的。政府内部争论了近两年要不要收紧这类出口；NYT 称卢特尼克是主张「不要管得太严」的主要官员，最近在推动一个较宽松的版本。\n- 例子：马来西亚南部一座代号 A201 的数据中心计划明年启用，装有价值数亿美元的 NVIDIA 最先进服务器，计划为一家中国科技巨头提供算力。运营方是新加坡公司 Bitdeer。\n- 卢特尼克入阁前长期掌管的 Cantor Fitzgerald（现由他的儿子 Kyle 和 Brandon 经营）今年担任 Bitdeer 最高 10 亿美元股票发行的指定销售代理，2024 年也曾帮其安排最高 2.5 亿美元的发行。\n- 商务部称卢特尼克遵守了所有道德协议；NYT 也写明，没有证据表明 Cantor 的业务影响了卢特尼克的决策。\n- Semafor 独家：卢特尼克预计将乘空军一号随特朗普本周赴华，特朗普计划周三（11 月 18 日）抵达，在 APEC 峰会期间会见习近平和普京；财长 Bessent 也将同行。一名美国高级官员称 NVIDIA 丑闻「不应对此行有任何影响」，预计不会出现在与中方的会谈中。白宫表示对卢特尼克「完全信任」。\n\n## 适合谁\n\n关注 AI 芯片出口管制、东南亚算力租赁、NVIDIA 对华业务以及中美科技关系的读者。\n\n## 为什么值得看\n\n东南亚数据中心是中国 AI 公司获得先进算力的重要渠道之一。谁来写、怎么写这套规则，直接影响 NVIDIA 销售和中国厂商能租到的算力。卢特尼克与 Bessent 的公开分歧，加上本周特朗普访华，使出口管制走向更不确定。\n\n## 可以核对的事实\n\n- Business Standard 转载稿：First Published Nov 15 2026, 11:45 PM IST，署名 NYT 三位记者。\n- Semafor：Ashley Gold，Updated Nov 15, 2026, 1:04pm EST。\n- Hacker News 当天该 NYT 稿得到 450 分、192 条评论。\n- 可信度 B（可靠媒体报道，商务部仅作原则性回应）。"
+    },
+    {
+      "id": "bessent-nvidia-outside-ceo",
+      "title": "美国财长 Bessent：NVIDIA 需要「大换血」，应从外部找新 CEO",
+      "badge": "N",
+      "summary": "Bessent 周日在 Fox News 上质疑 NVIDIA 是否为冲业绩推动「看似违规」的芯片销售，称如果是银行早有高管被撤，并建议董事会到公司外部找 CEO。NVIDIA 将在北京时间 11 月 18 日清晨发布黄仁勋离任后首份财报。",
+      "publishedAt": "2026-11-16T00:49:00+08:00",
+      "sortAt": "2026-11-16T00:49:00+08:00",
+      "timeLabel": "2026-11-16 00:49（北京时间）",
+      "timePrecision": "minute",
+      "timeNote": "CNBC 标注 Published Sun, Nov 15 2026 11:49 AM EST，即北京时间 11 月 16 日 00:49，为媒体发稿时间；Bessent 接受 Fox News 采访在同日稍早。",
+      "source": "CNBC",
+      "confidence": "B",
+      "url": "https://www.cnbc.com/2026/11/15/bessent-nvidia-ceo-lutnick-megaspeed.html",
+      "links": [
+        {
+          "label": "CNBC",
+          "url": "https://www.cnbc.com/2026/11/15/bessent-nvidia-ceo-lutnick-megaspeed.html"
+        },
+        {
+          "label": "NVIDIA 官方：Q3 财报电话会安排",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-sets-conference-call-for-third-quarter-financial-results-6928873"
+        }
+      ],
+      "detail": "## 它是什么\n\n美国财政部长 Scott Bessent 美国时间 11 月 15 日（周日）接受 Fox News 采访时对 NVIDIA 的公开批评，由 CNBC 报道。这是美国内阁官员第一次公开要求 NVIDIA 董事会从外部选 CEO。\n\n## 它说了什么\n\n- Bessent 呼吁 NVIDIA 进行「大换血」（dramatic shakeup），董事会应到公司外部寻找下一任 CEO，并暗示其他高管在出口管制合规上也应受审视。\n- 原话（CNBC 引述）：「我一直想回到 NVIDIA 的文化是什么——他们是不是在推动这些看似违规的销售来抬高营收和利润？」\n- 他说：「如果这是一家银行、没有这样合规，OCC（美国货币监理署）现在早就进场了，很多高管会被撤换。」\n- 他还质疑 NVIDIA 的财务披露，指出在对华销售下降的同时新加坡收入激增；NVIDIA 自 2025 年 11 月起不再单独披露新加坡收入，理由是改按客户总部而非账单地址统计。\n- Bessent 说特朗普已划定红线：不允许向中国出售比 H200 更先进的芯片。\n- 背景：黄仁勋 11 月 12 日辞职，起因是他与新加坡 Megaspeed 前高管 Alice Huang 的关系被曝光，美国情报官员怀疑后者为中国从事间谍活动，Megaspeed 涉嫌违规把 NVIDIA 芯片转运到中国；CFO Colette Kress 任临时 CEO。\n\n## 适合谁\n\n关注 NVIDIA 治理与继任、美国芯片出口管制和美股 AI 板块的读者。\n\n## 为什么值得看\n\n一边是硅谷盟友和部分股东游说让黄仁勋回归（见同日 FT 条目），一边是财长公开要求外部 CEO、并把矛头指向整个管理层的合规文化。NVIDIA 官方公告：第三财季（截至 2026 年 10 月 25 日）财报约在美国太平洋时间 11 月 17 日 13:20 发布，电话会 14:00 开始，即北京时间 11 月 18 日 05:20 和 06:00，Kress 将提供书面评论。管理层如何回应出口与继任问题值得关注。\n\n## 可以核对的事实\n\n- CNBC 作者 Luke Fountain，Published Sun, Nov 15 2026 11:49 AM EST。\n- 财报时间来自 NVIDIA 新闻室 10 月 28 日公告，可信度 A；Bessent 讲话为媒体报道，可信度 B。"
+    },
+    {
+      "id": "openai-science-blog-standard-model-lattice",
+      "title": "OpenAI 开设科学博客，首篇客座文章：物理学家与 GPT-6 Astra 给出标准模型的格点定义候选方案",
+      "badge": "O",
+      "summary": "OpenAI 推出面向科学家的官方科学博客，发布研究成果、方法指南和科研人员第一手经验。首篇客座文章由 UCSB 粒子理论组负责人 Nathaniel Craig 撰写：他与 GPT-6 Astra 合作，提出一个标准模型的非微扰格点定义候选方案，Astra 主导了详细证明，仍待学界检验。",
+      "publishedAt": "2026-11-15T00:00:00+08:00",
+      "sortAt": "2026-11-15T00:00:00+08:00",
+      "timeLabel": "2026-11-15（美国时间）",
+      "timePrecision": "date",
+      "timeNote": "OpenAI 两个页面均只标注 November 15, 2026，没有精确时刻；sortAt 采用当日零点，仅用于排序。",
+      "source": "OpenAI 官方博客",
+      "confidence": "A",
+      "url": "https://openai.com/index/our-new-blog-for-science/",
+      "links": [
+        {
+          "label": "OpenAI：Our new blog for science",
+          "url": "https://openai.com/index/our-new-blog-for-science/"
+        },
+        {
+          "label": "OpenAI 科学博客首篇：A step toward defining the Standard Model on a lattice",
+          "url": "https://openai.com/index/step-toward-defining-the-standard-model"
+        }
+      ],
+      "detail": "## 它是什么\n\nOpenAI 11 月 15 日上线的官方「科学博客」，以及同日发布的第一篇客座文章。博客定位是给科学家和学术研究者一个地方，分享他们用 AI 发现了什么、怎么做的。\n\n## 它做什么\n\n- 博客将发布三类内容：新研究成果与进展（来自 OpenAI、合作者和更广泛的科学界）；方法与实操指南（如科学计算、数据分析、文献梳理、实验设计，并说明如何核查结果、方法哪里不行）；科研人员第一手视角。\n- 官方回顾了近期成果：9 月内部系统给出针对纳维-斯托克斯存在性与光滑性问题的证明；10 月发布一批数学结果；与 PerturbAI 和 Scripps Research 合作，由 GPT-Rosalind 驱动的数千个智能体在 32 分钟内分析了数百万个小鼠脑细胞的实验数据。\n- 首篇客座文章作者 Nathaniel Craig 是 OpenAI 访问科学家、加州大学圣塔芭芭拉分校粒子理论组负责人、KITP 常任成员。他在 10 月一篇借助 GPT-6 Astra 完成的预印本中，提出了标准模型在格点（离散时空网格）上的一个非微扰定义候选方案。\n- 难点在于标准模型是「手征」理论，把左手费米子放上格点会冒出不需要的右手伙伴（费米子加倍）；已有的 overlap 费米子能解决加倍，但完整标准模型的「相位」规定 25 年多来悬而未决。Craig 的思路是把同一组力场表示到一系列更细的网格上、逐级比较并累加相位修正。\n- 文中写明：Astra 提出了把力场搬到更细网格的正确方式，证明了比较会收敛，并「主导了详细证明」；格点场论专家 Maarten Golterman、Andreas Kronfeld、Yigal Shamir 审阅并提出问题。\n\n## 适合谁\n\n理论物理、数学和其他科研人员；关注「AI 做科研」进展的开发者和读者。\n\n## 为什么值得看\n\nOpenAI 把科学发现当作重点方向，单独开博客意味着这类成果会更系统地对外发布。但作者本人强调这只是一个「候选」定义：需要学界讨论确认是否具备所需性质，「更多是原理上的答案而非实践上的答案」，离真实格点模拟还有很多工作，他目前在研究该构造在有限格距下是否满足反射正定性。\n\n## 可以核对的事实\n\n- 两个页面日期均为 November 15, 2026。\n- 上述成果描述与限定条件均出自 OpenAI 官方页面原文，本报告未独立评审物理证明。可信度 A（官方原文）。"
+    }
+  ]
+}
