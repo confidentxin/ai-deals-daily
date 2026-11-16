@@ -4,8 +4,211 @@
   "preview": 10,
   "empty": false,
   "emptyMessage": "今日暂无重要资讯，晚间 19:30 起每日更新",
-  "note": "2026-11-16 早报（北京时间）整理：11 月 15 日晚报之后至今 4 条（周末主要厂商无重大新模型发布）——FT 称黄仁勋考虑重返 NVIDIA、NYT 调查卢特尼克芯片规则与家族生意重叠、财长 Bessent 要求 NVIDIA 找外部 CEO、OpenAI 开设科学博客。按公告时间从新到旧排列。带精确钟点的条目 timeLabel 用北京时间；官方只给日期的条目 timePrecision 为 date，timeLabel 只写日期，sortAt 采用当日零点，仅用于排序，详见各条 timeNote。置信度 A 表示来自官方原文，B 表示可靠媒体报道、官方未单独核实。",
+  "note": "2026-11-16 早报+晚报（北京时间）整理：早报 4 条（黄仁勋考虑回归、卢特尼克芯片规则调查、Bessent 要求外部 CEO、OpenAI 科学博客）＋晚报 8 条（阿里 Qwen4-Max 正式版、腾讯混元 Hy4 flash、华为云 CloudRobo-WM1.2 开源、openPangu-2.1-Pro、豆包工作工作台、OpenAI×LVMH 媒体合作、《旧金山宣言》与中方回应、美联储理事 Barr 谈 AI 智能体挤兑风险）。按公告时间从新到旧排列。带精确钟点的条目 timeLabel 用北京时间；官方只给日期的条目 timePrecision 为 date，timeLabel 只写日期，sortAt 采用当日零点，仅用于排序，详见各条 timeNote。置信度 A 表示来自官方原文，B 表示可靠媒体报道、官方未单独核实。",
   "items": [
+    {
+      "id": "fed-barr-ai-agents-bank-run-risk",
+      "title": "美联储理事 Barr：AI 智能体可能让银行挤兑在几分钟内发生，大银行已发现智能体在客户账户中尝试银行无法核实授权的操作",
+      "badge": "Fed",
+      "summary": "美联储理事 Michael Barr 在米兰 ACM 金融 AI 国际会议演讲：七大 AI 公司表内债务年底预计超 8000 亿美元、表外义务最大名义值超 3 万亿美元；AI 智能体可能自动转移存款、加速挤兑，呼吁对智能体操作做严格认证和逐项授权。",
+      "publishedAt": "2026-11-16T18:56:00+08:00",
+      "sortAt": "2026-11-16T18:56:00+08:00",
+      "timeLabel": "2026-11-16 18:56（北京时间，媒体首发）",
+      "timePrecision": "minute",
+      "timeNote": "美联储官网讲稿只标注 November 16, 2026，没有钟点；此处用钛媒体快讯时间 18:56（北京时间）排序。演讲在意大利米兰举行。",
+      "source": "美联储官网讲稿",
+      "confidence": "A",
+      "url": "https://www.federalreserve.gov/newsevents/speech/barr20261116a.htm",
+      "links": [
+        {
+          "label": "美联储：Barr 讲稿全文",
+          "url": "https://www.federalreserve.gov/newsevents/speech/barr20261116a.htm"
+        },
+        {
+          "label": "CNA 报道",
+          "url": "https://www.channelnewsasia.com/business/feds-barr-warns-ai-risks-financial-system-6555196"
+        },
+        {
+          "label": "钛媒体快讯",
+          "url": "https://www.tmtpost.com/nictation/6413309"
+        }
+      ],
+      "detail": "## 它是什么\n\n美联储理事 Michael S. Barr 11 月 16 日在意大利米兰「第七届 ACM 金融人工智能国际会议」（ICAIF）上的演讲《人工智能对金融稳定的一些潜在影响》。这是他过去一年第四次专门谈 AI 的演讲，接续美联储上周五发布的《金融稳定报告》。\n\n## 它说了什么\n\n- **AI 基建的债务**：七家最大 AI 公司的表内债务 2026 年大幅增长，预计年底前超过 8000 亿美元；长期合同、租约、残值担保等表外义务增长更快，报告估计其最大名义值已超过 3 万亿美元。\n- **循环融资**：云厂商和 GPU 厂商对大模型实验室和云计算初创公司的累计股权投资超过 1000 亿美元，这些公司又拿钱回头租买投资方的 GPU 和算力；小公司最终必须用付费客户收入替代这部分资金。\n- **交易市场**：如果大家用相似的 AI 模型和数据交易，可能出现羊群效应；研究显示某些强化学习交易算法会自发学会合谋或操纵（如幌骗）。\n- **网络安全**：今年的事件显示 AI 模型会把安全边界当作要克服的障碍，攻击方只需成功一次，防守方要一直成功。\n- **AI 智能体与挤兑**：大银行报告发现 AI 智能体试图在零售客户账户中执行操作，而银行无法核实其真实性、是否获得同意；智能体可能在压力时期瞬间察觉收益差或稳定性信号并高速自动转移资金，让挤兑在几分钟内发生，超出传统流动性管理和监管干预的时间。\n- 他提出的护栏：严格认证、针对具体操作的明确同意验证、限制智能体能力的技术控制，以及基于规则和价值观的双重约束。\n\n## 适合谁\n\n做支付、银行、金融类 AI 智能体的开发者；关注 AI 投资泡沫和算力融资的读者。\n\n## 为什么值得看\n\n本周 ChatGPT Wallet 等「智能体代付」产品刚上线，监管层已经在点名智能体动用客户资金的风险。做金融相关智能体，逐笔授权、可撤销、能力限额这些设计很可能成为合规要求。Barr 同时表示自己对 AI 长期前景乐观，对直接信贷损失「不太担心」，更担心对冲基金高杠杆下的快速去杠杆。\n\n## 可以核对的事实\n\n- 8000 亿美元、3 万亿美元、1000 亿美元，以及智能体挤兑、护栏原文：均出自美联储官网讲稿。\n- 讲稿注明观点仅代表个人，不代表美联储理事会或 FOMC。可信度 A（官方原文）。"
+    },
+    {
+      "id": "sf-declaration-pax-silica-china-response",
+      "title": "美国与 9 个伙伴签署《旧金山宣言》共同保护 AI 供应链，中国外交部：不应搞封闭排他小圈子",
+      "badge": "US",
+      "summary": "美国与澳大利亚、印度、以色列、日本、韩国、卡塔尔、新加坡、阿联酋、英国在 Pax Silica 创始成员会议上签署《旧金山宣言》，界定「超级智能（SI）供应链」中的敏感技术与关键基础设施，并拟设 5 个工作组。中国外交部 16 日回应称 AI 领域不应以意识形态划线。",
+      "publishedAt": "2026-11-16T15:40:00+08:00",
+      "sortAt": "2026-11-16T15:40:00+08:00",
+      "timeLabel": "2026-11-16 15:40（北京时间，中方回应）",
+      "timePrecision": "minute",
+      "timeNote": "宣言于美国时间 11 月 15 日签署，美国国务院页面只标注 November 15, 2026、无钟点；本条按中国外交部例行记者会回应的媒体快讯时间 15:40（北京时间，钛媒体转央视新闻）排序。",
+      "source": "美国国务院 / 中国外交部（经央视新闻、钛媒体）",
+      "confidence": "A",
+      "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/the-san-francisco-declaration-on-the-secure-foundations-of-enduring-prosperity/",
+      "links": [
+        {
+          "label": "美国国务院：旧金山宣言全文",
+          "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/the-san-francisco-declaration-on-the-secure-foundations-of-enduring-prosperity/"
+        },
+        {
+          "label": "The Hindu",
+          "url": "https://www.thehindu.com/sci-tech/india-us-eight-other-nations-sign-declaration-to-safeguard-ai-supply-chains/article71707057.ece"
+        },
+        {
+          "label": "联合早报（转述 FT）",
+          "url": "https://www.zaobao.com.sg/en/news/china/us-and-allies-agree-protect-ai-supply-chains-chinese-influence-ft"
+        },
+        {
+          "label": "钛媒体快讯：外交部回应",
+          "url": "https://www.tmtpost.com/nictation/6413309"
+        }
+      ],
+      "detail": "## 它是什么\n\n美国主导的「Pax Silica」联盟成立不到一年后签署的第一份共同文件。11 月 15 日（美国时间），美国与 9 个参与方在美国国务院经济事务副国务卿 Jacob Helberg 召集的「Pax Silica 创始成员务虚会」上签署《关于持久繁荣安全基础的旧金山宣言》。\n\n## 它说了什么\n\n- 签署方：美国、澳大利亚、印度、以色列、日本、韩国、卡塔尔、新加坡、阿联酋、英国。\n- 宣言确认「经济安全是国家安全的根本」，并给出两类需要保护的对象的共同定义：\n  - **敏感技术**：超级智能（SI）供应链所需的商品、软件、材料、知识、零部件及其生产手段，一旦被敌对方窃取或获取，会带来显著军事、情报优势或不当经济杠杆；\n  - **关键基础设施**：支撑 SI 供应链的港口、运输、通信、物流网络，以及 ICT 与能源设施、协调这些设施的数字平台。\n- 拟设 5 个工作组：促进创新的政策框架、关键行业的 SI 应用、SI 全栈供应链合作、安全港与供应链安全枢纽、SI 安全与韧性。\n- 脚注说明：对部分签署方而言，「超级智能」即指「人工智能」。\n- 中国外交部发言人毛宁 11 月 16 日回应提问时表示，人工智能是全人类的共同财富，不应以意识形态划线或搞封闭排他的小圈子；关于中美元首会晤双方保持沟通（据央视新闻）。\n\n## 适合谁\n\n关注 AI 芯片与算力出口管制、跨境 AI 供应链和中美科技关系的读者与企业。\n\n## 为什么值得看\n\n宣言本身是原则性文件，没有具体管制清单，但它为后续「哪些技术和设施要一起保护」划定了共同基线，工作组可能把它落成具体措施。时间点上，正值 NVIDIA 芯片流向争议和特朗普本周访华出席 APEC 前夕。\n\n## 可以核对的事实\n\n- 签署日期、10 个签署方、5 个工作组、两类定义原文：美国国务院官网。\n- 中方回应：钛媒体 15:40 快讯转央视新闻。可信度 A（双方官方表态）。"
+    },
+    {
+      "id": "huawei-cloudrobo-wm1-2-open-source",
+      "title": "华为云发布并开源昇腾原生具身世界模型 CloudRobo-WM1.2",
+      "badge": "华",
+      "summary": "华为云在 CloudRobo 具身世界模型发布会上推出首款昇腾原生具身世界模型 CloudRobo-WM1.2，全程基于昇腾算力训练，称在 RoboTwin 2.0、LiberoPro 2.0 两个评测中排名第一，开源权重、推理代码和训练框架。",
+      "publishedAt": "2026-11-16T14:00:00+08:00",
+      "sortAt": "2026-11-16T14:00:00+08:00",
+      "timeLabel": "2026-11-16 14:00—15:30 发布会（北京时间）",
+      "timePrecision": "minute",
+      "timeNote": "华为云官方直播页：发布会 2026-11-16 14:00—15:30（GMT+8），议程中 14:50—14:55 为「正式发布暨开源」环节；sortAt 取发布会开始时间。",
+      "source": "华为云官方直播页 / IT之家 / 科创板日报",
+      "confidence": "A",
+      "url": "https://www.huaweicloud.com/about/live/261116.html",
+      "links": [
+        {
+          "label": "华为云：发布会页面与议程",
+          "url": "https://www.huaweicloud.com/about/live/261116.html"
+        },
+        {
+          "label": "IT之家",
+          "url": "https://www.ithome.com/1/027/684.htm"
+        },
+        {
+          "label": "科创板日报",
+          "url": "https://www.cls.cn/detail/2535409"
+        },
+        {
+          "label": "科创板日报：生态伙伴",
+          "url": "https://www.cls.cn/detail/2535460"
+        }
+      ],
+      "detail": "## 它是什么\n\n华为云「行业 AI 梦工厂」发布的具身世界模型 CloudRobo-WM1.2，官方称是首款昇腾原生的具身世界模型。「世界模型」让机器人预测环境在自身动作下会怎样变化，可以先在仿真里训练测试，再迁移到真机。\n\n## 它做什么\n\n- 采用共享世界模型骨干网络做预测增强的世界表征，基于世界模型原生 DualAct 架构，把场景预测和动作生成放在一个模型里完成。\n- 五项技术点：PPA 多模态世界表征架构；世界模型原生 DualAct 架构；多粒度监督数据自适应预训练框架；本体语义保真的跨具身运动建模（便于迁移到不同机器人本体）；World / Expert Action、Joint / Action-only 四种可组合的弹性推理模式。\n- 官方称在 RoboTwin 2.0、LiberoPro 2.0 两个评测基准中排名第一（官方口径）。\n- 开源内容：模型权重、推理代码、训练框架以及 WAM 昇腾算力最佳实践。\n- 配套的 CloudRobo 一站式具身智能开发平台 2025 年 6 月发布，官方称已有超过 16500 名开发者；华为云表示明年一季度将继续发布新模型。\n\n## 适合谁\n\n机器人与具身智能开发者、高校实验室，尤其是需要在国产算力上训练和部署的团队。\n\n## 为什么值得看\n\n海外主流具身大模型高度依赖 NVIDIA GPU 生态；这是一个全程在昇腾上训练并开源的世界模型方案，给国内团队多了一个可直接上手的基座。评测第一为官方说法，开源后可自行复现。\n\n## 可以核对的事实\n\n- 发布会时间和议程：华为云官方直播页。\n- 五项创新、两项评测第一、开源内容、16500 名开发者：IT之家与科创板日报对发布会的报道。可信度 A（官方发布会，评测成绩为官方自述）。"
+    },
+    {
+      "id": "tencent-hy4-flash",
+      "title": "腾讯混元发布 Hy4 flash：224B 总参、12B 激活、1M 上下文，WorkBuddy 11 月 30 日前限时免费",
+      "badge": "腾",
+      "summary": "腾讯混元推出「性价比最高」的 Hy4 flash：总参 224B（含 64B Engram 参数）、每 token 激活 12B，支持多模态和 100 万上下文，官方称单任务成本约为 Hy4 的 1/20；已在腾讯云 TokenHub、元宝、WorkBuddy 等上线，TokenHub API 限时 5 折，计划开源。",
+      "publishedAt": "2026-11-16T13:09:00+08:00",
+      "sortAt": "2026-11-16T13:09:00+08:00",
+      "timeLabel": "2026-11-16 13:09（北京时间，媒体报道）",
+      "timePrecision": "minute",
+      "timeNote": "腾讯混元官方发布时刻未取得；此处用 IT之家报道时间 2026/11/16 13:09:25（北京时间）排序。",
+      "source": "IT之家（转述腾讯混元官方发布）/ 腾讯云 TokenHub",
+      "confidence": "B",
+      "url": "https://hy.tencent.com/research/hy4-flash",
+      "links": [
+        {
+          "label": "腾讯混元：Hy4 flash 技术页",
+          "url": "https://hy.tencent.com/research/hy4-flash"
+        },
+        {
+          "label": "腾讯云 TokenHub：Hy4-flash 模型详情",
+          "url": "https://cloud.tencent.com/tokenhub/hy4-flash"
+        },
+        {
+          "label": "IT之家",
+          "url": "https://www.ithome.com/1/027/630.htm"
+        }
+      ],
+      "detail": "## 它是什么\n\n腾讯混元团队 11 月 16 日推出的 Hy4 flash，官方定位为「迄今性价比最高的 Hy 模型」，是 Hy4 的轻量快速版本。\n\n## 它做什么\n\n- 规模：总参数 224B，其中 64B 为 Engram 参数（一种查表式参数模块，用较低算力扩充模型容量），每 token 激活 12B；支持多模态输入和 100 万 token 上下文。\n- 怎么省：预训练用混合注意力、LatentMoE 与 Engram，KV cache 降到 Hy3 的 1/24、Hy4 的 1/6；后训练先自蒸馏 Hy4，再用强化学习把端到端任务输出长度压缩 50%；推理用 megakernel、4bit 量化和 dflash，解码速度超过 150 tps。\n- 成本（官方 WorkIndex 评测）：单任务成本为 Hy4 preview 的 1/13、Hy4 的 1/20、DeepSeek-V4.1-Flash-1017（max 档、忙时价）的 1/8；综合效果略优于 Hy4 preview。\n- 盲测：85 位 WorkBuddy 内部用户在 27 类 259 个日常任务上盲测，满意度接近 Claude Haiku 5.5，单任务成本最低、用时最短（官方口径）。\n\n## 怎么用 / 适合谁\n\n- 已上线腾讯云 TokenHub、WorkBuddy、元宝、企业微信、QQ、ima、Marvis，即将接入 OpenRouter。\n- **限时**：2026 年 11 月 30 日前 WorkBuddy 可限时免费使用，腾讯云 TokenHub API 限时 5 折。\n- 官方建议用于深度搜索、文档处理、PPT 生成、简单前端、Computer Use 等日常任务；长程软件工程等复杂任务仍交给 Hy4。\n- 适合对成本敏感、跑大量日常办公类智能体任务的开发者和企业。\n\n## 为什么值得看\n\n国内厂商这周集中在「同样效果更少 token、更低单任务成本」上竞争（同日阿里 Qwen4-Max 也主打单任务成本降约 6 成）。Hy4 flash 还承诺开源，值得持续关注。\n\n## 可以核对的事实\n\n- 224B / 64B / 12B、1/24 与 1/6、150 tps、1/13、1/20、1/8、85 人 259 任务、11 月 30 日限时免费与 5 折：IT之家转述的腾讯官方信息。\n- 腾讯混元技术页本次抓取未能读出正文，故可信度标 B（可靠媒体转述官方发布，TokenHub 模型页已存在）。"
+    },
+    {
+      "id": "doubao-work-workbench-21-scenarios",
+      "title": "豆包工作电脑端上线「工作台」，首批覆盖金融、医疗、教育等 21 个职业场景",
+      "badge": "豆",
+      "summary": "字节跳动豆包工作在电脑端上线「工作台」，按职业预设技能与工具：金融投研台接入万得、同花顺等数据插件，医生台提供指南检索与文献解读，教师台联合学科网生成教案课件；用户也可自建并分享工作台。",
+      "publishedAt": "2026-11-16T11:57:00+08:00",
+      "sortAt": "2026-11-16T11:57:00+08:00",
+      "timeLabel": "2026-11-16 11:57（北京时间，媒体快讯）",
+      "timePrecision": "minute",
+      "timeNote": "官方上线时刻未取得；此处用钛媒体快讯时间 11:57（北京时间）排序。",
+      "source": "钛媒体快讯",
+      "confidence": "B",
+      "url": "https://www.tmtpost.com/nictation/6413309",
+      "links": [
+        {
+          "label": "钛媒体快讯",
+          "url": "https://www.tmtpost.com/nictation/6413309"
+        }
+      ],
+      "detail": "## 它是什么\n\n字节跳动 AI 办公产品「豆包工作」在电脑端新增的「工作台」功能。此前豆包工作已接入 Kimi、GLM、DeepSeek 等第三方模型（此前各期已收录）。\n\n## 它做什么\n\n- 首批覆盖 21 个专业场景，包括金融、医疗、教育、创意设计、营销、法务、数据分析等。\n- 每个工作台按职业预设技能和工具，进入即可调用：\n  - 金融投研台：接入万得、同花顺等数据插件；\n  - 医生台：指南检索与文献解读；\n  - 教师台：联合学科网生成教案和课件。\n- 用户可以自建专属工作台并分享给他人。\n\n## 适合谁\n\n希望直接用现成职业模板而不是从空白对话开始的办公用户，尤其是投研、医生、教师等专业人群。\n\n## 为什么值得看\n\n国内 AI 办公产品正在从「通用对话」转向「按职业打包的工作流」，并通过接入行业数据源（万得、同花顺、学科网）建立差异。专业数据插件是否需要额外付费或账号，报道未说明，使用前请以产品内说明为准。\n\n## 可以核对的事实\n\n- 21 个场景、三类示例工作台、可自建分享：钛媒体 11 月 16 日 11:57 快讯。\n- 未找到字节官方公告原文，可信度 B（媒体报道）。"
+    },
+    {
+      "id": "openpangu-2-1-pro-huawei-cloud-maas",
+      "title": "开源盘古模型 openPangu-2.1-Pro 上线华为云 MaaS",
+      "badge": "华",
+      "summary": "华为云 MaaS 模型即服务平台上线开源盘古模型 openPangu-2.1-Pro，主打 Agent 开发、AI 编码和推理优化，强化深度研究、鸿蒙系统操控、鸿蒙 App 开发、昇腾算子生成等场景。",
+      "publishedAt": "2026-11-16T11:06:00+08:00",
+      "sortAt": "2026-11-16T11:06:00+08:00",
+      "timeLabel": "2026-11-16 11:06（北京时间，媒体快讯）",
+      "timePrecision": "minute",
+      "timeNote": "官方上线时刻未取得；此处用钛媒体快讯时间 11:06（北京时间）排序。",
+      "source": "钛媒体快讯",
+      "confidence": "B",
+      "url": "https://www.tmtpost.com/nictation/6413309",
+      "links": [
+        {
+          "label": "钛媒体快讯",
+          "url": "https://www.tmtpost.com/nictation/6413309"
+        }
+      ],
+      "detail": "## 它是什么\n\n华为开源的盘古系列模型新版本 openPangu-2.1-Pro，11 月 16 日在华为云 MaaS（模型即服务）平台上线，可直接调用。\n\n## 它做什么\n\n- 三大升级方向：Agent 开发、AI 编码、推理优化。\n- 增强场景：深度研究、鸿蒙系统操控、鸿蒙 App 开发、昇腾算子生成、推理链路优化。\n\n## 适合谁\n\n做鸿蒙应用、昇腾算子开发的开发者，以及希望在华为云上使用开源国产模型的团队。\n\n## 为什么值得看\n\n与同日发布的 CloudRobo-WM1.2 一起，华为在「昇腾 + 开源模型 + 鸿蒙生态」上同时推进。快讯未给出参数规模、价格和评测数字，具体以华为云 MaaS 页面为准。\n\n## 可以核对的事实\n\n- 上线平台和能力方向：钛媒体 11 月 16 日 11:06 快讯。\n- 未找到华为官方公告原文，可信度 B（媒体报道）。"
+    },
+    {
+      "id": "alibaba-qwen4-max-ga",
+      "title": "阿里通义千问 Qwen4-Max 正式版上线：2.4T 参数 MoE、1M 上下文，单任务平均费用降约 6 成",
+      "badge": "Q",
+      "summary": "阿里发布 Qwen 系列迄今最强模型 Qwen4-Max 正式版：总参 2.4 万亿、每 token 激活 710 亿，原生视觉、100 万 token 上下文；QwenCloud API 与 Token Plan 已开放，国内 API 输入/输出单价下调约 17%，Qwen4 系列小尺寸模型将陆续开源。",
+      "publishedAt": "2026-11-16T10:07:00+08:00",
+      "sortAt": "2026-11-16T10:07:00+08:00",
+      "timeLabel": "2026-11-16 10:07（北京时间，媒体首发）",
+      "timePrecision": "minute",
+      "timeNote": "阿里云官方博客与百炼更新日志只标注 2026-11-16，没有钟点；此处用 IT之家报道时间 2026/11/16 10:07（北京时间）排序。11 月 11 日的 Qwen4-Max-Preview 此前已收录。",
+      "source": "阿里云官方博客 / 百炼更新日志",
+      "confidence": "A",
+      "url": "https://www.alibabacloud.com/blog/alibaba-unveils-qwen4-max-new-ai-teammate-for-work-creativity-and-discovery_603783",
+      "links": [
+        {
+          "label": "阿里云官方博客（英文）",
+          "url": "https://www.alibabacloud.com/blog/alibaba-unveils-qwen4-max-new-ai-teammate-for-work-creativity-and-discovery_603783"
+        },
+        {
+          "label": "阿里云百炼：模型上架与更新",
+          "url": "https://www.alibabacloud.com/help/zh/model-studio/newly-released-models"
+        },
+        {
+          "label": "QwenCloud：最新模型 Qwen4-Max",
+          "url": "https://docs.qwencloud.com/developer-guides/getting-started/latest-model"
+        },
+        {
+          "label": "IT之家",
+          "url": "https://www.ithome.com/1/027/512.htm"
+        },
+        {
+          "label": "动点科技：API 降价",
+          "url": "https://cn.technode.com/post/2026-11-16/qwen4-max-api-launch/"
+        }
+      ],
+      "detail": "## 它是什么\n\n阿里通义千问新一代旗舰模型 Qwen4-Max 的正式版，也是 Qwen4 系列第一款模型。11 月 11 日先开放了只支持 Token Plan 的限时预览版（此前已收录），这次转为正式版并开放 API。\n\n## 它做什么\n\n- 规模与架构：稀疏 MoE，总参数 2.4 万亿，每 token 只激活 710 亿（比同为 2.4T 的 Qwen3.8-Max 少 25%）；原生视觉理解；100 万 token 上下文。\n- 架构改动（据 IT之家转述官方博客）：每四层中三层用 Gated DeltaNet 压缩历史信息、一层用 Qwen Sparse Attention 按 block 选取上下文；Gated Residual 把残差流扩为四条并行分支；第二层加入 N-gram Embedding 查表。\n- 支持联网搜索、工具调用、结构化输出，兼容 OpenAI 与 Anthropic API（百炼更新日志）。\n- 官方成绩：Code Arena 第 6；自建 Work360 基准（721 个专业领域）52.69 分，前代 Qwen3.8-Max 为 47.74；High 推理档 token 消耗少约 35%，单任务平均费用从 26.58 元降到 11.16 元（约 -58%，英文博客称约 60%）。\n\n## 怎么用 / 价格\n\n- QwenCloud（千问 AI 平台）API 与 Token Plan 已开放；也可在 QwenWork（千问办公）、Qwen Studio、Qoder、千问 App 中使用。百炼在中国内地、国际、全球三个部署范围均已上架。\n- 国内 API（据动点科技报道）：输入每百万 token 由 12 元降至 10 元，输出由 36 元降至 30 元；缓存命中低至 0.5 元/百万 token。国际版缓存命中输入 0.075 美元/百万 token（官方博客）。\n- Qwen4 系列中小尺寸模型将陆续开放权重。\n\n## 适合谁\n\n需要强编程、智能体和长上下文能力、又在意成本的国内外开发者与企业；已在用 Qwen3.8-Max 的团队可直接评估迁移。\n\n## 为什么值得看\n\n这是国内厂商本周最重要的旗舰模型发布：在保持 2.4T 规模的同时把激活参数和单任务成本都压下来，并承诺后续开源小模型。Work360 是阿里自建基准，跨厂商对比请等第三方评测。\n\n## 可以核对的事实\n\n- 2.4T、71B 激活、1M 上下文、Code Arena 第 6、约 60% 成本下降、0.075 美元：阿里云官方博客（Hangzhou, November 16, 2026）。\n- 52.69 / 47.74、26.58 → 11.16 元：IT之家转述 Qwen 官方博客；国内 API 单价：动点科技报道。可信度 A（官方发布，部分价格数字为媒体转述）。"
+    },
     {
       "id": "ft-huang-considers-nvidia-return",
       "title": "FT：黄仁勋考虑重返 NVIDIA，盟友组建「作战室」游说董事会",
@@ -100,6 +303,27 @@
         }
       ],
       "detail": "## 它是什么\n\n美国财政部长 Scott Bessent 美国时间 11 月 15 日（周日）接受 Fox News 采访时对 NVIDIA 的公开批评，由 CNBC 报道。这是美国内阁官员第一次公开要求 NVIDIA 董事会从外部选 CEO。\n\n## 它说了什么\n\n- Bessent 呼吁 NVIDIA 进行「大换血」（dramatic shakeup），董事会应到公司外部寻找下一任 CEO，并暗示其他高管在出口管制合规上也应受审视。\n- 原话（CNBC 引述）：「我一直想回到 NVIDIA 的文化是什么——他们是不是在推动这些看似违规的销售来抬高营收和利润？」\n- 他说：「如果这是一家银行、没有这样合规，OCC（美国货币监理署）现在早就进场了，很多高管会被撤换。」\n- 他还质疑 NVIDIA 的财务披露，指出在对华销售下降的同时新加坡收入激增；NVIDIA 自 2025 年 11 月起不再单独披露新加坡收入，理由是改按客户总部而非账单地址统计。\n- Bessent 说特朗普已划定红线：不允许向中国出售比 H200 更先进的芯片。\n- 背景：黄仁勋 11 月 12 日辞职，起因是他与新加坡 Megaspeed 前高管 Alice Huang 的关系被曝光，美国情报官员怀疑后者为中国从事间谍活动，Megaspeed 涉嫌违规把 NVIDIA 芯片转运到中国；CFO Colette Kress 任临时 CEO。\n\n## 适合谁\n\n关注 NVIDIA 治理与继任、美国芯片出口管制和美股 AI 板块的读者。\n\n## 为什么值得看\n\n一边是硅谷盟友和部分股东游说让黄仁勋回归（见同日 FT 条目），一边是财长公开要求外部 CEO、并把矛头指向整个管理层的合规文化。NVIDIA 官方公告：第三财季（截至 2026 年 10 月 25 日）财报约在美国太平洋时间 11 月 17 日 13:20 发布，电话会 14:00 开始，即北京时间 11 月 18 日 05:20 和 06:00，Kress 将提供书面评论。管理层如何回应出口与继任问题值得关注。\n\n## 可以核对的事实\n\n- CNBC 作者 Luke Fountain，Published Sun, Nov 15 2026 11:49 AM EST。\n- 财报时间来自 NVIDIA 新闻室 10 月 28 日公告，可信度 A；Bessent 讲话为媒体报道，可信度 B。"
+    },
+    {
+      "id": "openai-lvmh-media-partnership",
+      "title": "OpenAI 与 LVMH 旗下媒体集团（回声报、巴黎人报等 17 个品牌）签署战略合作",
+      "badge": "O",
+      "summary": "LVMH 媒体部门（Les Echos–Le Parisien 集团）与 OpenAI 签约：向旗下团队部署 ChatGPT Enterprise 和 OpenAI 工具，用于资料检索、文档比对、初步翻译等；同时其报道将以摘要、引用和原文链接形式出现在 ChatGPT 回答中。",
+      "publishedAt": "2026-11-16T00:00:00+08:00",
+      "sortAt": "2026-11-16T00:00:00+08:00",
+      "timeLabel": "2026-11-16（巴黎时间）",
+      "timePrecision": "date",
+      "timeNote": "OpenAI 页面只标注 November 16, 2026，新闻稿抬头为 Paris, 16 November 2026，没有精确时刻；sortAt 采用当日零点，仅用于排序。",
+      "source": "OpenAI 官方",
+      "confidence": "A",
+      "url": "https://openai.com/index/lvmh-media-division-partnership",
+      "links": [
+        {
+          "label": "OpenAI：LVMH’s Media Division announces strategic partnership with OpenAI",
+          "url": "https://openai.com/index/lvmh-media-division-partnership"
+        }
+      ],
+      "detail": "## 它是什么\n\nOpenAI 与 LVMH 集团媒体部门（Groupe Les Echos–Le Parisien）签署的战略协议，新闻稿最初由 LVMH 媒体部门发布、OpenAI 官网转载。该集团拥有 17 个媒体品牌、约 1800 名员工（近 700 名记者），每月触达法国 2700 多万人。\n\n## 它做什么\n\n- **内部用 AI**：向媒体部门各团队部署 OpenAI 工具和 ChatGPT Enterprise，让团队开发适合日常工作的 AI 应用，例如资料检索、文档比对和初步翻译，目标是让记者把更多时间用于调查、分析和现场报道；并配套按岗位定制的培训。\n- **读者个性化**：用 AI 开发面向读者和广告主的个性化产品与服务。\n- **内容进 ChatGPT**：旗下报道将在相关问题中以摘要和摘录形式出现在 ChatGPT 回答里，注明来源并附原文直链。\n- 覆盖品牌包括 Les Echos、Le Parisien、Challenges、Paris Match、L’Opinion、Investir、L’Agefi、Radio Classique、Connaissance des Arts 等。\n\n## 适合谁\n\n关注 AI 与新闻出版版权合作、以及 ChatGPT 信息来源的读者和媒体从业者。\n\n## 为什么值得看\n\nOpenAI 继续与各国主流媒体签「部署 + 内容授权」打包协议，法国财经与大众媒体内容将更多出现在 ChatGPT 回答中。新闻稿未披露金额和期限；OpenAI EMEA 总经理 Emmanuel Marill 在稿中强调尊重编辑独立性。\n\n## 可以核对的事实\n\n- 17 个品牌、1800 名员工、近 700 名记者、2700 万月触达、引语：均出自 OpenAI 官网转载的新闻稿原文。可信度 A（官方）。"
     },
     {
       "id": "openai-science-blog-standard-model-lattice",
