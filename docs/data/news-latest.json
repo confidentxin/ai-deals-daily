@@ -1,461 +1,130 @@
 {
-  "asOf": "2026-11-15",
+  "asOf": "2026-11-16",
   "timezone": "Asia/Shanghai",
   "preview": 10,
   "empty": false,
   "emptyMessage": "今日暂无重要资讯，晚间 19:30 起每日更新",
-  "note": "2026-11-15 早报 + 晚报（北京时间）整理。早报 8 条（11 月 14 日晚报之后至今，并补录 11 月 12 日至 14 日漏收条目）；晚报新增 7 条：Altimeter/Atreides 致信 NVIDIA 董事会、FAA 全国停飞排除 AI 工具、美联储金融稳定报告把 AI 列为头号风险，并补录 11 月 12 日至 13 日的 Cursor 安全事件调查、Anthropic 安全评测方法、Cohere 收购 AISLE 与 cubic、Edge0-145B 端侧开源模型。共 15 条，按公告时间从新到旧排列。带精确钟点的条目 timeLabel 用北京时间；官方只给日期的条目 timePrecision 为 date，timeLabel 只写日期，sortAt 采用当日零点，仅用于排序，详见各条 timeNote。置信度 A 表示来自官方原文，B 表示可靠媒体报道、官方未单独核实。",
+  "note": "2026-11-16 早报（北京时间）整理：11 月 15 日晚报之后至今 4 条（周末主要厂商无重大新模型发布）——FT 称黄仁勋考虑重返 NVIDIA、NYT 调查卢特尼克芯片规则与家族生意重叠、财长 Bessent 要求 NVIDIA 找外部 CEO、OpenAI 开设科学博客。按公告时间从新到旧排列。带精确钟点的条目 timeLabel 用北京时间；官方只给日期的条目 timePrecision 为 date，timeLabel 只写日期，sortAt 采用当日零点，仅用于排序，详见各条 timeNote。置信度 A 表示来自官方原文，B 表示可靠媒体报道、官方未单独核实。",
   "items": [
     {
-      "id": "musk-petition-reinstate-huang",
-      "title": "马斯克等科技高管联署请愿，要求 NVIDIA 让黄仁勋复职",
+      "id": "ft-huang-considers-nvidia-return",
+      "title": "FT：黄仁勋考虑重返 NVIDIA，盟友组建「作战室」游说董事会",
       "badge": "N",
-      "summary": "「Stand with Jensen」请愿网站称截至美国周六下午已有超过 11.5 万人签名，自称含 5965 名 NVIDIA 现员工、6.3 万名股东；马斯克、Replit CEO Amjad Masad、Epic CEO Tim Sweeney、YC CEO Garry Tan 公开支持。签名身份为自报，组织方称正在清理假签名。",
-      "publishedAt": "2026-11-15T05:41:00+08:00",
-      "sortAt": "2026-11-15T05:41:00+08:00",
-      "timeLabel": "2026-11-15 05:41（北京时间）",
+      "summary": "《金融时报》周日援引知情人士称，黄仁勋已和亲信讨论回归 CEO 的可能，盟友正组织硅谷高管「作战室」游说董事会并争取白宫支持；NVIDIA 未回应。支持复职的请愿签名已超过 15.6 万（自报数字）。",
+      "publishedAt": "2026-11-16T04:37:00+08:00",
+      "sortAt": "2026-11-16T04:37:00+08:00",
+      "timeLabel": "2026-11-16 04:37（北京时间）",
       "timePrecision": "minute",
-      "timeNote": "TechCrunch 标注 1:41 PM PST · November 14, 2026，即北京时间 11 月 15 日 05:41，为媒体发稿时间。马斯克的 X 帖子更早（华盛顿邮报 11 月 13 日美国时间已报道）。",
-      "source": "TechCrunch",
+      "timeNote": "FT 原文在付费墙后，未取得其发稿时刻；FT 报道于美国时间 11 月 15 日（周日）发出。此处用可核对的最早转载时间：Wccftech 标注 Nov 15, 2026 at 03:37pm EST，即北京时间 11 月 16 日 04:37。CNA 转载稿时间为新加坡时间 11 月 16 日 07:25（北京时间相同）。",
+      "source": "金融时报（经 CNA/路透、Wccftech、Seeking Alpha 转述）",
       "confidence": "B",
-      "url": "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/",
+      "url": "https://www.channelnewsasia.com/world/jensen-huang-discusses-comback-nvidia-6553591",
       "links": [
         {
-          "label": "TechCrunch",
-          "url": "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/"
+          "label": "CNA（转述 FT）",
+          "url": "https://www.channelnewsasia.com/world/jensen-huang-discusses-comback-nvidia-6553591"
         },
         {
-          "label": "Business Insider",
-          "url": "https://www.businessinsider.com/petition-reinstate-jensen-huang-nvidia-elon-musk-2026-11"
+          "label": "海峡时报",
+          "url": "https://www.straitstimes.com/business/companies-markets/jensen-huang-discusses-comeback-as-nvidia-ceo-with-allies-ft-reports"
         },
         {
-          "label": "华盛顿邮报",
-          "url": "https://www.washingtonpost.com/business/2026/11/13/musk-joins-calls-jensen-huang-be-reinstated-ceo-nvidia/"
+          "label": "Seeking Alpha",
+          "url": "https://seekingalpha.com/news/4672807-huang-weighs-nvidia-return-as-investors-urge-board-to-keep-options-open"
+        },
+        {
+          "label": "Wccftech",
+          "url": "https://wccftech.com/jensen-huang-considers-returning-to-nvidia-as-his-allies-assemble-a-war-room-to-lobby-on-his-behalf-and-a-petition-in-his-favor-crosses-156000-signatures/"
+        },
+        {
+          "label": "纽约邮报",
+          "url": "https://nypost.com/2026/11/15/business/jensen-huangs-allies-pushing-nvidia-board-to-re-appoint-him-days-after-he-resigned-over-chinese-spy-employee-affairs/"
         }
       ],
-      "detail": "## 它是什么\n\n一个名为「Stand with Jensen」的志愿者请愿网站，发起公开信要求 NVIDIA 董事会让已辞职的黄仁勋复职。这是黄仁勋辞职事件的最新后续，不是 NVIDIA 官方动作。\n\n## 它说了什么\n\n- 公开信称签名者「担心黄仁勋在没有实质正当程序的情况下被撤换」，要求董事会在独立调查查清事实期间先让他回来；如果董事会认为他不应回归，要给出具体、有证据的理由；并要求公平调查、向公众披露更多信息。\n- 据 TechCrunch，截至美国周六（11 月 14 日）下午，网站显示签名超过 11.5 万，其中自称 NVIDIA 现员工 5965 人、前员工 1108 人、股东 63063 人。\n- 公开支持者包括特斯拉/SpaceX CEO 马斯克（他在 X 上发帖称「我也签了」）、Replit CEO Amjad Masad、Epic Games CEO Tim Sweeney、Y Combinator CEO Garry Tan；Moneycontrol 还列出 Cohere CEO Aidan Gomez 等。\n- Business Insider 指出名单里混有「Tim Cruise」「Xi Jingping」等明显假签名，组织方在 X 上称正在清理。\n\n## 适合谁\n\n关注 NVIDIA 管理层变动、AI 芯片供应和美股科技股的读者。\n\n## 为什么值得看\n\n黄仁勋辞职已经牵动 AI 创业融资、开源生态和各国政府。硅谷头部人物公开站队要求复职，给 NVIDIA 董事会和临时 CEO Colette Kress 增加了压力，后续董事会调查结论和国会作证值得继续跟踪。\n\n## 可以核对的事实\n\n- TechCrunch 作者 Anthony Ha，1:41 PM PST, Nov 14, 2026。\n- 签名人数和身份均为请愿网站自报，各媒体在不同时间点看到的数字不同（8 万、10.8 万、11.5 万），未经独立核实。可信度 B（可靠媒体报道）。"
+      "detail": "## 它是什么\n\n《金融时报》（FT）美国时间 11 月 15 日（周日）的报道：11 月 12 日辞去 NVIDIA 总裁、CEO 和董事职务的黄仁勋，正在考虑回归。这是黄仁勋辞职事件的最新进展，目前只是媒体援引知情人士的报道，不是 NVIDIA 或黄仁勋本人的表态。\n\n## 它说了什么\n\n- 据 FT（经 CNA/路透转述），黄仁勋已和亲信讨论回归 CEO 的可能。\n- 一名黄仁勋的盟友对 FT 说，他们正在组建一个由硅谷高管组成的「作战室」（war room），游说董事会让他回归，并会争取白宫支持；这名人士称「科技圈里除了前沿实验室，所有重要的人都喜欢 Jensen」，并说这些努力得到了黄仁勋本人的支持。\n- 几天前 FT 曾报道，NVIDIA 董事会为物色继任者接触过 Arm CEO Rene Haas。\n- NVIDIA 在非工作时间未立即回应置评。\n- 据 Wccftech 发稿时的统计，「I Stand With Jensen」请愿网站显示签名 156,850 个，其中自称 NVIDIA 现员工超过 7,500 人（签名身份均为自报，未经核实）。\n\n## 适合谁\n\n关注 NVIDIA 管理层走向、GPU 供应稳定性和美股 AI 板块的读者。\n\n## 为什么值得看\n\n此前要求复职的声音来自员工内部帖、网络请愿和 Altimeter、Atreides 两家股东的公开信；这次是报道称黄仁勋本人在考虑回归、并有组织地游说董事会和白宫。与此同时美国财长 Bessent 公开要求董事会找外部 CEO（见同日另一条），两种力量方向相反。NVIDIA 将于北京时间 11 月 18 日清晨公布黄仁勋离任后的首份季度财报，董事会的独立调查结论和 12 月国会听证仍是后续关键节点。\n\n## 可以核对的事实\n\n- CNA 稿件时间：16 Nov 2026 07:25AM（新加坡时间，与北京时间相同），注明来源为 FT 周日报道。\n- Wccftech 稿件：Rohail Saleem，Nov 15, 2026 at 03:37pm EST，请愿签名 156,850 为其发稿时所见数字。\n- Seeking Alpha 稿件：Nov 15, 2026, 4:20 PM ET。\n- FT 原文未直接核读（付费墙），可信度 B（多家可靠媒体转述一致，官方未确认）。"
     },
     {
-      "id": "altimeter-atreides-letter-huang-return",
-      "badge": "N",
-      "title": "Altimeter 与 Atreides 致信 NVIDIA 董事会：CEO 遴选别着急，保留黄仁勋回归选项",
-      "summary": "Altimeter CEO Brad Gerstner 与 Atreides 的 Gavin Baker 联名致信董事会，要求「缓慢、审慎」地决定 NVIDIA 未来领导层，并把「黄仁勋可能回归」留在选项里；信中未要求立即复职。两家 6 月底合计披露持股约 21.3 亿美元。",
-      "publishedAt": "2026-11-15T01:35:00+08:00",
-      "sortAt": "2026-11-15T01:35:00+08:00",
-      "timeLabel": "2026-11-15 01:35（北京时间）",
+      "id": "nyt-lutnick-chip-rules-cantor-semafor-china-trip",
+      "title": "纽约时报：卢特尼克推动放宽的芯片规则，与其家族公司生意重叠；他仍将随特朗普访华",
+      "badge": "Lu",
+      "summary": "NYT 调查称，美国商务部长卢特尼克一直主张从宽制定「向东南亚数据中心卖先进 AI 芯片」的规则，而他儿子掌管的 Cantor Fitzgerald 与这类为中国客户服务的数据中心公司（如 Bitdeer）有业务往来；商务部称其遵守了全部道德协议。Semafor 独家称卢特尼克仍将随特朗普本周赴华出席 APEC。",
+      "publishedAt": "2026-11-16T02:15:00+08:00",
+      "sortAt": "2026-11-16T02:15:00+08:00",
+      "timeLabel": "2026-11-16 02:15（北京时间）",
       "timePrecision": "minute",
-      "timeNote": "CNBC 标注 Published Sat, Nov 14 2026 12:35 PM EST，即北京时间 11 月 15 日 01:35，为媒体发稿时间；信件本身由 Gerstner 于美国时间 11 月 13 日（周五）发在 X 上。",
+      "timeNote": "NYT 原文发稿时刻未取得（美国时间 11 月 15 日）。此处用 Business Standard 转载 NYT 稿的首发时间 Nov 15 2026 11:45 PM IST，即北京时间 11 月 16 日 02:15。Semafor 独家稿标注 Updated Nov 15, 2026, 1:04pm EST，即北京时间 11 月 16 日 02:04。",
+      "source": "纽约时报（经 Business Standard 转载）/ Semafor",
+      "confidence": "B",
+      "url": "https://www.business-standard.com/world-news/nvidia-row-lutnick-pushed-to-weaken-chip-rules-linked-to-family-business-126111500775_1.html",
+      "links": [
+        {
+          "label": "Business Standard（转载 NYT）",
+          "url": "https://www.business-standard.com/world-news/nvidia-row-lutnick-pushed-to-weaken-chip-rules-linked-to-family-business-126111500775_1.html"
+        },
+        {
+          "label": "费城询问报（转载 NYT）",
+          "url": "https://www.inquirer.com/news/nation-world/howard-lutnick-commerce-secretary-rules-data-centers-nvidia-chips-china-southeast-asia-cantor-fitzgerald-20261115.html"
+        },
+        {
+          "label": "Semafor 独家",
+          "url": "https://www.semafor.com/article/11/15/2026/under-pressure-lutnick-joins-trump-in-china"
+        },
+        {
+          "label": "Seeking Alpha",
+          "url": "https://seekingalpha.com/news/4672784-lutnick-backs-narrower-ai-chip-controls-as-family-firm-s-business-draws-scrutiny"
+        }
+      ],
+      "detail": "## 它是什么\n\n《纽约时报》（作者 Ana Swanson、Aaron Krolik、Paul Mozur）的调查报道，以及 Semafor 同日的独家消息。两者都和 NVIDIA 芯片流向中国的争议有关，焦点是美国商务部长霍华德·卢特尼克（Howard Lutnick）。\n\n## 它说了什么\n\n- 美国禁止向中国企业直接出售最先进的 AI 芯片，但设在东南亚、向中国企业出租算力的数据中心是合法的。政府内部争论了近两年要不要收紧这类出口；NYT 称卢特尼克是主张「不要管得太严」的主要官员，最近在推动一个较宽松的版本。\n- 例子：马来西亚南部一座代号 A201 的数据中心计划明年启用，装有价值数亿美元的 NVIDIA 最先进服务器，计划为一家中国科技巨头提供算力。运营方是新加坡公司 Bitdeer。\n- 卢特尼克入阁前长期掌管的 Cantor Fitzgerald（现由他的儿子 Kyle 和 Brandon 经营）今年担任 Bitdeer 最高 10 亿美元股票发行的指定销售代理，2024 年也曾帮其安排最高 2.5 亿美元的发行。\n- 商务部称卢特尼克遵守了所有道德协议；NYT 也写明，没有证据表明 Cantor 的业务影响了卢特尼克的决策。\n- Semafor 独家：卢特尼克预计将乘空军一号随特朗普本周赴华，特朗普计划周三（11 月 18 日）抵达，在 APEC 峰会期间会见习近平和普京；财长 Bessent 也将同行。一名美国高级官员称 NVIDIA 丑闻「不应对此行有任何影响」，预计不会出现在与中方的会谈中。白宫表示对卢特尼克「完全信任」。\n\n## 适合谁\n\n关注 AI 芯片出口管制、东南亚算力租赁、NVIDIA 对华业务以及中美科技关系的读者。\n\n## 为什么值得看\n\n东南亚数据中心是中国 AI 公司获得先进算力的重要渠道之一。谁来写、怎么写这套规则，直接影响 NVIDIA 销售和中国厂商能租到的算力。卢特尼克与 Bessent 的公开分歧，加上本周特朗普访华，使出口管制走向更不确定。\n\n## 可以核对的事实\n\n- Business Standard 转载稿：First Published Nov 15 2026, 11:45 PM IST，署名 NYT 三位记者。\n- Semafor：Ashley Gold，Updated Nov 15, 2026, 1:04pm EST。\n- Hacker News 当天该 NYT 稿得到 450 分、192 条评论。\n- 可信度 B（可靠媒体报道，商务部仅作原则性回应）。"
+    },
+    {
+      "id": "bessent-nvidia-outside-ceo",
+      "title": "美国财长 Bessent：NVIDIA 需要「大换血」，应从外部找新 CEO",
+      "badge": "N",
+      "summary": "Bessent 周日在 Fox News 上质疑 NVIDIA 是否为冲业绩推动「看似违规」的芯片销售，称如果是银行早有高管被撤，并建议董事会到公司外部找 CEO。NVIDIA 将在北京时间 11 月 18 日清晨发布黄仁勋离任后首份财报。",
+      "publishedAt": "2026-11-16T00:49:00+08:00",
+      "sortAt": "2026-11-16T00:49:00+08:00",
+      "timeLabel": "2026-11-16 00:49（北京时间）",
+      "timePrecision": "minute",
+      "timeNote": "CNBC 标注 Published Sun, Nov 15 2026 11:49 AM EST，即北京时间 11 月 16 日 00:49，为媒体发稿时间；Bessent 接受 Fox News 采访在同日稍早。",
       "source": "CNBC",
       "confidence": "B",
-      "url": "https://www.cnbc.com/2026/11/14/nvidia-investors-jensen-huang-return-board-letter.html",
+      "url": "https://www.cnbc.com/2026/11/15/bessent-nvidia-ceo-lutnick-megaspeed.html",
       "links": [
         {
           "label": "CNBC",
-          "url": "https://www.cnbc.com/2026/11/14/nvidia-investors-jensen-huang-return-board-letter.html"
+          "url": "https://www.cnbc.com/2026/11/15/bessent-nvidia-ceo-lutnick-megaspeed.html"
         },
         {
-          "label": "Livemint",
-          "url": "https://www.livemint.com/companies/news/investors-urge-board-to-consider-return-of-jensen-huang-musk-says-nvidia-will-lose-critical-deals-without-its-founder-11794708086815.html"
-        },
-        {
-          "label": "CNBC：董事会尚未选定猎头",
-          "url": "https://www.cnbc.com/2026/11/13/nvidia-huang-ceo-replacement-search.html"
+          "label": "NVIDIA 官方：Q3 财报电话会安排",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-sets-conference-call-for-third-quarter-financial-results-6928873"
         }
       ],
-      "detail": "## 它是什么\n\n两家知名机构投资者 Altimeter Capital（CEO Brad Gerstner）和 Atreides Management（Gavin Baker）联名写给 NVIDIA 董事会的一页公开信，是黄仁勋辞职事件中第一次由重要股东公开表态。\n\n## 它说了什么\n\n- 信中要求董事会就 NVIDIA 未来领导层「采取缓慢、审慎、深思熟虑的程序」，「把所有选项留在桌面上，包括黄仁勋可能回归」。\n- 信中称临时 CEO Colette Kress（任 CFO 13 年）会「有能力地」带领公司，但创始人「有权获得一个审慎的过程，避免在所有事实查清之前不必要地急于替换他」。\n- 据 CNBC，信件**没有**要求立即让黄仁勋复职。\n- 持股规模：按最近 SEC 披露，截至 6 月 30 日 Altimeter 持有约 940 万股（近 19 亿美元，为其最大持仓），Atreides 持有约 120 万股（近 2.5 亿美元）。\n- 同期背景：NVIDIA 董事会 11 月 13 日对 CNBC 表示「正在挑选 CEO 猎头公司，尚未正式接触任何候选人」，对具体人选的猜测「为时过早」；马斯克在 X 上称没有黄仁勋会丢掉一些「关键交易」。\n\n## 适合谁\n\n关注 NVIDIA 治理、美股 AI 板块和 GPU 供应稳定性的读者。\n\n## 为什么值得看\n\n此前要求复职的声音主要来自员工帖和网络请愿；这次是有实际持股的机构投资者出面，对董事会的继任节奏施加压力。董事会调查（Wachtell 律所主导）和 12 月国会听证仍是后续关键节点。\n\n## 可以核对的事实\n\n- CNBC 作者 Katie Tarasov，2026-11-14 12:35 PM EST。\n- 持股数字来自 SEC 披露、经 CNBC 转引。可信度 B（可靠媒体报道，信件原文由 Gerstner 发在 X）。"
+      "detail": "## 它是什么\n\n美国财政部长 Scott Bessent 美国时间 11 月 15 日（周日）接受 Fox News 采访时对 NVIDIA 的公开批评，由 CNBC 报道。这是美国内阁官员第一次公开要求 NVIDIA 董事会从外部选 CEO。\n\n## 它说了什么\n\n- Bessent 呼吁 NVIDIA 进行「大换血」（dramatic shakeup），董事会应到公司外部寻找下一任 CEO，并暗示其他高管在出口管制合规上也应受审视。\n- 原话（CNBC 引述）：「我一直想回到 NVIDIA 的文化是什么——他们是不是在推动这些看似违规的销售来抬高营收和利润？」\n- 他说：「如果这是一家银行、没有这样合规，OCC（美国货币监理署）现在早就进场了，很多高管会被撤换。」\n- 他还质疑 NVIDIA 的财务披露，指出在对华销售下降的同时新加坡收入激增；NVIDIA 自 2025 年 11 月起不再单独披露新加坡收入，理由是改按客户总部而非账单地址统计。\n- Bessent 说特朗普已划定红线：不允许向中国出售比 H200 更先进的芯片。\n- 背景：黄仁勋 11 月 12 日辞职，起因是他与新加坡 Megaspeed 前高管 Alice Huang 的关系被曝光，美国情报官员怀疑后者为中国从事间谍活动，Megaspeed 涉嫌违规把 NVIDIA 芯片转运到中国；CFO Colette Kress 任临时 CEO。\n\n## 适合谁\n\n关注 NVIDIA 治理与继任、美国芯片出口管制和美股 AI 板块的读者。\n\n## 为什么值得看\n\n一边是硅谷盟友和部分股东游说让黄仁勋回归（见同日 FT 条目），一边是财长公开要求外部 CEO、并把矛头指向整个管理层的合规文化。NVIDIA 官方公告：第三财季（截至 2026 年 10 月 25 日）财报约在美国太平洋时间 11 月 17 日 13:20 发布，电话会 14:00 开始，即北京时间 11 月 18 日 05:20 和 06:00，Kress 将提供书面评论。管理层如何回应出口与继任问题值得关注。\n\n## 可以核对的事实\n\n- CNBC 作者 Luke Fountain，Published Sun, Nov 15 2026 11:49 AM EST。\n- 财报时间来自 NVIDIA 新闻室 10 月 28 日公告，可信度 A；Bessent 讲话为媒体报道，可信度 B。"
     },
     {
-      "id": "asia-governments-react-huang-exit",
-      "title": "TechCrunch：亚洲各国政府回应黄仁勋离任",
-      "badge": "T",
-      "summary": "韩国称 NVIDIA 重申将供应 26 万块先进 GPU，政府 AI 战略委员会开紧急会议；中国外交部否认「间谍」指控；新加坡称对 Megaspeed 及另外 6 人的调查仍在进行；台北市称 NVIDIA 海外总部项目照常；日本经产省表示将密切关注。",
-      "publishedAt": "2026-11-15T00:34:00+08:00",
-      "sortAt": "2026-11-15T00:34:00+08:00",
-      "timeLabel": "2026-11-15 00:34（北京时间）",
-      "timePrecision": "minute",
-      "timeNote": "TechCrunch 标注 8:34 AM PST · November 14, 2026，即北京时间 11 月 15 日 00:34，为媒体发稿时间；各国表态本身分布在 11 月 10 日至 14 日。",
-      "source": "TechCrunch",
-      "confidence": "B",
-      "url": "https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit/",
-      "links": [
-        {
-          "label": "TechCrunch",
-          "url": "https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit/"
-        },
-        {
-          "label": "MoneyToday（韩国副总理表态）",
-          "url": "https://www.mt.co.kr/en/tech/2026/11/13/2026111318065591045"
-        },
-        {
-          "label": "亚洲经济（韩国 26 万 GPU 计划）",
-          "url": "https://www.asiae.co.kr/en/article/2026111317190291254"
-        }
-      ],
-      "detail": "## 它是什么\n\nTechCrunch 汇总了中国、新加坡、韩国、台湾地区和日本政府对黄仁勋辞去 NVIDIA CEO 的回应。NVIDIA 的供应链和大客户高度集中在亚洲，这些表态关系到 GPU 供应和本地 AI 项目。\n\n## 它说了什么\n\n- **中国**：外交部 11 月 10 日否认与黄仁勋相关的中国女商人是间谍，称指控毫无根据；周五发言人重申反对扰乱全球供应链的出口管制，并称不了解有关受限芯片流向上海某数据中心的报道。路透社统计，超过 30 亿美元依赖受限 NVIDIA 芯片的中国 AI 算力项目因此面临不确定性。\n- **新加坡**：内政部称 2025 年 6 月曾扣留 Megaspeed 前 CEO Alice Huang 的护照，调查服务器出口是否虚假申报；2026 年 2 月认定证据不足但她就自己在 Megaspeed 的角色提供了不实信息，予以警告并禁止再入境。对 Megaspeed 及另外 6 人的调查仍在进行。\n- **韩国**：科学部称 NVIDIA 重申将向韩国供应 26 万块先进 GPU、继续联合 AI 项目；政府 AI 战略委员会周五召开紧急会议评估影响。\n- **台湾地区**：经济部长龚明鑫称影响有限；台北市政府称 NVIDIA 海外总部项目照常推进。\n- **日本**：经济产业省称将密切关注 NVIDIA；内阁官房副长官尾崎正直称现在评估影响还为时过早。\n\n## 适合谁\n\n关注 GPU 供应、国产算力、出口管制和亚洲 AI 产业政策的读者。\n\n## 为什么值得看\n\n对中国用户和开发者而言，最直接的是两点：受限芯片相关的国内算力项目不确定性上升；Megaspeed 调查可能牵出更多芯片流向问题，进一步影响出口管制走向。\n\n## 可以核对的事实\n\n- TechCrunch 作者 Kate Park，8:34 AM PST, Nov 14, 2026。\n- 「超过 30 亿美元」来自路透社对采购公告等材料的统计，TechCrunch 转引。可信度 B（可靠媒体汇总各国官方表态）。"
-    },
-    {
-      "id": "faa-ground-stop-smart-ai-ruled-out",
-      "badge": "F",
-      "title": "美国 FAA 全国停飞 4 小时，官方排除新上线的 SMART AI 调度工具是原因",
-      "summary": "美国东部时间 11 月 13 日下午，FAA 因通信故障发布 2023 年以来首次全国停飞，持续 4 个多小时；交通部长 Duffy 称刚推广到全国的 AI 建议系统 SMART 不连 STARS/ERAM，「不可能」导致故障，原因指向老旧交换机和路由器过载。",
-      "publishedAt": "2026-11-14T09:15:00+08:00",
-      "sortAt": "2026-11-14T09:15:00+08:00",
-      "timeLabel": "2026-11-14 09:15（北京时间）",
-      "timePrecision": "minute",
-      "timeNote": "AVweb 报道：停飞约始于美国东部时间 11 月 13 日 15:54（北京时间 11 月 14 日 04:54），20:15 EST 解除（北京时间 11 月 14 日 09:15），此处按解除时刻排序。",
-      "source": "AVweb / 美联社",
-      "confidence": "B",
-      "url": "https://avweb.com/aviation-news/faa-nationwide-ground-stop-lifts-smart-ai/",
-      "links": [
-        {
-          "label": "AVweb",
-          "url": "https://avweb.com/aviation-news/faa-nationwide-ground-stop-lifts-smart-ai/"
-        },
-        {
-          "label": "美联社",
-          "url": "https://apnews.com/article/flights-halted-airports-faa-f81b0904331dafad6133f291e5f531a8"
-        },
-        {
-          "label": "Washington Times",
-          "url": "https://www.washingtontimes.com/news/2026/nov/13/faa-expanded-ai-air-traffic-tool-centers-days-nationwide-ground-stop/"
-        },
-        {
-          "label": "Ars Technica：SMART 全国推广",
-          "url": "https://arstechnica.com/features/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace/"
-        }
-      ],
-      "detail": "## 它是什么\n\n美国联邦航空管理局（FAA）11 月 13 日（美国时间）发布全国地面停飞令，这是自 2023 年 1 月 NOTAM 故障以来首次全国停飞。因为 FAA 几天前刚把 AI 航路建议工具 SMART 推广到所有航路管制中心，外界一度怀疑二者有关。\n\n## 发生了什么\n\n- 据 AVweb，停飞约从美国东部时间 15:54 开始，20:15 解除，持续 4 个多小时；下令时空中有 3500 多架飞机。FAA 没有完全失去雷达或通信，医疗、关键货运和执法航班获豁免。\n- 交通部长 Sean Duffy 称，雷达数据和与飞机的通信出现不一致；新装的数字设备运行正常，老旧模拟系统出了问题。官方把故障归因于老化电信设施中交换机和路由器过载，具体根因仍在调查。\n- 据美联社引用 Cirium 数据，截至东部时间 19:05 至少 827 个航班备降。\n\n## AI 有没有关系\n\n- Duffy 解释，SMART 只向管制员提供建议，不连接 STARS 或 ERAM 核心系统，「SMART 不可能影响这次事件」。\n- 国土安全部长 Markwayne Mullin 称未发现网络攻击或 AI 干扰的证据，但调查仍在继续。\n\n## 适合谁\n\n关注 AI 进入关键基础设施、以及「出事先怀疑 AI」这类舆论风险的读者；近期有美国航班行程的用户。\n\n## 为什么值得看\n\n这是 AI 工具接入国家级关键系统后遇到的第一次重大停摆。官方给出的结论是「AI 无关，老设备过载」，但调查尚未结束。它也说明，部署 AI 时把建议系统和核心控制系统隔开，事后排查会容易很多。\n\n## 可以核对的事实\n\n- 时间、3500 架、827 个备降、Duffy 与 Mullin 的表态：AVweb（Matt Ryan，2026-11-13 21:58 ET）。\n- 可信度 B（多家可靠媒体报道官方发布会内容，FAA 未发书面事故报告）。"
-    },
-    {
-      "id": "reuters-huang-misled-general-counsel",
-      "title": "路透社独家：黄仁勋曾就与 Alice Huang 的关系误导 NVIDIA 法务总监",
-      "badge": "R",
-      "summary": "路透社看到的 10 月内部消息显示，黄仁勋曾两次对法务总监 Tim Teter、首席营销官 Alison Wagonfeld 等人称与 Megaspeed 前高管 Alice Huang 的往来是「正常客户业务」，还曾催促法务考虑起诉《纽约时报》。NVIDIA 与黄仁勋代表拒绝置评。",
-      "publishedAt": "2026-11-14T08:25:00+08:00",
-      "sortAt": "2026-11-14T08:25:00+08:00",
-      "timeLabel": "2026-11-14 08:25（北京时间）",
-      "timePrecision": "minute",
-      "timeNote": "路透社页面标注 November 14, 2026 12:25 AM UTC，即北京时间 11 月 14 日 08:25，晚于上次早报截稿，本次补录。",
-      "source": "路透社",
-      "confidence": "B",
-      "url": "https://www.reuters.com/5f374b32b07b/world/china/ex-nvidia-ceo-misled-top-lawyer-affair-with-chinese-businesswoman-sources-say-2026-11-14/",
-      "links": [
-        {
-          "label": "路透社",
-          "url": "https://www.reuters.com/5f374b32b07b/world/china/ex-nvidia-ceo-misled-top-lawyer-affair-with-chinese-businesswoman-sources-say-2026-11-14/"
-        },
-        {
-          "label": "CNBC TV18 转述",
-          "url": "https://www.cnbctv18.com/business/companies/ex-nvidia-ceo-misled-top-lawyer-on-affair-with-chinese-businesswoman-reuters-20033907.htm"
-        }
-      ],
-      "detail": "## 它是什么\n\n路透社基于两名知情人士和其审阅的内部通信发布的独家报道，涉及黄仁勋辞职前如何向公司高管描述他与 Alice Huang 的关系。\n\n## 它说了什么\n\n- 2026 年 10 月的两条消息中，黄仁勋对法务总监 Tim Teter、首席营销官 Alison Wagonfeld 等人表示，他与 Megaspeed 及 Alice Huang 的往来属于「与客户的正常业务往来」。路透社只审阅了 10 月的消息，并同意不逐字引用。\n- 知情人士称，2025 年秋天《纽约时报》报道他与 Alice Huang 公开会面后，他也作过类似描述，并讨论过起诉《纽约时报》；最终没有起诉，《纽约时报》称未收到法律函件。\n- NVIDIA 独立董事 11 月 10 日已聘请 Wachtell, Lipton, Rosen & Katz 律所开展独立调查。\n- 路透社称，NVIDIA 股价自 10 月 6 日收盘高点已跌超 30%，市值蒸发逾 1.8 万亿美元。\n\n## 适合谁\n\n跟踪 NVIDIA 治理危机和董事会调查的读者。\n\n## 为什么值得看\n\n这份报道直接关系到董事会调查的核心问题：黄仁勋是否向公司隐瞒了与受调查客户的关系。它也与同日出现的「请他复职」请愿形成对照。\n\n## 可以核对的事实\n\n- 路透社作者 Max A. Cherney、Jeffrey Dastin，2026-11-14 00:25 UTC。\n- Teter、Wagonfeld 未回应，黄仁勋代表与 NVIDIA 拒绝置评；路透社称未独立核实 Alice Huang 是否为中国政府工作，北京方面否认。可信度 B（可靠媒体独家）。"
-    },
-    {
-      "id": "lovable-apps-expose-data",
-      "title": "安全研究：大量 Lovable 生成的应用把护照、聊天记录等数据暴露在外",
-      "badge": "L",
-      "summary": "德国安全公司 Crissy Field 分析 159,041 个 Lovable 项目，发现其中 34,545 个用 Supabase，7,403 个网站的数据表里能免登录读到含邮箱的记录；案例包括 1000 多条护照信息、20 多万条聊天消息。原因是应用没配好 Supabase 行级安全（RLS），并非 Lovable 平台被入侵。",
-      "publishedAt": "2026-11-14",
-      "sortAt": "2026-11-14T08:00:00+08:00",
-      "timeLabel": "2026-11-14（UTC，Hacker News 热议日）",
+      "id": "openai-science-blog-standard-model-lattice",
+      "title": "OpenAI 开设科学博客，首篇客座文章：物理学家与 GPT-6 Astra 给出标准模型的格点定义候选方案",
+      "badge": "O",
+      "summary": "OpenAI 推出面向科学家的官方科学博客，发布研究成果、方法指南和科研人员第一手经验。首篇客座文章由 UCSB 粒子理论组负责人 Nathaniel Craig 撰写：他与 GPT-6 Astra 合作，提出一个标准模型的非微扰格点定义候选方案，Astra 主导了详细证明，仍待学界检验。",
+      "publishedAt": "2026-11-15T00:00:00+08:00",
+      "sortAt": "2026-11-15T00:00:00+08:00",
+      "timeLabel": "2026-11-15（美国时间）",
       "timePrecision": "date",
-      "timeNote": "Crissy Field 报告页未标注发布日期（页面说明比 11 月 2 日 Handelsblatt 报道数据更新）；报告在 11 月 14 日（UTC）登上 Hacker News 首页并引发讨论。sortAt 取 UTC 当日零点（北京时间 08:00），仅用于排序。",
-      "source": "Crissy Field 安全报告",
-      "confidence": "B",
-      "url": "https://www.crissyfield.de/research/lovable-en/",
-      "links": [
-        {
-          "label": "Crissy Field 报告",
-          "url": "https://www.crissyfield.de/research/lovable-en/"
-        },
-        {
-          "label": "Cybernews",
-          "url": "https://cybernews.com/security/lovable-ai-apps-expose-personal-information/"
-        },
-        {
-          "label": "Hacker News 讨论（含 Lovable 安全负责人回应）",
-          "url": "https://news.ycombinator.com/item?id=50499017"
-        }
-      ],
-      "detail": "## 它是什么\n\n德国汉堡的应用安全公司 Crissy Field 与德国《商报》（Handelsblatt）合作，调查用 AI 建站平台 Lovable 做出来的应用是否会把敏感数据暴露给未登录访客。这是 AI 生成应用（vibe coding）安全问题的一次大规模实证。\n\n## 它发现了什么\n\n- 研究者从公开网页存档 Common Crawl 中识别出 2025 年 12 月到 2026 年 9 月的 159,041 个 Lovable 项目，其中 34,545 个使用 Supabase 数据库。\n- 24,664 个网站在页面加载时就会下发数据库记录；研究者用页面自带的同一把公开 key 做额外只读请求，在 7,403 个网站（占这 24,664 个的 30%）的 10,560 张表里找到含邮箱的记录。报告强调 30% 不是确认的泄露率。\n- 典型案例：一个德国生活方式论坛暴露 8 万多份用户资料和 20 多万条聊天消息；一家服务商暴露 1000 多条含护照号、有效期、国籍的身份记录；活动主办方和餐厅暴露数万条带电话、地址、支付信息和票码的订单；还有合同、发票、私人相册、内部 WhatsApp 记录等。\n- 根因是各应用缺失或配错 Supabase 行级安全（RLS）规则，不是 Lovable 中央平台被攻破。是否已被他人滥用无法确定。\n\n## Lovable 怎么回应\n\nLovable 安全负责人在 Hacker News 回复称，根因是 RLS 不足，Lovable 会在发布前免费自动扫描每个应用，并提供更深入的 SAST 扫描、一键修复、自动修复和「有严重问题时禁止发布」选项。\n\n## 适合谁\n\n用 Lovable、Bolt、v0 等 AI 工具搭应用并处理真实用户数据的人，尤其是没有安全背景的创业者和小团队。\n\n## 为什么值得看\n\nAI 让「不会写代码也能上线应用」，但数据库权限仍要自己配。用 Supabase 的项目上线前务必检查每张表的 RLS 策略；处理身份证件、支付等数据时最好请专业人员审查。\n\n## 可以核对的事实\n\n- 159,041、34,545、24,664、7,403、10,560 等数字均出自 Crissy Field 报告原文。\n- 报告页未标发布日期；Handelsblatt 首篇报道日期为 2026-11-02。可信度 B（安全公司研究 + 多家媒体报道，Lovable 安全负责人公开回应但未发官方公告）。"
-    },
-    {
-      "id": "fed-fsr-ai-top-risk",
-      "badge": "Fd",
-      "title": "美联储金融稳定报告：87% 受访者把 AI 列为头号金融风险，AI 数据中心债务超 6800 亿美元",
-      "summary": "美联储 11 月金融稳定报告的市场调查中，87% 受访者把 AI 列为「显著风险」，春季时为 50%，远高于第二名风险资产回调（52%）。关注点集中在 AI 股估值、前沿模型带来的网络安全风险，以及复杂的 AI 融资结构。",
-      "publishedAt": "2026-11-14T05:00:00+08:00",
-      "sortAt": "2026-11-14T05:00:00+08:00",
-      "timeLabel": "2026-11-14 05:00（北京时间）",
-      "timePrecision": "minute",
-      "timeNote": "美联储于美国时间 11 月 13 日（周五）发布报告，官方未给发布钟点；此处用 CNBC 报道时间 4:00 PM EST（北京时间 11 月 14 日 05:00）。",
-      "source": "美联储 / CNBC",
+      "timeNote": "OpenAI 两个页面均只标注 November 15, 2026，没有精确时刻；sortAt 采用当日零点，仅用于排序。",
+      "source": "OpenAI 官方博客",
       "confidence": "A",
-      "url": "https://www.federalreserve.gov/publications/files/financial-stability-report-20261113.pdf",
+      "url": "https://openai.com/index/our-new-blog-for-science/",
       "links": [
         {
-          "label": "美联储报告 PDF",
-          "url": "https://www.federalreserve.gov/publications/files/financial-stability-report-20261113.pdf"
+          "label": "OpenAI：Our new blog for science",
+          "url": "https://openai.com/index/our-new-blog-for-science/"
         },
         {
-          "label": "CNBC",
-          "url": "https://www.cnbc.com/2026/11/13/ai-risks-financial-system-federal-reserve.html"
-        },
-        {
-          "label": "US News",
-          "url": "https://money.usnews.com/investing/news/articles/2026-11-13/ai-rockets-to-top-of-worries-about-financial-system-in-latest-fed-survey"
-        },
-        {
-          "label": "Yahoo Finance：数据中心融资",
-          "url": "https://finance.yahoo.com/economy/policy/article/fed-says-its-monitoring-the-data-center-build-out-for-risks-to-the-financial-system-224116947.html"
+          "label": "OpenAI 科学博客首篇：A step toward defining the Standard Model on a lattice",
+          "url": "https://openai.com/index/step-toward-defining-the-standard-model"
         }
       ],
-      "detail": "## 它是什么\n\n美联储每半年发布一次的《金融稳定报告》（Financial Stability Report），其中包含对市场参与者、经济学家和机构的风险调查。11 月这期报告覆盖到 10 月 28 日的数据。\n\n## 它说了什么\n\n- 87% 的受访者把 AI 列为「显著风险」，春季调查时为 50%；第二名是风险资产回调（52%），其后是长期利率走高（48%）、网络攻击（43%）、财政债务可持续性（43%）。\n- 报告原文归纳了三类担忧：（1）股票估值偏高，若盈利不及预期可能引发回调；（2）网络安全风险，来自老练的国家级攻击者，或前沿 AI 模型本身造成的破坏；（3）复杂形式的 AI 相关融资带来的风险。\n- 多家媒体报道，报告提到用于 AI 算力和数据中心的债务截至 10 月已超过 6800 亿美元，美联储正在监测租约、担保和循环融资带来的表外敞口。\n- 报告整体认为金融体系相当稳定，但对冲基金杠杆处于 2013 年以来最高水平。\n\n## 适合谁\n\n关注 AI 投资泡沫、算力租赁价格和云服务成本走向的读者，以及依赖低价 API 的创业团队。\n\n## 为什么值得看\n\n央行把 AI 列为头号金融稳定风险，意味着 AI 基础设施的融资方式正受到监管层关注。对开发者来说，底层算力价格部分建立在债务和长期租约上，如果融资环境收紧，模型价格可能波动。\n\n## 可以核对的事实\n\n- 87%、50%、52%、48%、43% 及三类担忧原文：CNBC（Jeff Cox）引述报告。\n- 6800 亿美元为多家媒体转述报告内容，以 PDF 原文为准。可信度 A（官方报告）。"
-    },
-    {
-      "id": "mirendil-series-a-1b",
-      "title": "前 Anthropic 研究员创办的 Mirendil 完成 10 亿美元 A 轮，做自动化 AI 研发",
-      "badge": "M",
-      "summary": "Mirendil 官方宣布完成 10 亿美元 A 轮，Kleiner Perkins 与 Clearlake Capital 领投，Google 等参投；官方未披露估值，a16z 招聘通讯称估值 50 亿美元。旗下有 1000 万 token 上下文模型 Fern 和私测中的多智能体研发平台 Lor。",
-      "publishedAt": "2026-11-13T01:00:00+08:00",
-      "sortAt": "2026-11-13T01:00:00+08:00",
-      "timeLabel": "2026-11-13 01:00（北京时间）",
-      "timePrecision": "minute",
-      "timeNote": "Mirendil 官方页面标注 Published: November 12, 2026, 9:00 am PT，即北京时间 11 月 13 日 01:00。此前各期未收录，本次补录。",
-      "source": "Mirendil 官方",
-      "confidence": "A",
-      "url": "https://mirendil.com/news/series-a/",
-      "links": [
-        {
-          "label": "Mirendil 官方公告",
-          "url": "https://mirendil.com/news/series-a/"
-        },
-        {
-          "label": "a16z 招聘通讯（估值 50 亿美元）",
-          "url": "https://a16zjobs.substack.com/p/mirendil-just-raised-1b-at-a-5b-valuation"
-        },
-        {
-          "label": "Dealroom",
-          "url": "https://dealroom.co/news/172414-ex-anthropic-researchers-mirendil-raises-1b-series-a-led-by-kleiner-perk/"
-        }
-      ],
-      "detail": "## 它是什么\n\nMirendil 是一家旧金山 AI 实验室，团队约 20 人，来自 Anthropic、xAI、Google DeepMind、OpenAI 等。它宣布完成 10 亿美元 A 轮融资，目标是「让前沿 AI 研发民主化」。\n\n## 它做什么\n\n- **Lor**：私测中的平台，可调度数百个智能体连续数天写代码、跑实验、自行申请算力。官方称 Mirendil 自己每天都在用 Lor。\n- **Mirendil-Base 与 Fern**：官方称一名研究员借助智能体，在 3.5 个月内用不到 1000 万美元算力从零预训练出编程模型 Mirendil-Base，再后训练成 Fern，上下文可达 1000 万 token。\n- 本轮由 Kleiner Perkins 与 Clearlake Capital 领投，Battery Ventures、Doerr Capital、Gil & Co、Google、M13、Pear VC、S32 等参投。\n\n## 适合谁\n\n关注「AI 自动做 AI 研究」、长时运行智能体和新兴 AI 实验室融资的读者。\n\n## 为什么值得看\n\n距 6 月 2 亿美元种子轮仅约 5 个月就拿到 10 亿美元 A 轮，说明资本正在押注「用智能体把小团队放大成整个实验室」。Lor 目前免费、仅限邀请。\n\n## 可以核对的事实\n\n- 金额、领投方、参投方、Fern 1000 万 token、3.5 个月 / 不到 1000 万美元算力：官方公告。\n- 50 亿美元估值来自 a16z 招聘通讯，官方未披露；有媒体指出官方未引用任何第三方模型评测。融资事实可信度 A，估值为 B。"
-    },
-    {
-      "id": "google-antigravity-teamwork-results",
-      "title": "Google Research 公布 Antigravity /teamwork 多智能体成果，并向 1 万名学者开放半年免费最高档",
-      "badge": "G",
-      "summary": "Google 用 Gemini 4 Argon/Carbon/Hydrogen 加多智能体框架 /teamwork，协助证明 Courtade–Kumar 猜想、全自动形式化 Weil 猜想（约 180 万行 Lean）、把 Zircon 微内核余下 C++ 改写成约 80 万行安全 Rust。外部开发者今天即可在 Antigravity 用 /teamwork 和 /boost。",
-      "publishedAt": "2026-11-13",
-      "sortAt": "2026-11-13T00:00:00+08:00",
-      "timeLabel": "2026-11-13（美国时间）",
-      "timePrecision": "date",
-      "timeNote": "Google Research 博客只写 November 13, 2026，没有钟点；sortAt 取北京时间当日零点，仅用于排序。11 月 14 日（UTC）登上 Hacker News。此前各期只在 Gemini 4 Hydrogen 条目中提到 Antigravity，本文成果未单独收录。",
-      "source": "Google Research 官方博客",
-      "confidence": "A",
-      "url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
-      "links": [
-        {
-          "label": "Google Research 博客",
-          "url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/"
-        },
-        {
-          "label": "Antigravity /teamwork 文档",
-          "url": "https://antigravity.google/docs/teamwork/"
-        },
-        {
-          "label": "IT之家",
-          "url": "https://www.ithome.com/1/027/140.htm"
-        }
-      ],
-      "detail": "## 它是什么\n\nGoogle Research（作者 Google Fellow Vahab Mirrokni）发布的成果汇总：用 Gemini 4 系列模型和 Antigravity 里的多智能体功能 /teamwork，与人类专家合作攻克数学、化学、系统软件和机器学习工程中的开放问题，并宣布向外部开放这些工具。\n\n## 它怎么做\n\n- **并行探索 + 独立证伪**：多个智能体并行尝试，再用 Lean 4 证明检查器、原封不动的测试套件、模拟器、硬件计数器等自动判定哪个方案对。\n- **按步骤切分上下文**：每个智能体只拿到当前步骤需要的文件和工具；协调者把任务交给「新的」继任者，审计者在不看原作者推理的干净上下文里复核，避免多日任务中注意力涣散。\n- /boost 是打包好的「顺序求解—验证」编码循环，日常编程可直接用。\n\n## 它做到了什么（官方列举）\n\n- 与港中文、USC、CMU 等合作证明 2013 年的 Courtade–Kumar 信息论猜想，整套证明用 Lean 4 形式化，约 5000 万行代码。\n- /teamwork-LEAP 全自动完成 Weil 猜想的端到端机器验证形式化，约 180 万行 Lean、28,800 次子智能体调用。\n- 30 个智能体加光谱模拟器从核磁数据推断分子结构，复杂基准分子 top-1 精确匹配 95%、top-3 100%。\n- 两周内把 Zircon 微内核剩余 C++ 改写成约 80 万行安全 Rust，通过全部内核单元测试并在 arm64 硬件上启动；AV1 解码器 libgav1 改写成约 17 万行 Rust，优化后比原 C++ 和手写汇编快 20–30%。\n- Google 内部：Borg 调度优化让部分硬件上 TPU 任务抢占减少 24%。\n\n## 怎么用 / 适合谁\n\n- 外部科学家和开发者今天即可在 Antigravity 中用 Gemini 4 模型配合 /teamwork、/boost，以及 Deep Review（每周 2 次免费）。\n- Google 开放申请：给 1 万名学术研究者 6 个月免费最高使用档。形式化证明模式等更多工作流将在后续几周上线。\n\n## 为什么值得看\n\n这是目前少见的、由大厂系统公布的「多智能体长时任务」实战数据，覆盖数学证明、代码大规模迁移和生产系统优化。做科研的读者可以关注 1 万个免费名额。\n\n## 可以核对的事实\n\n- 所有数字均来自 Google Research 博客原文，属官方自述，多数论文尚待同行评议。可信度 A（官方博客）。"
-    },
-    {
-      "id": "apple-homeview-on-sale",
-      "title": "Apple HomeView 智能屏开售：299 美元，搭载 Siri AI 测试版，暂不进欧盟",
-      "badge": "A",
-      "summary": "苹果 7 英寸智能家居屏 HomeView 在美、英、加、澳、新西兰、新加坡、印度开售，桌面版和壁挂版均 299 美元；搭载全新 Siri AI（测试版），可人脸识别最多 6 名家庭成员。因 Siri AI 尚未在欧盟 iOS 提供，HomeView 不在欧盟销售。",
-      "publishedAt": "2026-11-13",
-      "sortAt": "2026-11-13T00:00:00+08:00",
-      "timeLabel": "2026-11-13（美国时间）",
-      "timePrecision": "date",
-      "timeNote": "Apple Newsroom 写明「Beginning today, November 13」，未给钟点；sortAt 取北京时间当日零点，仅用于排序。此前各期未收录，本次补录。",
-      "source": "Apple Newsroom",
-      "confidence": "A",
-      "url": "https://www.apple.com/newsroom/2026/11/apple-homeview-available-today/",
-      "links": [
-        {
-          "label": "Apple Newsroom",
-          "url": "https://www.apple.com/newsroom/2026/11/apple-homeview-available-today/"
-        },
-        {
-          "label": "Digital Trends",
-          "url": "https://www.digitaltrends.com/home/apples-299-homeview-is-finally-in-stores-with-a-smarter-siri-still-in-beta/"
-        },
-        {
-          "label": "MacRumors：不进欧盟",
-          "url": "https://www.macrumors.com/2026/10/13/apple-homeview-wont-be-available-in-eu/"
-        }
-      ],
-      "detail": "## 它是什么\n\n苹果的 7 英寸 Liquid Retina 智能家居屏 Apple HomeView，11 月 13 日起在部分地区开售，是苹果首款以 Siri AI 为核心的家居设备。\n\n## 它做什么\n\n- **Siri AI**：全新版 Siri，对话能力更强，可回答几乎任何话题，有屏幕内容感知；与支持 Apple 智能的 iPhone/iPad 配对后可调用日历、信息等个人上下文，并跨应用执行操作。HomeView 软件 27.2 上的 Siri AI 为测试版。\n- **多人识别**：人脸识别最多 6 人，按人显示各自的信息、FaceTime、日历、提醒事项、查找。个人内容只在识别到本人且其配对设备在附近、近期解锁时才显示。\n- **家居中枢**：放音乐、FaceTime、家庭监控、语音免手动自动化，配合「家庭」App 管理配件。\n- 部分依赖服务器端模型的 Apple 智能功能有每日用量上限，官方称未来将推出付费扩容。\n\n## 价格与地区\n\n- 桌面版（银、星光、玫瑰粉、深空灰）和壁挂版（深空灰、银）均为 299 美元；施耐德壁挂电源底座 59.95 美元起。\n- 开售地区：澳大利亚、加拿大、印度、新西兰、新加坡、英国、美国。Siri AI 目前只支持英语。\n- 不在欧盟销售：苹果称 Siri AI 目前在欧盟 iOS 上不可用，正与欧盟沟通。中国大陆未在开售名单内。\n\n## 适合谁\n\n在上述地区使用苹果全家桶、想要一个家庭共享 AI 助手屏的用户；关注苹果 AI 落地进度的读者。\n\n## 为什么值得看\n\n这是 Siri AI 首次以独立硬件形态出货，也是欧盟数字监管与 AI 功能冲突的又一例。\n\n## 可以核对的事实\n\n- 价格、地区、功能、欧盟说明均出自 Apple Newsroom 原文。可信度 A（官方）。"
-    },
-    {
-      "id": "cursor-security-incident-update-fireworks",
-      "badge": "C",
-      "title": "Cursor 公布安全事件调查：Fireworks 泄露的密钥引出恶意 Claude Code 扩展，最多 5000 名用户可能受影响",
-      "summary": "Cursor 官方更新调查：攻击者拿到 Cursor 发给 Fireworks、又被 Fireworks 泄露的访问密钥，复制了部分编程智能体记录，借其中未脱敏的凭证进入内部 SaaS 工具，并在 10 月 29 日把恶意版 Claude Code 扩展（2.1.312、2.1.313）放进扩展市场缓存约 11 小时。",
-      "publishedAt": "2026-11-13T00:00:00+08:00",
-      "sortAt": "2026-11-13T00:00:00+08:00",
-      "timeLabel": "2026-11-13",
-      "timePrecision": "date",
-      "timeNote": "Cursor 官方博客只写 Nov 13, 2026，没有钟点；sortAt 取北京时间当日零点，仅用于排序。",
-      "source": "Cursor 官方博客",
-      "confidence": "A",
-      "url": "https://cursor.com/blog/security-incident-update",
-      "links": [
-        {
-          "label": "Cursor 官方博客",
-          "url": "https://cursor.com/blog/security-incident-update"
-        },
-        {
-          "label": "BleepingComputer",
-          "url": "https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/"
-        },
-        {
-          "label": "The Hacker News",
-          "url": "https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html"
-        },
-        {
-          "label": "Sophos 分析",
-          "url": "https://www.sophos.com/en-us/blog/malicious-claude-code-extension-distributed-through-cursor-marketplace"
-        }
-      ],
-      "detail": "## 它是什么\n\nAI 编程工具 Cursor 对 10 月 29 日安全事件的完整调查更新。这是继 Notion 之后，又一家因推理服务商 Fireworks AI 泄露而受影响的公司。\n\n## 发生了什么（官方时间线）\n\n1. **起点在 Fireworks**：攻击者拿到 Cursor 发给 Fireworks 的访问密钥（由 Fireworks 泄露），从共享的只读存储桶里复制了数据。桶里是有限的编程智能体记录，大多来自 2025 年、未开隐私模式、允许用于训练的会话。\n2. **凭证扩散**：少量记录中含有未脱敏的凭证，不到 0.01% 的客户 API 凭证外泄。攻击者借此进入 Cursor 使用的部分 SaaS 工具，接触到部分归档的非生产代码库、有限的客服数据和邮件、产品用量指标与联系方式、部分智能体对话摘要，以及用户发给客服的一些凭证。\n3. **恶意扩展**：10 月 29 日，攻击者用窃得的凭证把未经授权的恶意版 Anthropic Claude Code 扩展直接放到 Cursor VS Code 扩展市场的缓存上。上游 Open VSX 从未有恶意软件。最多 5000 名在当天请求了特定缓存版本的用户可能拿到恶意版本，存在约 11 小时。\n4. Cursor 称最后一次攻击活动在 11 月 1 日并被拦截，认为事件已得到控制。\n\n## 哪些没受影响\n\n开启隐私模式的提示词和代码；当前实时流量和推理请求；生产系统；Cursor 应用及官方更新（发布用独立代码托管系统，签名密钥未泄露）；扩展市场中的其他扩展；客户代码仓库。未开隐私模式用户中，智能体记录外泄的不到 0.05%，已逐一通知。\n\n## 你该做什么\n\n- 如果在暴露窗口内从 Cursor 扩展市场安装或更新过 Anthropic.claude-code **2.1.312 或 2.1.313**，按 Cursor 10 月 30 日安全公告的步骤处理；官方提醒仅卸载扩展可能不够。\n- 收到 Cursor 通知的团队管理员，按邮件列出的密钥清单轮换。\n\n## Cursor 采取的措施\n\n全部推理流量迁离 Fireworks 并停用其密钥；轮换所有内部凭证；重建扩展市场；扩大网络访问限制；对所有代码库加密钥扫描；重新部署全部生产基础设施；聘请外部取证专家。\n\n## 为什么值得看\n\n一把第三方服务商的密钥，加上训练数据里没脱敏的凭证，最终演变成供应链投毒。用 AI 编程工具的团队应尽量开启隐私模式，并且不要把密钥贴进对话或发给客服。\n\n## 可以核对的事实\n\n- 0.01%、0.05%、5000 人、约 11 小时、2.1.312/2.1.313、11 月 1 日：均出自 Cursor 官方博客原文。可信度 A（官方）。"
-    },
-    {
-      "id": "anthropic-building-strong-safety-evals",
-      "badge": "A",
-      "title": "Anthropic 发布《构建可靠的安全评测》：给出样本量下限、评分模型校准等十条建议",
-      "summary": "Anthropic 研究文章总结自家安全评测经验：复杂多轮评测至少 100 题、单轮至少 1000 题；评分模型要用人工标注校准、最好换一个模型来评；并披露 Claude Fable 5.1 在 API 与 claude.ai 两种配置下多轮安全评测差距可达 34 个百分点。",
-      "publishedAt": "2026-11-13T00:00:00+08:00",
-      "sortAt": "2026-11-13T00:00:00+08:00",
-      "timeLabel": "2026-11-13",
-      "timePrecision": "date",
-      "timeNote": "Anthropic 页面只写 Published Nov 13, 2026，没有钟点；sortAt 取北京时间当日零点，仅用于排序。",
-      "source": "Anthropic 官方",
-      "confidence": "A",
-      "url": "https://www.anthropic.com/research/building-strong-safety-evaluations",
-      "links": [
-        {
-          "label": "Anthropic 研究文章",
-          "url": "https://www.anthropic.com/research/building-strong-safety-evaluations"
-        },
-        {
-          "label": "CASRAI 解读",
-          "url": "https://casrai.org/news/anthropic-strong-safety-evaluation-recommendations-2026"
-        }
-      ],
-      "detail": "## 它是什么\n\nAnthropic 发布的方法论文章，面向所有构建或依赖 AI 安全评测的人，借鉴心理学「可重复性危机」后的改革（预注册、更好的测量、更严格的统计），总结了从团队组建到结果报告的一整套建议。没有附带新产品。\n\n## 它说了什么（要点）\n\n- **安全运行**：安全评测常常关掉安全护栏，应在无网络沙箱里跑并实时监控。Anthropic 称因自身事故已加固评测环境，并暂停了许多需要联网的评测。\n- **测对东西**：自杀与自伤类对话里，「拒答率」是错误指标，直接拒绝本身就是失败；应衡量「整段对话是否始终恰当」。双重用途领域（生物、网络安全）应帮助合法请求、不给关键操作细节。\n- **多轮模拟**：单轮题容易饱和，Anthropic 近期所有模型单轮无害回复率都在 94%–98%；多轮模拟由领域专家写规格，另一个 Claude 扮演用户。\n- **评分模型**：标准做到原子化、是/否；明确「免责声明不能让有害内容变无害」；评分模型可能偏爱自己的输出，建议换模型评分；用人工标注校验一致性（例如 Cohen's kappa）。\n- **预注册与样本量**：复杂多轮评测至少 100 题，简单单轮至少 1000 题；多轮评测置信区间可能超过 ±10 个百分点。\n- **完整报告**：例如 Claude Opus 5 与 Opus 5.5 在 claude.ai 上的爱情诈骗多轮评测为 98% 对 94%，但差异不显著；Claude Fable 5.1 在 API 与 claude.ai 两种配置下差距最高达 34 个百分点。\n- **负责任披露**：Fable 5.1 发布前发现 Claude 有时会隐含认可自伤是一种应对方式，加了系统提示词后适当回复率从 API 上的 60% 提升到 claude.ai 上的 94%。\n\n## 适合谁\n\n做模型评测、红队、AI 产品安全的工程师和研究者；需要读懂各家「安全分数」的读者。\n\n## 为什么值得看\n\n文章给出了可以直接照做的门槛（样本量、评分校准、报告配置），也坦率披露了自家评测里的配置差异和缺陷。官方建议如果只做三件事：先写下要测的概念、先用人工判断校验评分模型、报告不确定性。文中还推荐了英国 AISI 的开源框架 Inspect 和 Anthropic 的 Petri 工具。\n\n## 可以核对的事实\n\n- 100/1000 题下限、94%–98%、±10 个百分点、34 个百分点、98% 对 94%、60% 对 94%：均出自 Anthropic 原文。可信度 A（官方）。"
-    },
-    {
-      "id": "cohere-acquires-aisle-cubic",
-      "badge": "Co",
-      "title": "Cohere 完成收购安全公司 AISLE，并收编 AI 代码审查团队 cubic，组建 Cohere Cyber",
-      "summary": "Cohere 宣布完成对自主漏洞发现与修复公司 AISLE 的收购，AISLE 成为新的网络安全业务 Cohere Cyber；同时迎来 AI 代码审查平台 cubic 团队，负责「安全编程」方向。这是 Cohere 今年第四笔并购，此前为 Aleph Alpha、Reliant AI。",
-      "publishedAt": "2026-11-13T00:00:00+08:00",
-      "sortAt": "2026-11-13T00:00:00+08:00",
-      "timeLabel": "2026-11-13",
-      "timePrecision": "date",
-      "timeNote": "Cohere 官方博客只写 Nov 13, 2026，没有钟点；sortAt 取北京时间当日零点，仅用于排序。",
-      "source": "Cohere 官方博客",
-      "confidence": "A",
-      "url": "https://cohere.com/blog/cohere-expands-its-sovereign-ai-platform-with-aisle-and-cubic",
-      "links": [
-        {
-          "label": "Cohere 官方博客",
-          "url": "https://cohere.com/blog/cohere-expands-its-sovereign-ai-platform-with-aisle-and-cubic"
-        },
-        {
-          "label": "AISLE 博客",
-          "url": "https://aisle.com/blog/goodbye-aisle-hello-cohere-cyber"
-        },
-        {
-          "label": "cubic 博客",
-          "url": "https://www.cubic.dev/blog/cubic-joins-cohere"
-        },
-        {
-          "label": "BetaKit",
-          "url": "https://betakit.com/cohere-buys-ai-code-review-startup-cubic-as-acquisition-spree-continues/"
-        }
-      ],
-      "detail": "## 它是什么\n\n加拿大大模型公司 Cohere 宣布两项交易：完成对 AISLE 的收购，并迎来 cubic 团队加入。两者都服务于 Cohere 主打的「主权 AI」（企业和政府在自有环境中部署、掌控数据和基础设施）。\n\n## 它做什么\n\n- **AISLE → Cohere Cyber**：AISLE 做自主漏洞发现、验证和修复系统，现成为 Cohere 新设的网络安全业务。联合创始人 Ondrej Vlcek 任 Cohere Cyber 高级副总裁；Jaya Baloo 任 Cohere 首席信息安全官；Stanislav Fort 任 AI 安全副总裁，加入核心模型研究与训练。Cohere 计划在布拉格长期大额投资，把那里建成其 AI 网络安全全球中心。\n- **cubic → 安全编程**：cubic 是 AI 代码审查平台，能审查代码、找漏洞、理解复杂代码库并自动修复，支持本地部署和物理隔离环境。创始人兼 CEO Paul Sanglé-Ferrière 带队组建 Cohere 的安全编程方向。\n- Cohere 称这是今年完成的第四笔战略并购，此前为 Aleph Alpha 和 Reliant AI。\n\n## 适合谁\n\n关注企业私有化部署、AI 安全攻防和 AI 代码审查赛道的读者。\n\n## 为什么值得看\n\n大模型厂商正在从「卖模型」转向「模型 + 安全 + 垂直应用」打包。AI 自动找漏洞和代码审查是今年并购最活跃的方向之一。\n\n## 可以核对的事实\n\n- 人员任命、布拉格投资、四笔并购：Cohere 官方博客原文。官方未披露交易金额。可信度 A（官方）。"
-    },
-    {
-      "id": "perplexity-decider-v1-3",
-      "title": "Perplexity 发布决策模型 Decider v1.3 与 Flash v1.3：只做分类打分，Apache 许可",
-      "badge": "P",
-      "summary": "Perplexity 推出 Decider v1.3（基于 Qwen3.8-27B）和蒸馏小模型 Decider Flash v1.3（基于 Qwen3.5-4B），不生成文字，而是对分类、路由、审核、评分问题直接返回概率；新增从文本中抽取原文片段的 Locate 能力。可经 OpenRouter（有免费档）和 Perplexity Decisions API 调用；HF 仓库标 Apache 2.0，但目前需授权才能下载。",
-      "publishedAt": "2026-11-12",
-      "sortAt": "2026-11-12T00:00:00+08:00",
-      "timeLabel": "2026-11-12（美国时间）",
-      "timePrecision": "date",
-      "timeNote": "Perplexity 官方博客未见明确钟点；TSN 称博文日期为 2026-11-12，OpenRouter 标注 Released Nov 12, 2026。sortAt 取北京时间当日零点，仅用于排序。此前各期未收录，本次补录。",
-      "source": "Perplexity 官方博客",
-      "confidence": "A",
-      "url": "https://www.perplexity.ai/hub/blog/perplexity-decider",
-      "links": [
-        {
-          "label": "Perplexity 官方博客",
-          "url": "https://www.perplexity.ai/hub/blog/perplexity-decider"
-        },
-        {
-          "label": "Hugging Face 模型卡",
-          "url": "https://huggingface.co/perplexity-ai/pplx-decider-v1.3"
-        },
-        {
-          "label": "OpenRouter（免费档）",
-          "url": "https://openrouter.ai/perplexity/pplx-decider-v1.3:free"
-        },
-        {
-          "label": "TSN：下载权限说明",
-          "url": "https://tsnmedia.org/perplexity-decider-v1-3/"
-        }
-      ],
-      "detail": "## 它是什么\n\nPerplexity 的第四代「决策模型」：Decider v1.3 和从它蒸馏出的小模型 Decider Flash v1.3，接替 v1、v1.1、v1.2 和 Flash v1.2。\n\n## 它做什么\n\n- 不聊天、不生成段落，而是读入内容（文本、JSON 或图片），对一个或多个具名问题一次性返回带概率的答案：是/否概率、多选项（最多 255 个）各自概率、有序评分的每档概率和期望分。\n- v1.3 新增 **Locate**：从文本中抽取原文片段，附字符位置和置信度。\n- 官方建议：精细判断、复杂评分标准、出错代价高的场景用 Decider v1.3；高并发路由、打标签、过滤用 Flash v1.3。\n\n## 怎么用\n\n- OpenRouter 上有 Decider v1.3 免费档（限速），上下文 262K；也可走 Perplexity Decisions API。\n- 模型卡显示 v1.3 基于 Qwen3.8-27B，BF16 权重约 49 GiB；Flash 基于 Qwen3.5-4B，约 8.5 GiB。元数据标 Apache 2.0，但截至 TSN 11 月 13 日查看时仓库仍为私有、需有权限的 HF token，暂不是完全公开下载。\n\n## 适合谁\n\n需要做工单分流、内容审核、自动评测、LLM 路由的开发者。\n\n## 为什么值得看\n\n「返回概率而非一段话」让应用可以设阈值、在不确定时拒绝行动，比解析聊天回复更稳。Google 同周也推出了 Gemini Decisions API，决策模型正成为一个独立品类。\n\n## 可以核对的事实\n\n- 模型基座、权重大小、许可证：Hugging Face 模型卡；免费档与上下文：OpenRouter 页面。\n- 下载需授权一事来自模型卡原文与 TSN 报道。可信度 A（官方博客与模型卡）。"
-    },
-    {
-      "id": "edge0-145b-on-device-open-model",
-      "badge": "E",
-      "title": "Edge0 开源 145B 端侧模型：笔记本可跑，峰值内存 29GB、解码 80+ tok/s（官方自测）",
-      "summary": "Edge0 开源 Edge0-145B 与 Edge0-120B 及推理框架，称 145B 是首个能在个人电脑本地运行的千亿级开源模型：每步约激活 10B 参数，峰值内存 29GB，解码 80+ tok/s，上下文 128K–256K，支持 macOS/Windows/Linux。跑分为官方内部评测，技术报告尚未发布。",
-      "publishedAt": "2026-11-12T00:00:00+08:00",
-      "sortAt": "2026-11-12T00:00:00+08:00",
-      "timeLabel": "2026-11-12",
-      "timePrecision": "date",
-      "timeNote": "Edge0 官方博客只写 November 12, 2026，没有钟点；sortAt 取北京时间当日零点，仅用于排序。此前各期未收录，本次补录。",
-      "source": "Edge0 官方博客",
-      "confidence": "A",
-      "url": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
-      "links": [
-        {
-          "label": "Edge0 官方博客",
-          "url": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer"
-        },
-        {
-          "label": "Hugging Face（Q3_K）",
-          "url": "https://huggingface.co/Edge0/Edge0-145B-q3k"
-        },
-        {
-          "label": "Hugging Face（NVFP4）",
-          "url": "https://huggingface.co/Edge0/Edge0-145B-NVFP4"
-        },
-        {
-          "label": "GitHub 推理框架",
-          "url": "https://github.com/Edge0-AI/Edge0"
-        }
-      ],
-      "detail": "## 它是什么\n\n端侧 AI 公司 Edge0 开源的两款笔记本级大模型 Edge0-145B 和 Edge0-120B，同时开源统一推理框架和部署工具。官方称 145B 是全球首个 1450 亿参数的开源端侧模型。\n\n## 它做什么 / 怎么做到\n\n- **共享矩阵的稀疏专家**：每 64 个专家共享两个大矩阵，每个专家只保留少量差异参数；145B 总参数中每步约 10B 参与计算。\n- **三级存储流水线**：常用「热专家」留在显存，约 40GB 专家库放内存，约 48GB 词表数据放 SSD 按需读取；CPU 与 GPU 协同计算，并用投机解码。\n- **官方自测性能**：峰值内存 29GB，预填充 1100+ tok/s，解码 80+ tok/s，典型功耗约 120W，上下文 128K–256K。\n\n## 跑分（官方内部评测）\n\nDeepSWE 1.1 为 64.6（Qwen3.8-Flash-Next 58.7、DeepSeek-V4-Flash-0731 54.4）；Terminal-Bench 2.1 为 86.52；GPQA-Diamond 为 90.4；IFBench 为 80.6。官方说明 Edge0、Qwen、DeepSeek、Claude 的分数均来自其内部评测，完整评测设置和复现说明将随技术报告发布。\n\n## 怎么用 / 适合谁\n\n- 权重在 Hugging Face（Q3_K 版用于 macOS，NVFP4 版仅限 CUDA）；推理框架在 GitHub；也可下载 Edge0 App 离线使用。\n- 首日支持 macOS、Windows、Linux，含 Apple M 系列和 RTX 4090/5090 等 NVIDIA 平台。官方举例可在 48GB 内存笔记本上本地运行。\n- 适合想在本地跑编程智能体、数据不能上云或想省 API 费用的开发者。\n\n## 为什么值得看\n\n如果数据属实，端侧模型从 30B 级一步跳到 145B 级，「编程智能体完全本地跑」变得可行。但跑分全部自测、技术报告未出；官方博客正文也没有写明开源许可证，商用前请先看 Hugging Face 仓库的许可说明。\n\n## 可以核对的事实\n\n- 29GB、80+ tok/s、1100+ tok/s、约 10B 激活、各项跑分：Edge0 官方博客原文，均为官方自述。可信度 A（官方博客，性能与跑分未经第三方验证）。"
+      "detail": "## 它是什么\n\nOpenAI 11 月 15 日上线的官方「科学博客」，以及同日发布的第一篇客座文章。博客定位是给科学家和学术研究者一个地方，分享他们用 AI 发现了什么、怎么做的。\n\n## 它做什么\n\n- 博客将发布三类内容：新研究成果与进展（来自 OpenAI、合作者和更广泛的科学界）；方法与实操指南（如科学计算、数据分析、文献梳理、实验设计，并说明如何核查结果、方法哪里不行）；科研人员第一手视角。\n- 官方回顾了近期成果：9 月内部系统给出针对纳维-斯托克斯存在性与光滑性问题的证明；10 月发布一批数学结果；与 PerturbAI 和 Scripps Research 合作，由 GPT-Rosalind 驱动的数千个智能体在 32 分钟内分析了数百万个小鼠脑细胞的实验数据。\n- 首篇客座文章作者 Nathaniel Craig 是 OpenAI 访问科学家、加州大学圣塔芭芭拉分校粒子理论组负责人、KITP 常任成员。他在 10 月一篇借助 GPT-6 Astra 完成的预印本中，提出了标准模型在格点（离散时空网格）上的一个非微扰定义候选方案。\n- 难点在于标准模型是「手征」理论，把左手费米子放上格点会冒出不需要的右手伙伴（费米子加倍）；已有的 overlap 费米子能解决加倍，但完整标准模型的「相位」规定 25 年多来悬而未决。Craig 的思路是把同一组力场表示到一系列更细的网格上、逐级比较并累加相位修正。\n- 文中写明：Astra 提出了把力场搬到更细网格的正确方式，证明了比较会收敛，并「主导了详细证明」；格点场论专家 Maarten Golterman、Andreas Kronfeld、Yigal Shamir 审阅并提出问题。\n\n## 适合谁\n\n理论物理、数学和其他科研人员；关注「AI 做科研」进展的开发者和读者。\n\n## 为什么值得看\n\nOpenAI 把科学发现当作重点方向，单独开博客意味着这类成果会更系统地对外发布。但作者本人强调这只是一个「候选」定义：需要学界讨论确认是否具备所需性质，「更多是原理上的答案而非实践上的答案」，离真实格点模拟还有很多工作，他目前在研究该构造在有限格距下是否满足反射正定性。\n\n## 可以核对的事实\n\n- 两个页面日期均为 November 15, 2026。\n- 上述成果描述与限定条件均出自 OpenAI 官方页面原文，本报告未独立评审物理证明。可信度 A（官方原文）。"
     }
   ]
 }
