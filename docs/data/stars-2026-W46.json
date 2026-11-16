@@ -232,7 +232,7 @@
       ]
     },
     {
-      "id": "janestreet-agent_skills",
+      "id": "janestreet-agent-skills",
       "rank": 8,
       "repo": "janestreet/agent_skills",
       "url": "https://github.com/janestreet/agent_skills",

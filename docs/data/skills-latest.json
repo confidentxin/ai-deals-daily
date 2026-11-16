@@ -42,7 +42,7 @@
       "agents": "编程智能体。README 用 npx 安装向导把 skill 放进智能体，没有把支持名单写成独家某一家。"
     },
     {
-      "id": "janestreet-agent_skills",
+      "id": "janestreet-agent-skills",
       "rank": 2,
       "repo": "janestreet/agent_skills",
       "url": "https://github.com/janestreet/agent_skills",
