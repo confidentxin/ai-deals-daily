@@ -47,6 +47,12 @@
 - 截止：2026-11-16 09:00（北京时间）作废；周六、周日能否补领未确认，以客户端内显示为准
 - 可达性：能直接领（ZCode 官网可下载，智谱账号登录）
 
+#### Baseten · Sandboxes 上线免费期最后一天（2026-11-16 09:00 新增，官方已核实）
+- 内容：11 月 5 日发布的 Baseten Sandboxes（给 Agent 用的有状态隔离运行环境，可秒级暂停 / 恢复）免费运行至 11 月 16 日；属沙箱算力免费，不是模型推理免费。官方博客：https://www.baseten.co/blog/building-the-agent-cloud-introducing-baseten-sandboxes/ ；官方文档：https://docs.baseten.co/sandboxes/overview
+- 额度：免费期内运行 Sandboxes 不收费；免费期结束后继续运行按官方价目页计费（vCPU-hour、GB RAM-hour 与存储），请在到期前停掉或删除 sandbox 以免扣费；需注册 Baseten 账号；绑卡要求官方免费说明未提。官方价目页：https://www.baseten.co/pricing/
+- 截止：免费至 2026-11-16（官方原文“free to run until November 16th”，未写具体时刻与时区；Baseten 为美国公司，稳妥按北京时间今天内用完）
+- 可达性：需海外账号（英文海外开发者平台，国内访问与注册可用性未知，计费需国际支付方式）
+
 <a name="direct"></a>
 ### 进行中：能直接领
 
