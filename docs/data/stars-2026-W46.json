@@ -1,0 +1,599 @@
+{
+  "week": "2026-W46",
+  "asOf": "2026-11-16",
+  "timezone": "Asia/Shanghai",
+  "preview": 10,
+  "window": {
+    "label": "2026-W46 · 北京时间 11月9日 00:00 至 11月16日 00:00",
+    "start": "2026-11-09T00:00:00+08:00",
+    "end": "2026-11-16T00:00:00+08:00",
+    "display": "2026-W46 · 北京时间 11月9日 00:00 至 11月16日 00:00"
+  },
+  "note": "数据说明：目标窗口是北京时间 2026-11-09 00:00（含）至 2026-11-16 00:00（不含），即 UTC 2026-11-08T16:00:00Z 至 2026-11-15T16:00:00Z。本周新增星取自 GitHub 官方接口 GET /repos/{owner}/{repo}/stargazers/history 里「当天新创建的星」。返回记录的 week 是周日 00:00:00Z 的 Unix 时间，days[0] 到 days[6] 对应周日到周六。本榜把 UTC 日历日 2026-11-09、11-10、11-11、11-12、11-13、11-14、11-15 这七天相加。这七天等于北京时间 2026-11-09 08:00 至 2026-11-16 08:00，与规定窗口首尾各差 8 小时。接口没有小时桶；文档写明周界和日界不保证与 UTC 对齐，但本窗口拿到的 week 时间戳都落在周日 00:00:00Z，因此按 UTC 自然日解释，没有把边缘两天按比例拆开。规定窗口精确到小时的新增星记为未知。列出 stargazers 并读取 starred_at 的接口，对本环境的 GitHub App 凭据返回 403（Resource not accessible by integration），不带凭据的请求返回 401。GitHub 文档写明，2026 年 7 月起 stargazers 列表限制为仓库管理员和协作者。GH Archive 已下载该窗口全部 168 个小时文件（UTC 2026-11-08 的 16 时至 2026-11-15 的 15 时），其中 action 为 started 的 WatchEvent 共 45,946 条，和官方日计数不是一个数量级。OSS Insight 写明自 2026-03-01 起公共事件流的捕获大约落到基线的 0.3%，用它排序会变成噪声，所以 GH Archive 只用来补候选。play.clickhouse.com 的 github_events 最新时间只到 2026-07-02，盖不住本窗口。候选来自 GitHub Trending 的 since=weekly 总榜，以及 Python、TypeScript、JavaScript、Rust、Go、C++、Java、Swift、Dart、Shell、CSS、HTML、C、Kotlin、PHP、Ruby、Vue、Zig、Jupyter Notebook 语言页，再加上 GH Archive WatchEvent 计数前 160 名，以及仓库搜索和 Hacker News。Trending 页面上的 “stars this week” 只用来发现仓库，没有拿来排序。总星、fork 和开放 issue 是北京时间 2026-11-16 10:09 的仓库接口快照（该批请求在 10:09:40 至 10:09:47 之间返回）。若改用 UTC 11 月 8 日至 14 日（更接近 GitHub 自己的周日至周六），前 17 名不变；第 18 到 20 名会换成 Minireel/HGhub、deepseek-ai/deepseek-harness 和 milind-soni/OpenMausBot。本榜仍用更靠近规定窗口的 UTC 11 月 9 日至 15 日。介绍根据 2026-11-16 打开的 README、仓库描述、许可证字段和发布页写成。没读到的功能、数字和链接不写。",
+  "items": [
+    {
+      "id": "morluto-rea",
+      "rank": 1,
+      "repo": "morluto/rea",
+      "url": "https://github.com/morluto/rea",
+      "weeklyStars": 17944,
+      "totalStars": 462083,
+      "language": "TypeScript",
+      "week": "2026-W46",
+      "windowLabel": "2026-W46 · 北京时间 11月9日 00:00 至 11月16日 00:00",
+      "summary": "REA 是一套本地运行的逆向分析 MCP：让已经接上的编程智能体检查原生二进制、JavaScript / Electron、.NET 和网站，并带上证据与局限。官方获取渠道只写了本仓库、rea.tools 和 npm 上的 rea-agents。",
+      "intro": "REA 是一套本地运行的逆向分析 MCP：让已经接上的编程智能体检查原生二进制、JavaScript / Electron、.NET 和网站，并带上证据与局限。官方获取渠道只写了本仓库、rea.tools 和 npm 上的 rea-agents。",
+      "detail": "## 它是什么\n\nGitHub 简介写的是：用智能体做逆向，从应用行为一直到原生二进制。README 标题是 REA: Reverse Engineer Anything，副标题是覆盖二进制、应用和运行时行为的一个 MCP。面向读者的那句是：看到想要的功能，弄清它如何实现，一直到二进制这一层。\n\n仓库主语言是 TypeScript，许可证字段是 MIT。主页是 https://rea.tools/ ，指南和案例页分别是 rea.tools/guides/ 与 rea.tools/showcase/ 。简体中文说明在 docs/readme/README_zh.md。\n\n## 它做什么\n\n它把分析交给已经接上的智能体，也允许同一套工具在终端里用。README 写：分析在本地跑，结论要带证据和局限。入口命令是 npx rea-agents setup。安装会登记 MCP 和配套的工作流说明，并备份已有配置。原生分析可以使用已经装好的 Hopper、Ghidra、IDA 或 Kuna；安装过程可以在你同意后可选安装 Hopper。静态 JavaScript 分析不需要原生引擎。\n\nREADME 点名的接入包括 Claude Code、Codex、Cursor、Gemini CLI、Grok Build，其余名单指向 docs/getting-started/installation.md。Linux 上，Ghidra、JADX、固件工具和静态 JavaScript / Electron 分析需要系统里有 procps 兼容的 ps。展示小节写了 DX-Ball、Notion 剪贴板桥和 TH04 三个案例标题；本页不转写分析步骤。\n\n## 适合谁\n\n适合已经在用编程智能体、希望它按仓库里的工具去理解一个软件功能如何实现的读者。获取渠道被单独写成重要提示：只从 morluto/rea、rea.tools 或 npm 包 rea-agents 安装，并跟着这些来源的安装和发布链接走。名字相似或 README 被抄走，不能说明下载是官方的。\n\n## 这一周为什么上榜\n\n按 UTC 11 月 9 日至 15 日的新创建星排序，它是本榜第 1。发布页最新标签 rea-agents-6.9.0 的发布时间是 2026-11-12。星数只说明这一窗口的新增，不说明每一类二进制上的结论都可靠。\n\n## 可以核对的事实\n\n语言 TypeScript，许可证 MIT，主页 https://rea.tools/ 。仓库创建于 2026-04-14。Discord 邀请写在 README 里。本介绍没有摘录反汇编步骤或示例目标的操作。\n\n本窗口七日新增星是 17,944，总星快照 462,083，排第 1。七日每日数字依次为 11-09 日 3,288、11-10 日 3,036、11-11 日 2,745、11-12 日 2,608、11-13 日 2,294、11-14 日 2,311、11-15 日 1,662。",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/morluto/rea"
+        },
+        {
+          "label": "官网 rea.tools",
+          "url": "https://rea.tools/"
+        },
+        {
+          "label": "指南",
+          "url": "https://rea.tools/guides/"
+        },
+        {
+          "label": "案例",
+          "url": "https://rea.tools/showcase/"
+        },
+        {
+          "label": "npm：rea-agents",
+          "url": "https://www.npmjs.com/package/rea-agents"
+        },
+        {
+          "label": "简体中文 README",
+          "url": "https://github.com/morluto/rea/blob/HEAD/docs/readme/README_zh.md"
+        }
+      ]
+    },
+    {
+      "id": "googlechrome-modern-web-guidance",
+      "rank": 2,
+      "repo": "GoogleChrome/modern-web-guidance",
+      "url": "https://github.com/GoogleChrome/modern-web-guidance",
+      "weeklyStars": 15290,
+      "totalStars": 17937,
+      "language": "未知",
+      "week": "2026-W46",
+      "windowLabel": "2026-W46 · 北京时间 11月9日 00:00 至 11月16日 00:00",
+      "summary": "Modern Web Guidance 是一组装进编程智能体的 Web 平台 skill，用来躲开过时写法，改用浏览器现在就有的能力。README 写它由 Chrome、Edge、Firefox 和 MDN 团队与社区一起维护，并链到源码仓库 modern-web-guidance-src。",
+      "intro": "Modern Web Guidance 是一组装进编程智能体的 Web 平台 skill，用来躲开过时写法，改用浏览器现在就有的能力。README 写它由 Chrome、Edge、Firefox 和 MDN 团队与社区一起维护，并链到源码仓库 modern-web-guidance-src。",
+      "detail": "## 它是什么\n\nREADME 第一段写：把 Web 平台经验、做法和浏览器兼容数据放进编程智能体。它要让智能体少生成训练语料里的旧写法，改用现代 Web 平台。文首写明由 Google Chrome、Microsoft Edge、Mozilla Firefox 和 MDN 团队与 Web 开发社区共同维护。\n\n文档站是 developer.chrome.com/docs/modern-web-guidance。源码仓库单独写成 https://github.com/GoogleChrome/modern-web-guidance-src 。GitHub 主页字段是 https://goo.gle/modern-web-guidance 。许可证字段 Apache-2.0。language 字段为空。\n\n## 它做什么\n\n安装命令写的是 npx modern-web-guidance@latest install，会走一个交互式向导。不安装也可以试三条命令：按一句话搜索指南、按 ID 取回指南、对当前目录做 legacy-scan。README 解释这样做的原因：模型常因为训练数据里旧代码太多，而给现在已经有原生做法的任务生成一大段 JavaScript。\n\n覆盖范围写成「过去几年直到目前的 Web 平台新能力」，并写指南按 token 用量做过裁剪。核心方向列了体验、CSS 布局、性能、表单与界面、无障碍，以及浏览器内置的本地翻译、摘要和语言检测 API。文中给出的计数是 250 项现代 Web 能力，其中 CSS 与布局 140、HTML 与 DOM 36、JavaScript 与 API 74。示例指南路径是 skills/modern-web-guidance/guides/ui-components/navigation-drawer.md。具体命令参数以仓库为准，这里不转写。\n\n## 适合谁\n\n适合用编程智能体写前端、希望它按现行浏览器能力而不是旧教程来写的人。仓库自己把问题报告指到 modern-web-guidance-src 的 issues。\n\n## 这一周为什么上榜\n\n按七日新创建星它排第 2。发布标签 v1.0.0 的发布时间是 2026-11-10。同一窗口里源码仓库 modern-web-guidance-src 单独也进入了涨星榜，两边的星是各自仓库上的计数。\n\n## 可以核对的事实\n\n许可证 Apache-2.0。language 字段为空，所以主要语言写未知。开放 issue 快照是 1。Hacker News 在本窗口有一条指向该仓库的 Show HN，Algolia 返回的分数是 447。\n\n本窗口七日新增星是 15,290，总星快照 17,937，排第 2。七日每日数字依次为 11-09 日 15、11-10 日 902、11-11 日 1,922、11-12 日 2,740、11-13 日 3,631、11-14 日 4,145、11-15 日 1,935。",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/GoogleChrome/modern-web-guidance"
+        },
+        {
+          "label": "文档",
+          "url": "https://developer.chrome.com/docs/modern-web-guidance"
+        },
+        {
+          "label": "源码仓库",
+          "url": "https://github.com/GoogleChrome/modern-web-guidance-src"
+        },
+        {
+          "label": "GitHub 主页字段",
+          "url": "https://goo.gle/modern-web-guidance"
+        }
+      ]
+    },
+    {
+      "id": "meta-astryx",
+      "rank": 3,
+      "repo": "meta/astryx",
+      "url": "https://github.com/meta/astryx",
+      "weeklyStars": 11180,
+      "totalStars": 28931,
+      "language": "TypeScript",
+      "week": "2026-W46",
+      "windowLabel": "2026-W46 · 北京时间 11月9日 00:00 至 11月16日 00:00",
+      "summary": "Astryx 是 Meta 开源的设计系统，目前标成 Beta，建立在 React 19 和 StyleX 上。README 写它提供 150 多个可访问组件、主题和 CLI，并说人和 AI 助手用同一套 API。",
+      "intro": "Astryx 是 Meta 开源的设计系统，目前标成 Beta，建立在 React 19 和 StyleX 上。README 写它提供 150 多个可访问组件、主题和 CLI，并说人和 AI 助手用同一套 API。",
+      "detail": "## 它是什么\n\nGitHub 简介是：一套完全可定制、并且为智能体准备好的开源设计系统。README 写它目前是 Beta，建立在 React 19+ 和 StyleX 上。它还写：这套系统在 Meta 内部长了八年，成为公司里用得最多、规模最大的设计系统，支撑 13,000 多个应用。这是 README 给出的数字。\n\n许可证字段 MIT。主语言 TypeScript。文档、Storybook 和 Sandbox 都挂在 astryx.atmeta.com。npm 包名包括 @astryxdesign/core。\n\n## 它做什么\n\nREADME 写它带 150 多个可访问组件、品牌级主题、暗色模式、可直接用的模板和 CLI。使用方式是引入预先构建的 CSS 和带类型的 React 组件，不要求再装一套样式库或构建插件。样式由 StyleX 写成，但使用者可以用 className 配 Tailwind、CSS Modules 或普通 CSS。主题是一组 CSS 自定义属性覆盖。需要更深改动时，swizzle 可以把组件源码抽进自己的项目。\n\n包表里写了 @astryxdesign/core、cli、build，以及七套主题：neutral、butter、chocolate、matcha、stone、gothic、y2k。@astryxdesign/lab 不发布到 npm。@astryxdesign/vega 和 @astryxdesign/charts 只在 @canary 标签下发布，还没有稳定版。安装要求 React 19 或更新。贡献说明要求 Node 22+ 的活跃 LTS 和 pnpm 11。\n\n## 适合谁\n\n适合要一套有类型、有主题、并且希望编程助手和人读同一份文档的 React 项目。它不替代你自己的产品设计，原则一节写的是「给能力，而不是用护栏挡住你」。\n\n## 这一周为什么上榜\n\n按七日新创建星排第 3。发布标签 v0.7.16 的发布时间是 2026-11-14。总星快照远高于这七日的增量，说明它在窗口开始前已经有一批星。\n\n## 可以核对的事实\n\n许可证 MIT，语言 TypeScript，仓库创建于 2026-01-09。Discord 邀请写在 README 里。13,000+ 和 150+ 都是 README 原文的数量。\n\n本窗口七日新增星是 11,180，总星快照 28,931，排第 3。七日每日数字依次为 11-09 日 3,157、11-10 日 2,754、11-11 日 1,903、11-12 日 1,347、11-13 日 643、11-14 日 781、11-15 日 595。",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/meta/astryx"
+        },
+        {
+          "label": "文档 astryx.atmeta.com",
+          "url": "https://astryx.atmeta.com"
+        },
+        {
+          "label": "Storybook",
+          "url": "https://astryx.atmeta.com/storybook/"
+        },
+        {
+          "label": "npm：@astryxdesign/core",
+          "url": "https://www.npmjs.com/package/@astryxdesign/core"
+        }
+      ]
+    },
+    {
+      "id": "storytold-craft-anything",
+      "rank": 4,
+      "repo": "storytold/craft-anything",
+      "url": "https://github.com/storytold/craft-anything",
+      "weeklyStars": 10524,
+      "totalStars": 33826,
+      "language": "Rust",
+      "week": "2026-W46",
+      "windowLabel": "2026-W46 · 北京时间 11月9日 00:00 至 11月16日 00:00",
+      "summary": "Craft Anything 让你指向网站、应用或游戏，用检查工具弄清它如何工作，再让编程智能体做出新项目。默认是洁净室：不读原作的代码和文件。引擎用纯 Rust 写成，状态标成早期 alpha。",
+      "intro": "Craft Anything 让你指向网站、应用或游戏，用检查工具弄清它如何工作，再让编程智能体做出新项目。默认是洁净室：不读原作的代码和文件。引擎用纯 Rust 写成，状态标成早期 alpha。",
+      "detail": "## 它是什么\n\nGitHub 简介是：弄清任何软件如何工作，然后做出你自己的。产品名同时写成 ArtCraft，网站是 getartcraft.com。README 徽章写状态是早期 alpha，平台包括 macOS、Windows、Linux、FreeBSD 和 Web。引擎是纯 Rust。\n\nGitHub 许可证字段是 Apache-2.0。README 徽章和文末写的是 MIT 或 Apache-2.0，由使用者选择，并分别指向 LICENSE-MIT 和 LICENSE-APACHE。两处同时存在，这里不把其中一边改成另一边。\n\n## 它做什么\n\n使用分成研究、建造、对照和继续改。默认模式叫洁净室：不读取原作内部，不读它的代码、文件或页面源码；只根据你能看见的东西工作，例如你加上的图片、访客眼里的网页（截图、可见文字、量到的版式、颜色、字体和间距、打开的菜单），以及在你允许时应用窗口的一张图。会往内部看的工具会被拒绝，并告诉你怎样打开 Deep 模式。\n\nDeep 模式写成私人使用：程序的代码和文件会用内置引擎读取，装了 Ghidra 时也会用到，网页的 JavaScript 会被读取并观察起始页。洁净室是产品提供或拒绝哪些工具的规则。README 写它不是操作系统沙箱，不能隔离你的电脑；你运行的编程智能体仍然以你的身份行动。\n\n引擎部分写的是 320 个工具，其中 300 个在引擎里，其余来自 AI 和安装层。每个工具同时是一条 CLI 命令和一个 MCP 工具。检查本身可以不调用模型。简体中文 README 文件名是 README.zh.md。\n\n## 适合谁\n\n适合想先看懂再重做、并且接受默认不读取原作源码的人。状态是早期 alpha，今天能走多远以 README 的 Status 一节为准，本次没有把该节逐条改写成功能承诺。\n\n## 这一周为什么上榜\n\n按七日新创建星排第 4。发布标签 v0.6.1 的发布时间是 2026-11-12。仓库创建于 2026-10-31，总星快照高于这七日的增量，窗口开始前已经有星。\n\n## 可以核对的事实\n\n主语言 Rust。320 和 300 是 README 原文的数量。捆绑的字体、图标和图片保留各自的许可证，清单在 ATTRIBUTION.md。\n\n本窗口七日新增星是 10,524，总星快照 33,826，排第 4。七日每日数字依次为 11-09 日 1,796、11-10 日 2,013、11-11 日 1,813、11-12 日 1,576、11-13 日 1,231、11-14 日 1,366、11-15 日 729。",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/storytold/craft-anything"
+        },
+        {
+          "label": "网站 getartcraft.com",
+          "url": "https://getartcraft.com/"
+        },
+        {
+          "label": "简体中文 README",
+          "url": "https://github.com/storytold/craft-anything/blob/HEAD/README.zh.md"
+        }
+      ]
+    },
+    {
+      "id": "ebony-vinyl-dsh-our-free-model",
+      "rank": 5,
+      "repo": "Ebony-Vinyl/dsh-our-free-model",
+      "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
+      "weeklyStars": 9997,
+      "totalStars": 75909,
+      "language": "JavaScript",
+      "week": "2026-W46",
+      "windowLabel": "2026-W46 · 北京时间 11月9日 00:00 至 11月16日 00:00",
+      "summary": "dsh-our-free-model 是 DeepSeek Harness 的一个插件。README 写：装进 dsh 之后不填 API Key，就可以走它点名的公共网关调用一批模型，包括 DeepSeek V4.1 Flash 和 Kimi K3。状态徽章是 beta，许可证 MIT。",
+      "intro": "dsh-our-free-model 是 DeepSeek Harness 的一个插件。README 写：装进 dsh 之后不填 API Key，就可以走它点名的公共网关调用一批模型，包括 DeepSeek V4.1 Flash 和 Kimi K3。状态徽章是 beta，许可证 MIT。",
+      "detail": "## 它是什么\n\n仓库简介写：在 dsh 里装上这个插件，无需登录、注册或填写 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的模型，并称完全免费、不限量。这是 README 的说法。状态徽章是 beta，许可证 MIT，并写零依赖、无构建步骤。适配内核徽章写的是 dsh 0.1.5–0.1.7-rc.2。主语言 JavaScript。\n\n## 它做什么\n\nREADME 把免费车道的来源写成 OpenCode 的 Zen 网关（https://opencode.ai）和 Kilo AI 的公共网关（https://kilo.ai），并写请求直连、不经它自己的第三方中转。模型清单在刷新时向上游重新拉取，插件里不保存一份静态快照。可用性由你这台机器的网络出口实测得出。被地区策略拦住的模型归入 region-limited。Kilo 一侧的说明写：上游可能记录 prompt 用于改进服务，不要发送敏感内容。\n\n用量看板写的是数据留在本机。另有一个 OpenAI 兼容的本地转发端口。本页不转写额度断路器、出口代理、账号渠道登录或网关配方。那些段落在 README 后部，使用前应读原文和免责声明，而不是只看开头的「不限量」。\n\n## 适合谁\n\n适合已经在用 DeepSeek Harness、想按这个插件的说明去接它点名的上游的人。它不是 DeepSeek 官方客户端。上游是否继续免费、是否限流、是否记录内容，以那些上游和 README 的免责声明为准。\n\n## 这一周为什么上榜\n\n按七日新创建星排第 5。发布标签 v2.8.5-macos-unofficial 的发布时间是 2026-11-15。总星快照明显高于这七日的增量，说明窗口开始前已经积累了大量星。\n\n## 可以核对的事实\n\n许可证 MIT，语言 JavaScript，仓库创建于 2026-09-24。QQ 群号 891170115 写在 README 里。Trendshift 徽章上的名次属于更早的统计区间，不是本榜的排序依据。\n\n本窗口七日新增星是 9,997，总星快照 75,909，排第 5。七日每日数字依次为 11-09 日 1,315、11-10 日 1,454、11-11 日 1,440、11-12 日 1,408、11-13 日 1,487、11-14 日 1,761、11-15 日 1,132。",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model"
+        },
+        {
+          "label": "英文 README",
+          "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model/blob/HEAD/README_EN.md"
+        }
+      ]
+    },
+    {
+      "id": "pingdotgg-t3code",
+      "rank": 6,
+      "repo": "pingdotgg/t3code",
+      "url": "https://github.com/pingdotgg/t3code",
+      "weeklyStars": 8777,
+      "totalStars": 61611,
+      "language": "TypeScript",
+      "week": "2026-W46",
+      "windowLabel": "2026-W46 · 北京时间 11月9日 00:00 至 11月16日 00:00",
+      "summary": "T3 Code 是编程智能体的开源控制面：在桌面、网页和手机上操作你电脑里已经登录的智能体。README 写它不转售 token，许可证 MIT。",
+      "intro": "T3 Code 是编程智能体的开源控制面：在桌面、网页和手机上操作你电脑里已经登录的智能体。README 写它不转售 token，许可证 MIT。",
+      "detail": "## 它是什么\n\nREADME 把 T3 Code 定义成 coding agents 的开源控制面。它跑你机器上的编程智能体，并给它们一块界面：人在桌前开一段会话，下一步可以在手机上批准。网站是 t3.codes。许可证 MIT，主语言 TypeScript。\n\n## 它做什么\n\n它不转售 token，而是驱动你已经登录的智能体。支持列表写的是 Claude Code、Codex、Cursor、OpenCode、Grok Build、Antigravity、Kiro、Pi、Muse Code、fx，以及任何 ACP 智能体。同一段会话里可以换模型，也可以让 Claude 把任务交给 Codex。桌面、网页和手机看到的是同一组会话。远程可以走局域网、Tailscale 或 T3 Connect。每个会话可以用自己的 git worktree，看 diff 之后提交、推送并打开 pull request。\n\n桌面安装表写了 macOS 的 brew cask、Windows 的 winget 或 scoop、Arch 的 yay、Nix，以及 Debian / Ubuntu 的 deb。命令行安装脚本在 t3.codes/install.sh，Windows 有对应的 PowerShell 脚本。也可以 npx t3@latest 试一次。手机应用的商店链接写在 README 里，包名在 Android 链接中是 com.t3tools.t3code。\n\n## 适合谁\n\n适合已经为上面这些智能体付费或登录、希望同一套会话出现在电脑和手机上的人。使用前至少要有一个已经安装并登录的智能体。\n\n## 这一周为什么上榜\n\n按七日新创建星排第 6。发布标签 v0.1.9 的发布时间是 2026-11-11。总星快照高于这七日的增量。\n\n## 可以核对的事实\n\n许可证 MIT，语言 TypeScript，仓库创建于 2026-02-08。开放 issue 快照是 3,473。\n\n本窗口七日新增星是 8,777，总星快照 61,611，排第 6。七日每日数字依次为 11-09 日 1,676、11-10 日 1,506、11-11 日 1,352、11-12 日 1,343、11-13 日 1,111、11-14 日 1,010、11-15 日 779。",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/pingdotgg/t3code"
+        },
+        {
+          "label": "网站 t3.codes",
+          "url": "https://t3.codes"
+        },
+        {
+          "label": "网页应用",
+          "url": "https://app.t3.codes"
+        },
+        {
+          "label": "iOS",
+          "url": "https://apps.apple.com/us/app/t3-code-remote-claude-more/id6787819824"
+        },
+        {
+          "label": "Android",
+          "url": "https://play.google.com/store/apps/details?id=com.t3tools.t3code"
+        }
+      ]
+    },
+    {
+      "id": "aws-aws-emulator",
+      "rank": 7,
+      "repo": "aws/aws-emulator",
+      "url": "https://github.com/aws/aws-emulator",
+      "weeklyStars": 8458,
+      "totalStars": 8459,
+      "language": "Rust",
+      "week": "2026-W46",
+      "windowLabel": "2026-W46 · 北京时间 11月9日 00:00 至 11月16日 00:00",
+      "summary": "AWS Emulator 是 AWS 官方仓库里的本地 AWS API 模拟器：请求打到你自己机器上的模拟端点，而不是打到 AWS。README 写它用于构建和测试，不要用于生产或安全测试。许可证字段是 CC0-1.0。",
+      "intro": "AWS Emulator 是 AWS 官方仓库里的本地 AWS API 模拟器：请求打到你自己机器上的模拟端点，而不是打到 AWS。README 写它用于构建和测试，不要用于生产或安全测试。许可证字段是 CC0-1.0。",
+      "detail": "## 它是什么\n\nREADME 标题是 AWS Emulator。它在本机、开发服务器或 CI 里模拟 AWS API，这样测试软件时不必调用 AWS，也不需要 AWS 账号。它没有图形界面。文档入口是 AWS Emulator User Guide。许可证字段 CC0-1.0，主语言 Rust。\n\n## 它做什么\n\n启动之后，把 AWS CLI 或 SDK 的端点指到模拟器，然后照常跑代码。嵌入模式则把模拟器的 HTTP 客户端交给 SDK，不设端点 URL。给编程智能体的路径是：先安装名为 aws-emulator 的 skill，再让智能体做设置；这一条需要 AWS CLI 2.35.0 或更新，命令写的是 aws agent-toolkit add-skill。Linux 可以装 RPM 或 Debian 包后运行 aws-emulator。Windows 和 macOS 走容器。\n\n从源码构建只支持 Linux x86_64 和 aarch64。README 写工作区是每个 AWS 服务一个 crate，调试构建 target/ 至少要留 100 GB 空闲。模拟器在 127.0.0.1:9297 上提供 HTTPS，证书是自签的。每个发布附有各服务和真实 AWS 的吻合度分数。还没做到的行为记在 issues/things-that-do-not-work/。\n\n遥测默认开启。README 写记录里不包括请求和响应的内容、你的代码、凭据或个人数据，也不与第三方分享。可以用 --telemetry off、环境变量 EMULATOR_TELEMETRY 或配置文件关掉。\n\n## 适合谁\n\n适合要在本地或 CI 里对 AWS API 做构建和测试的人。README 明确写：不要用它跑生产，也不要用它做安全测试。\n\n## 这一周为什么上榜\n\n按七日新创建星排第 7。总星快照与这七日的增量只差 1，说明快照时几乎全部星都落在这七个 UTC 日里。发布标签 v1.0.385 的发布时间是 2026-11-14。仓库创建于 2026-09-11。\n\n## 可以核对的事实\n\n语言 Rust，许可证 CC0-1.0。监听地址 127.0.0.1:9297 和 100 GB 都是 README 原文。\n\n本窗口七日新增星是 8,458，总星快照 8,459，排第 7。七日每日数字依次为 11-09 日 0、11-10 日 0、11-11 日 3,024、11-12 日 2,820、11-13 日 1,655、11-14 日 693、11-15 日 266。",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/aws/aws-emulator"
+        },
+        {
+          "label": "用户指南",
+          "url": "https://docs.aws.amazon.com/emulator/latest/userguide/what-is-service.html"
+        },
+        {
+          "label": "发布页",
+          "url": "https://github.com/aws/aws-emulator/releases"
+        }
+      ]
+    },
+    {
+      "id": "janestreet-agent-skills",
+      "rank": 8,
+      "repo": "janestreet/agent_skills",
+      "url": "https://github.com/janestreet/agent_skills",
+      "weeklyStars": 8238,
+      "totalStars": 9023,
+      "language": "未知",
+      "week": "2026-W46",
+      "windowLabel": "2026-W46 · 北京时间 11月9日 00:00 至 11月16日 00:00",
+      "summary": "Jane Street 的 agent_skills 是一个很小的技能仓库。README 目前只列出 socratic-tutor：用苏格拉底式提问带人学一个自选题目。仓库创建于 2026-11-03。",
+      "intro": "Jane Street 的 agent_skills 是一个很小的技能仓库。README 目前只列出 socratic-tutor：用苏格拉底式提问带人学一个自选题目。仓库创建于 2026-11-03。",
+      "detail": "## 它是什么\n\nREADME 标题是 Agent skills from Jane Street。正文说这是给 AI agent 和 chatbot 的一组技能，每个技能是一个目录，里面有一份带说明的 SKILL.md。许可证字段 MIT。language 字段为空。仓库创建于 2026-11-03，最近一次推送时间是当天 18:14 UTC。没有 GitHub Release。\n\n## 它做什么\n\n技能列表在本次打开的 README 里只有一条：socratic-tutor。它把模型变成一个严格的私人导师，用苏格拉底式方法教你选的题目。README 写的环节是：一次诊断、一张 0 到 5 级的技能图、一次只问一个问题、间隔复习，以及一次期末评估。\n\n用法也只有两句。支持通用 SKILL.md 格式的编程智能体：把技能目录拷进智能体的 skills 文件夹，然后让它教你。普通聊天机器人：把 SKILL.md 正文贴进对话或系统提示，后面跟上你要它做的事。\n\n## 适合谁\n\n适合想用一份短技能把对话收成「提问、分级、复习」而不是直接给答案的人。本次 README 没有列出第二个技能，所以这里也不补名字。\n\n## 这一周为什么上榜\n\n按七日新创建星排第 8。仓库在窗口开始前几天才创建，总星快照高于这七日的增量，差额来自这七日之外的创建星。Hacker News 在本窗口有一条指向 socratic-tutor/SKILL.md 的帖子，Algolia 返回的分数是 714；另一条标题为 Agent Skills from Jane Street 的帖子分数是 4。\n\n## 可以核对的事实\n\n许可证 MIT。主要语言未知，因为 language 字段为空。开放 issue 快照是 15。\n\n本窗口七日新增星是 8,238，总星快照 9,023，排第 8。七日每日数字依次为 11-09 日 1,856、11-10 日 1,679、11-11 日 2,031、11-12 日 1,591、11-13 日 422、11-14 日 342、11-15 日 317。",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/janestreet/agent_skills"
+        },
+        {
+          "label": "socratic-tutor/SKILL.md",
+          "url": "https://github.com/janestreet/agent_skills/blob/HEAD/socratic-tutor/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "anefzaoui-misterdownloadmanager",
+      "rank": 9,
+      "repo": "anefzaoui/misterdownloadmanager",
+      "url": "https://github.com/anefzaoui/misterdownloadmanager",
+      "weeklyStars": 8034,
+      "totalStars": 10442,
+      "language": "Rust",
+      "week": "2026-W46",
+      "windowLabel": "2026-W46 · 北京时间 11月9日 00:00 至 11月16日 00:00",
+      "summary": "Mister Download Manager 是一个开源下载管理器，README 把它和 IDM 的窗口布局对照，并写明没有广告、没有试用期、不用注册。主语言 Rust，许可证 GPL-3.0。",
+      "intro": "Mister Download Manager 是一个开源下载管理器，README 把它和 IDM 的窗口布局对照，并写明没有广告、没有试用期、不用注册。主语言 Rust，许可证 GPL-3.0。",
+      "detail": "## 它是什么\n\nGitHub 简介写它是干净室实现的开源下载管理器。README 标题下的一句是：比 IDM 下得更快，并且一直免费。官网是 misterdownloadmanager.com。许可证字段 GPL-3.0，主语言 Rust。\n\n## 它做什么\n\nREADME 写界面沿用下载工具里常见的工具栏、分类、下载列表、进度窗口和浏览器按钮。它提供 Windows、Linux 和 macOS 的安装包，以及 Firefox 和 Chrome 网上应用店里的浏览器扩展；Chrome 商店的那一枚也写给 Edge、Brave、Opera、Vivaldi 和 Helium。平台一行写了 Windows 10 和 11（x64、ARM64、32 位），多种 Linux 发行版（x86-64 和 ARM64），以及 macOS（Apple Silicon 和 Intel，标成实验性）。同一段写了 86 种语言。\n\nREADME 有一节标题是 Not a reverse-engineering project。本次没有把测速表里的数字抄进来，因为那一节的测量条件需要整节对照，这里只保留产品定义。Windows 首次运行可能出现「Windows 已保护你的电脑」，README 写这是因为早期版本还没有代码签名。\n\n## 适合谁\n\n适合想要一个无广告下载管理器、并且能接受早期版本尚未代码签名的人。它不是智能体或模型项目。\n\n## 这一周为什么上榜\n\n按七日新创建星排第 9。发布标签 v0.5.2 的发布时间是 2026-11-09。仓库创建于 2026-10-29。总星快照高于这七日的增量。\n\n## 可以核对的事实\n\n语言 Rust，许可证 GPL-3.0。86 种语言是 README 原文的数量。\n\n本窗口七日新增星是 8,034，总星快照 10,442，排第 9。七日每日数字依次为 11-09 日 2,201、11-10 日 1,366、11-11 日 1,159、11-12 日 1,126、11-13 日 893、11-14 日 600、11-15 日 689。",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/anefzaoui/misterdownloadmanager"
+        },
+        {
+          "label": "官网",
+          "url": "https://misterdownloadmanager.com"
+        },
+        {
+          "label": "发布页",
+          "url": "https://github.com/anefzaoui/misterdownloadmanager/releases/latest"
+        }
+      ]
+    },
+    {
+      "id": "sherlock-project-sherlock",
+      "rank": 10,
+      "repo": "sherlock-project/sherlock",
+      "url": "https://github.com/sherlock-project/sherlock",
+      "weeklyStars": 7595,
+      "totalStars": 112522,
+      "language": "Python",
+      "week": "2026-W46",
+      "windowLabel": "2026-W46 · 北京时间 11月9日 00:00 至 11月16日 00:00",
+      "summary": "Sherlock 按用户名在 400 多个社交网站上查找是否存在同名账号。它是 2018 年创建的 Python 命令行工具，许可证 MIT。这一周的新增星来自老仓库，最近一次发布不在本窗口。",
+      "intro": "Sherlock 按用户名在 400 多个社交网站上查找是否存在同名账号。它是 2018 年创建的 Python 命令行工具，许可证 MIT。这一周的新增星来自老仓库，最近一次发布不在本窗口。",
+      "detail": "## 它是什么\n\nREADME 首句写：按用户名在 400 多个社交网站上追查账号。网站是 sherlockproject.xyz。许可证 MIT，主语言 Python。仓库创建于 2018-12-24。\n\n## 它做什么\n\n用法一节写：sherlock 后面跟一个或多个用户名，找到的账号会写进以用户名为名的文本文件。--help 的示例输出里版本字符串是 0.16.0。安装表写了 pipx install sherlock-project（也可以用 pip 或 uv）、Docker 镜像 sherlock/sherlock，以及 dnf。社区维护的包提到 Debian、Ubuntu、Homebrew、Kali 和 BlackArch，并写这些包不是项目本人直接维护的。README 警告：第三方为 ParrotOS 和 Ubuntu 24.04 维护的包看起来是坏的，这些系统应改用 uv、pipx、pip 或 Docker。\n\n## 适合谁\n\n适合需要按公开用户名做账号枚举的安全研究或本人账号排查。它不是 AI 产品。本次不转写代理、站点过滤或其他命令参数。\n\n## 这一周为什么上榜\n\n按七日新创建星排第 10。最近一次 GitHub Release 是 v0.16.2，发布时间 2026-09-08，不在本窗口。总星快照超过 11 万，这七日只占其中一小段，说明上榜的是老项目在这一窗的增量。\n\n## 可以核对的事实\n\n语言 Python，许可证 MIT。400+ 是 README 原文的数量。开放 issue 快照是 414。\n\n本窗口七日新增星是 7,595，总星快照 112,522，排第 10。七日每日数字依次为 11-09 日 2,811、11-10 日 1,663、11-11 日 836、11-12 日 448、11-13 日 645、11-14 日 608、11-15 日 584。",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/sherlock-project/sherlock"
+        },
+        {
+          "label": "网站",
+          "url": "https://sherlockproject.xyz"
+        },
+        {
+          "label": "安装说明",
+          "url": "https://sherlockproject.xyz/installation"
+        }
+      ]
+    },
+    {
+      "id": "huamidev-gestaltx",
+      "rank": 11,
+      "repo": "huamidev/GestaltX",
+      "url": "https://github.com/huamidev/GestaltX",
+      "weeklyStars": 7589,
+      "totalStars": 7747,
+      "language": "Swift",
+      "week": "2026-W46",
+      "windowLabel": "2026-W46 · 北京时间 11月9日 00:00 至 11月16日 00:00",
+      "summary": "GestaltX 是 huamidev 写的 iPhone / iPad MobileGestalt 编辑器，README 写支持 iOS / iPadOS 27.x，许可证 GPL-3.0。仓库创建于 2026-11-09，星标几乎都落在本窗口。",
+      "intro": "GestaltX 是 huamidev 写的 iPhone / iPad MobileGestalt 编辑器，README 写支持 iOS / iPadOS 27.x，许可证 GPL-3.0。仓库创建于 2026-11-09，星标几乎都落在本窗口。",
+      "detail": "## 它是什么\n\nREADME 把它定义成 iPhone 和 iPad 上的 MobileGestalt 编辑器，作者是 huamidev。徽章写版本 1.0.6、平台 iOS 27.x、SwiftUI、许可证 GPLv3。GitHub 许可证字段是 GPL-3.0，主语言 Swift。另有简体中文 README：README_ZH-CN.md。\n\n## 它做什么\n\n功能表把预设分成显示、设备、iPad、Intelligence、高级开关、字段编辑、变更核对、备份，以及日志和手动重启。兼容性一节写：支持 iOS / iPadOS 27.x；iOS / iPadOS 26.x 不支持在设备上访问 MobileGestalt。本地 plist 编辑也支持。下载物是 Releases 里的 IPA。签名需要带至少一个可用 App Group 的证书和描述文件。\n\n本介绍不转写地区码、能力开关、硬件标识恢复或签名步骤。那些操作以仓库原文、免责声明和你自己的设备为准。\n\n## 适合谁\n\n适合已经在阅读 iOS 27 系统配置、并且接受 GPL-3.0 和侧载签名要求的人。它不是 AI 框架。\n\n## 这一周为什么上榜\n\n按七日新创建星排第 11。仓库创建于 2026-11-09，发布标签 v1.1.1 的发布时间是 2026-11-13。总星快照与这七日的增量接近，说明星标集中在这个窗口。\n\n## 可以核对的事实\n\n语言 Swift，许可证 GPL-3.0。README 写底层用到 worse_query。开放 issue 快照是 82。\n\n本窗口七日新增星是 7,589，总星快照 7,747，排第 11。七日每日数字依次为 11-09 日 3,111、11-10 日 2,233、11-11 日 1,096、11-12 日 475、11-13 日 349、11-14 日 217、11-15 日 108。",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/huamidev/GestaltX"
+        },
+        {
+          "label": "简体中文 README",
+          "url": "https://github.com/huamidev/GestaltX/blob/HEAD/README_ZH-CN.md"
+        },
+        {
+          "label": "发布页",
+          "url": "https://github.com/huamidev/GestaltX/releases/latest"
+        }
+      ]
+    },
+    {
+      "id": "ccch1mneyyy-dsh-go",
+      "rank": 12,
+      "repo": "ccch1mneyyy/dsh-Go",
+      "url": "https://github.com/ccch1mneyyy/dsh-Go",
+      "weeklyStars": 7126,
+      "totalStars": 23819,
+      "language": "Dart",
+      "week": "2026-W46",
+      "windowLabel": "2026-W46 · 北京时间 11月9日 00:00 至 11月16日 00:00",
+      "summary": "DSH Go 是 DeepSeek Harness 的第三方手机应用：Android 包已经发布，iOS 仍在开发和真机测试。README 写手机上跑的是 DSH 引擎，模型请求仍由你自己的提供方处理。许可证 AGPL-3.0。",
+      "intro": "DSH Go 是 DeepSeek Harness 的第三方手机应用：Android 包已经发布，iOS 仍在开发和真机测试。README 写手机上跑的是 DSH 引擎，模型请求仍由你自己的提供方处理。许可证 AGPL-3.0。",
+      "detail": "## 它是什么\n\nREADME 开篇写：这是 DeepSeek Harness 的手机应用，Android 版已发布；iOS 版仍在开发和真机测试，需要在 Mac 上自行签名编译。它基于 deepseek-ai/deepseek-harness，是第三方项目。许可证字段 AGPL-3.0，主语言 Dart。\n\n## 它做什么\n\n本机运行：在 App 里安装 Ubuntu、Node.js 和 DSH 运行环境，不需要 Root，也不必另装 Termux。远程连接：通过 SSH，或李国宝开发的 DSHarness Remote，去使用电脑和服务器上的 DSH。聊天侧可以切换模型、发图片、语音输入，并处理工具审批和提问，有聊天界面和网页模式。插件侧提供适配 DSH Go 的原生工具卡、表单和面板，仓库里有 SDK、教程和示例。手机操控只在你打开权限之后，让本机引擎读取屏幕、点按和输入，并可以随时停止。另外可以分享、导出和回放对话，改主题、图标和桌宠。\n\nREADME 写明 DSHarness Remote 当前只支持图片附件，不能在 App 里打开网页版，插件管理只限于开关，也不支持 DS Bot 和对话日志导出。安装要求 Android 8.0（API 26）及以上。常见 64 位手机用 Release 里的 arm64 包；没有 32 位 ARM 构建。当前 Android 构建以侧载 APK 为目标，不是 Google Play 发布配置。下载页写了 go.dshtui.com/download。\n\n## 适合谁\n\n适合已经在用 DeepSeek Harness、想在 Android 手机上继续同一套引擎的人。它不自带模型额度。iOS 还不能当成已发布的商店应用。\n\n## 这一周为什么上榜\n\n按七日新创建星排第 12。发布标签 v1.1.0 的发布时间是 2026-11-15。总星快照高于这七日的增量。\n\n## 可以核对的事实\n\n语言 Dart，许可证 AGPL-3.0，仓库创建于 2026-10-25。开放 issue 快照是 627。\n\n本窗口七日新增星是 7,126，总星快照 23,819，排第 12。七日每日数字依次为 11-09 日 1,271、11-10 日 1,088、11-11 日 1,043、11-12 日 1,074、11-13 日 933、11-14 日 1,018、11-15 日 699。",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/ccch1mneyyy/dsh-Go"
+        },
+        {
+          "label": "发布页",
+          "url": "https://github.com/ccch1mneyyy/dsh-Go/releases/latest"
+        },
+        {
+          "label": "下载页",
+          "url": "https://go.dshtui.com/download"
+        },
+        {
+          "label": "本机引擎与远程主机",
+          "url": "https://github.com/ccch1mneyyy/dsh-Go/blob/HEAD/docs/guide/zh/03-engine-hosts.md"
+        }
+      ]
+    },
+    {
+      "id": "mattpocock-skills",
+      "rank": 13,
+      "repo": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "weeklyStars": 6580,
+      "totalStars": 325223,
+      "language": "Shell",
+      "week": "2026-W46",
+      "windowLabel": "2026-W46 · 北京时间 11月9日 00:00 至 11月16日 00:00",
+      "summary": "Matt Pocock 的技能仓库，材料来自他每天在用的做法。README 强调技能要小、好改、可组合，并且不绑定某一种模型。许可证 MIT。",
+      "intro": "Matt Pocock 的技能仓库，材料来自他每天在用的做法。README 强调技能要小、好改、可组合，并且不绑定某一种模型。许可证 MIT。",
+      "detail": "## 它是什么\n\nREADME 标题是 Skills For Real Engineers。作者写这些技能来自每天做真实工程，而不是 vibe coding。他点名 GSD、BMAD 和 Spec-Kit，说那些方法靠接管流程来帮忙，同时拿走控制权。他的技能要求小、好改、可组合，并且不绑定模型。许可证 MIT，主语言 Shell。网站一节指向 aihero.dev 的通讯，并称名单上大约有 6 万名开发者。这是作者给出的数字。\n\n## 它做什么\n\n安装一节把「会自己更新的插件」和「拷进项目里、要手改的文件」分成两条路，并写不要两条一起装，否则每份技能会出现两次。本次读到的安装命令包括 Claude 的 claude plugin install mattpocock-skills@claude-plugins-official，Codex 的 marketplace add 与 plugin add，以及 Copilot 的对应命令。README 里 SKILL.md 出现了多次，说明技能以这个文件为单位。完整目录比开头长，没在本次摘录里点名的技能不写。\n\n## 适合谁\n\n适合想把工程习惯写成可修改技能、并且自己维护这些文件的人。作者写 hack around with them。\n\n## 这一周为什么上榜\n\n按七日新创建星排第 13。总星快照是本涨星榜里最高的一档，最近一次发布 v1.3.2 的时间是 2026-10-29，不在本窗口。这一周的增量来自一个已经很大的仓库。\n\n## 可以核对的事实\n\n语言 Shell，许可证 MIT，仓库创建于 2026-02-03。约 6 万是 README 里通讯名单的说法。\n\n本窗口七日新增星是 6,580，总星快照 325,223，排第 13。七日每日数字依次为 11-09 日 1,230、11-10 日 1,220、11-11 日 1,097、11-12 日 982、11-13 日 778、11-14 日 670、11-15 日 603。",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/mattpocock/skills"
+        },
+        {
+          "label": "skills.sh 页面",
+          "url": "https://skills.sh/mattpocock/skills"
+        },
+        {
+          "label": "通讯",
+          "url": "https://www.aihero.dev/s/skills-newsletter"
+        }
+      ]
+    },
+    {
+      "id": "stablyai-orca",
+      "rank": 14,
+      "repo": "stablyai/orca",
+      "url": "https://github.com/stablyai/orca",
+      "weeklyStars": 6411,
+      "totalStars": 125840,
+      "language": "TypeScript",
+      "week": "2026-W46",
+      "windowLabel": "2026-W46 · 北京时间 11月9日 00:00 至 11月16日 00:00",
+      "summary": "Orca 让 Claude Code、Codex 和其他编程智能体并行跑，每个占用自己的 git worktree。界面可以是聊天或终端，电脑、SSH 主机或云端虚拟机都能挂。许可证 MIT。",
+      "intro": "Orca 让 Claude Code、Codex 和其他编程智能体并行跑，每个占用自己的 git worktree。界面可以是聊天或终端，电脑、SSH 主机或云端虚拟机都能挂。许可证 MIT。",
+      "detail": "## 它是什么\n\nGitHub 简介写：用你自己的编程智能体跑一队 agent。README 首段写：并行运行 Claude Code、Codex 和任何其他编程智能体，各自使用自己的 worktree；可以是聊天或终端，在笔记本或云上，并且带 diff、浏览器和 CLI。网站是 orca.dev。许可证 MIT，主语言 TypeScript。\n\n## 它做什么\n\n功能小节写了：聊天界面和原始 CLI 可以互相切换而不丢掉上下文；一个智能体可以把大任务拆给各自工作区里的 worker，再把结果带回来；远程可以配 Remote Orca Server、SSH 主机，或给 worktree 一台云虚拟机，笔记本休眠时智能体继续跑。手机应用用来在智能体需要人时收到通知并回复。iOS 商店链接和 Android APK 地址写在 README 里。审阅一节写：可以在改动的具体行上留笔记，再把反馈发回智能体。\n\n## 适合谁\n\n适合已经有多个编程智能体、希望它们并行且各自占用 worktree 的人。它不替代那些智能体的订阅。\n\n## 这一周为什么上榜\n\n按七日新创建星排第 14。发布标签 v1.4.259 的发布时间是 2026-11-14。总星快照远高于这七日的增量。开放 issue 快照是 8,500。\n\n## 可以核对的事实\n\n语言 TypeScript，许可证 MIT，仓库创建于 2026-03-17。话题字段里还有 ghostty、hermes-agent、openclaw 等名字，产品定义以 README 正文为准。\n\n本窗口七日新增星是 6,411，总星快照 125,840，排第 14。七日每日数字依次为 11-09 日 1,141、11-10 日 1,040、11-11 日 1,005、11-12 日 1,129、11-13 日 741、11-14 日 737、11-15 日 618。",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/stablyai/orca"
+        },
+        {
+          "label": "网站 orca.dev",
+          "url": "https://orca.dev"
+        },
+        {
+          "label": "iOS",
+          "url": "https://apps.apple.com/us/app/orca-ide/id6766130217"
+        },
+        {
+          "label": "文档：编排",
+          "url": "https://orca.dev/docs/cli/orchestration"
+        }
+      ]
+    },
+    {
+      "id": "debpalash-voicestudio",
+      "rank": 15,
+      "repo": "debpalash/VoiceStudio",
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "weeklyStars": 6208,
+      "totalStars": 111391,
+      "language": "Python",
+      "week": "2026-W46",
+      "windowLabel": "2026-W46 · 北京时间 11月9日 00:00 至 11月16日 00:00",
+      "summary": "VoiceStudio 是本地优先的语音工具：用一段干净参考录音生成熟悉的声音、给视频按时间轴配音，或按文字描述生成声音。默认引擎写的是 k2-fsa/OmniVoice。许可证 AGPL-3.0。",
+      "intro": "VoiceStudio 是本地优先的语音工具：用一段干净参考录音生成熟悉的声音、给视频按时间轴配音，或按文字描述生成声音。默认引擎写的是 k2-fsa/OmniVoice。许可证 AGPL-3.0。",
+      "detail": "## 它是什么\n\nGitHub 简介写它是开源、完全本地的 ElevenLabs 替代：语音克隆、配音、听写等。网站是 voicestudio.sh。许可证字段 AGPL-3.0，主语言 Python。\n\n## 它做什么\n\n「能做什么」一节写：把一段干净的参考录音变成熟悉的声音；翻译并给视频配音，语音对齐原片时间；用文字描述一种声音再生成；自己选引擎并只下载需要的模型。条目还包括浮动听写条和本地转写、故事和有声书的排队任务，以及本地 API、MCP、可复用配方和监视文件夹。默认从 VoiceStudio 开始，README 写它由 k2-fsa/OmniVoice 驱动，也可以在模型管理器里换其他引擎，目录在 docs/feature-catalog.md。\n\nREADME 写上面这些免费、跑在你自己的硬件上、不需要账号。Pro 和 Cloud 是可选项：Pro 面向一台以上机器的付费客户工作；Cloud 是托管的语音和配音 API，标成即将推出，不需要 GPU。Windows 上有一份实验性的 ROCm 说明，覆盖部分 RDNA 2 RX 6000，并写明排除 RX 6500 XT。\n\n## 适合谁\n\n适合想在本机做语音克隆、配音或听写、并且能接受 AGPL-3.0 的人。它不是云端赠送的语音额度。\n\n## 这一周为什么上榜\n\n按七日新创建星排第 15。发布标签 v0.5.8 的发布时间是 2026-11-12。总星快照远高于这七日的增量。\n\n## 可以核对的事实\n\n语言 Python，许可证 AGPL-3.0，仓库创建于 2026-04-09。开放 issue 快照是 48。\n\n本窗口七日新增星是 6,208，总星快照 111,391，排第 15。七日每日数字依次为 11-09 日 1,202、11-10 日 1,095、11-11 日 1,022、11-12 日 867、11-13 日 761、11-14 日 711、11-15 日 550。",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/debpalash/VoiceStudio"
+        },
+        {
+          "label": "网站 voicestudio.sh",
+          "url": "https://voicestudio.sh"
+        },
+        {
+          "label": "功能与引擎目录",
+          "url": "https://github.com/debpalash/VoiceStudio/blob/HEAD/docs/feature-catalog.md"
+        }
+      ]
+    },
+    {
+      "id": "cloudflare-security-audit-skill",
+      "rank": 16,
+      "repo": "cloudflare/security-audit-skill",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "weeklyStars": 6162,
+      "totalStars": 73275,
+      "language": "JavaScript",
+      "week": "2026-W46",
+      "windowLabel": "2026-W46 · 北京时间 11月9日 00:00 至 11月16日 00:00",
+      "summary": "Cloudflare 的 security-audit 把编程智能体编排成安全审计员，并用六段流程把侦察、排查、证伪、结构化记录、独立核验和报告拆开。README 说后来的漏洞发现流水线是从这一个仓库长出去的。",
+      "intro": "Cloudflare 的 security-audit 把编程智能体编排成安全审计员，并用六段流程把侦察、排查、证伪、结构化记录、独立核验和报告拆开。README 说后来的漏洞发现流水线是从这一个仓库长出去的。",
+      "detail": "## 它是什么\n\n这是一个 skill，不是一套在线扫描服务。README 定义它把编程智能体编排成安全审计员，发现要经过独立核验，结果要能被机器读取。Cloudflare 在 README 里说，后来的漏洞发现流水线是从这一个仓库长出去的，说明文章是 Build your own vulnerability harness。许可证 MIT，主语言 JavaScript。没有 GitHub Release。\n\n## 它做什么\n\n六个阶段写在 README 里。侦察写 architecture.md 和 coverage-ledger.json。排查按台账单元派出隔离的 hunter，再用覆盖批评者找空缺。每个独特候选交给一个新的验证者，任务是证伪。结构化阶段把 confirmed、needs_validation、rejected 写入 findings.json，并用 report-schema.json 校验。之后换新的智能体核验源码主张，材料若被替换就再换一个验证者。报告阶段才导出 REPORT.md、FINDINGS-DETAIL.md 和 NEEDS-VALIDATION.md。\n\nconfirmed 要有完整源码追溯和有边界的观察结果。needs_validation 只留下一个尚未解决的准确事实，不标严重性。rejected 保留被推翻的候选。父流程在台账更新后跑 validate-coverage-ledger.cjs，在第四段和第五段每次替换后跑 validate-findings.cjs。安装命令指向 skills CLI：npx skills add 本仓库。本页不转写审计步骤。\n\n## 适合谁\n\n适合已经有编程智能体、希望审计留下可复查记录的人。needs_validation 这一档的存在，是为了拦住证据还没齐的结论。\n\n## 这一周为什么上榜\n\n按七日新创建星排第 16。仓库最近一次推送是 2026-09-14，不在本窗口，所以这一周的增量不是由本周的新提交带动的。\n\n## 可以核对的事实\n\n语言 JavaScript，许可证 MIT，仓库创建于 2026-06-18。博客：https://blog.cloudflare.com/build-your-own-vulnerability-harness\n\n本窗口七日新增星是 6,162，总星快照 73,275，排第 16。七日每日数字依次为 11-09 日 1,211、11-10 日 1,269、11-11 日 949、11-12 日 833、11-13 日 701、11-14 日 703、11-15 日 496。",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/cloudflare/security-audit-skill"
+        },
+        {
+          "label": "Cloudflare 博客",
+          "url": "https://blog.cloudflare.com/build-your-own-vulnerability-harness"
+        }
+      ]
+    },
+    {
+      "id": "googlechrome-modern-web-guidance-src",
+      "rank": 17,
+      "repo": "GoogleChrome/modern-web-guidance-src",
+      "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+      "weeklyStars": 6017,
+      "totalStars": 7250,
+      "language": "TypeScript",
+      "week": "2026-W46",
+      "windowLabel": "2026-W46 · 北京时间 11月9日 00:00 至 11月16日 00:00",
+      "summary": "modern-web-guidance-src 是 Modern Web Guidance 的源码仓库，包含编写、校准和评估这些 skill 内容的代码与文档。使用者安装的发布仓库是 GoogleChrome/modern-web-guidance，两边的星分开计数。",
+      "intro": "modern-web-guidance-src 是 Modern Web Guidance 的源码仓库，包含编写、校准和评估这些 skill 内容的代码与文档。使用者安装的发布仓库是 GoogleChrome/modern-web-guidance，两边的星分开计数。",
+      "detail": "## 它是什么\n\nREADME 标题写成 Modern Web Guidance (Source)。第一段写：这是 GoogleChrome/modern-web-guidance 的源码仓库，包含编写、校准和评估其内容的代码和文档。项目定义与发布仓库相同：一组把 Web 平台经验放进编程智能体的 skill。文首同样写由 Chrome、Edge、Firefox 和 MDN 团队与社区维护。许可证字段 Apache-2.0，主语言 TypeScript。\n\n## 它做什么\n\n快速开始和「为什么要做」与发布仓库的 README 同文：npx modern-web-guidance@latest install，以及 search、retrieve、legacy-scan 三条不安装也能试的命令。覆盖计数同样写成 250 项，其中 CSS 与布局 140、HTML 与 DOM 36、JavaScript 与 API 74。贡献方式指向本仓库的 CONTRIBUTING.md 和 GOVERNANCE.md。评估看板地址是 googlechrome.github.io/modern-web-guidance-src/ 。\n\n## 适合谁\n\n适合要改指南、跑评估或看内容如何生成的人。只想把 skill 装进智能体的人，README 仍把安装命令指向发布包 modern-web-guidance。\n\n## 这一周为什么上榜\n\n按七日新创建星排第 17。它和发布仓库不是同一个 GitHub 仓库，星数各自计算。没有 GitHub Release。开放 issue 快照是 398，高于发布仓库的 1，和「问题报到源码仓库」的写法一致。\n\n## 可以核对的事实\n\n语言 TypeScript，许可证 Apache-2.0，仓库创建于 2026-01-27。\n\n本窗口七日新增星是 6,017，总星快照 7,250，排第 17。七日每日数字依次为 11-09 日 7、11-10 日 131、11-11 日 658、11-12 日 1,681、11-13 日 1,406、11-14 日 1,222、11-15 日 912。",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/GoogleChrome/modern-web-guidance-src"
+        },
+        {
+          "label": "发布仓库",
+          "url": "https://github.com/GoogleChrome/modern-web-guidance"
+        },
+        {
+          "label": "文档",
+          "url": "https://developer.chrome.com/docs/modern-web-guidance"
+        },
+        {
+          "label": "评估看板",
+          "url": "https://googlechrome.github.io/modern-web-guidance-src/"
+        }
+      ]
+    },
+    {
+      "id": "anthropics-skills",
+      "rank": 18,
+      "repo": "anthropics/skills",
+      "url": "https://github.com/anthropics/skills",
+      "weeklyStars": 5609,
+      "totalStars": 195400,
+      "language": "Python",
+      "week": "2026-W46",
+      "windowLabel": "2026-W46 · 北京时间 11月9日 00:00 至 11月16日 00:00",
+      "summary": "anthropics/skills 是 Anthropic 公开的 Claude 技能仓库。技能是带说明、脚本和资源的文件夹，Claude 按任务加载。文档类技能包括 docx、pdf、pptx 和 xlsx。GitHub 的许可证字段为空，README 写其中不少技能是 Apache-2.0。",
+      "intro": "anthropics/skills 是 Anthropic 公开的 Claude 技能仓库。技能是带说明、脚本和资源的文件夹，Claude 按任务加载。文档类技能包括 docx、pdf、pptx 和 xlsx。GitHub 的许可证字段为空，README 写其中不少技能是 Apache-2.0。",
+      "detail": "## 它是什么\n\nREADME 开头注明：这个仓库是 Anthropic 为 Claude 实现的 skills。Agent Skills 标准另见 agentskills.io。技能被定义成一组指令、脚本和资源，Claude 按任务动态加载，用来重复完成专门工作。主语言 Python。GitHub 许可证字段为空。没有 GitHub Release。\n\n## 它做什么\n\n仓库分成三块：./skills 是创意与设计、开发与技术、企业与沟通，以及文档技能的例子；./spec 是 Agent Skills 规范；./template 是模板。文档技能写在 skills/docx、skills/pdf、skills/pptx 和 skills/xlsx，README 说它们也是 Claude 文档能力背后的实现，并且是 Apache-2.0。每个技能自带一份 SKILL.md。\n\nClaude Code 可以把本仓库登记成插件市场：/plugin marketplace add anthropics/skills，再安装 document-skills 或 example-skills。Claude.ai 一节写这些示例技能已经提供给付费方案。Claude API 一节指向 Skills API Quickstart。免责声明写：技能用于演示和教育；Claude 产品里的行为可以和仓库里看到的不一样。\n\n## 适合谁\n\n适合要看 SKILL.md 长什么样、或要在 Claude Code、Claude.ai、Claude API 里试用这些示例的人。README 要求在关键任务上依赖它们之前，先在自己的环境里测试。\n\n## 这一周为什么上榜\n\n按七日新创建星排第 18。总星快照约 19.5 万，这七日只占其中一段。最近一次推送是 2026-11-14。\n\n## 可以核对的事实\n\n语言 Python。许可证字段为空，所以许可证写未知；README 另写许多技能以及文档技能是 Apache-2.0。开放 issue 快照是 1,548。\n\n本窗口七日新增星是 5,609，总星快照 195,400，排第 18。七日每日数字依次为 11-09 日 1,531、11-10 日 1,200、11-11 日 702、11-12 日 538、11-13 日 461、11-14 日 538、11-15 日 639。",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/anthropics/skills"
+        },
+        {
+          "label": "Agent Skills 标准",
+          "url": "http://agentskills.io"
+        },
+        {
+          "label": "工程文章",
+          "url": "https://anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills"
+        }
+      ]
+    },
+    {
+      "id": "libracoder-kiri",
+      "rank": 19,
+      "repo": "libracoder/kiri",
+      "url": "https://github.com/libracoder/kiri",
+      "weeklyStars": 5276,
+      "totalStars": 6578,
+      "language": "Rust",
+      "week": "2026-W46",
+      "windowLabel": "2026-W46 · 北京时间 11月9日 00:00 至 11月16日 00:00",
+      "summary": "Kiri 是一个小的容器运行时，用来在 macOS、Windows 和 Linux 上跑 Docker 镜像，并兼容已有的 docker CLI、Compose 和 buildx。README 把它写成 Docker Desktop 和 OrbStack 的轻量替代。许可证 Apache-2.0。",
+      "intro": "Kiri 是一个小的容器运行时，用来在 macOS、Windows 和 Linux 上跑 Docker 镜像，并兼容已有的 docker CLI、Compose 和 buildx。README 把它写成 Docker Desktop 和 OrbStack 的轻量替代。许可证 Apache-2.0。",
+      "detail": "## 它是什么\n\nREADME 首句写：一个很小、很快的容器运行时，覆盖 macOS、Windows 和 Linux。它跑 Docker 镜像，并和你已经在用的 docker CLI、Compose、buildx 一起工作。名字来自伊博语 ntakịrị，意思是「小」。许可证 Apache-2.0，主语言 Rust。网站是 runkiri.com。仓库创建于 2026-11-02。\n\n## 它做什么\n\n它在一个小型 Linux 虚拟机里跑容器；在 Linux 上可以直接跑在内核上。它说 Docker Engine API，所以现有工具可以继续用。README 给出的数字是：经 Docker API，容器启动并退出大约 2.5 毫秒，大约是 Docker Desktop 的 80 倍；虚拟机空闲 60 秒后休眠，守护进程大约 15 MB，唤醒大约 0.15 秒。兼容 docker、Compose、buildx、docker login，以及通过 Rosetta 跑 amd64 镜像。本地域名写成 http://<名字>.kiri.local，HTTPS 用 Kiri 自己的证书颁发机构。另外有一键 Kubernetes 集群和 Linux 机器，以及一个原生窗口和菜单栏图标。界面语言写成 38 种，跟随系统语言，也可以在设置里改。\n\n安装表：macOS 14+（Apple 芯片或 Intel）用 dmg；Windows 10 和 11（x86-64 或 Arm，经 WSL 2）用 msi；Linux 用 deb 或 rpm。第一次打开会建立名为 kiri 的 Docker context。更新前会先检查发布签名。\n\n## 适合谁\n\n适合想换一个更小的 Docker 桌面替代、并且继续用 docker CLI 的人。它不是 AI 产品。2.5 毫秒和 15 MB 是 README 的测量说法，不是本榜复测的结果。\n\n## 这一周为什么上榜\n\n按七日新创建星排第 19。发布标签 v0.2.1 的发布时间是 2026-11-15。总星快照高于这七日的增量，差额来自 11 月 2 日创建之后、这七日之外的星。\n\n## 可以核对的事实\n\n语言 Rust，许可证 Apache-2.0。38 种语言和 2.5 毫秒都是 README 原文。开放 issue 快照是 106。\n\n本窗口七日新增星是 5,276，总星快照 6,578，排第 19。七日每日数字依次为 11-09 日 111、11-10 日 77、11-11 日 169、11-12 日 202、11-13 日 621、11-14 日 1,742、11-15 日 2,354。",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/libracoder/kiri"
+        },
+        {
+          "label": "下载",
+          "url": "https://runkiri.com/releases/"
+        },
+        {
+          "label": "发布页",
+          "url": "https://github.com/libracoder/kiri/releases"
+        }
+      ]
+    },
+    {
+      "id": "routinemiku-apkstart",
+      "rank": 20,
+      "repo": "RoutineMiku/apkstart",
+      "url": "https://github.com/RoutineMiku/apkstart",
+      "weeklyStars": 5272,
+      "totalStars": 5275,
+      "language": "JavaScript",
+      "week": "2026-W46",
+      "windowLabel": "2026-W46 · 北京时间 11月9日 00:00 至 11月16日 00:00",
+      "summary": "ApkStart 在 Windows 上运行安卓应用：双击 APK 安装，并为每个应用生成桌面图标和独立窗口。许可证 MIT。总星快照和这七日的新增几乎相同。",
+      "intro": "ApkStart 在 Windows 上运行安卓应用：双击 APK 安装，并为每个应用生成桌面图标和独立窗口。许可证 MIT。总星快照和这七日的新增几乎相同。",
+      "detail": "## 它是什么\n\nREADME 标题是 ApkStart。一句简介写：Windows 上的安卓应用运行器，让安卓应用像 Windows 原生软件一样被安装和使用。GitHub 简介同样写：双击 APK 即装，应用以独立窗口和桌面图标运行，自带 QEMU 运行时。许可证 MIT，主语言 JavaScript。话题字段包括 android、electron、qemu、windows。\n\n## 它做什么\n\nREADME 写：注册 apk 文件关联后，在资源管理器里双击 APK，会解析、安装并生成桌面图标。每个应用一个图标，图标从 APK 里离线提取。运行时以带窗口的方式启动，ApkStart 改窗口标题和图标。全屏铺满屏幕高度并居中，窗口模式可拖动缩放，并按应用记住尺寸。安装后还会在开始菜单的「程序\\ApkStart」下建快捷方式。共享目录 %USERPROFILE%\\ApkStartShared 与安卓内 /sdcard/ApkStartShared 双向同步。\n\n运行时说明写它完全独立，不依赖第三方模拟器；也可以复用机器上已有的安卓运行时。从源码构建的步骤包括安装依赖、一次性下载 adb、Android Emulator 和系统镜像。便携版和安装版的打包脚本写在 README 后部。本次不转写压缩参数和裁剪清单。\n\n## 适合谁\n\n适合想在 Windows 上把 APK 当成独立窗口来开的人。它不是应用商店，也不是 AI 产品。\n\n## 这一周为什么上榜\n\n按七日新创建星排第 20。发布标签 v0.5.0-fix 的发布时间是 2026-11-15。总星快照与这七日的增量只差 3，说明快照时几乎全部星都落在这七个 UTC 日里。仓库创建于 2026-10-29。\n\n## 可以核对的事实\n\n语言 JavaScript，许可证 MIT。开放 issue 快照是 66。\n\n本窗口七日新增星是 5,272，总星快照 5,275，排第 20。七日每日数字依次为 11-09 日 0、11-10 日 0、11-11 日 40、11-12 日 37、11-13 日 2,040、11-14 日 2,127、11-15 日 1,028。",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/RoutineMiku/apkstart"
+        },
+        {
+          "label": "发布页",
+          "url": "https://github.com/RoutineMiku/apkstart/releases"
+        }
+      ]
+    }
+  ]
+}
