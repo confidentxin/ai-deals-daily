@@ -53,10 +53,10 @@ details ul { margin: 10px 0 2px 18px; font-size: 13px; color: #57606a; line-heig
 @media (min-width: 1800px) { .wrap { max-width: 1360px; } }
 
 @media (max-width: 720px) {
-  .sidebar { position: static; width: auto; padding: 10px 14px 12px; border-right: none; border-bottom: 1px solid #e8e4db; overflow: visible; }
+  .sidebar { position: static; width: auto; padding: 10px 10px 12px; border-right: none; border-bottom: 1px solid #e8e4db; overflow: visible; }
   .logo { padding: 0 0 6px; font-size: 17px; }
   .logo small { display: inline; margin: 0 0 0 8px; }
-  .nav { display: flex; overflow-x: auto; white-space: nowrap; gap: 12px; scrollbar-width: none; }
+  .nav { display: flex; overflow-x: auto; white-space: nowrap; gap: 6px; scrollbar-width: none; }
   .nav::-webkit-scrollbar { display: none; }
   .nav h4, .nav a.sub, .nav a.top em, .sidefoot { display: none; }
   .nav h4:nth-of-type(2), .nav h4:nth-of-type(2) ~ a { display: none; }
@@ -97,11 +97,12 @@ a.pill { text-decoration: none; }
 details summary::-webkit-details-marker { display: none; }
 details summary { list-style: none; }
 
-body { background: #faf9f6; color: #1a1a18; font-family: "Times New Roman", Times, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; }
+@font-face { font-family: "SiteLatin"; src: local("Times New Roman"), local("Liberation Serif"), local("Times"), local("Noto Serif"), local("DejaVu Serif"); unicode-range: U+0000-00FF, U+0100-024F, U+2000-206F, U+20AC, U+2122; }
+body { background: #faf9f6; color: #1a1a18; font-family: "SiteLatin", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; }
 a { color: inherit; }
 .sidebar { width: 252px; background: #faf9f6; border-right: 1px solid #e8e4db; padding: 22px 17px; }
 .logo { font-size: 19px; font-weight: 700; padding: 0 8px 12px; }
-.logo small { display: block; color: #a39e93; font: 11px "Times New Roman", Times, serif; letter-spacing: 1px; }
+.logo small { display: block; color: #a39e93; font: 11px "SiteLatin", serif; letter-spacing: 1px; }
 .nav h4 { font-size: 10px; color: #a39e93; letter-spacing: 1px; padding: 9px 8px 3px; }
 .nav a { display: block; padding: 5px 8px; font-size: 13px; color: #1a1a18; }
 .nav a:hover, .nav a.on { background: #f3efe6; }
@@ -121,6 +122,8 @@ section.board > h2 em { color: #a39e93; }
 .board .card .m { color: #57534a; }
 .board .card .m span { color: #a39e93; }
 .badge { background: #f3efe6; color: #1a1a18; border: 1px solid #e8e4db; }
+.chead { min-width: 0; }
+.chead h3 { min-width: 0; overflow-wrap: break-word; }
 .vlogo { border: 1px solid #e8e4db; }
 .foot { color: #a39e93; border-top: 1px solid #e8e4db; }
 .more { border: 1px solid #57534a; background: transparent; border-radius: 2px; color: #1a1a18; }
