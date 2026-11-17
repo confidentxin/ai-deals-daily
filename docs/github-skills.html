@@ -53,14 +53,16 @@ details ul { margin: 10px 0 2px 18px; font-size: 13px; color: #57606a; line-heig
 @media (min-width: 1800px) { .wrap { max-width: 1360px; } }
 
 @media (max-width: 720px) {
-  .sidebar { position: static; width: auto; padding: 14px 16px 8px; border-right: none; border-bottom: 1px solid #e3e5e8; overflow: visible; }
-  .logo { padding: 2px 4px 10px; font-size: 18px; }
+  .sidebar { position: static; width: auto; padding: 10px 14px 12px; border-right: none; border-bottom: 1px solid #e8e4db; overflow: visible; }
+  .logo { padding: 0 0 6px; font-size: 17px; }
   .logo small { display: inline; margin: 0 0 0 8px; }
-  .nav h4 { display: none; }
-  .nav a { display: inline-block; padding: 6px 10px; margin: 0 2px 6px 0; font-size: 13px; }
-  .nav a em { float: none; margin-left: 4px; }
-  .sidefoot { display: none; }
-  .main { margin-left: 0; padding: 16px 16px 40px; }
+  .nav { display: flex; overflow-x: auto; white-space: nowrap; gap: 12px; scrollbar-width: none; }
+  .nav::-webkit-scrollbar { display: none; }
+  .nav h4, .nav a.sub, .nav a.top em, .sidefoot { display: none; }
+  .nav h4:nth-of-type(2), .nav h4:nth-of-type(2) ~ a { display: none; }
+  .nav a { display: inline-block; padding: 4px 0; font-size: 12px; }
+  .nav a em { display: none; }
+  .main { margin-left: 0; padding: 12px 14px 40px; }
   .wrap { max-width: none; }
   .topbar input { max-width: none; }
   .hero { padding: 16px; margin: 14px 0 18px; }
@@ -94,34 +96,73 @@ a.pill { text-decoration: none; }
 .subsec .tw { float: right; color: #8b949e; font-size: 15px; }
 details summary::-webkit-details-marker { display: none; }
 details summary { list-style: none; }
+
+body { background: #faf9f6; color: #1a1a18; font-family: "Times New Roman", Times, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; }
+a { color: inherit; }
+.sidebar { width: 252px; background: #faf9f6; border-right: 1px solid #e8e4db; padding: 22px 17px; }
+.logo { font-size: 19px; font-weight: 700; padding: 0 8px 12px; }
+.logo small { display: block; color: #a39e93; font: 11px "Times New Roman", Times, serif; letter-spacing: 1px; }
+.nav h4 { font-size: 10px; color: #a39e93; letter-spacing: 1px; padding: 9px 8px 3px; }
+.nav a { display: block; padding: 5px 8px; font-size: 13px; color: #1a1a18; }
+.nav a:hover, .nav a.on { background: #f3efe6; }
+.nav a.sub { padding-left: 16px; color: #57534a; }
+.nav a em { color: #a39e93; }
+.sidefoot { border-top: 1px solid #e8e4db; margin-top: 16px; padding: 12px 8px; color: #a39e93; font-size: 11px; }
+.main { margin-left: 252px; padding: 24px 38px 60px; }
+.wrap { max-width: 1060px; }
+.topbar input { border: 1px solid #57534a; border-radius: 2px; background: transparent; }
+.pill { border: 1px solid #e8e4db; background: transparent; border-radius: 2px; color: #1a1a18; }
+.pill.on { background: #1a1a18; border-color: #1a1a18; color: #faf9f6; }
+section.board > h2 { font-size: 21px; padding-bottom: 10px; border-bottom: 1px solid #e8e4db; margin-bottom: 18px; }
+section.board > h2 em { color: #a39e93; }
+.board-note { color: #57534a; }
+.board .card { background: transparent; border: none; border-bottom: 1px solid #e8e4db; border-radius: 0; padding: 16px 0; margin-bottom: 0; }
+.board .card .c { color: #57534a; }
+.board .card .m { color: #57534a; }
+.board .card .m span { color: #a39e93; }
+.badge { background: #f3efe6; color: #1a1a18; border: 1px solid #e8e4db; }
+.vlogo { border: 1px solid #e8e4db; }
+.foot { color: #a39e93; border-top: 1px solid #e8e4db; }
+.more { border: 1px solid #57534a; background: transparent; border-radius: 2px; color: #1a1a18; }
+@media (max-width: 720px) {
+  .sidebar { width: auto; }
+  .logo { padding: 0 0 6px; font-size: 17px; }
+  .logo small { display: inline; margin: 0 0 0 8px; }
+  .main { margin-left: 0; padding: 12px 14px 40px; }
+  .wrap { max-width: none; }
+  .nav a { padding: 4px 0; font-size: 12px; }
+  section.board > h2 { font-size: 17px; }
+  .board .card { padding: 14px 0; }
+  .chead h3 { font-size: 15px; }
+}
 </style>
 <style id="board-detail-css">
 .board .card.teaser { cursor: pointer; }
-.board .card.teaser:hover { border-color: #0969da; }
+.board .card.teaser:hover { background: #f3efe6; }
 .board .card .c { display: block; -webkit-line-clamp: unset; line-clamp: unset; overflow: visible; }
-.when { display: inline-block; margin-top: 8px; font-size: 12px; font-weight: 700; color: #0969da; background: #e8f1fd; border-radius: 999px; padding: 3px 8px; }
-a.detail-cta, .detail-cta { display: inline-block; margin-top: 10px; font-size: 13px; font-weight: 700; color: #0969da; }
+.when { display: inline-block; margin-top: 8px; font-size: 12px; font-weight: 700; color: #57534a; background: #f3efe6; border-radius: 999px; padding: 3px 8px; }
+a.detail-cta, .detail-cta { display: inline-block; margin-top: 10px; font-size: 12px; font-weight: 700; color: #faf9f6; background: #1a1a18; padding: 5px 10px; }
 .board .card .agents { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .chead h3 a { color: inherit; }
-.chead h3 a:hover { color: #0969da; }
+.chead h3 a:hover { color: inherit; text-decoration: underline; }
 .card .m a.ext { font-weight: 600; }
 #detail-root { margin: 6px 0 28px; }
-.detail { background: #fff; border: 1px solid #e3e5e8; border-radius: 12px; padding: 22px 26px 28px; }
-.detail .back { display: inline-block; font-size: 13px; font-weight: 700; background: #fff; border: 1px solid #d8dbdf; border-radius: 999px; padding: 6px 12px; color: #24292f; }
-.detail .kicker { margin-top: 14px; font-size: 13px; color: #0969da; font-weight: 700; }
+.detail { background: #fff; border: 1px solid #e8e4db; border-radius: 2px; padding: 22px 26px 28px; }
+.detail .back { display: inline-block; font-size: 13px; font-weight: 700; background: transparent; border: 1px solid #57534a; border-radius: 2px; padding: 6px 12px; color: #1a1a18; }
+.detail .kicker { margin-top: 14px; font-size: 13px; color: #57534a; font-weight: 700; }
 .detail h1 { font-size: 28px; line-height: 1.35; margin: 8px 0 6px; }
-.detail .timenote { font-size: 13px; color: #57606a; line-height: 1.65; margin: 0 0 8px; }
+.detail .timenote { font-size: 13px; color: #57534a; line-height: 1.65; margin: 0 0 8px; }
 .detail-body h2 { font-size: 18px; margin: 22px 0 8px; padding: 0; border: 0; }
 .detail-body h3 { font-size: 16px; margin: 14px 0 6px; }
-.detail-body p { font-size: 15.5px; line-height: 1.8; color: #24292f; margin: 8px 0; overflow-wrap: break-word; }
+.detail-body p { font-size: 15.5px; line-height: 1.8; color: #1a1a18; margin: 8px 0; overflow-wrap: break-word; }
 .detail-body ul { margin: 8px 0 8px 1.2em; }
 .detail-body li { font-size: 15px; line-height: 1.7; margin: 4px 0; }
-.detail-body code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.92em; background: #f0f2f4; padding: 1px 5px; border-radius: 5px; }
-.detail-links { margin-top: 22px; padding-top: 14px; border-top: 1px solid #eceef0; }
+.detail-body code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.92em; background: #f3efe6; padding: 1px 5px; border-radius: 2px; }
+.detail-links { margin-top: 22px; padding-top: 14px; border-top: 1px solid #e8e4db; }
 .detail-links h2 { font-size: 16px; margin: 0 0 10px; border: 0; padding: 0; }
-.detail-links .go { display: inline-block; margin: 0 8px 8px 0; font-size: 13px; font-weight: 600; background: #0969da; color: #fff; padding: 7px 15px; border-radius: 8px; }
-.meta-row { display: flex; flex-wrap: wrap; gap: 8px 18px; margin: 10px 0 4px; font-size: 13px; color: #57606a; }
-.meta-row b { color: #1f2328; }
+.detail-links .go { display: inline-block; margin: 0 8px 8px 0; font-size: 13px; font-weight: 600; background: #1a1a18; color: #faf9f6; padding: 7px 15px; border-radius: 2px; }
+.meta-row { display: flex; flex-wrap: wrap; gap: 8px 18px; margin: 10px 0 4px; font-size: 13px; color: #57534a; }
+.meta-row b { color: #1a1a18; }
 body.detail-open section.board { display: none !important; }
 @media (max-width: 720px) {
   .detail { padding: 16px 14px 22px; }
@@ -134,7 +175,7 @@ body.detail-open section.board { display: none !important; }
   <div class="logo">AI 厂商活动日报<small>AI DEALS DAILY</small></div>
   <nav class="nav"><h4>栏目</h4>
   <a href="index.html" class="top">薅羊毛</a>
-  <a href="index.html#urgent" class="sub" data-sub="urgent">今日急报 <em>3</em></a>
+  <a href="index.html#urgent" class="sub" data-sub="urgent">今日急报 <em>4</em></a>
   <a href="index.html#direct" class="sub" data-sub="direct">进行中 · 能直接领 <em>37</em></a>
   <a href="index.html#overseas" class="sub" data-sub="overseas">进行中 · 需海外账号 <em>66</em></a>
   <a href="index.html#expiring" class="sub" data-sub="expiring">即将到期 <em>5</em></a>
