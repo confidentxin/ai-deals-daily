@@ -4,7 +4,7 @@
   "preview": 10,
   "empty": false,
   "emptyMessage": "今日暂无重要资讯，晚间 19:30 起每日更新",
-  "note": "2026-11-17 早报+晚报（北京时间）整理：早报 11 条（美国商务部 BIS 堵住远程算力口子、加州起诉 OpenAI 智能体失控、NVIDIA 董事会据称不考虑让黄仁勋回归、OpenAI 嵌入式安全评估 / CSAM 分类器 / 学术研究者免费 Plus、NVIDIA Vera CPU 机架、Google Gemini 隐私设置，并补录 DeepSeek 免费用户限额、百度三季报、Apple 健康 AI 研究）＋晚报 10 条（NVIDIA 董事会国家安全与出口管制监督委员会、Gemini 进入合作伙伴运营的 Google Cloud Dedicated、OpenAI Daybreak 支援北约网络防御、Anthropic IPO 本周定价、MLPerf Training v6.1 中 Vera Rubin NVL72、Google 威胁情报称攻击者已用多智能体框架自动化漏洞利用、Gemini Skills 可分享并挂载云端文件且个人 Gems 开始退场、Perplexity Frontier Research、美国拟指定 AI「国家冠军」、华为云开源 CloudRobo-WM1.2）。共 21 条，按公告时间从新到旧排列。带精确钟点的条目 timeLabel 用北京时间；官方只给日期的条目 timePrecision 为 date，timeLabel 只写日期（美国时间的注明），sortAt 采用当日零点，仅用于排序，详见各条 timeNote。置信度 A 表示来自官方原文，B 表示可靠媒体报道、官方未单独核实；同一条里官方事实与未经官方单独核实的报道需要分开看时标 A/B，详见该条「可以核对的事实」。",
+  "note": "2026-11-17 早报+晚报（北京时间）整理：早报 11 条（美国商务部 BIS 堵住远程算力口子、加州起诉 OpenAI 智能体失控、NVIDIA 董事会据称不考虑让黄仁勋回归、OpenAI 嵌入式安全评估 / CSAM 分类器 / 学术研究者免费 Plus、NVIDIA Vera CPU 机架、Google Gemini 隐私设置，并补录 DeepSeek 免费用户限额、百度三季报、Apple 健康 AI 研究）＋晚报 9 条（NVIDIA 董事会国家安全与出口管制监督委员会、Gemini 进入合作伙伴运营的 Google Cloud Dedicated、OpenAI Daybreak 支援北约网络防御、Anthropic IPO 本周定价、MLPerf Training v6.1 中 Vera Rubin NVL72、Google 威胁情报称攻击者已用多智能体框架自动化漏洞利用、Gemini Skills 可分享并挂载云端文件且个人 Gems 开始退场、Perplexity Frontier Research、美国拟指定 AI「国家冠军」）。共 20 条，按公告时间从新到旧排列。带精确钟点的条目 timeLabel 用北京时间；官方只给日期的条目 timePrecision 为 date，timeLabel 只写日期（美国时间的注明），sortAt 采用当日零点，仅用于排序，详见各条 timeNote。置信度 A 表示来自官方原文，B 表示可靠媒体报道、官方未单独核实；同一条里官方事实与未经官方单独核实的报道需要分开看时标 A/B，详见该条「可以核对的事实」。",
   "items": [
     {
       "id": "cnbc-nvidia-board-not-considering-huang-return",
@@ -373,27 +373,6 @@
         }
       ],
       "detail": "## 它是什么\n\n与「美国 AI 出口计划」（American AI Exports Program）相关的一项拟议安排，旨在推动美国 AI 技术栈出海、与中国竞争。\n\n## 它做什么（据报道）\n\n- 被指定公司的出口许可申请可获优先审查。\n- 美国政府为其海外项目提供外交背书，并协助对接联邦融资。\n- 报道称这并不保证许可一定获批或一定获得资金。\n\n## 适合谁\n\n关注美国 AI 产业政策、出口管制和中美科技竞争的读者。\n\n## 为什么值得看\n\n这与同期商务部收紧远程算力出口、NVIDIA 成立出口合规委员会形成同一条线：美国一边收紧对华，一边扶持本国 AI 企业出海。早报因只见单一来源转述未收录，现多家媒体转述一致，但仍以 WSJ 为唯一原始来源，名单以官方公布为准。\n\n## 可以核对的事实\n\n- 「二十多家」「优先审查出口许可」「联邦融资」：多家媒体转述 WSJ，表述一致（B）。\n- 官方正式名单尚未公布。\n- 可信度 B（WSJ 报道，经 Quartz、Investing.com、Moneycontrol 等转述；政府未正式公布名单）。\n"
-    },
-    {
-      "id": "huawei-cloudrobo-wm1-2-nbd",
-      "title": "华为云发布并宣布开源昇腾原生具身世界模型 CloudRobo-WM1.2",
-      "badge": "华",
-      "summary": "华为云在具身世界模型发布会上发布首款基于昇腾算力训练的具身世界模型 CloudRobo-WM1.2，并宣布开源权重、推理和代码。",
-      "publishedAt": "2026-11-16T00:00:00+08:00",
-      "sortAt": "2026-11-16T00:00:00+08:00",
-      "timeLabel": "2026-11-16",
-      "timePrecision": "date",
-      "timeNote": "附件给出的发生时间是 2026-11-16，未给钟点，也未注明时区。timeLabel 只写日期；sortAt 采用 2026-11-16 零点（北京时间），仅用于排序，不是发布时间。",
-      "source": "每日经济新闻（东方财富转载）",
-      "confidence": "B",
-      "url": "https://wap.eastmoney.com/a/202611173932244491.html",
-      "links": [
-        {
-          "label": "每日经济新闻「数智早参」（东方财富转载）",
-          "url": "https://wap.eastmoney.com/a/202611173932244491.html"
-        }
-      ],
-      "detail": "## 它是什么\n\n用于机器人（具身智能）的「世界模型」：让机器人预测自己的动作会让环境发生什么变化，再据此生成动作。\n\n## 它做什么\n\n- 基于国产昇腾算力训练。\n- 采用共享世界模型骨干网络做预测增强的世界表征，基于「世界模型原生 DualAct 架构」实现动作生成。\n- 华为云称在 RoboTwin 2.0、LiberoPro 2.0 两个评测基准中均排名第一。\n- 宣布将开源权重、推理和代码（具体时间与地址报道未给出）。\n\n## 适合谁\n\n做机器人、具身智能研究的团队，以及关注国产算力生态的开发者。\n\n## 为什么值得看\n\n用国产算力训练的具身模型并开源，对国内机器人研发团队是可直接试用的基座；但基准排名不等于真实产线表现。\n\n## 可以核对的事实\n\n- 发布人：华为云具身产品线总裁、具身智能 Lab 主任吴小东（每日经济新闻）。\n- 基准排名为厂商自述，开源仓库地址待官方公布。\n- 本次未找到华为云官方原文链接，条目链接为每日经济新闻报道的东方财富转载。\n- 可信度 B（每日经济新闻等媒体报道）。\n"
     },
     {
       "id": "bis-remote-access-ifr-super-intelligence-chips",
