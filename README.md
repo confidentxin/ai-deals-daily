@@ -16,8 +16,8 @@
 
 ## 今日版：2026-11-17
 
-- 核实时间：2026-11-17 12:00（北京时间）
-- 新增：1 条；补录：1 条；急报：1 条；过期：0 条
+- 核实时间：2026-11-17 20:30（北京时间）
+- 今日无新增；急报：1 条；过期：1 条
 - 历史版本见 [`archive/`](archive/)。
 
 <a name="urgent"></a>
@@ -490,10 +490,10 @@
 - 截止：限时免费，官方未公布结束日
 - 限制：Beam Free 不含中国（含港澳）等地区；其余免费模型地区限制见官方文档；需海外账号（OpenCode），大陆可达性以账号实际为准
 
-#### Anthropic Claude · Fable 5.2 上线周免费试用（2026-11-11 20:30 新增，官方帮助中心已核实）
-- 内容：11 月 9 日发布的 Claude Fable 5.2 上线优惠：Pro 计划与 Team 标准席位在 11 月 9 日至 16 日期间可把 Fable 系列模型（5.2 / 5.1 / 5）计入套餐周限额、上限为周限额的 50%，无需另购 usage credits；另得一次 Fable 额度重置；Max、Ultra 与 Team 高级席位按付费时长得 1–3 次 Fable 重置；重置均需在设置里手动领取，不自动发放。官方帮助中心《Claude Fable 5.2 launch offers》：https://support.claude.com/en/articles/17506494-claude-fable-5-2-launch-offers
-- 额度：Pro / Team 标准席位：Fable 用量上限为周限额的 50% + 1 次 Fable 重置；Max / Ultra / Team 高级席位：1–3 次 Fable 重置（付费不满 6 个月 1 次、6–12 个月 2 次、12 个月以上 3 次）；重置只恢复已用的 Fable 额度、不提高限额
-- 截止：Pro 上线周与 Fable 重置至 2026-11-16 23:59（PT，北京时间 11 月 17 日 15:59）；Max / Ultra 的 Fable 重置至 2027-03-08 23:59（PT）
+#### Anthropic Claude · Fable 5.2 额度重置（Max / Ultra / Team 高级席位）（2026-11-11 20:30 新增，官方帮助中心已核实；2026-11-17 20:30 更新：Pro 上线周已结束）
+- 内容：11 月 9 日发布的 Claude Fable 5.2 上线优惠：Pro 计划与 Team 标准席位的 Fable 用量计入套餐周限额（上限为周限额的 50%）及 1 次 Fable 重置已于 2026-11-16 23:59（PT，北京时间 11 月 17 日 15:59）结束，见“已过期归档”区；Max、Ultra 与 Team 高级席位按付费时长得 1–3 次 Fable 重置，仍可领取；重置均需在设置里手动领取，不自动发放。官方帮助中心《Claude Fable 5.2 launch offers》：https://support.claude.com/en/articles/17506494-claude-fable-5-2-launch-offers
+- 额度：Max / Ultra / Team 高级席位：1–3 次 Fable 重置（付费不满 6 个月 1 次、6–12 个月 2 次、12 个月以上 3 次）；重置只恢复已用的 Fable 额度、不提高限额
+- 截止：Max / Ultra 的 Fable 重置至 2027-03-08 23:59（PT）
 - 限制：仅限付费订阅用户，免费版不含；须在 2026-11-09 10:00（PT）前已有付费账单；中国大陆不在 Claude 付费计划销售地区内，需海外账号
 
 #### Anthropic Claude · 全量额度一次免费重置（2026-11-11 20:30 新增，多源交叉、官方未核实）
@@ -638,7 +638,8 @@
 ### 即将到期：3–5 天内
 
 - 阶跃星辰 StepAudio 3 系列限时免费至 11 月 23 日 11:59（北京时间；原定 11 月 17 日截止，官方定价页 11 月 16 日更新为延期）。
-- Claude Fable 5.2 Pro 上线周免费至 11 月 16 日 23:59（PT，北京时间 11 月 17 日 15:59）。
+- 智谱 AutoClaw 每周福利 M11W3（国内版与国际版）至 11 月 22 日 23:59（北京时间）。
+- Perch AI · Qwen 3.8 Max 免费上 Starter 至 11 月 21 日 01:00（北京时间；2026-11-20 12:00 美东）。
 - Perplexity Decider v1.3 / Decider Flash v1.3 `:free` 约至 11 月 19 日。
 - Rime STT 免费至 11 月 19 日。
 - 蚂蚁百灵 Ling-3.2-flash 官方平台上线前两周免费约至 11 月 19 日（官方只写相对期限，未写具体结束日）。
@@ -907,6 +908,10 @@
 #### 腾讯 WorkBuddy · 混元 Hy3 限免延至 11 月 15 日（待确认线索，未获官方核实）
 - 内容：多家媒体称 Hy3 限免延至 11 月 15 日，官方通稿未写 Hy3 的新截止，始终未确认。官方页：https://www.codebuddy.cn/pricing/
 - 截止：声称截止 2026-11-15，已过且未核实，移出待确认线索区，只归档
+
+#### Anthropic Claude · Fable 5.2 Pro 上线周免费试用
+- 内容：11 月 9 日发布的 Claude Fable 5.2 上线优惠：Pro 计划与 Team 标准席位在 11 月 9 日至 16 日期间可把 Fable 系列模型（5.2 / 5.1 / 5）计入套餐周限额、上限为周限额的 50%，另得一次 Fable 额度重置。官方帮助中心：https://support.claude.com/en/articles/17506494-claude-fable-5-2-launch-offers
+- 截止：Pro 上线周与 Fable 重置至 2026-11-16 23:59（PT，北京时间 2026-11-17 15:59）已到期；2026-11-17 20:30 晚间汇总时移入归档；Max / Ultra / Team 高级席位的 Fable 重置仍可领至 2027-03-08，见“进行中：需要海外账号 / 地区受限”区
 
 <a name="notes"></a>
 ## 说明
