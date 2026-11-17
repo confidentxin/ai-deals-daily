@@ -17,7 +17,7 @@
 ## 今日版：2026-11-17
 
 - 核实时间：2026-11-17 20:30（北京时间）
-- 今日无新增；急报：1 条；过期：1 条
+- 新增：0 条；补录：7 条；急报：1 条；过期：1 条
 - 历史版本见 [`archive/`](archive/)。
 
 <a name="urgent"></a>
@@ -234,6 +234,11 @@
 - 内容：国内手机号注册新用户完成实名（个人或企业）认证后获赠 15 元代金券，自动抵扣 API 调用。官方平台文档：https://platform.kimi.com/docs/guide/account-and-payments ；官方帮助中心：https://www.kimi.com/help/kimi-api/api-free-trial
 - 额度：15 元；自发放起 3 个月有效；国内手机号 + 实名认证；平台文档口径：可用于 Kimi K3.1 Pro 与 Kimi K3，不可用于高速版 Kimi K3.1 Pro Highspeed；帮助中心旧页仍写“不可用于体验 Kimi K3”，两处官方口径冲突，适用模型以平台文档 / 控制台为准；无需绑卡
 - 截止：长期新人福利；代金券自发放起 3 个月有效
+
+#### 阿里 千问办公 · 首次激活桌面端送 30 天个人基础版会员 / 500 积分（2026-11-17 20:30 补录，官方活动页已核实）
+- 内容：首次激活「千问办公桌面端」（在桌面端发起过任务才算激活）按账号状态送福利。官方活动页：https://docs.qwenwork.cn/activity/desktop-activation-benefit
+- 额度：此前未激活且不在付费会员期：下载桌面端、完成新手任务送「个人基础版会员」30 天；此前未激活但在付费会员期：下载桌面端、发起任意任务送 500 积分（30 天有效）；已激活过的不能参加；个人账号福利，非组织版；与双十一首购优惠不可叠加，领赠送会员后失去首购资格；绑卡、实名要求官方页未提
+- 截止：自 2026-11-14 16:00 起，结束时间官方写“将提前在本页公告”，目前未知
 
 <a name="overseas"></a>
 ### 进行中：需要海外账号 / 地区受限
@@ -633,6 +638,42 @@
 - 额度：每月 10 美元免费额度（官方定价页原句）；每月重置规则与一次性迎新奖励官方定价页本次未见，以控制台显示为准；搜索 10 QPS、Agent 并发 50；绑卡要求官方定价页未写
 - 截止：长期每月发放（官方定价页未写结束日）
 - 限制：需海外账号；大陆可达性未知
+
+#### 阿里云 Model Studio（国际站·新加坡）· qwen4-max 100 万 Token 免费额度（2026-11-17 20:30 补录，官方定价页已核实）
+- 内容：正式版 qwen4-max（1M 上下文）在新加坡地域、International 部署范围下，每个账号单独的免费额度。官方定价页：https://www.alibabacloud.com/help/en/model-studio/model-pricing ；免费额度说明：https://www.alibabacloud.com/help/en/model-studio/new-free-quota
+- 额度：100 万 Token（输入+输出合计），仅覆盖实时推理，不含 Batch/微调；需完善阿里云国际账号信息并开通 Model Studio；仅通用按量付费 Key 扣此额度，Token Plan / Coding Plan 专用 Key 不走；额度用完默认自动按量计费（输入 $1.5 / 输出 $4.5 每百万 Token），请提前在控制台开启「仅用免费额度 Free Quota Only」
+- 截止：自开通 Model Studio、模型发布（11-16）或申请通过三者中较晚日起 90 天有效
+- 限制：需海外账号（阿里云国际站账号，新加坡地域）；大陆可注册但需国际站实名/支付信息，具体以账号为准
+
+#### Nous Portal · 腾讯 Hy4 flash 免费路由（2026-11-17 20:30 补录，免费状态官方 Portal 页已核实；截止多源交叉、官方未核实）
+- 内容：Nous Research 的 Portal 上线 Hy4 flash 免费路由 `tencent/hy4-flash:free`，与 WorkBuddy、OpenCode 的 Hy4 flash 限免是不同入口。官方 Portal 模型页：https://portal.nousresearch.com/models
+- 额度：免费路由 $0 计价；速率/每日上限官方页未写；需 Nous Portal 账号；绑卡要求未知
+- 截止：约 2026-11-30（Nous 11 月 16 日宣布“两周免费”为多家第三方一致转述，官方模型页未写截止）；以页面当前展示为准
+- 限制：需海外账号（Nous Portal）；大陆可达性未知
+
+#### Nous Portal · StepFun Step 3.7 Flash 免费路由（2026-11-17 20:30 补录，官方 Portal 页已核实）
+- 内容：Nous Portal 模型页 Free Models 区列出 `stepfun/step-3.7-flash:free`，$0 计价。官方 Portal 模型页：https://portal.nousresearch.com/models
+- 额度：免费路由 $0 计价；速率/每日上限官方页未写；需 Nous Portal 账号；绑卡要求未知
+- 截止：截止未知（官方 Portal 页未写截止）；以页面当前展示为准
+- 限制：需海外账号（Nous Portal）；大陆可达性未知
+
+#### Nous Portal · Upstage Solar Mini 4 免费路由（2026-11-17 20:30 补录，官方 Portal 页已核实）
+- 内容：Nous Portal 模型页 Free Models 区列出 `upstage/solar-mini4:free`，$0 计价。官方 Portal 模型页：https://portal.nousresearch.com/models
+- 额度：免费路由 $0 计价；速率/每日上限官方页未写；需 Nous Portal 账号；绑卡要求未知
+- 截止：截止未知（官方 Portal 页未写截止）；以页面当前展示为准
+- 限制：需海外账号（Nous Portal）；大陆可达性未知
+
+#### Liquid AI · Liquid Console 新组织 $2 免费额度（2026-11-17 20:30 补录，官方定价页已核实）
+- 内容：托管 API 新组织赠金，可用于今日发布的 d1.2（输入 $0.02/百万 Token）、d1.2-ultra（输入 $0.042/百万 Token、输出 0 计费）及 LFM 系列；$2 赠金为长期新组织福利，非今日新设，本次首次收录。官方定价页：https://www.liquid.ai/pricing
+- 额度：每个新组织 $2 免费额度；按 d1.2 单价约可跑 1 亿输入 Token（按官方单价折算，非官方数字）；绑卡要求官方页未写
+- 截止：长期（官方未写截止）
+- 限制：需海外账号（Liquid Console）；大陆可达性未知
+
+#### OpenAI · ChatGPT for Academic Researchers 新一轮 5 万份（2026-11-17 20:30 补录，官方博客已核实）
+- 内容：学术研究者免费 ChatGPT Plus 资助，先到先得（不再抽签）；2026-11-23 开放申请，尚未开放；本轮为 Plus（试点为 Pro）。官方博客：https://openai.com/index/expanding-chatgpt-for-academic-researchers ；帮助中心：https://help.openai.com/en/articles/20001406-chatgpt-for-academic-researchers
+- 额度：每份资助含 3 个 Plus 席位（本人 + 最多 2 名同机构合作者），最长 12 个月；须为受支持国家合格机构的研究型教职或博士后、近 3 年在生物/化学材料/计算机/地球行星/工程/数学/物理等领域有发表；符合条件不保证获批；已在候补名单者开放前会收邮件；绑卡要求未提
+- 截止：2026-11-23 开放申请（具体时刻与时区官方未写），5 万份发完即止
+- 限制：地区受限 + 限特定人群；中国大陆是否在“受支持国家”官方未列明，ChatGPT 官方不支持中国大陆，按不可达处理
 
 <a name="expiring"></a>
 ### 即将到期：3–5 天内
