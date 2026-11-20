@@ -1,388 +1,346 @@
 {
-  "asOf": "2026-11-19",
+  "asOf": "2026-11-20",
   "timezone": "Asia/Shanghai",
   "preview": 10,
   "empty": false,
   "emptyMessage": "今日暂无重要资讯，晚间 19:30 起每日更新",
-  "note": "2026-11-19 早报+晚报（北京时间）整理：早报 7 条（Anthropic 将 IPO 定价为每股 83.00 美元并预计 11 月 19 日以 ANT 在纳斯达克开盘、Google 发布 Gemini 4 Neon、OpenAI 称其模型改进 AMD 旗舰 GPU 设计、Genie 4 向 Google AI Ultra 用户开放、美国部分银行更新第三方 AI 代理责任条款、Meta Muse 接入 Loblaw 并在加拿大推出 Voice，以及 OpenAI 关于研究加速的内部测量报告）；晚报 7 条（Google Labs 推出 Stitch Loop、NVIDIA 发布 Cosmos Data Factory、OpenAI 推出 ChatGPT for Accounting、媒体称豆包工作日活破 800 万且企业 ARR 破 20 亿元、腾讯三季报披露 WorkBuddy 日活超 1000 万及资本开支同比增 225%、路透社称美国政府考虑要求美企披露使用中国 AI 模型、DeepSeek 调整服务端搜索计费）。按公告时间从新到旧排列。带精确钟点的条目 timeLabel 用北京时间；官方只给日期的条目 timePrecision 为 date，timeLabel 只写日期，sortAt 仅用于排序，详见各条 timeNote。置信度 A 表示来自官方原文，B 表示可靠媒体报道、官方未单独核实；同一条里官方事实与未经官方单独核实的报道需要分开看时标 A/B，详见该条「可以核对的事实」。",
+  "note": "2026-11-20 早报+晚报（北京时间）整理：早报 8 条（Microsoft 宣布 Aion Instruct 正式可用并在 Edge 开启 Prompt API 源试验、彭博/The Verge 报道苹果招聘智能体工程师、Anthropic 股票 ANT 首日开盘 111.50 美元并收盘 97.17 美元、NVIDIA 与 Microsoft 扩大 Azure Vera Rubin 与 Foundry 合作、Google 推出 Gemini API Tool Retrieval 预览、Gemini Mac 版 computer use、Genie 4 接入 Gemini API，以及 Google 与 Blue Origin 合作执行 Project Suncatcher 首次重型发射）；晚报 4 条（OpenAI 开始向部分 Pro 用户测试新的 ChatGPT 移动端界面、ChatGPT Health 扩展到 Android/桌面/Dots/站点、OpenAI 开始向部分 Plus 用户测试 Dots 并向美国 Business Standard 开放、OpenAI 在 API 推出 GPT-Live-1.1 并新增 Standby 计费）。按公告时间从新到旧排列。带精确钟点的条目 timeLabel 用北京时间；官方只给日期的条目 timePrecision 为 date，timeLabel 只写日期，sortAt 仅用于排序，详见各条 timeNote。置信度 A 表示来自官方原文，B 表示可靠媒体报道、官方未单独核实；同一条里官方事实与未经官方单独核实的报道需要分开看时标 A/B，详见该条「可以核对的事实」。",
   "items": [
     {
-      "id": "anthropic-ipo-pricing",
-      "title": "Anthropic 将 IPO 定价为每股 83.00 美元，股票代号 ANT，预计 11 月 19 日在纳斯达克开盘",
+      "id": "openai-chatgpt-new-mobile-design",
+      "title": "OpenAI 开始向部分 ChatGPT Pro 用户测试新的移动端界面：Dot 独立标签，并可在标签栏固定 Codex、项目和图像",
       "badge": "N",
-      "summary": "Anthropic 宣布 Class A 普通股 IPO 定价为每股 83.00 美元，共发行 9.80 亿股，预计 2026 年 11 月 19 日以代号 ANT 在纳斯达克开始交易。官方稿未写估值；多家媒体报道按此定价计算的完全稀释估值约为 1.5 万亿美元。",
-      "publishedAt": "2026-11-19T06:11:00+08:00",
-      "sortAt": "2026-11-19T06:11:00+08:00",
-      "timeLabel": "2026-11-18",
-      "timePrecision": "date",
-      "timeNote": "Anthropic 官网只标注 Nov 18, 2026，页面 datePublished 为 2026-11-18T00:00:00.000Z，属日期占位，不当作精确时刻。TechCrunch 报道时间为太平洋时间 14:11（北京时间 11 月 19 日 06:11），此为媒体发稿时间。sortAt 取该发稿时间仅用于排序，不代表官方精确公告时刻。",
-      "source": "Anthropic",
-      "confidence": "A/B",
-      "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
-      "links": [
-        {
-          "label": "Anthropic：IPO 定价公告",
-          "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering"
-        },
-        {
-          "label": "CNBC 报道",
-          "url": "https://www.cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html"
-        },
-        {
-          "label": "AP 报道",
-          "url": "https://apnews.com/article/anthropic-ipo-pricing-70b660ddf900d90bbf484ecdf1fb441c"
-        },
-        {
-          "label": "Fortune 报道",
-          "url": "https://fortune.com/2026/11/18/anthropic-prices-ipo-83-per-share-1-5-trillion/"
-        },
-        {
-          "label": "TechCrunch 报道",
-          "url": "https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range/"
-        }
-      ],
-      "detail": "## 它是什么\n\nClaude 开发商 Anthropic, PBC 的最终 IPO 定价公告，不是新模型或新产品发布。交易尚未开始。\n\n## 它做什么\n\n- 官方写明：本次发行定价为每股 83.00 美元，共 980,000,000 股 Class A 普通股，其中 956,351,354 股由 Anthropic 出售，23,648,646 股由部分出售股东出售；公司不会获得出售股东那部分的所得。\n- 按官方股数与定价计算：本次发行总规模为 813.40 亿美元（980,000,000 × 83.00）；其中公司发售部分对应 79,377,162,382 美元，出售股东部分对应 1,962,837,618 美元。\n- 股票预计于 2026 年 11 月 19 日在纳斯达克 Global Select Market 以代号「ANT」开始交易；发行预计于 2026 年 11 月 20 日交割，须满足惯常交割条件。Anthropic 还授予承销商一项为期 30 天的选择权，可额外购买最多 147,000,000 股 Class A 普通股。若选择权被全数行使，按同一发行价计算，额外规模为 122.01 亿美元；官方并未写选择权是否会行使。\n- 美国证券交易委员会已于 2026 年 11 月 18 日宣布相关注册声明生效。发行仅通过招股说明书进行。官方列出可索取最终招股说明书的承销商为 Goldman Sachs & Co. LLC 与 Morgan Stanley & Co. LLC。\n- 媒体补充（官方定价稿未写）：此前指导区间为每股 70–78 美元，原计划出售约 8.25 亿股；本次上调定价并扩大发行规模。AP、Fortune、TechCrunch 等报道称，按此发行价计算的完全稀释估值约为 1.5 万亿美元。CNBC 写得更谨慎：市值取决于已发行总股数，但这一价格会把估值推到 Anthropic 此前瞄准的 1.4 万亿美元之上。CNBC 还按 9.80 亿股、每股 83 美元计算出约 813 亿美元的发行规模，并把它与今年 6 月 SpaceX IPO 的初始募资作比较。上述估值与比较不是官方定价稿中的数字。\n- 截至本早报检索时（北京时间 11 月 19 日 08:00，对应美国东部 11 月 18 日 19:00），美股尚未到 11 月 19 日开盘，官方也只是「预计」当天开始交易，本条不包含开盘价或首日涨跌。\n\n## 适合谁\n\n关注 AI 实验室上市、Claude 背后公司资本结构，以及开盘后估值如何被市场定价的读者。普通开发者和消费者的产品使用不受定价本身的直接影响。\n\n## 为什么值得看\n\n这是昨晚晚报明确留待补录的事项：最终发行价已经由官方落地，而且高于此前 70–78 美元的指导区间。对行业的意义在于，这是前沿大模型公司首次以纯 AI 实验室身份完成定价并准备挂牌；但估值、募资是否「创纪录」目前只见于媒体表述，交易也还没开始，需要等到 11 月 19 日美股开盘后再看实际成交。\n\n## 可以核对的事实\n\n- 每股 83.00 美元、9.80 亿股构成、公司与出售股东的股数划分、公司不获得出售股东所得、ANT 代号、预计 11 月 19 日开盘与 11 月 20 日交割、30 天内额外 1.47 亿股选择权、SEC 于 11 月 18 日宣布注册声明生效、Goldman Sachs 与 Morgan Stanley：见 Anthropic 官方公告（A）。813.40 亿美元等规模数字由上述官方股数与单价直接相乘得出。\n- 此前 70–78 美元指导区间、由约 8.25 亿股上调、约 1.5 万亿美元估值、以及与 SpaceX 募资规模的比较：见 CNBC、AP、Fortune、TechCrunch（B）。官方定价稿未写这些数字。\n"
-    },
-    {
-      "id": "google-gemini-4-neon",
-      "title": "Google 发布 Gemini 4 Neon：面向复杂工程、知识工作与科学流程的更快前沿模型，API 定价为每百万 token 3 / 15 美元",
-      "badge": "N",
-      "summary": "Google 推出 Gemini 4 Neon，定位为在复杂软件工程、知识工作与科学工作流中更快完成端到端任务的前沿模型。API 定价为每百万输入 token 3 美元、每百万输出 token 15 美元，100 万 token 上下文，即日起向付费开发者、企业和 Pro / Ultra 用户滚动开放。",
-      "publishedAt": "2026-11-19T05:00:00+08:00",
-      "sortAt": "2026-11-19T05:00:00+08:00",
-      "timeLabel": "2026-11-19 05:00",
+      "summary": "OpenAI 开始为 ChatGPT 移动应用推出新界面：Dot 拥有独立标签，用户可以把 Codex、项目和图像等固定到标签栏。官方更新日志写明，本次先面向满足年龄与地区条件、且 Dots 可用地区的 ChatGPT Pro 用户；一小部分符合条件的 Plus 用户也会看到新界面。部分符合条件的 Pro 用户会默认看到新设计，也可在设置中开关。",
+      "publishedAt": "2026-11-20T07:20:58+08:00",
+      "sortAt": "2026-11-20T07:20:58+08:00",
+      "timeLabel": "2026-11-20 07:20",
       "timePrecision": "datetime",
-      "timeNote": "官方博客 JSON-LD datePublished 为 2026-11-18T21:00:00+00:00，合北京时间 11 月 19 日 05:00；dateModified 为 2026-11-18T22:59:17+00:00。列表采用发表时间。",
-      "source": "Google",
-      "confidence": "A",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
-      "links": [
-        {
-          "label": "Google：Introducing Gemini 4 Neon",
-          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
-        },
-        {
-          "label": "Gemini 4 Neon 模型卡",
-          "url": "https://deepmind.google/models/model-cards/gemini-4-neon/"
-        }
-      ],
-      "detail": "## 它是什么\n\nGemini 4 系列里介于 Carbon（更重、更长周期推理）与 Hydrogen（更轻、日常代理执行）之间的新模型，强调在接近前沿能力的同时降低单次任务成本、加快完成速度。它不是对已有 Carbon / Hydrogen 的改名，而是单独发布的型号。\n\n## 它做什么\n\n- 官方定价：每百万输入 token 3 美元，缓存输入为每百万 0.15 美元（官方写明相当于 95% 折扣），每百万输出 token 15 美元；上下文窗口为 100 万 token。官方称 Neon 有四档思考级别，可按工作负载调节智力与 token 花费。\n- 官方给出的部分评测（均为官方表述，本报告未复测）：在 Artificial Analysis Intelligence Index 的 xhigh 思考级别上总分为 61、整体第 3，并称优于同级可比模型；Vals Index 第 2（70.9%），并在 Legal Research Bench 与 Tax Agent Bench 上列第 1；Artificial Analysis Coding Agent Index 总分 58.6、整体第 1；Terminal-Bench 4.1 为 65.2%，FrontierCode 2.0 在默认 high 设置为 46.2%；Agents' Last Exam v1.1 为 75.8%。科学与数学方面，官方称 Terminal-Bench Science 70.5%、RiemannBench 84.0%、HLE-Diamond 71.3%。官方还称，在默认 high 思考级别下，单次任务成本比 Carbon 低 32%。\n- 网络安全方面，官方另外提到 Gemini 4 Neon for cyber，并将向 Fairwind Program 中的可信防御方滚动开放；普通 API 用户不能把这理解成已对所有人开放同等「攻防」能力。\n- 可用性（官方写「即日起开始滚动」）：付费层级的 Gemini API（Google AI Studio、Android Studio）；Gemini for business（通过 API 或模型下拉菜单）与 Google Antigravity；Google AI Pro 与 Ultra 订阅用户可在 Gemini 应用的模型下拉菜单中选择 Neon，Pro / Ultra 也可在 Antigravity 与 AI Studio 中使用。Fairwind Program 合格成员将在随后几天获得网络安全方向的访问，申请需联系 Cloud 客户团队。\n- 官方还称，Neon 在内部 Google Antigravity 测试中录得 Gemini 4 迄今最低的捏造率，并在 Gray Swan 间接提示注入基准的最高思考级别、配合实时防护时，攻击成功率为 0.0%。这些都是官方安全评测表述，不是第三方复测。\n\n## 适合谁\n\n需要在编码、分析、长流程代理和科学研究里取得接近前沿效果、又希望比最大号模型更便宜更快的开发者与企业用户；以及已经订阅 Google AI Pro / Ultra 的 Gemini 应用用户。免费用户不能按这篇公告直接在应用里手动选择 Neon。\n\n## 为什么值得看\n\n这是本窗口里除 IPO 之外最直接的产品发布：有明确价格、明确窗口，并且立刻进入 API、Antigravity 和 Gemini 应用。对开发者的实际变化是多了一个「更快的前沿档」选项；对评测数字仍应回到官方博客和模型卡核对，而不是把排位当成第三方复测结果。\n\n## 可以核对的事实\n\n- 发布时间、定价、100 万 token 上下文、四档思考级别、滚动开放范围、Fairwind Program 安排，以及文中列出的基准分数与安全表述：见 Google 官方博客；更完整的能力与限制见模型卡（A）。基准与「最低捏造率」等均为官方表述，本报告未复测。\n"
-    },
-    {
-      "id": "openai-chip-design-amd",
-      "title": "OpenAI 称其模型为 AMD 旗舰 GPU 设计带来最高 14% 的 PPA 改进，部分改动已送交流片",
-      "badge": "N",
-      "summary": "OpenAI 称其模型在 AMD 旗舰 GPU IP 上，相对已经过充分优化的基线，最高带来 14% 的功耗、性能与面积改进；并称 AMD 已把部分改动纳入最近送交制造的设计，另一些写入未来版本的生产设计文件。",
-      "publishedAt": "2026-11-19T02:55:00+08:00",
-      "sortAt": "2026-11-19T02:55:00+08:00",
-      "timeLabel": "2026-11-18",
-      "timePrecision": "date",
-      "timeNote": "OpenAI 官网只标注 November 18, 2026，未给钟点。The Next Web 报道时间为 18:55 UTC（北京时间 11 月 19 日 02:55），此为媒体发稿时间。sortAt 取该发稿时间仅用于排序，不代表官方精确公告时刻。",
+      "timeNote": "ChatGPT/Codex 工程负责人 Thibault Sottiaux 在 X 上的帖子时间为 2026-11-19T23:20:58.000Z，即北京时间 11 月 20 日 07:20；按精确时刻记录。官方 ChatGPT 更新日志将该条放在 November 19, 2026 标题下，与美国日期一致。",
       "source": "OpenAI",
       "confidence": "A",
-      "url": "https://openai.com/index/advancing-chip-design-with-our-models/",
+      "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
       "links": [
         {
-          "label": "OpenAI：Advancing chip design with OpenAI models",
-          "url": "https://openai.com/index/advancing-chip-design-with-our-models/"
-        },
-        {
-          "label": "The Next Web 报道",
-          "url": "https://thenextweb.com/news/openai-models-amd-gpu-chip-design-14-percent"
-        }
-      ],
-      "detail": "## 它是什么\n\n一篇关于用前沿模型做芯片电路设计（尤其是改写 SystemVerilog RTL）的官方进展报告，不是新消费级模型发布，也不是新芯片上市公告。\n\n## 它做什么\n\n- 与 AMD 的合作：官方称，在旗舰 GPU IP 上看到相对「heavily optimized baselines」最高 14% 的改进；模型通过改写描述电路的代码（SystemVerilog RTL）找出进一步改进，并用 Synopsys 工具验证改写后行为保持不变，再评估功耗、性能与面积权衡。官方把这表述为「大约一年的进展在不到 5 个月里完成」。官方还称，AMD 已把部分改动纳入最近送交制造的设计，并把其他改动加入未来版本的生产设计文件；AMD 还验证了其下一代旗舰 CPU 关键模块上由该模型写成的设计具有个位数百分比的 PPA 收益。\n- 自研推理芯片 Jalapeño：OpenAI 回顾，团队从 2025 年初就开始用 GPT-4o 辅助设计 Jalapeño。官方估计，模型建议的改动使向量单元标准单元面积约减少 13%、矩阵单元约减少 10%，并称这些优化已在 Jalapeño 的硅片验证（silicon bring-up）中得到证实。文中还给出了一些子模块例子，例如某乘法器改设计在综合中标准单元面积约少 15%，并把延迟从两拍减到一拍。\n- 开源 RISC-V 评测：官方用 PicoRV32 与 OpenTitan 的 Ibex 两个 32 位开源核对多代模型做了对比，并称在约 112,000 token 的可比预算下，GPT-6.2 Astra 在两个核上都得到最高平均分；从规格书从头设计时，五款模型的得分都高于改进现有设计，完整评估包含 9,881 次计分运行。官方也提醒：从规格书出发时，模型可以省略原核中的部分功能，测试工作负载可能较少依赖这些功能，因此得分优势不能直接等同于生产级芯片设计。\n- 下一步：OpenAI 称正与 Synopsys 合作训练名为 GPT-Synopsys 的新模型，使其按芯片设计师的方式使用 Synopsys 电子设计自动化（EDA）工具。\n\n## 适合谁\n\n关注 AI 辅助芯片设计、OpenAI 自研芯片 Jalapeño，以及 AMD GPU / CPU 设计流程的硬件与系统工程师。普通 API 用户不会因为这篇博客立刻得到新模型或降价。\n\n## 为什么值得看\n\n如果官方所述成立，这是把模型能力从「写代码、做代理」推进到「改生产级芯片 RTL，并且部分结果已经送交流片」的一个具体案例。需要同时记住：百分比和改进周期都是 OpenAI 的表述，本报告没有看到 AMD 自己的新闻稿复述同一组数字；OpenAI 也承认从规格书生成的评测比改现有设计更宽松。\n\n## 可以核对的事实\n\n- 最高 14% PPA、不到 5 个月、部分改动已送交制造、CPU 关键模块个位数百分比收益、Jalapeño 向量 / 矩阵单元约 13% 与 10% 的面积减少、RISC-V 评测设置与 9,881 次运行、以及 GPT-Synopsys 合作：见 OpenAI 官方博客（A）。这些数字均为官方表述，本报告未复测，也未见 AMD 官方新闻稿单独确认同一组百分比。\n- 媒体跟进与发稿时间：见 The Next Web（B，用于时间排序，不替代官方数字）。\n"
-    },
-    {
-      "id": "google-genie-4-project-genie",
-      "title": "Google DeepMind 向符合条件的 Google AI Ultra 用户开放 Genie 4，并更新 Project Genie 体验",
-      "badge": "N",
-      "summary": "Google 向符合条件的 Google AI Ultra 订阅用户推出新的 Project Genie 体验：首次开放世界模型 Genie 4，升级 Genie 3，并加入可对话搭建世界的 agent 以及可发布、Remix 的社区画廊。Google AI Pro 用户可在同一页面排队。",
-      "publishedAt": "2026-11-19T02:00:00+08:00",
-      "sortAt": "2026-11-19T02:00:00+08:00",
-      "timeLabel": "2026-11-19 02:00",
-      "timePrecision": "datetime",
-      "timeNote": "官方博客 JSON-LD datePublished 为 2026-11-18T18:00:00+00:00，合北京时间 11 月 19 日 02:00；dateModified 为 2026-11-18T18:13:00+00:00。列表采用发表时间。",
-      "source": "Google DeepMind",
-      "confidence": "A",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/",
-      "links": [
-        {
-          "label": "Google：Genie 4 is now available",
-          "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/"
-        },
-        {
-          "label": "Project Genie 产品页",
-          "url": "https://labs.google/projectgenie"
-        },
-        {
-          "label": "Genie 4 模型卡",
-          "url": "https://deepmind.google/models/model-cards/genie-4/"
-        }
-      ],
-      "detail": "## 它是什么\n\n把今年早些时候作为研究原型公布的世界模型，第一次以产品形态放进 Project Genie，供符合条件的 Ultra 用户在浏览器里生成、进入并改写可交互世界。这不是 Gemini 4 Neon 的一部分，而是并行的世界模型更新。\n\n## 它做什么\n\n- Genie 4：官方称这是迄今最逼真、可交互性最强的世界模型。用户可在探索过程中输入新提示，实时改世界，例如改变天气、加入角色或改写情节。Genie 4 首次为这些画面配上实时原生音频，并随场景变化调整，涵盖环境声和角色对白。\n- Genie 3 仍留在模型选择器中，面向更长回合或由 360 度全景图引导的空间。当天更新包括：单次生成可探索时间由 60 秒延长到最多 3 分钟，并可把多个世界串联起来；支持用 360 度全景图作为新世界的接地；以及用自然语言提示实时触发世界内事件。\n- 新增 Project Genie agent：用自然语言描述想法，由代理调度 Google 的多模态模型生成初始视觉风格，并配上符合情绪的背景音乐。探索时也可引入 Gemini，观察画面、给出下一步建议芯片，或自动触发世界内事件。\n- 新画廊汇集官方策划世界和社区作品，用户可直接进入、Remix，并把作品发布到社区画廊。公告点名的早期合作包括与 Will（BLVCKL!GHT）合作的「Villa Giallo」，以及与电影人 Anand Gandhi 合作的「The Life of Ants」。\n- 责任与限制：Project Genie 生成的视频和音频都带 SynthID 水印，输入和输出会经过安全筛查。官方明确，Genie 3 和 Genie 4 仍属前沿研究中的世界模型，并在相机延迟、复杂物理交互、实时音频精度和长期场景持续性等方面仍有挑战。\n\n## 适合谁\n\n已订阅并符合条件的 Google AI Ultra 用户，以及想排队体验的 Google AI Pro 用户。普通免费用户和未开放地区的用户目前还不能直接进入。\n\n## 为什么值得看\n\nGenie 4 此前更多是研究演示，这次是第一次对 Ultra 用户开放，并且把「中途改世界 + 原生音频 + 社区画廊」写成可试用的产品能力。它仍然是实验原型，官方自己也列出了延迟和物理一致性等限制，不宜理解成已经成熟的通用世界模拟器。\n\n## 可以核对的事实\n\n- 发布时间、Ultra 先用与 Pro 排队、Genie 4 中途提示与原生音频、Genie 3 延长到最多 3 分钟与全景接地、agent 与画廊、SynthID 与研究限制：见 Google 官方博客；试用入口见 Project Genie 产品页，能力与限制见模型卡（A）。\n"
-    },
-    {
-      "id": "us-banks-ai-agent-liability",
-      "title": "花旗、PNC 等美国银行更新条款：客户若把账户交给第三方 AI 代理，相关操作与失窃风险由客户承担",
-      "badge": "N",
-      "summary": "TechCrunch 报道，花旗近期更新在线用户协议，明确客户若授权第三方 AI 工具访问账户，须自行承担由此产生的操作后果；若工具泄露凭证或被入侵，客户也要为黑客随后的操作负责。报道称 PNC 在同一天更改了条款。",
-      "publishedAt": "2026-11-19T01:32:00+08:00",
-      "sortAt": "2026-11-19T01:32:00+08:00",
-      "timeLabel": "2026-11-18",
-      "timePrecision": "date",
-      "timeNote": "TechCrunch 报道时间为太平洋时间 09:32（北京时间 11 月 19 日 01:32），此为媒体发稿时间。花旗称为「最近」更新在线用户协议，PNC 为报道所说的「今天」；官方未给统一公告时刻。sortAt 取该发稿时间仅用于排序。",
-      "source": "TechCrunch",
-      "confidence": "B",
-      "url": "https://techcrunch.com/2026/11/18/more-banks-says-customers-using-ai-agents-are-on-their-own-even-if-they-get-hacked/",
-      "links": [
-        {
-          "label": "TechCrunch 报道",
-          "url": "https://techcrunch.com/2026/11/18/more-banks-says-customers-using-ai-agents-are-on-their-own-even-if-they-get-hacked/"
-        }
-      ],
-      "detail": "## 它是什么\n\n美国大型银行对「第三方 AI 代理操作用户银行账户」的责任划分正在收紧，不是某个模型发布，而是金融账户使用权和风险归属的政策变化。\n\n## 它做什么\n\n- 花旗发言人对 TechCrunch 表示，随着第三方 AI 工具更普及，银行希望客户理解分享银行凭证或授权这些工具访问账户的风险；花旗最近更新了 Online User Agreement，以更清楚地说明这些风险，并重申：选择向第三方 AI 代理开放账户访问的客户，须为这些代理进行的活动负责。\n- 报道称，花旗的更新还写明：如果 AI 工具泄露凭证或被黑客攻击，客户也要为黑客对账户所做的事情负责。\n- 报道还称：PNC 于报道当天更改条款；Citizens 本周向客户发送电子邮件，提醒他们也要对 AI 助手的行为负责（TechCrunch 称见过这封邮件）。摩根大通与美国银行已在上个月宣布类似政策，此处只作背景，不当作本窗口新公告。\n- 报道指出，花旗条款同时说明，使用花旗自己提供的 AI 代理不会给客户增加额外责任。文中还提到，Anthropic 本月早些时候推出的个人理财工具被明确写成「只读」，「不能转移、管理或投资你的钱」。这是报道中的对照，不是花旗公告的一部分。\n\n## 适合谁\n\n已经或准备把银行、券商账户授权给第三方 AI 代理（包括通用智能体和理财类产品）的用户，以及关注代理应用如何落地到金融场景的产品与政策读者。中国用户不能直接把美国银行条款套用到国内账户，但可以看出大型金融机构对第三方代理登录的态度。\n\n## 为什么值得看\n\n模型厂商在推「把账户交给代理、自动完成支付和理财」，银行则在把责任推回给用户，尤其是把「被黑、凭证泄露」也划到客户一侧。这会直接影响普通人敢不敢把银行登录交给第三方智能体，也关系到代理产品能不能真正进入个人金融。\n\n## 可以核对的事实\n\n- 花旗发言人关于更新 Online User Agreement、以及客户须为第三方 AI 代理活动负责的表述：见 TechCrunch 对发言人的引述（B）。PNC「当天改条款」、Citizens 邮件、以及「被黑也由客户负责」的概括，同为该报道内容（B）。摩根大通与美国银行的政策发生在上个月，不是本窗口新事件。本报告未逐份打开各家银行的完整用户协议原文。\n"
-    },
-    {
-      "id": "google-stitch-loop",
-      "title": "Google Labs 推出实验产品 Stitch Loop：可连接代码库与线上指标、持续提交待审核 PR 的产品代理",
-      "badge": "N",
-      "summary": "Google Labs 推出实验产品 Stitch Loop，连接代码库和线上指标后持续寻找改进点，在隔离沙箱里写代码并提交 GitHub PR，须由人审核后才能合并。等候名单对全球开放，符合条件的 Google AI Ultra 用户优先。",
-      "publishedAt": "2026-11-19T01:00:00+08:00",
-      "sortAt": "2026-11-19T01:00:00+08:00",
-      "timeLabel": "2026-11-19 01:00",
-      "timePrecision": "datetime",
-      "timeNote": "Google 官方博客 datePublished 为 2026-11-18T17:00:00+00:00，即北京时间 11 月 19 日 01:00；dateModified 为同日 17:00:28 UTC。",
-      "source": "Google",
-      "confidence": "A",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-loop/",
-      "links": [
-        {
-          "label": "Google 官方博客：Introducing Stitch Loop",
-          "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-loop/"
-        },
-        {
-          "label": "Stitch Loop 等候名单",
-          "url": "https://stitch.google.com/loop/waitlist"
-        }
-      ],
-      "detail": "## 它是什么\n\n一项面向已上线产品持续优化的实验性代理，不是新的通用大模型发布。它把 Stitch 从「把想法做成界面」延伸到上线之后的维护和改进。\n\n## 它做什么\n\n- 官方说明：用户先连接 GitHub 和产品上下文（日志、用户行为、反馈等），可通过 180 多种集成、自定义 MCP 服务器或本地 CLI 上传。Stitch Loop 围绕可量化目标运行持续循环。\n- 默认提供网络安全、延迟和无障碍三组循环，也可自行新增，例如提升结账转化。每个循环包含四步：提出有证据的改进建议、给出带取舍的方案（适用时含视觉设计选项）、在隔离云沙箱中写代码并打开供你批准的 GitHub PR（相关时附截图和视频）、再根据线上数据复盘并继续观察。\n- 官方写明：在你审核并合并 PR 之前，不会自动合入任何改动。\n- 安全循环把 Gemini 4 Carbon 的网络安全能力与 DeepMind 的 CodeMender 结合，扫描代码库中的漏洞，附上证据并提交修复 PR 供审核。\n- 也可作为 Antigravity 等编程代理的服务层，或通过 Stitch CLI 和 MCP 接入现有工作流；在 Slack 中可用 @stitch 获取每日洞察摘要并创建新循环。\n- 等候名单即日起对全球用户开放，符合条件的 Google AI Ultra 用户可获优先开通。报名地址为 stitch.google.com/loop/waitlist，反馈渠道为 Google Labs Discord。官方未公布具体排队时长或全面开放时间。\n\n## 适合谁\n\n需要持续维护已上线产品的小团队、关注安全/性能/无障碍自动修复、以及已经在用 Stitch 或 Antigravity 的开发者。\n\n## 为什么值得看\n\n它把「代理写完代码就结束」延伸到上线后的长期循环，并且把合并权留在人手里。目前仍是实验和等候名单，实际效果、权限边界和误报修复质量都还有待使用后验证。\n\n## 可以核对的事实\n\n- 发布与定位、四步循环、默认安全/延迟/无障碍循环、须人工批准 PR、CodeMender、全球等候名单及 Ultra 优先：见 Google 官方博客（A）。页面 datePublished 为 2026-11-18T17:00:00+00:00。\n"
-    },
-    {
-      "id": "nvidia-cosmos-data-factory",
-      "title": "NVIDIA 发布 Cosmos Data Factory：五套云原生蓝图和六项可组合技能，用于为物理 AI 整理、增强和生成训练数据",
-      "badge": "N",
-      "summary": "NVIDIA 推出 Cosmos Data Factory：在 Cosmos 开放平台上提供五套云原生参考蓝图和六项可组合技能，用于为自动驾驶、机器人与视觉检测整理、标注、增强和生成训练数据，并可用编程代理以提示词编排流程。",
-      "publishedAt": "2026-11-19T01:00:00+08:00",
-      "sortAt": "2026-11-19T01:00:00+08:00",
-      "timeLabel": "2026-11-19 01:00",
-      "timePrecision": "datetime",
-      "timeNote": "NVIDIA 开发者博客 datePublished / article:published_time 为 2026-11-18T17:00:00+00:00，即北京时间 11 月 19 日 01:00。页面随后有过修改，dateModified 为 2026-11-18T20:02:38+00:00，不作为首次发布时间。",
-      "source": "NVIDIA",
-      "confidence": "A",
-      "url": "https://developer.nvidia.com/blog/build-training-ready-physical-ai-datasets-with-two-prompts-in-nvidia-cosmos/",
-      "links": [
-        {
-          "label": "NVIDIA 开发者博客：Cosmos Data Factory",
-          "url": "https://developer.nvidia.com/blog/build-training-ready-physical-ai-datasets-with-two-prompts-in-nvidia-cosmos/"
-        },
-        {
-          "label": "NVIDIA Cosmos 平台页",
-          "url": "https://www.nvidia.com/en-us/ai/cosmos/"
-        },
-        {
-          "label": "GitHub：cosmos-data-factory",
-          "url": "https://github.com/NVIDIA/cosmos-data-factory"
-        }
-      ],
-      "detail": "## 它是什么\n\n一套面向物理 AI 训练数据的工作流与技能集合，不是新的通用对话模型，也不是新的消费级芯片发布。\n\n## 它做什么\n\n- 官方把 NVIDIA Cosmos 称为面向世界模型开发的开放平台，包含模型、数据集、框架和技能。Cosmos Data Factory 是其中用于加速数据整理、处理和合成数据生成的部分。\n- 五套参考蓝图覆盖：自动驾驶场景数据集生成、图像属性增强、视频数据增强（天气、光照等）、稀有事件视频生成，以及缺陷图像生成。六项核心技能为 Auto Labeling、AnomalyGen、Augmentation、Curation and Retrieval、Simulation 和 Orchestration，可单独使用或组合。\n- 官方称，这些蓝图都通过 CDF Orchestration 技能在集群上协调步骤、部署服务并执行；开发者可以用编程代理先做环境预检和配置，再按用例运行对应蓝图。\n- NVIDIA 团队在一台配备 8 颗 NVIDIA RTX PRO 6000 Blackwell 系列 GPU、按约每服务器小时 40 美元（即每天 960 美元）计的云服务器上测量了日吞吐量，并用日成本除以产出估算单件算力成本。官方给出的内部测量包括：自动驾驶数据集生成约每天 130 条边缘案例片段、每条 GPU 算力成本 2.66 美元，约为路上由车队采集（官方对比口径为每场景 125 美元）的 1/45；缺陷图像生成把数据集装配时间从两个月降到一天，即 60 倍加速。官方同时写明：这些数字只覆盖算力，源数据准备、配置、代理使用、存储和人工审核可能产生额外成本。\n- 文中还列举了若干组织报告的结果或预期，例如某处海上油气设施用合成数据把真实异常召回率提高最多 24%、数据生成成本回报估计为 1,400 倍等。这些是使用方或预期口径，不是上述实验室吞吐量测试的一部分。\n- 官方还提到 Cosmos Dataset Search 现以 Apache 2.0 许可证开源（早期访问）。博客预告 11 月 19 日有一场 livestream，不把预告本身当作另一项发布。\n\n## 适合谁\n\n做自动驾驶、机器人、工业视觉检测，需要大规模整理或合成训练数据的研究与工程团队。\n\n## 为什么值得看\n\n它把「难采集的训练数据」变成可编排的算力任务，并给出了可核对的内部成本对比。数字来自 NVIDIA 自己的测量和假设对比，实际成本还需计入数据准备和人工审核；对普通聊天用户没有直接产品变化。\n\n## 可以核对的事实\n\n- 五套蓝图、六项技能、8 卡 RTX PRO 6000 测量条件、约 40 美元/服务器小时与 960 美元/天、约 130 条/天与 2.66 美元/条、45 倍与 60 倍等内部测量，以及「仅含算力」的限定：见 NVIDIA 开发者博客（A）。组织侧 24%、1,400 倍等为文中列举的使用结果或预期，应与内部吞吐量测试分开看。\n"
-    },
-    {
-      "id": "openai-chatgpt-accounting",
-      "title": "OpenAI 推出 ChatGPT for Accounting：可用会计插件连接账套，起草分录、对账和月末报告并交由人工审核",
-      "badge": "N",
-      "summary": "OpenAI 推出 ChatGPT for Accounting。用户可通过 Accounting 插件连接已有会计软件，用于起草发票分录、银行对账、月末报告和审计资料整理；官方强调须由人审核后再入账或对外发送。",
-      "publishedAt": "2026-11-18T23:00:00+08:00",
-      "sortAt": "2026-11-18T23:00:00+08:00",
-      "timeLabel": "2026-11-18",
-      "timePrecision": "date",
-      "timeNote": "OpenAI 帮助中心更新日志将 Accounting workflows in ChatGPT 列在 November 18, 2026 项下，未给钟点。Xero 官方博客标注 Nov 19, 2026，属合作伙伴说明，不作为 OpenAI 首次发布的精确时刻。sortAt 取 11 月 18 日晚间仅用于把该条排在当日晚些时候，不代表官方精确公告时刻。",
-      "source": "OpenAI",
-      "confidence": "A",
-      "url": "https://openai.com/business/solutions/accounting/",
-      "links": [
-        {
-          "label": "OpenAI：ChatGPT for Accounting",
-          "url": "https://openai.com/business/solutions/accounting/"
-        },
-        {
-          "label": "Accounting 插件页",
-          "url": "https://openai.com/business/plugins/accounting/"
-        },
-        {
-          "label": "OpenAI 帮助中心：会计工作说明",
-          "url": "https://help.openai.com/en/articles/20001709-using-chatgpt-for-accounting-work"
-        },
-        {
-          "label": "ChatGPT 更新日志",
+          "label": "ChatGPT 官方更新日志",
           "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
         },
         {
-          "label": "Xero 官方博客",
-          "url": "https://blog.xero.com/news-events/openai-integration-chatgpt-for-accounting/"
-        }
-      ],
-      "detail": "## 它是什么\n\n一项面向财务与记账工作流的产品能力（插件 + 解决方案页），不是新的基础模型发布。它与此前已报道的 ChatGPT for Sales 类似，属于按职业场景打包的业务功能。\n\n## 它做什么\n\n- 官方解决方案页写明：可把发票处理、对账和报告等工作交给 ChatGPT，在现有会计工具中完成，以便把时间用到业务咨询上。Accounting 插件为发票处理、对账和报告提供指引；对于没有插件的应用，则可通过 computer use 协助操作。\n- 官方点名的合作应用包括 Intuit QuickBooks、Xero、BILL、FreshBooks、NetSuite、QuickStart、Rillet 和 Campfire。插件页还写有「4 more」，但未在该页列出其余名称。\n- 具体能力包括：根据发票和收据起草分录并建议科目、把不清楚的细节标记出来供复核；从邮件、文件和会计应用汇集发票、对账单和收付款记录；把底稿与支持文件对照，起草关于可能重复、缺失和无法解释差异的复核意见；把模板、说明和复核检查存成可复用的 skills，用于之后每个月的新记录。\n- 官方写明控制措施：ChatGPT Business 和 Enterprise 的数据默认不用于训练 OpenAI 的模型；工作区管理员决定启用哪些应用，用户自行连接账户，ChatGPT 遵守该账户已有权限；入账或报告发出前，须由人审核支持文件、计算和建议科目。\n- 帮助中心写明：Accounting 插件免费安装，但模型、工具和用量仍取决于所在方案；ChatGPT Business 成员可直接安装，Enterprise 须由管理员先批准。设置入口是 ChatGPT 桌面应用。帮助中心举例的任务包括对账、发票/收据分录、月末或客户报告，以及按资料清单整理审计支持文件。\n- Xero 11 月 19 日的博客称，正在把与 OpenAI 的集成扩展到 ChatGPT for Accounting，用于月末结账复核、客户组合查看和季度沟通准备，并写明 Xero in ChatGPT for Accounting 目前在美国可用。该地域说明出自 Xero，OpenAI 解决方案页本身未写全球可用范围，不宜自行外推。\n\n## 适合谁\n\n使用 QuickBooks、Xero、NetSuite 等账套、需要减少重复记账和月末结账手工劳动的会计与财务人员；以及管理 ChatGPT Business / Enterprise 工作区的管理员。\n\n## 为什么值得看\n\n这是 OpenAI 把模型能力接到真实账套里的又一个垂直场景。官方反复强调「人做最终决定」，它起草的是分录和报告草稿，而不是自动完成法定申报。地区和方案可用性仍需以各插件说明为准。\n\n## 可以核对的事实\n\n- 插件与解决方案定位、点名的会计应用、人工审核和数据默认不用于训练、Business / Enterprise 安装规则：见 OpenAI 官方页面和更新日志（A）。Xero 目前在美国可用的说明见 Xero 官方博客（A，合作伙伴侧）。OpenAI 页面上的客户耗时案例是使用感言，不是可普遍外推的产品指标。\n"
-    },
-    {
-      "id": "meta-muse-loblaw-canada",
-      "title": "Meta 宣布 Loblaw 成为 Muse 首位加拿大零售合作伙伴，并在加拿大推出 Voice",
-      "badge": "N",
-      "summary": "Meta 宣布，加拿大零售商 Loblaw 成为第一个接入 Muse 的加拿大零售合作伙伴。即日起，购物者可在 Muse 里用参与活动的 Loblaw 品牌完成膳食规划、组篮和下单。Muse 的 Voice 也开始在加拿大的手机、网页和 Mac 上推出。",
-      "publishedAt": "2026-11-18T22:07:00+08:00",
-      "sortAt": "2026-11-18T22:07:00+08:00",
-      "timeLabel": "2026-11-18 22:07",
-      "timePrecision": "datetime",
-      "timeNote": "官方页面 article:published_time / datePublished 为 2026-11-18T14:07:00+00:00，合北京时间 11 月 18 日 22:07；dateModified 为 2026-11-18T15:01:41+00:00。列表采用发表时间。",
-      "source": "Meta",
-      "confidence": "A",
-      "url": "https://about.fb.com/news/2026/11/meta-welcomes-loblaw-as-first-canadian-retail-partner-to-muse/",
-      "links": [
+          "label": "Thibault Sottiaux 官方 X",
+          "url": "https://x.com/thsottiaux/status/2123557171321561133"
+        },
         {
-          "label": "Meta 新闻室：Loblaw 成为 Muse 首位加拿大零售合作伙伴",
-          "url": "https://about.fb.com/news/2026/11/meta-welcomes-loblaw-as-first-canadian-retail-partner-to-muse/"
+          "label": "The Verge 报道",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1038334/openai-is-testing-a-new-design-for-mobile-chatgpt"
         }
       ],
-      "detail": "## 它是什么\n\nMuse 在加拿大的零售连接器扩展，再加上语音能力在加拿大的推出。它不是新的基础模型，也不是全球新开一个国家的首次上线（Muse 登陆澳大利亚已在 11 月 18 日早报收录）。\n\n## 它做什么\n\n- 官方称，自即日起，Loblaw 作为合作连接器把它的目录接入 Muse，这是首个加拿大零售商这么做。在参与活动的 Loblaw 品牌下，加拿大购物者可以让 Muse 帮忙做膳食规划、组建购物篮并完成结账。Muse 可以记住品牌偏好和食物过敏等信息，方便后续规划。\n- 官方同时宣布，在 Connect 2026 预告、两周前推出的 Voice，现在开始在加拿大的 Muse 应用里落地，覆盖手机、网页和 Mac；用户点击右上角电话图标即可开始对话。语音可只出声，也可配合形象，或全屏面对面交谈。\n- 公告还写到，加拿大人现在也可以在 Muse 里创建 spaces（按自己的习惯、目标和兴趣定制的体验）。官方把 spaces 写成「最近已推出」的能力在加拿大的可用，而不是今天才首次发明该功能。\n- 安全说明：Muse 运行在 Muse Secure VM 上，官方称这是云中的专用计算机，用来安全存放所连接服务的数据与凭证，并使密码和支付方式不进入代理的视野。用户自行选择 Muse 可访问的内容，并在发送邮件或购物等敏感操作前得到确认。\n\n## 适合谁\n\n在加拿大使用 Muse、并且会在 Loblaw 相关品牌购物的用户。其他地区的用户这次没有获得新的国家开放，也不应把 Loblaw 结账理解成已经在全球可用。\n\n## 为什么值得看\n\n继澳大利亚之后，这是 Muse 又一次把「能真正下单的零售连接器」和语音能力一起铺到一个新市场，可以看出 Meta 在把 Muse 从通用助手推向可完成购物闭环的产品。范围仅限加拿大，对其他地区的即时影响有限。\n\n## 可以核对的事实\n\n- 发布与修改时间、Loblaw 为加拿大首个零售连接器、可在参与品牌内规划 / 组篮 / 结账、Voice 在加拿大手机、网页与 Mac 推出、spaces 对加拿大用户开放、以及 Muse Secure VM 与敏感操作需确认：见 Meta 新闻室（A）。\n"
+      "detail": "## 它是什么\n\n一次移动端界面试验，不是新的大模型发布，也不是 Dots 本身对所有 Plus 用户的全面开放。它调整的是 ChatGPT 手机应用的导航和入口，让常用功能和 Dot 更容易被找到。\n\n## 它做什么\n\n- 官方更新日志在 November 19, 2026 条目中写明：新体验让用户更容易到达常用功能，并发现 ChatGPT 还能做什么。Your dot has its own tab，并且可以把 Codex、Projects 和 Images 固定到标签栏。\n- 官方写明起始范围：ChatGPT Pro users who are 18 or older in regions where dots are available。这次推送不包括欧洲经济区（含欧盟）、英国、瑞士和韩国。一小部分符合条件的 Plus 用户也会看到新体验。部分符合条件的 Pro 用户会默认看到新设计；如果设置里出现 New ChatGPT design，可以在那里打开或关闭。\n- Sottiaux 在官方 X 上的表述与更新日志一致：先从「有 Dot、或有资格创建 Dot 的 Pro 用户」开始；Dot 有独立标签，也可以把 Codex、Projects、Images 等固定到标签栏；部分用户会默认看到新体验；可在 Settings > New ChatGPT Design 随时开关。他写道，希望在更广泛推送之前收集反馈。\n- The Verge 于北京时间 11 月 20 日 08:59 报道了同一变化，并提到底部标签栏包含主页和 Dot。媒体报道不增加官方未写明的覆盖范围或上线时间表。\n\n## 适合谁\n\n已经或即将使用 Dots 的 ChatGPT Pro 用户，以及想提前看新导航是否好用的移动端用户。欧洲经济区、英国、瑞士和韩国用户，以及未满 18 岁的用户，按官方说明不在这次起始范围里。\n\n## 为什么值得看\n\n这是把「对话框」改成更接近多入口工作台的一步，尤其是把 Dot 和 Codex 放到一级导航。它目前仍是有限测试，官方还没有给出全面推送的日期，也不宜写成所有用户已经换上新界面。\n\n## 可以核对的事实\n\n- 新移动端体验、Dot 独立标签、可固定 Codex / Projects / Images、先面向 18 岁及以上且 Dots 可用地区的 Pro 用户、不包括欧洲经济区（含欧盟）、英国、瑞士和韩国、一小部分符合条件的 Plus 用户也会看到、部分 Pro 用户默认开启、可在设置中开关：见 ChatGPT 官方更新日志（A）。\n- Settings > New ChatGPT Design、先从有 Dot 或有资格创建 Dot 的 Pro 用户开始：见 Thibault Sottiaux 官方 X（A），发帖时间为 2026-11-19T23:20:58.000Z。\n"
     },
     {
-      "id": "doubao-work-dau-arr",
-      "title": "豆包工作上线三个月：多家媒体称官方宣布日活突破 800 万、企业客户 ARR 突破 20 亿元",
+      "id": "openai-health-android-desktop-dots",
+      "title": "ChatGPT Health 扩展到 Android、桌面应用、Dots 和站点，并支持 Health Connect（美国）",
       "badge": "N",
-      "summary": "第一财经和财新等报道，11 月 18 日字节跳动 / 豆包方面宣布，上线约三个月的「豆包工作」日活突破 800 万。第一财经还写道，企业客户 ARR 突破 20 亿元，并称已接入 Kimi、GLM、DeepSeek 等第三方模型。本报未见可独立核对的官网新闻稿。",
-      "publishedAt": "2026-11-18T21:18:00+08:00",
-      "sortAt": "2026-11-18T21:18:00+08:00",
-      "timeLabel": "2026-11-18",
+      "summary": "OpenAI 在 ChatGPT 更新日志中宣布，Health 开始滚动到更多使用入口，包括桌面应用、Dots、站点以及 Android，并支持 Health Connect。用户可以连接健康和健身信息，查看睡眠和活动等模式；Dot 也可以给出一些主动建议。官方写明：Health 面向美国的 Free、Go、Plus 和 Pro 用户，并且是逐步推送。",
+      "publishedAt": "2026-11-20T07:20:58+08:00",
+      "sortAt": "2026-11-20T07:20:58+08:00",
+      "timeLabel": "2026-11-19",
       "timePrecision": "date",
-      "timeNote": "未见独立可核对的官网新闻稿时刻。第一财经稿件时间为 2026-11-18 21:18:01，财新标注 2026-11-18 22:45，均为媒体发稿时间。sortAt 取第一财经发稿时间仅用于排序，不代表官方精确公告时刻。",
-      "source": "第一财经 / 财新",
-      "confidence": "B",
-      "url": "https://www.yicai.com/news/103445658.html",
-      "links": [
-        {
-          "label": "第一财经报道",
-          "url": "https://www.yicai.com/news/103445658.html"
-        },
-        {
-          "label": "财新报道",
-          "url": "https://www.caixin.com/2026-11-18/102506386.html"
-        }
-      ],
-      "detail": "## 它是什么\n\n一条产品规模与商业化进展的披露，不是新模型发布。媒体把它放在国内办公智能体竞争的背景下报道。\n\n## 它做什么\n\n- 第一财经 11 月 18 日 21:18 的报道写：豆包官方宣布，上线仅三个月的豆包工作日活跃用户数（DAU）突破 800 万，企业客户年度经常性收入（ARR）突破 20 亿元；并称豆包工作是面向生产力场景的 AI 产品及品牌，8 月 25 日发布；目前豆包已接入 Kimi、GLM、DeepSeek 等第三方模型，并标注不同模型的额度消耗倍率。\n- 财新 11 月 18 日 22:45 的报道写：当晚腾讯和字节跳动先后披露 WorkBuddy 与豆包工作的用户数据；在腾讯之后，字节跳动宣布豆包工作 DAU 突破 800 万。财新可见导语部分未写 ARR 数字（该稿后续或为付费内容，本报未把它没有写到的部分当成不存在或已否定）。\n- 上述 DAU、ARR、上线时间和第三方模型接入均来自媒体转述，本报未在豆包或字节跳动官网新闻稿中独立核对原文措辞。\n\n## 适合谁\n\n关注国内办公智能体竞争、以及豆包工作是否接入第三方模型的用户和行业读者。\n\n## 为什么值得看\n\n如果数字属实，说明这款产品在三个月内已经形成可观的日活，并开始以 ARR 口径谈论企业收入。但由于目前只能见到媒体转述、没有可点开核对的官方新闻稿，数字和口径（例如 ARR 如何统计、是否含内部结算）都还应等待官方原文。\n\n## 可以核对的事实\n\n- 第一财经对「官方宣布」DAU 800 万、ARR 20 亿元、8 月 25 日发布及第三方模型的转述：见该报道（B）。财新对「字节跳动宣布 DAU 突破 800 万」的转述：见该报道（B）。未见官网新闻稿，故不标 A。\n"
-    },
-    {
-      "id": "tencent-q3-2026-workbuddy",
-      "title": "腾讯公布 2026 年第三季度业绩：WorkBuddy 日活超 1000 万、日均消耗超过 100 万亿 token，资本开支同比增长 225%",
-      "badge": "N",
-      "summary": "腾讯公布 2026 年第三季度业绩。官方称 WorkBuddy 以大语言模型 token 消耗计已成为中国使用最多的 AI 产品，日活超过 1000 万，用户每天合计消耗超过 100 万亿 token；同期资本开支支付为 651 亿元人民币，同比增 225%。",
-      "publishedAt": "2026-11-18T21:00:00+08:00",
-      "sortAt": "2026-11-18T21:00:00+08:00",
-      "timeLabel": "2026-11-18",
-      "timePrecision": "date",
-      "timeNote": "英文业绩稿抬头为 Hong Kong, 18 November 2026，未给钟点。财新称「11 月 18 日晚间」披露，此为媒体描述。sortAt 取当日 21:00 仅用于把该条排在财新所写「晚间、早于豆包媒体发稿」的位置，不代表官方精确公告时刻。",
-      "source": "Tencent",
-      "confidence": "A",
-      "url": "https://www.tencent.com/wp-content/uploads/2026/11/Tencent-Announces-2026-Third-Quarter-Results.pdf",
-      "links": [
-        {
-          "label": "腾讯英文业绩公告（PDF）",
-          "url": "https://www.tencent.com/wp-content/uploads/2026/11/Tencent-Announces-2026-Third-Quarter-Results.pdf"
-        },
-        {
-          "label": "腾讯中文业绩公告（PDF）",
-          "url": "https://www.tencent.com/wp-content/uploads/2026/11/C700_3Qresults.pdf"
-        },
-        {
-          "label": "腾讯投资者关系页",
-          "url": "https://www.tencent.com/en-us/investors.html"
-        }
-      ],
-      "detail": "## 它是什么\n\n一份上市公司季度业绩公告，重点是 AI 应用规模、云收入和资本开支，而不是新模型或新产品的首次发布。Hy4 为 11 月已发布的模型，本条只作为业绩背景提及，不当作新的模型发布。\n\n## 它做什么\n\n- 董事长兼 CEO 马化腾在稿中说：Hy4 已达到「China state-of-the-art AI model」水准，Hy4 flash 降低推理成本以服务实际场景；「We believe WorkBuddy has grown to become the largest AI application in China, measured by total daily large language model token consumption by users.」云服务收入增速提高，原因包括 WorkBuddy，以及把更多算力分配给 Model as a Service 和 GPU 租赁。\n- 业务回顾部分写明：WorkBuddy became the most used AI product in China, measured by large language model token consumption, with over 10 million DAU collectively consuming over 100 trillion tokens per day, and rapidly increasing enterprise adoption.\n- 主要财务数字（第三季度）：总收入 2,073 亿元人民币，同比增长 8%；毛利 1,159 亿元，同比增长 7%；非国际财务报告准则经营溢利 681 亿元，同比下降 6%；国际财务报告准则经营溢利 591 亿元，同比下降 7%。若剔除 New AI Products，非国际财务报告准则经营溢利为 833 亿元，同比增长 8%。脚注写明：New AI Products 主要包括 Hy、元宝（Yuanbao）、CodeBuddy、WorkBuddy 和 Xiaowei（小薇）。\n- 资本开支支付为 651 亿元人民币，同比增长 225%。该季自由现金流为负 691 亿元，原因是经营活动现金净额 26 亿元，被资本开支 651 亿元、媒体内容付款 46 亿元和租赁负债付款 20 亿元抵消。官方称，经营现金流中包含为增强 Hy 模型家族、满足 WorkBuddy 推理需求、发展各产品 AI 能力以及满足对外云服务需求而预付的算力采购；若剔除这部分预付，自由现金流将为正向 169 亿元。\n- 金融科技及企业服务收入同比增长 9%，至 637 亿元；其中云服务收入同比增长 35%，官方归因于 AI 相关需求增加等。\n\n## 适合谁\n\n关注国内办公智能体规模、腾讯 AI 投入和云业务增速的读者、投资者和开发者。\n\n## 为什么值得看\n\n官方用 token 消耗和日活给 WorkBuddy 做了量化，同时用资本开支和算力预付说明投入强度。这也解释了利润数字在「含 AI 新产品」和「剔除后」之间的差异。需要把「以 token 消耗计使用最多」和「日活最高」区分开来，前者是官方自己的口径。\n\n## 可以核对的事实\n\n- 总收入 2,073 亿元（+8%）、资本开支 651 亿元（+225%）、WorkBuddy 日活超过 1000 万且每天消耗超过 100 万亿 token、云服务收入 +35%、以及马化腾关于 token 消耗口径的表述：见腾讯 2026 年第三季度业绩公告（A）。\n"
-    },
-    {
-      "id": "us-disclose-chinese-ai-models",
-      "title": "路透社独家：美国政府考虑要求美企公开披露使用中国 AI 模型的情况，尚未形成正式规则",
-      "badge": "N",
-      "summary": "路透社独家报道，特朗普政府正在考虑要求美国公司公开披露其使用中国 AI 模型的情况，讨论涉及财政部和白宫科技政策办公室。报道写明该想法尚未成为正式规则，白宫和财政部当时未予确认。",
-      "publishedAt": "2026-11-18T19:53:16+08:00",
-      "sortAt": "2026-11-18T19:53:16+08:00",
-      "timeLabel": "2026-11-18",
-      "timePrecision": "date",
-      "timeNote": "此为路透社报道，并非官方文件发布时间。联合早报转载页的 datePublished 为 2026-11-18T19:53:16+08:00，dateModified 为 2026-11-18T21:09:23+08:00。sortAt 取该发稿时间仅用于排序，不代表官方精确公告时刻。",
-      "source": "Reuters",
-      "confidence": "B",
-      "url": "https://www.investing.com/news/stock-market-news/exclusivetrump-administration-weighs-forcing-us-firms-to-disclose-chinese-ai-use-5035455",
-      "links": [
-        {
-          "label": "路透社报道（Investing.com 转载）",
-          "url": "https://www.investing.com/news/stock-market-news/exclusivetrump-administration-weighs-forcing-us-firms-to-disclose-chinese-ai-use-5035455"
-        },
-        {
-          "label": "联合早报转载",
-          "url": "https://www.straitstimes.com/world/united-states/trump-administration-weighs-forcing-us-firms-to-disclose-chinese-ai-use"
-        },
-        {
-          "label": "环球邮报转载",
-          "url": "https://www.theglobeandmail.com/business/article-trump-administration-weighs-forcing-us-firms-to-disclose-chinese-ai/"
-        }
-      ],
-      "detail": "## 它是什么\n\n一项仍在讨论中的政策设想，不是已经生效的法律或行政规则，也不是对中国模型的出口管制新令。\n\n## 它做什么\n\n- 路透社援引三名知情人士称，政府在考虑要求美企公开披露使用中国 AI 模型的情况；财政部和白宫科技政策办公室（OSTP）讨论过该计划，适用范围包括 Airbnb 这类公司。报道称，Airbnb 使用阿里巴巴的通义千问（Qwen）为其 AI 客服代理提供支持；按该设想，类似公司须在自己的网站上公布相关信息。\n- 路透社写明：当时尚不清楚这一想法是否正在政府内部获得支持，以及若推进是否会写入正式规则制定程序。白宫、财政部和阿里巴巴未回应置评请求。\n- Airbnb 在声明中说，其 AI 活动「runs overwhelmingly on U.S.-origin models」，只使用「a limited number of China-origin models」，且这些模型都是开源的，只通过经批准的美国服务商运行，以保持数据和运营的隔离与保护。\n- 中国驻华盛顿大使馆在回应中表示，反对将贸易和技术问题政治化，称这只会扼杀全球 AI 进展、对谁都没有好处，并将坚决维护中国企业的合法权益。\n- 报道还提到国会已有相关调查：众议院国土安全委员会主席 Andrew Garbarino 和中国问题特设委员会主席 John Moolenaar 今年已向 Airbnb、Cursor 开发商 Anysphere 以及 DoorDash 发函。Moolenaar 对路透社称，披露是管理中国开源权重模型在美扩散潜在风险的重要一步。关于 Cursor Composer 2 基于某一版本 Kimi、DoorDash 联合创始人谈及内部系统部分任务走 Kimi 等，均属路透社转述，本报未独立向相关公司核对。\n- 文中提及的财政部部长贝森特 7 月关于可能制裁、以及 OSTP 主任 Kratsios 4 月相关表态，属于更早背景，不是本次新宣布的政策。\n\n## 适合谁\n\n使用或接入通义、DeepSeek、Kimi 等中国模型的美国公司、这些模型的开发者，以及关注中美 AI 监管的读者。\n\n## 为什么值得看\n\n如果成真，影响首先是披露和舆论压力，而不是立刻禁令。但目前只是「考虑中」，没有文本、没有时间表，也没有官方确认，不宜写成即将实施。\n\n## 可以核对的事实\n\n- 「正在考虑」、财政部与 OSTP 参与讨论、尚未确定是否进入正式规则、Airbnb 声明和中国使馆表态、以及国会发函的相关叙述：见路透社报道及其转载（B）。白宫、财政部当时未确认该计划。本报未把讨论中的设想写成已生效规则。\n"
-    },
-    {
-      "id": "openai-research-acceleration-jagged-frontier",
-      "title": "OpenAI 发布研究报告：编码代理已能独立完成近一半的 2–4 小时研究任务，但进展仍不均匀，人类仍是核心",
-      "badge": "N",
-      "summary": "OpenAI 更新内部测量：从 3 月到 10 月，编码代理对预估需要 2–4 小时人工的研究任务，独立成功率从 23% 升至 46%；对预估 4–8 小时的任务，从 13% 升至 35%。官方强调提升是不规则的，人类仍处在研发循环的中心。",
-      "publishedAt": "2026-11-18T19:50:00+08:00",
-      "sortAt": "2026-11-18T19:50:00+08:00",
-      "timeLabel": "2026-11-18",
-      "timePrecision": "date",
-      "timeNote": "OpenAI 官网只标注 November 18, 2026，未给钟点。上次晚报 19:50 检索时未收录此文。因缺少官方或媒体的精确时刻，sortAt 取覆盖窗口起点 19:50 仅用于把该条排在有精确时刻的条目之后，不代表官方公告时刻。",
+      "timeNote": "官方 ChatGPT 更新日志将该条放在 November 19, 2026 标题下，并写 Starting today，未给钟点。该条目与「新移动端界面」出现在同一份更新日志中；后者有官方 X 精确时刻 2026-11-19T23:20:58.000Z（北京时间 11 月 20 日 07:20）。timeLabel 只写日期，sortAt 取同一更新日志中移动端条目的官方 X 时间仅用于排序，不代表 Health 条目本身的精确公告时刻。",
       "source": "OpenAI",
       "confidence": "A",
-      "url": "https://openai.com/index/research-acceleration-jagged-frontier/",
+      "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
       "links": [
         {
-          "label": "OpenAI：Research acceleration: The jagged frontier",
-          "url": "https://openai.com/index/research-acceleration-jagged-frontier/"
+          "label": "ChatGPT 官方更新日志",
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
         }
       ],
-      "detail": "## 它是什么\n\nOpenAI 对自身研发流程里编码代理作用的量化更新，用来讨论 AI 是否以及如何加速下一代 AI 的研发（报告中称为 recursive self-improvement 的指标），不是新的对外模型发布。\n\n## 它做什么\n\n- 任务成功率：官方称，3 月到 10 月，预估需 2–4 小时人工的任务，代理独立成功率从 23% 升至 46%；预估需 4–8 小时的任务，从 13% 升至 35%。按任务类型划分时，监控训练运行的成功率为 79%，启动训练运行为 35%，为推理和 serving 栈写代码为 25%。官方的结论是：提升是不规则的，人类仍是核心。\n- 使用量：按 API 标价计算，10 月研究人员的日用量中位数达到 2,400 美元，较 9 月上升 62%；第 90 百分位达到 23,000 美元，较 9 月上升 105%。在一项问卷中，若问「愿意用什么来换取继续使用前沿编码代理三个月」，中位数答案是团队算力的 30%，或在另一题中为团队人力的 40%。\n- 安全与对齐投入：官方称，Safety and Alignment 的已记录工作周在 1 月到 9 月增加了 77%，是各大研究方向里绝对增幅最大的，原因包括新招聘和已有研究员转向这些工作；并称增长在 2026 年 7 月 Hugging Face 事件的应对之后明显加快。\n- 官方再次表示，AI 实验室应被要求追踪并公开报告递归自我改进（RSI）相关指标，但同时也写明：这份报告不应被读成 OpenAI 打算追求完全的 RSI。\n\n## 适合谁\n\n关注 AI 实验室内部研发是否正在自我加速、以及安全投入是否跟得上能力提升的政策与研究读者。普通 ChatGPT 用户不会因为这篇报告立刻看到新功能。\n\n## 为什么值得看\n\n「代理已经能独立做掉近一半的短时研究任务」是一个很强的内部指标，但同一份报告也给出了很不均匀的任务分解，并且把人类仍放在循环中心。它提供的是 OpenAI 自己的测量和问卷，不是外部审计结果；数字需要对照原文，不宜简化成「AI 已经在自主做研究」。\n\n## 可以核对的事实\n\n- 23% 到 46%、13% 到 35%，以及 79% / 35% / 25% 的任务分解；日用量中位数 2,400 美元和第 90 百分位 23,000 美元及对应增幅；问卷中的 30% 算力 / 40% 人力；Safety and Alignment 工作周增加 77%；以及「不应读成打算追求完全 RSI」的表述：见 OpenAI 官方报告（A）。上述数字均为 OpenAI 内部测量或问卷，本报告未复测。\n"
+      "detail": "## 它是什么\n\n一次把已有 Health 功能扩展到更多 ChatGPT 入口的产品更新，不是新的医学模型发布，也不是已经覆盖全球用户的健康服务。\n\n## 它做什么\n\n- 官方写明：Starting today，Health 正在滚动到更多使用 ChatGPT 的地方，包括桌面应用、dots、sites 和 Android，并支持 Health Connect。\n- 具体能力按官方原文：可以用 Android Health Connect 连接健康和健身信息，查看睡眠、活动等模式；可以从 Dot 获得主动建议，例如会议冲突时另找锻炼时间，或根据已连接的病历提醒预防性护理选项；也可以在桌面应用里做一个站点，用来跟踪马拉松训练，把跑步记录和训练计划进度放在一起。\n- 官方说明如何开始：更新到最新的 ChatGPT 应用，在侧边栏选择 Health；如果没有列出，就在 Explore 菜单里找 Health。这次更新是逐步推送，因此不一定已经出现在每个账户上。\n- 官方写明：Health is available to Free, Go, Plus, and Pro users in the U.S. 同一条目还写：Dots are currently available to Pro users，并指向 Getting started with your dot。需要注意的是，同一天的更新日志和官方 X 已宣布 Plus 小范围测试与 Business Standard 开放，但 Health 这条仍采用「Dots 目前面向 Pro 用户」的表述；本报不把这两处合并改写成「Health 的 Dot 建议已对所有 Plus 用户开放」。\n\n## 适合谁\n\n在美国使用 ChatGPT，并希望在 Android、桌面或 Dot 里查看已连接健康数据的 Free / Go / Plus / Pro 用户。它不是面向全球的医疗诊断产品，也不应被理解成专业医疗意见。\n\n## 为什么值得看\n\nHealth 从单一入口扩展到 Android、桌面、站点和 Dot，说明 OpenAI 想把健康场景嵌进持续运行的代理和工作区，而不只是一次对话。但它仍是美国范围内的逐步推送，实际能连接哪些数据、建议质量如何，要以账户上是否出现该入口以及官方条款为准。\n\n## 可以核对的事实\n\n- Health 扩展到桌面应用、Dots、站点和 Android，支持 Health Connect，面向美国 Free / Go / Plus / Pro 用户，逐步推送，以及官方列举的睡眠/活动查看、Dot 主动建议和马拉松训练站点示例：见 ChatGPT 官方更新日志 November 19, 2026 条目（A）。官方未给出精确钟点或完成推送的日期。\n"
     },
     {
-      "id": "deepseek-search-fetch-billing",
-      "title": "DeepSeek 调整 API 计费：自 11 月 18 日 12:00 起，模型调用触发的服务端搜索和网页抓取不再单独收费",
+      "id": "openai-dots-plus-business-standard",
+      "title": "OpenAI 开始向部分 ChatGPT Plus 用户测试 Dots，并向美国 ChatGPT Business Standard 用户开放",
       "badge": "N",
-      "summary": "DeepSeek 官方文档写明，自北京时间 2026 年 11 月 18 日 12:00 起，调用模型时由服务端工具触发的搜索和网页抓取不再单独计费，只按返回内容占用的模型 token 计费。客户端直接调用 Search / Fetch API 仍按每 1,000 次成功请求 0.75 美元计费。",
-      "publishedAt": "2026-11-18T12:00:00+08:00",
-      "sortAt": "2026-11-18T12:00:00+08:00",
-      "timeLabel": "2026-11-18 12:00",
+      "summary": "OpenAI 开始向一小部分 ChatGPT Plus 用户测试常驻代理 Dots，并向所有 ChatGPT Business Standard 用户开放。官方 Help Center 写明：Plus 的推送是逐步进行，且不包括欧洲经济区（含欧盟）、英国和瑞士；Business Standard 的开放面向美国符合条件的成员。客服无法为单个账户手动开通，重启应用也不会获得权限。",
+      "publishedAt": "2026-11-20T07:17:19+08:00",
+      "sortAt": "2026-11-20T07:17:19+08:00",
+      "timeLabel": "2026-11-20 07:17",
       "timePrecision": "datetime",
-      "timeNote": "DeepSeek 官方定价页写明 Starting 12:00 on November 18, 2026，Beijing Time, UTC+8，此为规则生效时刻。",
-      "source": "DeepSeek",
+      "timeNote": "Thibault Sottiaux 在 X 上的帖子时间为 2026-11-19T23:17:19.000Z，即北京时间 11 月 20 日 07:17；按精确时刻记录。",
+      "source": "OpenAI",
       "confidence": "A",
-      "url": "https://api-docs.deepseek.com/quick_start/pricing/",
+      "url": "https://x.com/thsottiaux/status/2123556256392847657",
       "links": [
         {
-          "label": "DeepSeek 官方定价页",
-          "url": "https://api-docs.deepseek.com/quick_start/pricing/"
+          "label": "Thibault Sottiaux 官方 X",
+          "url": "https://x.com/thsottiaux/status/2123556256392847657"
         },
         {
-          "label": "Search & Fetch 文档中的计费说明",
-          "url": "https://api-docs.deepseek.com/guides/search/"
+          "label": "Getting started with your dot",
+          "url": "https://help.openai.com/en/articles/20001530-getting-started-with-your-dot"
+        },
+        {
+          "label": "The Verge 报道",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1038370/openai-is-starting-to-bring-dots-to-plus-tier-subscribers"
+        },
+        {
+          "label": "Engadget 报道",
+          "url": "https://www.engadget.com/2322656/openai-is-testing-dots-personal-agents-on-its-20-per-month-plus-tier/"
+        },
+        {
+          "label": "9to5Mac 报道",
+          "url": "https://9to5mac.com/2026/11/19/openai-begins-testing-dots-with-chatgpt-plus-users-expands-business-access/"
         }
       ],
-      "detail": "## 它是什么\n\n一次官方 API 计费规则调整，不是新模型发布。对已经在用 DeepSeek 联网工具或自建搜索的开发者，账单结构会发生变化。\n\n## 它做什么\n\n- 定价页写明：自北京时间 2026 年 11 月 18 日 12:00 起，调用模型时触发的服务端搜索和网页抓取工具不再单独计费；它们返回的结果会追加到模型上下文中，按模型 token 用量计费。会触发服务端搜索的情况包括：web tools、Anthropic API 中的 web_search 工具，以及 Responses API 中的 web_search 工具。\n- Search & Fetch 文档补充：由模型通过服务端工具执行的搜索不单独计费（包括文本搜索、图片搜索和页面抓取），只收模型 token 费用。服务端工具还包括：Claude Code 中的 Web Search，以及 DeepSeek Harness 在 Web search provider 设为 DeepSeek server-side search 或 Auto（默认）时的搜索。\n- 若客户端直接调用 POST /v1/tools/search 或 POST /v1/tools/fetch，则仍按次计费：Search API 和 Fetch API 均为每 1,000 次成功请求 0.75 美元。单独调用只有在返回 HTTP 200 且确有结果时才计费（Search 须返回非空 results，Fetch 须返回页面内容）。失败、空结果和超时不计费。count 只影响返回条数，不改变单次价格。\n- 文档还列出账户级速率限制：Search 为 100 QPS，Fetch 为 25 QPS，二者分开计算，且与模型并发限制相互独立；超限返回 HTTP 429。Fetch 另外还有按域名的 QPS 限制。\n\n## 适合谁\n\n正在使用 DeepSeek 联网工具、Responses API / Anthropic 兼容接口中的 web_search，或直接调用 Search / Fetch API 的开发者。\n\n## 为什么值得看\n\n对「让模型自己去搜」的用法，搜索不再是一笔单独费用，成本会体现在更长的上下文 token 上；对「自己调用搜索接口」的用法，价格表没有取消。两套路径的账单逻辑从此不一样，接入前需要看清楚。\n\n## 可以核对的事实\n\n- 生效时刻（北京时间 2026-11-18 12:00）、服务端工具不再单独计费、直接调用 Search / Fetch 仍为每 1,000 次成功请求 0.75 美元，以及成功计费与 QPS 规则：见 DeepSeek 官方定价页和 Search & Fetch 文档（A）。部分中文媒体把直接调用价格写成每 1,000 次 5 元，本条以英文官方文档的 0.75 美元为准，未把人民币换算写进事实。\n"
+      "detail": "## 它是什么\n\nDots 的可用性扩大，不是新的模型发布。Dots 是 ChatGPT 里的常驻代理：用户给出目标并提供上下文后，它可以在对话之间继续推进工作，使用自己的计算机和已连接的应用去研究、创建并跟进任务。用户决定它能自动做什么，并可以随时暂停。\n\n## 它做什么\n\n- Sottiaux 在官方 X 上写明：「we're starting to test dots with a small number of ChatGPT Plus users。」他还写道，最近看到更多关于主动性改善的正面反馈，并说：「We're also bringing dots to all ChatGPT Business Standard users. Rollout will start today。」\n- 官方帮助中心随后写明：Dots are gradually rolling out to select ChatGPT Plus users outside the European Economic Area (including the EU), the UK, and Switzerland. 账户上可能还没有，OpenAI Support 无法代为开通，重启应用也不会带来权限。Dots are also rolling out to eligible ChatGPT Business Standard members in the United States。帮助中心在「Which plans include dots?」中还写：Dots 向 18 岁及以上、且不在欧洲经济区、瑞士和英国市场的 Pro 和部分 Plus 用户提供；Business Premium 在支持地区按工作区资格提供；美国符合条件的 Business Standard 成员正在滚动开通，开通后可在 Business 工作区创建一个个人 Dot，并有用量限制。\n- The Verge、Engadget 和 9to5Mac 均报道了同一公告。The Verge 写明：此前 Dots 仅限 Pro 及更高档（报道称 Pro 起价 100 美元），现在一小部分每月 20 美元的 Plus 用户将获得访问。这些是媒体对档位和价格的转述，本报不以媒体价格表替代官方定价页。\n- 官方帮助中心没有在本次更新中写明：Plus 或 Business Standard 用户是否享受与 Pro / Business Premium 相同的「普通对话不计入常规用量」规则。9to5Mac 也写明这一点尚不清楚。本报不把它写成已经适用。\n\n## 适合谁\n\n在支持地区使用 ChatGPT Plus、希望尝试常驻代理的个人用户，以及美国符合条件的 ChatGPT Business Standard 工作区成员。欧洲经济区、英国和瑞士的用户按官方说明目前不在此次 Plus 测试范围内；即便在支持地区，也不是每个 Plus 账户都会马上看到入口。\n\n## 为什么值得看\n\nDots 此前主要面向更高档订阅，这次首次以小范围测试进入 Plus，并以工作区为单位向 Business Standard 开放，会明显扩大常驻代理的触达面。但它仍是逐步推送和测试，不是 Plus 全量开放，也不等于已经公布 Plus 档的完整用量与计价规则。\n\n## 可以核对的事实\n\n- 开始向一小部分 Plus 用户测试、向所有 ChatGPT Business Standard 用户开放、Rollout will start today：见 Thibault Sottiaux 官方 X（A），发帖时间为 2026-11-19T23:17:19.000Z。\n- 逐步面向欧洲经济区（含欧盟）、英国和瑞士以外的部分 Plus 用户，客服无法手动开通，以及美国符合条件的 Business Standard 成员正在滚动开通、每人可创建一个个人 Dot、有用量限制、须年满 18 岁：见官方 Help Center（A）。\n"
+    },
+    {
+      "id": "microsoft-edge-aion-instruct-prompt-api",
+      "title": "Microsoft 宣布 Aion Instruct 正式可用：作为开源权重模型上架 Hugging Face，并成为 Edge 内置小模型；Prompt API 开启源试验",
+      "badge": "N",
+      "summary": "Microsoft 宣布 Aion Instruct 正式可用，以开源权重形式发布在 Hugging Face，并作为 Microsoft Edge 的内置小语言模型，取代 Phi-4-mini。同时，Prompt API 进入源试验，可在正式版 Edge 的线上站点试用；实验性 Decisions API 仍在 Canary / Dev 通道提供开发者预览。",
+      "publishedAt": "2026-11-20T07:08:46+08:00",
+      "sortAt": "2026-11-20T07:08:46+08:00",
+      "timeLabel": "2026-11-19",
+      "timePrecision": "date",
+      "timeNote": "官方正文只写 published November 19, 2026，未给钟点。页面 article:published_time 为 2026-11-19T23:08:46+00:00，即北京时间 11 月 20 日 07:08；但 HTTP Last-Modified 为 15:08:46 GMT，两者不一致。timeLabel 只写日期，sortAt 取 article:published_time 仅用于排序，不代表官方精确公告时刻。",
+      "source": "Microsoft",
+      "confidence": "A",
+      "url": "https://blogs.windows.com/msedgedev/2026/11/19/hybrid-intelligence-on-the-web-introducing-aion-instruct-and-prompt-api-in-microsoft-edge/",
+      "links": [
+        {
+          "label": "Microsoft Edge 官方博客",
+          "url": "https://blogs.windows.com/msedgedev/2026/11/19/hybrid-intelligence-on-the-web-introducing-aion-instruct-and-prompt-api-in-microsoft-edge/"
+        },
+        {
+          "label": "Hugging Face：microsoft/Aion-1.0-Instruct-2.3B",
+          "url": "https://huggingface.co/microsoft/Aion-1.0-Instruct-2.3B"
+        },
+        {
+          "label": "Prompt API 开发者文档",
+          "url": "https://learn.microsoft.com/en-us/microsoft-edge/web-platform/prompt-api"
+        },
+        {
+          "label": "Microsoft Edge Origin Trials",
+          "url": "https://developer.microsoft.com/en-us/microsoft-edge/origin-trials/"
+        }
+      ],
+      "detail": "## 它是什么\n\n面向网页的端侧小模型与浏览器 API 更新，不是新的云端大模型发布。官方把这次更新概括为三件事：Aion Instruct 正式可用、Prompt API 源试验，以及 Decisions API 的开发者预览。\n\n## 它做什么\n\n- 官方写明：Aion Instruct 即日起作为开源权重模型在 Hugging Face 提供，并成为 Edge 的内置小语言模型，替换 Phi-4-mini。该模型有 23 亿参数，官方称它比 Phi 更小、更快，能在更多设备上运行，并在文本生成与合成、摘要、指令遵循和结构化输出等常见网页任务上质量相当。\n- 官方还说，Aion Instruct 将于今年晚些时候登陆 Windows，为 Windows 和 Copilot+ PC 上的端侧体验打基础。这些是路线图表述，不是已经完成的系统级推送。\n- Edge 仅在站点或功能首次需要、且设备适合运行时才下载该模型。用户可在 Edge 设置中关闭端侧 AI，关闭后会移除模型并停止后续下载。\n- Prompt API 此前只在 Edge Canary 和 Dev 通道的开发者预览中提供。现在通过源试验，开发者可以在正式版 Edge 的线上站点调用该 API，用端侧小模型做更通用的推理，并在设备不适合或需要更强能力时切到已配置的云端提供商。官方请开发者就 API 设计、模型表现和跨浏览器互操作提供反馈，以支持后续标准化讨论。\n- Decisions API 仍是实验性接口的开发者预览，仅在 Edge Canary / Dev 通道提供，由 Aion Instruct 驱动。站点可以对文本一次性提出是/否、选择题或打分问题，得到概率和置信度，且不必生成文本。官方举例包括判断意图、分流用户内容和实时打分。官方提醒：该 API 及其实现预计还会变化。\n\n## 适合谁\n\n要在网页里做端侧摘要、写作辅助、结构化判断，或评估 Prompt API 能否进入生产站点的前端开发者；以及关注浏览器内置小模型替换的读者。\n\n## 为什么值得看\n\n这是把端侧模型从预览推进到「Edge 内置 + 开源权重可下载」的一步，而且 Prompt API 第一次可以在正式版浏览器的真实站点上做源试验。它仍然不是一个新的前沿大模型，能力和覆盖范围取决于设备是否适合运行 23 亿参数的端侧模型。\n\n## 可以核对的事实\n\n- Aion Instruct 正式可用、开源权重上架 Hugging Face、成为 Edge 内置小模型并替换 Phi-4-mini、参数量为 23 亿、按需下载与用户可关闭、将于今年晚些时候登陆 Windows、Prompt API 源试验、Decisions API 仍为 Canary / Dev 预览：见 Microsoft Edge 官方博客（A）。Hugging Face 仓库名与开发者文档、源试验入口见上列链接。\n"
+    },
+    {
+      "id": "apple-ai-agent-job-listing",
+      "title": "彭博报道：苹果招聘工程师，打造可跨应用、浏览网页并调用服务的 AI 代理",
+      "badge": "N",
+      "summary": "The Verge 援引彭博社报道称，苹果一份招聘启事显示，公司正在招聘工程师，牵头打造可浏览网页、跨应用工作、编写代码并调用服务的智能体式 AI 助手。这不是已经发布的产品，也未见官方发布时间表。",
+      "publishedAt": "2026-11-20T06:31:00+08:00",
+      "sortAt": "2026-11-20T06:31:00+08:00",
+      "timeLabel": "2026-11-19",
+      "timePrecision": "date",
+      "timeNote": "并非苹果官方公告。The Verge 标注 Nov 19, 2026, 10:31 PM UTC，即北京时间 11 月 20 日 06:31，此为媒体发稿时间。sortAt 取该发稿时间仅用于排序，不代表官方精确公告时刻。",
+      "source": "The Verge",
+      "confidence": "B",
+      "url": "https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing",
+      "links": [
+        {
+          "label": "The Verge 报道",
+          "url": "https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing"
+        },
+        {
+          "label": "Techmeme 汇总",
+          "url": "https://techmeme.com/261119/p52"
+        }
+      ],
+      "detail": "## 它是什么\n\n一条基于招聘启事的可靠媒体报道，说明苹果内部正在组建或加强智能体方向的工程团队。它不是苹果官方的产品发布，也不是 Siri 的新版本上线公告。\n\n## 它做什么\n\n- The Verge 写明：彭博社发现了这份招聘，苹果要找一名工程师来牵头创建 agentic AI assistant。报道称，该助手将能浏览网页、跨应用工作、写代码并调用服务。\n- The Verge 引用招聘启事原文称：人们已经在浏览器、文档、终端、编辑器和服务之间流动地完成最有价值的工作；「We're building AI agents that can do the same… These agents plan and carry out multi-step tasks across apps, browsers, command lines, code, and APIs, and they can coordinate specialized sub-agents along the way.」\n- 报道称，该职位将与 Siri、UI Frameworks 和 Apple Foundation Models 等团队密切合作。彭博社还提到，公司可能为 Siri 增加在「照片」中旋转或裁剪图片、以及整理 Safari 标签页等能力；这是媒体对方向的转述，不是已经向用户推送的功能。\n- The Verge 还写道：在即将到来的 iOS 27.3 更新中，苹果将让开发者把 Siri AI 接入「all apps」；目前作为 Developer Preview 推出，最终将允许 Siri 在更广泛的应用中执行任务。此为媒体对系统更新计划的报道，本报未见同期苹果新闻室稿件，不把它写成已经完成的全量能力。\n\n## 适合谁\n\n关注苹果、Siri 和端侧智能体竞争的读者，以及需要判断「招聘启事」与「产品已经推出」之间差别的开发者。\n\n## 为什么值得看\n\n如果属实，说明苹果希望把助手从「回答问题、执行单个应用内操作」推向跨应用、可调用服务的多步代理。但目前能核对的主要是招聘启事和媒体转述，没有官方产品名、没有上市日期，不宜写成即将发布。\n\n## 可以核对的事实\n\n- 招聘启事被彭博社发现、The Verge 对启事职责与原文引语的转述、以及 iOS 27.3 Developer Preview 相关叙述：见 The Verge 报道（B）。苹果官方新闻室未见同期产品发布。本报未把招聘计划写成已上线功能，也未采用未经本文核对的发布时间猜测。\n"
+    },
+    {
+      "id": "anthropic-ant-nasdaq-debut",
+      "title": "Anthropic 股票 ANT 首日在纳斯达克交易：开盘 111.50 美元，收盘 97.17 美元，较发行价上涨约 17%",
+      "badge": "N",
+      "summary": "Anthropic Class A 普通股 11 月 19 日以代号 ANT 在纳斯达克开始交易。Nasdaq 新闻室称开盘价为 111.50 美元；CNBC 与 Yahoo Finance 均显示常规交易收盘价为 97.17 美元，较 83.00 美元的发行价上涨约 17%。这是对昨日已记录之定价安排的首日交易结果，不是新的发行价。",
+      "publishedAt": "2026-11-20T05:00:01+08:00",
+      "sortAt": "2026-11-20T05:00:01+08:00",
+      "timeLabel": "2026-11-20 05:00",
+      "timePrecision": "datetime",
+      "timeNote": "纳斯达克常规交易时段为美东 09:30–16:00，即北京时间 11 月 19 日 22:30 至 11 月 20 日 05:00。Nasdaq 新闻室确认开盘价；Yahoo Finance 将常规交易收盘时刻标为 4:00 PM EST，对应 unix 时间 1795122001，即 2026-11-19T21:00:01Z，北京时间 11 月 20 日 05:00。交易日为美国 2026-11-19。",
+      "source": "Nasdaq / CNBC",
+      "confidence": "A/B",
+      "url": "https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq",
+      "links": [
+        {
+          "label": "Nasdaq 新闻室：开盘与开市铃",
+          "url": "https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq"
+        },
+        {
+          "label": "CNBC 首日直播与收盘报道",
+          "url": "https://www.cnbc.com/2026/11/19/anthropic-ipo-ant-live-updates.html"
+        },
+        {
+          "label": "AP 报道",
+          "url": "https://apnews.com/article/anthropic-ipo-nasdaq-ai-b6a74b8949021207dc162fcc876c4649"
+        },
+        {
+          "label": "Yahoo Finance ANT 行情页",
+          "url": "https://finance.yahoo.com/quote/ANT/"
+        },
+        {
+          "label": "Anthropic 11 月 18 日定价公告（背景）",
+          "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering"
+        }
+      ],
+      "detail": "## 它是什么\n\nClaude 开发商 Anthropic, PBC 首次公开上市后的首个常规交易日结果。定价本身已在 11 月 19 日早报写过：发行价 83.00 美元，发行 9.80 亿股 Class A 普通股，股票代号 ANT。本条只补录已经发生的开盘、收盘和成交数据。\n\n## 它做什么\n\n- Nasdaq 新闻室 11 月 19 日稿写明：Anthropic（ANT）周四开始在纳斯达克交易，开盘价为每股 111.50 美元；联合创始人兼 CEO Dario Amodei、联合创始人兼总裁 Daniela Amodei 在 Nasdaq MarketSite 参加了开市铃仪式。该稿标注时间为 Nov 19, 2026 3:30PM EST，早于收盘，因此未写收盘价。\n- CNBC 收盘报道写明：ANT 开盘 111.50 美元，收盘 97.17 美元，较发行价上涨 17%。Yahoo Finance 行情页同样显示常规交易价格 97.17 美元，涨幅 17.07%（(97.17 − 83.00) ÷ 83.00 ≈ 17.07%），开盘 111.50 美元，当日最高 115.10 美元、最低 92.72 美元，成交量 851,818,130 股，并把常规交易收盘时刻标为 4:00 PM EST。CNBC 的表述是成交「More than 846 million shares」，与 Yahoo Finance 给出的精确股数相符。\n- 按上述可核对价格计算：收盘价较开盘价 111.50 美元回落 14.33 美元，约 12.85%（(97.17 − 111.50) ÷ 111.50）。这是由已核实价格算出的比较，不是交易所另给的官方涨跌幅。\n- CNBC 称，按完全稀释口径，收盘时 Anthropic 市值约为 1.8 万亿美元，并称其成为美国市值第七的公司，排在 Apple、Microsoft、Nvidia、Alphabet、Amazon 和 SpaceX 之后。Yahoo Finance 行情页显示的市值为 1.272T，并给出 impliedSharesOutstanding 约 130.87 亿股（97.17 × 13,086,672,591 ≈ 1.272 万亿美元）。两个数字使用的股本口径不同，官方定价公告未给出首日市值，本报并列注明来源，不自行选择一个作为「官方市值」。\n- CNBC 还提到，此次 IPO 募资 813 亿美元，并再次引用招股书中已披露的财务数据（截至 9 月 30 日九个月收入 332.4 亿美元等）。募资规模和招股书财务数字属于此前定价/招股材料已经出现过的背景，不作为今日新披露。官方定价公告写明，交割预计在 2026 年 11 月 20 日完成，但仍取决于惯常交割条件；本早报检索时美国仍处于 11 月 19 日晚间，不能写成交割已经完成。\n\n## 适合谁\n\n关注 AI 公司上市、Anthropic 估值和公开市场定价的读者；需要把「发行价」「开盘价」「收盘价」和不同市值口径分开看的投资者与研究者。\n\n## 为什么值得看\n\n这是有史以来规模最大的 IPO 之一的首个交易日：开盘相对发行价大幅高开，收盘仍高于发行价，但低于开盘价。对已经在昨日早报里看到 83 美元定价的读者，现在才有可核对的公开市场价格。市值不要只看一个整数，不同媒体和行情页的稀释口径并不相同。\n\n## 可以核对的事实\n\n- 开盘价 111.50 美元、开市铃仪式：见 Nasdaq 新闻室（A）。\n- 收盘价 97.17 美元、较发行价约 17% 的涨幅、开盘 111.50 美元：见 CNBC、AP 报道和 Yahoo Finance 行情页（B）。\n- 当日最高 115.10 美元、最低 92.72 美元、成交量 851,818,130 股、常规交易收盘时刻 4:00 PM EST：见 Yahoo Finance；CNBC 写成交超过 8.46 亿股（B）。\n- 完全稀释市值约 1.8 万亿美元、美国市值第七的排位：见 CNBC（B）。Yahoo Finance 显示市值 1.272T，口径与 CNBC 不同（B）。官方定价稿未写首日市值。\n- 发行价 83.00 美元、代号 ANT、预计 11 月 19 日开始交易、预计 11 月 20 日交割：见 Anthropic 11 月 18 日官方定价公告（A），已在昨日早报收录，此处只作背景。\n"
+    },
+    {
+      "id": "openai-gpt-live-1-1-api",
+      "title": "OpenAI 在 API 推出 GPT-Live-1.1，并新增 WebRTC Standby：空闲时按每分钟 0.02 美元计费",
+      "badge": "N",
+      "summary": "OpenAI 宣布语音模型 GPT-Live-1.1 已在 API 中可用。官方称，它比 GPT-Live-1 更准确转写语音，并能在多语言对话中保持更一致的口音和声音；同时为 GPT-Live-1 和 GPT-Live-1.1 的 WebRTC 会话新增 Standby：静音达到设定的空闲时间后暂停推理，通话保持接通，空闲按每分钟 0.02 美元计费，活跃会话为每分钟 0.05 美元。该模型自 10 月 15 日起已用于 ChatGPT Plus 和 Pro 的语音，现在开发者可以在自己的应用里调用。",
+      "publishedAt": "2026-11-20T04:00:32+08:00",
+      "sortAt": "2026-11-20T04:00:32+08:00",
+      "timeLabel": "2026-11-20 04:00",
+      "timePrecision": "datetime",
+      "timeNote": "OpenAI 官方开发者账号 OpenAIDevs 在 X 上的帖子时间为 2026-11-19T20:00:32.000Z，即北京时间 11 月 20 日 04:00；官方 API Changelog 将该项列在 Nov 19 标题下。按官方 X 的精确时刻记录。",
+      "source": "OpenAI",
+      "confidence": "A",
+      "url": "https://developers.openai.com/api/docs/changelog",
+      "links": [
+        {
+          "label": "OpenAI API Changelog",
+          "url": "https://developers.openai.com/api/docs/changelog"
+        },
+        {
+          "label": "模型文档 GPT-Live-1.1",
+          "url": "https://developers.openai.com/api/docs/models/gpt-live-1.1"
+        },
+        {
+          "label": "GPT-Live 入门指南",
+          "url": "https://developers.openai.com/api/docs/guides/live"
+        },
+        {
+          "label": "OpenAIDevs 官方 X",
+          "url": "https://x.com/OpenAIDevs/status/2123506733524136446"
+        },
+        {
+          "label": "OpenAI 开发者社区公告",
+          "url": "https://community.openai.com/t/gpt-live-1-1-has-arrived-in-the-api/1418537"
+        }
+      ],
+      "detail": "## 它是什么\n\n面向开发者的实时语音模型更新，不是 ChatGPT 文本旗舰模型的新版本。模型 ID 为 `gpt-live-1.1`，通过 Live 接口 `v1/live/sessions` 使用。它能在说话的同时继续听（官方称为 full duplex），并把需要推理或工具的任务交给后端模型或应用自己的服务。\n\n## 它做什么\n\n- 官方 Changelog 在 Nov 19 写明：GPT-Live-1.1 improves pronunciation, accent consistency, and transcription in multilingual voice conversations. 开发者在现有 Live session 配置中使用 `gpt-live-1.1`，并用自然语言说明何时把任务交给后端。\n- 官方模型文档写明：GPT-Live-1.1 can listen while it speaks。与 GPT-Live-1 相比，它转写更准确，并能在语言之间保持更一致的口音和声音。输入和输出模态均为 audio 与 text。语音会话按时长计费，后端模型和工具用量另行计费。定价表为：Active 每分钟 0.05 美元，Standby 每分钟 0.02 美元；较低的 Standby 费率适用于推理暂停期间的 WebRTC 会话。\n- OpenAIDevs 在官方 X 上写明：Standby 是 GPT-Live API 的新配置，适用于 GPT-Live-1 和 GPT-Live-1.1。将空闲超时设为 5–60 秒后，这段静音结束时模型会暂时暂停，但 WebRTC 通话保持接通，并以较低费率（每分钟 0.02 美元，对比标准的每分钟 0.05 美元）计费，直到有人再次开口。\n- OpenAIDevs 还写明：GPT-Live-1.1 has powered voice in ChatGPT Plus and Pro since October 15th. Now it can power your apps。开发者可用它构建能可靠识别字母和数字等细节、遵循指令、并把复杂工作流交给自选后端模型、同时不打断对话的语音代理。\n- 官方入门指南还说明：GPT-Live 负责对话，后端负责被委派的任务。可以选择由 OpenAI 用 Responses API 运行后端模型（Responses delegation），或由应用自己连接已有代理（client delegation）。应用仍需负责权限、确认、以及访问自有系统的函数调用。\n\n## 适合谁\n\n要在自己的产品里做多语言实时语音代理、电话或 WebRTC 语音会话的开发者，尤其是需要在用户沉默时降低空闲推理成本的团队。它不能通过 Chat Completions 或普通 Responses 接口直接调用。\n\n## 为什么值得看\n\n这是把已经在 ChatGPT 语音里用过的 GPT-Live-1.1 正式交给 API 开发者，并且用 Standby 把「通话未挂断但暂时不必推理」单独计价。它改善的是语音交互的自然度和空闲成本，不是新的通用文本推理模型；实际效果仍取决于口音、语言和后端委派设置。\n\n## 可以核对的事实\n\n- API 可用、发音/口音一致性与多语言转写改进、模型 ID `gpt-live-1.1`、Live 接口 `v1/live/sessions`、Standby 适用于 GPT-Live-1 与 1.1、空闲超时 5–60 秒、Active 每分钟 0.05 美元、Standby 每分钟 0.02 美元、自 10 月 15 日起已用于 ChatGPT Plus 和 Pro 语音：见官方 Changelog、模型文档和 OpenAIDevs 官方 X（A）。官方 X 发帖时间为 2026-11-19T20:00:32.000Z。后端模型与工具用量另行计费，见官方定价说明。\n"
+    },
+    {
+      "id": "nvidia-microsoft-ignite-azure-foundry",
+      "title": "NVIDIA 与 Microsoft 宣布扩大合作：Azure 上的 Vera Rubin NVL72、Foundry 中的 Nemotron 模型，以及本地与边缘部署选项",
+      "badge": "N",
+      "summary": "在 Microsoft Ignite 期间，NVIDIA 宣布与 Microsoft 扩大合作：Azure 数据中心已运行 NVIDIA Vera Rubin NVL72 系统；通过 Microsoft Foundry 扩大 NVIDIA 开源模型与定制能力；并把部署选项延伸到 Azure Local、边缘平台和 Windows 设备。",
+      "publishedAt": "2026-11-20T04:00:15+08:00",
+      "sortAt": "2026-11-20T04:00:15+08:00",
+      "timeLabel": "2026-11-20 04:00",
+      "timePrecision": "datetime",
+      "timeNote": "NVIDIA 官方博客 datePublished 为 2026-11-19T20:00:15+00:00，即北京时间 11 月 20 日 04:00；dateModified 为 2026-11-19T20:14:16+00:00，不作为首次发布时间。",
+      "source": "NVIDIA",
+      "confidence": "A",
+      "url": "https://blogs.nvidia.com/blog/microsoft-ignite-accelerated-computing-azure-windows-pcs/",
+      "links": [
+        {
+          "label": "NVIDIA 官方博客",
+          "url": "https://blogs.nvidia.com/blog/microsoft-ignite-accelerated-computing-azure-windows-pcs/"
+        },
+        {
+          "label": "NVIDIA 在 Microsoft Ignite 2026 的活动页",
+          "url": "https://www.nvidia.com/en-us/events/microsoft-ignite/"
+        }
+      ],
+      "detail": "## 它是什么\n\n一份在 Ignite 期间发布的官方合作更新，覆盖云端机柜、企业模型定制、本地/边缘部署，以及 Microsoft 自身服务中对 NVIDIA 软件和 GPU 的使用。11 月 17 日前后已报道过的 Copilot Home、Microsoft IQ 和 MAI 模型等 Ignite 产品，不在本条重复。\n\n## 它做什么\n\n- 官方写明：NVIDIA Vera Rubin NVL72 系统已在 Azure 数据中心运行，面向推理、智能体应用以及大规模训练与推理。双方还在把机密计算扩展到裸金属和机柜级 AI 基础设施，并提到 NVIDIA Confidential Computing 与 attestation，用于在释放敏感模型、数据或密钥前验证计算环境；同时合作使用 NVIDIA MaxLPS 提升电力效率。这些是正在进行的合作方向，文中并未给出已经全面商用的完成日期。\n- 在 Microsoft Foundry：官方称将扩大客户对 NVIDIA 开源模型与定制能力的使用。Microsoft 的 serverless Programmed Training 让开发者控制后训练流程，由 Foundry 管理底层基础设施；Foundry Managed Compute 增加了对部署自定义模型权重的支持。文中举例：EY 使用 Programmed Training，把 NVIDIA Nemotron 开源模型适配到企业采购记录分类，官方称在其评估集上准确率提升 55%，成本降至专有前沿模型的 1/15。这是博客转述的客户结果，不是本报独立评测。\n- 官方列出在 Foundry Managed Compute 上扩大的 Nemotron 3.5 系列：Nemotron 3.5 Super 面向长程智能体，Lightning 面向需要快速响应和工具调用的应用；还有用于检索的 Nemotron Embed / Rerank、用于文档解析的 Nemotron Parse，以及内容安全模型 Nemotron Content Safety。Nemotron 3.5 Bolt 和语音识别模型 Transcribe 被写为「coming soon」，不是即日可用。\n- 在数据附近部署方面：Foundry Local 扩大对 Nemotron 3.5 的支持；Azure Local 将支持合作伙伴提供的 NVIDIA RTX PRO 6000 Blackwell GPU，并扩展到 NVIDIA Jetson Thor 和 Jetson Orin，用于机器视觉、机器人和自主作业等工业场景。NVIDIA 的物理 AI 模型（包括 Cosmos）也被写入将进入 Foundry Local。Windows 365 Cloud PC 将引入 Direct Stream 能力，官方称可支持最多两路 4K/60 帧的图形应用；目前是有限预览报名，公开预览计划在 2027 年初。\n- 科研方面，NVIDIA BioNemo Agent Toolkit 和 ALCHEMI Toolkit 将进入 Microsoft Discovery 目录。文中提到的一个初始集成使用与华盛顿大学蛋白质设计研究所合作开发的 RFD4-Proteina 模型，生成候选蛋白质结构和氨基酸序列，供后续评估和实验验证。\n- 官方还称，Microsoft 自身也在使用 NVIDIA 技术，包括用 NVIDIA Dynamo 支持后训练中的强化学习 rollout 推理，以及用 NVIDIA RTX PRO 6000 Blackwell GPU 加速 Bing 搜索模型。博客还转述：在 MLPerf Training v6.1 中，Azure 在 DeepSeek-V3 上扩展到 10,240 个 NVIDIA GPU（基于 GB200 NVL72），为该轮最大规模；在 MLPerf Inference v6.1 中，Azure 的 GB300 NVL72 在 DeepSeek-R1 interactive throughput 上领先云提交超过 10%（注明 per Signal65）。这些是官方转引的基准声明，不是本报复测。\n\n## 适合谁\n\n在 Azure、Azure Local 或 Foundry 上训练、定制和部署模型的企业与开发者，以及关注 Vera Rubin 云端落地节奏的基础设施团队。\n\n## 为什么值得看\n\n它把「Vera Rubin 已经在 Azure 跑起来」和「Nemotron 3.5 进入 Foundry / Foundry Local」写成可核对的官方进展，而不是只停留在展会演示。对用户来说，关键仍是具体 SKU、区域和预览资格，博客并没有给出完整的价格表或全面商用时间表。\n\n## 可以核对的事实\n\n- Vera Rubin NVL72 已在 Azure 运行、Foundry / Foundry Local 中的 Nemotron 3.5 与相关模型安排、Bolt 与 Transcribe 为即将推出、Azure Local 对 RTX PRO 6000 Blackwell 以及 Jetson 平台的支持、Windows 365 Direct Stream 有限预览且公开预览计划在 2027 年初、Discovery 目录与 RFD4-Proteina 初始集成、Microsoft 使用 Dynamo 和 RTX PRO 6000 Blackwell：见 NVIDIA 官方博客（A）。\n- EY 准确率与成本数字、MLPerf 规模和 Signal65 转引的推理领先幅度：亦见该官方博客，但属于客户结果或第三方基准转述，本报未独立复核。\n"
+    },
+    {
+      "id": "google-gemini-api-tool-retrieval",
+      "title": "Google 在 Gemini API 推出 Tool Retrieval 预览：工具参数模式可按需加载，不必每次把整个工具库送进提示",
+      "badge": "N",
+      "summary": "Google 在 Gemini Interactions API 中以预览形式推出 Tool Retrieval。开发者可以把工具参数模式留到真正需要时再加载，而不必在每次请求里发送完整工具库，以降低输入 token、延迟，并在工具数量变多时维持选择准确度。",
+      "publishedAt": "2026-11-20T02:00:00+08:00",
+      "sortAt": "2026-11-20T02:00:00+08:00",
+      "timeLabel": "2026-11-20 02:00",
+      "timePrecision": "datetime",
+      "timeNote": "Google 官方博客 datePublished 为 2026-11-19T18:00:00+00:00，即北京时间 11 月 20 日 02:00；dateModified 为 2026-11-19T18:30:49+00:00，不作为首次发布时间。",
+      "source": "Google",
+      "confidence": "A",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+      "links": [
+        {
+          "label": "Google 官方博客",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/"
+        },
+        {
+          "label": "Gemini Interactions API 概览",
+          "url": "https://ai.google.dev/gemini-api/docs/interactions-overview"
+        }
+      ],
+      "detail": "## 它是什么\n\nGemini API 的一项开发者预览能力，用来按需检索和加载工具 schema，不是新的基础模型发布。\n\n## 它做什么\n\n- 官方说明：在请求中加入 `tool_search` 工具，并对希望暂缓加载的工具设置 `defer_loading: true`。模型仍然能看到每个被暂缓工具的名称和描述，但参数模式先不进入上下文；当模型需要某个工具时，会按名称请求，API 再加载完整 schema，并在同一次请求中完成函数调用。这三步会出现在 `interaction.steps` 里，便于调试。\n- 官方写明：不需要开发者自己搭建或托管索引，搜索由 Gemini 在服务端完成。最常用的工具可以继续预先加载，长尾工具再延迟加载。该机制与前缀缓存兼容：被延迟的 schema 不会出现在提示开头，随后加载的 schema 加在对话后面，缓存前缀可以在多轮之间保持不变。\n- Tool Retrieval 也适用于 Gemini API 中的远程 MCP 服务器：在 `mcp_server` 工具上设置 `defer_loading: true` 后，该服务器暴露的工具会按需加载，不必逐个列出。\n- 如果开发者自己维护工具注册表、嵌入索引或按用户过滤权限，可以把 `tool_search` 设为 `\"execution\": \"client\"`，由应用执行查找。客户端检索每次查找会增加一次往返，且不必事先声明全部工具，因此也可以在用户中途接入集成时再暴露新工具。\n- 计费：官方称 Tool Retrieval 没有单独收费，仍按所调用模型的标准输入/输出价格计费。启用 `tool_search` 会增加一小块固定的输入 token；模型加载的每份 schema 会在此后的对话中作为输入计费，与一开始就声明的工具相同。官方建议用自己的流量衡量是否节省 token。\n- 支持范围：官方写明，Tool Retrieval 适用于 Interactions API 中的 Gemini 3.6 及更新模型，包括所有 Gemini 4 模型。\n\n## 适合谁\n\n正在给智能体接入几十甚至上百个工具、或挂接大型 MCP 服务器的 Gemini API 开发者。\n\n## 为什么值得看\n\n当工具库变大时，把全部参数模式每次都塞进提示会又贵又慢，还可能降低选工具的准确度。这项预览把「先知道有哪些工具，再用到再加载 schema」做成官方 API 能力，是对智能体工程更直接的改进，而不是又一个模型分数公告。\n\n## 可以核对的事实\n\n- 预览发布于 Interactions API、`tool_search` 与 `defer_loading` 的用法、服务端检索无需自建索引、对 MCP 与客户端检索的支持、无单独收费、适用于 Gemini 3.6 及更新模型（含全部 Gemini 4 模型）：见 Google 官方博客（A）。\n"
+    },
+    {
+      "id": "google-gemini-computer-use-mac",
+      "title": "Gemini 应用在 Mac 上推出 computer use：可在隔离窗口中操作本机应用、本地文件和网页，并由用户批准关键步骤",
+      "badge": "N",
+      "summary": "Google 宣布，Gemini 应用的 Mac 版即日起提供 computer use 功能：用户可以用自然语言描述跨本地文件、桌面应用和网页的多步任务，由 Gemini 在隔离窗口中点击、输入和操作，并在用户选择权限、观看实时预览并批准关键动作的前提下完成。",
+      "publishedAt": "2026-11-20T01:00:00+08:00",
+      "sortAt": "2026-11-20T01:00:00+08:00",
+      "timeLabel": "2026-11-20 01:00",
+      "timePrecision": "datetime",
+      "timeNote": "Google 官方博客 datePublished 为 2026-11-19T17:00:00+00:00，即北京时间 11 月 20 日 01:00；dateModified 为 2026-11-19T17:09:37+00:00，不作为首次发布时间。",
+      "source": "Google",
+      "confidence": "A",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/computer-use-mac/",
+      "links": [
+        {
+          "label": "Google 官方博客",
+          "url": "https://blog.google/innovation-and-ai/products/gemini-app/computer-use-mac/"
+        },
+        {
+          "label": "Gemini for Mac 下载页",
+          "url": "https://gemini.google/mac"
+        }
+      ],
+      "detail": "## 它是什么\n\nGemini 应用在 Mac 上的一项电脑操作能力，不是新的通用大模型，也不是 Windows 版同步发布。\n\n## 它做什么\n\n- 官方写明：用户描述需要完成的工作后，Gemini 可以导航菜单、输入信息并点击应用来完成任务。它在单独的隔离窗口中运行，主屏幕和光标仍可继续由用户使用；聊天里可以看实时预览。\n- 隐私和安全方面，官方强调：由用户选择 Gemini 可以访问哪些应用，可随时暂停，并在关键动作发生前批准。\n- 官方给出的起始示例包括：在设计软件中批量调色或搭建复杂 3D 场景；从本地 PDF 提取重量、尺寸和地址并填写多栏运输报价；从多个地区的实时仪表盘拉取指标和截图并做成 Google 幻灯片；分析本地服装照片、检索定价并准备转卖平台上的商品信息。\n- 可用范围：官方写明，该功能正在以英语向美国的 Gemini Mac 应用推送；需要搭载 Apple Silicon、运行 macOS Sequoia 15.0 或更高版本的 Mac；面向 18 岁及以上的个人 Google 账号，且需为 Google AI Plus、Pro 或 Ultra 用户。\n\n## 适合谁\n\n在美国、使用符合条件的 Mac 和 Google AI Plus / Pro / Ultra 个人账号、希望把重复的多步桌面操作交给助手的用户。中国用户和不符合上述系统、账号或地区条件的用户，不能把「即日起推出」理解成已经对所有人可用。\n\n## 为什么值得看\n\n这是 Google 把「让模型直接操作电脑」做成 Gemini 应用内功能的一步，而且强调隔离窗口、权限选择和人工批准。它目前只在美国、英文、特定硬件和订阅档位里推出，覆盖面比 API 或网页版 Gemini 更窄。\n\n## 可以核对的事实\n\n- Mac 版 Gemini 应用推出 computer use、隔离窗口与实时预览、用户选择应用权限并批准关键动作、官方示例任务、英语 / 美国推送，以及 Apple Silicon、macOS Sequoia 15.0+、18 岁及以上个人账号、Plus / Pro / Ultra 的限制：见 Google 官方博客（A）。\n"
+    },
+    {
+      "id": "google-genie-4-gemini-api",
+      "title": "Google 把 Genie 4 接入 Gemini API 和 Google AI Studio，开发者可用文本或参考图生成可交互世界",
+      "badge": "N",
+      "summary": "在前一天向符合条件的 Google AI Ultra 用户开放 Genie 4 之后，Google 宣布开发者现在可以通过 Gemini API（经 Interactions API）和 Google AI Studio 使用 Genie 4，用文本提示、参考图或二者结合，生成带同步原生音频的连续 720p/24fps 可交互世界。",
+      "publishedAt": "2026-11-20T01:00:00+08:00",
+      "sortAt": "2026-11-20T01:00:00+08:00",
+      "timeLabel": "2026-11-20 01:00",
+      "timePrecision": "datetime",
+      "timeNote": "Google 官方博客 datePublished 为 2026-11-19T17:00:00+00:00，即北京时间 11 月 20 日 01:00；dateModified 为 2026-11-19T17:08:20+00:00，不作为首次发布时间。与同日 01:00 发布的 Mac computer use 公告时间相同，本条按产品跟进排在其后。",
+      "source": "Google",
+      "confidence": "A",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/genie-4-in-gemini-api/",
+      "links": [
+        {
+          "label": "Google 官方博客",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/genie-4-in-gemini-api/"
+        }
+      ],
+      "detail": "## 它是什么\n\nGenie 4 的开发者接口开放，是对 11 月 19 日早报已记录之「向 Ultra 用户开放」的跟进，不是新的世界模型版本发布。\n\n## 它做什么\n\n- 官方写明：开发者可以从文本提示、参考图像或两者出发，试验生成连续的 720p、24fps 世界，并带有同步的原生音频，覆盖环境声、音效和角色对白。\n- 用户可以用实时键盘控制，同时配合实时文本提示，在环境中导航，并即时改变天气、光照、物体或事件。官方称 Gemini 推理会在过程中保持世界状态一致。\n- 官方列出的用途包括：原型交互体验、为空间概念做设计可视化，以及训练机器人和 AI 智能体。每一份输出都带有不可感知的 SynthID 水印。\n- 官方提醒前往 Google AI Studio 试用交互画布和起始应用，并查看定价细节与 Gemini API 文档。本条不转写该博客未列出的具体价格。\n\n## 适合谁\n\n希望在自己的应用或研究里嵌入可交互世界生成，而不是只在 Gemini 应用里体验的开发者、设计师和机器人/智能体研究人员。\n\n## 为什么值得看\n\n前一天的开放主要面向 Ultra 用户的产品体验；这一天则把同样的模型放到 Gemini API 和 AI Studio，开发者才能真正接入自己的工作流。能力和分辨率、帧率、水印以官方说明为准，定价需看官方文档，不宜用昨天的产品稿代替今天的 API 条款。\n\n## 可以核对的事实\n\n- 通过 Gemini API（经 Interactions API）和 Google AI Studio 向开发者开放、720p / 24fps、同步原生音频、文本和/或参考图输入、实时键盘与文本控制、SynthID 水印：见 Google 官方博客（A）。该稿写明是「Following yesterday's Genie 4 launch」，与昨日早报的 Ultra 用户开放为同一产品的不同渠道，不重复当作新模型。\n"
+    },
+    {
+      "id": "google-blue-origin-project-suncatcher",
+      "title": "Google 与 Blue Origin 合作，计划在 2029 年第一季度用 New Glenn 执行 Project Suncatcher 的首次重型发射",
+      "badge": "N",
+      "summary": "Google 宣布与 Blue Origin 合作，执行 Project Suncatcher 的首次重型发射。该项目是 Google 把 AI 基础设施放到轨道、利用太空太阳能的长期研究计划。目标窗口为 2029 年第一季度，由 New Glenn 重型运载火箭把卫星送入太阳同步轨道。",
+      "publishedAt": "2026-11-19T21:00:00+08:00",
+      "sortAt": "2026-11-19T21:00:00+08:00",
+      "timeLabel": "2026-11-19 21:00",
+      "timePrecision": "datetime",
+      "timeNote": "Google 官方博客 datePublished 为 2026-11-19T13:00:00+00:00，即北京时间 11 月 19 日 21:00；dateModified 为 2026-11-19T13:07:56+00:00，不作为首次发布时间。",
+      "source": "Google",
+      "confidence": "A",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/blue-origin-project-suncatcher-partnership/",
+      "links": [
+        {
+          "label": "Google 官方博客",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/blue-origin-project-suncatcher-partnership/"
+        }
+      ],
+      "detail": "## 它是什么\n\n一项长期研究项目的发射合作公告，不是新的地球数据中心已经开工，也不是短期可租用的云计算产品。官方称 Project Suncatcher 是长期 moonshot，此次是「our first heavy-lift Project Suncatcher launch」，并写明还在与其他卫星和发射伙伴继续合作。\n\n## 它做什么\n\n- 官方写明：目标窗口为 2029 年第一季度，Blue Origin 的重型 New Glenn 火箭将把 Google 的卫星部署到太阳同步轨道。\n- 官方对卫星能力的表述是：每颗卫星「each with roughly the capacity of a data center rack」。这是官方自己的约数，不是已经公布的详细功率、芯片型号或机柜规格。\n- 官方把这次专用发射称为长期路线图上的一个关键节点，用于探索未来算力的边界。博客没有给出卫星数量、合同金额、地面站安排或 2029 年之后的运营计划。\n\n## 适合谁\n\n关注 AI 基础设施、太空计算和大型科技公司长期研究计划的读者；不适合把它当成可以马上下单的算力服务。\n\n## 为什么值得看\n\n它把「在轨道上做 AI 基础设施」从概念推进到有发射伙伴、运载火箭和目标窗口的一步。但窗口仍在 2029 年，细节很少，现在还不能据此判断商业可行或环境与监管结果。\n\n## 可以核对的事实\n\n- 与 Blue Origin 合作执行 Project Suncatcher 首次重型发射、目标窗口为 2029 年第一季度、使用 New Glenn、进入太阳同步轨道、每颗卫星约相当于一个数据中心机柜的能力：见 Google 官方博客（A）。博客未给出卫星数量、价格或其他技术规格。\n"
     }
   ]
 }
