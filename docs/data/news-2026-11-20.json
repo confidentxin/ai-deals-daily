@@ -1,0 +1,222 @@
+{
+  "asOf": "2026-11-20",
+  "timezone": "Asia/Shanghai",
+  "preview": 10,
+  "empty": false,
+  "emptyMessage": "今日暂无重要资讯，晚间 19:30 起每日更新",
+  "note": "2026-11-20 早报（北京时间）整理：共 8 条。按公告时间从新到旧排列，包括 Microsoft 宣布 Aion Instruct 正式可用并在 Edge 开启 Prompt API 源试验、彭博/The Verge 报道苹果招聘智能体工程师、Anthropic 股票 ANT 首日开盘 111.50 美元并收盘 97.17 美元、NVIDIA 与 Microsoft 扩大 Azure Vera Rubin 与 Foundry 合作、Google 推出 Gemini API Tool Retrieval 预览、Gemini Mac 版 computer use、Genie 4 接入 Gemini API，以及 Google 与 Blue Origin 合作执行 Project Suncatcher 首次重型发射。带精确钟点的条目 timeLabel 用北京时间；官方只给日期的条目 timePrecision 为 date，timeLabel 只写日期，sortAt 仅用于排序，详见各条 timeNote。置信度 A 表示来自官方原文，B 表示可靠媒体报道、官方未单独核实；同一条里官方事实与市场报道需要分开看时标 A/B，详见该条「可以核对的事实」。",
+  "items": [
+    {
+      "id": "microsoft-edge-aion-instruct-prompt-api",
+      "title": "Microsoft 宣布 Aion Instruct 正式可用：作为开源权重模型上架 Hugging Face，并成为 Edge 内置小模型；Prompt API 开启源试验",
+      "badge": "N",
+      "summary": "Microsoft 宣布 Aion Instruct 正式可用，以开源权重形式发布在 Hugging Face，并作为 Microsoft Edge 的内置小语言模型，取代 Phi-4-mini。同时，Prompt API 进入源试验，可在正式版 Edge 的线上站点试用；实验性 Decisions API 仍在 Canary / Dev 通道提供开发者预览。",
+      "publishedAt": "2026-11-20T07:08:46+08:00",
+      "sortAt": "2026-11-20T07:08:46+08:00",
+      "timeLabel": "2026-11-19",
+      "timePrecision": "date",
+      "timeNote": "官方正文只写 published November 19, 2026，未给钟点。页面 article:published_time 为 2026-11-19T23:08:46+00:00，即北京时间 11 月 20 日 07:08；但 HTTP Last-Modified 为 15:08:46 GMT，两者不一致。timeLabel 只写日期，sortAt 取 article:published_time 仅用于排序，不代表官方精确公告时刻。",
+      "source": "Microsoft",
+      "confidence": "A",
+      "url": "https://blogs.windows.com/msedgedev/2026/11/19/hybrid-intelligence-on-the-web-introducing-aion-instruct-and-prompt-api-in-microsoft-edge/",
+      "links": [
+        {
+          "label": "Microsoft Edge 官方博客",
+          "url": "https://blogs.windows.com/msedgedev/2026/11/19/hybrid-intelligence-on-the-web-introducing-aion-instruct-and-prompt-api-in-microsoft-edge/"
+        },
+        {
+          "label": "Hugging Face：microsoft/Aion-1.0-Instruct-2.3B",
+          "url": "https://huggingface.co/microsoft/Aion-1.0-Instruct-2.3B"
+        },
+        {
+          "label": "Prompt API 开发者文档",
+          "url": "https://learn.microsoft.com/en-us/microsoft-edge/web-platform/prompt-api"
+        },
+        {
+          "label": "Microsoft Edge Origin Trials",
+          "url": "https://developer.microsoft.com/en-us/microsoft-edge/origin-trials/"
+        }
+      ],
+      "detail": "## 它是什么\n\n面向网页的端侧小模型与浏览器 API 更新，不是新的云端大模型发布。官方把这次更新概括为三件事：Aion Instruct 正式可用、Prompt API 源试验，以及 Decisions API 的开发者预览。\n\n## 它做什么\n\n- 官方写明：Aion Instruct 即日起作为开源权重模型在 Hugging Face 提供，并成为 Edge 的内置小语言模型，替换 Phi-4-mini。该模型有 23 亿参数，官方称它比 Phi 更小、更快，能在更多设备上运行，并在文本生成与合成、摘要、指令遵循和结构化输出等常见网页任务上质量相当。\n- 官方还说，Aion Instruct 将于今年晚些时候登陆 Windows，为 Windows 和 Copilot+ PC 上的端侧体验打基础。这些是路线图表述，不是已经完成的系统级推送。\n- Edge 仅在站点或功能首次需要、且设备适合运行时才下载该模型。用户可在 Edge 设置中关闭端侧 AI，关闭后会移除模型并停止后续下载。\n- Prompt API 此前只在 Edge Canary 和 Dev 通道的开发者预览中提供。现在通过源试验，开发者可以在正式版 Edge 的线上站点调用该 API，用端侧小模型做更通用的推理，并在设备不适合或需要更强能力时切到已配置的云端提供商。官方请开发者就 API 设计、模型表现和跨浏览器互操作提供反馈，以支持后续标准化讨论。\n- Decisions API 仍是实验性接口的开发者预览，仅在 Edge Canary / Dev 通道提供，由 Aion Instruct 驱动。站点可以对文本一次性提出是/否、选择题或打分问题，得到概率和置信度，且不必生成文本。官方举例包括判断意图、分流用户内容和实时打分。官方提醒：该 API 及其实现预计还会变化。\n\n## 适合谁\n\n要在网页里做端侧摘要、写作辅助、结构化判断，或评估 Prompt API 能否进入生产站点的前端开发者；以及关注浏览器内置小模型替换的读者。\n\n## 为什么值得看\n\n这是把端侧模型从预览推进到「Edge 内置 + 开源权重可下载」的一步，而且 Prompt API 第一次可以在正式版浏览器的真实站点上做源试验。它仍然不是一个新的前沿大模型，能力和覆盖范围取决于设备是否适合运行 23 亿参数的端侧模型。\n\n## 可以核对的事实\n\n- Aion Instruct 正式可用、开源权重上架 Hugging Face、成为 Edge 内置小模型并替换 Phi-4-mini、参数量为 23 亿、按需下载与用户可关闭、将于今年晚些时候登陆 Windows、Prompt API 源试验、Decisions API 仍为 Canary / Dev 预览：见 Microsoft Edge 官方博客（A）。Hugging Face 仓库名与开发者文档、源试验入口见上列链接。\n"
+    },
+    {
+      "id": "apple-ai-agent-job-listing",
+      "title": "彭博报道：苹果招聘工程师，打造可跨应用、浏览网页并调用服务的 AI 代理",
+      "badge": "N",
+      "summary": "The Verge 援引彭博社报道称，苹果一份招聘启事显示，公司正在招聘工程师，牵头打造可浏览网页、跨应用工作、编写代码并调用服务的智能体式 AI 助手。这不是已经发布的产品，也未见官方发布时间表。",
+      "publishedAt": "2026-11-20T06:31:00+08:00",
+      "sortAt": "2026-11-20T06:31:00+08:00",
+      "timeLabel": "2026-11-19",
+      "timePrecision": "date",
+      "timeNote": "并非苹果官方公告。The Verge 标注 Nov 19, 2026, 10:31 PM UTC，即北京时间 11 月 20 日 06:31，此为媒体发稿时间。sortAt 取该发稿时间仅用于排序，不代表官方精确公告时刻。",
+      "source": "The Verge",
+      "confidence": "B",
+      "url": "https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing",
+      "links": [
+        {
+          "label": "The Verge 报道",
+          "url": "https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing"
+        },
+        {
+          "label": "Techmeme 汇总",
+          "url": "https://techmeme.com/261119/p52"
+        }
+      ],
+      "detail": "## 它是什么\n\n一条基于招聘启事的可靠媒体报道，说明苹果内部正在组建或加强智能体方向的工程团队。它不是苹果官方的产品发布，也不是 Siri 的新版本上线公告。\n\n## 它做什么\n\n- The Verge 写明：彭博社发现了这份招聘，苹果要找一名工程师来牵头创建 agentic AI assistant。报道称，该助手将能浏览网页、跨应用工作、写代码并调用服务。\n- The Verge 引用招聘启事原文称：人们已经在浏览器、文档、终端、编辑器和服务之间流动地完成最有价值的工作；「We're building AI agents that can do the same… These agents plan and carry out multi-step tasks across apps, browsers, command lines, code, and APIs, and they can coordinate specialized sub-agents along the way.」\n- 报道称，该职位将与 Siri、UI Frameworks 和 Apple Foundation Models 等团队密切合作。彭博社还提到，公司可能为 Siri 增加在「照片」中旋转或裁剪图片、以及整理 Safari 标签页等能力；这是媒体对方向的转述，不是已经向用户推送的功能。\n- The Verge 还写道：在即将到来的 iOS 27.3 更新中，苹果将让开发者把 Siri AI 接入「all apps」；目前作为 Developer Preview 推出，最终将允许 Siri 在更广泛的应用中执行任务。此为媒体对系统更新计划的报道，本报未见同期苹果新闻室稿件，不把它写成已经完成的全量能力。\n\n## 适合谁\n\n关注苹果、Siri 和端侧智能体竞争的读者，以及需要判断「招聘启事」与「产品已经推出」之间差别的开发者。\n\n## 为什么值得看\n\n如果属实，说明苹果希望把助手从「回答问题、执行单个应用内操作」推向跨应用、可调用服务的多步代理。但目前能核对的主要是招聘启事和媒体转述，没有官方产品名、没有上市日期，不宜写成即将发布。\n\n## 可以核对的事实\n\n- 招聘启事被彭博社发现、The Verge 对启事职责与原文引语的转述、以及 iOS 27.3 Developer Preview 相关叙述：见 The Verge 报道（B）。苹果官方新闻室未见同期产品发布。本报未把招聘计划写成已上线功能，也未采用未经本文核对的发布时间猜测。\n"
+    },
+    {
+      "id": "anthropic-ant-nasdaq-debut",
+      "title": "Anthropic 股票 ANT 首日在纳斯达克交易：开盘 111.50 美元，收盘 97.17 美元，较发行价上涨约 17%",
+      "badge": "N",
+      "summary": "Anthropic Class A 普通股 11 月 19 日以代号 ANT 在纳斯达克开始交易。Nasdaq 新闻室称开盘价为 111.50 美元；CNBC 与 Yahoo Finance 均显示常规交易收盘价为 97.17 美元，较 83.00 美元的发行价上涨约 17%。这是对昨日已记录之定价安排的首日交易结果，不是新的发行价。",
+      "publishedAt": "2026-11-20T05:00:01+08:00",
+      "sortAt": "2026-11-20T05:00:01+08:00",
+      "timeLabel": "2026-11-20 05:00",
+      "timePrecision": "datetime",
+      "timeNote": "纳斯达克常规交易时段为美东 09:30–16:00，即北京时间 11 月 19 日 22:30 至 11 月 20 日 05:00。Nasdaq 新闻室确认开盘价；Yahoo Finance 将常规交易收盘时刻标为 4:00 PM EST，对应 unix 时间 1795122001，即 2026-11-19T21:00:01Z，北京时间 11 月 20 日 05:00。交易日为美国 2026-11-19。",
+      "source": "Nasdaq / CNBC",
+      "confidence": "A/B",
+      "url": "https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq",
+      "links": [
+        {
+          "label": "Nasdaq 新闻室：开盘与开市铃",
+          "url": "https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq"
+        },
+        {
+          "label": "CNBC 首日直播与收盘报道",
+          "url": "https://www.cnbc.com/2026/11/19/anthropic-ipo-ant-live-updates.html"
+        },
+        {
+          "label": "AP 报道",
+          "url": "https://apnews.com/article/anthropic-ipo-nasdaq-ai-b6a74b8949021207dc162fcc876c4649"
+        },
+        {
+          "label": "Yahoo Finance ANT 行情页",
+          "url": "https://finance.yahoo.com/quote/ANT/"
+        },
+        {
+          "label": "Anthropic 11 月 18 日定价公告（背景）",
+          "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering"
+        }
+      ],
+      "detail": "## 它是什么\n\nClaude 开发商 Anthropic, PBC 首次公开上市后的首个常规交易日结果。定价本身已在 11 月 19 日早报写过：发行价 83.00 美元，发行 9.80 亿股 Class A 普通股，股票代号 ANT。本条只补录已经发生的开盘、收盘和成交数据。\n\n## 它做什么\n\n- Nasdaq 新闻室 11 月 19 日稿写明：Anthropic（ANT）周四开始在纳斯达克交易，开盘价为每股 111.50 美元；联合创始人兼 CEO Dario Amodei、联合创始人兼总裁 Daniela Amodei 在 Nasdaq MarketSite 参加了开市铃仪式。该稿标注时间为 Nov 19, 2026 3:30PM EST，早于收盘，因此未写收盘价。\n- CNBC 收盘报道写明：ANT 开盘 111.50 美元，收盘 97.17 美元，较发行价上涨 17%。Yahoo Finance 行情页同样显示常规交易价格 97.17 美元，涨幅 17.07%（(97.17 − 83.00) ÷ 83.00 ≈ 17.07%），开盘 111.50 美元，当日最高 115.10 美元、最低 92.72 美元，成交量 851,818,130 股，并把常规交易收盘时刻标为 4:00 PM EST。CNBC 的表述是成交「More than 846 million shares」，与 Yahoo Finance 给出的精确股数相符。\n- 按上述可核对价格计算：收盘价较开盘价 111.50 美元回落 14.33 美元，约 12.85%（(97.17 − 111.50) ÷ 111.50）。这是由已核实价格算出的比较，不是交易所另给的官方涨跌幅。\n- CNBC 称，按完全稀释口径，收盘时 Anthropic 市值约为 1.8 万亿美元，并称其成为美国市值第七的公司，排在 Apple、Microsoft、Nvidia、Alphabet、Amazon 和 SpaceX 之后。Yahoo Finance 行情页显示的市值为 1.272T，并给出 impliedSharesOutstanding 约 130.87 亿股（97.17 × 13,086,672,591 ≈ 1.272 万亿美元）。两个数字使用的股本口径不同，官方定价公告未给出首日市值，本报并列注明来源，不自行选择一个作为「官方市值」。\n- CNBC 还提到，此次 IPO 募资 813 亿美元，并再次引用招股书中已披露的财务数据（截至 9 月 30 日九个月收入 332.4 亿美元等）。募资规模和招股书财务数字属于此前定价/招股材料已经出现过的背景，不作为今日新披露。官方定价公告写明，交割预计在 2026 年 11 月 20 日完成，但仍取决于惯常交割条件；本早报检索时美国仍处于 11 月 19 日晚间，不能写成交割已经完成。\n\n## 适合谁\n\n关注 AI 公司上市、Anthropic 估值和公开市场定价的读者；需要把「发行价」「开盘价」「收盘价」和不同市值口径分开看的投资者与研究者。\n\n## 为什么值得看\n\n这是有史以来规模最大的 IPO 之一的首个交易日：开盘相对发行价大幅高开，收盘仍高于发行价，但低于开盘价。对已经在昨日早报里看到 83 美元定价的读者，现在才有可核对的公开市场价格。市值不要只看一个整数，不同媒体和行情页的稀释口径并不相同。\n\n## 可以核对的事实\n\n- 开盘价 111.50 美元、开市铃仪式：见 Nasdaq 新闻室（A）。\n- 收盘价 97.17 美元、较发行价约 17% 的涨幅、开盘 111.50 美元：见 CNBC、AP 报道和 Yahoo Finance 行情页（B）。\n- 当日最高 115.10 美元、最低 92.72 美元、成交量 851,818,130 股、常规交易收盘时刻 4:00 PM EST：见 Yahoo Finance；CNBC 写成交超过 8.46 亿股（B）。\n- 完全稀释市值约 1.8 万亿美元、美国市值第七的排位：见 CNBC（B）。Yahoo Finance 显示市值 1.272T，口径与 CNBC 不同（B）。官方定价稿未写首日市值。\n- 发行价 83.00 美元、代号 ANT、预计 11 月 19 日开始交易、预计 11 月 20 日交割：见 Anthropic 11 月 18 日官方定价公告（A），已在昨日早报收录，此处只作背景。\n"
+    },
+    {
+      "id": "nvidia-microsoft-ignite-azure-foundry",
+      "title": "NVIDIA 与 Microsoft 宣布扩大合作：Azure 上的 Vera Rubin NVL72、Foundry 中的 Nemotron 模型，以及本地与边缘部署选项",
+      "badge": "N",
+      "summary": "在 Microsoft Ignite 期间，NVIDIA 宣布与 Microsoft 扩大合作：Azure 数据中心已运行 NVIDIA Vera Rubin NVL72 系统；通过 Microsoft Foundry 扩大 NVIDIA 开源模型与定制能力；并把部署选项延伸到 Azure Local、边缘平台和 Windows 设备。",
+      "publishedAt": "2026-11-20T04:00:15+08:00",
+      "sortAt": "2026-11-20T04:00:15+08:00",
+      "timeLabel": "2026-11-20 04:00",
+      "timePrecision": "datetime",
+      "timeNote": "NVIDIA 官方博客 datePublished 为 2026-11-19T20:00:15+00:00，即北京时间 11 月 20 日 04:00；dateModified 为 2026-11-19T20:14:16+00:00，不作为首次发布时间。",
+      "source": "NVIDIA",
+      "confidence": "A",
+      "url": "https://blogs.nvidia.com/blog/microsoft-ignite-accelerated-computing-azure-windows-pcs/",
+      "links": [
+        {
+          "label": "NVIDIA 官方博客",
+          "url": "https://blogs.nvidia.com/blog/microsoft-ignite-accelerated-computing-azure-windows-pcs/"
+        },
+        {
+          "label": "NVIDIA 在 Microsoft Ignite 2026 的活动页",
+          "url": "https://www.nvidia.com/en-us/events/microsoft-ignite/"
+        }
+      ],
+      "detail": "## 它是什么\n\n一份在 Ignite 期间发布的官方合作更新，覆盖云端机柜、企业模型定制、本地/边缘部署，以及 Microsoft 自身服务中对 NVIDIA 软件和 GPU 的使用。11 月 17 日前后已报道过的 Copilot Home、Microsoft IQ 和 MAI 模型等 Ignite 产品，不在本条重复。\n\n## 它做什么\n\n- 官方写明：NVIDIA Vera Rubin NVL72 系统已在 Azure 数据中心运行，面向推理、智能体应用以及大规模训练与推理。双方还在把机密计算扩展到裸金属和机柜级 AI 基础设施，并提到 NVIDIA Confidential Computing 与 attestation，用于在释放敏感模型、数据或密钥前验证计算环境；同时合作使用 NVIDIA MaxLPS 提升电力效率。这些是正在进行的合作方向，文中并未给出已经全面商用的完成日期。\n- 在 Microsoft Foundry：官方称将扩大客户对 NVIDIA 开源模型与定制能力的使用。Microsoft 的 serverless Programmed Training 让开发者控制后训练流程，由 Foundry 管理底层基础设施；Foundry Managed Compute 增加了对部署自定义模型权重的支持。文中举例：EY 使用 Programmed Training，把 NVIDIA Nemotron 开源模型适配到企业采购记录分类，官方称在其评估集上准确率提升 55%，成本降至专有前沿模型的 1/15。这是博客转述的客户结果，不是本报独立评测。\n- 官方列出在 Foundry Managed Compute 上扩大的 Nemotron 3.5 系列：Nemotron 3.5 Super 面向长程智能体，Lightning 面向需要快速响应和工具调用的应用；还有用于检索的 Nemotron Embed / Rerank、用于文档解析的 Nemotron Parse，以及内容安全模型 Nemotron Content Safety。Nemotron 3.5 Bolt 和语音识别模型 Transcribe 被写为「coming soon」，不是即日可用。\n- 在数据附近部署方面：Foundry Local 扩大对 Nemotron 3.5 的支持；Azure Local 将支持合作伙伴提供的 NVIDIA RTX PRO 6000 Blackwell GPU，并扩展到 NVIDIA Jetson Thor 和 Jetson Orin，用于机器视觉、机器人和自主作业等工业场景。NVIDIA 的物理 AI 模型（包括 Cosmos）也被写入将进入 Foundry Local。Windows 365 Cloud PC 将引入 Direct Stream 能力，官方称可支持最多两路 4K/60 帧的图形应用；目前是有限预览报名，公开预览计划在 2027 年初。\n- 科研方面，NVIDIA BioNemo Agent Toolkit 和 ALCHEMI Toolkit 将进入 Microsoft Discovery 目录。文中提到的一个初始集成使用与华盛顿大学蛋白质设计研究所合作开发的 RFD4-Proteina 模型，生成候选蛋白质结构和氨基酸序列，供后续评估和实验验证。\n- 官方还称，Microsoft 自身也在使用 NVIDIA 技术，包括用 NVIDIA Dynamo 支持后训练中的强化学习 rollout 推理，以及用 NVIDIA RTX PRO 6000 Blackwell GPU 加速 Bing 搜索模型。博客还转述：在 MLPerf Training v6.1 中，Azure 在 DeepSeek-V3 上扩展到 10,240 个 NVIDIA GPU（基于 GB200 NVL72），为该轮最大规模；在 MLPerf Inference v6.1 中，Azure 的 GB300 NVL72 在 DeepSeek-R1 interactive throughput 上领先云提交超过 10%（注明 per Signal65）。这些是官方转引的基准声明，不是本报复测。\n\n## 适合谁\n\n在 Azure、Azure Local 或 Foundry 上训练、定制和部署模型的企业与开发者，以及关注 Vera Rubin 云端落地节奏的基础设施团队。\n\n## 为什么值得看\n\n它把「Vera Rubin 已经在 Azure 跑起来」和「Nemotron 3.5 进入 Foundry / Foundry Local」写成可核对的官方进展，而不是只停留在展会演示。对用户来说，关键仍是具体 SKU、区域和预览资格，博客并没有给出完整的价格表或全面商用时间表。\n\n## 可以核对的事实\n\n- Vera Rubin NVL72 已在 Azure 运行、Foundry / Foundry Local 中的 Nemotron 3.5 与相关模型安排、Bolt 与 Transcribe 为即将推出、Azure Local 对 RTX PRO 6000 Blackwell 以及 Jetson 平台的支持、Windows 365 Direct Stream 有限预览且公开预览计划在 2027 年初、Discovery 目录与 RFD4-Proteina 初始集成、Microsoft 使用 Dynamo 和 RTX PRO 6000 Blackwell：见 NVIDIA 官方博客（A）。\n- EY 准确率与成本数字、MLPerf 规模和 Signal65 转引的推理领先幅度：亦见该官方博客，但属于客户结果或第三方基准转述，本报未独立复核。\n"
+    },
+    {
+      "id": "google-gemini-api-tool-retrieval",
+      "title": "Google 在 Gemini API 推出 Tool Retrieval 预览：工具参数模式可按需加载，不必每次把整个工具库送进提示",
+      "badge": "N",
+      "summary": "Google 在 Gemini Interactions API 中以预览形式推出 Tool Retrieval。开发者可以把工具参数模式留到真正需要时再加载，而不必在每次请求里发送完整工具库，以降低输入 token、延迟，并在工具数量变多时维持选择准确度。",
+      "publishedAt": "2026-11-20T02:00:00+08:00",
+      "sortAt": "2026-11-20T02:00:00+08:00",
+      "timeLabel": "2026-11-20 02:00",
+      "timePrecision": "datetime",
+      "timeNote": "Google 官方博客 datePublished 为 2026-11-19T18:00:00+00:00，即北京时间 11 月 20 日 02:00；dateModified 为 2026-11-19T18:30:49+00:00，不作为首次发布时间。",
+      "source": "Google",
+      "confidence": "A",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+      "links": [
+        {
+          "label": "Google 官方博客",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/"
+        },
+        {
+          "label": "Gemini Interactions API 概览",
+          "url": "https://ai.google.dev/gemini-api/docs/interactions-overview"
+        }
+      ],
+      "detail": "## 它是什么\n\nGemini API 的一项开发者预览能力，用来按需检索和加载工具 schema，不是新的基础模型发布。\n\n## 它做什么\n\n- 官方说明：在请求中加入 `tool_search` 工具，并对希望暂缓加载的工具设置 `defer_loading: true`。模型仍然能看到每个被暂缓工具的名称和描述，但参数模式先不进入上下文；当模型需要某个工具时，会按名称请求，API 再加载完整 schema，并在同一次请求中完成函数调用。这三步会出现在 `interaction.steps` 里，便于调试。\n- 官方写明：不需要开发者自己搭建或托管索引，搜索由 Gemini 在服务端完成。最常用的工具可以继续预先加载，长尾工具再延迟加载。该机制与前缀缓存兼容：被延迟的 schema 不会出现在提示开头，随后加载的 schema 加在对话后面，缓存前缀可以在多轮之间保持不变。\n- Tool Retrieval 也适用于 Gemini API 中的远程 MCP 服务器：在 `mcp_server` 工具上设置 `defer_loading: true` 后，该服务器暴露的工具会按需加载，不必逐个列出。\n- 如果开发者自己维护工具注册表、嵌入索引或按用户过滤权限，可以把 `tool_search` 设为 `\"execution\": \"client\"`，由应用执行查找。客户端检索每次查找会增加一次往返，且不必事先声明全部工具，因此也可以在用户中途接入集成时再暴露新工具。\n- 计费：官方称 Tool Retrieval 没有单独收费，仍按所调用模型的标准输入/输出价格计费。启用 `tool_search` 会增加一小块固定的输入 token；模型加载的每份 schema 会在此后的对话中作为输入计费，与一开始就声明的工具相同。官方建议用自己的流量衡量是否节省 token。\n- 支持范围：官方写明，Tool Retrieval 适用于 Interactions API 中的 Gemini 3.6 及更新模型，包括所有 Gemini 4 模型。\n\n## 适合谁\n\n正在给智能体接入几十甚至上百个工具、或挂接大型 MCP 服务器的 Gemini API 开发者。\n\n## 为什么值得看\n\n当工具库变大时，把全部参数模式每次都塞进提示会又贵又慢，还可能降低选工具的准确度。这项预览把「先知道有哪些工具，再用到再加载 schema」做成官方 API 能力，是对智能体工程更直接的改进，而不是又一个模型分数公告。\n\n## 可以核对的事实\n\n- 预览发布于 Interactions API、`tool_search` 与 `defer_loading` 的用法、服务端检索无需自建索引、对 MCP 与客户端检索的支持、无单独收费、适用于 Gemini 3.6 及更新模型（含全部 Gemini 4 模型）：见 Google 官方博客（A）。\n"
+    },
+    {
+      "id": "google-gemini-computer-use-mac",
+      "title": "Gemini 应用在 Mac 上推出 computer use：可在隔离窗口中操作本机应用、本地文件和网页，并由用户批准关键步骤",
+      "badge": "N",
+      "summary": "Google 宣布，Gemini 应用的 Mac 版即日起提供 computer use 功能：用户可以用自然语言描述跨本地文件、桌面应用和网页的多步任务，由 Gemini 在隔离窗口中点击、输入和操作，并在用户选择权限、观看实时预览并批准关键动作的前提下完成。",
+      "publishedAt": "2026-11-20T01:00:00+08:00",
+      "sortAt": "2026-11-20T01:00:00+08:00",
+      "timeLabel": "2026-11-20 01:00",
+      "timePrecision": "datetime",
+      "timeNote": "Google 官方博客 datePublished 为 2026-11-19T17:00:00+00:00，即北京时间 11 月 20 日 01:00；dateModified 为 2026-11-19T17:09:37+00:00，不作为首次发布时间。",
+      "source": "Google",
+      "confidence": "A",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/computer-use-mac/",
+      "links": [
+        {
+          "label": "Google 官方博客",
+          "url": "https://blog.google/innovation-and-ai/products/gemini-app/computer-use-mac/"
+        },
+        {
+          "label": "Gemini for Mac 下载页",
+          "url": "https://gemini.google/mac"
+        }
+      ],
+      "detail": "## 它是什么\n\nGemini 应用在 Mac 上的一项电脑操作能力，不是新的通用大模型，也不是 Windows 版同步发布。\n\n## 它做什么\n\n- 官方写明：用户描述需要完成的工作后，Gemini 可以导航菜单、输入信息并点击应用来完成任务。它在单独的隔离窗口中运行，主屏幕和光标仍可继续由用户使用；聊天里可以看实时预览。\n- 隐私和安全方面，官方强调：由用户选择 Gemini 可以访问哪些应用，可随时暂停，并在关键动作发生前批准。\n- 官方给出的起始示例包括：在设计软件中批量调色或搭建复杂 3D 场景；从本地 PDF 提取重量、尺寸和地址并填写多栏运输报价；从多个地区的实时仪表盘拉取指标和截图并做成 Google 幻灯片；分析本地服装照片、检索定价并准备转卖平台上的商品信息。\n- 可用范围：官方写明，该功能正在以英语向美国的 Gemini Mac 应用推送；需要搭载 Apple Silicon、运行 macOS Sequoia 15.0 或更高版本的 Mac；面向 18 岁及以上的个人 Google 账号，且需为 Google AI Plus、Pro 或 Ultra 用户。\n\n## 适合谁\n\n在美国、使用符合条件的 Mac 和 Google AI Plus / Pro / Ultra 个人账号、希望把重复的多步桌面操作交给助手的用户。中国用户和不符合上述系统、账号或地区条件的用户，不能把「即日起推出」理解成已经对所有人可用。\n\n## 为什么值得看\n\n这是 Google 把「让模型直接操作电脑」做成 Gemini 应用内功能的一步，而且强调隔离窗口、权限选择和人工批准。它目前只在美国、英文、特定硬件和订阅档位里推出，覆盖面比 API 或网页版 Gemini 更窄。\n\n## 可以核对的事实\n\n- Mac 版 Gemini 应用推出 computer use、隔离窗口与实时预览、用户选择应用权限并批准关键动作、官方示例任务、英语 / 美国推送，以及 Apple Silicon、macOS Sequoia 15.0+、18 岁及以上个人账号、Plus / Pro / Ultra 的限制：见 Google 官方博客（A）。\n"
+    },
+    {
+      "id": "google-genie-4-gemini-api",
+      "title": "Google 把 Genie 4 接入 Gemini API 和 Google AI Studio，开发者可用文本或参考图生成可交互世界",
+      "badge": "N",
+      "summary": "在前一天向符合条件的 Google AI Ultra 用户开放 Genie 4 之后，Google 宣布开发者现在可以通过 Gemini API（经 Interactions API）和 Google AI Studio 使用 Genie 4，用文本提示、参考图或二者结合，生成带同步原生音频的连续 720p/24fps 可交互世界。",
+      "publishedAt": "2026-11-20T01:00:00+08:00",
+      "sortAt": "2026-11-20T01:00:00+08:00",
+      "timeLabel": "2026-11-20 01:00",
+      "timePrecision": "datetime",
+      "timeNote": "Google 官方博客 datePublished 为 2026-11-19T17:00:00+00:00，即北京时间 11 月 20 日 01:00；dateModified 为 2026-11-19T17:08:20+00:00，不作为首次发布时间。与同日 01:00 发布的 Mac computer use 公告时间相同，本条按产品跟进排在其后。",
+      "source": "Google",
+      "confidence": "A",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/genie-4-in-gemini-api/",
+      "links": [
+        {
+          "label": "Google 官方博客",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/genie-4-in-gemini-api/"
+        }
+      ],
+      "detail": "## 它是什么\n\nGenie 4 的开发者接口开放，是对 11 月 19 日早报已记录之「向 Ultra 用户开放」的跟进，不是新的世界模型版本发布。\n\n## 它做什么\n\n- 官方写明：开发者可以从文本提示、参考图像或两者出发，试验生成连续的 720p、24fps 世界，并带有同步的原生音频，覆盖环境声、音效和角色对白。\n- 用户可以用实时键盘控制，同时配合实时文本提示，在环境中导航，并即时改变天气、光照、物体或事件。官方称 Gemini 推理会在过程中保持世界状态一致。\n- 官方列出的用途包括：原型交互体验、为空间概念做设计可视化，以及训练机器人和 AI 智能体。每一份输出都带有不可感知的 SynthID 水印。\n- 官方提醒前往 Google AI Studio 试用交互画布和起始应用，并查看定价细节与 Gemini API 文档。本条不转写该博客未列出的具体价格。\n\n## 适合谁\n\n希望在自己的应用或研究里嵌入可交互世界生成，而不是只在 Gemini 应用里体验的开发者、设计师和机器人/智能体研究人员。\n\n## 为什么值得看\n\n前一天的开放主要面向 Ultra 用户的产品体验；这一天则把同样的模型放到 Gemini API 和 AI Studio，开发者才能真正接入自己的工作流。能力和分辨率、帧率、水印以官方说明为准，定价需看官方文档，不宜用昨天的产品稿代替今天的 API 条款。\n\n## 可以核对的事实\n\n- 通过 Gemini API（经 Interactions API）和 Google AI Studio 向开发者开放、720p / 24fps、同步原生音频、文本和/或参考图输入、实时键盘与文本控制、SynthID 水印：见 Google 官方博客（A）。该稿写明是「Following yesterday's Genie 4 launch」，与昨日早报的 Ultra 用户开放为同一产品的不同渠道，不重复当作新模型。\n"
+    },
+    {
+      "id": "google-blue-origin-project-suncatcher",
+      "title": "Google 与 Blue Origin 合作，计划在 2029 年第一季度用 New Glenn 执行 Project Suncatcher 的首次重型发射",
+      "badge": "N",
+      "summary": "Google 宣布与 Blue Origin 合作，执行 Project Suncatcher 的首次重型发射。该项目是 Google 把 AI 基础设施放到轨道、利用太空太阳能的长期研究计划。目标窗口为 2029 年第一季度，由 New Glenn 重型运载火箭把卫星送入太阳同步轨道。",
+      "publishedAt": "2026-11-19T21:00:00+08:00",
+      "sortAt": "2026-11-19T21:00:00+08:00",
+      "timeLabel": "2026-11-19 21:00",
+      "timePrecision": "datetime",
+      "timeNote": "Google 官方博客 datePublished 为 2026-11-19T13:00:00+00:00，即北京时间 11 月 19 日 21:00；dateModified 为 2026-11-19T13:07:56+00:00，不作为首次发布时间。",
+      "source": "Google",
+      "confidence": "A",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/blue-origin-project-suncatcher-partnership/",
+      "links": [
+        {
+          "label": "Google 官方博客",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/blue-origin-project-suncatcher-partnership/"
+        }
+      ],
+      "detail": "## 它是什么\n\n一项长期研究项目的发射合作公告，不是新的地球数据中心已经开工，也不是短期可租用的云计算产品。官方称 Project Suncatcher 是长期 moonshot，此次是「our first heavy-lift Project Suncatcher launch」，并写明还在与其他卫星和发射伙伴继续合作。\n\n## 它做什么\n\n- 官方写明：目标窗口为 2029 年第一季度，Blue Origin 的重型 New Glenn 火箭将把 Google 的卫星部署到太阳同步轨道。\n- 官方对卫星能力的表述是：每颗卫星「each with roughly the capacity of a data center rack」。这是官方自己的约数，不是已经公布的详细功率、芯片型号或机柜规格。\n- 官方把这次专用发射称为长期路线图上的一个关键节点，用于探索未来算力的边界。博客没有给出卫星数量、合同金额、地面站安排或 2029 年之后的运营计划。\n\n## 适合谁\n\n关注 AI 基础设施、太空计算和大型科技公司长期研究计划的读者；不适合把它当成可以马上下单的算力服务。\n\n## 为什么值得看\n\n它把「在轨道上做 AI 基础设施」从概念推进到有发射伙伴、运载火箭和目标窗口的一步。但窗口仍在 2029 年，细节很少，现在还不能据此判断商业可行或环境与监管结果。\n\n## 可以核对的事实\n\n- 与 Blue Origin 合作执行 Project Suncatcher 首次重型发射、目标窗口为 2029 年第一季度、使用 New Glenn、进入太阳同步轨道、每颗卫星约相当于一个数据中心机柜的能力：见 Google 官方博客（A）。博客未给出卫星数量、价格或其他技术规格。\n"
+    }
+  ]
+}
