@@ -14,10 +14,10 @@
 - [已过期归档](#archived)
 - [说明](#notes)
 
-## 今日版：2026-11-20
+## 今日版：2026-11-21
 
-- 核实时间：2026-11-20 20:30（北京时间）
-- 新增：2 条；补录：6 条；急报：1 条；过期：1 条
+- 核实时间：2026-11-21 20:30（北京时间）
+- 新增：1 条；补录：7 条；急报：1 条；过期：2 条
 - 历史版本见 [`archive/`](archive/)。
 
 <a name="urgent"></a>
@@ -36,16 +36,10 @@
 - 可达性：能直接领（国内平台，需 AtomGit 账号认证）
 
 #### 智谱 ZCode · 每日 3 亿 GLM-5.3-Flash Token（多源交叉、官方未核实）
-- 内容：每天在 ZCode 客户端内领取当天额度，仅限夜间窗口使用：官方 X 原帖经第三方镜像可见，另有媒体与多个独立聚合站口径一致；ZCode 官网已核实产品与下载入口、无单设活动页，本次未直接打开 x.com 原帖，细则以客户端内公告为准。官方产品页：https://zcode.z.ai/cn
-- 额度：每人每天 3 亿 GLM-5.3-Flash Token，免费账号可领、无需订阅 Coding Plan；需更新到最新版客户端，领取后切换到 Global Building 通道并选 GLM-5.3-Flash，选错通道或模型会扣套餐额度；仅限 ZCode 客户端内使用，不能导出为 API Key；绑卡、实名要求各来源均未提及；官方未公布活动结束日期
-- 截止：每日领取：19:00 起领，23:00 至次日 09:00 可用，次日 09:00 清零、不结转，当天不领作废
+- 内容：每天在 ZCode 客户端内领取当天额度，仅限夜间窗口使用：官方 X 原帖经第三方镜像可见，另有媒体与多个独立聚合站口径一致；ZCode 官网已核实产品与下载入口、无单设活动页，本次未直接打开 x.com 原帖，细则以客户端内公告为准。官方产品页：https://zcode.z.ai/cn ；2026-11-21 20:30 更新：本周末改发 WEEKEND BUILD 周末卡——11 月 20 日（周五）19:00 起领 5 亿 GLM-5.3-Flash Token，23:00 生效，至 11 月 23 日（周一）09:00 清零；周末卡与工作日每日 3 亿卡并行独立、不叠加；个别来源称 8 亿，以客户端内显示为准；领取窗口以客户端内公告为准
+- 额度：每人每天 3 亿 GLM-5.3-Flash Token，免费账号可领、无需订阅 Coding Plan；需更新到最新版客户端，领取后切换到 Global Building 通道并选 GLM-5.3-Flash，选错通道或模型会扣套餐额度；仅限 ZCode 客户端内使用，不能导出为 API Key；绑卡、实名要求各来源均未提及；官方未公布活动结束日期；本周末卡为每人 5 亿 GLM-5.3-Flash Token
+- 截止：每日领取：19:00 起领，23:00 至次日 09:00 可用，次日 09:00 清零、不结转，当天不领作废；本周末卡至 2026-11-23 09:00 清零
 - 可达性：能直接领（ZCode 官网可下载，智谱账号登录）
-
-#### Google Antigravity · 免费档 Claude / GPT-OSS 模型最后一天（2026-11-17 12:00 新增，官方已核实）
-- 内容：Antigravity 免费版（$0 个人版）与 Google AI Plus 档目前仍可选 Claude Sonnet 4.6 (thinking)、Claude Opus 4.6 (thinking)、GPT-OSS-120b，官方模型页脚注写明 2026 年 11 月 18 日移除，移除后免费档只剩 Google 自家模型；Claude Sonnet 5.5 / Opus 5.5 仅限付费 Google AI Pro（非试用）及以上档位，开 Pro 试用也留不住 Claude。本条是免费可用窗口当天收口的提醒，不是新赠额度。官方模型页：https://antigravity.google/docs/models ；定价页：https://antigravity.google/pricing
-- 额度：免费个人版 $0、无需订阅；每周配额（官方未公布具体数值）；需 Google 账号；免费档无需绑卡（官方页未写需绑卡）；Pro 试用如开通需留意自动续费，请提前取消自动续费
-- 截止：官方只写 2026 年 11 月 18 日移除，未给具体时刻与时区；保守按北京时间 2026-11-17 24:00 前视为最后可用，实际下线时刻未知；2026-11-18 20:30 复核官方模型页，三款仍列为免费档可选、脚注仍为 11 月 18 日移除，页面尚未更新；2026-11-19 20:30 复核官方模型页，三款仍列为免费档可选、脚注仍为 11 月 18 日移除，页面尚未更新；2026-11-20 20:30 复核官方模型页，三款仍列为免费档可选、脚注仍为 11 月 18 日移除，页面尚未更新
-- 可达性：需海外账号 / 地区受限（需 Google 账号与海外网络环境；地区可用性以官方为准）
 
 #### Google Antigravity · 一周年全模型配额重置（2026-11-18 12:00 新增，官方已核实）
 - 内容：Antigravity 上线一周年，官方团队成员 Varun Mohan（@_mohansolo）在 X 发帖宣布为所有用户重置全部模型配额；无需兑换码、无需单独领取，到账以客户端用量显示为准，已有用户在原帖下回复确认收到重置。官方原帖：https://x.com/_mohansolo/status/2122836883877347836 ；产品页：https://antigravity.google/
@@ -58,12 +52,6 @@
 - 额度：符合条件的账号每轮限领 1 次 100 通用 Credits，每笔自领取起 30 天有效、可跨天保留；需在 Qoder CN 桌面端、移动端或 IDE 内主动领取；若为继续领取而开通付费订阅，请提前取消自动续费
 - 截止：资格变更于北京时间 2026-11-19 10:00 生效；体验版用户本轮领取窗口已于 10:00 关闭，错过不补；活动整体截止另行公告
 - 可达性：能直接领（国内产品，需 Qoder CN 账号；10:00 后体验版不可领）
-
-#### Envato AI Video · MiniMax H3 24 小时不限量（2026-11-20 12:00 新增，官方已核实）
-- 内容：Envato 官方宣布自北京时间 2026-11-19 21:00 起，MiniMax H3 视频生成 24 小时不限量，免费账号与订阅用户均可；注册免费账号后在 Generate 里选 MiniMax H3 即可开始。官方产品页：https://elements.envato.com/ai/ai-video-generator/ ；官方 X：https://x.com/envato/status/2123400900421034371
-- 额度：窗口内选择 MiniMax H3 生成视频不消耗 credits，官方称不限量；受 Fair Use Policy 约束，官方未公布窗口内次数上限，禁止脚本、机器人或异常高频批量生成；官方页未写须绑卡；活动结束后恢复按套餐 credits 计费
-- 截止：北京时间 2026-11-20 21:00（官方 8am EST Nov 20, 2026）
-- 可达性：需海外账号 / 地区受限（官方未写地区限制；免费注册即可、不必订阅；大陆网络与登录可达性未知，以实际打开为准）
 
 <a name="direct"></a>
 ### 进行中：能直接领
@@ -199,7 +187,7 @@
 - 截止：长期免费档口径，官方页未写截止日
 
 #### 小红书 Dots Studio · dots3-note-prev API 当前免费（2026-11-09 20:30 补录，多源交叉、官方未核实）
-- 内容：小红书 Dots Studio 开放平台的 `dots3-note-prev`（约 280B 总参 / 16B 激活 MoE，512K 上下文，兼容 OpenAI 与 Anthropic 协议）当前免费体验，标价 Input $0.14 / Output $0.28 每百万 Token 先挂着、暂不收费；多个第三方一致转述官方定价页原话“免费体验：当前免费体验，暂不收费，恢复收费前将通过官网及 API 页面提前告知”；本次官方平台页抓取超时未能直读，OpenRouter 上 `dots-studio/dots-3-note-preview:free` 标价 $0 可作佐证。官方平台：https://dots.ai/platform
+- 内容：小红书 Dots Studio 开放平台的 `dots3-note-prev`（约 280B 总参 / 16B 激活 MoE，512K 上下文，兼容 OpenAI 与 Anthropic 协议）当前免费体验，标价 Input $0.14 / Output $0.28 每百万 Token 先挂着、暂不收费；多个第三方一致转述官方定价页原话“免费体验：当前免费体验，暂不收费，恢复收费前将通过官网及 API 页面提前告知”；本次官方平台页抓取超时未能直读，OpenRouter 上 `dots-studio/dots-3-note-preview:free` 标价 $0 可作佐证。官方平台：https://dots.ai/platform ；2026-11-21 20:30 复核：OpenRouter 官方模型接口已无 `dots-studio/dots-3-note-preview:free`（亦无付费版），上述 OpenRouter 佐证不再成立；Dots Studio 平台自身免费状态以官方平台页为准
 - 额度：当前调用 $0；限流据第三方报道为 60 RPM / 150 万 TPM（单 Key），官方页未能直读复核；需邮箱注册登录开放平台后取 Key；绑卡要求据第三方转述为无需绑卡，未核实
 - 截止：无固定截止日（官方口径：恢复收费前提前告知）
 
@@ -600,7 +588,7 @@
 #### Perplexity · Decider v1.3 / Decider Flash v1.3 `:free`（OpenRouter）（2026-11-13 20:30 新增，官方模型页已核实免费状态；截止约 11 月 19 日为多源交叉）
 - 内容：11 月 12 日发布的结构化决策模型（是非概率 / 多选 / 打分，v1.3 新增 `locate` 抽取），OpenRouter 上 `perplexity/pplx-decider-v1.3:free` 与 `perplexity/pplx-decider-flash-v1.3:free` 输入、输出均免费，262K 上下文；走 OpenRouter Decisions API，非聊天接口。官方模型页：https://openrouter.ai/perplexity/pplx-decider-v1.3:free ；官方博客：https://www.perplexity.ai/hub/blog/perplexity-decider
 - 额度：输入、输出定价均为 $0；免费端点通用限流（未充值账号每日上限更低）；无需绑卡；Perplexity 自家 Decisions API 仍按 $0.02 / $0.01 每百万输入 Token 收费，不在免费范围
-- 截止：约 2026-11-19（Perplexity 官方 X 帖称 free on OpenRouter until November 19，精确时刻与时区未写；OpenRouter 模型页未写到期日）；2026-11-19 20:30 复核官方模型页仍标免费、仍可免费调用，该估计未兑现，以页面当前展示为准；2026-11-20 20:30 再次复核仍免费
+- 截止：约 2026-11-19（Perplexity 官方 X 帖称 free on OpenRouter until November 19，精确时刻与时区未写；OpenRouter 模型页未写到期日）；2026-11-19 20:30 复核官方模型页仍标免费、仍可免费调用，该估计未兑现，以页面当前展示为准；2026-11-20 20:30 再次复核仍免费；2026-11-21 20:30 复核官方模型页仍标免费、仍可免费调用
 - 限制：需海外账号（OpenRouter）；大陆直连可达性未知
 
 #### Thinking Machines · Inkling 2 Small `:free`（OpenRouter）（2026-11-13 20:30 新增，官方模型页已核实）
@@ -771,14 +759,71 @@
 - 截止：长期按月额度（官方文档未写截止日期）
 - 限制：需海外账号（Anthropic API / Claude Console）；大陆可达性按 Anthropic 地区政策
 
+#### Google Antigravity · 免费档 Claude / GPT-OSS 模型（2026-11-21 20:30 更新，官方已核实；原急报条目移出）
+- 内容：Antigravity 免费版（$0 个人版）与 Google AI Plus 档目前仍可选 Claude Sonnet 4.6 (thinking)、Claude Opus 4.6 (thinking)、GPT-OSS-120b；官方模型页脚注原写 2026 年 11 月 18 日移除，2026-11-21 20:30 复核官方模型页已更新为 2026 年 11 月 30 日移除，移除后免费档只剩 Google 自家模型；Claude Sonnet 5.5 / Opus 5.5 仅限付费 Google AI Pro（非试用）及以上档位，开 Pro 试用也留不住 Claude。本条是免费可用窗口的提醒，不是新赠额度。官方模型页：https://antigravity.google/docs/models ；定价页：https://antigravity.google/pricing
+- 额度：免费个人版 $0、无需订阅；每周配额（官方未公布具体数值）；需 Google 账号；免费档无需绑卡（官方页未写需绑卡）；Pro 试用如开通需留意自动续费，请提前取消自动续费
+- 截止：官方模型页脚注现写 2026 年 11 月 30 日移除（未给具体时刻与时区）；实际下线时刻未知，以页面当前展示为准
+- 限制：需海外账号 / 地区受限（需 Google 账号与海外网络环境；地区可用性以官方为准）
+
+#### packet.ai Token Factory · 开放权重模型免费至 12-16（2026-11-21 20:30 新增，官方已核实）
+- 内容：Token Factory 经 OpenAI 兼容 API 免费调用开放权重模型，输入、输出 Token 均 $0 至 2026 年 12 月 16 日；新老账号均可。官方页：https://packet.ai/token-factory-free
+- 额度：输入、输出均 $0；模型 DeepSeek V4.1 Flash、MiniMax M3.1 Flash、Qwen2.5-1.5B-Instruct；注册需邮箱 + 手机短信验证；无需信用卡；12 月 16 日后按量计费（输入 $0.10–0.23 / 输出 $0.10–0.85 每百万 Token），请提前确认
+- 截止：免费至 2026-12-16（官方未注时刻与时区）
+- 限制：需海外账号；大陆可达性未知
+
+#### Google Gemma 4 `:free`（OpenRouter）（2026-11-21 20:30 补录，官方模型接口已核实）
+- 内容：OpenRouter 上线 `google/gemma-4-26b-a4b-it:free` 与 `google/gemma-4-31b-it:free`，输入、输出均 $0；26B 为 MoE（25.2B 总参 / 3.8B 激活），31B 为 dense 多模态模型（图文输入、文本输出），均为 262,144 上下文。官方模型页：https://openrouter.ai/google/gemma-4-26b-a4b-it:free ；https://openrouter.ai/google/gemma-4-31b-it:free
+- 额度：输入、输出定价均为 $0；OpenRouter 免费模型通用限流（免费档约 20 请求/分钟、每天 50 请求）；无需绑卡
+- 截止：截止未知（官方模型接口 expiration_date 为空；2026-11-21 20:30 官方模型接口核实 $0）
+- 限制：需海外账号（OpenRouter）；大陆直连可达性未知
+
+#### NVIDIA Nemotron 3 Ultra `:free`（OpenRouter）（2026-11-21 20:30 补录，官方模型接口已核实）
+- 内容：OpenRouter 上线 `nvidia/nemotron-3-ultra-550b-a55b:free`（550B 总参 / 55B 激活 MoE，前沿推理与编排模型），1M 上下文，输入、输出均 $0。官方模型页：https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free
+- 额度：输入、输出定价均为 $0；OpenRouter 免费模型通用限流（免费档约 20 请求/分钟、每天 50 请求）；无需绑卡
+- 截止：截止未知（官方模型接口 expiration_date 为空；2026-11-21 20:30 官方模型接口核实 $0）
+- 限制：需海外账号（OpenRouter）；大陆直连可达性未知
+
+#### NVIDIA Nemotron 3 Nano Omni `:free`（OpenRouter）（2026-11-21 20:30 补录，官方模型接口已核实）
+- 内容：OpenRouter 上线 `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free`（30B-A3B 开源多模态模型，面向 agent 感知与上下文子任务），256K 上下文，输入、输出均 $0。官方模型页：https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free
+- 额度：输入、输出定价均为 $0；OpenRouter 免费模型通用限流（免费档约 20 请求/分钟、每天 50 请求）；无需绑卡
+- 截止：截止未知（官方模型接口 expiration_date 为空；2026-11-21 20:30 官方模型接口核实 $0）
+- 限制：需海外账号（OpenRouter）；大陆直连可达性未知
+
+#### Recursive Flint v1.0 `:free`（OpenRouter）（2026-11-21 20:30 补录，官方模型接口已核实）
+- 内容：OpenRouter 上线 `recursive/flint-v1.0:free`（Recursive 开源权重 MoE，约 40B 总参 / 2.5B 激活），262,144 上下文，输入、输出均 $0。官方模型页：https://openrouter.ai/recursive/flint-v1.0:free
+- 额度：输入、输出定价均为 $0；OpenRouter 免费模型通用限流（免费档约 20 请求/分钟、每天 50 请求）；无需绑卡
+- 截止：截止未知（官方模型接口 expiration_date 为空；2026-11-21 20:30 官方模型接口核实 $0）
+- 限制：需海外账号（OpenRouter）；大陆直连可达性未知
+
+#### Caffeine · 凭码 HALLOWEEN26 免费一个月付费功能（2026-11-21 20:30 补录，多源交叉、官方未核实）
+- 内容：AI 应用搭建平台 Caffeine：凭兑换码 HALLOWEEN26 可免费使用一个月付费功能（从描述建应用、自定义域名、发邮件、看访问、发布到 App Market 等）；无有效订阅的新用户与过期老用户可用，现订阅用户不可用；兑换入口为账号内头像 → Use promo code。官方站未在本轮直接读到兑换页原文，码与规则为多家独立来源一致口径，细则以结算页为准
+- 额度：一个月付费功能免费；兑换时可能要求添加支付方式，首月免费、到期自动结束、不自动续费（据多方转述，以结算页为准）；免费计划另有 15 迎新 credits（30 天有效），不在本条
+- 截止：兑换码有效期至 2026-11-30（多方口径）；免费期自兑换起 1 个月
+- 限制：需海外账号；大陆可达性未知
+
+#### Plus AI · Google Slides / PowerPoint 7 天全功能试用（2026-11-21 20:30 补录，多源交叉、官方未核实）
+- 内容：Google Slides / PowerPoint 插件 Plus AI：7 天免费试用，全功能 + 1000 AI credits，可从提示词生成整套幻灯片、改写与重排现有幻灯片；无长期免费档。官方站：https://plusai.com
+- 额度：试用 7 天、1000 AI credits；须绑卡开通试用，到期自动按所选套餐扣费（Basic 年付 $10/人/月、月付 $15/人/月），请提前取消自动续费；无免费档
+- 截止：长期试用机制（官方未写结束日）；试用期自开通起 7 天
+- 限制：需海外账号；大陆可达性未知
+
+#### OpenAI · Codex for Open Source 维护者 6 个月 ChatGPT Pro（2026-11-21 20:30 补录，官方已核实）
+- 内容：OpenAI Codex for Open Source 计划：开源项目核心维护者可申请 6 个月 ChatGPT Pro（含 Codex）+ 有条件使用 Codex Security + Codex 开源基金 API credits（用于 PR 评审、维护自动化等）；滚动审核、名额未设上限。官方页：https://developers.openai.com/community/codex-for-oss ；申请表：https://openai.com/form/codex-for-oss/
+- 额度：6 个月 ChatGPT Pro（约 $200/月）；API credits 金额未公布，按项目核定；须为活跃开源项目的核心维护者（有写权限）或广泛使用的公开项目负责人
+- 截止：滚动申请，长期招募；每份资助 6 个月
+- 限制：仅限开源项目维护者（特定人群）；需海外账号；中国大陆资格以申请页为准
+
 <a name="expiring"></a>
 ### 即将到期：3–5 天内
 
 - 阶跃星辰 StepAudio 3 系列限时免费至 11 月 23 日 11:59（北京时间；原定 11 月 17 日截止，官方定价页 11 月 16 日更新为延期）。
 - 智谱 AutoClaw 每周福利 M11W3（国内版与国际版）至 11 月 22 日 23:59（北京时间）。
-- Perch AI · Qwen 3.8 Max 免费上 Starter 至 11 月 21 日 01:00（北京时间；2026-11-20 12:00 美东）。
-- Perplexity Decider v1.3 / Decider Flash v1.3 `:free` 约至 11 月 19 日（2026-11-20 20:30 复核官方模型页仍免费，估计未兑现，继续观察）。
+- 智谱 ZCode · WEEKEND BUILD 周末卡至 11 月 23 日 09:00（北京时间；5 亿 GLM-5.3-Flash Token，周五 23:00 生效）。
+- fal · MiniMax H3 Image 免费生成至 11 月 23 日（官方未注时刻与时区；按 UTC 日末约北京时间 11 月 24 日 08:00）。
+- Vercel AI Gateway · Parallel Decisions Fast 免费至 11 月 23 日（官方写 free through November 23, 2026，时区未写）。
 - Poke × Devin Bot 赠额至 11 月 23 日 16:00（北京时间；多源口径，官方页未写截止）。
+- IteraCompute · Qwen3.8-27B 每月 30M Token 免费至 11 月 24 日 16:00（北京时间；2026-11-24 00:00 PT）。
+- Perplexity Decider v1.3 / Decider Flash v1.3 `:free` 约至 11 月 19 日（2026-11-21 20:30 复核官方模型页仍标免费、仍可免费调用，估计未兑现，继续观察）。
 
 <a name="pending"></a>
 ### 待确认线索：不进正文
@@ -833,6 +878,9 @@
 
 #### Starsg · 兑换码 STARSG2026（新账号入门额度，官方未公布金额）
 - 原因：官方通稿证实活动与兑换码、入门额度 30 天有效与 11-30 前注册的推荐资格，但额度数字官方未公布，产品站正文未同步细则；第三方所写 $5 未经官方核实，不采用。未确认前不进正文。官方通稿：https://www.einpresswire.com/article/957198164/starsg-launches-starsg2026-campaign-giving-ai-teams-a-lower-cost-start ；产品站：https://starsg.ai/
+
+#### Google Antigravity · Neon 缓存扩容后承诺的配额重置尚未发放
+- 原因：官方团队成员 Varun Mohan（@_mohansolo）北京时间 2026-11-21 02:38 发帖称正在大幅扩大 Neon 缓存池，改完后会发一次重置；截至 2026-11-21 20:30 追踪站 agyresets.com 仍标“Reset promised, not done yet”，未见官方宣布本次重置已发放；这是已承诺、尚未落地的重置，一旦官方宣布完成再进急报。来源：https://x.com/_mohansolo/status/2123848516581892181 ；https://agyresets.com/
 
 <a name="archived"></a>
 ### 已过期归档
@@ -1064,6 +1112,14 @@
 #### Rime · STT 全套餐免费
 - 内容：Rime STT（英语 / 西班牙语实时语音转文字）在所有套餐上免费。官方定价页：https://www.rime.ai/pricing
 - 截止：免费至 2026-11-19（官方写 through November 19, 2026）；2026-11-20 20:30 复核官方定价页 FAQ 确认自 11 月 20 日起 Flex $0.002/分钟、Scale $0.0016/分钟；Free 档每月 $50 用量继续有效，见“进行中：需要海外账号 / 地区受限”区
+
+#### Envato AI Video · MiniMax H3 24 小时不限量
+- 内容：Envato 官方宣布自北京时间 2026-11-19 21:00 起，MiniMax H3 视频生成 24 小时不限量，免费账号与订阅用户均可。官方产品页：https://elements.envato.com/ai/ai-video-generator/ ；官方 X：https://x.com/envato/status/2123400900421034371
+- 截止：北京时间 2026-11-20 21:00 已结束；2026-11-21 20:30 晚间汇总时移入归档
+
+#### Perch AI · Qwen 3.8 Max 免费上 Starter
+- 内容：Qwen 3.8 家族顶级模型在 Perch 免费 Starter 档可用，计入 Starter 额度。官方公告页：https://www.perchai.app/announcements
+- 截止：至 2026-11-20 12:00（美东，北京时间 11 月 21 日 01:00）已到期；2026-11-21 20:30 晚间汇总时移入归档
 
 <a name="notes"></a>
 ## 说明
