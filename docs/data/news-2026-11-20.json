@@ -4,8 +4,199 @@
   "preview": 10,
   "empty": false,
   "emptyMessage": "今日暂无重要资讯，晚间 19:30 起每日更新",
-  "note": "2026-11-20 早报+晚报（北京时间）整理：早报 8 条（Microsoft 宣布 Aion Instruct 正式可用并在 Edge 开启 Prompt API 源试验、彭博/The Verge 报道苹果招聘智能体工程师、Anthropic 股票 ANT 首日开盘 111.50 美元并收盘 97.17 美元、NVIDIA 与 Microsoft 扩大 Azure Vera Rubin 与 Foundry 合作、Google 推出 Gemini API Tool Retrieval 预览、Gemini Mac 版 computer use、Genie 4 接入 Gemini API，以及 Google 与 Blue Origin 合作执行 Project Suncatcher 首次重型发射）；晚报 4 条（OpenAI 开始向部分 Pro 用户测试新的 ChatGPT 移动端界面、ChatGPT Health 扩展到 Android/桌面/Dots/站点、OpenAI 开始向部分 Plus 用户测试 Dots 并向美国 Business Standard 开放、OpenAI 在 API 推出 GPT-Live-1.1 并新增 Standby 计费）。按公告时间从新到旧排列。带精确钟点的条目 timeLabel 用北京时间；官方只给日期的条目 timePrecision 为 date，timeLabel 只写日期，sortAt 仅用于排序，详见各条 timeNote。置信度 A 表示来自官方原文，B 表示可靠媒体报道、官方未单独核实；同一条里官方事实与未经官方单独核实的报道需要分开看时标 A/B，详见该条「可以核对的事实」。",
+  "note": "2026-11-20 早报+晚报（北京时间）整理：早报 8 条（Microsoft 宣布 Aion Instruct 正式可用并在 Edge 开启 Prompt API 源试验、彭博/The Verge 报道苹果招聘智能体工程师、Anthropic 股票 ANT 首日开盘 111.50 美元并收盘 97.17 美元、NVIDIA 与 Microsoft 扩大 Azure Vera Rubin 与 Foundry 合作、Google 推出 Gemini API Tool Retrieval 预览、Gemini Mac 版 computer use、Genie 4 接入 Gemini API，以及 Google 与 Blue Origin 合作执行 Project Suncatcher 首次重型发射）；晚报 4 条（OpenAI 开始向部分 Pro 用户测试新的 ChatGPT 移动端界面、ChatGPT Health 扩展到 Android/桌面/Dots/站点、OpenAI 开始向部分 Plus 用户测试 Dots 并向美国 Business Standard 开放、OpenAI 在 API 推出 GPT-Live-1.1 并新增 Standby 计费）。在原有 11-20 内容基础上，并入了 11-21 早报的 4 条 timeLabel 为 2026-11-20 的条目（Anthropic IPO 交割、ChatGPT Space 向 Plus 推送、Google Connected Apps、Copilot 上架 GPT-6.2），以及 11-21 晚报补录的 METR 四季度能力更新、Signal 阻止系统级 AI 截屏、腾讯开源 Hy4 权重 3 条；去重后按公告时间从新到旧排列。带精确钟点的条目 timeLabel 用北京时间；官方只给日期的条目 timePrecision 为 date，timeLabel 只写日期，sortAt 仅用于排序，详见各条 timeNote。置信度 A 表示来自官方原文，B 表示可靠媒体报道、官方未单独核实；同一条里官方事实与未经官方单独核实的报道需要分开看时标 A/B，详见该条「可以核对的事实」。",
   "items": [
+    {
+      "id": "anthropic-ipo-close-greenshoe",
+      "title": "Anthropic 宣布 IPO 交割完成：承销商全数行使 1.47 亿股选择权，公开发行约 935 亿美元，并同期完成约 260 亿美元私募",
+      "badge": "N",
+      "summary": "Anthropic 宣布，其 Class A 普通股首次公开发行已经交割，且承销商全数行使了额外购股权。按官方数字，本次公开发行共 11.27 亿股，发行价仍为每股 83.00 美元，合计总所得约 935 亿美元，其中约 916 亿美元由 Anthropic 获得。与此同时，公司向 AMD、Broadcom、Google、Micron、Microsoft、NVIDIA 和 TSMC Partners 私募出售 Class N 普通股，购价合计约 260 亿美元。",
+      "publishedAt": "2026-11-20T21:11:00+08:00",
+      "sortAt": "2026-11-20T21:11:00+08:00",
+      "timeLabel": "2026-11-20",
+      "timePrecision": "date",
+      "timeNote": "Anthropic 官网只标注 Nov 20, 2026，未给钟点；timeLabel 只写日期。CNBC 报道发布时间为 2026-11-20 8:11 AM EST，即北京时间 11 月 20 日 21:11，此为媒体发稿时间，仅用于排序。",
+      "source": "Anthropic",
+      "confidence": "A",
+      "url": "https://www.anthropic.com/news/ipo-close",
+      "links": [
+        {
+          "label": "Anthropic 官方交割公告",
+          "url": "https://www.anthropic.com/news/ipo-close"
+        },
+        {
+          "label": "CNBC 报道",
+          "url": "https://www.cnbc.com/2026/11/20/anthropic-ipo-greenshoe.html"
+        }
+      ],
+      "detail": "## 它是什么\n\n对 11 月 18 日定价公告和 11 月 19 日挂牌交易的交割确认，不是新模型发布。昨日早报已记录 ANT 首日开盘 111.50 美元、收盘 97.17 美元，以及当时尚未行使的 1.47 亿股选择权；本条只补录交割和选择权结果，以及定价稿中未写明的同期私募。\n\n## 它做什么\n\n- 官方写明：本次公开发行合计 1,127,000,000 股 Class A 普通股，发行价每股 83.00 美元，其中包括承销商全数行使选择权后额外购买的 147,000,000 股。发行由 Anthropic 出售 1,103,351,354 股，由部分出售股东出售 23,648,646 股。扣除承销折扣、佣金和其他发行费用前，发行总所得约 935 亿美元，其中约 916 亿美元由 Anthropic 获得；公司不获得出售股东那一部分的所得。\n- Class A 普通股已于 2026 年 11 月 19 日在纳斯达克 Global Select Market 以代号「ANT」开始交易。\n- 官方还写明：除公开发行外，Anthropic 同期向 Advanced Micro Devices, Inc.、Broadcom Inc.、Google LLC、Micron Technology, Inc.、Microsoft Corporation、NVIDIA Corporation 和 TSMC Partners, Ltd. 私募出售合计 313,253,007 股 Class N 普通股，价格与发行价相同，为每股 83.00 美元，购价合计约 260 亿美元。这部分 Class N 股票未按美国《1933 年证券法》注册。公开发行（含出售股东售出的股份）与同期私募的合计总所得约 1195 亿美元，同样是扣除承销折扣、佣金和其他发行费用前的口径。\n- 11 月 18 日的官方定价稿已写出发行价、9.80 亿股规模、预计 11 月 20 日交割，以及 30 天内最多额外购买 1.47 亿股的选择权，但当时没有宣布选择权已被行使，也没有公布上述 Class N 私募的完成和对象名单。本条把这些视为交割公告中的新事实。\n- 主承销商仍为 Goldman Sachs & Co. LLC 与 Morgan Stanley。CNBC 于北京时间 21:11 报道了同一交割，并提到周五盘前跌幅等行情，这些是市场转述，不是官方交割稿中的数字，本报不把盘前报价写入核心事实。\n\n## 适合谁\n\n关注 AI 实验室上市融资、股权结构和芯片/云厂商战略入股的读者。普通 Claude 用户的产品使用不因交割本身而自动变化。\n\n## 为什么值得看\n\n这是把此前「预计交割」和「尚未决定是否行使选择权」落地成可核对的官方结果，并且首次由官方确认约 260 亿美元同期私募及参与公司名单。合计约 1195 亿美元是扣除费用前的总所得，不是公司已经入账的净额，也不应与首日收盘市值混为一谈。\n\n## 可以核对的事实\n\n- 11.27 亿股、每股 83.00 美元、承销商全数行使 1.47 亿股选择权、公司与出售股东的股数划分、约 935 亿美元总所得和约 916 亿美元归 Anthropic、313,253,007 股 Class N 私募、约 260 亿美元购价、参与方名单、合计约 1195 亿美元、ANT 已于 11 月 19 日开始交易：见 Anthropic 官方交割公告（A）。\n- CNBC 发稿时间为 2026-11-20 8:11 AM EST，仅用于排序，不作为官方时刻（B）。"
+    },
+    {
+      "id": "openai-chatgpt-space-plus",
+      "title": "ChatGPT Space 开始向 Plus 用户全球推送：可创建可协作的页面和演示文稿，并取代 Library",
+      "badge": "N",
+      "summary": "OpenAI 在 ChatGPT 更新日志中宣布，从当天起，ChatGPT Space 开始向 18 岁及以上的 Plus 用户全球推送。用户可以在 Space 里创建互动页面和演示文稿，邀请同样拥有 Space 权限的人一起编辑，也可以让页面和幻灯片根据已连接的应用和工具自动更新。对已开通 Space 的账户，它会取代 Library。Free 用户不能打开共享内容。",
+      "publishedAt": "2026-11-20T20:00:00+08:00",
+      "sortAt": "2026-11-20T20:00:00+08:00",
+      "timeLabel": "2026-11-20",
+      "timePrecision": "date",
+      "timeNote": "官方 ChatGPT 更新日志将该条放在 November 20, 2026 标题下，并写 Starting today，未给钟点。timeLabel 只写日期，sortAt 仅用于排序。",
+      "source": "OpenAI",
+      "confidence": "A",
+      "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "links": [
+        {
+          "label": "ChatGPT 官方更新日志",
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+        },
+        {
+          "label": "Getting started with Space in ChatGPT",
+          "url": "https://help.openai.com/en/articles/20001549-getting-started-with-space-in-chatgpt"
+        },
+        {
+          "label": "Creating and collaborating on slides in ChatGPT",
+          "url": "https://help.openai.com/en/articles/20001605-creating-and-collaborating-on-slides-in-chatgpt"
+        },
+        {
+          "label": "ChatGPT Space: sharing, data, and controls",
+          "url": "https://help.openai.com/en/articles/20001544-chatgpt-space-sharing-data-and-controls"
+        }
+      ],
+      "detail": "## 它是什么\n\n一次把已在更高档账户出现的工作区，扩大到 Plus 的产品更新，不是新的大模型发布。Space 是页面、上传文件和其他工作的所在地；Projects 仍然独立，用于项目对话、文件和指令。\n\n## 它做什么\n\n- 官方更新日志写明：Starting today, ChatGPT Space is rolling out globally to Plus users ages 18 and older. 在 Space 里可以创建互动页面和演示文稿，邀请其他拥有 Space 权限的人一起构建；也可以设置页面和幻灯片根据已连接的应用和工具自动更新。官方举例包括：会自动更新的待办清单、带可探索 3D 模型的学习指南，以及能随 Slack 中的决策保持更新的项目计划。可以在评论里 @ChatGPT 来请求修改；如果有 Dot，也可以邀请它一起协作。\n- 官方写明分享限制：打开共享页面或演示文稿需要查看权限，并且必须登录拥有 Space 权限的 Plus、Pro、Business 或 Enterprise 账户。Free 用户不能打开共享页面或演示文稿。不提供公开链接。\n- 开始方式：在侧边栏打开 Space。它取代 Library，成为页面、幻灯片、图像和上传文件的新入口。可在网页、桌面应用以及 iOS 和 Android 上创建和编辑页面。\n- 帮助中心补充：可在 ChatGPT Pro、Business 或 Enterprise，以及账户已经开通 Space 的 Plus 上创建和编辑内容；必须年满 18 岁。如果桌面应用里还看不到 Space，需更新到最新版本；若仍没有，可能是该账户尚未开通。Slides 正在向已有 Space 权限的合格账户推送；Sheets 即将推出。在加拿大或阿联酋有数据驻留要求的 Enterprise 和 Business 工作区，Space 即将推出。受管工作区的分享选项还取决于组织设置。\n- 帮助中心还写明：Plus 用户如果达到消息上限，仍可手工编辑页面。分享页面不会自动分享你的私人对话或 Memory；但一旦内容被写进页面，能查看该页的人就可以读到。\n\n## 适合谁\n\n希望在 ChatGPT 里写文档、做幻灯片并与同事协作的 Plus 及以上用户。Free 用户按官方说明不能打开共享内容；未满 18 岁的用户不在此次 Plus 推送范围内。即便是 Plus，也不一定已经在每个账户上看到入口。\n\n## 为什么值得看\n\nSpace 把 ChatGPT 从对话框扩成可协作的文档和演示工作区，而且首次明确向 Plus 全球推送。它目前仍是逐步开通，官方也没有给出全部 Plus 用户看到入口的日期。\n\n## 可以核对的事实\n\n- 向 18 岁及以上 Plus 用户全球推送、可创建页面和演示文稿、可根据已连接应用自动更新、取代 Library、Free 用户不能打开共享内容、不提供公开链接、可用于网页/桌面/iOS/Android：见 ChatGPT 官方更新日志 November 20, 2026 条目（A）。官方未给出精确钟点或完成推送的日期。\n- Pro / Business / Enterprise 及已开通的 Plus 可用、18 岁年龄限制、Slides 逐步推送、Sheets 即将推出、加拿大和阿联酋数据驻留工作区即将推出：见官方 Help Center（A）。"
+    },
+    {
+      "id": "metr-q4-2026-capability-update",
+      "title": "METR 发布 2026 年四季度能力更新：在 TH1.1 与 TH2 合集上，时间跨度约每 3.61 个月翻倍",
+      "badge": "N",
+      "summary": "非营利评估机构 METR 发布 2026 年四季度能力更新，评估对象包括已公开的模型，至 Claude Opus 5.5 和 GPT-6 Astra。官方在 TH1.1 与 TH2 合集上给出的主要趋势是：50% 任务完成时间跨度（time horizon）大约每 3.61 个月翻倍（95% 置信区间 2.08–4.94 个月，约 110 天）。METR 同时强调，现有公开证据仍不足以排除未来几年出现急剧的 AI 研发加速，且模型在缺乏清晰反馈时的判断力仍弱于人类专家。",
+      "publishedAt": "2026-11-20T18:00:00+08:00",
+      "sortAt": "2026-11-20T18:00:00+08:00",
+      "timeLabel": "2026-11-20",
+      "timePrecision": "date",
+      "timeNote": "METR 官方博客标注 DATE: November 20, 2026，未给钟点。timeLabel 只写日期，sortAt 仅用于排序。",
+      "source": "METR",
+      "confidence": "A",
+      "url": "https://metr.org/blog/2026-11-20-q4-2026-capability-update/",
+      "links": [
+        {
+          "label": "METR 官方博客",
+          "url": "https://metr.org/blog/2026-11-20-q4-2026-capability-update/"
+        },
+        {
+          "label": "MIT Technology Review 报道",
+          "url": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/"
+        }
+      ],
+      "detail": "## 它是什么\n\n一份关于「与 AI 研发加速相关的能力」的评估更新，不是新模型发布，也不是对某一家公司产品的认证。时间跨度衡量的是：模型在其任务集上，以 50% 成功率所能完成的、按人类耗时标定的任务长度。\n\n## 它做什么\n\n- 官方写明评估范围直至 Opus 5.5 和 GPT-6 Astra，并说对「急剧加速到底需要哪些能力、相关能力提升有多快」仍有显著不确定性。\n- 在 TH1.1 与 TH2 合集上，官方写：time horizons are doubling roughly every 3.61 months (95% CI 2.08-4.94), or 110 days。这与此前 TH1.1 单独趋势的 105 天接近。官方还写，若做朴素外推，模型达到该任务集最长分数阈值对应的 200 小时 50% 时间跨度，时间点会落在 2027 年 7 月。这是外推，不是预测已经实现。\n- 官方另写：仅看 TH2 中可验证子集时，翻倍时间更短，为 1.65 个月（95% CI 0.79 to 3.99）；但他们指出这既可能意味着近期加速，也可能有其他解释，数据也较嘈杂。\n- 其他主要发现包括：在其编程和优化任务上，模型通常达到或超过熟练人类，但在有大量领域专家参与的任务上往往不是绝对第一；在缺少清晰经验反馈、需要做判断的任务上，AI 智能体的判断看起来弱于人类专家；高「生命周期成本」任务更难，但高、低成本子集上的进步速度相近。\n\n## 适合谁\n\n关注 AI 能力趋势、研发自动化风险和评估方法的研究者、政策分析者与模型实验室。它不直接改变普通用户能在聊天产品里点到的按钮。\n\n## 为什么值得看\n\n这是目前最常被引用的「时间跨度」曲线的一次正式更新，并把「可验证任务可能更快、判断类任务仍然落后」一并写进了同一份报告。官方自己强调不确定性和外推限制，不宜只截取「2027 年 7 月达到 200 小时」这一句。\n\n## 可以核对的事实\n\n- 发布日期、评估至 Opus 5.5 与 GPT-6 Astra、合集翻倍 3.61 个月（95% CI 2.08–4.94，约 110 天）、200 小时外推至 2027 年 7 月、TH2 可验证子集 1.65 个月、判断类任务弱于人类专家：见 METR 官方博客（A）。\n- MIT Technology Review 对同一更新的报道：见该文（B）。"
+    },
+    {
+      "id": "google-connected-apps-holiday",
+      "title": "Google 在美国推出新的 Connected Apps：可在 Search 和 Gemini 应用里完成部分杂货下单，并在 Search 中使用 Experian 与 H&R Block",
+      "badge": "N",
+      "summary": "Google 宣布，在美国通过 Search 和 Gemini 应用推出新的 Connected Apps，先覆盖部分杂货购物，包括 Albertsons、Safeway、Shaw's 和 Target。官方称这些应用由 Universal Commerce Protocol 驱动。已经在 Gemini 应用里上线的 Experian 将扩展到 Search，美国用户可以查看信用评分并浏览个人贷款；美国用户还可以在 Search 里使用 H&R Block 计算税款并估算退税。",
+      "publishedAt": "2026-11-20T16:00:00+08:00",
+      "sortAt": "2026-11-20T16:00:00+08:00",
+      "timeLabel": "2026-11-20",
+      "timePrecision": "date",
+      "timeNote": "Google 官方博客只标注 Nov 20, 2026，未给钟点。timeLabel 只写日期，sortAt 仅用于排序。",
+      "source": "Google",
+      "confidence": "A",
+      "url": "https://blog.google/products-and-platforms/products/search/connected-apps-holiday-errands/",
+      "links": [
+        {
+          "label": "Google 官方博客",
+          "url": "https://blog.google/products-and-platforms/products/search/connected-apps-holiday-errands/"
+        }
+      ],
+      "detail": "## 它是什么\n\n一次把更多生活和财务服务接到 Search 与 Gemini 的产品更新，不是新的 Gemini 模型发布，也不是已经覆盖美国以外用户的购物平台。\n\n## 它做什么\n\n- 官方写明：In the U.S., we’re rolling out new Connected Apps through Search and the Gemini app to help with your grocery runs, including Albertsons, Safeway, Shaw’s, and Target. 用户可以用这些应用来组购物车并结账。官方把它归因于 Universal Commerce Protocol。\n- 财务方面，官方写明：Experian is already live on the Gemini app, and now we’re rolling it out to Search，美国用户可以查看 credit rating 并 shop for a personal loan。美国用户也可以在 Search 中使用 H&R Block 来 calculate their taxes and estimate their refunds。\n- 官方还预告：未来几周，用户将可以在 Search 里把账户连接到 Angi 和 Thumbtack，用于寻找本地服务人员。这是路线图，不是已经完成的接入。\n\n## 适合谁\n\n在美国使用 Google Search 或 Gemini 应用、希望在对话或搜索里完成杂货下单或查看部分财务信息的用户。其他国家和地区的用户，按这篇公告不在此次推送范围内。\n\n## 为什么值得看\n\n这是 Google 把购物和财务服务更深地嵌进 Search 与 Gemini 的一步，而且点名了具体零售商和金融/税务服务。它目前只在美国滚动上线，实际能完成哪些步骤、需要哪些账户授权，仍要以产品里是否出现相应入口为准。\n\n## 可以核对的事实\n\n- 美国通过 Search 和 Gemini 应用上线 Albertsons、Safeway、Shaw's、Target 等杂货 Connected Apps，由 Universal Commerce Protocol 驱动；Experian 从 Gemini 应用扩展到 Search，可用于查看信用评分和浏览个人贷款；Search 中可使用 H&R Block 计算税款并估算退税；Angi 和 Thumbtack 将在未来几周接入 Search：见 Google 官方博客 Nov 20, 2026（A）。官方未给出精确钟点或完成推送的日期。"
+    },
+    {
+      "id": "signal-block-os-ai-screenshots",
+      "title": "Signal 默认阻止系统级 AI 读取聊天画面：在 iOS 27 和可检测的 Android 环境限制截屏",
+      "badge": "N",
+      "summary": "Signal 宣布限制内置于移动操作系统的 AI 智能体获取 Signal 数据。官方写明：将在 iOS 27 上，以及在能够检测到 AI 助手试图读取 Signal 屏幕的 Android 版本上，通过阻止应用内截屏来限制这类采集。用户可在设置中关闭该保护，但官方警告，关闭后可能把聊天内容暴露给这些系统级 AI，并破坏 Signal 的隐私保证。",
+      "publishedAt": "2026-11-20T16:00:00+08:00",
+      "sortAt": "2026-11-20T16:00:00+08:00",
+      "timeLabel": "2026-11-20",
+      "timePrecision": "date",
+      "timeNote": "Signal 官方博客标注 Meredith Whittaker on 20 Nov 2026，未给钟点。timeLabel 只写日期，sortAt 仅用于排序。",
+      "source": "Signal",
+      "confidence": "A",
+      "url": "https://signal.org/blog/protecting-your-privacy/",
+      "links": [
+        {
+          "label": "Signal 官方博客",
+          "url": "https://signal.org/blog/protecting-your-privacy/"
+        },
+        {
+          "label": "Signal 官方支持文档",
+          "url": "https://support.signal.org/hc/en-us/articles/11338514641306-Screen-security-blocking-Google-Gemini-and-Siri-AI"
+        },
+        {
+          "label": "The Verge 报道",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1038390/signal-blocking-ai-agent-screenshots-mobile-app"
+        }
+      ],
+      "detail": "## 它是什么\n\n一次应用层的隐私防护更新，不是新的加密协议，也不是对 Gemini 或 Siri 本身的下架。它针对的是操作系统把屏幕内容交给系统级 AI 智能体的能力。\n\n## 它做什么\n\n- 官方写明：已经在 Windows 上用截屏阻止来应对 Microsoft Recall；现在将对 iOS 27，以及「on Android versions where we can detect an AI assistant attempting to read your Signal screen」采取类似措施。\n- 官方把 Google 的 Gemini Intelligence（与 Gemini 相关）和 Apple 的 Onscreen Awareness（与 Siri AI 相关）列为正在进入操作系统、并可能扫描屏幕信息的例子。官方认为，数据一旦被这类系统采集，就不在 Signal 的控制之内。\n- 官方同时承认补救并不完整：限制截屏并不能覆盖智能体通过文件系统等方式读取设备上已有内容；目前也无法在 macOS 上实现同样保护。官方呼吁操作系统厂商提供明确的退出机制和更清楚的技术说明。\n- 想继续截屏的用户，可在 Signal 应用设置里关闭该保护。官方写明，这样做可能暴露自己和联系人的 Signal 内容。\n\n## 适合谁\n\n重视聊天隐私、不希望系统级 AI 读取对话内容的 Signal 用户，以及在操作系统里开发敏感应用的团队。需要截屏保存聊天记录的用户，要在设置里自行权衡。\n\n## 为什么值得看\n\n这是把「系统级 AI 智能体读取屏幕」直接当成隐私生存威胁来处理的一次产品改动，也可能被其他通讯应用仿效。它不能写成已经彻底挡住所有 AI 采集路径。\n\n## 可以核对的事实\n\n- 在 iOS 27 和可检测的 Android 环境通过阻止截屏限制系统级 AI 采集、用户可关闭、对 macOS 尚无法同样实施、官方呼吁操作系统提供退出工具和文档：见 Signal 官方博客（A），日期为 20 Nov 2026。\n- 支持文档对 Block Siri AI / Screen Security 的说明：见 Signal Support（A）。\n- The Verge 对同一变化的报道：见该文（B）。"
+    },
+    {
+      "id": "microsoft-copilot-gpt-6-2-sol-astra",
+      "title": "Microsoft 宣布：OpenAI 的 GPT-6.2 Sol 和 GPT-6.2 Astra 即日起在 Microsoft Copilot 中向符合条件的用户推送",
+      "badge": "N",
+      "summary": "Microsoft 宣布，OpenAI 的 GPT-6.2 Sol 和 GPT-6.2 Astra 即日起加入 Microsoft Copilot 的前沿模型选项。GPT-6.2 Sol 正在向 Copilot Chat、Cowork、Studio 以及 Excel、PowerPoint 和 Word 中的 Copilot 推送；GPT-6.2 Astra 先在 Cowork 和 Studio 推送，Frontier 用户还可在 Chat 和这些 Office 应用中使用。GPT-6.2 模型本身已在 11 月 17 日发布，本条记录的是 Copilot 入口的正式推送范围。",
+      "publishedAt": "2026-11-20T15:00:00+08:00",
+      "sortAt": "2026-11-20T15:00:00+08:00",
+      "timeLabel": "2026-11-20",
+      "timePrecision": "date",
+      "timeNote": "Microsoft 365 Copilot 官方博客标注 Nov 20, 2026，标题为 Available today，未给钟点。Microsoft 365 Message Center 条目 MC1560916 的发布日期为 Nov 19, 2026，早于本窗口；本条以 11 月 20 日面向公众的「即日起可用」博文为准，sortAt 仅用于排序。",
+      "source": "Microsoft",
+      "confidence": "A",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/available-today-openais-gpt-6-2-sol-and-gpt-6-2-astra-in-microsoft-copilot/4574229",
+      "links": [
+        {
+          "label": "Microsoft Copilot 官方博客",
+          "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/available-today-openais-gpt-6-2-sol-and-gpt-6-2-astra-in-microsoft-copilot/4574229"
+        },
+        {
+          "label": "Message Center MC1560916",
+          "url": "https://mc.merill.net/message/MC1560916"
+        },
+        {
+          "label": "OpenAI GPT-6.2 发布说明",
+          "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol"
+        }
+      ],
+      "detail": "## 它是什么\n\n一次企业办公套件里的模型上架，不是 GPT-6.2 的首次发布，也不是 Microsoft 自研 MAI 模型的新版本。\n\n## 它做什么\n\n- 官方博客写明：GPT-6.2 Sol 正在全球向符合条件的用户推送，可用于 Copilot Chat、Copilot Cowork、Copilot Studio，以及 Excel、PowerPoint 和 Word 中的 Copilot。GPT-6.2 Astra 正在全球向符合条件的用户推送，可用于 Copilot Cowork 和 Copilot Studio；Frontier 用户还可以在 Copilot Chat 以及 Excel、PowerPoint 和 Word 中的 Copilot 使用 Astra。可用性可能因地区和组织而异。管理员可在 Microsoft 365 管理中心管理访问和可用性。\n- 官方还写明：Work IQ 会在用户已有权限范围内，用文件、会议、聊天和业务数据为这两套模型提供工作上下文，使它们依据实际工作内容而不是仅依据提示来推理。\n- Message Center 通知 MC1560916（发布日期 Nov 19, 2026）补充了计费和前提条件：GPT-6.2 Astra 在 Cowork 和 Copilot Studio 以 usage-based billing（UBB）向一般可用推送，在 Word、Excel、PowerPoint 和 Chat 则以 Frontier 推送。GPT-6.2 Sol 在 Cowork 和 Copilot Studio 以 UBB 推送，并作为 Microsoft 365 Copilot 用户订阅许可（USL）的一部分，向 Word、Excel、PowerPoint 和 Chat 的一般可用推送，该模型有用量限制。所有入口使用 GPT-6.2 Astra，都需要启用 OpenAI subprocessor；该设置只控制由 OpenAI 作为 subprocessor 运营的 OpenAI 模型，由 Microsoft 运营的 Azure OpenAI 模型不受影响。模型默认向满足许可和配置要求的用户开放。\n\n## 适合谁\n\n已经使用 Microsoft 365 Copilot，并希望在 Chat、Cowork、Studio 或 Office 应用里选用 GPT-6.2 的组织用户和管理员。能否看到 Astra，还取决于是否开启 OpenAI subprocessor，以及是否加入 Frontier 和 UBB。\n\n## 为什么值得看\n\nGPT-6.2 从「模型发布」走到「可以在 Copilot 里选」。对企业用户来说，真正能用的入口、计费方式和管理员开关，要比发布会更直接。它仍是逐步推送，官方也写明因地区和组织而异。\n\n## 可以核对的事实\n\n- Sol 在 Chat / Cowork / Studio / Excel / PowerPoint / Word 向符合条件的用户全球推送，Astra 在 Cowork 和 Studio 推送、Frontier 用户还可在 Chat 和 Office 应用中使用，Work IQ 在已有权限内提供上下文：见 Microsoft 官方博客 Nov 20, 2026（A）。\n- Astra 需启用 OpenAI subprocessor，以及 UBB / USL / Frontier 的分入口说明：见 Message Center MC1560916（A），该通知发布日期为 Nov 19, 2026。"
+    },
+    {
+      "id": "tencent-hy4-open-weights",
+      "title": "腾讯混元开源 Hy4、Hy4-FP8 与预训练 Hy4 base 权重：语言主干 770B 总参数，每 token 激活 49B",
+      "badge": "N",
+      "summary": "腾讯混元在官方模型页宣布，开源 Hy4、Hy4-FP8 以及预训练的 Hy4 base 权重，发布平台包括 Hugging Face、ModelScope 和 GitCode。官方写明：Hy4 是支持文本、图像和视频理解的 MoE 旗舰模型；语言主干总参数 770B，每 token 激活 49B，上下文长度为 1,048,576 tokens。这是 11 月 4 日已经发布的模型的权重开放，不是又一次全新模型发布。官方许可证为 Tencent Hy License。",
+      "publishedAt": "2026-11-20T12:00:00+08:00",
+      "sortAt": "2026-11-20T12:00:00+08:00",
+      "timeLabel": "2026-11-20",
+      "timePrecision": "date",
+      "timeNote": "Hugging Face 官方模型页「News」写明已开源上述权重，但未给出钟点；Hy4 模型本身于 2026 年 11 月 4 日发布，当时预告将于近期开源。本条只记录权重开源。IT之家报道时间为 2026-11-20 11:47:35，仅作辅助，不作为精确发生时刻。timeLabel 只写日期，sortAt 仅用于排序。",
+      "source": "腾讯混元",
+      "confidence": "A",
+      "url": "https://huggingface.co/tencent/Hy4",
+      "links": [
+        {
+          "label": "Hugging Face 官方模型页",
+          "url": "https://huggingface.co/tencent/Hy4"
+        },
+        {
+          "label": "腾讯 11 月 4 日官方介绍",
+          "url": "https://www.tencent.com/zh-cn/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/"
+        },
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/Tencent-Hunyuan/Hy4"
+        }
+      ],
+      "detail": "## 它是什么\n\n一次官方开源权重，使开发者可以自行下载和部署此前已经上线的 Hy4。官方许可证写明为 Tencent Hy License，本报不以转载媒体的其他许可证名称替代。\n\n## 它做什么\n\n- 官方 News 原文写明：We open-source Hy4, Hy4-FP8, and the pre-trained Hy4 base model weights on Hugging Face, ModelScope, and GitCode。其中 Hy4 与 Hy4-FP8 是指令模型，Hy4 base 是预训练基座，不是指令微调后的聊天模型。\n- 官方规格：语言主干（不含 ViT、adapter 和 DFly2）总参数 770B，文本激活 49B，另计 Vision 1.23B；上下文长度 1M（1,048,576 tokens）；78 层中 1 层稠密、77 层 MoE，每层 256 个 routed experts 加 1 个 shared expert，每 token 激活 top-8 routed experts 和 shared expert。内置 5 层、3.3B 参数的 DFly2 投机解码草稿模块。\n- 官方还写明支持视觉理解和 computer-use（命令行与图形界面）。这些能力在 11 月 4 日的官方介绍里已经提出，本条不把它们当成 11 月 20 日才首次出现的产品功能，只说明开源的是具备这些能力的模型权重。\n- 官方建议生产部署优先使用 vLLM 或 SGLang，并提供 vllm/vllm-openai:hy4、lmsysorg/sglang:hy4 镜像，以及 Hy4-FP8、张量并行 8 卡等部署说明。官方同时提供 System Card。\n- 本报不把「Hy 系列此前所有版本已全部开源」或「Hy4 flash 已同步开源」写成官方 News 已确认的事实，因为官方这条 News 只点名 Hy4、Hy4-FP8 和 Hy4 base。\n\n## 适合谁\n\n有足够算力、希望私有化部署大型开源多模态模型，或评估 computer-use、长上下文和金融/办公工作流的开发者与研究团队。普通用户若只在元宝、WorkBuddy 等腾讯产品里使用 Hy4，这条开源主要影响的是可下载的权重，而不是产品入口本身。\n\n## 为什么值得看\n\n770B 总参数、1M 上下文、带视觉和电脑操作能力的旗舰权重被官方开放，是近期中文开源模型里体量很大的一次。需要同时核对许可证（Tencent Hy License）和 System Card，而不是把它理解成无条件的自由软件。\n\n## 可以核对的事实\n\n- 开源 Hy4、Hy4-FP8 与 Hy4 base，平台为 Hugging Face、ModelScope 和 GitCode；770B / 49B、1,048,576 tokens、MoE 结构、DFly2、Tencent Hy License、System Card 与部署镜像：见 Hugging Face 官方模型页（A）。\n- Hy4 于 2026 年 11 月 4 日发布、当时预告将开源权重：见腾讯官方介绍页（A）。"
+    },
     {
       "id": "openai-chatgpt-new-mobile-design",
       "title": "OpenAI 开始向部分 ChatGPT Pro 用户测试新的移动端界面：Dot 独立标签，并可在标签栏固定 Codex、项目和图像",
