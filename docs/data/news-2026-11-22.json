@@ -1,0 +1,130 @@
+{
+  "asOf": "2026-11-22",
+  "timezone": "Asia/Shanghai",
+  "preview": 10,
+  "empty": false,
+  "emptyMessage": "今日暂无重要资讯，晚间 19:30 起每日更新",
+  "note": "2026-11-22 早报（北京时间）整理：新录入 4 条（Novita 就 MiniMax 请求转发发布隐私声明、Lean/Mathlib 社区核验黎曼猜想 Lean 证明、OpenAI 公布 11 月 21 日 ChatGPT/API 故障说明、补录联合国 CCW 自主武器会议成果）。按公告时间从新到旧排列。带精确钟点的条目 timeLabel 用北京时间；官方只给日期的条目 timePrecision 为 date，timeLabel 只写日期，sortAt 仅用于排序，详见各条 timeNote。置信度 A 表示来自官方原文，B 表示可靠媒体报道、官方未单独核实；同一条里官方事实与未经官方单独核实的报道需要分开看时标 A/B，详见该条「可以核对的事实」。",
+  "items": [
+    {
+      "id": "novita-minimax-request-forwarding",
+      "title": "Novita 发布隐私声明：2026-05-28 至 2026-11-11 期间部分 MiniMax 请求被转发至 MiniMax 官方 API，提示词可能被第三方读取",
+      "badge": "N",
+      "summary": "云推理平台 Novita 在 11 月 22 日发布隐私声明称，因路由配置问题，2026 年 5 月 28 日至 11 月 11 日期间，部分经由 Novita 处理的 MiniMax 模型请求被转发到了 MiniMax 的官方 API，而不是在 Novita 自有基础设施上处理。官方写明：这些请求内容可能已被第三方访问或留存，范围包括直接调用 Novita 的请求，以及经 OpenRouter 再转到 Novita 的请求。",
+      "publishedAt": "2026-11-22T00:00:00+08:00",
+      "sortAt": "2026-11-22T00:00:00+08:00",
+      "timeLabel": "2026-11-22",
+      "timePrecision": "date",
+      "timeNote": "Novita 官方公告页面标注 November 22, 2026，未给钟点。timeLabel 只写日期，sortAt 仅用于排序。OpenRouter 用户在 Hacker News 披露相关邮件的时间为 2026-11-21T04:31:38Z，即北京时间 11 月 21 日 12:31，早于昨晚晚报窗口结束；本条以 Novita 11 月 22 日的官方公告为收录依据。",
+      "source": "Novita",
+      "confidence": "A/B",
+      "url": "https://novita.ai/blog/minimax-requests-privacy-notice/",
+      "links": [
+        {
+          "label": "Novita 官方隐私声明",
+          "url": "https://novita.ai/blog/minimax-requests-privacy-notice/"
+        },
+        {
+          "label": "Hacker News 用户披露的 OpenRouter 邮件",
+          "url": "https://news.ycombinator.com/item?id=50585962"
+        },
+        {
+          "label": "Ars Technica 11 月 21 日更新",
+          "url": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/"
+        }
+      ],
+      "detail": "## 它是什么\n\n一次由推理中转平台公布的数据路径问题说明，不是新的模型发布。它涉及 MiniMax 模型请求在 Novita（以及经 OpenRouter 转到 Novita）这一链路上，是否按用户预期停留在标称的处理方。\n\n## 它做什么\n\n- Novita 官方写明：一条本应只适用于特定客户的 API 转发路径，因路由配置问题被更广泛地套用，导致部分 MiniMax 请求被转到 MiniMax 官方 API。官方已暂停受影响的模型。\n- 官方划定的时间范围是 2026-05-28 至 2026-11-11。若在此期间通过 Novita 使用了 MiniMax 模型，请求内容「可能已被第三方访问或留存」。该范围同时覆盖直连 Novita 的请求，以及经 OpenRouter 转到 Novita 的请求。\n- Novita 写明：独立安全研究者观察到，测试请求中嵌入的 URL 和主机名曾被访问；未观察到 AWS 测试密钥被使用。访问模式「暗示可能涉及自动化内容审核」。Novita 表示正与 MiniMax 跟进核实这一判断，以及受影响数据的处理情况。\n- Novita 还写明：自身不留存客户提示词或生成结果，也不用它们做模型训练；正在核验受影响 MiniMax 端点的处理路径，并改进合作方 API 标注与数据留存政策披露。若请求中包含有效凭证、API 密钥或其他机密，官方建议作为预防措施予以撤销或轮换。\n- 另据 Hacker News 用户在 2026-11-21T04:31:38Z 贴出的、自称来自 OpenRouter 的邮件（B）：研究者在 2026 年 7 月至 10 月发往 MiniMax 模型的提示词中放置了唯一测试 URL，第三方在请求发出 40 至 130 小时后访问了这些 URL，无论请求是由 MiniMax 直接处理，还是由其他提供方转发给 MiniMax。邮件称，除一个例外，在这些提供方上对其他模型做的同样测试未被访问，AWS 测试密钥也未被使用。邮件还称，AtlasCloud、Novita 和 StreamLake 告诉 OpenRouter，它们把发往 MiniMax 模型的 OpenRouter 请求转给了 MiniMax；OpenRouter 认为问题出在 MiniMax 以及向其转发的提供方，而不在 OpenRouter 本身。邮件称 MiniMax 曾告诉 StreamLake，其端点在 10 月 22 日前启用了内容审核，此后已启用 Zero Data Retention；OpenRouter 已要求 MiniMax 自行说明，但尚未收到回复，并已暂时去掉这些 MiniMax 端点上的 Zero Data Retention 标签。以上仅为对用户披露邮件的转述，不是 MiniMax 或 OpenRouter 的官方博客原文。\n\n## 适合谁\n\n曾在上述时间范围内，经 Novita 或 OpenRouter 等中转向 MiniMax 模型发送过提示词的开发者和企业，尤其是在提示词里放过密钥、内部数据或客户内容的人。它不改变 MiniMax 模型本身的能力说明。\n\n## 为什么值得看\n\n这是一次把「模型路由 / 零留存标注」和实际数据路径对上号的官方说明。本报未检索到 MiniMax 自己的公开回应，因此不能把邮件里转述的审核或零留存说法，写成 MiniMax 已确认的官方立场。\n\n## 可以核对的事实\n\n- 转发路径、时间范围 2026-05-28 至 2026-11-11、可能被第三方访问或留存、已暂停受影响模型、测试 URL 被访问、未见 AWS 测试密钥被使用、建议轮换机密：见 Novita 官方隐私声明（A），页面标注 November 22, 2026。\n- OpenRouter 用户邮件的披露时间与转述内容：见 Hacker News（B），发帖时间为 2026-11-21T04:31:38Z；Ars Technica 在 11 月 21 日的更新中也提到了 OpenRouter 的这封通知邮件（B）。"
+    },
+    {
+      "id": "lean-mathlib-riemann-hypothesis-verification",
+      "title": "Lean 与 Mathlib 社区发表联合声明：已核验 Alpöge 借助 Claude 完成的黎曼猜想 Lean 证明，并对正确性表示充分信心",
+      "badge": "N",
+      "summary": "Lean 与 Mathlib 社区在 11 月 21 日发表联合声明，并由 Lean FRO 与 Mathlib Initiative 背书，称他们对 Levent Alpöge 于 11 月 20 日公布的黎曼猜想 Lean 证明「有充分信心，认为该证明是正确的」，并核验了命题陈述与证明本身。这是对昨晚晚报「独立验证仍在进行」一条的后续，不是新的模型发布。",
+      "publishedAt": "2026-11-21T21:55:00+08:00",
+      "sortAt": "2026-11-21T21:55:00+08:00",
+      "timeLabel": "2026-11-21",
+      "timePrecision": "date",
+      "timeNote": "Lean 社区博客标注 2026-11-21 13:55，但未写时区，因此 timeLabel 只写日期，sortAt 仅用于排序。与之相关的 MIT 核验页明确以 UTC 标注，最后更新时间为 2026-11-21 12:55 UTC，即北京时间 20:55，仍晚于昨晚晚报。The Guardian 首次刊出时间为 2026-11-21 11:39 EST，即北京时间 11 月 22 日 00:39。",
+      "source": "Lean / Mathlib",
+      "confidence": "A",
+      "url": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
+      "links": [
+        {
+          "label": "Lean 社区联合声明",
+          "url": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/"
+        },
+        {
+          "label": "MIT 核验记录页",
+          "url": "https://math.mit.edu/~drew/grh/"
+        },
+        {
+          "label": "The Guardian 报道",
+          "url": "https://www.theguardian.com/technology/2026/nov/21/anthropic-riemann-hypothesis-solved-claude-ai"
+        },
+        {
+          "label": "Scientific American（11 月 21 日更新）",
+          "url": "https://www.scientificamerican.com/article/the-ai-riemann-hypothesis-proof-is-almost-certainly-true-independent-mathematicians-attest/"
+        }
+      ],
+      "detail": "## 它是什么\n\n一次针对已公布 Lean 形式化证明的社区核验声明。昨晚晚报已记录 Alpöge 的主张和当时「独立验证仍在进行」的状态；本条只记录随后的正式核验声明，不重复介绍该主张本身的全部背景。\n\n## 它做什么\n\n- 联合声明写明：Alpöge 于 2026 年 11 月 20 日发布了一份由 1700 万行代码构成的 Lean 库，作为黎曼猜想的证明。声明说：「We have full confidence that Alpöge's proof of the Riemann Hypothesis is correct, and we congratulate him on this achievement.」\n- 声明称，该代码库直接依赖的只有 Mathlib；社区按一篇既有说明中的四项标准完成核验，并认为均已满足：第一，命题本身就是 Mathlib 中的 RiemannHypothesis 定义，并已经过 Lean 与数论方面的专家审看；第二，该库可以正确编译，已有数十人报告编译成功，并复现了同一份原始证明导出文件；第三，社区增加了一个只导入 Mathlib 的文件来隔离命题，再用 comparator 和 con-leche --compare 两套独立工具比对，确认 Alpöge 库中证明的定理就是 Mathlib 中的黎曼猜想命题；第四，导出的原始证明已由 Lean 官方内核、con-leche、con-ron 以及用不同编程语言实现的多个独立检验器检查。声明还写：con-leche 和 con-ron 带有相对于集合论的形式化证明，说明它们不能接受一份错误证明；这些检查是在一份惰性导出上运行的，以避开 Lean 源码中假想的恶意代码。\n- 声明最后说，期待数学界接下来的工作，帮助解释这份证明中的新想法。本报据此不把「形式化证明已通过社区核验」写成「克莱数学研究所已颁发千禧年大奖」，也不写成「数学界已完成对证明思想的人工解读」。\n- Andrew Sutherland（MIT）维护的核验记录页写明：页面最后更新时间为 2026-11-21 12:55 UTC（北京时间 20:55），当时部分检查仍在进行；该页同时列出了已完成的编译与部分独立内核检查结果。该页更新时间早于社区联合声明，不能单独当成最终声明，只作为可核对的过程记录。\n\n## 适合谁\n\n关注数学形式化验证、AI 辅助科研，以及想核对「黎曼猜想是否已被形式化证明」这一说法到哪一步的读者。它不是 Anthropic 的产品更新，也不改变 Claude 对普通用户的功能说明。\n\n## 为什么值得看\n\n这是把昨晚还在进行中的独立核验，推进到 Lean / Mathlib 社区正式背书的一步。它证明的是「这段 Lean 代码证明了 Mathlib 里的那条命题，并且检验器接受这份证明」，而不是一篇已写就的、供人阅读的传统数学论文已经被整个领域消化。\n\n## 可以核对的事实\n\n- 联合声明、Lean FRO 与 Mathlib Initiative 背书、1700 万行 Lean 库、四项核验标准、对证明正确性表示充分信心：见 Lean 社区官方博客（A）。博客标注 2026-11-21 13:55，但未写时区。\n- 部分过程性检查记录与 2026-11-21 12:55 UTC 的更新时间：见 MIT 核验页（A）。\n- 对同一声明的报道，以及 Guardian 首次刊出时间 2026-11-21 11:39 EST：见 The Guardian（B）；Scientific American 11 月 21 日更新也引用了上述「充分信心」原句（B）。"
+    },
+    {
+      "id": "openai-chatgpt-api-outage-2026-11-21",
+      "title": "OpenAI 发布事故说明：11 月 21 日太平洋时间 1:48–5:21，ChatGPT 付费与免费服务故障率一度达 75%",
+      "badge": "N",
+      "summary": "OpenAI 在官方状态页发布事故说明称，11 月 21 日太平洋时间 1:48 至 5:21，大量指向 OpenAI 的请求失败，付费与免费 ChatGPT 的故障率一度达到 75%。官方将触发原因写为：为 Primary API 服务所使用的 Postgres 数据库做维护时，两个只读副本同时失效；这些副本是承重的，依赖它们的请求路径随之失败。",
+      "publishedAt": "2026-11-21T17:48:00+08:00",
+      "sortAt": "2026-11-21T17:48:00+08:00",
+      "timeLabel": "2026-11-21 17:48–21:21",
+      "timePrecision": "datetime",
+      "timeNote": "OpenAI Status 写明事故时间为 November 21st, 1:48–5:21 PT。11 月按太平洋标准时间 UTC−8 换算，即北京时间 17:48–21:21。官方给出了精确时刻，按时间段记录。",
+      "source": "OpenAI",
+      "confidence": "A",
+      "url": "https://status.openai.com/incidents/01JMYB602A6H2E04Y1497J434X/write-up",
+      "links": [
+        {
+          "label": "OpenAI Status 官方事故说明",
+          "url": "https://status.openai.com/incidents/01JMYB602A6H2E04Y1497J434X/write-up"
+        }
+      ],
+      "detail": "## 它是什么\n\n一次官方事后说明，记录已结束的服务故障及其技术原因和整改措施，不是新的模型或产品发布。事故开始于昨晚晚报窗口之前（北京时间 17:48），结束于窗口之后（北京时间 21:21）。昨晚晚报未写入该事故，本早报依据官方说明补记。\n\n## 它做什么\n\n- 官方写明：故障高峰时，付费与免费 ChatGPT 的失败率达到 75%。Primary API 服务负责整个 OpenAI 技术栈中的用户认证和服务间认证。\n- 官方写明：在多次尝试恢复两个副本、以及在其他区域拉起替代副本均未成功后，最终与服务提供商合作，在同一区域启用了两个新的副本，问题才得到缓解。\n- 官方称已经采取的措施包括：暂停同类维护，直至另行通知；调整配置以减少连接抖动；增加可按百分比把流量从副本上移开的功能开关；并将 100% 查询打到主实例以验证关于主实例为何失败的假设。\n- 官方还列出后续将做的改动，包括：建立维护前审查，确保意外中断时有快速恢复方案；在维护期间准备热备容量；在关键服务所在区域准备足够缓冲容量；为副本延迟制定短期自动恢复和长期架构改动；并检查整个基础设施，以增加冗余和故障保护。官方承认，较长时间的 API 中断会影响客户的产品与业务。\n\n## 适合谁\n\n在该时间段使用 ChatGPT 或 OpenAI API 并遇到失败的用户与开发者，以及需要把此次中断写入自己故障记录的团队。它不涉及新的模型能力。\n\n## 为什么值得看\n\n这是把一次大范围故障的触发条件、影响范围和整改项写清楚的官方说明，也说明认证路径上的数据库副本一旦承重，维护窗口就可能演成全栈中断。\n\n## 可以核对的事实\n\n- 事故窗口 1:48–5:21 PT、付费与免费 ChatGPT 故障率一度达 75%、Postgres 只读副本同时失效、Primary API 承担认证、同区域新副本缓解、已实施与拟实施的整改项：见 OpenAI Status 官方事故说明（A）。"
+    },
+    {
+      "id": "un-ccw-laws-mandate-2026",
+      "title": "联合国《特定常规武器公约》审议大会未能就具有法律约束力的自主武器条约达成谈判授权，128 个缔约国同意在 2027–2028 年「拟订」一项国际文书",
+      "badge": "N",
+      "summary": "在日内瓦举行的联合国《特定常规武器公约》（CCW）第七次审议大会上，128 个缔约国同意启动一项关于致命自主武器系统的国际文书「拟订」工作，时间为接下来两年（2027–2028 年）。作为会议主席国，瑞士联邦外交部在 11 月 21 日的公报中写明：由于公约以协商一致作决定，目前未能如多数国家所要求的那样，就一项具有法律约束力的文书达成授权；法律形式将在谈判结束时再确定。",
+      "publishedAt": "2026-11-21T11:45:00+08:00",
+      "sortAt": "2026-11-21T11:45:00+08:00",
+      "timeLabel": "2026-11-21",
+      "timePrecision": "date",
+      "timeNote": "瑞士联邦外交部公报标注日内瓦，21.11.2026，并写明谈判在 11 月 21 日周六清晨结束，未给出钟点。timeLabel 只写日期。AFP 报道称会议在周六将近 4:45 am（0345 GMT）结束，即北京时间 11:45，该时刻来自媒体而非这份官方公报，只写入说明，不作为 timeLabel 的精确时刻。sortAt 仅用于排序。",
+      "source": "瑞士联邦外交部",
+      "confidence": "A/B",
+      "url": "https://www.admin.ch/fr/newnsb/cpYJGLEaQYIi",
+      "links": [
+        {
+          "label": "瑞士联邦外交部公报",
+          "url": "https://www.admin.ch/fr/newnsb/cpYJGLEaQYIi"
+        },
+        {
+          "label": "AFP",
+          "url": "https://www.afp.com/en/countries-open-path-towards-killer-robots-pact"
+        },
+        {
+          "label": "POLITICO",
+          "url": "https://www.politico.eu/article/effort-regulate-killer-robots-delayed-until-2028-ai-un/"
+        },
+        {
+          "label": "The Guardian",
+          "url": "https://www.theguardian.com/technology/2026/nov/21/international-talks-control-ai-autonomous-weapons-collapse"
+        },
+        {
+          "label": "The Verge",
+          "url": "https://www.theverge.com/tech/1039554/un-regulations-killer-robots"
+        }
+      ],
+      "detail": "## 它是什么\n\n一次多边军控会议的结果，不是某一家 AI 公司的产品发布。它针对的是可在减少或没有人工最终开火决定的情况下选择并攻击目标的致命自主武器系统。本条为补录：会议在北京时间 11 月 21 日上午已结束，但未被写入昨晚晚报。\n\n## 它做什么\n\n- 瑞士联邦外交部公报写明：经过一周密集谈判，缔约国就一项授权达成一致，启动拟订规范致命自主武器系统（法文公报中的 SALA）使用的文书；会议由瑞士大使 Julien Thöni 主持，秘鲁大使 Elmer Schialer Salcedo 协助。128 个缔约国包括所有主要军事大国。文书应在未来两年（2027–2028）内拟订。\n- 同一份公报明确写：公约内的决定须协商一致，因此目前还不能就多数国家希望的、具有法律约束力的文书授权达成一致；其法律形式将在谈判结束时予以明确。公报把 11 月 21 日清晨结束的这项协议称为人道主义裁军领域的「重要进展」，同时也说「主要工作仍有待完成」。\n- AFP 报道（B）引述会议主席 Thöni 对记者的说明：128 个缔约国「同意启动拟订一项关于致命自主武器系统的国际文书，这项工作应在未来两年内进行」。报道还称，一些国家拒绝使用「negotiate」（谈判）一词，商定文本改用「elaboration」（拟订）；接下来的过程应厘清哪些武器可依据国际人道法予以禁止，哪些不被禁止但可以受到规制，然后再决定它是否应成为一项条约、以及条款的约束程度。AFP 写明会议在周六将近 4:45 am（0345 GMT）结束。\n- 民间团体 Stop Killer Robots 等对结果表示失望，认为授权被弱化、没有通向具有法律约束力文书的清晰路径。这些评价来自媒体引述（B），不是瑞士公报正文。关于美国、俄罗斯、以色列等国在谈判中的具体立场，同样只见于媒体报道，不见于这份主席国公报，本报不把媒体复盘写成官方点名。\n\n## 适合谁\n\n关注 AI 军事应用、国际人道法和自主武器治理的读者。它不直接改变民用模型的产品功能。\n\n## 为什么值得看\n\n这是把「要不要、以及何时对自主武器制定有约束力的国际规则」又推迟到 2028 年前后再看法律形式的一次正式会议结果。主席国公报承认未能现在就约束力达成授权，同时也把「开始拟订文书」本身视为进展。两者需要分开看。\n\n## 可以核对的事实\n\n- 128 个缔约国、2027–2028 年拟订文书、目前未能就具有法律约束力的授权达成一致、法律形式留待谈判结束时确定、会议于 11 月 21 日清晨结束、主席为 Julien Thöni：见瑞士联邦外交部公报（A），发布日期 21 novembre 2026。\n- 会议将近 0345 GMT 结束、商定文本使用 elaboration、主席关于禁止与规制范围以及嗣后决定是否成为条约的说明：见 AFP（B）。The Guardian、POLITICO、The Verge 对同一会议结果有报道（B）。"
+    }
+  ]
+}
