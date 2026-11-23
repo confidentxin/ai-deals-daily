@@ -1,11 +1,48 @@
 {
-  "asOf": "2026-11-22",
+  "asOf": "2026-11-23",
   "timezone": "Asia/Shanghai",
   "preview": 10,
   "empty": false,
   "emptyMessage": "今日暂无重要资讯，晚间 19:30 起每日更新",
-  "note": "2026-11-22 晚报（北京时间）整理：新录入 2 条（OpenRouter 就推理提供方数据处理事件发布说明、Together AI 公布 2026 年 6–7 月提示词样本泄漏事件），并保留今天早报 4 条及 11 月 21 日榜单既有条目。按公告时间从新到旧排列。带精确钟点的条目 timeLabel 用北京时间；官方只给日期的条目 timePrecision 为 date，timeLabel 只写日期，sortAt 仅用于排序，详见各条 timeNote。置信度 A 表示来自官方原文，B 表示可靠媒体报道、官方未单独核实；同一条里官方事实与未经官方单独核实的报道需要分开看时标 A/B，详见该条「可以核对的事实」。",
+  "note": "2026-11-23 早报（北京时间）整理：新录入 1 条（OpenAI 首席科学家发表《Perplexity and Intelligence》，公开内部预训练困惑度进展并提议以困惑度等指标设立共同上限），并保留 11 月 22 日及此前榜单既有条目。按公告时间从新到旧排列。带精确钟点的条目 timeLabel 用北京时间；官方只给日期的条目 timePrecision 为 date，timeLabel 只写日期，sortAt 仅用于排序，详见各条 timeNote。置信度 A 表示来自官方原文，B 表示可靠媒体报道、官方未单独核实；同一条里官方事实与未经官方单独核实的报道需要分开看时标 A/B，详见该条「可以核对的事实」。",
   "items": [
+    {
+      "id": "openai-perplexity-and-intelligence",
+      "title": "OpenAI 首席科学家发表《Perplexity and Intelligence》：公开内部预训练困惑度进展，并提议以困惑度等指标设立共同上限",
+      "badge": "N",
+      "summary": "OpenAI 首席科学家 Jakub Pachocki 在北京时间 11 月 23 日 01:03 公布文章《Perplexity and Intelligence》，公开了公司内部追踪的预训练 log-perplexity（交叉熵损失）进展，并主张把困惑度（或等价的交叉熵损失）作为比较各家模型、制定共同安全标准的共享指标。他提议各前沿开发者约定基于困惑度等测量的共同上限，在理解和监控模型行为的能力达到具体里程碑之前不越过该上限。文章未给出具体上限数值。",
+      "publishedAt": "2026-11-23T01:03:00+08:00",
+      "sortAt": "2026-11-23T01:03:00+08:00",
+      "timeLabel": "2026-11-23 01:03",
+      "timePrecision": "datetime",
+      "timeNote": "作者、OpenAI 首席科学家 Jakub Pachocki 官方 X 账号 @merettm 发帖时间为 2026-11-22T17:03:00.000Z，即北京时间 11 月 23 日 01:03；按精确时刻记录。官方文章页只标注 November 22, 2026，未给钟点。Hacker News 提交时间为 2026-11-22T17:06:27Z。OpenAI CEO Sam Altman 于 2026-11-22T17:12:27Z 转发并评论。",
+      "source": "OpenAI",
+      "confidence": "A",
+      "url": "https://openai.com/index/perplexity-and-intelligence/",
+      "links": [
+        {
+          "label": "OpenAI 官方文章",
+          "url": "https://openai.com/index/perplexity-and-intelligence/"
+        },
+        {
+          "label": "作者官方 X 帖",
+          "url": "https://x.com/merettm/status/2124549218995949967"
+        },
+        {
+          "label": "OpenAI CEO Sam Altman 评论",
+          "url": "https://x.com/sama/status/2124551594691932405"
+        },
+        {
+          "label": "TechCrunch 报道",
+          "url": "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/"
+        },
+        {
+          "label": "Hacker News 讨论",
+          "url": "https://news.ycombinator.com/item?id=50601525"
+        }
+      ],
+      "detail": "## 它是什么\n\n一篇由 OpenAI 首席科学家 Jakub Pachocki 署名的官方研究评述，不是新的模型或产品发布。它讨论如何衡量预训练阶段的进展，主张用困惑度（perplexity，文中写明也可等价地看作交叉熵损失）作为可跨实验室比较的指标，并据此讨论共同的安全标准与开发上限。文中同时公布了 OpenAI 内部持有的、用于追踪预训练进展的困惑度测量。\n\n## 它做什么\n\n- Pachocki 认为，追踪「训练出更好的压缩器（或等价地，预测器）」的进展，是理解 AI 发展轨迹的关键。他主张把困惑度（或等价的交叉熵损失）确立为比较各模型开发者、并据以制定共同安全标准的指标。作为第一步，他提供了更多关于 OpenAI 预训练进展的透明度。他写明：公布内部困惑度测量「会让竞争对手更清楚地看到我们所处的位置」，但这一顾虑被「在全行业建立共同安全措施的紧迫性」所压过。OpenAI 希望这能成为迈向未来节奏控制（pacing）所需共享科学基础的一步。\n- 官方对困惑度的定义是：它衡量模型平均而言对下一个 token 预测得有多好；困惑度越低，预测越好。文中写明，实践中他们通常追踪的是困惑度的对数，也称为交叉熵损失。自 GPT-3.5 以来，他们主要使用的持有（held-out）评估数据来自其内部代码库的一个固定快照，文中报告的就是这些数字。\n- 文章用该指标把若干能力节点串起来：GPT-3.5 在其当前主评估数据集上的 log-perplexity 约为 0.99，已能流畅对话，并成为最初 ChatGPT 的基础；GPT-4 约为 0.91，已能有效利用思维链（chain-of-thought）推理，这促使了随后对这一能力的针对性激发，以及现代推理模型的出现。文章写明：当损失降到 0.8 以下后，他们在网络安全和数学等领域看到了变革性能力的出现。作者强调，这些能力会在精确的困惑度阈值被达到时出现，事先并非显然。\n- 文章还写：在把开放数学问题交给模型评测一年多之后，当他们升级到 log-perplexity 约为 0.76 的模型时，模型开始产生突破性结果。作者据此外推：深度学习研究中也可能出现类似的突然转变，并写到「最早在 2027 年，我们理论上就可能看到类似的、基础性预训练进展的井喷」。这是作者的展望，不是已发生的事件，也不能写成既定时间表。文中把 2026 年损失曲线的陡峭加速，主要归因于长期研究和算力投入的结果，只有较小部分归因于自动化；但对最近的模型，他们已经看到 AI 对设计做出了有意义的贡献。\n- 在安全含义上，作者认为：按近期进展外推，进入约 0.68–0.7 的 log-perplexity 窗口时，应预期出现进一步的变革性能力，而他并不知道那些能力会是什么，今天也未必在测试它们。与此同时，也应预期当前占主导的对齐审计形式进一步退化，以及评估觉察和训练觉察进一步上升。他主张前沿模型开发者应共同努力，在此类模型首次被使用之前，就如何评估它们、以及如何对其安全论证做红队测试，建立起包括共同透明度标准在内的共享规范。他进一步提议：基于困惑度和其他测量设定共同上限，开发者承诺在理解和监控 AI 行为的能力达到某个具体里程碑（文中举例：开发出思维链监控的后继方案）之前，不越过该上限。也就是说，他希望先有一项行业标准，规定以某个可跨实验室追踪的关键指标衡量的第一道开发上限，以及在越过它之前需要具体达成什么。\n- 文章同时列出将该指标作为共享度量的困难：各实验室使用的评估数据集和训练数据混合不同，难以直接比较（文中报告的是 OpenAI 自己追踪的主数据集，作者认为若确立透明度目标，可以找到可迁移的比较方式）；困惑度并不直接对应人们关心的某项任务；它也不计入预训练之外的进展，尤其是思维链推理并不会降低模型已达到的困惑度，却会大幅提升能力；以及未知的下限——并不预期能把损失做到 0，也不知道数据固有熵是多少。文章没有给出共同上限的具体数值，也没有声称其他实验室已经同意这一标准。\n- 作者在官方 X 账号 @merettm 公布该文时写道：「We decided to provide more transparency into pretraining progress at OpenAI for the sake of moving toward shared safety bars. In “Perplexity and Intelligence” I argue for common limits based on perplexity and other measurements, with progress beyond them gated on our ability to understand AI behavior.」OpenAI CEO Sam Altman 转发该帖并写道：这是 OpenAI「一段时间以来发布的最重要的东西」（原文：the most important thing OpenAI has published in awhile）；他们正在就预训练进展提供大量透明度，并希望业界能就共同上限达成共识。他随后引用了文章中关于共享评估规范、红队安全论证和共同上限的段落，并称各实验室已在白宫协议（White House Accords）下同意建立标准和最佳实践以改善系统安全，他认为关于使用困惑度的讨论可以推进这些目标。\n\n## 适合谁\n\n关注前沿模型能力如何被测量、以及行业是否可能就开发上限和安全标准达成共识的研究者、政策观察者和开发者。它不是新的模型或产品发布，也不改变 ChatGPT 或 API 里现有模型的功能说明。\n\n## 为什么值得看\n\n这是 OpenAI 把内部用于衡量预训练进展的 log-perplexity 数字公开，并明确提议用可跨实验室追踪的指标来设定「在监控能力跟上之前先不越过」的共同上限。文章同时写明了该指标的局限，且没有给出具体上限数值或已获行业同意的标准，因此不能把「业界已经设定共同上限」写成既成事实。文中图表若另有未在正文写出的数据点，本报不以转述或读图方式补充，只采用官方正文中的数字和表述。\n\n## 可以核对的事实\n\n- 文章主张以困惑度（或等价的交叉熵损失）作为比较开发者并制定共同安全标准的指标、公布 OpenAI 内部预训练困惑度测量、GPT-3.5 在当前主评估数据集上 log-perplexity 约为 0.99、GPT-4 约为 0.91、损失低于 0.8 后在网络安全和数学等领域出现变革性能力、升级到约 0.76 的模型后开始产生突破性数学结果、外推进入约 0.68–0.7 窗口应预期进一步变革性能力、提议在监控能力达到具体里程碑（例如思维链监控的后继方案）之前不越过基于困惑度等测量的共同上限、同时列出跨实验室比较困难、与下游任务脱节、未计入思维链等预训练之外进展、以及未知下限等局限、未给出上限数值：见 OpenAI 官方文章（A），页面标注 November 22, 2026。https://openai.com/index/perplexity-and-intelligence/\n- 作者于 2026-11-22T17:03:00Z（北京时间 11 月 23 日 01:03）在官方 X 账号公布该文，并说明公开预训练进展是为了迈向共同安全标准：见 https://x.com/merettm/status/2124549218995949967（A）。\n- OpenAI CEO Sam Altman 于 2026-11-22T17:12:27Z 转发并评论，称这是 OpenAI 一段时间以来发布的最重要的东西，并希望就共同上限达成共识；随后引用文章中关于共享规范和共同上限的段落，再提到白宫协议与困惑度讨论：见 https://x.com/sama/status/2124551594691932405、https://x.com/sama/status/2124551883130114403、https://x.com/sama/status/2124558713646428663（A）。\n- TechCrunch 于 2026 年 11 月 22 日下午 1:14（太平洋时间）报道了同一篇文章：https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/（B，报道时间；事实以官方文章为准）。\n"
+    },
     {
       "id": "openrouter-inference-provider-data-incidents",
       "title": "OpenRouter 发布推理提供方数据处理事件说明：已下线 3 家提供方，并将 125 个端点移出零数据留存资格",
