@@ -16,8 +16,8 @@
 
 ## 今日版：2026-11-23
 
-- 核实时间：2026-11-23 12:00（北京时间）
-- 新增：1 条；补录：0 条；急报：1 条；过期：0 条
+- 核实时间：2026-11-23 20:30（北京时间）
+- 新增：3 条；补录：0 条；急报：1 条；过期：6 条
 - 历史版本见 [`archive/`](archive/)。
 
 <a name="urgent"></a>
@@ -36,9 +36,9 @@
 - 可达性：能直接领（国内平台，需 AtomGit 账号认证）
 
 #### 智谱 ZCode · 每日 3 亿 GLM-5.3-Flash Token（多源交叉、官方未核实）
-- 内容：每天在 ZCode 客户端内领取当天额度，仅限夜间窗口使用：官方 X 原帖经第三方镜像可见，另有媒体与多个独立聚合站口径一致；ZCode 官网已核实产品与下载入口、无单设活动页，本次未直接打开 x.com 原帖，细则以客户端内公告为准。官方产品页：https://zcode.z.ai/cn ；2026-11-21 20:30 更新：本周末改发 WEEKEND BUILD 周末卡——11 月 20 日（周五）19:00 起领 5 亿 GLM-5.3-Flash Token，23:00 生效，至 11 月 23 日（周一）09:00 清零；周末卡与工作日每日 3 亿卡并行独立、不叠加；个别来源称 8 亿，以客户端内显示为准；领取窗口以客户端内公告为准
-- 额度：每人每天 3 亿 GLM-5.3-Flash Token，免费账号可领、无需订阅 Coding Plan；需更新到最新版客户端，领取后切换到 Global Building 通道并选 GLM-5.3-Flash，选错通道或模型会扣套餐额度；仅限 ZCode 客户端内使用，不能导出为 API Key；绑卡、实名要求各来源均未提及；官方未公布活动结束日期；本周末卡为每人 5 亿 GLM-5.3-Flash Token
-- 截止：每日领取：19:00 起领，23:00 至次日 09:00 可用，次日 09:00 清零、不结转，当天不领作废；本周末卡至 2026-11-23 09:00 清零
+- 内容：每天在 ZCode 客户端内领取当天额度，仅限夜间窗口使用：官方 X 原帖经第三方镜像可见，另有媒体与多个独立聚合站口径一致；ZCode 官网已核实产品与下载入口、无单设活动页，本次未直接打开 x.com 原帖，细则以客户端内公告为准。官方产品页：https://zcode.z.ai/cn ；2026-11-23 20:30 更新：本周末 WEEKEND BUILD 周末卡（11 月 20 日 19:00 起领 5 亿 GLM-5.3-Flash Token）已于 11 月 23 日 09:00 清零，本周末不再发放；工作日每日 3 亿卡照常，领取窗口以客户端内公告为准
+- 额度：每人每天 3 亿 GLM-5.3-Flash Token，免费账号可领、无需订阅 Coding Plan；需更新到最新版客户端，领取后切换到 Global Building 通道并选 GLM-5.3-Flash，选错通道或模型会扣套餐额度；仅限 ZCode 客户端内使用，不能导出为 API Key；绑卡、实名要求各来源均未提及；官方未公布活动结束日期
+- 截止：每日领取：19:00 起领，23:00 至次日 09:00 可用，次日 09:00 清零、不结转，当天不领作废；本周末卡已于 2026-11-23 09:00 清零，见“已过期归档”区
 - 可达性：能直接领（ZCode 官网可下载，智谱账号登录）
 
 #### Google Antigravity · 一周年全模型配额重置（2026-11-18 12:00 新增，官方已核实）
@@ -132,11 +132,6 @@
 - 额度：6 元/账号，限量发放、赠完即止；到账后 7 天内有效，过期作废；无需充值；是否仍可领以登录后显示为准
 - 截止：限量发放（2026-10-17 起）；到账后 7 天有效，具体以登录后显示为准
 
-#### 阶跃星辰开放平台 · StepAudio 3 系列限时免费（2026-11-03 20:30 新增，官方 API 定价页已核实；2026-11-08 12:00 复核官方定价页确认延期；2026-11-17 09:00 复核官方定价页确认再次延期至 11-23）
-- 内容：StepAudio 3 系列语音模型（realtime / tts / gen / music / asr-max）在限免期内免费调用，11 月 23 日 12:00 起按公布新价正式计费（如 realtime 0.65 元/会话分钟）。官方定价页：https://platform.stepfun.com/docs/zh/guides/pricing/details
-- 额度：限时免费；需注册开放平台并创建 API Key；绑卡、实名要求官方定价页未写；限免结束后续费单价以定价页为准，调用前请确认；部分语音模型价格因上游算力成本上涨调整，新价与计费同日生效
-- 截止：限时免费至 2026-11-23 11:59:59（北京时间），自 2026-11-23 12:00:00 起正式计费（原定 11 月 17 日截止，官方定价页 11 月 16 日更新为延期至 11 月 23 日）
-
 #### 月之暗面 Kimi API · 文件接口限时免费（2026-11-03 20:30 新增，官方定价页已核实）
 - 内容：文件相关接口（文件内容抽取 / 文件存储）限时免费：只上传并抽取文档时文件接口本身不产生费用；抽取出的文档内容若作为模型 Input 仍按量计费。与 Kimi K3.1 Pro 免费档限量使用不是同一口径。官方定价页：https://platform.kimi.com/docs/pricing/chat
 - 额度：文件接口本身免费，模型推理仍按 Token 计费；单文件上限等细则见文件 API 文档；绑卡要求官方定价页未提
@@ -221,11 +216,6 @@
 - 内容：基于 MTT S5000 国产算力的编程套餐，提供 GLM-4.7，可接 Claude Code / Cursor / OpenCode / Cline / Kilo Code / Roo Code；官方新闻 2026-02-03 已发布，本次首次收录。官方页：https://code.mthreads.com/ ；官方新闻：https://www.mthreads.com/news/277
 - 额度：Free Trial ¥0，用量与 Lite Plan 相当；每日限量 100 名开发者，页面标“体验爆满，扩容中”；领取成功之日起 30 天有效；同一账号不可重复领取；实名 / 绑卡要求官方页未写；到期不自动续，付费档 Lite ¥120/季度起
 - 截止：领取后 30 天；活动本身截止未知（官方页未写）
-
-#### 智谱 AutoClaw 国内版 · 每周福利 M11W3（2026-11-15 20:30 新增，官方博客已核实）
-- 内容：11 月 16 日起登录国内版 AutoClaw 领取本周 Tokens，接替今晚 23:59 失效的 M11W2；属客户端内积分，不能导出为 API Key。官方博客：https://autoclaw.zhipuai.cn/blog/news/M11W3/
-- 额度：活动期间登录即得 100M Tokens（相当于 10,000 积分），每个账号限领一次；官方博客未提绑卡、实名要求；奖励逾期自动失效
-- 截止：活动 2026-11-16 00:00 至 2026-11-22 23:59（北京时间），奖励 11 月 22 日 23:59 失效；11 月 16 日 00:00 前领不到
 
 #### 魔搭 ModelScope × AMD 联合开发者激励计划 2.0 · 100 小时 AMD GPU Notebook（2026-11-15 20:30 新增，官方活动页已核实）
 - 内容：新注册 AMD AI 开发者计划（经魔搭「我的 Notebook」横幅进入、用魔搭账号授权）并完善资料、审核通过后，魔搭账号自动到账 100 小时 AMD GPU Notebook（MI300X/MI308X，单卡 192GB 显存）；开机计时、关机停计；另可发布与 AMD GPU、ROCm 或 AMD Model API 相关的原创实践并通过审核，每篇得 125 ADP 积分，每人最多 3 篇、累计最高 375 积分，可在 AMD 开发者计划平台兑换 Radeon Cloud 相关权益；与已收录的「AMD Radeon Cloud Token Factory 中国站」「AMD Token Lab」不是同一活动。官方活动页：https://modelscope.cn/events/247 ；计划说明：https://www.modelscope.cn/posts/437059
@@ -409,12 +399,6 @@
 - 截止：限时免费，官方未公布结束日（自 2026-11-03 起）
 - 限制：海外产品，大陆可达性未知
 
-#### Perch AI · Qwen 3.8 Max 免费上 Starter（2026-11-06 20:30 新增，官方公告页已核实）
-- 内容：Qwen 3.8 家族顶级模型，262K 上下文，图输入；在 Perch 免费 Starter 档可用，计入 Starter 额度。官方公告页：https://www.perchai.app/announcements
-- 额度：免费档可用，无需绑卡；Pro 档为常规固定模型
-- 截止：至 2026-11-20 12:00（美东，北京时间 11 月 21 日 01:00）；到期后离开 Starter 阵容
-- 限制：海外产品，大陆可达性未知
-
 #### Perch AI · DeepSeek V4.1 Flash 1017 奖励 PT（2026-11-06 20:30 新增，官方公告页已核实）
 - 内容：Pro 额外得 50,000 PT、Ultra 额外得 150,000 PT 的 DeepSeek V4.1 Flash 1017 奖励额度，在套餐额度之外、优先消耗；每 5 小时最多用掉奖励额度的 10%。官方公告页：https://www.perchai.app/announcements
 - 额度：Pro +50,000 PT、Ultra +150,000 PT，不计入套餐额度
@@ -427,9 +411,9 @@
 - 截止：截止未知（官方写临时上线优惠，可随时结束）
 - 限制：需海外账号；巴西产品，大陆可达性未知
 
-#### OpenCode Zen · Iceman Free / Inkling 2 Small Free（2026-11-07 20:30 新增，官方 Zen 文档已核实）
-- 内容：隐身模型 `iceman-free` 与 `inkling-2-small-free` 输入、输出、缓存读取均为 Free；限时免费、仅限 OpenCode 内使用；免费期内收集的数据会被保留并用于改进模型，敏感内容勿用。官方文档：https://opencode.ai/docs/zen/
-- 额度：限时免费；无具体每人额度数字；Inkling 2 Small Free 不含欧盟、冰岛、列支敦士登、挪威、古巴、伊朗、朝鲜、俄罗斯、乌克兰、委内瑞拉（中国不在排除名单）；Iceman Free 官方文档未列地区限制
+#### OpenCode Zen · Iceman Free（2026-11-07 20:30 新增，官方 Zen 文档已核实；2026-11-23 20:30 更新：Inkling 2 Small Free 已下线）
+- 内容：隐身模型 `iceman-free` 输入、输出、缓存读取均为 Free；限时免费、仅限 OpenCode 内使用；免费期内收集的数据会被保留并用于改进模型，敏感内容勿用。2026-11-23 20:30 复核官方 Zen 文档：`inkling-2-small-free` 已下线，不再免费调用。官方文档：https://opencode.ai/docs/zen/
+- 额度：限时免费；无具体每人额度数字；Iceman Free 官方文档未列地区限制
 - 截止：截止未知（官方写 limited time，未公布具体日期）
 - 限制：需 OpenCode 客户端；大陆可达性以账号实际为准
 
@@ -541,9 +525,9 @@
 - 截止：自注册起 90 天；90 天后不绑卡则无法继续使用 Express Mode，30 天后数据标记删除
 - 限制：仅限 Google Cloud 新用户与 @gmail.com 账号；需海外 Google 服务，中国大陆可达性以实际为准
 
-#### OpenCode Zen · 新一批免费模型（2026-11-10 20:30 新增，官方 Zen 文档已核实；2026-11-20 20:30 更新：M3.1 Flash Free、Nemotron 3 Ultra Free 已下线）
-- 内容：Beam Free、Flint 40B Free、LongCat 2.5 Free、MiMo-V2.6-Flash Free、Nemotron 3.5 Lightning Free、Nemotron 3.5 Super VL Free、Jev 1.13 Free、Hy4 flash Free（2026-11-16 20:30 复核官方文档新增）、Big Pickle（隐身模型）输入、输出、缓存读取均为 Free，仅限 OpenCode 内使用；MiniMax M3.1 Flash Free 已于 2026-11-17 弃用、Nemotron 3 Ultra Free 已从免费表移除（弃用日未知）、GLM-5.3-Flash Free 已于 2026-11-18 弃用，三者不再免费调用。官方文档：https://opencode.ai/docs/zen/
-- 额度：限时免费；LongCat 2.5 Free 每日 100 请求上限、托管在中国、零保留；DeepSeek V4.1 Flash Free 的提供方为零保留、不用于训练；Beam Free、Flint 40B Free、MiMo-V2.6-Flash Free、Nemotron 系列免费期内数据保留政策见官方文档，机密内容勿用
+#### OpenCode Zen · 新一批免费模型（2026-11-10 20:30 新增，官方 Zen 文档已核实；2026-11-20 20:30 更新：M3.1 Flash Free、Nemotron 3 Ultra Free 已下线；2026-11-23 20:30 更新：LongCat 2.5 Free 已下线、Tidepool Alpha Free 新上架）
+- 内容：Beam Free、Flint 40B Free、MiMo-V2.6-Flash Free、Nemotron 3.5 Lightning Free、Nemotron 3.5 Super VL Free、Jev 1.13 Free、Hy4 flash Free（2026-11-16 20:30 复核官方文档新增）、Tidepool Alpha Free（2026-11-23 20:30 复核官方文档新增）、Big Pickle（隐身模型）输入、输出、缓存读取均为 Free，仅限 OpenCode 内使用；MiniMax M3.1 Flash Free 已于 2026-11-17 弃用、Nemotron 3 Ultra Free 已从免费表移除（弃用日未知）、GLM-5.3-Flash Free 已于 2026-11-18 弃用、LongCat 2.5 Free 已于 2026-11-23 下线，四者不再免费调用。官方文档：https://opencode.ai/docs/zen/
+- 额度：限时免费；DeepSeek V4.1 Flash Free 的提供方为零保留、不用于训练；Beam Free、Flint 40B Free、MiMo-V2.6-Flash Free、Nemotron 系列免费期内数据保留政策见官方文档，机密内容勿用
 - 截止：限时免费，官方未公布结束日
 - 限制：Beam Free 不含中国（含港澳）等地区；其余免费模型地区限制见官方文档；需海外账号（OpenCode），大陆可达性以账号实际为准
 
@@ -667,12 +651,6 @@
 - 截止：2026-11-23（官方写 free through November 23, 2026，时区未写）
 - 限制：需海外账号 / 网络，大陆可达性未知
 
-#### 智谱 AutoClaw 国际版 · Weekly Perk M11W3（2026-11-15 20:30 新增，官方博客已核实）
-- 内容：11 月 16 日起登录国际版 AutoClaw 领取本周 Tokens，接替今晚 23:59 失效的 M11W2；与国内版账号体系独立，两版可各领一次（据二手来源）。官方博客：https://autoclaw.z.ai/en/blog/news/M11W3/
-- 额度：登录领取 100M Tokens（官方写 worth 10,000 credits），每账号限领一次；官方博客未提绑卡要求
-- 截止：活动 2026-11-16 00:00 至 2026-11-22 23:59（UTC+8，即北京时间同时段）；奖励 11 月 22 日 23:59（UTC+8）失效；11 月 16 日 00:00 前领不到
-- 限制：需海外账号（国际版海外站），大陆可达性未知
-
 #### World Labs · Atlas 世界模型全面开放，新账号 10,000 credits（2026-11-15 20:30 新增，多源交叉、官方未核实）
 - 内容：李飞飞创办的 World Labs 于 11 月 12 日将 Atlas 世界模型（Viewfinder、Chisel、Relight、Splat to mesh + 开发者 API）向所有人开放；媒体称新账号送 10,000 credits，官方页本次未见该数字，额度以注册后实际为准。官方页：https://worldlabs.ai/atlas ；https://atlas.worldlabs.ai
 - 额度：多源称新账号 10,000 credits（官方计价 1000 credits = 1 美元；完整 Gaussian splat 场景 5000 credits，约够 2 个完整场景）；注册需手机号验证；据二手来源使用地区需设为美国或加拿大才能正常访问，未经官方确认；免费账号产出归 World Labs、仅限个人非商用（据条款转述）；绑卡要求未知
@@ -750,12 +728,6 @@
 - 额度：输入、输出均为 $0；官方定价页未写免费次数上限、速率限制与结束日期，以控制台与接口实际为准；需注册 Together AI 账号并创建 API Key
 - 截止：截止未知（官方定价页未写结束日，按定价页常设价格执行）
 - 限制：需海外账号；大陆可达性未知
-
-#### Cognition Poke × Devin Bot · 发短信谈判领 Devin 额度（2026-11-20 20:30 新增，多源交叉、官方未核实）
-- 内容：Devin Bots 上线后的限时推广：用 iPhone / Mac 的 iMessage 给 Poke 发短信，讲清想做的项目、说服它分配额度，拿到专属链接后在结算页确认订阅；多家实测称免绑卡可直接订阅成功。官方活动页：https://poke.com/bots
-- 额度：共 10,000 个账号名额，每账号最高 $10,000 Devin Bot Credits；实际到手因人而异、由 Poke 在对话中决定，已知有人谈到 $48、$128、$200、$1887 不等，多数人拿到 1 个月 Devin Max（平时 $200/月）；Devin Max 免费期结束后如不取消会按 $200/月续费，请提前取消自动续费；名额分批放出，领完暂停、可能再补
-- 截止：多源称至 2026-11-23 16:00（北京时间），官方活动页未写截止，以官方页与实际领取为准
-- 限制：需海外账号 / 地区受限（入口仅限 iMessage，需 iPhone 或 Mac；中国用户大概率难以直接参与）；领取前请先退出浏览器里已登录的 Devin 团队账号、用个人账号领取
 
 #### Vercel AI Gateway · Parallel 联网搜索 fast 模式免费至 2027-01-31（2026-11-20 20:30 补录，官方已核实）
 - 内容：Vercel 官方 changelog：AI Gateway 与 eve 中的 Parallel 联网搜索 fast 模式免费至 2027-01-31，同时成为 eve 智能体的默认联网搜索；无需单独 Parallel 账号；与任何 AI Gateway 模型搭配可用。官方 changelog：https://vercel.com/changelog/parallel-web-search-is-free-on-ai-gateway-and-eve-through-january-31
@@ -835,12 +807,6 @@
 - 截止：活动 2026-11-23 00:00 至 2026-11-29 23:59（UTC+8，即北京时间同时段）；奖励 11 月 29 日 23:59（UTC+8）失效；11 月 23 日 00:00 前领不到
 - 限制：需海外账号（国际版海外站），大陆可达性未知
 
-#### fal · Seedance 2.5 周末免费视频（2026-11-22 20:30 新增，官方产品页已核实）
-- 内容：周末活动：近 7 天内新注册的 fal 账号可在 Seedance 2.5 playground、fal sandbox 与 fal Agent 免费生成视频；API 请求始终按量计费。官方产品页：https://fal.ai/seedance-2.5
-- 额度：整个周末每人 5 条免费视频，每条 10 秒、480p，不补发；文生视频、图生视频与参考生视频（最多 5 张参考图）均可；官方页未写绑卡要求
-- 截止：2026-11-21 09:00 PST 至 2026-11-22 23:59 PST（北京时间 11 月 22 日 01:00 至 11 月 23 日 15:59）
-- 限制：需海外账号（fal）；仅限近 7 天内新注册账号，大陆可达性未知
-
 #### RadixArk DaisyRose 27B `:free`（OpenRouter）（2026-11-22 20:30 新增，官方模型页已核实）
 - 内容：OpenRouter 上线 `radixark/daisyrose-27b:free`（约 27.8B 稠密多模态推理模型，262K 上下文，文本+图像输入、文本输出，思考默认开启）；与付费端点 `radixark/daisyrose-27b` 不是同一条，须走 `:free`。官方模型页：https://openrouter.ai/radixark/daisyrose-27b:free
 - 额度：输入、输出定价均为 $0；免费端点有限速；绑卡要求官方模型页未写
@@ -862,7 +828,7 @@
 #### Nous Portal · Qwen4 Max 免费路由 `qwen/qwen4-max:free`（2026-11-22 20:30 补录，免费状态官方 Portal 页已核实；截止多源交叉、官方未核实）
 - 内容：Nous Portal 模型页 Free Models 区列出 `qwen/qwen4-max:free`，$0 计价；与已收录的阿里云 Model Studio qwen4-max 免费额度是不同渠道，不要混用。官方 Portal 模型页：https://portal.nousresearch.com/models
 - 额度：免费路由 $0 计价；速率/每日上限官方页未写；需 Nous Portal 账号；绑卡要求未知
-- 截止：约 2026-11-23（聚合站称 11 月 18 日上线、免费 5 天，多源推断）；官方 Portal 页未写截止，以页面当前展示为准
+- 截止：约 2026-11-23（聚合站称 11 月 18 日上线、免费 5 天，多源推断）；2026-11-23 20:30 复核官方 Portal 页仍标 FREE、仍可免费调用，该估计未兑现，以页面当前展示为准
 - 限制：需海外账号（Nous Portal）；大陆可达性未知
 
 #### Parallel · 注册赠金与每月免费额度（2026-11-22 20:30 补录，官方定价页已核实）
@@ -895,17 +861,30 @@
 - 截止：须在 2027-01-31 前兑换；试用自兑换日起 3 个月
 - 限制：仅限证书课程报名者（特定人群）；官方条款地区名单不含中国大陆（名单含台湾），中国大陆用户不可按该条款领取
 
+#### Playground AI · 免费档每 3 小时 5 张图 + 每月 6 积分（2026-11-23 20:30 新增，官方定价页已核实）
+- 内容：AI 图片生成平台 Playground AI 免费档：Playground v3 模型每 3 小时滚动窗口可免费生成 5 张图；每月另有 6 积分用于其他模型与工具（Auto、GPT Image、Nano Banana、Seedream 等，按模型扣积分）；每天可下载 2 张；全档含全球免版税商用许可。官方定价页：https://playgroundai.com/design/pricing
+- 额度：Playground v3 每 3 小时 5 张（不耗积分）；每月 6 积分（约合 1 张 Auto 图加余 2 积分，或约 3 张 Muse Image）；每天下载 2 次；高峰期生成较慢；官方定价页未写需绑卡
+- 截止：长期免费档（官方未写结束日）；每月 6 积分按月刷新
+- 限制：需海外账号；大陆可达性未知
+
+#### Agenta Cloud · Hobby 免费档注册 500 积分 + 每日 75 积分（2026-11-23 20:30 新增，官方定价页已核实）
+- 内容：开源 AI 智能体工作台 Agenta 的云端 Hobby 免费档：注册即得 500 积分，每月最多 10 天、每天再得 75 积分；智能体自带电脑与浏览器、1000+ 集成与 MCP，可发布到 Slack、WhatsApp、Telegram；也可用自己的 API Key 或 ChatGPT 订阅。官方定价页：https://agenta.ai/pricing
+- 额度：注册 500 积分 + 每月最多 10 天每天 75 积分；同时运行 2 个任务、1 个项目、2 名成员；积分用于内置模型与运行时（约 50 积分/小时）；Hobby 档不可另购积分；绑卡要求官方定价页未写
+- 截止：长期免费档（官方写 $0 forever，未写结束日）
+- 限制：需海外账号；云端分美区 / 欧区注册，大陆可达性未知
+
+#### LlamaParse · 每月 1 万免费解析积分（2026-11-23 20:30 新增，官方定价页与计费文档已核实）
+- 内容：LlamaIndex 的文档解析 API LlamaParse（解析复杂文档为结构化数据，支持表格、图表与图片）：按量付费档每月免费 1 万积分，无需订阅；Fast 档每页 1 积分，约合每月 1000 页基础解析。官方定价页：https://www.llamaindex.ai/pricing ；计费文档：https://developers.llamaindex.ai/llamaparse/general/billing/
+- 额度：每月 1 万免费积分，按月发放；Fast 1 积分/页、Cost-effective 3 积分/页、Agentic 10 积分/页、Agentic Plus 25 积分/页；超出后 $1.50/千积分；同时最多 5 个解析任务；官方写无需信用卡
+- 截止：长期每月发放（官方未写结束日）
+- 限制：需海外账号；大陆可达性未知
+
 <a name="expiring"></a>
 ### 即将到期：3–5 天内
 
-- 阶跃星辰 StepAudio 3 系列限时免费至 11 月 23 日 11:59（北京时间；原定 11 月 17 日截止，官方定价页 11 月 16 日更新为延期）。
-- 智谱 AutoClaw 每周福利 M11W3（国内版与国际版）至 11 月 22 日 23:59（北京时间）。
-- 智谱 ZCode · WEEKEND BUILD 周末卡至 11 月 23 日 09:00（北京时间；5 亿 GLM-5.3-Flash Token，周五 23:00 生效）。
 - fal · MiniMax H3 Image 免费生成至 11 月 23 日（官方未注时刻与时区；按 UTC 日末约北京时间 11 月 24 日 08:00）。
 - Vercel AI Gateway · Parallel Decisions Fast 免费至 11 月 23 日（官方写 free through November 23, 2026，时区未写）。
-- Poke × Devin Bot 赠额至 11 月 23 日 16:00（北京时间；多源口径，官方页未写截止）。
 - IteraCompute · Qwen3.8-27B 每月 30M Token 免费至 11 月 24 日 16:00（北京时间；2026-11-24 00:00 PT）。
-- fal · Seedance 2.5 周末免费视频至 11 月 23 日 15:59（北京时间；近 7 天内新注册账号 5 条免费）。
 - NanoGPT · Clover 2 首周免费至 11 月 24 日 11:33（北京时间；官方模型页已核实）。
 - Perplexity Decider v1.3 / Decider Flash v1.3 `:free` 约至 11 月 19 日（2026-11-21 20:30 复核官方模型页仍标免费、仍可免费调用，估计未兑现，继续观察）。
 
@@ -962,6 +941,9 @@
 
 #### BytePlus ModelArk · Seedream 4.5 新用户 200 张免费试用（声称）
 - 原因：第三方说法冲突：有博客称 BytePlus 官方免费试用页列出新用户 200 张 Seedream 4.5 免费图片、额度不过期，另一博客称该数字系经销商说法、未核实 BytePlus 政策；火山方舟国内版分项数字（4.5 / 4.0 各 200 张、5.0-lite 50 张）仅见聚合站，未在官方免费推理额度页核到原文。未确认前不进正文。来源：https://kenerateai.com/blogs/seedream-api-key
+
+#### 中国电信 TeleAgent · 免费体验版与积分福利社（声称注册送云电脑与登录积分）
+- 原因：官方定价页已核实有免费体验版（¥0/月）：参加“积分福利社”可得免费积分、同时运行 3 个任务、长期记忆、安全沙箱、定时任务等；但官方定价页未写具体赠送积分数量、首登与每月登录积分的发放规则；第三方所称“手机号注册送 Windows 云电脑、首登 / 每月登录积分”未在官方页核到。未确认具体额度与领取方式前不进正文。官方页：https://ta.teleai.com.cn/pricing
 
 <a name="archived"></a>
 ### 已过期归档
@@ -1205,6 +1187,30 @@
 #### Google Antigravity · Neon 缓存扩容后承诺的配额重置（待确认线索，已确认发放）
 - 内容：官方团队成员 Varun Mohan（@_mohansolo）承诺扩大 Neon 缓存池后发一次 Gemini 配额重置；重置已于北京时间 2026-11-21 17:18 落地（原帖：“Reset everyone's Gemini quota on Antigravity”），追踪站 agyresets.com 已记为 11 月 21 日已发放。来源：https://x.com/_mohansolo/status/2123848516581892181 ；https://agyresets.com/
 - 截止：一次性重置已于 2026-11-21 17:18（北京时间）发放；2026-11-22 20:30 从待确认线索区移出，只归档
+
+#### 阶跃星辰开放平台 · StepAudio 3 系列限时免费
+- 内容：StepAudio 3 系列语音模型（realtime / tts / gen / music / asr-max）在限免期内免费调用。官方定价页：https://platform.stepfun.com/docs/zh/guides/pricing/details
+- 截止：限时免费至 2026-11-23 11:59:59（北京时间），自 2026-11-23 12:00:00 起正式计费；2026-11-23 20:30 复核官方定价页确认已按新价计费，移入归档
+
+#### 智谱 AutoClaw 国内版 · 每周福利 M11W3
+- 内容：11 月 16 日起登录国内版 AutoClaw 领取 100M Tokens（相当于 10,000 积分），每账号限领一次。官方博客：https://autoclaw.zhipuai.cn/blog/news/M11W3/
+- 截止：活动 2026-11-16 00:00 至 2026-11-22 23:59（北京时间）已到期，已由 M11W4（11/23–11/29）接替；2026-11-23 20:30 晚间汇总时移入归档
+
+#### 智谱 AutoClaw 国际版 · Weekly Perk M11W3
+- 内容：11 月 16 日起登录国际版 AutoClaw 领取 100M Tokens（官方写 worth 10,000 credits），每账号限领一次。官方博客：https://autoclaw.z.ai/en/blog/news/M11W3/
+- 截止：活动 2026-11-16 00:00 至 2026-11-22 23:59（UTC+8）已到期，已由 M11W4（11/23–11/29）接替；2026-11-23 20:30 晚间汇总时移入归档
+
+#### Cognition Poke × Devin Bot · 发短信谈判领 Devin 额度
+- 内容：用 iPhone / Mac 的 iMessage 给 Poke 发短信、说服它分配 Devin Bot Credits 的限时推广，共 10,000 个账号名额，每账号最高 $10,000。官方活动页：https://poke.com/bots
+- 截止：多源称至 2026-11-23 16:00（北京时间）；2026-11-23 20:30 复核官方活动页显示倒计时已归零（“Promotion ends in 00:00:00”），移入归档
+
+#### fal · Seedance 2.5 周末免费视频
+- 内容：周末活动：近 7 天内新注册的 fal 账号可在 Seedance 2.5 playground、fal sandbox 与 fal Agent 免费生成视频，整个周末每人 5 条、每条 10 秒 480p。官方产品页：https://fal.ai/seedance-2.5
+- 截止：2026-11-21 09:00 PST 至 2026-11-22 23:59 PST（北京时间 11 月 22 日 01:00 至 11 月 23 日 15:59）已到期；2026-11-23 20:30 复核官方产品页已无周末免费文案、仅剩按量计费 API，移入归档
+
+#### 智谱 ZCode · WEEKEND BUILD 周末卡（11 月 20–23 日轮次）
+- 内容：周末包 5 亿 GLM-5.3-Flash Token，仅限 ZCode 客户端内使用；与工作日每日 3 亿卡并行独立、不叠加。官方产品页：https://zcode.z.ai/cn
+- 截止：2026-11-20 19:00 起领、23:00 生效，至 2026-11-23 09:00（北京时间）清零已到期；2026-11-23 20:30 晚间汇总时移入归档；每日 3 亿卡照常，见“今日急报”区
 
 <a name="notes"></a>
 ## 说明
