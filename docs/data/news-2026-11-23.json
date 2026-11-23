@@ -1,0 +1,88 @@
+{
+  "asOf": "2026-11-23",
+  "timezone": "Asia/Shanghai",
+  "preview": 10,
+  "empty": false,
+  "emptyMessage": "今日暂无重要资讯，晚间 19:30 起每日更新",
+  "note": "2026-11-23 晚报（北京时间）整理：新录入 1 条（智谱发布 GLM-5.4：首个基于 Loop Transformer 的旗舰模型，面向广义编码，已向 GLM Coding Plan 全量用户开放），并保留今天早报 1 条。按公告时间从新到旧排列。带精确钟点的条目 timeLabel 用北京时间；官方只给日期的条目 timePrecision 为 date，timeLabel 只写日期，sortAt 仅用于排序，详见各条 timeNote。置信度 A 表示来自官方原文，B 表示可靠媒体报道、官方未单独核实。",
+  "items": [
+    {
+      "id": "zhipu-glm-5-4-loop-transformer",
+      "title": "智谱发布 GLM-5.4：首个基于 Loop Transformer 的旗舰模型，面向广义编码，已向 GLM Coding Plan 全量用户开放",
+      "badge": "N",
+      "summary": "智谱（Z.ai）在 11 月 23 日发布旗舰模型 GLM-5.4。官方技术博客称，这是其首个基于 Loop Transformer 架构的旗舰模型，把已有 GLM-5 基座中的 28 层做两轮循环，以增加有效深度、而不增加参数量，并把它称为「广义编码」（Generalized Coding）的起点，展示了用代码生成与编辑视频、完整游戏、三维场景和工程 CAD 等例子。官方还写明新增视觉能力。该模型已向全部 GLM Coding Plan 用户开放，并已出现在 ZCode、Z.ai Chat 和 AutoClaw 中；API 官方标注为即将推出，权重计划在完成必要的安全加固后以负责任的方式开源。",
+      "publishedAt": "2026-11-23T18:27:00+08:00",
+      "sortAt": "2026-11-23T18:27:00+08:00",
+      "timeLabel": "2026-11-23 18:27",
+      "timePrecision": "datetime",
+      "timeNote": "智谱官方账号 Z.ai @Zai_org 发布介绍帖的时间为 2026-11-23T10:27:11.000Z，即北京时间 11 月 23 日 18:27；按该官方账号原帖的精确时刻记录。官方技术博客只标注 2026-11-23，未给钟点。更早的产品可用说明：Z.ai Lead Zixuan Li（@ZixuanLi_，个人简介写明 Lead、并提到 @Zai_org）于 2026-11-23T04:18:45.000Z（北京时间 12:18）发帖称已向全部 GLM Coding Plan 用户开放；官方账号 @Zai_org 于 2026-11-23T04:20:16.000Z（北京时间 12:20）转发该帖。Hacker News 对上述可用性说明的提交时间为 2026-11-23T05:21:54Z。智谱 AutoClaw 官方博客同样标注 2026 年 11 月 23 日，未给钟点。",
+      "source": "智谱 / Z.ai",
+      "confidence": "A",
+      "url": "https://z.ai/blog/glm-5.4",
+      "links": [
+        {
+          "label": "Z.ai 官方技术博客",
+          "url": "https://z.ai/blog/glm-5.4"
+        },
+        {
+          "label": "官方 X 介绍帖",
+          "url": "https://x.com/Zai_org/status/2124811995912286352"
+        },
+        {
+          "label": "Z.ai Lead 关于 Coding Plan 可用性的说明",
+          "url": "https://x.com/ZixuanLi_/status/2124719275864670681"
+        },
+        {
+          "label": "官方账号转发可用性说明",
+          "url": "https://x.com/Zai_org/status/2124719658074825004"
+        },
+        {
+          "label": "智谱 AutoClaw 官方博客",
+          "url": "https://autoclaw.zhipuai.cn/blog/model/GLM-5.4/"
+        },
+        {
+          "label": "Hacker News 讨论（可用性说明）",
+          "url": "https://news.ycombinator.com/item?id=50607775"
+        }
+      ],
+      "detail": "## 它是什么\n\n智谱发布的新一代旗舰模型，不是对既有 GLM-5.3 的一次例行配额调整。官方把它写成第一款建立在 Loop Transformer 架构上的旗舰模型，目标是把编码能力扩展到更广泛的任务，并称这是「广义编码」的起点。官方同时说明，模型仍有局限，尤其容易陷入过长的「马拉松式思考」循环，尽管这种延长的反思和自我纠正「确实能把准确率提高到超出其参数量所对应的水平」。\n\n## 它做什么\n\n- 官方技术博客写明：过去三个月，他们同时大幅扩展循环深度和模型规模。Loop Transformer 的做法是：让一组共享权重的层执行多轮迭代，在上一轮的隐状态上继续 refinement，从而在不增加参数量的情况下得到更深的网络。官方称，GLM-5.4「达到了与 2T–3T 参数模型相当的智能水平」。这是官方自己的表述，不是独立第三方评测结论，本报不作等同性背书。\n- 关于为何采用循环而非从零预训练：官方写明，循环（权重共享加深）提高参数效率的想法并不新，2018 年的 Universal Transformer 以及近年关于 recurrent depth、looped language models 的工作已在小规模上展示过收益；但在相同预训练算力预算下，从零训练的循环模型仍落后于不共享权重的模型。因此他们没有从零预训练，而是通过继续训练，把已经预训练好的基座改造成 Loop Transformer，以便用相对较小的算力开销提高智能上限。\n- 在 750B 规模上的具体改动：官方写明，GLM-5.4 将 GLM-5 基座模型中的 28 层循环两轮。为了在该规模上平衡效果与部署成本，官方列出三项改动。第一是 Gated Progressive Updates（门控渐进更新）：把已有模型的中间层改成多轮循环时，若直接覆盖隐状态，激活范数会在轮次之间爆炸，下游层会收到超出预期尺度的表示；因此每一轮为每个 token 设置独立的门，按比例把候选更新写回残差流。官方称训练后门的分工变得清楚：第一轮较小门控、偏重建立全局上下文并保持尺度稳定；第二轮把门打开，写入完整更新；门还会按 token 难度调整步长。第二是 Hybrid KV Cache（全局共享 + 独立滑动窗口）：朴素实现会为每一轮保留完整 KV cache，显存随循环次数成倍增加；第二轮复用第一轮选出的稀疏 KV，同时在滑动窗口内保留本轮新生成的 KV，使额外一轮的代价主要是一个滑动窗口，而不是完整上下文缓存。官方写明：在 1M 上下文长度下，这使 GLM-5.4 相对 GLM-5.3 的部署成本增加「处于可控范围」。第三是 Sparse Attention Index Reuse：基座使用稀疏注意力，第二轮直接复用第一轮 indexer 生成的注意力索引，官方称这与每轮重算索引的表现几乎相同，且不增加索引开销。\n- 官方写明，他们在把旗舰模型押在该架构之前，先在 1B、4B、30B 和 750B 基座上逐步验证。在与 750B 基座架构相同的 30B 模型上，他们做了参数量相同的对照：总训练算力只多约 10%，循环版本「表现出明显收益」（评测条件为 30B 模型经过 200K 长上下文 SFT，并开启 thinking 模式）。官方强调两点：更长的推理链受益更大，最大收益出现在数学、科学推理和长上下文任务，而这些是广义编码的核心；在多数基准（文中举例 GPQA-Diamond 和 MMLU-Pro）上，平均输出长度下降 10–14%，主要来自更短的思维链，也就是部分推理从显式输出 token 转到了循环的隐式深度里。官方没有在正文中给出 750B 旗舰模型本身的完整公开基准对照表，本报也不用第三方跑分补写。\n- 推理效率方面，官方写明：非高峰时段速度最高可达 200 tokens/s，高峰负载下维持 70–80 tokens/s。官方把这归因为模型与推理基础设施的协同设计，包括上述 KV 与稀疏索引带来的显存和检索节省，以及在系统层融合核心 kernel，以减少循环放大的中间读写开销。\n- 在产品定位上，官方把「广义编码」写成：编码已成为扩展模型能力的基础；继 Agentic Engineering、Long-Horizon Tasks 和网络安全之后，他们正推向范围更广、上限更高的 Generalized Coding，而 GLM-5.4 只是起点。官方列出的示例包括：用代码生成并剪辑名为 “Hello World” 的自述音乐视频；在 FreeCAD 中完成六轴机械臂的工程级 CAD 建模；直接生成包含角色移动、物理、地图、战斗系统和美术资源的完整游戏；以及用纯数学几何和自定义 GLSL shader 从零生成可交互的三维观鸟场景。官方 X 介绍帖还写明：新增视觉能力，以加强 visual coding。\n- 可用性方面，官方技术博客列出：GLM Coding Plan（https://z.ai/subscribe）、ZCode（https://zcode.z.ai/en）、Z.ai Chat（https://chat.z.ai）；API 标注为 Coming Soon（https://z.ai/model-api）；并写明计划在完成必要的安全加固后，以负责任的方式开源模型权重。官方还预告：下一个「规模显著更大」的模型将很快发布，且他们会同时继续扩展深度和模型规模。智谱 AutoClaw 官方博客写明：GLM-5.4 已接入 AutoClaw，并已上线 GLM Coding Plan；V2、V3 及团队版用户在 AutoClaw 中使用 GLM-5.4，可享 1.5 倍使用额度。Z.ai Lead Zixuan Li 在被官方账号转发的帖子中写明：已向全部 GLM Coding Plan 用户开放；具备新的视觉能力和更强的综合编码表现；对有周额度的用户，GLM-5.4 的额度比 GLM-5.3 多 50%；在 Claude Code 中把模型名设为 `glm-5.4[1m]`，在其他工具中设为 `glm-5.4`。本窗口检索时，BigModel 平台的「模型与产品发布记录」页尚未列入 GLM-5.4，不能据此写成 API 已经开放。\n\n## 适合谁\n\n已经订阅 GLM Coding Plan，或使用 ZCode、Z.ai Chat、AutoClaw 的开发者，尤其关心在不增加参数量的前提下用循环深度做长链推理、视觉编码，以及视频 / 游戏 / 三维 / CAD 等「用代码完成更广任务」的人。需要稳定公开 API 或开源权重的用户应等待官方后续开放，不能把「Coming Soon」和「计划开源」写成已经可调用或已经放权重。\n\n## 为什么值得看\n\n这是把 Loop Transformer 用到旗舰规模（官方写明在 750B 基座上循环 28 层、跑两轮）并同步向编码订阅用户开放的一次正式发布。官方同时给出了架构取舍、30B 对照实验的条件和局限（马拉松式思考、API 与权重要稍后、750B 旗舰的完整公开对照表未在正文列出），需要把「公司自己的能力声明」和「已经可独立核对的产品可用性」分开看。\n\n## 可以核对的事实\n\n- 官方技术博客标注 2026-11-23；称 GLM-5.4 是首个基于 Loop Transformer 的旗舰模型；将 GLM-5 基座的 28 层循环两轮；规模表述为 750B；列出 Gated Progressive Updates、Hybrid KV Cache 与 Sparse Attention Index Reuse 三项改动；1M 上下文下相对 GLM-5.3 的部署成本增加处于可控范围；在 1B / 4B / 30B / 750B 上做过验证；30B 等参对照中总训练算力约多 10%，并在 200K 长上下文 SFT、开启 thinking 的条件下报告明显收益；多数基准（文中举例 GPQA-Diamond、MMLU-Pro）平均输出长度下降 10–14%；非高峰最高约 200 tokens/s、高峰 70–80 tokens/s；官方自称智能水平可与 2T–3T 参数模型相比；列出视频、游戏、三维、FreeCAD 机械臂等广义编码示例；产品入口为 GLM Coding Plan、ZCode、Z.ai Chat；API 为即将推出；权重计划在安全加固后负责任开源；并预告下一个显著更大的模型将很快发布：见 https://z.ai/blog/glm-5.4（A）。\n- 官方账号 @Zai_org 于 2026-11-23T10:27:11Z（北京时间 18:27）发帖介绍 GLM-5.4，写明循环已有层以加深推理、把编码扩展到视频 / 游戏 / 三维 shader / CAD，并新增视觉能力：见 https://x.com/Zai_org/status/2124811995912286352（A）。\n- Z.ai Lead @ZixuanLi_ 于 2026-11-23T04:18:45Z（北京时间 12:18）称已向全部 GLM Coding Plan 用户开放，提及新视觉能力、更强综合编码，以及有周额度用户相对 GLM-5.3 多 50% 额度；随后一帖说明 Claude Code 使用 `glm-5.4[1m]`、其他工具使用 `glm-5.4`。官方账号于 2026-11-23T04:20:16Z 转发可用性说明：见 https://x.com/ZixuanLi_/status/2124719275864670681、https://x.com/ZixuanLi_/status/2124719282512859480、https://x.com/Zai_org/status/2124719658074825004（A）。\n- AutoClaw 官方博客标注 2026 年 11 月 23 日，写明已接入 AutoClaw 并上线 GLM Coding Plan，V2、V3 及团队版用户在 AutoClaw 中使用 GLM-5.4 可享 1.5 倍额度：见 https://autoclaw.zhipuai.cn/blog/model/GLM-5.4/（A）。\n- Hacker News 对可用性说明的讨论提交于 2026-11-23T05:21:54Z：https://news.ycombinator.com/item?id=50607775（讨论区，事实以官方原文为准）。"
+    },
+    {
+      "id": "openai-perplexity-and-intelligence",
+      "title": "OpenAI 首席科学家发表《Perplexity and Intelligence》：公开内部预训练困惑度进展，并提议以困惑度等指标设立共同上限",
+      "badge": "N",
+      "summary": "OpenAI 首席科学家 Jakub Pachocki 在北京时间 11 月 23 日 01:03 公布文章《Perplexity and Intelligence》，公开了公司内部追踪的预训练 log-perplexity（交叉熵损失）进展，并主张把困惑度（或等价的交叉熵损失）作为比较各家模型、制定共同安全标准的共享指标。他提议各前沿开发者约定基于困惑度等测量的共同上限，在理解和监控模型行为的能力达到具体里程碑之前不越过该上限。文章未给出具体上限数值。",
+      "publishedAt": "2026-11-23T01:03:00+08:00",
+      "sortAt": "2026-11-23T01:03:00+08:00",
+      "timeLabel": "2026-11-23 01:03",
+      "timePrecision": "datetime",
+      "timeNote": "作者、OpenAI 首席科学家 Jakub Pachocki 官方 X 账号 @merettm 发帖时间为 2026-11-22T17:03:00.000Z，即北京时间 11 月 23 日 01:03；按精确时刻记录。官方文章页只标注 November 22, 2026，未给钟点。Hacker News 提交时间为 2026-11-22T17:06:27Z。OpenAI CEO Sam Altman 于 2026-11-22T17:12:27Z 转发并评论。",
+      "source": "OpenAI",
+      "confidence": "A",
+      "url": "https://openai.com/index/perplexity-and-intelligence/",
+      "links": [
+        {
+          "label": "OpenAI 官方文章",
+          "url": "https://openai.com/index/perplexity-and-intelligence/"
+        },
+        {
+          "label": "作者官方 X 帖",
+          "url": "https://x.com/merettm/status/2124549218995949967"
+        },
+        {
+          "label": "OpenAI CEO Sam Altman 评论",
+          "url": "https://x.com/sama/status/2124551594691932405"
+        },
+        {
+          "label": "TechCrunch 报道",
+          "url": "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/"
+        },
+        {
+          "label": "Hacker News 讨论",
+          "url": "https://news.ycombinator.com/item?id=50601525"
+        }
+      ],
+      "detail": "## 它是什么\n\n一篇由 OpenAI 首席科学家 Jakub Pachocki 署名的官方研究评述，不是新的模型或产品发布。它讨论如何衡量预训练阶段的进展，主张用困惑度（perplexity，文中写明也可等价地看作交叉熵损失）作为可跨实验室比较的指标，并据此讨论共同的安全标准与开发上限。文中同时公布了 OpenAI 内部持有的、用于追踪预训练进展的困惑度测量。\n\n## 它做什么\n\n- Pachocki 认为，追踪「训练出更好的压缩器（或等价地，预测器）」的进展，是理解 AI 发展轨迹的关键。他主张把困惑度（或等价的交叉熵损失）确立为比较各模型开发者、并据以制定共同安全标准的指标。作为第一步，他提供了更多关于 OpenAI 预训练进展的透明度。他写明：公布内部困惑度测量「会让竞争对手更清楚地看到我们所处的位置」，但这一顾虑被「在全行业建立共同安全措施的紧迫性」所压过。OpenAI 希望这能成为迈向未来节奏控制（pacing）所需共享科学基础的一步。\n- 官方对困惑度的定义是：它衡量模型平均而言对下一个 token 预测得有多好；困惑度越低，预测越好。文中写明，实践中他们通常追踪的是困惑度的对数，也称为交叉熵损失。自 GPT-3.5 以来，他们主要使用的持有（held-out）评估数据来自其内部代码库的一个固定快照，文中报告的就是这些数字。\n- 文章用该指标把若干能力节点串起来：GPT-3.5 在其当前主评估数据集上的 log-perplexity 约为 0.99，已能流畅对话，并成为最初 ChatGPT 的基础；GPT-4 约为 0.91，已能有效利用思维链（chain-of-thought）推理，这促使了随后对这一能力的针对性激发，以及现代推理模型的出现。文章写明：当损失降到 0.8 以下后，他们在网络安全和数学等领域看到了变革性能力的出现。作者强调，这些能力会在精确的困惑度阈值被达到时出现，事先并非显然。\n- 文章还写：在把开放数学问题交给模型评测一年多之后，当他们升级到 log-perplexity 约为 0.76 的模型时，模型开始产生突破性结果。作者据此外推：深度学习研究中也可能出现类似的突然转变，并写到「最早在 2027 年，我们理论上就可能看到类似的、基础性预训练进展的井喷」。这是作者的展望，不是已发生的事件，也不能写成既定时间表。文中把 2026 年损失曲线的陡峭加速，主要归因于长期研究和算力投入的结果，只有较小部分归因于自动化；但对最近的模型，他们已经看到 AI 对设计做出了有意义的贡献。\n- 在安全含义上，作者认为：按近期进展外推，进入约 0.68–0.7 的 log-perplexity 窗口时，应预期出现进一步的变革性能力，而他并不知道那些能力会是什么，今天也未必在测试它们。与此同时，也应预期当前占主导的对齐审计形式进一步退化，以及评估觉察和训练觉察进一步上升。他主张前沿模型开发者应共同努力，在此类模型首次被使用之前，就如何评估它们、以及如何对其安全论证做红队测试，建立起包括共同透明度标准在内的共享规范。他进一步提议：基于困惑度和其他测量设定共同上限，开发者承诺在理解和监控 AI 行为的能力达到某个具体里程碑（文中举例：开发出思维链监控的后继方案）之前，不越过该上限。也就是说，他希望先有一项行业标准，规定以某个可跨实验室追踪的关键指标衡量的第一道开发上限，以及在越过它之前需要具体达成什么。\n- 文章同时列出将该指标作为共享度量的困难：各实验室使用的评估数据集和训练数据混合不同，难以直接比较（文中报告的是 OpenAI 自己追踪的主数据集，作者认为若确立透明度目标，可以找到可迁移的比较方式）；困惑度并不直接对应人们关心的某项任务；它也不计入预训练之外的进展，尤其是思维链推理并不会降低模型已达到的困惑度，却会大幅提升能力；以及未知的下限——并不预期能把损失做到 0，也不知道数据固有熵是多少。文章没有给出共同上限的具体数值，也没有声称其他实验室已经同意这一标准。\n- 作者在官方 X 账号 @merettm 公布该文时写道：「We decided to provide more transparency into pretraining progress at OpenAI for the sake of moving toward shared safety bars. In “Perplexity and Intelligence” I argue for common limits based on perplexity and other measurements, with progress beyond them gated on our ability to understand AI behavior.」OpenAI CEO Sam Altman 转发该帖并写道：这是 OpenAI「一段时间以来发布的最重要的东西」（原文：the most important thing OpenAI has published in awhile）；他们正在就预训练进展提供大量透明度，并希望业界能就共同上限达成共识。他随后引用了文章中关于共享评估规范、红队安全论证和共同上限的段落，并称各实验室已在白宫协议（White House Accords）下同意建立标准和最佳实践以改善系统安全，他认为关于使用困惑度的讨论可以推进这些目标。\n\n## 适合谁\n\n关注前沿模型能力如何被测量、以及行业是否可能就开发上限和安全标准达成共识的研究者、政策观察者和开发者。它不是新的模型或产品发布，也不改变 ChatGPT 或 API 里现有模型的功能说明。\n\n## 为什么值得看\n\n这是 OpenAI 把内部用于衡量预训练进展的 log-perplexity 数字公开，并明确提议用可跨实验室追踪的指标来设定「在监控能力跟上之前先不越过」的共同上限。文章同时写明了该指标的局限，且没有给出具体上限数值或已获行业同意的标准，因此不能把「业界已经设定共同上限」写成既成事实。文中图表若另有未在正文写出的数据点，本报不以转述或读图方式补充，只采用官方正文中的数字和表述。\n\n## 可以核对的事实\n\n- 文章主张以困惑度（或等价的交叉熵损失）作为比较开发者并制定共同安全标准的指标、公布 OpenAI 内部预训练困惑度测量、GPT-3.5 在当前主评估数据集上 log-perplexity 约为 0.99、GPT-4 约为 0.91、损失低于 0.8 后在网络安全和数学等领域出现变革性能力、升级到约 0.76 的模型后开始产生突破性数学结果、外推进入约 0.68–0.7 窗口应预期进一步变革性能力、提议在监控能力达到具体里程碑（例如思维链监控的后继方案）之前不越过基于困惑度等测量的共同上限、同时列出跨实验室比较困难、与下游任务脱节、未计入思维链等预训练之外进展、以及未知下限等局限、未给出上限数值：见 OpenAI 官方文章（A），页面标注 November 22, 2026。https://openai.com/index/perplexity-and-intelligence/\n- 作者于 2026-11-22T17:03:00Z（北京时间 11 月 23 日 01:03）在官方 X 账号公布该文，并说明公开预训练进展是为了迈向共同安全标准：见 https://x.com/merettm/status/2124549218995949967（A）。\n- OpenAI CEO Sam Altman 于 2026-11-22T17:12:27Z 转发并评论，称这是 OpenAI 一段时间以来发布的最重要的东西，并希望就共同上限达成共识；随后引用文章中关于共享规范和共同上限的段落，再提到白宫协议与困惑度讨论：见 https://x.com/sama/status/2124551594691932405、https://x.com/sama/status/2124551883130114403、https://x.com/sama/status/2124558713646428663（A）。\n- TechCrunch 于 2026 年 11 月 22 日下午 1:14（太平洋时间）报道了同一篇文章：https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/（B，报道时间；事实以官方文章为准）。\n"
+    }
+  ]
+}
