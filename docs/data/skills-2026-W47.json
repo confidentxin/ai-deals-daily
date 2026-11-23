@@ -1,0 +1,405 @@
+{
+  "week": "2026-W47",
+  "asOf": "2026-11-23",
+  "timezone": "Asia/Shanghai",
+  "preview": 10,
+  "window": {
+    "label": "2026-W47 · 北京时间 11月16日 00:00 至 11月23日 00:00",
+    "start": "2026-11-16T00:00:00+08:00",
+    "end": "2026-11-23T00:00:00+08:00",
+    "display": "2026-W47 · 北京时间 11月16日 00:00 至 11月23日 00:00"
+  },
+  "note": "窗口、新增星算法、快照时间和候选来源与涨星榜相同，见 stars-2026-W47。本榜只收 Agent Skill 仓库：带 SKILL.md 的技能库、单个 skill、技能合集，以及 README 把自己写成可安装 skill / plugin 的仓库。排序仍按 UTC 2026-11-16 至 2026-11-22 的新创建星。fork 数是同一快照的累计 fork，本周新增 fork 没有完整时间序列，记为未知。讨论度只写本次在 Hacker News Algolia 窗口内查到的帖子，或仓库接口给出的开放 issue 快照。语言方面，已出现在涨星榜的仓库沿用该榜；其余为 2026-11-23 10:04 至 10:08 从 GitHub 仓库接口读到的 language。介绍根据当日打开的 README 写成。没读到的技能名字不补。",
+  "items": [
+    {
+      "id": "googlechrome-modern-web-guidance",
+      "rank": 1,
+      "repo": "GoogleChrome/modern-web-guidance",
+      "url": "https://github.com/GoogleChrome/modern-web-guidance",
+      "weeklyStars": 6535,
+      "totalStars": 25080,
+      "language": "未知",
+      "week": "2026-W47",
+      "windowLabel": "2026-W47 · 北京时间 11月16日 00:00 至 11月23日 00:00",
+      "summary": "Modern Web Guidance 是一组 Web 平台 skill：把浏览器能力和兼容数据放进编程智能体，让它少写过时的 JavaScript。本次 README 给出的覆盖是 CSS 与布局 140 项、HTML 与 DOM 37 项、JavaScript 与 API 85 项，并由 Chrome、Edge、Firefox 和 MDN 团队与社区维护。",
+      "intro": "Modern Web Guidance 是一组 Web 平台 skill：把浏览器能力和兼容数据放进编程智能体，让它少写过时的 JavaScript。本次 README 给出的覆盖是 CSS 与布局 140 项、HTML 与 DOM 37 项、JavaScript 与 API 85 项，并由 Chrome、Edge、Firefox 和 MDN 团队与社区维护。",
+      "detail": "## 它是什么\n\n它是 skill 包，不是浏览器本身。README 写这些技能把 Web 平台经验、做法和兼容数据放进编程智能体，用来躲开训练语料里的旧写法。文首写由 Google Chrome、Microsoft Edge、Mozilla Firefox 和 MDN 团队与社区共同维护。许可证 Apache-2.0。language 字段为空，沿用涨星榜的「未知」。文档在 https://developer.chrome.com/docs/modern-web-guidance ，仓库主页字段还有 https://goo.gle/modern-web-guidance 。\n\n## 它包含哪些 skill、能干什么\n\n安装命令是 `npx modern-web-guidance@latest install`。不安装也可以 search、retrieve 和 legacy-scan。README 列出的覆盖是 CSS 与布局 140 项、HTML 与 DOM 37 项、JavaScript 与 API 85 项。源码和问题在 modern-web-guidance-src。\n\n## 适用的 agent\n\nREADME 按 coding agent 来写，安装向导负责放进智能体。本次没有看到一份排他的厂商名单。\n\n## 这一周为什么上榜\n\n按七日新创建星排在 Skill 榜第 1，同时也在涨星榜第 9。发布页最新标签 v1.0.1 的发布时间是 2026-11-16，落在本窗口。\n\n本窗口七日新增星是 6,535，总星快照 25,080，Skill 榜第 1。累计 fork 快照 1,061，开放 issue 快照 1。本周新增 fork 未知。",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/GoogleChrome/modern-web-guidance"
+        },
+        {
+          "label": "文档",
+          "url": "https://developer.chrome.com/docs/modern-web-guidance"
+        },
+        {
+          "label": "源码仓库",
+          "url": "https://github.com/GoogleChrome/modern-web-guidance-src"
+        }
+      ],
+      "languageSource": "stars-2026-W47",
+      "agents": "编程智能体。README 用 npx 安装向导把 skill 放进智能体，没有把支持名单写成独家某一家。"
+    },
+    {
+      "id": "obra-superpowers",
+      "rank": 2,
+      "repo": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "weeklyStars": 6296,
+      "totalStars": 324202,
+      "language": "Shell",
+      "week": "2026-W47",
+      "windowLabel": "2026-W47 · 北京时间 11月16日 00:00 至 11月23日 00:00",
+      "summary": "Superpowers 是一套给编程智能体用的可组合技能和方法论：先对齐能读完的规格，你签字后再写实现计划。README 为 Claude Code、Codex、Cursor 等十几家客户端分别写了安装小节。",
+      "intro": "Superpowers 是一套给编程智能体用的可组合技能和方法论：先对齐能读完的规格，你签字后再写实现计划。README 为 Claude Code、Codex、Cursor 等十几家客户端分别写了安装小节。",
+      "detail": "## 它是什么\n\n一套建立在可组合技能和初始说明上的软件开发方法论，用来保证编程智能体真的去用这些技能。许可证 MIT，主语言 Shell。\n\n## 它包含哪些 skill、能干什么\n\n工作方式是先把规格按能读完的小段给你看，你签字后再写实现计划，而不是一上来就写代码。本次读到的是安装方式和这条工作流，不是完整的技能目录。没在摘录里出现的技能名字不写。\n\n## 适用的 agent\n\n上面名单均来自本次 README 的安装小节，各家有各自的安装步骤。\n\n## 这一周为什么上榜\n\n按七日新创建星排第 2，同时也在涨星榜第 10。发布页最新标签 v7.0.2 的发布时间是 2026-11-03，不在本窗口。\n\n本窗口七日新增星是 6,296，总星快照 324,202，Skill 榜第 2。累计 fork 快照 28,759，开放 issue 快照 363。本周新增 fork 未知。",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/obra/superpowers"
+        }
+      ],
+      "languageSource": "stars-2026-W47",
+      "agents": "Claude Code、Antigravity、Codex App、Codex CLI、Cursor、Devin CLI、Factory Droid、Gemini CLI、GitHub Copilot CLI、Grok Build CLI、Kimi Code、OpenCode、Pi、Qwen Code、Hermes Agent、Muse。名单以本次 README 安装小节为准。"
+    },
+    {
+      "id": "dietrichgebert-ponytail",
+      "rank": 3,
+      "repo": "DietrichGebert/ponytail",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "weeklyStars": 5433,
+      "totalStars": 196922,
+      "language": "JavaScript",
+      "week": "2026-W47",
+      "windowLabel": "2026-W47 · 北京时间 11月16日 00:00 至 11月23日 00:00",
+      "summary": "ponytail 是给编程智能体用的技能，主张让智能体像「最懒的资深工程师」那样思考，少写不必写的代码。主页是 ponytail.dev。",
+      "intro": "ponytail 是给编程智能体用的技能，主张让智能体像「最懒的资深工程师」那样思考，少写不必写的代码。主页是 ponytail.dev。",
+      "detail": "## 它是什么\n\nGitHub 简介写的是：让你的 AI 智能体像房间里最懒的资深工程师那样思考。上周 Skill 榜已收录。许可证 MIT，主语言 JavaScript。\n\n## 它包含哪些 skill、能干什么\n\n它把少写多余代码的习惯做成可安装技能。具体技能文件名以仓库 README 为准，本次不补未出现在摘录里的名字。\n\n## 适用的 agent\n\n按可安装的编程智能体技能来写，没有写成独家某一家。\n\n## 这一周为什么上榜\n\n按七日新创建星排第 3，同时也在涨星榜第 15。发布页最新标签 v5.3.3 的发布时间是 2026-10-29，不在本窗口。\n\n本窗口七日新增星是 5,433，总星快照 196,922，Skill 榜第 3。累计 fork 快照 11,111，开放 issue 快照 315。本周新增 fork 未知。",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/DietrichGebert/ponytail"
+        },
+        {
+          "label": "官网 ponytail.dev",
+          "url": "https://ponytail.dev"
+        }
+      ],
+      "languageSource": "stars-2026-W47",
+      "agents": "编程智能体。仓库主页是 https://ponytail.dev 。"
+    },
+    {
+      "id": "nexu-io-openmotion",
+      "rank": 4,
+      "repo": "nexu-io/openmotion",
+      "url": "https://github.com/nexu-io/openmotion",
+      "weeklyStars": 5393,
+      "totalStars": 15369,
+      "language": "TypeScript",
+      "week": "2026-W47",
+      "windowLabel": "2026-W47 · 北京时间 11月16日 00:00 至 11月23日 00:00",
+      "summary": "OpenMotion 是开源的智能体视频工作室，也提供可安装的 Agent Skill：按参考视频重做镜头，在 Studio 里改时间轴并导出 MP4。智能体和模型密钥需自备。",
+      "intro": "OpenMotion 是开源的智能体视频工作室，也提供可安装的 Agent Skill：按参考视频重做镜头，在 Studio 里改时间轴并导出 MP4。智能体和模型密钥需自备。",
+      "detail": "## 它是什么\n\n开源的智能体视频工作室，README 把它写成 Claude Motion 与 CapCut 的替代。它同时提供可安装的 Agent Skill（`npx skills add nexu-io/openmotion --skill openmotion`）。主页 https://open-design.ai/motion/ 。许可证 Apache-2.0。\n\n## 它包含哪些 skill、能干什么\n\n主技能 openmotion 用来按参考视频重做镜头、在 Studio 里改时间轴并导出 MP4，并用 Motion.md 记录镜头顺序与转场。模型选择写在仓库的 Model wall，本次读到的例子包括 GPT Image 2.6、Seedance 2.5、Suno 和 Eleven v4。软件开源，密钥需自备。\n\n## 适用的 agent\n\nREADME 点名 Claude Code、Codex、WorkBuddy，以及 ChatGPT Marketplace 的一键安装。\n\n## 这一周为什么上榜\n\n按七日新创建星排第 4，同时也在涨星榜第 16。发布页最新标签 v0.2.1 的发布时间是 2026-11-21，落在本窗口。\n\n本窗口七日新增星是 5,393，总星快照 15,369，Skill 榜第 4。累计 fork 快照 1,523，开放 issue 快照 113。本周新增 fork 未知。",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/nexu-io/openmotion"
+        },
+        {
+          "label": "官网",
+          "url": "https://open-design.ai/motion/"
+        }
+      ],
+      "languageSource": "stars-2026-W47",
+      "agents": "Claude Code、Codex、WorkBuddy；也可以从 ChatGPT Marketplace 安装。安装命令使用 skills CLI。"
+    },
+    {
+      "id": "affaan-m-ecc",
+      "rank": 5,
+      "repo": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "weeklyStars": 5334,
+      "totalStars": 309052,
+      "language": "JavaScript",
+      "week": "2026-W47",
+      "windowLabel": "2026-W47 · 北京时间 11月16日 00:00 至 11月23日 00:00",
+      "summary": "ECC 是智能体 harness 的性能优化系统，覆盖 skills、instincts 和 memory 等部分。主页是 ecc.tools。",
+      "intro": "ECC 是智能体 harness 的性能优化系统，覆盖 skills、instincts 和 memory 等部分。主页是 ecc.tools。",
+      "detail": "## 它是什么\n\n智能体 harness 的性能优化系统，GitHub 简介列出 skills、instincts、memory 等部分。上周 Skill 榜已收录。许可证 MIT。\n\n## 它包含哪些 skill、能干什么\n\n它给 harness 提供技能、本能和记忆等能力。README 很长，本次不把未逐节核对的技能目录写成已确认清单。\n\n## 适用的 agent\n\n按 agent harness 来写，主页是 https://ecc.tools 。\n\n## 这一周为什么上榜\n\n按七日新创建星排第 5，同时也在涨星榜第 17。发布页最新标签 v2.2.3 的发布时间是 2026-10-01，不在本窗口。\n\n本窗口七日新增星是 5,334，总星快照 309,052，Skill 榜第 5。累计 fork 快照 45,471，开放 issue 快照 190。本周新增 fork 未知。",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/affaan-m/ECC"
+        },
+        {
+          "label": "官网 ecc.tools",
+          "url": "https://ecc.tools"
+        }
+      ],
+      "languageSource": "stars-2026-W47",
+      "agents": "编程智能体 / agent harness。仓库主页是 https://ecc.tools 。"
+    },
+    {
+      "id": "mattpocock-skills",
+      "rank": 6,
+      "repo": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "weeklyStars": 5332,
+      "totalStars": 330550,
+      "language": "Shell",
+      "week": "2026-W47",
+      "windowLabel": "2026-W47 · 北京时间 11月16日 00:00 至 11月23日 00:00",
+      "summary": "Matt Pocock 的工程技能仓库。技能被要求小、好改、可组合，并且不绑定模型。安装可以走 Claude、Codex 或 Copilot 的插件，也可以把可编辑文件拷进项目。",
+      "intro": "Matt Pocock 的工程技能仓库。技能被要求小、好改、可组合，并且不绑定模型。安装可以走 Claude、Codex 或 Copilot 的插件，也可以把可编辑文件拷进项目。",
+      "detail": "## 它是什么\n\nMatt Pocock 的工程技能仓库。技能被要求小、好改、可组合，并且不绑定模型。安装可以走 Claude、Codex 或 Copilot 的插件，也可以把可编辑文件拷进项目。通讯名单大约 6 万人，是作者给出的数字。站点 https://skills.sh/mattpocock/skills ，仓库主页字段还有 https://aihero.dev/skills 。\n\n## 它包含哪些 skill、能干什么\n\n本次读到的是安装方式和设计原则，不是完整目录。README 写明不要把「自动更新的插件」和「拷进项目的副本」叠在同一个智能体上。命令包括 `claude plugin install mattpocock-skills@claude-plugins-official`，以及 Codex、Copilot 的 marketplace add 和 plugin install。装好后跑 `/setup-matt-pocock-skills`。\n\n## 适用的 agent\n\nClaude、Codex、GitHub Copilot 的插件路径是本次 README 写明的。\n\n## 这一周为什么上榜\n\n按七日新创建星排第 6，同时也在涨星榜第 18。发布页最新标签 v1.3.2 的发布时间是 2026-10-29，不在本窗口。\n\n本窗口七日新增星是 5,332，总星快照 330,550，Skill 榜第 6。累计 fork 快照 27,779，开放 issue 快照 265。本周新增 fork 未知。",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/mattpocock/skills"
+        },
+        {
+          "label": "skills.sh",
+          "url": "https://skills.sh/mattpocock/skills"
+        },
+        {
+          "label": "通讯",
+          "url": "https://www.aihero.dev/s/skills-newsletter"
+        }
+      ],
+      "languageSource": "stars-2026-W47",
+      "agents": "Claude（官方插件）、Codex、GitHub Copilot。README 还区分会自动更新的插件和拷进项目后手改的文件。"
+    },
+    {
+      "id": "mvanhorn-last30days-skill",
+      "rank": 7,
+      "repo": "mvanhorn/last30days-skill",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "weeklyStars": 5061,
+      "totalStars": 72779,
+      "language": "Python",
+      "week": "2026-W47",
+      "windowLabel": "2026-W47 · 北京时间 11月16日 00:00 至 11月23日 00:00",
+      "summary": "last30days 是一个 AI 智能体检索技能：在 Reddit、X、YouTube、HN、Polymarket 和网页等来源上做主题检索，按赞、喜欢和真实资金打分。推荐经 Claude Code marketplace 安装，其他宿主可用 skills CLI。",
+      "intro": "last30days 是一个 AI 智能体检索技能：在 Reddit、X、YouTube、HN、Polymarket 和网页等来源上做主题检索，按赞、喜欢和真实资金打分。推荐经 Claude Code marketplace 安装，其他宿主可用 skills CLI。",
+      "detail": "## 它是什么\n\n一个由 AI 智能体主导的检索技能：按赞、喜欢和真实资金而不是编辑来打分。README 写当前文档跟踪的是 v4 流水线，运行时的技能说明以 skills/last30days/SKILL.md 为准。许可证 MIT，主语言 Python。\n\n## 它包含哪些 skill、能干什么\n\n主技能 last30days 会在 Reddit、X、YouTube、HN、Polymarket 和网页等来源上做主题检索并综合。Claude Code 的安装是 `/plugin marketplace add mvanhorn/last30days-skill` 再 `/plugin install last30days`。其他宿主可用 `npx skills add mvanhorn/last30days-skill -g`。密钥需要自备，README 写了交互式设置和 macOS Keychain 选项。\n\n## 适用的 agent\n\n上面名单均来自本次 README 的安装小节。作者把 Claude Code 写成推荐路径。\n\n## 这一周为什么上榜\n\n按七日新创建星排第 7。它也出现在本周 GitHub Trending 的 weekly 页上（Trending 数字不用于排序）。发布页最新标签 v4.6.0 的发布时间是 2026-11-22，落在本窗口。X 上本窗口有一条指向该仓库的 GitHub 日榜介绍。\n\n本窗口七日新增星是 5,061，总星快照 72,779，Skill 榜第 7。累计 fork 快照 6,427，开放 issue 快照 23。本周新增 fork 未知。",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/mvanhorn/last30days-skill"
+        },
+        {
+          "label": "SKILL.md",
+          "url": "https://github.com/mvanhorn/last30days-skill/blob/HEAD/skills/last30days/SKILL.md"
+        }
+      ],
+      "languageSource": "github-repo-api",
+      "agents": "Claude Code（推荐，经 marketplace 自动更新）；Codex、Cursor、Copilot、Gemini CLI 及其他 50 多家 Agent Skills 宿主；另有 DeepSeek Harness、claude.ai、Claude Desktop、OpenClaw、Grok（xAI Build CLI）的安装小节。"
+    },
+    {
+      "id": "pbakaus-impeccable",
+      "rank": 8,
+      "repo": "pbakaus/impeccable",
+      "url": "https://github.com/pbakaus/impeccable",
+      "weeklyStars": 4227,
+      "totalStars": 115057,
+      "language": "Rust",
+      "week": "2026-W47",
+      "windowLabel": "2026-W47 · 北京时间 11月16日 00:00 至 11月23日 00:00",
+      "summary": "impeccable 是给编程智能体用的设计词汇技能，用来把界面推得更精致或更大胆，并做检查。主页是 impeccable.style。",
+      "intro": "impeccable 是给编程智能体用的设计词汇技能，用来把界面推得更精致或更大胆，并做检查。主页是 impeccable.style。",
+      "detail": "## 它是什么\n\nGitHub 简介写的是：给你的编程智能体一套设计词汇，用来把界面推得更精致或更大胆，并做检查。上周 Skill 榜已收录。许可证 Apache-2.0，主语言 Rust。\n\n## 它包含哪些 skill、能干什么\n\n它是给智能体用的设计技能，而不是在线设计工具。安装与技能文件以仓库 README 为准。本次不补未在摘录里出现的技能名字。\n\n## 适用的 agent\n\n按 coding-agent skill 来写。主页 https://impeccable.style 。\n\n## 这一周为什么上榜\n\n按七日新创建星排第 8。发布页最新标签 engine-v0.1.28 的发布时间是 2026-11-19，落在本窗口。\n\n本窗口七日新增星是 4,227，总星快照 115,057，Skill 榜第 8。累计 fork 快照 6,855，开放 issue 快照 69。本周新增 fork 未知。",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/pbakaus/impeccable"
+        },
+        {
+          "label": "官网 impeccable.style",
+          "url": "https://impeccable.style"
+        }
+      ],
+      "languageSource": "github-repo-api",
+      "agents": "编程智能体。仓库主页是 https://impeccable.style 。"
+    },
+    {
+      "id": "hkuds-cli-anything",
+      "rank": 9,
+      "repo": "HKUDS/CLI-Anything",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "weeklyStars": 4112,
+      "totalStars": 62820,
+      "language": "Python",
+      "week": "2026-W47",
+      "windowLabel": "2026-W47 · 北京时间 11月16日 00:00 至 11月23日 00:00",
+      "summary": "CLI-Anything 主张给现有软件补上智能体可调用的 CLI，并提供 CLI-Hub 浏览和安装社区工具。仓库里有 SKILL.md，也可用 skills CLI 安装。",
+      "intro": "CLI-Anything 主张给现有软件补上智能体可调用的 CLI，并提供 CLI-Hub 浏览和安装社区工具。仓库里有 SKILL.md，也可用 skills CLI 安装。",
+      "detail": "## 它是什么\n\nREADME 标题是 CLI-Anything: Making ALL Software Agent-Native。它的主张是：今天的软件为人服务，明天的用户会是智能体；本项目给现有软件补上智能体可调用的 CLI。Hub 在 https://clianything.cc/ ，也可用 `pip install cli-anything-hub` 再 `cli-hub install`。许可证 Apache-2.0，主语言 Python。\n\n## 它包含哪些 skill、能干什么\n\n仓库里有多份 SKILL.md，并支持用 skills CLI 安装。演示写成智能体使用生成出来的 CLI，再配合预览和轨迹循环，去做 CAD、3D 场景、图表、游戏、字幕等产物。社区可以通过 CLI-Hub 提交或请求新的 CLI。具体 CLI 目录以 Hub 和仓库为准，本次不罗列未逐条打开的名字。\n\n## 适用的 agent\n\n按可安装 Agent Skills 的编程智能体来写，并配合 CLI-Hub 管理生成出的命令行工具。\n\n## 这一周为什么上榜\n\n按七日新创建星排第 9。发布页最新标签 v0.4.0 的发布时间是 2026-06-25，不在本窗口。\n\n本窗口七日新增星是 4,112，总星快照 62,820，Skill 榜第 9。累计 fork 快照 5,702，开放 issue 快照 286。本周新增 fork 未知。",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/HKUDS/CLI-Anything"
+        },
+        {
+          "label": "CLI-Hub",
+          "url": "https://clianything.cc/"
+        }
+      ],
+      "languageSource": "github-repo-api",
+      "agents": "编程智能体。README 多次出现 SKILL.md，并给出 `npx skills add` 安装路径。CLI 合集通过 CLI-Hub 浏览和安装。"
+    },
+    {
+      "id": "nutlope-hallmark",
+      "rank": 10,
+      "repo": "Nutlope/hallmark",
+      "url": "https://github.com/Nutlope/hallmark",
+      "weeklyStars": 3949,
+      "totalStars": 59566,
+      "language": "CSS",
+      "week": "2026-W47",
+      "windowLabel": "2026-W47 · 北京时间 11月16日 00:00 至 11月23日 00:00",
+      "summary": "Hallmark 是给 Claude Code、Cursor 和 Codex 用的反 AI slop 设计技能，用来把看起来像自动生成的界面改得更像经过设计的作品。",
+      "intro": "Hallmark 是给 Claude Code、Cursor 和 Codex 用的反 AI slop 设计技能，用来把看起来像自动生成的界面改得更像经过设计的作品。",
+      "detail": "## 它是什么\n\nGitHub 简介写的是：给 Claude Code、Cursor 和 Codex 用的反 AI slop 设计技能。上周 Skill 榜已收录。许可证 MIT，主语言 CSS。\n\n## 它包含哪些 skill、能干什么\n\n它用来把看起来像「AI 生成」的界面改得更像经过设计的作品。安装与技能文件以仓库 README 为准。\n\n## 适用的 agent\n\nREADME 和简介点名 Claude Code、Cursor 和 Codex。\n\n## 这一周为什么上榜\n\n按七日新创建星排第 10。发布页没有找到 latest release。\n\n本窗口七日新增星是 3,949，总星快照 59,566，Skill 榜第 10。累计 fork 快照 3,259，开放 issue 快照 55。本周新增 fork 未知。",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/Nutlope/hallmark"
+        },
+        {
+          "label": "官网",
+          "url": "https://www.usehallmark.com/"
+        }
+      ],
+      "languageSource": "github-repo-api",
+      "agents": "Claude Code、Cursor 和 Codex。仓库主页是 https://www.usehallmark.com/ 。"
+    },
+    {
+      "id": "leonxlnx-taste-skill",
+      "rank": 11,
+      "repo": "Leonxlnx/taste-skill",
+      "url": "https://github.com/Leonxlnx/taste-skill",
+      "weeklyStars": 3852,
+      "totalStars": 120158,
+      "language": "JavaScript",
+      "week": "2026-W47",
+      "windowLabel": "2026-W47 · 北京时间 11月16日 00:00 至 11月23日 00:00",
+      "summary": "taste-skill 给编程智能体提供艺术指导和参考图，用来补上「品味」。主页是 tasteskill.dev。",
+      "intro": "taste-skill 给编程智能体提供艺术指导和参考图，用来补上「品味」。主页是 tasteskill.dev。",
+      "detail": "## 它是什么\n\nGitHub 简介写的是：给编程智能体「品味」的技能，覆盖艺术指导、参考图等。上周 Skill 榜已收录。许可证 MIT，主语言 JavaScript。\n\n## 它包含哪些 skill、能干什么\n\n技能用来给界面和视觉方向提供艺术指导和参考图，而不是生成一张随便的模板页。具体技能文件名以仓库 README 为准。\n\n## 适用的 agent\n\n按可安装的编程智能体技能来写。主页 https://tasteskill.dev 。\n\n## 这一周为什么上榜\n\n按七日新创建星排第 11。发布页最新标签 v2.5.1 的发布时间是 2026-11-07，不在本窗口。\n\n本窗口七日新增星是 3,852，总星快照 120,158，Skill 榜第 11。累计 fork 快照 8,054，开放 issue 快照 20。本周新增 fork 未知。",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/Leonxlnx/taste-skill"
+        },
+        {
+          "label": "官网 tasteskill.dev",
+          "url": "https://tasteskill.dev"
+        }
+      ],
+      "languageSource": "github-repo-api",
+      "agents": "编程智能体。仓库主页是 https://tasteskill.dev 。"
+    },
+    {
+      "id": "cloudflare-security-audit-skill",
+      "rank": 12,
+      "repo": "cloudflare/security-audit-skill",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "weeklyStars": 3809,
+      "totalStars": 77124,
+      "language": "JavaScript",
+      "week": "2026-W47",
+      "windowLabel": "2026-W47 · 北京时间 11月16日 00:00 至 11月23日 00:00",
+      "summary": "Cloudflare 的 security-audit 用分阶段流程把侦察、排查、证伪、findings.json、记录核验和报告拆开，避免同一个智能体既发现又给自己作证。",
+      "intro": "Cloudflare 的 security-audit 用分阶段流程把侦察、排查、证伪、findings.json、记录核验和报告拆开，避免同一个智能体既发现又给自己作证。",
+      "detail": "## 它是什么\n\n一个 coding-agent skill，不是在线扫描服务。上周 Skill 榜已收录。README 仍把它写成分阶段的安全审计技能。许可证 MIT，主语言 JavaScript。相关文章仍指向 Cloudflare 博客 Build your own vulnerability harness。\n\n## 它包含哪些 skill、能干什么\n\n它把侦察、排查、证伪、findings.json、记录核验和报告拆开，避免同一个智能体既发现又给自己作证。安装是 `npx skills add` 指向本仓库。本页不转写审计命令。\n\n## 适用的 agent\n\n按 coding-agent skill 来写，安装走 skills CLI。没有写成独家某一家。\n\n## 这一周为什么上榜\n\n按七日新创建星排第 12。发布页没有找到 latest release。\n\n本窗口七日新增星是 3,809，总星快照 77,124，Skill 榜第 12。累计 fork 快照 5,198，开放 issue 快照 143。本周新增 fork 未知。",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/cloudflare/security-audit-skill"
+        },
+        {
+          "label": "Cloudflare 博客",
+          "url": "https://blog.cloudflare.com/build-your-own-vulnerability-harness"
+        }
+      ],
+      "languageSource": "github-repo-api",
+      "agents": "支持 Agent Skills 的编程智能体。安装命令使用 skills CLI（npx skills add）。"
+    },
+    {
+      "id": "kajisho5-ffmpeg-skill",
+      "rank": 13,
+      "repo": "kajisho5/ffmpeg-skill",
+      "url": "https://github.com/kajisho5/ffmpeg-skill",
+      "weeklyStars": 3693,
+      "totalStars": 9761,
+      "language": "Python",
+      "week": "2026-W47",
+      "windowLabel": "2026-W47 · 北京时间 11月16日 00:00 至 11月23日 00:00",
+      "summary": "ffmpeg-skill 是给编程智能体用的本地视频编辑技能。仓库描述写有 42 个 FFmpeg 工具和一份机器可读说明，素材在你的机器上处理。",
+      "intro": "ffmpeg-skill 是给编程智能体用的本地视频编辑技能。仓库描述写有 42 个 FFmpeg 工具和一份机器可读说明，素材在你的机器上处理。",
+      "detail": "## 它是什么\n\nGitHub 简介写的是：给编程智能体用的本地视频编辑器，带 42 个 FFmpeg 工具和一份机器可读的说明。许可证 MIT，主语言 Python。42 这个数字来自仓库描述，不是本榜复测。\n\n## 它包含哪些 skill、能干什么\n\n它把 FFmpeg 操作封装成智能体可调用的本地视频编辑技能，在你的机器上跑，而不是把素材上传到未说明的第三方在线剪辑站。具体 42 个工具的名称以仓库 README 为准，本次不逐条抄录。\n\n## 适用的 agent\n\n按可安装的编程智能体技能来写。npm 包页是 https://www.npmjs.com/package/ffmpeg-skill 。\n\n## 这一周为什么上榜\n\n按七日新创建星排第 13。发布页最新标签 v4.7.0 的发布时间是 2026-11-22，落在本窗口。11 月 16 日单日新创建星 1,176，是它本周最高的一天。\n\n本窗口七日新增星是 3,693，总星快照 9,761，Skill 榜第 13。累计 fork 快照 867，开放 issue 快照 47。本周新增 fork 未知。",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/kajisho5/ffmpeg-skill"
+        },
+        {
+          "label": "npm：ffmpeg-skill",
+          "url": "https://www.npmjs.com/package/ffmpeg-skill"
+        }
+      ],
+      "languageSource": "github-repo-api",
+      "agents": "编程智能体。仓库主页字段指向 https://www.npmjs.com/package/ffmpeg-skill 。"
+    },
+    {
+      "id": "anthropics-skills",
+      "rank": 14,
+      "repo": "anthropics/skills",
+      "url": "https://github.com/anthropics/skills",
+      "weeklyStars": 3640,
+      "totalStars": 199038,
+      "language": "Python",
+      "week": "2026-W47",
+      "windowLabel": "2026-W47 · 北京时间 11月16日 00:00 至 11月23日 00:00",
+      "summary": "这是 Anthropic 放出的 Agent Skills 公开仓库，给支持该格式的编程智能体安装和使用。",
+      "intro": "这是 Anthropic 放出的 Agent Skills 公开仓库，给支持该格式的编程智能体安装和使用。",
+      "detail": "## 它是什么\n\nGitHub 简介写的是：Agent Skills 的公开仓库。上周涨星榜和 Skill 榜均已收录。仓库接口的 license 字段为空。主语言 Python。仓库创建于 2025-09-22。\n\n## 它包含哪些 skill、能干什么\n\n这是一份公开的 Agent Skills 合集，给支持该格式的智能体安装和使用。具体技能目录以仓库当前文件树为准，本次不把未打开的文件夹名字写成清单。\n\n## 适用的 agent\n\n按 Agent Skills 公开格式来写，不是只绑在某一家客户端上。\n\n## 这一周为什么上榜\n\n按七日新创建星排第 14。发布页没有找到 latest release。它仍出现在本周 GitHub Trending 的 Python weekly 页上（Trending 数字不用于排序）。\n\n本窗口七日新增星是 3,640，总星快照 199,038，Skill 榜第 14。累计 fork 快照 23,294，开放 issue 快照 1,569。本周新增 fork 未知。",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/anthropics/skills"
+        }
+      ],
+      "languageSource": "github-repo-api",
+      "agents": "支持 Agent Skills 公开标准的编程智能体。这是 Anthropic 放出的公开技能仓库。"
+    },
+    {
+      "id": "graphify-labs-graphify",
+      "rank": 15,
+      "repo": "Graphify-Labs/graphify",
+      "url": "https://github.com/Graphify-Labs/graphify",
+      "weeklyStars": 3625,
+      "totalStars": 152083,
+      "language": "Python",
+      "week": "2026-W47",
+      "windowLabel": "2026-W47 · 北京时间 11月16日 00:00 至 11月23日 00:00",
+      "summary": "graphify 把代码库、文档、schema 和 PDF 做成可查询的知识图谱，并以 /graphify skill 的形式提供给 Claude Code、Cursor、Codex 和 Gemini CLI。解析在本地做确定性 AST，不用向量库。",
+      "intro": "graphify 把代码库、文档、schema 和 PDF 做成可查询的知识图谱，并以 /graphify skill 的形式提供给 Claude Code、Cursor、Codex 和 Gemini CLI。解析在本地做确定性 AST，不用向量库。",
+      "detail": "## 它是什么\n\nGitHub 简介写的是：把代码库连同文档、SQL schema、配置和 PDF 做成可查询的知识图谱。`/graphify` 技能给 Claude Code、Cursor、Codex 和 Gemini CLI 使用；解析是本地的、确定性的 AST，每条边都可解释，不用向量库。仓库主页字段是 graphify.com。许可证 Apache-2.0，主语言 Python。仓库创建于 2026-04-03。\n\n## 它包含哪些 skill、能干什么\n\n在编程助手里输入 `/graphify`，它会把项目（代码、文档、PDF、图片、视频等）映射成知识图谱，之后用查询代替在文件里 grep。README 还提到 Graphify Cloud 可以在整个开发生命周期里保持图谱在线，并写明可以免费开始、无需绑卡；本次不把未打开的云端定价页写成已核对。\n\n## 适用的 agent\n\n简介点名 Claude Code、Cursor、Codex 和 Gemini CLI。\n\n## 这一周为什么上榜\n\n按七日新创建星排第 15。发布页最新标签 v0.9.115 的发布时间是 2026-11-21，落在本窗口。MostStarred 周榜本窗口也列出了它，其 7 日增量与本榜算法不同，只作发现。\n\n本窗口七日新增星是 3,625，总星快照 152,083，Skill 榜第 15。累计 fork 快照 14,619，开放 issue 快照 1,703。本周新增 fork 未知。",
+      "links": [
+        {
+          "label": "GitHub 仓库",
+          "url": "https://github.com/Graphify-Labs/graphify"
+        },
+        {
+          "label": "主页 graphify.com",
+          "url": "https://graphify.com"
+        }
+      ],
+      "languageSource": "github-repo-api",
+      "agents": "Claude Code、Cursor、Codex 和 Gemini CLI。GitHub 简介把它写成 `/graphify` skill。"
+    }
+  ]
+}
