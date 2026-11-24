@@ -1,0 +1,183 @@
+{
+  "asOf": "2026-11-24",
+  "timezone": "Asia/Shanghai",
+  "preview": 10,
+  "empty": false,
+  "emptyMessage": "今日暂无重要资讯，晚间 19:30 起每日更新",
+  "note": "2026-11-24 早报（北京时间）整理：新录入 5 条（OpenAI 与 Cisco 推出开源项目 Shirudo；OpenAI 开始向 ChatGPT 聊天页推送面向日常对话优化的 GPT-6.2；NVIDIA 董事会恢复黄仁勋担任总裁、首席执行官及董事；弗吉尼亚州与俄勒冈州检察长分别起诉 SpaceX / X / xAI；补录 Anthropic 推出 Claude Ship 测试版）。按公告时间从新到旧排列。带精确钟点的条目 timeLabel 用北京时间；官方只给日期的条目 timePrecision 为 date，timeLabel 只写日期，sortAt 仅用于排序，详见各条 timeNote。置信度 A 表示来自官方原文，B 表示可靠媒体报道、官方未单独核实。",
+  "items": [
+    {
+      "id": "openai-cisco-shirudo",
+      "title": "OpenAI 与 Cisco 推出开源项目 Shirudo：用 eBPF「盾」在不停机的情况下为运行中的 Linux 系统提供临时防护",
+      "badge": "N",
+      "summary": "OpenAI 与 Cisco 在 11 月 23 日（官方 X 介绍帖为北京时间 11 月 24 日 05:37）宣布推出开源运行时 Shirudo（日语「盾」之意）。官方称，它帮助运维与安全团队在正式补丁尚未部署完成时，为正在运行的 Linux 系统提供临时防护，而不必等待补丁或重启服务。OpenAI 官方文章写明：在一次受控测试中，由 Codex 生成的盾在无需重启的情况下，阻断了一次针对正在运行的 Elasticsearch 服务的 Java4Shell 利用尝试。双方邀请开发者、安全研究人员和基础设施运维共同完善该项目。",
+      "publishedAt": "2026-11-24T05:37:00+08:00",
+      "sortAt": "2026-11-24T05:37:00+08:00",
+      "timeLabel": "2026-11-24 05:37",
+      "timePrecision": "datetime",
+      "timeNote": "OpenAI 官方账号 @OpenAI 发布介绍帖的时间为 2026-11-23T21:37:07.000Z，即北京时间 11 月 24 日 05:37；按该官方账号原帖的精确时刻记录。OpenAI 官方文章与 Cisco 新闻室稿均只标注 November 23, 2026，未给钟点。",
+      "source": "OpenAI / Cisco",
+      "confidence": "A",
+      "url": "https://openai.com/index/introducing-shirudo/",
+      "links": [
+        {
+          "label": "OpenAI 官方文章",
+          "url": "https://openai.com/index/introducing-shirudo/"
+        },
+        {
+          "label": "OpenAI 官方 X 介绍帖",
+          "url": "https://x.com/OpenAI/status/2124980590717911527"
+        },
+        {
+          "label": "Cisco 官方新闻室",
+          "url": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m11/cisco-and-openai-launch-shirudo-a-new-project-to-safeguard-agentic-ai.html"
+        },
+        {
+          "label": "项目 GitHub 仓库",
+          "url": "https://github.com/shirudo-dev/shirudo"
+        }
+      ],
+      "detail": "## 它是什么\n\n一项由 OpenAI 与 Cisco 共同推出的开源 Linux 运行时，不是新的通用大模型发布。官方定位是：在发现漏洞之后、永久补丁尚需数日乃至数周测试与部署的窗口里，让运营者先上线经过批准的、可签名验证的临时「盾」（shield），同时让合法请求继续通过。OpenAI 官方 X 介绍帖把它称为「通向可自我防御的基础设施的第一步」。\n\n## 它做什么\n\n- OpenAI 官方文章写明：测试并部署补丁仍可能需要数日或数周；在此期间，利用与合法请求可能依赖同一种 Linux 操作，若直接阻断该操作，服务可能停摆。Shirudo 的设计是：团队先测试一把临时盾能否挡住暴露漏洞的行为、同时放行合法请求；运营者批准后，再在服务继续运行的情况下部署。\n- 技术上，官方写明 Shirudo 使用 eBPF，在操作系统的特定点运行小型程序，以观察可疑活动并对运行中的系统施加有针对性的防护。OpenAI 与 Cisco 围绕四项核心能力来设计：实时防护（eBPF 盾可在不重启的情况下阻断脆弱代码路径，安全团队可在强制执行前观察拟议盾对应用的影响）；「以机器速度防御」（为智能体提供可编程控制，用于调查漏洞、生成针对性的盾，并对照利用和真实工作负载验证效果，但由安全团队决定部署什么）；可信部署（盾在加载前经过加密签名与验证，Linux 的 eBPF 验证器按安全规则检查程序，内核安全控制限制未经授权的变更）；以及硬件支持的验证（使用 TPM 为防护的加载或移除提供可验证记录，运营者可用作是否满足安全要求的证据）。\n- 官方给出的例子是 Java4Shell：团队使用 OpenAI 的 Codex 生成一把盾，为 Java 的 Base64 解码器增加输入检查，并直接附加到正在运行的 Elasticsearch 进程；在尝试利用该漏洞时，盾拒绝了恶意输入，从而在 Elasticsearch 继续运行的情况下阻断了攻击。Cisco 新闻室还写到，在针对近期严重漏洞「Java4shell」和 PHP 缺陷的测试中，Shirudo 能够编写代码，检测并阻断对这两类威胁的利用尝试。这些都是官方所述的受控测试或示例，不是对所有生产环境的普遍效果保证。\n- 官方强调人仍掌握部署权。Cisco 总裁兼首席产品官 Jeetu Patel 在新闻室稿中说，需要「能够以代码的速度行动、实时学习、并在补丁安全推出之前自我防护」的基础设施。OpenAI 总裁兼联合创始人 Greg Brockman 在双方稿件中都写到：找到漏洞并不等于明天就能给每台系统打上补丁，因此与 Cisco 合作，帮助团队在编写和推出修复的同时保护必须持续运行的系统，并把这些工具开源，以免各团队从零开始。\n- 项目代码由 Cisco 新闻室指向 https://github.com/shirudo-dev/shirudo。OpenAI 文章还提到 12 月 15 日有一场技术研讨会，并邀请社区贡献运行时、新的盾以及对 Linux 与 eBPF 的改进。本报不以未在正文完整给出的报名链接补写细节。\n\n## 适合谁\n\nLinux 系统的安全与运维人员、基础设施工程师，以及关注用智能体辅助漏洞响应、但仍需人工批准上线防护的安全研究人员。它不是面向普通 ChatGPT 用户的新聊天模型。\n\n## 为什么值得看\n\n这是 OpenAI 与 Cisco 把「在补丁就绪前、用可签名的临时盾保护正在运行的系统」做成开源项目，并明确把部署决定权留在安全团队手中。官方示例和能力说明来自受控测试与设计目标，不能写成已经在广泛生产环境中验证完毕，或可以取代正式补丁。\n\n## 可以核对的事实\n\n- OpenAI 与 Cisco 宣布推出开源运行时 Shirudo，用 eBPF 在不重启的情况下为运行中的 Linux 系统提供临时盾，官方文章只标注 November 23, 2026：见 https://openai.com/index/introducing-shirudo/（A）。\n- OpenAI 官方账号 @OpenAI 于 2026-11-23T21:37:07Z（北京时间 11 月 24 日 05:37）发帖介绍该项目，并链接上述官方文章：见 https://x.com/OpenAI/status/2124980590717911527（A）。\n- Cisco 官方新闻室同日发布对应新闻稿，并给出项目仓库 https://github.com/shirudo-dev/shirudo：见 https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m11/cisco-and-openai-launch-shirudo-a-new-project-to-safeguard-agentic-ai.html（A）。\n- OpenAI 官方文章写明：在受控测试中，由 Codex 生成的盾在无需重启的情况下阻断了一次针对运行中 Elasticsearch 的 Java4Shell 利用尝试；并列出实时防护、以机器速度防御、可信部署、硬件支持验证四项核心能力：见同一官方文章（A）。\n"
+    },
+    {
+      "id": "openai-gpt-6-2-chatgpt-chat-tab-2026-11-23",
+      "title": "OpenAI 开始向 ChatGPT 聊天页推送面向日常对话优化的 GPT-6.2（基于 GPT-6.2 Sol）",
+      "badge": "N",
+      "summary": "OpenAI 在 11 月 23 日的 ChatGPT 更新日志中写明：开始向 Plus、Pro、Business 和 Enterprise 档位，在聊天页（Chat tab）推送一个面向该页优化的 GPT-6.2 版本。官方称，ChatGPT 中的 GPT-6.2 由 GPT-6.2 Sol 的一个版本驱动，并针对日常对话做了调整；本次更新只作用于 ChatGPT 的聊天体验，Work 与 Codex 所用模型不随此次发布改变。Enterprise 是否可用取决于工作场所管理员设置。",
+      "publishedAt": "2026-11-23",
+      "sortAt": "2026-11-24T04:47:00+08:00",
+      "timeLabel": "2026-11-23",
+      "timePrecision": "date",
+      "timeNote": "ChatGPT 官方更新日志与《GPT-6.2 in ChatGPT System Card》均只标注 November 23, 2026，未给钟点。本窗口内可见的媒体报道时刻：The Verge 标注 Posted Nov 23, 2026 at 8:47 PM UTC，即北京时间 11 月 24 日 04:47；MacRumors 标注 Monday November 23, 2026 3:52 pm PST，即北京时间 11 月 24 日 07:52。本次检索时，更新日志页显示 Updated: 5 hours ago。不把媒体报道时刻或「5 hours ago」写成官方发布时间。",
+      "source": "OpenAI",
+      "confidence": "A",
+      "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "links": [
+        {
+          "label": "ChatGPT 官方更新日志",
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+        },
+        {
+          "label": "GPT-6.2 in ChatGPT System Card",
+          "url": "https://deploymentsafety.openai.com/gpt-6-2-chatgpt"
+        },
+        {
+          "label": "The Verge 报道",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1040716/openai-launched-a-chat-specific-version-of-gpt-6-2-sol"
+        },
+        {
+          "label": "MacRumors 报道",
+          "url": "https://www.macrumors.com/2026/11/23/openai-gpt-6-2-sol-chatgpt/"
+        }
+      ],
+      "detail": "## 它是什么\n\n一次 ChatGPT 聊天页的模型更新，不是 GPT-6.2 系列的首次亮相。官方把它称为 GPT-6.2（November 23），并写明它由面向日常对话调整过的 GPT-6.2 Sol 驱动。系统卡与更新日志都把这次发布限定在聊天页，并写明 Work 和 Codex 的模型此次不变。\n\n## 它做什么\n\n- 官方更新日志写明：新版本更擅长处理涉及遵循详细指令或在网上查找信息的较复杂请求。文中举例：若用户在比较周末出行的酒店，它可以帮助权衡价格与位置等因素，并推荐最符合优先事项的选项。它也更清楚何时应该跟进，例如在用户询问某物是否打折后，ChatGPT 可以提出在降价时通知用户。\n- 官方给出的内部评测数字（均为官方自述，不是独立第三方评测）包括：在聊天页的测试中，图像理解得分 71.7%，高于 GPT-6 的 47.4%；在尤其困难的提示上，遵循指令的比例为 78.1%，高于 GPT-6 的 62.5%；在所测试的最低推理设置下，一项专家级任务的内部评估得分为 65%，高于 GPT-6 的 52%；在内部版 BrowseComp 上，GPT-6.2 在全部四档推理设置中都优于 GPT-6，其中 Extra high 档约为 64.5%，对 GPT-6 的 54.4%，官方称高出约 10 个百分点。\n- 安全方面，更新日志写明：GPT-6.2 在青少年安全评估上有明显提升，最大收益出现在情感依赖、进食障碍，以及年龄限制商品、服务和危险活动等项目；在具有挑战性的对话中，回复符合安全政策的比例为 91–94%，高于 GPT-6 的 77–80%。系统卡进一步写明：按 OpenAI 的 Preparedness Framework，GPT-6.2（November 23）在 ChatGPT 中达到网络安全能力的 Critical 阈值，以及生物/化学能力的 High 阈值，并达到 AI 自我提升能力的 High 阈值；将采用与 GPT-6.2 Astra 和 GPT-6.2 Sol 类似的生物、网络、对齐和蒸馏防护。系统卡还写：「GPT-6.2 demonstrated the strongest overall safety performance of any chat model we have deployed on evaluations。」这是官方自评，本报不作等同性背书。\n- 覆盖范围上，官方写明即日起在全球向 Plus、Pro、Business 和 Enterprise 档位的聊天页开始推送；未将 Free 等其他档位列入此次名单。MacRumors 报道称其不向 Free 和 Go 提供，这一补充来自媒体，官方更新日志正文只列出了上述付费档位。\n\n## 适合谁\n\nChatGPT Plus、Pro、Business 和 Enterprise 用户，以及需要在聊天页处理较复杂指令、图像理解和较难网络检索的人。依赖 Work 或 Codex 的用户应知道：官方明确写明这两处所用模型不随本次发布改变。\n\n## 为什么值得看\n\n这是 GPT-6.2 Sol 面向日常聊天的一次产品化推送，并配有专门的系统卡。官方给出了若干内部评测和安全门槛说明，但这些数字来自 OpenAI 自己的评估，不能写成已被独立复现的公开基准结论；也还不能把「所有付费用户已经用上」写成既成事实，因为官方用的是「starts rolling out」。\n\n## 可以核对的事实\n\n- ChatGPT 更新日志在 November 23, 2026 条目中宣布：向 Plus、Pro、Business 和 Enterprise 的聊天页推送面向该页优化的 GPT-6.2，由 GPT-6.2 Sol 的一个版本驱动并针对日常对话调整，Work 与 Codex 所用模型此次不变：见 https://help.openai.com/en/articles/6825453-chatgpt-release-notes（A）。\n- 官方在同一条目中给出图像理解 71.7%（GPT-6 为 47.4%）、困难提示指令遵循 78.1%（GPT-6 为 62.5%）、最低推理设置下专家级任务内部评估 65%（GPT-6 为 52%）、内部版 BrowseComp 在 Extra high 档约 64.5% 对 54.4%，以及安全政策符合率 91–94%（GPT-6 为 77–80%）等数字：见同一更新日志（A，官方内部评估）。\n- 《GPT-6.2 in ChatGPT System Card》标注 Published November 23, 2026，称该版本达到网络安全 Critical、生物/化学 High、AI 自我提升 High 阈值，并采用与 Astra 和 Sol 类似的防护：见 https://deploymentsafety.openai.com/gpt-6-2-chatgpt（A）。\n- The Verge 标注 Posted Nov 23, 2026 at 8:47 PM UTC，MacRumors 标注 2026 年 11 月 23 日下午 3:52（太平洋时间）报道了同一更新：见上述来源链接（B，报道时间；事实以官方更新日志和系统卡为准）。\n"
+    },
+    {
+      "id": "nvidia-jensen-huang-reinstated-2026-11-23",
+      "title": "NVIDIA 董事会恢复黄仁勋担任总裁、首席执行官及董事，立即生效",
+      "badge": "N",
+      "summary": "NVIDIA 在 11 月 23 日宣布，董事会已一致表决，立即恢复黄仁勋（Jensen Huang）担任总裁、首席执行官及董事会成员。官方新闻稿写明：董事会在与黄仁勋一系列讨论和会议后，对其坦诚和领导能力感到满意；并在决策过程中得到美国政府高层的意见，据此相信恢复其职务「不构成国家安全风险」。董事会主席仍为 Harvey C. Jones。公司感谢 Colette Kress 在担任临时 CEO 期间的工作，她将继续担任首席财务官。",
+      "publishedAt": "2026-11-23T21:55:00+08:00",
+      "sortAt": "2026-11-23T21:55:00+08:00",
+      "timeLabel": "2026-11-23 21:55",
+      "timePrecision": "datetime",
+      "timeNote": "GlobeNewswire 刊登官方新闻稿的时间为 November 23, 2026 08:55 ET，即 2026-11-23T13:55:41Z、北京时间 11 月 23 日 21:55；按该通讯社给出的精确时刻记录。NVIDIA 新闻室官方账号 @nvidianewsroom 发帖时间为 2026-11-23T13:58:03.000Z，即北京时间 21:58；@nvidia 转发时间为 2026-11-23T13:59:32.000Z，即北京时间 21:59。官方新闻室与投资者新闻稿正文只标注 November 23, 2026。公司向 SEC 提交的 8-K 写明：最早事项日期为 November 22, 2026，董事会于 2026 年 11 月 22 日恢复其职务，所附新闻稿日期为 November 23, 2026。",
+      "source": "NVIDIA",
+      "confidence": "A",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+      "links": [
+        {
+          "label": "NVIDIA 官方新闻室",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director"
+        },
+        {
+          "label": "NVIDIA 投资者新闻稿",
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Board-Reinstates-Jensen-Huang-as-President-CEO-and-Board-Director/"
+        },
+        {
+          "label": "GlobeNewswire 全文",
+          "url": "https://www.globenewswire.com/news-release/2026/11/23/3408381/0/en/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director.html"
+        },
+        {
+          "label": "官方 X 公布",
+          "url": "https://x.com/nvidianewsroom/status/2124865060397019480"
+        },
+        {
+          "label": "NVIDIA 官方账号转发",
+          "url": "https://x.com/nvidia/status/2124865437003317446"
+        },
+        {
+          "label": "SEC 8-K",
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000090/nvda-20261122.htm"
+        },
+        {
+          "label": "此前职务变动公告（2026-11-12）",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition"
+        }
+      ],
+      "detail": "## 它是什么\n\n这是 NVIDIA 董事会对最高管理层的一次正式恢复任命，不是新产品或新芯片发布。背景是：2026 年 11 月 12 日，NVIDIA 官方曾宣布黄仁勋已辞去总裁、首席执行官及董事职务并立即生效，由当时的执行副总裁兼首席财务官 Colette Kress 出任临时 CEO，Harvey C. Jones 出任公司首任董事会主席。11 月 23 日的新闻稿宣布上述安排被逆转：黄仁勋立即恢复原职，Jones 留任主席，Kress 继续担任 CFO。\n\n## 它做什么\n\n- 官方新闻稿写明：恢复职务立即生效；董事会一致表决。董事会主席 Harvey C. Jones 说，董事会认为黄仁勋是领导 NVIDIA 的合适人选，恢复其职务符合股东、员工、合作伙伴和客户的利益，并对他「完全有信心」。\n- 黄仁勋在新闻稿中说，他荣幸回到 NVIDIA，将以最大的谦卑和重新的承诺承担责任，并感谢董事会、Jones、Kress 及管理团队、员工、股东、行业领袖和全球合作伙伴的支持。\n- 关于仍在进行的调查，新闻稿回顾：此前已宣布，鉴于有报道称黄仁勋成为外国情报活动的目标，董事会成立了全部由独立董事组成的委员会展开调查，并聘请独立律师协助；董事会重申该调查将进行至结束，黄仁勋完全支持并承诺配合。新闻稿没有在此次恢复职务的说明里宣布调查结果。\n- 公司还写明：董事会近期另外成立了全部由独立董事组成的 National Security and Export Control Committee，以监督贸易合规与国家安全风险；该委员会正在聘用具备国家安全事务经验的律师，并由其再聘请相关顾问。NVIDIA 开始寻聘新的首席合规官（Chief Compliance Officer），该职位将监督全公司合规，并向提名与公司治理委员会汇报。NVIDIA 将继续配合正在进行的政府调查和问询。\n- SEC 8-K 与新闻稿在日期表述上需要分开看：8-K 的最早事项日期和正文写的是董事会于 2026 年 11 月 22 日作出恢复职务的决定；对外新闻稿日期为 2026 年 11 月 23 日，GlobeNewswire 的公开刊登时间为当天 08:55 ET。本报以公开新闻稿的精确时刻作为「发生时间」，并在此注明 8-K 中的董事会决定日期。\n\n## 适合谁\n\n关注 NVIDIA 治理、管理层变动，以及与国家安全、出口管制和正在进行的调查相关进展的投资者、合作伙伴和行业观察者。它不改变官方已经发布的产品路线说明，新闻稿也没有宣布新的芯片或软件产品。\n\n## 为什么值得看\n\n这是全球主要 AI 计算供应商在十余天前宣布最高层职务变动后，又一次以官方新闻稿和 8-K 确认恢复原职。官方同时写明：针对外国情报活动报道的独立董事调查仍将进行至结束，并新设国家安全与出口管制委员会、寻聘首席合规官。不能把「调查已经结束」或「政府已排除全部风险」写成官方结论；官方仅表示，基于美国政府高层的意见，董事会相信恢复其职务不构成国家安全风险。\n\n## 可以核对的事实\n\n- NVIDIA 官方新闻室 11 月 23 日宣布：董事会一致表决，立即恢复黄仁勋担任总裁、首席执行官及董事；Jones 留任主席；感谢 Kress 担任临时 CEO 并写明她继续担任 CFO：见 https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director（A）。\n- GlobeNewswire 刊登时间为 2026 年 11 月 23 日 08:55 ET（北京时间 21:55）：见 https://www.globenewswire.com/news-release/2026/11/23/3408381/0/en/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director.html（A）。\n- @nvidianewsroom 于 2026-11-23T13:58:03Z、@nvidia 于 2026-11-23T13:59:32Z 公布或转发该新闻稿：见上述官方 X 链接（A）。\n- 8-K 写明董事会于 2026 年 11 月 22 日恢复其职务，新闻稿作为 Exhibit 99.1，日期为 November 23, 2026；签署人为 Colette M. Kress，日期为 November 23, 2026：见 https://www.sec.gov/Archives/edgar/data/1045810/000104581026000090/nvda-20261122.htm（A）。\n- 官方同时写明：针对「黄仁勋成为外国情报活动目标」相关报道的独立董事调查将进行至结束；新设国家安全与出口管制委员会；开始寻聘首席合规官；将继续配合政府调查：见 11 月 23 日官方新闻稿（A）。\n- 2026 年 11 月 12 日官方曾宣布黄仁勋辞去总裁、CEO 及董事职务，Kress 任临时 CEO，Jones 任首任董事会主席：见 https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition（A，背景，非本窗口新公告）。\n"
+    },
+    {
+      "id": "virginia-oregon-spacex-grok-lawsuits-2026-11-23",
+      "title": "弗吉尼亚州与俄勒冈州检察长分别起诉 SpaceX / X / xAI：指控 Grok 相关产品未能阻止非自愿性图像和儿童性剥削内容，并存在不实安全宣传",
+      "badge": "N",
+      "summary": "弗吉尼亚州检察长 Jay Jones 与俄勒冈州检察长 Dan Rayfield 在 11 月 23 日分别宣布，已对 SpaceX 及其相关的 X、xAI / Grok 产品提起诉讼。官方新闻稿称，两州指控这些产品在被宣传为安全的同时，未能阻止 Grok 生成未经当事人同意的性化图像，包括儿童性剥削材料（CSAM）；并提及公司曾推广允许生成裸体及其他性化图像的「spicy mode」。这是诉讼和监管行动，不是产品发布。相关主张目前仍是起诉书中的指控。",
+      "publishedAt": "2026-11-23",
+      "sortAt": "2026-11-23T20:40:00+08:00",
+      "timeLabel": "2026-11-23",
+      "timePrecision": "date",
+      "timeNote": "弗吉尼亚州与俄勒冈州检察长官方新闻稿均只标注 November 23, 2026，未给钟点。CNBC 写明：俄勒冈州于周日晚间向 Multnomah County Circuit Court 提交起诉书，弗吉尼亚州于周一上午向 Richmond 巡回法院提交起诉书；该报道标注 Published Mon, Nov 23 2026 7:40 AM EST，即北京时间 11 月 23 日 20:40，Updated 11:45 AM EST。X/SpaceXSI 的 @Safety 账号于 2026-11-23T13:10:11.000Z（北京时间 21:10）发布回应声明。不把媒体报道时刻写成官方立案时刻。",
+      "source": "弗吉尼亚州 / 俄勒冈州检察长",
+      "confidence": "A",
+      "url": "https://www.oag.state.va.us/media-center/news-releases/jay-jones/3162-attorneys-general-jones-and-rayfield-file-suit-against-spacex-parent-company-of-x-xai-and-grok-over-creation-and-promotion-of-child-exploitation-and-non-consensual-images-on-platform",
+      "links": [
+        {
+          "label": "弗吉尼亚州检察长官方新闻稿",
+          "url": "https://www.oag.state.va.us/media-center/news-releases/jay-jones/3162-attorneys-general-jones-and-rayfield-file-suit-against-spacex-parent-company-of-x-xai-and-grok-over-creation-and-promotion-of-child-exploitation-and-non-consensual-images-on-platform"
+        },
+        {
+          "label": "俄勒冈州检察长官方新闻稿",
+          "url": "https://www.doj.state.or.us/media-home/news-media-releases/ag-rayfield-takes-legal-action-against-grok-for-failing-to-block-child-exploitation/"
+        },
+        {
+          "label": "CNBC 报道",
+          "url": "https://www.cnbc.com/2026/11/23/oregon-virginia-spacex-grok-deepfake-lawsuits.html"
+        },
+        {
+          "label": "@Safety 官方声明",
+          "url": "https://x.com/Safety/status/2124853016377397403"
+        }
+      ],
+      "detail": "## 它是什么\n\n由美国两个州的检察长分别提起、但相互协作的消费者保护诉讼。俄勒冈州新闻稿写明：X 和 Grok 是埃隆·马斯克的 SpaceX 公司的产品，其人工智能与社交媒体子公司被称为 xAI；该州诉讼与弗吉尼亚州检察长提起的另一起类似行动协同进行。CNBC 报道称，这是各州首次就 Grok 图像生成器的安全问题起诉 SpaceX。本报以两州官方新闻稿为准，不以「首次」作为已核对事实，除非官方稿件自己这样写。\n\n## 它做什么\n\n- 两州官方新闻稿称：起诉书指控 xAI 在明知视频和图像生成技术会被用于制作 CSAM、针对成人和儿童的非自愿私密图像（NCII）以及其他性化图像的情况下，仍将 Grok 营销为带有「rebellious streak」的 AI 伴侣；并称公司通过削弱行业标准防护、宣传 Grok 生成性化内容的能力，以及借助与 X 的整合使此类图像被广泛制作和传播，把增长和互动置于安全之上。新闻稿还写明，xAI 创建并推广了专门允许生成裸体及其他性化图像的「spicy mode」。\n- 俄勒冈州新闻稿转述 Center for Countering Digital Harm（CCDH）的一项研究估算：在 2025 年 12 月 29 日至 2026 年 1 月 8 日期间，Grok 在 X 上创建并发布了大约 300 万张性化图像，其中约 2.3 万张看起来描绘儿童。新闻稿据此写出大约每分钟 190 张性化图像、大约每 41 秒一张看似儿童的性化图像等换算，并称 CCDH 识别出的此类儿童相关图像中，近 30% 在一周或更久之后仍可在 X 的帖子中公开访问。这些数字来自起诉材料所引用的第三方研究，不是本报的独立统计，也不是法院已认定的事实。\n- 救济请求方面，CNBC 报道称两州寻求禁令、民事罚金、违法所得返还（disgorgement）和诉讼费用，弗吉尼亚州还寻求对消费者的 restitution。官方新闻稿强调，两州认为公司向消费者保证已有强防护，但实际上许多人仍暴露于有害内容，以及其自身图像被改成性暗示内容的风险。本报只概述官方已写明的指控方向，不把尚未判决的主张写成已确认违法。\n- 公司方面，@Safety 账号在北京时间 21:10 发布声明称：保护儿童不可商量；涉及未成年人的性内容，无论真实还是 AI 生成，都不应出现在 X 或 Grok 中，未经同意制作真人露骨图像同样不可接受。声明称，有人通过故意违反服务条款、积极绕过防护来尝试使用 Grok Imagine 生成此类材料；在今年早些时候部分恶意行为者找到误用方法后，公司已收紧防护，并称这些防护旨在拒绝任何生成未成年人或真人露骨图像的请求；公司会持续测试和调整防护，并对每个提示词和每张输出使用分类器筛查。声明还称，一旦有人试图突破防护生成此类内容，将采取包括处置账号和通知执法部门在内的措施，并继续与当局合作追查行为人。CNBC 写明，SpaceXSI 发言人向其发送的声明与该帖内容一致。这是公司单方说明，不能自动否定起诉书中的指控，反之亦然。\n\n## 适合谁\n\n关注生成式图像安全、平台责任和美国州级监管诉讼的政策观察者、产品安全从业者和开发者。普通用户应把它理解为正在进行的法律程序，而不是某项功能已经或即将被法院强制下线的最终决定。\n\n## 为什么值得看\n\n这是两个州的检察机关就 Grok / X 的图像生成安全与宣传问题同步采取法律行动，并有公司官方账号在同一晚间作出公开回应。必须把「起诉书主张」「第三方研究估算」和「公司声明」分开写，不能把任何一方的说法写成已判决事实。\n\n## 可以核对的事实\n\n- 弗吉尼亚州检察长官方新闻稿标注 November 23, 2026，宣布与俄勒冈州检察长分别对 SpaceX、X、xAI 和 Grok 提起诉讼：见上述弗吉尼亚州官方链接（A）。\n- 俄勒冈州检察长官方新闻稿同日宣布采取法律行动，并写明与弗吉尼亚州协同、起诉对象为 X 与 Grok 的运营方，以及「spicy mode」和所引用的 CCDH 研究估算：见上述俄勒冈州官方链接（A）。\n- CNBC 报道标注 Published Mon, Nov 23 2026 7:40 AM EST，并写明俄勒冈州于周日晚间、弗吉尼亚州于周一上午向州法院提交起诉书：见 https://www.cnbc.com/2026/11/23/oregon-virginia-spacex-grok-deepfake-lawsuits.html（B，程序性报道；指控内容以官方新闻稿为准）。\n- @Safety 于 2026-11-23T13:10:11Z（北京时间 21:10）发布回应声明：见 https://x.com/Safety/status/2124853016377397403（A，公司声明）。\n"
+    },
+    {
+      "id": "anthropic-claude-ship",
+      "title": "Anthropic 推出 Claude Ship（测试版）：可审查、修复 pull request，并按团队政策批准常规变更",
+      "badge": "N",
+      "summary": "Anthropic 在 11 月 23 日的官方文章中宣布推出 Claude Ship 测试版。官方称，它可以把 pull request 经过审查、修复，并根据团队自己写的政策决定哪些变更可以合并。Claude Ship 面向 GitHub 仓库，在 Claude Team 和 Enterprise 方案中提供。其中 Code Review 已正式可用，PR Steward 与 Claude Approvals 为测试版。",
+      "publishedAt": "2026-11-23",
+      "sortAt": "2026-11-23T12:00:00+08:00",
+      "timeLabel": "2026-11-23",
+      "timePrecision": "date",
+      "timeNote": "Anthropic 官方文章《Introducing Claude Ship》只标注 Date November 23, 2026，未给钟点。TechCrunch 报道时间为 2:05 PM PST · November 23, 2026，即北京时间 11 月 24 日 06:05。昨日早报与晚报检索了 anthropic.com/news，当时新闻页顶部日期未见对应新文章；该公告发布在 claude.com 文章页。本条为补录，不把媒体报道时刻写成官方发布时间。",
+      "source": "Anthropic",
+      "confidence": "A",
+      "url": "https://claude.com/resources/articles/introducing-claude-ship",
+      "links": [
+        {
+          "label": "Anthropic 官方文章",
+          "url": "https://claude.com/resources/articles/introducing-claude-ship"
+        },
+        {
+          "label": "Claude Ship 产品页",
+          "url": "https://claude.com/product/claude-ship"
+        },
+        {
+          "label": "TechCrunch 报道",
+          "url": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/"
+        }
+      ],
+      "detail": "## 它是什么\n\n一套面向「PR 提交之后」的代理工具，而不是新的基础模型。官方文章写明：许多团队希望每项变更都由人批准，这在每行代码都由人编写时还跟得上；但现在大量开发者已经与智能体一起写代码。Anthropic 称，在 Claude Code 团队内部，Claude 编写了他们的大部分代码，因此希望 PR 之后的流程也能同样快。Claude Ship 的目标，是在团队仍然控制运行范围和哪些变更必须由人决定的前提下，让代码的合并速度赶上编写速度。\n\n## 它做什么\n\n- 官方把 Claude Ship 写成三部分。Code Review 已正式可用：它从多个角度深入审查 pull request，汇集发现、对抗性地核验、分类，并发布到 PR 上；团队可为每个仓库选择 Quick、Standard 或 Deep 审查级别。官方写明：在 Claude Code 团队，Claude 的审查是更广流程中的一层，合并的 PR 数量从 6 月到 9 月增加了一倍以上，被回退的比例下降了 40% 以上。这是官方自述的内部变化，不是对所有客户的效果保证。\n- PR Steward 为测试版。官方写明：它被设计为保持 PR「变绿」，但不批准或合并 pull request；它会介入失败的 CI、合并冲突，以及来自 Code Review、其他审查工具或团队成员的反馈；每次推送后会评论改了什么、以及如何撤回。开发者可以用 `@claude` 加指令来引导，或用 `@claude stop` 让它停下。\n- Claude Approvals 亦为测试版。官方写明：它执行团队写在仓库里的审批政策，可在政策允许时自行批准常规变更，或在某些情形下要求更深入的人工签字；官方把它比作「更聪明的 CODEOWNERS」。它可以使用包括 Code Review 发现或团队自有分类器在内的多种信号，政策用自然语言书写。官方建议大多数客户先以只观察（observe-only）模式启用，在建立信心后再配置分支保护，要求 Claude Approvals 放行。\n- 使用方式有两种。开发者可在 Claude Code 中运行 `/ship`：官方称 Claude 会推送变更、打开 PR、审查并处理反馈和失败检查，至于能否合并取决于开发者权限和仓库分支规则；`/ship` 从当天起在 Claude Code 和桌面应用中逐步推出。管理员可以为整个仓库打开 Claude Ship，使其在团队的 pull request 上自动运行，而不必每次手动调用 `/ship`。管理员选择在哪些仓库启用 Code Review 和 PR Steward，选择审查级别、何时运行审查，并配置支出上限；当默认分支上存在政策文件时，Claude Approvals 才会启动，管理员也可以将其关闭。官方写明它可与现有分支保护和必选检查一起工作。\n- 资格与计费方面，官方写明：面向 Claude Team 和 Enterprise、且仓库在 GitHub 上。Code Review 与 PR Steward 按 token 计费，启用可能增加组织费用，管理员可为二者设置支出上限；Claude Approvals 没有基础费用，但政策中的分类器按其所用 token 计费，且若政策使用 Claude 的审查，即使处于观察模式也会触发一次计费的 Code Review。运行 `/ship` 计入常规 Claude Code 用量。官方还写明：对启用 Zero Data Retention、HIPAA 配置或客户管理加密密钥的组织，Claude Ship 不可用。\n- 官方文章另称：符合条件的 Claude Enterprise 组织可在领取后 30 天内使用至少 10,000 美元的 Claude Ship 积分；领取截止为 2027 年 1 月 15 日，具体以条款为准。\n\n## 适合谁\n\n使用 GitHub、并已订阅 Claude Team 或 Enterprise 的工程团队，以及希望先在自己的 PR 上试用 `/ship` 的开发者。需要零数据留存、HIPAA 配置或客户管理密钥的组织，官方已写明目前不可用。把它用于自动批准之前，官方建议先走观察模式，并由团队自己决定分支保护怎么设。\n\n## 为什么值得看\n\n这是 Anthropic 把「审查、修 CI、按仓库政策批准」收成一套面向 PR 的产品，其中自动批准是最值得注意、也最需要谨慎看待的部分。官方自己建议先观察再强制执行，并写明 PR Steward 被设计为不负责批准或合并。不能把「Claude 现在可以擅自合并你的代码」写成官方承诺。\n\n## 可以核对的事实\n\n- 官方文章《Introducing Claude Ship》标注 Date November 23, 2026，宣布 Claude Ship 测试版可用，包含已正式提供的 Code Review，以及测试版 PR Steward 与 Claude Approvals，面向 Claude Team 和 Enterprise 的 GitHub 仓库：见 https://claude.com/resources/articles/introducing-claude-ship（A）。\n- 官方写明：PR Steward 被设计为不批准或合并 PR；Claude Approvals 依据仓库中的政策文件工作，并建议大多数客户先以观察模式启用；`/ship` 从当天起在 Claude Code 和桌面应用中推出；对 Zero Data Retention、HIPAA 配置或客户管理加密密钥的组织不可用；符合条件的 Claude Enterprise 组织可在 2027 年 1 月 15 日前领取至少 10,000 美元、需在领取后 30 天内使用的积分（条款适用）：见同一官方文章（A）。\n- 产品页与官方文章陈述一致：https://claude.com/product/claude-ship（A）。\n- TechCrunch 于 2026 年 11 月 23 日下午 2:05（太平洋时间）报道了同一发布：https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/（B，报道时间；事实以官方文章为准）。\n"
+    }
+  ]
+}
