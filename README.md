@@ -16,8 +16,8 @@
 
 ## 今日版：2026-11-24
 
-- 核实时间：2026-11-24 14:00（北京时间）
-- 新增：2 条；补录：0 条；急报：2 条；过期：0 条
+- 核实时间：2026-11-24 20:30（北京时间）
+- 新增：4 条；补录：6 条；急报：2 条；过期：5 条
 - 历史版本见 [`archive/`](archive/)。
 
 <a name="urgent"></a>
@@ -64,12 +64,6 @@
 - 额度：一次性重置 Gemini 配额，恢复各档原有用量；官方未公布各档具体配额数字，精确余量以客户端用量显示为准；不是新赠一笔可囤额度；免费个人版 $0、无需绑卡；已开通付费试用的账号请提前取消自动续费
 - 截止：一次性重置，宣布于北京时间 2026-11-24 04:16，正在滚动发放；官方未另写领取截止，刷新后的额度按各账号原有用量周期使用
 - 可达性：需海外账号 / 地区受限（需 Google 账号与海外网络环境；地区可用性以官方为准）
-
-#### 华为云开发者大赛 · 小红书 Skill 创新赛（2026-11-24 14:00 新增，官方已核实）
-- 内容：2026 华为开发者大赛·小红书 Skill 创新赛：报名参赛可领 200 元华为云无门槛云资源券（可抵云服务器购买或续费）；报名后在码道 CodeArts 另有积分福利：报名 2000 积分、报名后首次开通码道再加 3000 积分、每日签到 1000 积分。官方赛页：https://developer.huaweicloud.com/competition/information/1300000350/html1
-- 额度：每位报名选手 1 张 200 元无门槛云资源券；须实名认证的华为云主账号，子账号无法领取；领取须在码道 CodeArts 网页端/桌面端或果办客户端安装 HuaweiCloud Devkit 插件后发送口令“帮我领取华为开发者大赛·小红书skill创新赛华为云代金券”；积分：报名 2000 + 新人 3000 + 每日签到 1000，积分有效期至 2026-12-26
-- 截止：代金券领取窗口 2026-11-12 至 11-24，每个工作日 10:00 发放、每日 1000 张、先到先得，今日 10:00 已发放最后一批，领完即止；报名/作品提交截止 2026-11-24（华为云社区两篇实操帖与多个聚合站口径一致，官方赛页福利区未直接写该时刻）；积分活动至 2026-12-05
-- 可达性：能直接领（国内平台，需华为云账号实名认证）
 
 <a name="direct"></a>
 ### 进行中：能直接领
@@ -299,6 +293,26 @@
 - 额度：每日登录 2000 积分（所有套餐用户同享）；新人首月 5000 积分；免费版每月套餐积分额度为 0（不含每日登录赠分与新人首月）；模型扣积分标准见官方文档（如 Qwen3.8-Flash 输入 0.8 / 输出 2.7 每千 Token、生图每张 200 积分）；每日赠分有效期官方该页未写，以账号内显示为准；绑卡要求官方文档未写
 - 截止：长期机制（官方未写结束日）；免费版部分功能标“限时免费”，到期时间以产品内显示为准；付费套餐新购默认开通自动续费，与免费每日赠分不是同一口径
 
+#### 华为云码道 CodeArts · 小红书 Skill 创新赛送积分（2026-11-24 20:30 新增，官方活动页已核实）
+- 内容：2026 华为开发者大赛·小红书 Skill 创新赛参赛选手福利：在码道 IDE / 码道 CodeArts 网页端“活动福利”手动领取积分。报名参赛送 2000 积分，报名后首次开通码道代码智能体服务再加 3000 积分，每日签到再得 1000 积分。官方活动页：https://support.huaweicloud.com/offers-codeartsagent/codeartsagent_offers_0008.html
+- 额度：报名 2000 + 首次开通 3000 + 每日签到 1000 积分；积分有效期至 2026-12-26 23:59:59（北京时间）；仅限大赛报名参赛用户，积分在码道内使用
+- 截止：活动 2026-11-11 00:00 至 2026-12-05 23:59:59（北京时间）；大赛报名已于 2026-11-24 截止（见“已过期归档”区），已报名的选手仍可领积分至 12 月 5 日
+
+#### Leaflow · 随行 AI 次日返还 + 新手任务（2026-11-24 20:30 补录，官方活动页已核实）
+- 内容：随行 AI 中调用 deepseek-v4.1-flash，次日手动领回 50% 至 90% 模型额度；注册 30 天内、USD 结算新用户完成三项任务另领约 2500 万 tokens + 1.00 USD 赠金；老用户可用同一邮箱登录找回旧平台剩余余额转为美元赠金。官方活动页：https://leaflow.net/zh/campaigns/
+- 额度：次日返还 50%（基础），每成功邀请 1 位好友永久 +10%，邀满 4 人达 90%；每日返还上限初始 1000 万 Token，可随昨日用量自动上调、最高 1 亿/日；返还额度领取后 24 小时有效；新手任务：创建云服务器得 1.00 USD、启用模型服务得 500 万 tokens、用 AI 部署网站得 2000 万 tokens，奖励 7 天有效；老用户旧余额赠金自领取日起 6 个自然月有效；仅限 deepseek-v4.1-flash 用量计入返还（固定版本 deepseek-v4.1-flash-1017 不算）
+- 截止：次日返还与好友邀请限时至 2026-12-02 00:00（北京时间）；新手引导长期开放（限注册 30 天内新用户）；云服务器试用券须领取后 2 小时内下单，到期未续费自动取消
+
+#### 阿里 Qoder（国际版）· HungerG 匿名模型限时免费（2026-11-24 20:30 补录，官方活动页已核实）
+- 内容：Qoder 国际版面向所有新老个人用户开放匿名模型 HungerG 限时免费体验，活动期间调用该模型不消耗 Credits，无需领取、选择该模型即可使用，免费账号及 Credits 余额为 0 的账号均可参与；思考强度调至“最大”同样按 0.0× 计费。官方活动页：https://docs.qoder.com/zh/events/hungerg-free
+- 额度：活动期内调用 HungerG 不消耗 Credits；单账号有较高的每日合理使用上限（付费用户上限更高、高峰时段排队优先级更高），达到当日上限后次日自动刷新，不支持消耗 Credits 继续调用；适用 Qoder 国际版个人用户（体验版、Pro 试用期、Lite、Pro、Pro+、Ultra），团队版与企业版不适用；仅 Qoder 与 Qoder IDE 支持，JetBrains 插件、CLI、QoderWake、Cloud Agents、移动端及网页版暂不支持；无需付费订阅，绑卡要求官方页未提
+- 截止：2026-11-23 24:00 至 2026-11-30 24:00（新加坡时间，UTC+8）；活动结束后按届时公示的计费系数计费
+
+#### 豆包 · AI 个人助理「小豆」邀请制公测（2026-11-24 20:30 新增，官方微博已核实）
+- 内容：豆包官方微博 2026-11-24 10:21 宣布：旗下 AI 个人助理产品「小豆」即日起正式开启邀请制公测，凭邀请码体验，并获赠一定量免费额度；邀请好友还有机会获得更多额度；未来小豆上的能力与体验将逐步在豆包 App 上线。产品页称小豆可在用户授权后连接抖音、飞书、日历、健康、地理位置等应用，用于主动提醒、推荐和跟进事务。官方微博原帖转载：https://www.sina.cn/news/detail/5368723595591761.html ；官方产品页：https://www.doubao.com/xiaodou/
+- 额度：官方未公布免费额度的具体数量、邀请码获取方式与公测截止日期，以官方后续说明与产品页为准；官方产品页本次未见“邀请”“免费”字样，邀请制与免费额度以官方微博原帖为准
+- 截止：公测 2026-11-24 起，结束日官方未公布
+
 <a name="overseas"></a>
 ### 进行中：需要海外账号 / 地区受限
 
@@ -397,12 +411,6 @@
 - 额度：免费，无硬字符上限、受合理使用政策约束；无 SLA 与延迟保证，请求可能被用于改进模型，机密内容勿用；年收入超 100 万美元的产品等部分商业场景有限制，商用前请核对定价与限速页；绑卡要求官方博客未提（写明无需信用卡、无候补名单）
 - 截止：免费至 2026-11-30（官方博客已核实；该限免自 2026 年 6 月起多次延期至此）
 - 限制：需海外账号；大陆可达性未知
-
-#### IteraCompute · Qwen3.8-27B 每月 30M Token 免费（2026-11-05 20:30 新增，官方站已核实）
-- 内容：注册并验证邮箱（或 Google 登录）后，经 IteraCompute API 或 OpenCode / Cline 内置入口调用 `qwen/qwen3.8-27b`；仅限该模型，其他模型另计费。同一免费额度也可用模型 ID `Auto` 调用，在 Qwen3.8-27B、DeepSeek V4.1 等开源模型间按空闲算力自动路由（官方免费页已核实）；官方写 Auto 不提供零数据保留保证，敏感内容勿用。官方免费页：https://iteracompute.com/free/
-- 额度：每月 30M Token（输入 + 输出含推理合计，按 UTC 自然月重置、不结转），128K 上下文、输出上限 8192 Token、160K TPM；无需绑卡、无需充值；超额直接返回 429、不自动扣费；共享算力，繁忙时可能排队、无 SLA。注意：运营商身份未公开（域名 2026 年 8 月注册），请勿用其调用敏感内容
-- 截止：免费推广至 2026-11-24 00:00（PT，北京时间 2026-11-24 16:00）
-- 限制：需海外账号；邮箱或 Google 注册，大陆可达性未知
 
 #### XCrawl · 新账号 1000 credits 试用（2026-11-05 20:30 新增，官方定价页已核实；Grok 20:20 档提供线索）
 - 内容：AI 向网页抓取 API（非模型推理：抓取/爬取/SERP，输出 JSON / Markdown / AI-ready 格式、MCP），新账号送 1000 credits 试用。官方定价页：https://www.xcrawl.com/buy/
@@ -566,12 +574,6 @@
 - 截止：每日免费次数每 24 小时重置；官方页未写活动结束日
 - 限制：需注册 fal 账号登录；需海外账号，大陆可达性未知
 
-#### fal · MiniMax H3 Image 免费生成两周（2026-11-11 20:30 新增，官方活动页已核实）
-- 内容：fal 上线 MiniMax H3 Image 免费生成两周：在 playground / Sandbox 文生图与改图免费，无需订阅、无需安装；免登录每 24 小时 3 张，登录免费账号 4 张，添加支付方式完成验证的账户 5 张；各档为同一窗口内总额、不叠加；24 小时窗口从首次免费生成起算；API 调用仍按原价计费。官方活动页：https://fal.ai/minimax-h3-image ；官方 X：https://x.com/fal/status/2120215900091752490
-- 额度：每 24 小时 3 / 4 / 5 张（按账号状态）；超出免费张数会扣费，请勿在未看清计费的情况下继续生成
-- 截止：免费至 2026-11-23（官方未注时刻与时区；按 UTC 日末约北京时间 11 月 24 日 08:00）
-- 限制：需海外账号；免登录即可在 playground 试用，大陆可达性以实际打开为准
-
 #### 百度 · ERNIE-5.5-Flash-Preview `:free`（OpenRouter）（2026-11-12 20:30 新增，OpenRouter 官方模型接口已核实）
 - 内容：OpenRouter 上线 `baidu/ernie-5.5-flash-preview:free`，输入、输出均 $0，100 万上下文。官方模型页：https://openrouter.ai/baidu/ernie-5.5-flash-preview:free
 - 额度：输入、输出定价均为 $0；OpenRouter 免费模型通用限流（免费档约 20 请求/分钟、每天 50 请求）；免费端点数据可能被用于训练（以模型页为准）；无需绑卡
@@ -660,12 +662,6 @@
 - 内容：编码模型 Particle-1（官方 FAQ 写基于 DeepSeek V4.1 Flash 后训练，面向终端工作流、代码库修改与数据工程），OpenRouter 有 `particle-ai/particle-1:free` 免费端点，输入、输出 $0，1,048,576 上下文；付费端点 $0.05 / $0.50 每百万 Token。官方模型页：https://openrouter.ai/particle-ai/particle-1:free
 - 额度：输入、输出定价均为 $0；OpenRouter 免费模型通用限流；无需绑卡
 - 截止：截止未知（官方模型接口 expiration_date 为空；官方模型页写 Released Oct 28, 2026）
-- 限制：需海外账号 / 网络，大陆可达性未知
-
-#### Vercel AI Gateway · Parallel Decisions Fast 免费至 11-23（2026-11-14 20:30 新增，官方 changelog 已核实）
-- 内容：11 月 13 日 Vercel 官方 changelog：Parallel Decisions Fast（`parallel/parallel-decisions-fast`）上架 AI Gateway 并免费至 2026-11-23；联网回答结构化问题（是非概率 / 选项 / 评分）并返回引用；无需单独 Parallel 账号；与已归档的 OpenRouter 渠道 7 天免费（已于 11-13 结束）是不同渠道、新截止。官方 changelog：https://vercel.com/changelog/parallel-decisions-now-available-on-ai-gateway-for-free
-- 额度：走 Decisions API / AI SDK，非聊天接口；免费期内用量上限官方未写；绑卡要求官方未写
-- 截止：2026-11-23（官方写 free through November 23, 2026，时区未写）
 - 限制：需海外账号 / 网络，大陆可达性未知
 
 #### World Labs · Atlas 世界模型全面开放，新账号 10,000 credits（2026-11-15 20:30 新增，多源交叉、官方未核实）
@@ -860,12 +856,6 @@
 - 截止：长期免费档（官方写 free forever）
 - 限制：需海外账号（欧盟托管）；大陆可达性未知
 
-#### NanoGPT · Clover 2 首周免费（2026-11-22 20:30 补录，官方模型页已核实）
-- 内容：Kitani 的 Clover 2（27.8B 基础模型 + 7 个 LoRA 专家按 token 路由，200K 上下文）在 NanoGPT 首周免费；Clover 2 Thinking 为同系列另页变体，本次未逐字复核是否同样免费。官方模型页：https://nano-gpt.com/models/text/kitani/clover-2
-- 额度：输入、输出定价均为 Free；无需绑卡（官方模型页未写绑卡要求）
-- 截止：首周免费至 2026-11-24 03:33 UTC（北京时间 2026-11-24 11:33）
-- 限制：需海外账号（NanoGPT）；大陆可达性未知
-
 #### Amazon Quick · 新账号 30 天 Plus 试用（2026-11-22 20:30 补录，官方文档已核实）
 - 内容：在 aws.com/quick 创建的新账号可获 30 天 Plus 试用；另有长期免费档。官方文档：https://docs.aws.amazon.com/quick/latest/userguide/standalone-plans.html ；定价页：https://aws.amazon.com/quick/pricing/
 - 额度：新账号 30 天 Plus at no cost（官方文档原文）；试用结束后可改用免费档或付费 Plus（定价页写 $25/user/month 月付、$20 年付）；个人 Plus 试用的绑卡要求官方文档未写清
@@ -902,13 +892,39 @@
 - 截止：加入窗口 2026-11-23 至 2026-11-30（官方未写具体时刻与时区，按自然日计）；额外搜索自加入起六个月，按搜索周期计至周期结束
 - 限制：需海外账号；面向 WooCommerce 商店站长，大陆可达性未知
 
+#### 腾讯云开发 · 微信小程序成长计划二期 · 10 亿 Token + 10 万张生图（2026-11-24 20:30 补录，官方文档已核实）
+- 内容：微信公众平台「小程序成长计划」二期：小程序开发者报名后免费获得 AI 资源包：10 亿 Token 生文额度 + 10 万张混元生图额度，另赠 6 个月云开发个人版环境（已有商业环境则加赠 120 元云开发代金券）。官方文档：https://docs.cloudbase.net/en/ai/ai-inspire-plan ；官方博客：https://tcb.cloud.tencent.com/blog/2026/11/04/growth-plan-new-models
+- 额度：10 亿 Token（支持 deepseek-v4.1-flash、deepseek-v4.1-flash-1017、hy4、hy4-flash、hy4-preview、hy3）+ 10 万张生图（hy-image-v3.5-preview 等）；自申请成功之日起 6 个月内有效；一期已参与用户自动补 9 亿 Token + 9 万张生图；免绑卡、无需预充值；额度仅限小程序前端与云开发服务端（云函数/云托管）内抵扣，严禁外部第三方工具直接调用，违规可能被暂停权限
+- 截止：二期报名至 2026-12-31；额度自申请成功日起 6 个月有效；生图模型 HY-Image-3.0 系列 2026-12-01 00:00 下线、hy4-preview 2026-12-07 00:00 下线，以官方文档为准
+- 限制：仅限小程序开发者（一个小程序账号限参与一次）；须在微信公众平台报名并绑定微信云开发环境；腾讯云环境需先转换为微信云开发环境
+
+#### Higgsfield · MCP 免费试用 3 天不限量用 Seedance 2.5（2026-11-24 20:30 补录，官方博客已核实）
+- 内容：新用户在 Claude 内连接 Higgsfield MCP，可获 3 天免费试用，试用期内不限量使用顶级视频、图像与音频模型，包括 Seedance 2.5（480p、最长 30 秒）；须开通 Unlimited 模式后生成才不扣 credits。官方博客：https://higgsfield.ai/blog/seedance-unlimited
+- 额度：3 天不限量（Seedance 2.5 限 480p、单条最长 30 秒）；免费账号本身不含 Seedance 2.5 与 credits；试用需绑卡，72 小时后自动续费为 Ultra 套餐（首月 4 折），请提前取消自动续费；试用仅限 MCP 内使用，网站、CLI、Canvas 等渠道仍按 credits 计费
+- 截止：3 天试用自开通起算；官方博客核对于 2026-11-21，未写试用领取截止日，以账号内显示为准
+- 限制：需海外账号；须在 Claude 内连接 Higgsfield MCP；大陆可达性未知
+
+#### OpenCode Go · HungerG Free 本周限时免费（2026-11-24 20:30 补录，官方订阅页已核实）
+- 内容：OpenCode Go 订阅用户本周可免费使用匿名模型 HungerG Free：包含模型表中相对请求额度、每 5 小时预估请求数、月度上限三项均标“∞”；免费模型本身有每日请求上限。官方订阅页：https://opencode.ai/console/go ；官方 X：https://x.com/opencode/status/2125062647846694979
+- 额度：HungerG Free 本周限时免费（Go 内使用）；Go 订阅 $10/月起（Go Plus $40/月），随时可取消、已付周期内继续有效；若开通订阅请提前取消自动续费
+- 截止：本周限时免费（官方页仅写“Limited time”，未公布具体结束日）
+- 限制：需已订阅 OpenCode Go（付费订阅）；需海外账号，大陆可达性未知
+
+#### Anthropic Claude Ship · Enterprise 组织至少 $10,000 促销积分（2026-11-24 20:30 补录，官方文章已核实）
+- 内容：Anthropic 2026-11-23 发布 Claude Ship（Code Review 正式可用，PR Steward 与 Claude Approvals 为 beta）：符合条件的 Claude Enterprise 组织可领取至少 $10,000 Claude Ship 积分。官方文章：https://claude.com/resources/articles/introducing-claude-ship ；文档：https://code.claude.com/docs/en/claude-ship
+- 额度：至少 $10,000 Claude Ship 积分；领取后 30 天内使用；仅限符合条件的 Enterprise 组织（Team 可使用产品，但领取句未覆盖 Team）；不适用于 Zero Data Retention、HIPAA 配置或客户托管加密密钥的组织；按 token 计费，管理员可设花费上限；详细资格以官方条款为准
+- 截止：须在 2027-01-15 前领取（官方未写时刻与时区）；领取后 30 天内用完
+- 限制：仅限符合条件的 Claude Enterprise 组织；需海外账号与 GitHub 仓库；中国大陆企业可用性未知
+
+#### OpenAI ChatGPT Business · 新工作区 2 倍包含用量（2026-11-24 20:30 补录，官方定价页与帮助中心已核实）
+- 内容：限时优惠：在 2026-11-23 至 11-30 期间新建 ChatGPT Business 工作区，Standard 与 Premium 席位的 Work 与 Codex 每周内含用量加倍，持续至 2026-12-31；Standard 的 5 小时限额仍适用；已有或重新激活的工作区即使加席位或续费仍保持原周用量。官方定价页横幅原文：“Create a new ChatGPT Business workspace by Nov 30 and get 2x included usage on your Standard and Premium seats through Dec 31.”官方定价页：https://chatgpt.com/pricing ；帮助中心：https://help.openai.com/en/articles/12003714-chatgpt-business-models-and-limits
+- 额度：Work 与 Codex 每周内含用量 ×2（不是免费额度金额，也不是 API Credits 倍增）；仅限 2026-11-23 至 11-30 期间新建的工作区；Standard 席位 $20/月（按年计费；按月 $25/月），Premium 席位 $100/月（按年计费；按月 $125/月）；订阅自动续费，请提前取消自动续费
+- 截止：新建工作区窗口 2026-11-23 至 2026-11-30；2 倍用量有效期至 2026-12-31（年份按定价页页脚 2015–2026 与核对日期推断，横幅原文未标注年份）
+- 限制：仅限新工作区与付费订阅；需海外账号 / 支付方式，大陆可达性未知
+
 <a name="expiring"></a>
 ### 即将到期：3–5 天内
 
-- fal · MiniMax H3 Image 免费生成至 11 月 23 日（官方未注时刻与时区；按 UTC 日末约北京时间 11 月 24 日 08:00）。
-- Vercel AI Gateway · Parallel Decisions Fast 免费至 11 月 23 日（官方写 free through November 23, 2026，时区未写）。
-- IteraCompute · Qwen3.8-27B 每月 30M Token 免费至 11 月 24 日 16:00（北京时间；2026-11-24 00:00 PT）。
-- NanoGPT · Clover 2 首周免费至 11 月 24 日 11:33（北京时间；官方模型页已核实）。
 - Perplexity Decider v1.3 / Decider Flash v1.3 `:free` 约至 11 月 19 日（2026-11-21 20:30 复核官方模型页仍标免费、仍可免费调用，估计未兑现，继续观察）。
 
 <a name="pending"></a>
@@ -946,9 +962,6 @@
 
 #### 云知声 U2-Flash · 1 亿 Token 免费档（声称 11-20 到期）
 - 原因：仅一家聚合站（einkCN 11-16 清单）称 U2-Flash 有 1 亿 Token 免费档、11 月 20 日到期，未在云知声官方页核对额度与截止；此前同模型“限免至 10-31”的说法同样未核实、已归档。未确认前不进正文。2026-11-20 20:30：多份第三方清单称今天到期，官方页仍未核到该日期原文。官方页：https://maas.unisound.com/
-
-#### 华为云码道 CodeArts · 小红书 Skill 创新赛送积分（报名 2000 + 新人 3000 + 每日签到 1000）
-- 原因：仅赛博鸡蛋单家聚合站说法，未在华为云官方页核对报名入口、参赛资格与截止；仅限小红书 Skill 创新赛参赛选手（聚合站称大赛报名截止 11 月 24 日、每日签到 11 月 11 日至 12 月 5 日、积分有效期至 12 月 26 日）。未确认前不进正文。官方页：https://support.huaweicloud.com/offers-codeartsagent/codeartsagent_offers_0004.html
 
 #### 智谱 AutoClaw · 新用户注册领 2 亿 Tokens（声称价值 120 元）
 - 原因：仅赛博鸡蛋单家聚合站说法，称新用户在官网首页领取后下载客户端使用、免绑卡；未在 AutoClaw 官网首页核对领取入口、有效期与领取次数上限；与已收录的每周福利 M11W3（登录领 100M）不是同一口径，不要混用。未确认前不进正文。官方页：https://autoclaw.zhipuai.cn/
@@ -1234,6 +1247,26 @@
 #### 智谱 ZCode · WEEKEND BUILD 周末卡（11 月 20–23 日轮次）
 - 内容：周末包 5 亿 GLM-5.3-Flash Token，仅限 ZCode 客户端内使用；与工作日每日 3 亿卡并行独立、不叠加。官方产品页：https://zcode.z.ai/cn
 - 截止：2026-11-20 19:00 起领、23:00 生效，至 2026-11-23 09:00（北京时间）清零已到期；2026-11-23 20:30 晚间汇总时移入归档；每日 3 亿卡照常，见“今日急报”区
+
+#### 华为云开发者大赛 · 小红书 Skill 创新赛 · 200 元云资源券
+- 内容：报名参赛领 200 元华为云无门槛云资源券（可抵云服务器购买或续费）；码道积分福利另见“进行中：能直接领”区。官方赛页：https://developer.huaweicloud.com/competition/information/1300000350/html1
+- 截止：代金券领取窗口 2026-11-12 至 11-24、报名/作品提交截止 2026-11-24 已到期；2026-11-24 20:30 晚间汇总时移入归档
+
+#### fal · MiniMax H3 Image 免费生成两周
+- 内容：fal 上线 MiniMax H3 Image 免费生成两周：playground / Sandbox 文生图与改图免费，免登录每 24 小时 3 张、登录免费账号 4 张、验证支付方式的账户 5 张。官方活动页：https://fal.ai/minimax-h3-image
+- 截止：免费至 2026-11-23（按 UTC 日末约北京时间 11 月 24 日 08:00）已到期；2026-11-24 20:30 晚间汇总时移入归档
+
+#### Vercel AI Gateway · Parallel Decisions Fast 免费至 11-23
+- 内容：Parallel Decisions Fast（`parallel/parallel-decisions-fast`）上架 AI Gateway 并免费至 2026-11-23。官方 changelog：https://vercel.com/changelog/parallel-decisions-now-available-on-ai-gateway-for-free
+- 截止：2026-11-23 已到期；2026-11-24 20:30 晚间汇总时移入归档
+
+#### IteraCompute · Qwen3.8-27B 每月 30M Token 免费
+- 内容：注册验证邮箱后经 API 或 OpenCode / Cline 内置入口调用 `qwen/qwen3.8-27b`，每月 30M Token；同一额度也可用模型 ID `Auto` 在多模型间自动路由。官方免费页：https://iteracompute.com/free/
+- 截止：免费推广至 2026-11-24 00:00（PT，北京时间 2026-11-24 16:00）已到期；2026-11-24 20:30 晚间汇总时移入归档
+
+#### NanoGPT · Clover 2 首周免费
+- 内容：Kitani 的 Clover 2（27.8B 基础模型 + 7 个 LoRA 专家按 token 路由，200K 上下文）在 NanoGPT 首周免费，输入、输出定价均为 Free。官方模型页：https://nano-gpt.com/models/text/kitani/clover-2
+- 截止：首周免费至 2026-11-24 11:33（北京时间）已到期；2026-11-24 20:30 晚间汇总时移入归档
 
 <a name="notes"></a>
 ## 说明
