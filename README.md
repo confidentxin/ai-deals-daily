@@ -16,8 +16,8 @@
 
 ## 今日版：2026-11-25
 
-- 核实时间：2026-11-25 14:00（北京时间）
-- 新增：1 条；补录：0 条；急报：1 条；过期：0 条
+- 核实时间：2026-11-25 20:30（北京时间）
+- 新增：0 条；补录：6 条；急报：0 条；过期：1 条
 - 历史版本见 [`archive/`](archive/)。
 
 <a name="urgent"></a>
@@ -64,12 +64,6 @@
 - 额度：一次性重置 Gemini 配额，恢复各档原有用量；官方未公布各档具体配额数字，精确余量以客户端用量显示为准；不是新赠一笔可囤额度；免费个人版 $0、无需绑卡；已开通付费试用的账号请提前取消自动续费
 - 截止：一次性重置，宣布于北京时间 2026-11-24 04:16，正在滚动发放；官方未另写领取截止，刷新后的额度按各账号原有用量周期使用
 - 可达性：需海外账号 / 地区受限（需 Google 账号与海外网络环境；地区可用性以官方为准）
-
-#### fal · Seedance 2.5 免费视频延长至今日 15:59（2026-11-25 14:00 新增，官方已核实）
-- 内容：fal 官方产品页确认 Seedance 2.5 免费活动延长：近 7 天内新注册的 fal 账号可在 Seedance 2.5 playground、fal sandbox 与 fal Agent 免费生成视频（文生视频、图生视频、参考图生视频，最多 5 张参考图）；此前 2026-11-23 20:30 复核时官方页已无免费文案，本轮直读官方页确认活动仍在、截止已顺延。官方产品页：https://fal.ai/seedance-2.5
-- 额度：整个活动每人 5 条，每条 10 秒 480p，不补发；须登录近 7 天内新注册的 fal 账号；官方页未写绑卡要求；活动结束后按视频 Token 计费（$0.0214 / 1,000 tokens），无需订阅；API 调用始终计费，不享受免费额度
-- 截止：2026-11-21 09:00 PST 起，至 2026-11-24 23:59 PST（北京时间 2026-11-25 15:59）
-- 可达性：需海外账号 / 地区受限（需注册 fal 账号；大陆可达性未知）
 
 <a name="direct"></a>
 ### 进行中：能直接领
@@ -200,7 +194,7 @@
 - 截止：长期免费档口径，官方页未写截止日
 
 #### 小红书 Dots Studio · dots3-note-prev API 当前免费（2026-11-09 20:30 补录，多源交叉、官方未核实）
-- 内容：小红书 Dots Studio 开放平台的 `dots3-note-prev`（约 280B 总参 / 16B 激活 MoE，512K 上下文，兼容 OpenAI 与 Anthropic 协议）当前免费体验，标价 Input $0.14 / Output $0.28 每百万 Token 先挂着、暂不收费；多个第三方一致转述官方定价页原话“免费体验：当前免费体验，暂不收费，恢复收费前将通过官网及 API 页面提前告知”；本次官方平台页抓取超时未能直读，OpenRouter 上 `dots-studio/dots-3-note-preview:free` 标价 $0 可作佐证。官方平台：https://dots.ai/platform ；2026-11-21 20:30 复核：OpenRouter 官方模型接口已无 `dots-studio/dots-3-note-preview:free`（亦无付费版），上述 OpenRouter 佐证不再成立；Dots Studio 平台自身免费状态以官方平台页为准
+- 内容：小红书 Dots Studio 开放平台的 `dots3-note-prev`（约 280B 总参 / 16B 激活 MoE，512K 上下文，兼容 OpenAI 与 Anthropic 协议）当前免费体验，标价 Input $0.14 / Output $0.28 每百万 Token 先挂着、暂不收费；多个第三方一致转述官方定价页原话“免费体验：当前免费体验，暂不收费，恢复收费前将通过官网及 API 页面提前告知”；本次官方平台页抓取超时未能直读，OpenRouter 上 `dots-studio/dots-3-note-preview:free` 标价 $0 可作佐证。官方平台：https://dots.ai/platform ；2026-11-21 20:30 复核：OpenRouter 官方模型接口已无 `dots-studio/dots-3-note-preview:free`（亦无付费版），上述 OpenRouter 佐证不再成立；Dots Studio 平台自身免费状态以官方平台页为准；2026-11-25 20:30 再次复核：OpenRouter 官方模型接口仍无该 `:free` 变体
 - 额度：当前调用 $0；限流据第三方报道为 60 RPM / 150 万 TPM（单 Key），官方页未能直读复核；需邮箱注册登录开放平台后取 Key；绑卡要求据第三方转述为无需绑卡，未核实
 - 截止：无固定截止日（官方口径：恢复收费前提前告知）
 
@@ -214,10 +208,10 @@
 - 额度：官方活动页写 2500 万 Tokens 免费领取；分项额度、适用模型、是否须实名以活动页与控制台公示为准
 - 截止：活动至 2026-11-30 23:59:59（北京时间）；免费 Token 领取是否与付费档同一截止，规则正文未单列，以活动页为准
 
-#### MOSS API · Nex-N2.6 限时免费（2026-11-13 20:30 新增，多源交叉、官方未核实）
-- 内容：基于 GLM-5.3-Flash 后训练的多模态智能体模型 Nex-N2.6（模型 ID `nex-n2.6`，固定版本 `nex-n2.6-2026-11-05`）在 MOSS API 限时免费调用，每次请求消耗 0 Credits；兼容 OpenAI Chat Completions / Responses 与 Anthropic Messages；权重已在 GitHub / Hugging Face 公开。聚合站、个人博客与 LINUX DO 三类渠道口径一致（0 Credits、未公布截止），官方模型文档本次未直读到原文，细则以官方页为准。官方平台：https://platform.moss.cn/
-- 额度：每次请求 0 Credits；持有有效 MOSS API Key 即可调用；每日次数 / Token 上限、是否需实名、绑卡要求各来源均未提及
-- 截止：截止未知（多源均称限时、未公布结束日期）
+#### MOSS API · Nex-N2.6 限时免费（2026-11-13 20:30 新增，多源交叉、官方未核实；2026-11-25 20:30 更新：官方已核实，限时免费至今日 21:00，之后开始计费、限时六折）
+- 内容：基于 GLM-5.3-Flash 后训练的多模态智能体模型 Nex-N2.6（模型 ID `nex-n2.6`，固定版本 `nex-n2.6-2026-11-05`）在 MOSS API 限时免费调用，每次请求消耗 0 Credits；兼容 OpenAI Chat Completions / Responses 与 Anthropic Messages；权重已在 GitHub / Hugging Face 公开。聚合站、个人博客与 LINUX DO 三类渠道口径一致（0 Credits、未公布截止），官方模型文档本次未直读到原文，细则以官方页为准。官方平台：https://platform.moss.cn/ ；2026-11-25 20:30 更新：Grok 13:50 档直读官方开放平台用量页顶部公告横幅，确认限时免费将于今日 21:00 结束并开始计费；本档复核官方定价页，已展示六折划线价（输入未命中缓存 ¥0.80→¥0.48、缓存命中 ¥0.23→¥0.138、输出 ¥2.80→¥1.68 每百万 Tokens），与横幅口径一致
+- 额度：21:00 前每次请求 0 Credits；持有有效 MOSS API Key 即可调用；每日次数 / Token 上限、是否需实名、绑卡要求各来源均未提及；21:00 起按官方定价页六折计费
+- 截止：限时免费至 2026-11-25 21:00（北京时间）；21:00 起开始计费，六折优惠本身截止未知
 
 #### 讯飞开放平台 · SparkAudio 1.0 语音基座 API 认证免费包（2026-11-14 20:30 新增，多源交叉、官方未核实）
 - 内容：11 月 12 日上线的语音基座大模型 SparkAudio 1.0（文本 / 语音输入、文本输出，99 种语言、202 种方言；转写、翻译、方言识别、说话人分离、情感分析、音频问答），WebSocket 接口；官方 API 文档已核实接口与免费额度入口（“去产品页面获取免费额度”），200 万 Tokens 的具体数字本次未在官方服务页直接读到（页面动态渲染），以下数字为官方价目区原文的多方一致转述，以产品页与控制台实际显示为准。官方服务页：https://www.xfyun.cn/services/Spark_Audio_1.0 ；官方文档：https://www.xfyun.cn/doc/spark/spark_audio.html
@@ -928,9 +922,63 @@
 - 截止：新建工作区窗口 2026-11-23 至 2026-11-30；2 倍用量有效期至 2026-12-31（年份按定价页页脚 2015–2026 与核对日期推断，横幅原文未标注年份）
 - 限制：仅限新工作区与付费订阅；需海外账号 / 支付方式，大陆可达性未知
 
+#### Meta Muse Ember Hackathon · 入选者 $10 Meta Model API 额度（2026-11-25 20:30 补录，官方活动页已核实）
+- 内容：Meta 与 Cerebral Valley 合办的 Muse Ember 黑客松：虚拟、个人参赛、免费报名，入选者获 $10 Meta Model API 额度，在 10 天构建窗口内用 Muse Ember（Muse 系列最小模型，面向低成本编码、工具调用与文档摘要）做一个能跑的项目，另有 $5,000 奖金池。官方活动页：https://cerebralvalley.ai/e/muse-ember-hackathon
+- 额度：入选者 $10 Meta Model API 额度（即全部预算，须在额度内完成）；最多 1,000 名入选者，滚动审核、额满可提前关闭申请；申请前须同意 Event Waiver；无需购买
+- 截止：申请截止 2026-11-30 12:00 ET（北京时间 2026-12-01 01:00；活动豁免页曾写 11 月 25 日，以活动页当前展示为准）；构建窗口 2026-11-23 至 2026-12-02 21:00 ET（北京时间 12 月 3 日 10:00）；作品提交截止同日 21:00 ET
+- 限制：仅限美国开发者、满 18 岁、个人参赛；中国大陆用户不可按该条款参加
+
+#### Anthropic Claude Duet · 推广额度每周 $500、总额最高 $3,000（2026-11-25 20:30 补录，官方帮助中心已核实）
+- 内容：2026-11-23 至 12-31，符合条件的美国 Claude Duet 用户每周获 $500 推广额度、总额最高 $3,000，用于 Duet 内的后台智能体工作；无需申领、分批发放，在设置 → Usage 查看余额。官方帮助中心：https://support.claude.com/en/articles/18518702-claude-duet-promotional-credit
+- 额度：每周 $500、总额最高 $3,000；最后一周额度至 2026-12-31 23:59 PT 有效；覆盖 Duet 内多数工作（按标准 API 费率），不含 Cowork、Duet 发起的 Claude Code 会话、Fast mode、Fable 模型与需 usage credits 的长上下文；不可转让、无现金价值
+- 截止：2026-11-23 至 2026-12-31 23:59 PT（北京时间 2027-01-01 15:59）；名单已于 11 月 23 日 00:00 PT 前关闭，之后开通 Duet 或新增席位不在名单内
+- 限制：仅限美国账单国家、11 月 23 日前已有 Duet 与付费套餐（Pro / Max / Ultra / Team，Enterprise 不含）的用户；中国大陆不在适用地区
+
+#### OpenAI ChatGPT Business · 可留存重置 + Fast mode 限时不加价（2026-11-25 20:30 补录，多源交叉、官方未核实）
+- 内容：OpenAI Codex 负责人 Tibo 于北京时间 2026-11-25 02:43 在 X 宣布：ChatGPT Business 团队获一次可留存的用量重置（banked reset）与 Fast mode 至 12 月 31 日不加价；重置可留着以后用，在设置 → Usage 领取；多家重置追踪站同口径转述原帖。来源：https://resets.pro/en/codex-reset?tab=history
+- 额度：一次完整重置（恢复 5 小时与每周用量窗口），可留存、按账号内显示的有效期使用；Fast mode 至 12 月 31 日不加价（平时 Fast mode 按标准费率 2.5 倍计费）
+- 截止：Fast mode 不加价至 2026-12-31；banked reset 有效期以账号内显示为准（用户实测有 12 月 2 日与 12 月 13 日到期两种）
+- 限制：仅限 ChatGPT Business 团队（付费订阅）；需海外账号，大陆可达性未知
+
+#### NVIDIA Nemotron 3.5 Lightning `:free`（OpenRouter）（2026-11-25 20:30 补录，官方模型接口已核实）
+- 内容：OpenRouter 上线 `nvidia/nemotron-3.5-lightning:free`（30B 总参 / 每 token 激活 3B，1M 上下文，支持工具调用与结构化输出），输入、输出均 $0；与已收录的 Vercel AI Gateway 渠道与 OpenCode Zen 渠道是不同入口，不要混用。官方模型页：https://openrouter.ai/nvidia/nemotron-3.5-lightning:free
+- 额度：输入、输出定价均为 $0；OpenRouter 免费模型通用限流（免费档约 20 请求/分钟、每天 50 请求）；无需绑卡
+- 截止：截止未知（官方模型接口 expiration_date 为空；2026-11-25 20:30 官方模型接口核实 $0）
+- 限制：需海外账号（OpenRouter）；大陆直连可达性未知
+
+#### NVIDIA Nemotron 3.5 Super VL `:free`（OpenRouter）（2026-11-25 20:30 补录，官方模型接口已核实）
+- 内容：OpenRouter 上线 `nvidia/nemotron-3.5-super-vl:free`（视觉语言模型），输入、输出均 $0；与已收录的 OpenCode Zen 渠道是不同入口，不要混用。官方模型页：https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free
+- 额度：输入、输出定价均为 $0；OpenRouter 免费模型通用限流（免费档约 20 请求/分钟、每天 50 请求）；无需绑卡
+- 截止：截止未知（官方模型接口 expiration_date 为空；2026-11-25 20:30 官方模型接口核实 $0）
+- 限制：需海外账号（OpenRouter）；大陆直连可达性未知
+
+#### Google Lyria 3 Pro / Clip Preview 零价（OpenRouter）（2026-11-25 20:30 补录，官方模型接口已核实）
+- 内容：OpenRouter 上 `google/lyria-3-pro-preview` 与 `google/lyria-3-clip-preview`（Lyria 3 音乐生成模型）输入、输出均 $0；不带 `:free` 后缀的零价条目。官方模型页：https://openrouter.ai/google/lyria-3-pro-preview ；https://openrouter.ai/google/lyria-3-clip-preview
+- 额度：输入、输出定价均为 $0；OpenRouter 免费模型通用限流（免费档约 20 请求/分钟、每天 50 请求）；无需绑卡
+- 截止：截止未知（官方模型接口 expiration_date 为空；2026-11-25 20:30 官方模型接口核实 $0）
+- 限制：需海外账号（OpenRouter）；大陆直连可达性未知；音乐生成模型，非聊天模型
+
 <a name="expiring"></a>
 ### 即将到期：3–5 天内
 
+- MOSS API · Nex-N2.6 限时免费至今日 21:00，之后开始计费（限时六折）。
+- 蚂蚁百灵 Ling-3.2-flash 上线前两周限时免费至 11 月 28 日 10:00。
+- 智谱 AutoClaw 国内版 · 每周福利 M11W4 至 11 月 29 日 23:59。
+- 智谱 AutoClaw 国际版 · Weekly Perk M11W4 至 11 月 29 日 23:59。
+- Kane CLI / TestMu AI 黑客松作品提交截止至 11 月 27 日 02:29。
+- 七牛云 Conatus Free 至 11 月 30 日 23:59。
+- 火山引擎 · 11.11 AI 智选至 11 月 30 日 23:59:59。
+- 腾讯混元 Hy4 flash · WorkBuddy 限时免费至 11 月 30 日前。
+- HeyGen Voice Turbo Free 至 11 月 30 日。
+- Fish Audio · S2.1 Pro Free 至 11 月 30 日。
+- Fireworks · Muse Glimmer 30B 训练限免至 11 月 30 日。
+- Perch AI · DeepSeek V4.1 Flash 1017 奖励 PT 至 11 月 30 日。
+- Queryra · Black Friday Club 加入窗口至 11 月 30 日。
+- OpenAI ChatGPT Business · 新工作区 2 倍包含用量新建窗口至 11 月 30 日。
+- Devin · SWE-2 自助套餐限免至 11 月 30 日。
+- Google Antigravity · 免费档 Claude / GPT-OSS 模型 11 月 30 日移除。
+- Nous Portal · 腾讯 Hy4 flash 免费路由约至 11 月 30 日。
+- Caffeine · HALLOWEEN26 兑换码有效期至 11 月 30 日。
 - Perplexity Decider v1.3 / Decider Flash v1.3 `:free` 约至 11 月 19 日（2026-11-21 20:30 复核官方模型页仍标免费、仍可免费调用，估计未兑现，继续观察）。
 
 <a name="pending"></a>
@@ -986,6 +1034,12 @@
 
 #### 中国电信 TeleAgent · 免费体验版与积分福利社（声称注册送云电脑与登录积分）
 - 原因：官方定价页已核实有免费体验版（¥0/月）：参加“积分福利社”可得免费积分、同时运行 3 个任务、长期记忆、安全沙箱、定时任务等；但官方定价页未写具体赠送积分数量、首登与每月登录积分的发放规则；第三方所称“手机号注册送 Windows 云电脑、首登 / 每月登录积分”未在官方页核到。未确认具体额度与领取方式前不进正文。官方页：https://ta.teleai.com.cn/pricing
+
+#### 荣耀 HONOR Magic8 Pro · 购机赠 3 个月 Google AI Pro（声称 11 月 25 日截止）
+- 原因：两份官方口径冲突：HONOR 官网脚注称购机赠 3 个月 Google AI Pro、“Offer ends November 25, 2026”，试用结束后按 $19.99/月自动扣费，请提前取消自动续费；但 Google One 官方条款仍写须在 2026-12-26 前兑换、购机窗口为 2025-11-25 至 2026-12-26。且须购买指定机型、绑定付款方式，属购机捆绑而非免费领取；Google One 适用地区名单含香港、澳门、台湾，未见中国大陆。未确认前不进正文。官方页：https://www.honor.com/global/phones/honor-magic8-pro/ ；https://one.google.com/offer/terms-and-conditions/honor-aip-3month-trial-2025
+
+#### 阿里云百炼 · 双十一新客免费额度（声称单模型 100 万 Token、合计 7000 万+）
+- 原因：仅一篇阿里云开发者社区营销文章称新客单模型 100 万 Token（输入+输出各 100 万）、合计 7000 万+、90 天有效、限华北 2（北京）地域，未在百炼官方定价页核到原文；Token Plan 首月 5 折、夜间 4 折等为付费折扣，不报。未确认前不进正文。来源：https://developer.aliyun.com/article/1788836
 
 <a name="archived"></a>
 ### 已过期归档
@@ -1273,6 +1327,10 @@
 #### NanoGPT · Clover 2 首周免费
 - 内容：Kitani 的 Clover 2（27.8B 基础模型 + 7 个 LoRA 专家按 token 路由，200K 上下文）在 NanoGPT 首周免费，输入、输出定价均为 Free。官方模型页：https://nano-gpt.com/models/text/kitani/clover-2
 - 截止：首周免费至 2026-11-24 11:33（北京时间）已到期；2026-11-24 20:30 晚间汇总时移入归档
+
+#### fal · Seedance 2.5 免费视频（延长版）
+- 内容：近 7 天内新注册的 fal 账号可在 Seedance 2.5 playground、fal sandbox 与 fal Agent 免费生成视频（文生视频、图生视频、参考图生视频，最多 5 张参考图），整个活动每人 5 条、每条 10 秒 480p；原周末活动到期后官方产品页确认延长。官方产品页：https://fal.ai/seedance-2.5
+- 截止：2026-11-21 09:00 PST 起，至 2026-11-24 23:59 PST（北京时间 2026-11-25 15:59）已到期；2026-11-25 20:30 晚间汇总时移入归档
 
 <a name="notes"></a>
 ## 说明
