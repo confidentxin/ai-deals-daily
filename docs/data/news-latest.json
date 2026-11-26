@@ -1,11 +1,326 @@
 {
-  "asOf": "2026-11-25",
+  "asOf": "2026-11-26",
   "timezone": "Asia/Shanghai",
   "preview": 10,
   "empty": false,
   "emptyMessage": "今日暂无重要资讯，晚间 19:30 起每日更新",
-  "note": "2026-11-25 晚报（北京时间）整理：新录入 5 条（Anthropic 在 Claude 桌面端公测把 Artifact 安装成 Mac / Windows 应用；Midjourney 发布 Niji 8；Anthropic 公测 Skills over MCP 并将 Tasks 与 Elicitation 转为正式可用；Tidal 宣布自 12 月 9 日起拒绝并下架完全由 AI 生成的曲目；补录腾讯混元开源第三代翻译模型 Hy-MT3），并保留今天早报 5 条。按公告时间从新到旧排列。带精确钟点的条目 timeLabel 用北京时间；官方只给日期的条目 timePrecision 为 date，timeLabel 只写日期，sortAt 仅用于排序，详见各条 timeNote。置信度 A 表示来自官方原文，B 表示可靠媒体报道、官方未单独核实。",
+  "note": "2026-11-26 晚报（北京时间）整理：新录入 5 条（《金融时报》报道 NVIDIA 要求停止向马来西亚、新加坡、泰国和印度尼西亚发运含其芯片的服务器；NVIDIA 为 Nemotron 3.5 Parse 开源训练数据与微调方案并介绍 DFlash2；OpenAI 纠正 GPT-6.2 计量错误并发放一次预存重置；补录 Gemini Live Guided Vision 已在 iOS 可用；补录 Apple 将 MiniMax 的 Talkie 从全球 App Store 下架），并保留今天早报 8 条。按公告时间从新到旧排列。带精确钟点的条目 timeLabel 用北京时间；官方只给日期的条目 timePrecision 为 date，timeLabel 只写日期，sortAt 仅用于排序，详见各条 timeNote。置信度 A 表示来自官方原文，B 表示可靠媒体报道、官方未单独核实。",
   "items": [
+    {
+      "id": "nvidia-sea-server-halt-2026-11-26",
+      "title": "《金融时报》报道：NVIDIA 要求制造合作伙伴停止向马来西亚、新加坡、泰国和印度尼西亚发运含其芯片的服务器",
+      "badge": "N",
+      "summary": "《金融时报》周四报道称，NVIDIA 已要求制造合作伙伴停止向马来西亚、新加坡、泰国和印度尼西亚发运含其芯片的服务器。报道将此事与上周生效、要求向若干东南亚国家运送先进芯片须获许可的美国出口管制联系起来，并写到尚不清楚这一暂停是否只是暂时的。NVIDIA 尚未公开证实；路透社称其无法立即核实。",
+      "publishedAt": "2026-11-26T14:41:00+08:00",
+      "sortAt": "2026-11-26T14:41:00+08:00",
+      "timeLabel": "2026-11-26",
+      "timePrecision": "date",
+      "timeNote": "NVIDIA 未发布带精确时刻的官方声明。《金融时报》于周四报道；路透社转述稿在公开转载页标注 Published Nov 26, 2026, 01:41 AM，CNA 配图文件名含 2026-11-26T064150Z（约合北京时间 14:41）。本报只写日期，sortAt 仅用于排序，不代表官方发布时间。",
+      "source": "NVIDIA",
+      "confidence": "B",
+      "url": "https://www.ft.com/content/7838a715-07d4-4605-aa60-21f5af2b2370",
+      "links": [
+        {
+          "label": "《金融时报》原文",
+          "url": "https://www.ft.com/content/7838a715-07d4-4605-aa60-21f5af2b2370"
+        },
+        {
+          "label": "路透社转述（Investing.com 转载）",
+          "url": "https://www.investing.com/news/stock-market-news/nvidia-halts-server-shipments-to-four-southeast-asian-countries-ft-reports-5052112"
+        },
+        {
+          "label": "CNA 刊出的《金融时报》稿",
+          "url": "https://www.channelnewsasia.com/asia/nvidia-halts-chip-shipments-southeast-asia-6584351"
+        },
+        {
+          "label": "CNA 对路透社转述的说明",
+          "url": "https://www.channelnewsasia.com/business/nvidia-halts-chip-shipments-southeast-asia-ft-reports-6584251"
+        }
+      ],
+      "detail": "## 它是什么\n\n这是对 NVIDIA 供应链发货安排的媒体报道，不是 NVIDIA 的新产品或新模型发布，也不是美国商务部当天新公布的规则文本。本报以《金融时报》及路透社、CNA 的转述为准，不把未经官方确认的细节写成已核实事实。\n\n## 它做什么\n\n- 路透社转述《金融时报》称：NVIDIA 已告知制造合作伙伴，停止向马来西亚、新加坡、泰国和印度尼西亚发运含其芯片的服务器。\n- 同一转述写到：这是在上周生效的美国新限制之后出现的，这些限制要求向若干东南亚国家运送先进芯片须获得出口许可；华盛顿此举被描述为切断中国公司被指用来获取先进 AI 芯片的路径。\n- 《金融时报》稿（经 CNA 刊出）写到：Dell、Supermicro 等把 NVIDIA 芯片组装成服务器的制造合作伙伴，已告知这四国的买家，NVIDIA 不会允许相关订单发货；消息来自三名知情人士。\n- 上述报道写到：尚不清楚暂停是否只是暂时的，因为 NVIDIA 及其合作伙伴仍在了解如何遵守美国新的出口管制。CNA 刊出的稿件还写到，美国商务部为云服务商设定了 90 天期限，须取得许可并证明最终用户不包括受限制实体。\n- 关于官方回应：CNA 刊出的《金融时报》稿写明 NVIDIA 拒绝置评，Dell、Supermicro 未回应置评请求；路透社则称无法立即核实该报道，且 NVIDIA、Dell、Supermicro 在常规工作时间之外未立即回应置评请求。两处表述不完全相同，本报并列列出，不以其中一处替代另一处。\n\n## 适合谁\n\n关注 AI 算力供应链、东南亚数据中心，以及美国出口管制如何影响芯片与服务器交付的读者。它不提供新的可购买产品或官方办理入口。\n\n## 为什么值得看\n\n这是本晚报窗口内，关于全球主要 AI 芯片供应商在东南亚发货安排的重大媒体报道，直接关系到先进芯片和服务器能否运往四国。因为 NVIDIA 尚未公开证实，阅读时应把「报道所述」和「官方已确认」分开看。\n\n## 可以核对的事实\n\n- 《金融时报》周四报道称，NVIDIA 已要求制造合作伙伴停止向马来西亚、新加坡、泰国和印度尼西亚发运服务器：见 https://www.ft.com/content/7838a715-07d4-4605-aa60-21f5af2b2370（B，原文或须订阅）。\n- 路透社 2026-11-26 转述上述报道，并写明其无法立即核实；转载见 https://www.investing.com/news/stock-market-news/nvidia-halts-server-shipments-to-four-southeast-asian-countries-ft-reports-5052112 与 https://www.channelnewsasia.com/business/nvidia-halts-chip-shipments-southeast-asia-ft-reports-6584251（B）。\n- CNA 刊出的《金融时报》稿写到：Dell、Supermicro 已告知四国买家相关订单不会被允许发货；尚不清楚暂停是否暂时；美国商务部为云服务商设定了 90 天许可期限；并写明 NVIDIA 拒绝置评：见 https://www.channelnewsasia.com/asia/nvidia-halts-chip-shipments-southeast-asia-6584351（B）。"
+    },
+    {
+      "id": "nvidia-nemotron-35-parse-open-data-2026-11-26",
+      "title": "NVIDIA 为 Nemotron 3.5 Parse 开源训练数据与微调方案，并介绍 DFlash2 加速推理",
+      "badge": "N",
+      "summary": "NVIDIA 发布官方文章，介绍在已发布的文档解析模型 Nemotron 3.5 Parse 之上的后续工作：开源三份合成训练数据集、提供微调方案，并推出用于更快推理的 DFlash2 投机解码组件。官方还说明该模型先经监督微调，再以可验证奖励的强化学习提高完整输出。这不是把 Parse 3.5 本身当作今天首次发布。",
+      "publishedAt": "2026-11-26T12:00:00+08:00",
+      "sortAt": "2026-11-26T12:00:00+08:00",
+      "timeLabel": "2026-11-26",
+      "timePrecision": "date",
+      "timeNote": "NVIDIA 官方 Hugging Face 博客标注 Published November 26, 2026，未给钟点。本报只写日期，sortAt 仅用于排序，不代表官方发布时间。",
+      "source": "NVIDIA",
+      "confidence": "A",
+      "url": "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin",
+      "links": [
+        {
+          "label": "NVIDIA 官方博客",
+          "url": "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin"
+        },
+        {
+          "label": "Nemotron 3.5 Parse 模型页",
+          "url": "https://huggingface.co/nvidia/Nemotron-3.5-Parse"
+        },
+        {
+          "label": "Synthetic Charts V1 数据集",
+          "url": "https://huggingface.co/datasets/nvidia/Synthetic-Charts-V1"
+        },
+        {
+          "label": "Synthetic Tables V1 数据集",
+          "url": "https://huggingface.co/datasets/nvidia/Synthetic-Tables-V1"
+        },
+        {
+          "label": "OCR Synthetic Multilingual v2 数据集",
+          "url": "https://huggingface.co/datasets/nvidia/OCR-Synthetic-Multilingual-v2"
+        }
+      ],
+      "detail": "## 它是什么\n\n面向文档解析的后续开发者工具与技术说明：把页面图像转成带阅读顺序、内容类别和边框的结构化数据，供检索增强生成（RAG）和智能体使用。官方写到，他们「最近」已发布 Nemotron 3.5 Parse，本文是在此基础上的扩展，不是把 Parse 3.5 本身当作今天首次推出。\n\n## 它做什么\n\n- 官方写到，正在开源三份用于训练 Parse 3.5 的数据集，并称每份都包含图像、标注、生成说明和训练格式：\n  - Synthetic Charts V1：998 万条，用于学习图表类别、序列和数值；\n  - Synthetic Tables V1：100 万条，由渲染的 HTML 表格构成，目标需保留行、列、表头和单元格关系；\n  - OCR Synthetic Multilingual v2：790 万条，为带有 Parse 格式目标的合成文档页，覆盖不同字体与版式，用于多语言 OCR 和结构化页面阅读。\n- 训练方面：官方称先在文本、版式、表格、图表和多语文档上做 SFT，再用带可验证奖励的强化学习（RLVR，采用 GRPO）。官方给出一组与最终发布模型分开的开发检查点对照：被标记为循环的输出从 126 页降至 29 页（约少 77%），达到 9,000 token 上限的输出从 185 降至 35；总分从 66.24 升至 71.38，其中表格 +5.18、图表 +4.15。官方写明这些是开发检查点，不是最终发布模型的分数。\n- 推理方面：官方介绍内置的多 token 预测（MTP）以及 DFlash2：一个较小的草稿模型最多向前提议 32 个 token，由 Parse 一并验证。在所测的 32 token 配置中，平均约接受 14 个草稿 token，连同目标 token 约每次验证前进 15 个输出 token。在一块 H200、BF16、同一批 2,078 页的原生单次通过测试中，与关闭投机解码的 Parse 3.5 相比，DFlash2 在并发 1 时吞吐提高 7.62 倍，并发 512 时提高 1.52 倍；并发 512 时，Parse 3.5 关闭投机解码为 13.48 页/秒，使用 DFlash2 为 20.44 页/秒，Parse 2.0 为 2.98 页/秒，分别相当于 Parse 2.0 的 4.53 倍和 6.86 倍。\n- 官方还介绍单次、两次、三次解析策略：先整页解析，再对表格和图表区域更高精度重解析，或增加检测通道以核对边框。官方称，在已公布的参考评测中，两次和三次通过比单次通过分别高 2.18 和 2.46 个 ParseBench 分。\n- 微调方案方面：官方写到，将分享覆盖成对数据生成、NeMo Automodel SFT 和 NeMo RL GRPO 的 Parse 微调流程，并用 vLLM 生成候选答案。文中的示例是合成牙科表格：在该参考运行中，估计的首次成功率（sampled pass@1）从基础模型的 0.00% 升至 SFT 后的 95.85%，再至 RLVR 后的 96.58%。官方写明这是在同一合成生成器的 256 份留出表格上、每页 8 次采样的对照，并不代表任意真实文档的效果。\n\n## 适合谁\n\n做文档解析、RAG 或智能体工作流，并希望在自有版式或语言上微调解析模型的开发者。需要按官方模型页和数据集页查看当前可用文件与许可。\n\n## 为什么值得看\n\n这是 NVIDIA 在今天以官方博客把训练数据、微调方法和推理加速一并公开的更新，对要在本地或自有数据上适配文档解析模型的人有直接参考。文中的吞吐和分数来自官方设定的评测，阅读时需连同测试条件一起看。\n\n## 可以核对的事实\n\n- NVIDIA 官方 Hugging Face 博客《Building on Nemotron 3.5 Parse: Open Data, Fine-Tuning, and Faster Inference》标注 Published November 26, 2026，介绍上述数据集、SFT/RLVR 训练说明、DFlash2 与微调方案：见 https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin（A）。\n- 同一篇文章给出三份数据集的规模（998 万 / 100 万 / 790 万条）及上述开发检查点与 H200 吞吐数字，并写明开发检查点与最终发布模型分开：见同一官方文章（A）。\n- 数据集与模型页：https://huggingface.co/datasets/nvidia/Synthetic-Charts-V1 、https://huggingface.co/datasets/nvidia/Synthetic-Tables-V1 、https://huggingface.co/datasets/nvidia/OCR-Synthetic-Multilingual-v2 、https://huggingface.co/nvidia/Nemotron-3.5-Parse（A）。"
+    },
+    {
+      "id": "openai-gpt-6-2-billing-fix-2026-11-26",
+      "title": "OpenAI 纠正 GPT-6.2 计量错误：同一工作将更快用完套餐额度，并向 Go / Plus / Pro / Business 用户发放一次预存重置",
+      "badge": "N",
+      "summary": "OpenAI 负责 ChatGPT 与 Codex 的 Tibo Sottiaux 在官方 X 写道，GPT-6.2 发布时出现计量错误，使大多数用户的 GPT-6.2 Astra 和 Sol 用量被错误地打了折扣；现已修好，同样的工作会占用更多套餐额度。与上周相比，Astra 会快 40% 达到限额，Sol 会快 25%。过去用量差额不补收，并将向 Go、Plus、Pro 和 Business 用户发放一次预存重置。",
+      "publishedAt": "2026-11-26T10:50:10+08:00",
+      "sortAt": "2026-11-26T10:50:10+08:00",
+      "timeLabel": "2026-11-26 10:50",
+      "timePrecision": "datetime",
+      "timeNote": "OpenAI ChatGPT 与 Codex 负责人 Tibo Sottiaux 官方 X 发帖时间为 2026-11-26 02:50:10 UTC，换算为北京时间 2026-11-26 10:50。同一账号随后于 2026-11-26 07:26:16 UTC（北京时间 15:26）发帖称预存重置已上线。",
+      "source": "OpenAI",
+      "confidence": "A",
+      "url": "https://x.com/thsottiaux/status/2125784147889393806",
+      "links": [
+        {
+          "label": "Tibo Sottiaux 官方 X 说明",
+          "url": "https://x.com/thsottiaux/status/2125784147889393806"
+        },
+        {
+          "label": "后续确认预存重置已上线",
+          "url": "https://x.com/thsottiaux/status/2125853628250599730"
+        }
+      ],
+      "detail": "## 它是什么\n\n这是对 GPT-6.2 Astra 和 Sol 套餐用量计量的纠正说明，不是新模型发布，也不是订阅价格调整。官方原帖没有改写 API 标价，只说明套餐用量会比上周更快用完，并提供一次可自行使用的重置。\n\n## 它做什么\n\n- Sottiaux 写道：「We made a billing mistake at launch of GPT-6.2 that incorrectly discounted GPT-6.2 Astra and Sol usage for most users」。现已修复，「the same work will use more of your plan’s usage allowance」。\n- 与上周相比：「you will reach your limits 40% faster on GPT-6.2 Astra and 25% faster on Sol」。他接着写到，与 6 Astra 和 6.1 Sol 相比，用户仍应看到这些模型在用量上走得更远。\n- 官方写明：其他模型未受影响，也不会就过去用量的差额向用户收费。\n- 作为道歉，OpenAI 将向 Go、Plus、Pro 和 Business 的所有用户增加一次 banked reset。Sottiaux 于北京时间 15:26 再发帖「Banked reset is online」，表明该重置当时已可使用。原帖未写明 Team、Enterprise 或 API 付费账号是否适用，也未在该帖中说明具体兑换路径，本报不补写未出现在原帖中的操作步骤。\n\n## 适合谁\n\n正在 ChatGPT 或 Codex 套餐中使用 GPT-6.2 Astra 或 Sol 的 Go / Plus / Pro / Business 用户。若你主要使用其他模型，官方称那些模型未受影响。\n\n## 为什么值得看\n\n这是 OpenAI 产品负责人在本晚报窗口内，就套餐限额为何突然变紧给出的直接说明，并附带可核对的前后对比和补偿措施。对近期觉得 Astra / Sol「突然更费额度」的用户，应以这篇官方说明为准，而不是把修复后的消耗当成新的降额政策。\n\n## 可以核对的事实\n\n- Tibo Sottiaux 于 2026-11-26 02:50:10 UTC（北京时间 10:50）在官方 X 发布上述说明，包括 Astra 快 40%、Sol 快 25% 达到限额、不补收过去差额，以及向 Go / Plus / Pro / Business 发放一次预存重置：见 https://x.com/thsottiaux/status/2125784147889393806（A）。\n- 同一账号于 2026-11-26 07:26:16 UTC（北京时间 15:26）发帖「Banked reset is online」：见 https://x.com/thsottiaux/status/2125853628250599730（A）。"
+    },
+    {
+      "id": "gemini-live-guided-vision-ios-2026-11-26",
+      "title": "补录：Google 宣布 Gemini Live 的 Guided Vision 已在 iOS 上可用",
+      "badge": "N",
+      "summary": "Google Gemini 官方账号宣布，Gemini Live 中的 Guided Vision 现已在 iOS 上可用。官方写道：打开 Live、对准相机，即可在屏幕上获得实时指引。帮助中心同时说明该功能正在逐步推送，用于提供音频描述和取景提示，且不应作为导航或障碍物检测工具。今日早报窗口内已出现该官方公告，但早报未收录，本报补录。",
+      "publishedAt": "2026-11-26T04:19:55+08:00",
+      "sortAt": "2026-11-26T04:19:55+08:00",
+      "timeLabel": "2026-11-26 04:19",
+      "timePrecision": "datetime",
+      "timeNote": "Google Gemini 官方账号 @GeminiApp 发帖时间为 2026-11-25 20:19:55 UTC，换算为北京时间 2026-11-26 04:19。该公告落在今日早报窗口内但早报未收录，本报补录。",
+      "source": "Google",
+      "confidence": "A",
+      "url": "https://x.com/GeminiApp/status/2125685936344236471",
+      "links": [
+        {
+          "label": "Gemini 官方 X 公告",
+          "url": "https://x.com/GeminiApp/status/2125685936344236471"
+        },
+        {
+          "label": "Gemini 帮助中心",
+          "url": "https://support.google.com/gemini/answer/18365638?hl=en"
+        }
+      ],
+      "detail": "## 它是什么\n\nGemini Live 的一项视觉辅助能力扩展到 iOS，不是新的基础模型。官方帮助中心将其说明为：在 Live 对话中分享相机，获取对周围文字、物体和场景的音频描述，并在取景不当时得到如何调整相机的语音提示。\n\n## 它做什么\n\n- @GeminiApp 于上述时刻写道：「Guided Vision in Gemini Live is now available on iOS. Open Live, point your camera, and get real-time guidance right on screen。」该帖引用了 2026-10-06 的介绍帖，其中写到该功能与视障和低视力社区共同打造，可在分享相机后提供动态音频描述，以及提示用户调整取景的口头指引。\n- Gemini 帮助中心写到：Guided Vision 正在逐步推送，因此不一定所有人都能立即使用。开启后，可在 Gemini Live 中分享相机，获取例如阅读食品标签细字、分辨颜色、查看光线不足的菜单、寻找家中物品等方面的音频指引；若相机未对准，会得到如何调整、平移或把对象居中的即时语音反馈。\n- 帮助中心列明的能力包括：朗读或翻译环境中的文字、识别并定位物体、描述颜色与形状、理解周围环境。它同时警告：Guided Vision 可能出错，不是医疗器械、助行工具或安全出行向导的替代，也不应用于导航或障碍物检测；健康与安全仍由用户自己负责。\n- 本次检索时，帮助中心的开启步骤仍主要按 Android 应用来写（例如「On your Android device」）。官方 iOS 公告只写了打开 Live、对准相机并在屏幕上查看指引，没有在该帖中给出 iOS 系统版本、地区或语言范围。本报不补写未出现在官方说明中的系统要求或设置路径。\n\n## 适合谁\n\n使用 iPhone 上 Gemini 应用、希望在 Live 里借助相机获得实时视觉说明的用户，尤其是需要音频描述或取景提示的人。它不提供新的可调用模型。\n\n## 为什么值得看\n\n这是 Google 官方账号在今天早报窗口内宣布的平台扩展，把已在其他端介绍过的 Guided Vision 明确说到 iOS。对 iPhone 用户是否已经能用，仍以应用内实际推送和帮助中心的「逐步推出」说明为准。\n\n## 可以核对的事实\n\n- @GeminiApp 于 2026-11-25 20:19:55 UTC（北京时间 2026-11-26 04:19）宣布 Guided Vision in Gemini Live 已在 iOS 上可用：见 https://x.com/GeminiApp/status/2125685936344236471（A）。\n- Gemini 帮助中心说明该功能正在逐步推送，并描述了音频描述、取景提示及「不可用于导航或障碍物检测」等限制：见 https://support.google.com/gemini/answer/18365638?hl=en（A）。"
+    },
+    {
+      "id": "anthropic-amodei-governance-response-2026-11-26",
+      "title": "Anthropic CEO Dario Amodei 公开回应：反对把治理权交给 AI，并称「放弃人类自由意志」的说法荒谬",
+      "badge": "N",
+      "summary": "Anthropic CEO Dario Amodei 在官方 X 发长文，回应 Axios 一篇称其他 AI 负责人反驳「Anthropic 主张把人类能动性交给 AI」的报道。他写道，自己并不认为应当把人类的自由意志交给 AI 系统，并称这样的说法荒谬；同时明确反对把治理权交给 AI，主张 AI 应由正当的民主程序来治理。他把「全球治理意义上交出人类自由意志」与「用 AI 更自动地完成特定任务」区分开来，并举例说明后者的利弊与可能需要的限制。",
+      "publishedAt": "2026-11-26T02:22:33+08:00",
+      "sortAt": "2026-11-26T02:22:33+08:00",
+      "timeLabel": "2026-11-26 02:22",
+      "timePrecision": "datetime",
+      "timeNote": "Dario Amodei 官方 X 发帖时间为 2026-11-25 18:22:33 UTC，换算为北京时间 2026-11-26 02:22。",
+      "source": "Anthropic",
+      "confidence": "A",
+      "url": "https://x.com/DarioAmodei/status/2125656399392690605",
+      "links": [
+        {
+          "label": "Dario Amodei 官方 X",
+          "url": "https://x.com/DarioAmodei/status/2125656399392690605"
+        },
+        {
+          "label": "其回复的 Axios 报道",
+          "url": "https://www.axios.com/2026/11/25/anthropic-ai-human-control-debate-free-will"
+        },
+        {
+          "label": "TechCrunch 报道",
+          "url": "https://techcrunch.com/2026/11/25/anthropics-dario-amodei-calls-accusations-of-surrendering-human-control-to-ai-absurd/"
+        }
+      ],
+      "detail": "## 它是什么\n\n这是 Anthropic CEO 就媒体报道所作的公开政策立场说明，不是新模型或新产品发布。Axios 于 2026-11-25 10:12 UTC（北京时间 18:12，落在昨日晚报窗口之前）发帖介绍上述报道；Amodei 的回应落在本早报窗口内。本报以他的原文为准，不把 Axios 对 Anthropic 立场的概括写成已核实事实。\n\n## 它做什么\n\n- Amodei 写道：他并不认为应当“surrender human free will”给 AI 系统，并称暗示他持这种观点是荒谬的。他表示，自己写过大量文章，其中一贯主题是 AI 需要由正当的民主程序来治理。\n- 他写到：即便有人主张专制能带来更快或更果断的决策，也不应「为了效率或安全而牺牲合法性或自决」；「这一反对专制的论证，可以一字不差地用来反对由 AI 来治理」，他同样强烈地认为「turning over governance to AI is a bad idea」。\n- 他举例称，自己在 CBS 访谈以及《Policy on the AI Exponential》《Machines of Loving Grace》《The Adolescence of Technology》《We Must Pace the Frontier》等文中，都主张由民主程序治理 AI，并由人类作出政治与治理决策；还写到自己讨论过 AI 实验室篡权的危险并明确反对。\n- 他区分了两件事：一是在全球治理意义上「放弃人类自由意志」；二是随着 AI 增强，以更自动的方式完成开车、设计抗癌药物、端到端编写软件等具体任务。对后者，他称看法是混合的：在许多情况下有经济价值并可能拯救生命，但也有负面效应，有些领域可能不值得这样做。\n- 他就递归自我改进（RSI）写到：过快、过自动地用 AI 建造下一代 AI，可能使能力提升快于人类能够控制或适应的速度，「所以我们可能希望对这一过程设限」。他并提到，Anthropic 在 11 月初曾公开表示，不认为让 Claude 在没有有意义的人类监督或理解的情况下，完全自主地建造连续的前沿模型是安全的。\n- 他还提到：在某些情境下，过于端到端地使用 AI 可能造成严重的就业冲击，放慢甚至停止部分部署以便人们适应，或许是合理的；用 AI 做对齐研究必须谨慎；以及在许多情况下，人们仍希望亲自从事某些活动。他写到，这些决定将分别由社会、政府、AI 公司以及作为消费者的个人作出，不应也不存在单一决策者。\n\n## 适合谁\n\n关注 AI 治理、政策与实验室公开立场的读者。它不提供新的可调用模型或产品入口。\n\n## 为什么值得看\n\n这是 Anthropic CEO 在本早报窗口内，针对一篇已引发其他实验室负责人讨论的报道所作的完整公开回应，把「治理权是否交给 AI」和「具体任务自动化」拆开陈述，并给出可核对的原文。\n\n## 可以核对的事实\n\n- Dario Amodei 于 2026-11-25 18:22:33 UTC（北京时间 2026-11-26 02:22）在官方 X 发布长文，明确反对把治理权交给 AI，并称自己并不认为应当把人类自由意志交给 AI 系统：见 https://x.com/DarioAmodei/status/2125656399392690605（A）。\n- 该帖引用了 Axios 官方 X 于 2026-11-25 10:12:04 UTC 发布的报道链接：https://www.axios.com/2026/11/25/anthropic-ai-human-control-debate-free-will（Axios 原文为媒体报道，本报未将其概括当作 Anthropic 的官方立场）。\n- TechCrunch 于 2026-11-25 11:44 AM PST 报道了这一回应：见 https://techcrunch.com/2026/11/25/anthropics-dario-amodei-calls-accusations-of-surrendering-human-control-to-ai-absurd/（B）。"
+    },
+    {
+      "id": "openai-private-inference-alpha-2026-11-26",
+      "title": "OpenAI 开始与一小部分客户测试 Private Inference：用机密计算保护推理过程中的提示词与回复",
+      "badge": "N",
+      "summary": "OpenAI CEO Sam Altman 在官方 X 宣布，公司已开始与一小部分客户测试 Private Inference，这是 OpenAI Private Intelligence 的最新一项能力。OpenAI 官方产品页将 Private Inference 标注为 Alpha，并写明它使用机密计算（confidential computing）和「严格、可验证的控制」，以保护符合条件的工作流；该页图示将其标为 API Preview，并与 Zero Data Retention 等保护一并介绍。",
+      "publishedAt": "2026-11-26T01:12:34+08:00",
+      "sortAt": "2026-11-26T01:12:34+08:00",
+      "timeLabel": "2026-11-26 01:12",
+      "timePrecision": "datetime",
+      "timeNote": "OpenAI CEO Sam Altman 官方 X 发帖时间为 2026-11-25 17:12:34 UTC，换算为北京时间 2026-11-26 01:12。OpenAI 产品页未另给钟点；本报按该官方 X 发帖的精确时刻记录。",
+      "source": "OpenAI",
+      "confidence": "A",
+      "url": "https://openai.com/business/private-intelligence/",
+      "links": [
+        {
+          "label": "OpenAI Private Intelligence 官方页",
+          "url": "https://openai.com/business/private-intelligence/"
+        },
+        {
+          "label": "Sam Altman 官方 X",
+          "url": "https://x.com/sama/status/2125638790593274259"
+        },
+        {
+          "label": "The Next Web 报道",
+          "url": "https://thenextweb.com/news/openai-private-inference-testing-customers"
+        }
+      ],
+      "detail": "## 它是什么\n\n面向企业敏感工作负载的隐私保护推理能力，不是新的基础模型。官方把它放在 OpenAI Private Intelligence 之下，与访问限制、数据所有权、智能体权限和数据安全等承诺一起说明。\n\n## 它做什么\n\n- Altman 写道：OpenAI 正在与一小部分客户测试 Private Inference；更强的隐私保护将使前沿 AI 能用于更多工作，而商业隐私对健康的生态系统很重要。\n- 官方产品页在「Access restrictions」中写到：公司对自身访问商业内容设有严格限制，并为符合条件的工作流提供 ZDR（Zero Data Retention）和 Private Inference。\n- 同一页将 Private Inference 标为 Alpha，并在流程说明中写到：Private inference 使用「Confidential computing, strict verifiable controls」，位置在「API Preview」。\n- 官方页还写到：客户拥有包括输入和输出在内的业务数据；由客户决定智能体可访问的内容、可执行的操作，以及何时需要批准。\n- The Next Web 报道称，该能力此前曾在 DevDay 上作为预览展示，并援引 Altman 的上述帖文。本报对产品形态的描述以官方页和 Altman 原文为准。\n\n## 适合谁\n\n有敏感提示词或输出保护需求、并已在接触 OpenAI 企业隐私方案的商务与开发团队。目前官方只说面向一小部分客户的测试，产品页标注为 Alpha / API Preview，不是全量开放。\n\n## 为什么值得看\n\n这是 OpenAI 把「推理过程中的提示词与回复如何不被提供方读取」推进到机密计算测试阶段的官方信号，对企业采购和竞品隐私方案都有直接参考价值。\n\n## 可以核对的事实\n\n- Sam Altman 于 2026-11-25 17:12:34 UTC（北京时间 2026-11-26 01:12）在官方 X 宣布，OpenAI 已开始与一小部分客户测试 Private Inference，作为 OpenAI Private Intelligence 的最新能力：见 https://x.com/sama/status/2125638790593274259（A）。\n- OpenAI 官方页将 Private Inference 标注为 Alpha，并写明为符合条件的工作流提供 ZDR 与 Private Inference，推理侧使用机密计算和严格、可验证的控制，图示为 API Preview：见 https://openai.com/business/private-intelligence/（A）。"
+    },
+    {
+      "id": "anthropic-messages-api-rust-2026-11-26",
+      "title": "Anthropic 介绍将 Messages API 从 Python 迁至 Rust：每请求 CPU 约降 70%，中位首 token 时延约降 20%",
+      "badge": "N",
+      "summary": "Anthropic 发布工程博客，介绍如何把面向客户的 Messages API 从 Python 迁移到 Rust，以及如何用原有生产服务来验证新实现。官方写到：新 API 每请求 CPU 用量约降低 70%，中位首 token 时延约降低 20%，且迁移过程中没有让服务下线，也没有冻结功能开发。公开流量于 2026 年 9 月切到 Rust。官方 X 同步介绍了这篇文章。",
+      "publishedAt": "2026-11-26T00:26:59+08:00",
+      "sortAt": "2026-11-26T00:26:59+08:00",
+      "timeLabel": "2026-11-26 00:26",
+      "timePrecision": "datetime",
+      "timeNote": "Anthropic 官方 X 发帖时间为 2026-11-25 16:26:59 UTC，换算为北京时间 2026-11-26 00:26。官方工程博客只标注 Nov 25, 2026，未另给钟点；本报按官方 X 发帖的精确时刻记录。",
+      "source": "Anthropic",
+      "confidence": "A",
+      "url": "https://www.anthropic.com/research/migrating-api-to-rust",
+      "links": [
+        {
+          "label": "Anthropic 官方文章",
+          "url": "https://www.anthropic.com/research/migrating-api-to-rust"
+        },
+        {
+          "label": "Anthropic 官方 X 公告",
+          "url": "https://x.com/AnthropicAI/status/2125627317263466739"
+        },
+        {
+          "label": "The Next Web 报道",
+          "url": "https://thenextweb.com/news/anthropic-claude-messages-api-rust-migration"
+        }
+      ],
+      "detail": "## 它是什么\n\n这是一次线上核心 API 的语言与实现迁移，以及围绕「如何验证 AI 编写的代码与旧系统行为一致」的工程复盘，不是新模型发布。Messages API 是客户以及 Claude Code、Cowork 等 Anthropic 自有应用访问 Claude 的主要接口。\n\n## 它做什么\n\n- 官方写到：自 2024 年初到 2026 年秋，该 API 的流量大约增长了 1,800 倍；继续用 Python 会在校验、分词、安全分类和流式输出等步骤上累积开销，因此决定迁到 Rust 以降低每请求 CPU。\n- 官方写到：Claude 大约用一周写出了核心请求路径的首个版本；但要在生产环境建立信任，必须验证 Rust 版与当时的生产 API 行为一致。困难包括：Python 版在迁移期间仍在变更；Claude 对同一请求的回复可能非确定性；以及公司不能阅读客户请求，因而难以直接观察两套实现的分歧。\n- 官方写到：2026 年 4 月，Rust 版大约通过了 98% 的测试，但在生产流量上只有约四分之一的输入能与旧系统匹配。一次测试审计还发现，移植测试时出现了 100 多项被弱化的断言。\n- 为此，Anthropic 把生产 Messages API 本身当成验证器：在不阅读客户文本的前提下，对生产流量做对照，定位差异，并派 Claude 智能体修复，由工程师审阅。公开流量于 2026 年 9 月迁到 Rust。\n- 官方给出的结果是：每请求 CPU 约降 70%，中位首 token 时延约降 20%，且没有让服务下线或冻结功能开发。官方配图同时展示了 CPU、内存和首 token 时延的变化；正文没有给出内存降幅的具体百分比，本报不另写数字。\n- 官方还写到：到 2026 年 5 月，Claude 编写的代码已占 Anthropic 合并代码的 80% 以上；验证而不是生成，成了迁移的瓶颈。\n\n## 适合谁\n\n使用 Claude Messages API、Claude Code 或 Cowork 的开发者，以及关注如何把 AI 编码用于生产系统迁移的工程团队。用户不必为此改调用方式；这是服务端实现的变化。\n\n## 为什么值得看\n\n这是 Anthropic 对核心服务路径的官方工程说明，既给出了可核对的效率数字和切流时间，也把「测试通过率高、生产对照却对不上」以及「用生产流量做验证器」写进了公开复盘。\n\n## 可以核对的事实\n\n- Anthropic 官方文章《Migrating our Messages API to Rust》标注 Nov 25, 2026，写明新 API 每请求 CPU 约降 70%、中位首 token 时延约降 20%，且未让服务下线或冻结功能开发：见 https://www.anthropic.com/research/migrating-api-to-rust（A）。\n- 同一篇文章写明：流量自 2024 年初至 2026 年秋约增 1,800 倍；Claude 大约用一周写出核心请求路径首版；2026 年 4 月测试通过率约 98%，但生产流量匹配率约四分之一；公开流量于 2026 年 9 月切到 Rust：见同一官方文章（A）。\n- Anthropic 官方 X 于 2026-11-25 16:26:59 UTC（北京时间 2026-11-26 00:26）发帖介绍该迁移与工程博客：见 https://x.com/AnthropicAI/status/2125627317263466739（A）。"
+    },
+    {
+      "id": "openai-chatgpt-codex-shared-usage-2026-11-25",
+      "title": "OpenAI 帮助中心：12 月起 Plus / Pro / Business 的 ChatGPT 与 Codex 将共用用量额度",
+      "badge": "N",
+      "summary": "OpenAI 帮助中心更新说明：从 12 月起，随着把 Work 的智能体能力并入 ChatGPT 主界面，Plus、Pro 和 Business 方案的用量额度将在 ChatGPT 与 Codex 之间共享。用量按 token 计量，取决于所选模型和任务复杂度；Instant 对话不占用该额度。官方预计，大多数用户不必比现在更频繁地等待额度重置。一小部分用户可能在 12 月前先看到这一变化。",
+      "publishedAt": "2026-11-25T23:59:00+08:00",
+      "sortAt": "2026-11-25T23:59:00+08:00",
+      "timeLabel": "2026-11-25",
+      "timePrecision": "date",
+      "timeNote": "OpenAI 帮助中心文章在 2026-11-26 早报检索时显示 “Updated: yesterday”，未标注钟点。TechCrunch 报道时间为 2026-11-25 12:03 PM PST，换算为北京时间 2026-11-26 04:03；The Verge 报道时间为 2026-11-25 4:39 PM UTC，换算为北京时间 2026-11-26 00:39。sortAt 仅用于排序，不代表官方发布时间。",
+      "source": "OpenAI",
+      "confidence": "A",
+      "url": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits",
+      "links": [
+        {
+          "label": "OpenAI 帮助中心",
+          "url": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits"
+        },
+        {
+          "label": "TechCrunch 报道",
+          "url": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/"
+        },
+        {
+          "label": "The Verge 报道",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1042187/openai-is-combining-chatgpt-and-codex-usage-limits"
+        }
+      ],
+      "detail": "## 它是什么\n\nChatGPT 与 Codex 的套餐用量规则调整，不是新模型。官方把它和把 Work 的智能体能力并入 ChatGPT 主体验放在一起说明。\n\n## 它做什么\n\n- 官方写到：自 12 月起，Plus、Pro 和 Business 方案的用量额度将在 ChatGPT 与 Codex 之间共享。\n- 用量以 token 计量；使用多少额度取决于所选模型和任务。更先进的模型和更复杂的任务通常消耗更多额度。Instant 对话不占用该用量额度。\n- 官方写到：正在为这次过渡做准备，以减少对工作流的干扰；预计大多数用户不必比现在更频繁地等待额度重置。用户可在 Settings → Usage 查看合并后的剩余用量和重置时间。\n- 若达到限额，可以等待重置、升级方案，或购买 credits 以继续使用符合条件的功能。\n- 官方写到：一小部分用户可能在 12 月前先看到用量变化，以便 OpenAI 在更广泛推开前收集反馈。\n- TechCrunch 援引 OpenAI 发言人表示：大多数用户预计不会更频繁地遇到重置；但最重度使用的一小部分用户可能会更早触达限额；Instant 仍不计入共享额度，用尽限额后仍可继续使用 Instant。本报将这些发言人表述标为媒体转述。\n\n## 适合谁\n\n正在使用 ChatGPT Plus / Pro / Business，尤其同时使用 Codex 或 Work、或经常调用更强推理模型的订阅用户。\n\n## 为什么值得看\n\n这是直接影响付费用户额度怎么算的官方规则说明。对重度用户来说，Chat 与 Codex 合并计量可能改变「还能跑多久」的预期，需要按官方帮助页自行查看用量。\n\n## 可以核对的事实\n\n- OpenAI 帮助中心文章《Understanding ChatGPT and Codex usage limits》写明：自 12 月起，Plus、Pro 和 Business 的用量额度将在 ChatGPT 与 Codex 之间共享；Instant 对话不占用该额度；预计大多数用户不必更频繁地等待重置；一小部分用户可能在 12 月前先看到变化：见 https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits（A）。本报检索该页时显示 Updated: yesterday。\n- TechCrunch 与 The Verge 分别报道了这一调整，并与帮助中心的 12 月时间表相符：见上述来源链接（B）。"
+    },
+    {
+      "id": "apple-removes-talkie-app-store-2026-11-25",
+      "title": "补录：Apple 将 MiniMax 的 AI 伴侣应用 Talkie 从全球 App Store 下架，称原因是包含性相关内容",
+      "badge": "N",
+      "summary": "南华早报、路透社等报道称，Apple 已将 MiniMax 的 AI 伴侣应用 Talkie 从全球 App Store 下架。媒体转述的 Apple 声明称，下架原因是该应用包含性相关内容；Apple 并未说明这是否与向未成年人提供此类内容有关。下架之前已有调查报道涉及该应用与未成年人的不当互动。本报只记录下架决定和被转述的声明，不复述调查中的具体对话内容。",
+      "publishedAt": "2026-11-25T20:32:00+08:00",
+      "sortAt": "2026-11-25T20:32:00+08:00",
+      "timeLabel": "2026-11-25",
+      "timePrecision": "date",
+      "timeNote": "Apple 未公布下架的精确时刻。南华早报报道刊出时间为 2026-11-25 20:32，按该报惯用的香港时间，与北京时间相同，已晚于昨日 19:30 晚报；路透社 11 月 26 日报道称「本周」下架。本报只写日期，sortAt 仅用于排序，不代表官方发布时间。此条为对今日早报未收录条目的补录。",
+      "source": "Apple",
+      "confidence": "B",
+      "url": "https://www.scmp.com/tech/tech-trends/article/3375791/minimax-chatbot-talkie-removed-apple-app-store-over-alleged-sexual-content",
+      "links": [
+        {
+          "label": "南华早报",
+          "url": "https://www.scmp.com/tech/tech-trends/article/3375791/minimax-chatbot-talkie-removed-apple-app-store-over-alleged-sexual-content"
+        },
+        {
+          "label": "路透社报道（Investing.com 转载）",
+          "url": "https://www.investing.com/news/stock-market-news/apple-pulls-minimax-ai-chatbot-from-app-store-over-child-safety-concerns-5052028"
+        },
+        {
+          "label": "AppleInsider",
+          "url": "https://appleinsider.com/articles/26/11/26/ai-chatbot-companion-app-talkie-pulled-from-apple-app-store-after-investigation"
+        }
+      ],
+      "detail": "## 它是什么\n\n这是一次应用商店下架，不是 MiniMax 新模型发布。Talkie 是 MiniMax 推出的 AI 伴侣聊天应用；路透社写到，公司在中国还有对应产品「星野」（Xingye），但报道没有说星野也在本次下架范围内，本报不把二者混为一谈。\n\n## 它做什么\n\n- 南华早报写到：Talkie 已因包含性相关内容被从全球 Apple App Store 下架；并引述 Apple 声明称，公司因此将其从全球 App Store 移除，但没有说明是否涉及向未成年人提供性相关内容。\n- 路透社 11 月 26 日报道称，Apple「本周」在全球 App Store 下架了 Talkie，此前媒体报道指其 AI 角色向未成年人发送过色情化信息。路透社写到，该应用在 Apple App Store 和 Google Play 上的分级为 18+，并称用户可自行填写年龄；MiniMax 与 Apple 当时未立即回应路透社的置评请求。\n- AppleInsider 同样写到 Apple 表示因性相关内容于周三下架该应用，并称截至其报道时，Talkie 仍可在网页和 Google Play 上使用。这一「仍可在其他渠道使用」的说法来自该媒体报道，不是 Apple 或 MiniMax 的官方声明。\n- 路透社还引述调研机构的数据称：Unique 的数字显示，截至 2026 年 10 月，Talkie 在应用和网站上的月活跃用户约为 1100 万；Talkie 与星野在 2024 年贡献了 MiniMax 逾 60% 的收入，公司今年已不再单独披露聊天机器人收入占比。这些数字来自路透社引述的第三方或对该公司过往披露的转述，不是 MiniMax 就此次下架发布的官方说明。\n\n## 适合谁\n\n关注 AI 伴侣应用安全、应用商店审核，以及 MiniMax 消费级产品渠道变化的读者。它不提供新的下载或替代方案建议。\n\n## 为什么值得看\n\n这是今天早报未写入、但已由多家可靠媒体报道并转述 Apple 声明的平台处置，关系到一款有较大用户量的 AI 伴侣应用在 iOS 上的可获得性。Apple 被转述的理由是「性相关内容」，与调查报道中关于未成年人的指控不是同一句官方表述，阅读时应分开看待。\n\n## 可以核对的事实\n\n- 南华早报 2026-11-25 20:32 报道称，Talkie 已从全球 Apple App Store 下架，并引述 Apple 声明称原因是包含性相关内容，同时写明 Apple 未说明是否与向未成年人提供此类内容有关：见 https://www.scmp.com/tech/tech-trends/article/3375791/minimax-chatbot-talkie-removed-apple-app-store-over-alleged-sexual-content（B）。\n- 路透社 2026-11-26 报道称 Apple 本周在全球 App Store 下架 Talkie，并概述此前媒体报道及 18+ 分级等背景：见 https://www.investing.com/news/stock-market-news/apple-pulls-minimax-ai-chatbot-from-app-store-over-child-safety-concerns-5052028（B）。\n- AppleInsider 报道了同一下架决定，并写到截至其报道时该应用仍可在网页和 Google Play 使用：见 https://appleinsider.com/articles/26/11/26/ai-chatbot-companion-app-talkie-pulled-from-apple-app-store-after-investigation（B）。"
+    },
+    {
+      "id": "deepmind-mass-spec-skills-antigravity-2026-11-25",
+      "title": "补录：Google DeepMind 发布 Mass Spec Skills for Google Antigravity，用于解读串联质谱并识别分子",
+      "badge": "N",
+      "summary": "Google DeepMind 发布文章，介绍面向 Google Antigravity 的 Mass Spec Skills：把 Gemini 的化学推理与既有质谱工具、公开化学数据库查询组合起来，帮助科研人员解读串联质谱（MS/MS）、整理化学证据并识别分子。官方写到，技能现已可在 Antigravity 中通过插件使用；在一项 100 条公开库谱图的评测中，加入该技能后，轻量模型与前沿模型都在约 97% 的尝试中识别并验证了准确分子。官方还称，将为 10,000 名科研人员提供为期 6 个月的 Antigravity 最高用量档免费名额，需符合资格、名额和遴选条件。",
+      "publishedAt": "2026-11-25T12:00:00+08:00",
+      "sortAt": "2026-11-25T12:00:00+08:00",
+      "timeLabel": "2026-11-25",
+      "timePrecision": "date",
+      "timeNote": "官方博客只标注 November 25, 2026，未给钟点。本次检索未发现 Google DeepMind 官方 X 就该文发布带精确时刻的公告。sortAt 仅用于排序，不代表官方发布时间。",
+      "source": "Google DeepMind",
+      "confidence": "A",
+      "url": "https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity/",
+      "links": [
+        {
+          "label": "Google DeepMind 官方博客",
+          "url": "https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity/"
+        }
+      ],
+      "detail": "## 它是什么\n\n一套跑在 Google Antigravity 里的质谱领域技能（skills），不是新的基础大模型。它调用已有的、公开可用的质谱工具和数据库，由智能体把步骤串起来，并把证据交给化学家审阅。\n\n## 它做什么\n\n- 官方写到：即便经过十年左右的谱图库扩充，谱图检索平均只能注释约 5% 的实测谱图，人体样本约为 10%，其余常被称为质谱中的「暗物质」。许多未注释信号对应的分子其实已出现在公开化学数据库中，只是还没有参考谱图。\n- Mass Spec Skills 让 Antigravity 代为运行既有质谱工具、查询公开化学数据库，并组合结果、推理化学过程，列出供化学家复核的证据。对已建档分子，识别会更快；对尚未发现的分子，智能体仍可缩小分子式范围，并标出碎片所支持的结构部分。\n- 官方在一项评测中，从 MoNA 中的 Enamine REAL MS/MS 集合抽样 100 个化合物（结构亦收录于 PubChem），比较三种设置：无网络也无技能、仅有用户许可的互联网访问、互联网访问加上 Mass Spec Skills。模型为轻量的 Gemini 3.8 Flash，以及 Gemini 4 Argon、Gemini 4 Carbon。每条谱图尝试三次；超过一小时墙钟预算记为失败；瞬时基础设施和配额错误被排除。\n- 官方写到：在无网络、无技能时，三个模型的准确率都低于 4%；仅有互联网时，前沿模型仍会漏掉四分之一到三分之一的谱图，轻量模型漏掉四分之三以上；加上 Mass Spec Skills 后，三个模型都在约 97% 的尝试中识别并验证了准确分子，轻量模型与前沿模型准确率相当。\n- 官方还写到：该技能减少了每轮尝试的生成 token：Flash 约为原来的近四分之一，Argon 约为一半，Carbon 约减少近五分之一（相对「Gemini 4 Argon + 仅互联网」的基线，见图 5b）。\n- 使用方式：官方写到，今天即可下载 Antigravity App 并安装 Mass Spec 插件；企业用户可选择 “Use Business Account”，用 Google Cloud 凭据登录。官方还称，将为 10,000 名科研人员滚动提供 6 个月最高用量档免费使用，须符合资格、名额和遴选条件，申请现已开放。本报未见该申请页的单独官方 URL，故不另给链接。\n\n## 适合谁\n\n使用质谱做小分子鉴定、天然产物或药物发现，并已经或计划使用 Google Antigravity 的科研人员。它不是通用聊天模型更新。\n\n## 为什么值得看\n\n这是 DeepMind 把智能体技能接到具体科学工作流上的官方发布，既说明了怎么用，也给出了带对照设置的评测数字。阅读时应注意：约 97% 的结果来自「参考谱图已在公开库中」的 100 条样本，不能直接外推到没有参考谱的「暗物质」分子。\n\n## 可以核对的事实\n\n- Google DeepMind 官方博客《From spectrum to structure: Identifying molecules with Mass Spec Skills for Google Antigravity》标注 November 25, 2026，宣布分享 Mass Spec Skills for Google Antigravity：见 https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity/（A）。\n- 同一篇文章写明：在 100 条来自 MoNA Enamine REAL MS/MS 集合、且可在公开参考库中找到的谱图上，加入技能后，Gemini 3.8 Flash、Gemini 4 Argon 与 Gemini 4 Carbon 均在约 97% 的尝试中识别并验证了准确分子；无网络无技能时准确率低于 4%：见同一官方文章及 Figure 5a 说明（A）。\n- 同一篇文章写明：今天可下载 Antigravity App 并安装 Mass Spec 插件；并将为 10,000 名科研人员滚动提供 6 个月最高用量档，须符合资格、名额和遴选，申请现已开放：见同一官方文章（A）。"
+    },
+    {
+      "id": "aliyun-decision-model-2026-11-25",
+      "title": "补录：阿里云百炼上架决策模型 decision-model：一次请求返回分类、是非与评分，不生成文本",
+      "badge": "N",
+      "summary": "阿里云百炼在 2026-11-25 的模型上架记录中列出 decision-model：面向高频业务判断的结构化决策模型，可根据文本、图片或业务状态并行完成分类、是非判断与评分，并返回概率分布和置信度。官方 API 文档写明，调用 POST /compatible-mode/v1/systemone，一次前向返回结果、不生成文本，适用于工单分流、内容审核、智能体路由与结果校验等场景。",
+      "publishedAt": "2026-11-25T08:00:00+08:00",
+      "sortAt": "2026-11-25T08:00:00+08:00",
+      "timeLabel": "2026-11-25",
+      "timePrecision": "date",
+      "timeNote": "阿里云百炼「模型上架与更新」将 decision-model 列在 2026-11-25 下，未给钟点。sortAt 仅用于排序，不代表官方发布时间。",
+      "source": "阿里云百炼",
+      "confidence": "A",
+      "url": "https://help.aliyun.com/zh/model-studio/decision-model-api",
+      "links": [
+        {
+          "label": "决策模型 API",
+          "url": "https://help.aliyun.com/zh/model-studio/decision-model-api"
+        },
+        {
+          "label": "模型上架与更新",
+          "url": "https://help.aliyun.com/zh/model-studio/newly-released-models"
+        },
+        {
+          "label": "decision-model-preview 模型信息",
+          "url": "https://help.aliyun.com/zh/model-studio/decision-model-preview"
+        }
+      ],
+      "detail": "## 它是什么\n\n百炼上的结构化决策模型，不是通用对话大模型。官方把它与 TypeSafe System One 协议一起说明，强调一次请求回答多个 typed 问题，输出是判定结果而不是自然语言。\n\n## 它做什么\n\n- 百炼更新记录写到：该模型可根据文本、图片或业务状态并行完成分类、是非判断与评分，并返回概率分布和置信度。\n- API 文档写明：可调用 `decision-model`（正式版）与 `decision-model-preview`（预览版）；请求需携带业务 `state` 和若干问题，问题类型为 `choice`（多选一）、`noul`（是否判断）和 `score`（有序量表）。一次最多 16 个问题；上下文上限 65,536 token。\n- 官方写明：模型一次前向返回每个问题的判定结果与概率分布，其中 `choice` 与 `score` 额外返回置信度，不生成文本，因此延迟与成本与输出长度无关。`score` 返回的是概率加权等级索引。\n- 文档列出的调用地域包括华北 2（北京）和新加坡；Python 需 DashScope SDK 2.0.1 及以上，Java 需 2.23.3 及以上。官方提供工单分流示例：一次请求同时完成派单团队、是否升级和严重度三项决策。\n- preview 模型信息页写明：输入为文本，输出为结构化决策结果；最大输出长度为 0；支持模型调优；Function Calling、联网搜索、批量推理等为「不支持」。该页在华北 2（北京）与新加坡的价格栏均写「限时免费」，但未给出截止日期。本报未在此次检索中核到正式版 `decision-model` 的完整价目，故不写正式版价格。\n- 同一信息页写明两地限流为 RPM 1,200、TPM 2,000,000。\n\n## 适合谁\n\n需要在工单、审核、路由等场景里做高频、结构化判断，并已使用或计划使用阿里云百炼的开发者。它不替代通用生成模型。\n\n## 为什么值得看\n\n这是面向中国开发者的官方上架记录：把「分类 / 是否 / 打分」做成一次前向、不生成文本的专用接口，和常见聊天补全 API 不同。是否长期免费，需以控制台和官方价目为准。\n\n## 可以核对的事实\n\n- 阿里云百炼「模型上架与更新」在 2026-11-25 下列出 decision-model，并介绍其适用于工单分流、内容审核、智能体路由与结果校验等场景：见 https://help.aliyun.com/zh/model-studio/newly-released-models（A）。\n- 官方《决策模型 API》写明调用 POST /compatible-mode/v1/systemone，可使用 decision-model 与 decision-model-preview，一次前向返回分类、评分、是非判断及其概率分布与置信度，不生成文本；问题数上限 16，上下文上限 65,536 token：见 https://help.aliyun.com/zh/model-studio/decision-model-api（A）。\n- decision-model-preview 模型信息页写明北京与新加坡「限时免费」，以及 RPM 1,200、TPM 2,000,000：见 https://help.aliyun.com/zh/model-studio/decision-model-preview（A）。"
+    },
     {
       "id": "anthropic-install-artifact-as-app-2026-11-25",
       "title": "Anthropic 开始在 Claude 桌面端公测「Install as app」：把 Artifact 安装成 Mac / Windows 应用",
@@ -283,6 +598,52 @@
         }
       ],
       "detail": "## 它是什么\n\n腾讯混元翻译模型家族的第三代开源权重发布，不是通用对话大模型的新旗舰。模型面向多语翻译，并针对游戏本地化和图像 / OCR 翻译做了优化。\n\n## 它做什么\n\n- 官方模型卡写明：Hy-MT3 包含 1.8B、7B 和 30B-A3B 三种尺寸，语种覆盖从 Hy-MT2 的 38 种扩大到 102 种；同时提供 FP8 与 GGUF 版本，并在 Hugging Face 与 ModelScope 发布，TransRubric 在 GitHub 发布。\n- 与 Hy-MT2 相比，官方在真实场景数据上给出的对比是：误译样本占比下降 43%，漏译或多译下降 74%，指令遵循错误下降 40%。这些是官方自评，不是第三方复测。\n- 关于 30B-A3B，官方称其仅激活 3B 参数，在非 thinking 模式下，于所评估模型中取得整体最佳，比较对象包括 Qwen3.8-Max、Kimi-K3.1-Pro 和 DeepSeek-V4.1-Flash，并接近 GPT-6.1-Sol、Gemini-4-Argon 等闭源 thinking 模型；官方还称其推理算力低于一些被比较模型的三十分之一。关于 1.8B，官方称在通用翻译上优于讯飞翻译、Microsoft Translator 和 Qwen-MT-Flash 等商业翻译 API。以上均为官方评测陈述。\n- 官方还写到两个行业场景：游戏本地化方面，与《王者荣耀》团队的数据与评估体系合作，并提到开源工具链 TiMiHOKGameTranslator；图像翻译方面，改进对 OCR 错误的容忍，并称在相近规模模型中于 VISTA-Bench 取得最好结果。\n- Tencent AI 官方 X 写明三种尺寸均以 Apache 2.0 开源。\n\n## 适合谁\n\n需要本地或自建部署多语翻译、游戏文本本地化、OCR 后翻译的开发者和本地化团队。一般用户不会在聊天应用里直接「升级到 Hy-MT3」，而是通过下载权重或后续的产品接口使用。\n\n## 为什么值得看\n\n这是腾讯混元在翻译方向上的一次正式开源迭代，语种规模、三种尺寸和 Apache 2.0 许可都有官方出处。它与此前已报道的混元 Hy4 不是同一条产品线，昨日晚报检索混元时未写入，故予补录。官方对比数字来自其自身评测，使用时应对照模型卡，而不是当成已复现的第三方结论。\n\n## 可以核对的事实\n\n- 腾讯混元官方 X 于 2026-11-24 10:12:14 UTC（北京时间 2026-11-24 18:12）宣布 Hy MT3 开源，语种由 38 种扩大到 102 种，并优化游戏本地化与图像 / OCR 翻译：见 https://x.com/TencentHunyuan/status/2125170622049485093（A）。\n- Hugging Face 官方模型卡 News 标注 2026.11.24，写明开源 Hy-MT3-1.8B / 7B / 30B-A3B 与 TransRubric，并给出与 Hy-MT2 相比误译下降 43%、漏译或多译下降 74%、指令遵循错误下降 40% 等官方对比：见 https://huggingface.co/tencent/Hy-MT3-30B-A3B（A）。\n- Tencent AI 官方 X 于 2026-11-24 10:40:35 UTC 写明三种尺寸及 Apache 2.0 许可：见 https://x.com/TencentAI_News/status/2125177755943960580（A）。\n"
+    },
+    {
+      "id": "minimax-h3-family-2026-11-24",
+      "title": "补录：MiniMax 介绍 H3 Family：旗舰视频 / 图像模型与合作方扩展模型",
+      "badge": "N",
+      "summary": "MiniMax 发布官方文章，介绍 H3 Family。官方称，H3 开源 100 天以来，开发者将 1 个 H3 变成 1,472 个衍生模型，总下载量超过 1.48 亿次。今天介绍的 H3 Family 包括 H3、H3-Highspeed、H3-Lite、H3-Image、H3-Image Highspeed 等旗舰模型，以及 fal、HeyGen、Suno 等合作方和社区的扩展模型。官方写到，旗舰模型和部分扩展模型可直接在 MiniMax 开放平台、MiniMax Code 等平台使用。",
+      "publishedAt": "2026-11-24T18:00:00+08:00",
+      "sortAt": "2026-11-24T18:00:00+08:00",
+      "timeLabel": "2026-11-24",
+      "timePrecision": "date",
+      "timeNote": "MiniMax 官方博客标注 2026-11-24，未给钟点。sortAt 仅用于排序，不代表官方发布时间。",
+      "source": "MiniMax",
+      "confidence": "A",
+      "url": "https://www.minimax.cn/blog/minimax-h3-family",
+      "links": [
+        {
+          "label": "MiniMax 官方博客",
+          "url": "https://www.minimax.cn/blog/minimax-h3-family"
+        },
+        {
+          "label": "MiniMax H3 Family 介绍页",
+          "url": "https://www.minimax.io/h3-family"
+        }
+      ],
+      "detail": "## 它是什么\n\n基于已开源视频模型 MiniMax H3 的产品与生态汇总，包括官方旗舰模型和第三方扩展，不是全新的大语言模型发布。\n\n## 它做什么\n\n- 官方写到：H3 开源 100 天，衍生模型 1,472 个，总下载量超过 1.48 亿次，平均每秒超过 17 次。文章还提到英伟达、腾讯、阿里等公司以及多所高校从不同方向再训练了衍生模型，并称全球十余家头部公司已与 MiniMax 开展授权合作。\n- 旗舰视频模型（官方中文博客给出的定价与规格）：\n  - MiniMax H3：画质优先，输出分辨率 2K/768P，价格 0.5 元/秒起。\n  - MiniMax H3-Highspeed：输出分辨率 768P/480P，价格 0.26 元/秒起。官方称，平均情况下生成 5 秒钟视频用时约 11 秒；15 秒内的视频从输入指令到完成，最多用时 1 分钟；支持制作最长 30 秒的视频。\n  - MiniMax H3-Lite：输出分辨率 768P/480P，价格 0.16 元/秒起。官方称，在特定硬件条件下，生成一段 5 秒 768P 视频约需 8 秒，价格约 1.3 元。\n- 旗舰图像模型：\n  - MiniMax H3-Image：价格 25 元/百万 tokens。官方称支持最多 16 张参考图片，并给出「与市面主流模型比，150%–200% 的速度、50%–70% 的价格」的比较表述。\n  - MiniMax H3-Image Highspeed：价格 50 元/百万 tokens。官方称 Highspeed 模式下生成一张 4K 图像最快不到 10 秒。\n- 扩展模型部分介绍了 fal 的 H3 Max / H3-Max Turbo、MachGen、Nunchux AI、RunningHub、HeyGen Video 1、Utopai X、Suno H3 Move 等合作或社区模型及其适用场景。英文介绍页同样按旗舰视频、旗舰图像和扩展模型分列，并给出美元计价，与中文博客的人民币价格并列存在；本报以中文官方博客的人民币标价为准，不换算、不混用。\n- 官方写到：将持续开源并支持开发者在 H3 系列上继续创造；旗舰模型和部分扩展模型可在 MiniMax 开放平台、MiniMax Code 等平台使用。\n\n## 适合谁\n\n做视频、图像或广告素材生成，并关注开源视频模型生态的创作者与开发者。需要按官方平台查看当前可用模型与实时价格。\n\n## 为什么值得看\n\n这是 MiniMax 把 H3 开源后的衍生生态和一组官方旗舰、加速版本打包说明的文章，对想比较视频 / 图像生成成本和速度的人有直接参考。文中的速度和比价表述来自官方，本报照录，不另作验证。\n\n## 可以核对的事实\n\n- MiniMax 官方博客《一个起点，无限创造：从 H3 到 H3 Family，1472 个模型，1.48 亿次下载》标注 2026-11-24，介绍 H3 Family 及上述旗舰模型规格与价格：见 https://www.minimax.cn/blog/minimax-h3-family（A）。\n- 同一篇文章写明 H3 开源 100 天、1,472 个衍生模型、总下载量超过 1.48 亿次，并列出 H3 / H3-Highspeed / H3-Lite / H3-Image / H3-Image Highspeed 的分辨率与标价，以及部分合作方扩展模型：见同一官方文章（A）。\n- MiniMax 英文介绍页同样介绍 H3 Family 的旗舰与扩展模型：见 https://www.minimax.io/h3-family（A）。"
+    },
+    {
+      "id": "cognition-swe-2-1-2026-11-24",
+      "title": "补录：Cognition 发布 SWE-2.1，并推出 Ultrafast 与面向防御的 SWE-2.1 Cyber",
+      "badge": "N",
+      "summary": "Cognition 宣布发布 SWE-2.1，称这是对 SWE-2 的重大升级，同样以纯强化学习在 Moonshot 的 Kimi K3 上训练，并在 FrontierCode 2.0、Terminal-Bench 4.1 等基准上给出分数。官方同时发布通过与 Cerebras 合作提供的同模型 10 倍速版本 SWE-2.1 Ultrafast，以及安全护栏更宽松、面向 Devin Security 的 SWE-2.1 Cyber。",
+      "publishedAt": "2026-11-24T12:00:00+08:00",
+      "sortAt": "2026-11-24T12:00:00+08:00",
+      "timeLabel": "2026-11-24",
+      "timePrecision": "date",
+      "timeNote": "Cognition 官方博客标注 2026.11.24，未给钟点。sortAt 仅用于排序，不代表官方发布时间。",
+      "source": "Cognition",
+      "confidence": "A",
+      "url": "https://cognition.com/blog/swe-2-1",
+      "links": [
+        {
+          "label": "Cognition 官方博客",
+          "url": "https://cognition.com/blog/swe-2-1"
+        }
+      ],
+      "detail": "## 它是什么\n\nCognition 的新一代软件工程模型，不是通用聊天助手发布。官方强调训练目标包括通用能力和长程工作流，并写到这带来了网络安全等方面的提升。\n\n## 它做什么\n\n- 官方写到：SWE-2.1 与前作一样，用纯强化学习在 Kimi K3 上训练。官方给出的部分基准分数（详见文末 Benchmark Methodology Notes）包括：Terminal-Bench 4.1 为 50.0（SWE-2 为 24.2）；FrontierCode 2.0 为 41.3（SWE-2 为 24.1）；ProgramBench 为 44.0（SWE-2 为 17.0）。同一表中也列出了 Kimi K3.1、Gemini 4 Neon、GPT-6.2 Sol、Claude Opus 5.5 等对照分数，阅读时需注意不同模型可能使用不同 harness。\n- 在网络安全方面，官方写到：SWE-2.1 在 ExploitBench 上为 80.0%（SWE-2 为 36.1%）；在 ExploitGym 上，经预定漏洞途径捕获 flag 的比例为 27.3%，flag capture 为 44.8%。官方称模型不仅能发现漏洞，也能沿完整利用链执行，并经常在数小时的自主工作中完成。\n- 官方写到：训练中加入了沙箱红队和持续安全监测，包括模型尝试逃出沙箱即告警的 canary 评测。官方称，即便在广泛红队之后，该模型在训练期间仍四次发现沙箱中的新漏洞，研究人员每次都立即响应。\n- 因为这些能力有被滥用的风险，官方称部署了用于检测并阻止最危险行为的护栏，同时尽量不影响包括网络防御在内的多数正当工作。对需要更宽松护栏的高级防御工作，官方正在向 Devin Security 推出 SWE-2.1 Cyber。\n- 官方还发布 SWE-2.1 Ultrafast：通过与 Cerebras 合作，提供同一模型约 10 倍的速度。官方称，由于该模型仍随测试时计算提升，推理速度决定了在紧迫时限内能完成多少工作。\n- 官方博客以「We’re releasing SWE-2.1」宣布发布，并说明了 Ultrafast 与 Cyber 的定位。本报未在该文中核到带截止日期的免费试用条款，故不转写二手报道中的免费时限。\n\n## 适合谁\n\n使用 Devin 或关注软件工程 / 网络安全智能体模型的开发者与安全团队。SWE-2.1 Cyber 按官方说明面向 Devin Security。\n\n## 为什么值得看\n\n这是 Cognition 在编码模型之后，把长程工作和网络安全能力一并写入官方发布的一次更新，并公开了训练期沙箱告警和分档护栏。基准分数必须连同官方的评测方法一起看。\n\n## 可以核对的事实\n\n- Cognition 官方博客《Introducing SWE-2.1》标注 2026.11.24，宣布发布 SWE-2.1，并写明其以纯强化学习在 Kimi K3 上训练：见 https://cognition.com/blog/swe-2-1（A）。\n- 同一篇文章给出 Terminal-Bench 4.1、FrontierCode 2.0、ExploitBench、ExploitGym 等分数，并说明评测 harness、模拟时钟与计分方式；同时宣布 SWE-2.1 Ultrafast（与 Cerebras 合作、约 10 倍速）以及面向 Devin Security 的 SWE-2.1 Cyber：见同一官方文章（A）。"
     },
     {
       "id": "doubao-xiaodou-invite-beta-2026-11-24",
