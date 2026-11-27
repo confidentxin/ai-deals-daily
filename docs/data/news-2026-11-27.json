@@ -1,0 +1,316 @@
+{
+  "asOf": "2026-11-27",
+  "timezone": "Asia/Shanghai",
+  "preview": 10,
+  "empty": false,
+  "emptyMessage": "今日暂无重要资讯，晚间 19:30 起每日更新",
+  "note": "2026-11-27 晚报（北京时间）整理：在今日早报 5 条补录之外，新录入 5 条（腾讯混元发布 Hy3D 3.6；月之暗面开放 Kimi for Science 申请；豆包工作接入剪映官方插件；补录加拿大 AI Compute Access Fund 增资；补录美国 FCC 部分批准 SpaceX 轨道数据中心系统 Starmind）。按公告时间从新到旧排列。带精确钟点的条目 timeLabel 用北京时间；官方只给日期的条目 timePrecision 为 date，timeLabel 只写日期，sortAt 仅用于排序，详见各条 timeNote。置信度 A 表示来自官方原文，B 表示可靠媒体报道、官方未单独核实。",
+  "items": [
+    {
+      "id": "tencent-hunyuan-hy3d-3-6-2026-11-27",
+      "title": "腾讯混元发布 3D 生成大模型 Hy3D 3.6：最高 200 万面、贴图可达 8K，已上线 TokenHub API",
+      "badge": "N",
+      "summary": "腾讯混元 11 月 27 日发布新一代 3D 大模型 Hy3D 3.6。官方产品页写明，它可将文本或图片转化为生产级 3D 资产，最高模型面数从 150 万提升到 200 万，纹理贴图最高从 4K 提升到 8K，并支持水密网格与 PBR 材质。该模型已在腾讯云大模型服务平台 TokenHub 以 hy-3d-3.6 提供 API。",
+      "publishedAt": "2026-11-27",
+      "sortAt": "2026-11-27T15:05:33+08:00",
+      "timeLabel": "2026-11-27",
+      "timePrecision": "date",
+      "timeNote": "腾讯云开发者社区介绍文标注发布于 2026-11-27 15:05:33；IT之家稿标注 2026/11/27 11:44:56，量子位稿标注 2026-11-27 11:45:19。官方产品页与调用指南未给出精确发布时刻，本报只写日期，sortAt 取官方社区介绍文发布时间仅用于排序，不代表产品上线的官方钟点。",
+      "source": "腾讯混元",
+      "confidence": "A",
+      "url": "https://cloud.tencent.com/act/pro/hy3d-3.6",
+      "links": [
+        {
+          "label": "腾讯云 Hy3D 3.6 产品页",
+          "url": "https://cloud.tencent.com/act/pro/hy3d-3.6"
+        },
+        {
+          "label": "TokenHub HY-3D-3.6 调用指南",
+          "url": "https://cloud.tencent.com/document/product/1823/141364"
+        },
+        {
+          "label": "腾讯云开发者社区介绍文",
+          "url": "https://developer.cloud.tencent.com/article/2795594"
+        },
+        {
+          "label": "IT之家",
+          "url": "https://www.ithome.com/1/033/282.htm"
+        },
+        {
+          "label": "量子位",
+          "url": "https://www.qbitai.com/2026/11/513155.html"
+        }
+      ],
+      "detail": "## 它是什么\n\n这是腾讯混元面向专业 3D 创作的原生 3D 生成模型，不是语言模型写代码去拼基础图元。IT之家与量子位转述官方说明：模型在训练阶段直接学习 3D 资产中几何、纹理与材质的分布，目标是生成可进入专业生产工作流的资产底稿。官方产品页把它定位为给创作者使用的高质量 3D 资产来源。\n\n## 它做什么\n\n- 官方产品页将 3.6 的升级概括为几何、结构、局部与材质四个方面，并给出可核对的参数：最高模型面数 200 万（API 可配置 1,000～200 万面），纹理贴图可选 2K、4K、8K；生成水密网格，可单独输出几何。\n- 纹理与材质方面，产品页写明支持 AutoUV、PBR（金属度、粗糙度和法线贴图）、去光处理与无缝贴图。\n- 输入方面，产品页写明：文字描述最多 1,024 个中文字符；单图为 JPG/PNG/WebP，或 4/8 视图；也可输入已有 3D 模型或参考图。TokenHub 调用指南则以图生 3D 接口为主，模型名称默认为 `hy-3d-3.6`，可用 `image_url` 或 `image_base64` 提交任务，并支持多视角图片。\n- 调用指南还列出可配置项，包括 `generate_type`（`Normal` 带纹理，`Geometry` 为白模）、目标面数 `face_count`（默认 2,000,000）、是否生成 PBR 的 `enable_pbr`，以及贴图分辨率等。\n- 产品页还介绍了后续环节：PartGen 2.0 可拆分 50+ 部件，PolyGen 2.0 重新布线，以及绑骨、文本或模板驱动动作；默认同时输出 OBJ 和 GLB，并可导出 STL、USDZ、FBX。\n- 计费以腾讯云开发者社区介绍文为准：TokenHub 3D 生成按次后付费；HY-3D-3.6 每次消耗 25～75 积分，1 积分 = 0.12 元，即每次约 3～9 元，实际消耗与所选参数有关，以控制台和账单为准；按日结算；未成功返回可用结果的任务不计费；上线期间限时 8 折，以控制台实际结算为准。该文也列出智能拓扑、组件拆分、纹理生成等配套能力的按次积分价。\n\n## 适合谁\n\n需要把概念图或文字描述变成可继续加工的高模与材质底稿的艺术家、建模师、技术美术，以及希望通过 TokenHub API 把 3D 生成接入生产流程的开发者。IT之家与量子位还报道称，腾讯 AI 创意智能体 Miora、腾讯游戏资产生成平台 LAP、专业影视 AI 平台 WorkRally 等已接入；本报在官方产品页与调用指南中未独立核到上述产品名单，故只作为媒体转述列出。\n\n## 为什么值得看\n\n这是本晚报窗口内，国内主要厂商明确标注日期的 3D 生成模型版本升级，并同时给出可调用的官方 API、参数上限和按次计费说明。对已经使用混元 3D 或需要更高面数、更高分辨率 PBR 贴图的团队，可以从官方文档直接核对能力和价格，而不必只看二手摘要。\n\n## 可以核对的事实\n\n- 官方产品页标题与参数：最高 200 万面、贴图升级 8K、水密网格与 PBR；见 https://cloud.tencent.com/act/pro/hy3d-3.6\n- 调用指南中的模型名：`hy-3d-3.6`；见 https://cloud.tencent.com/document/product/1823/141364\n- 腾讯云开发者社区介绍文发布于 2026-11-27 15:05:33，并写明每次 25～75 积分、1 积分 = 0.12 元、失败不计费、限时 8 折；见 https://developer.cloud.tencent.com/article/2795594"
+    },
+    {
+      "id": "moonshot-kimi-for-science-2026-11-27",
+      "title": "月之暗面开放 Kimi for Science 科研支持计划申请：入选最高可获 15 万元 API 额度",
+      "badge": "N",
+      "summary": "月之暗面在官方页面宣布，Kimi for Science 科研支持计划现已开放申请。首期面向自然科学、工程学及相关交叉学科的科研人员与团队；入选者最高可获得 15 万元 Kimi API 模型调用额度（约合 70 亿 tokens），并可能获得技术支持与新模型优先体验。首期截止时间为 12 月 8 日，后续批次将陆续开放。",
+      "publishedAt": "2026-11-27",
+      "sortAt": "2026-11-27T12:45:21+08:00",
+      "timeLabel": "2026-11-27",
+      "timePrecision": "date",
+      "timeNote": "官方计划页写明「现已开放申请」，未给钟点；IT之家稿标注 2026/11/27 12:45:21，并写「今天（27 日）上午宣布」。本报只写日期，sortAt 取 IT之家发稿时刻仅用于排序，不代表官方发布时间。",
+      "source": "月之暗面",
+      "confidence": "A",
+      "url": "https://www.kimi.com/news/kimi-for-science-program",
+      "links": [
+        {
+          "label": "Kimi for Science 官方计划页",
+          "url": "https://www.kimi.com/news/kimi-for-science-program"
+        },
+        {
+          "label": "Kimi 资讯列表",
+          "url": "https://www.kimi.com/news/"
+        },
+        {
+          "label": "IT之家",
+          "url": "https://www.ithome.com/1/033/328.htm"
+        }
+      ],
+      "detail": "## 它是什么\n\n这是面向科研人员的 API 额度与技术支持计划，不是新的基础模型发布，也不是现金资助。官方常见问题写明：入选申请者可获得最高 15 万元 Kimi API 模型调用额度（约合 70 亿 tokens），具体额度根据研究需求与评审结果确定，并非现金资助。\n\n## 它做什么\n\n- 官方写明：首期将面向自然科学、工程学及相关交叉学科的科研人员开放申请，欢迎用于改进现有研究流程，或尝试新的研究方法、攻克更具挑战性的科学问题。\n- 除 API Credits 外，官方还列出：来自 Kimi 团队的技术支持，优先体验新模型、获取精选研究与社区资源，以及优秀研究者及团队获得更长期、更深入支持的机会。\n- 申请规则：可多次提交，以最后一次提交的内容为准；建议准备研究者信息、研究任务、数据来源、当前工作流、Kimi 使用方式与验证指标，Token 估算和里程碑计划可按需补充；评审结果将发送至申请时填写的邮箱。\n- 时间：官方页面顶部写明「首期截止时间 12月8日，更多批次将陆续开放」。页面未写年份，结合 IT之家 2026 年 11 月 27 日报道与本页当前有效的申请说明，本报将其理解为 2026-12-08。\n- 联系方式：官方写明申请或项目合作相关问题可联系 ai4science@moonshot.ai。\n\n## 适合谁\n\n自然科学、工程学及相关交叉学科的科研人员与研究团队，尤其是希望用 Kimi API 推进文献、数据或实验相关工作，并需要额度或技术支持的申请人。它不面向普通聊天用户的日常额度调整。\n\n## 为什么值得看\n\n这是月之暗面在本窗口内可在官方页面直接核对的科研支持计划，给出了额度上限、学科范围和首期截止日期。对相关研究者来说，需要在官方截止日前完成申请，并以评审邮件中的最终额度与支持内容为准。\n\n## 可以核对的事实\n\n- 官方计划页写明现已开放申请，首期截止时间为 12 月 8 日：https://www.kimi.com/news/kimi-for-science-program\n- 官方常见问题：最高 15 万元 API 额度（约合 70 亿 tokens），并非现金资助；可多次提交；联系邮箱 ai4science@moonshot.ai。\n- IT之家 2026-11-27 报道称月之暗面于当日上午宣布该计划开放申请：https://www.ithome.com/1/033/328.htm"
+    },
+    {
+      "id": "doubao-jianying-plugin-2026-11-27",
+      "title": "豆包工作宣布独家接入剪映官方插件，可用一句话调用剪辑与多轨草稿",
+      "badge": "N",
+      "summary": "多家媒体 11 月 27 日报道，豆包工作宣布独家接入剪映官方插件，支持用一句话描述需求并调用剪映完成剪辑，也可继续对话修改，或打开多轨草稿细调。报道还提到，用户可在豆包工作电脑端侧栏「插件」中搜索「剪映」，并需使用从剪映官网下载的最新版客户端。",
+      "publishedAt": "2026-11-27",
+      "sortAt": "2026-11-27T10:33:51+08:00",
+      "timeLabel": "2026-11-27",
+      "timePrecision": "date",
+      "timeNote": "IT之家稿标注 2026/11/27 10:33:51，并写「今天（27 日）上午，豆包官方宣布」；每经网稿标注 2026-11-27 10:55:45，写「今日，豆包工作宣布已于近日独家接入」。未见带精确时刻的官方博客，本报只写日期，sortAt 取 IT之家发稿时刻仅用于排序，不代表官方发布时间。",
+      "source": "豆包",
+      "confidence": "B",
+      "url": "https://www.ithome.com/1/033/208.htm",
+      "links": [
+        {
+          "label": "IT之家",
+          "url": "https://www.ithome.com/1/033/208.htm"
+        },
+        {
+          "label": "每经网",
+          "url": "https://www.nbd.com.cn/articles/2026-11-27/4660727.html"
+        },
+        {
+          "label": "新京报",
+          "url": "https://www.bjnews.com.cn/detail/1795753751129101.html"
+        },
+        {
+          "label": "豆包工作帮助中心「使用插件」（通用说明，更新于 2026-11-17）",
+          "url": "https://www.doubao.com/work/docs/zh-cn/articles/705018132598-plugins"
+        }
+      ],
+      "detail": "## 它是什么\n\n这是豆包工作与剪映之间的官方插件对接，把自然语言指令接到剪映的剪辑能力上，而不是发布一款新的视频生成模型。因本次未见单独的官方公告页，以下功能描述以 IT之家、每经网和新京报的报道为准，不把未经官方页面核对的细节写成已核实事实。\n\n## 它做什么\n\n- 媒体报道称：用户可将视频素材交给豆包工作，用一句话描述需求并调用剪映完成剪辑；生成后可继续通过对话修改，或打开剪映多轨草稿自行编辑。\n- 以口播视频为例，报道列举的能力包括：删减重复内容、处理读错或口误、添加字幕以及调整字幕字体和字号。\n- 报道还称：用户可通过一句话调用剪映最新上线的「剪映 Hub」，把文稿、代码、脚本或商品图转化为科普动画、知识短视频、短漫剧或营销短片。每经网的表述是「文稿、脚本、图片素材」。\n- 使用方式：IT之家与新京报均写明，目前在豆包工作电脑端侧栏「插件」中搜索「剪映」即可调用，并需使用从剪映官网下载的最新版剪映。\n- IT之家还写到：根据官方介绍，近期首次接入剪映插件并完成登录的用户，有机会获得 200 剪映积分体验优惠，具体以产品界面为准。\n\n## 适合谁\n\n已经使用豆包工作电脑端、并希望用对话完成口播剪辑或短视频粗剪的创作者。需要精细调整的用户，仍要进入剪映多轨草稿。该功能是否对所有地区和账号开放，报道未逐一说明，需以产品内实际可见的插件为准。\n\n## 为什么值得看\n\n这是本窗口内字节系产品联动的一条明确产品消息：把豆包工作的对话入口和剪映的剪辑时间线接在一起。因为还没有找到带日期的官方公告页，阅读时应把「媒体所述的官方宣布」与「可在官方博客逐句核对」区分开，并在客户端里验证插件是否已对当前账号开放。\n\n## 可以核对的事实\n\n- IT之家 2026-11-27 10:33:51 报道称豆包官方于当日上午宣布独家接入剪映官方插件：https://www.ithome.com/1/033/208.htm\n- 每经网 2026-11-27 10:55:45 报道称「今日，豆包工作宣布已于近日独家接入」：https://www.nbd.com.cn/articles/2026-11-27/4660727.html\n- 新京报 2026-11-27 15:31 亦作相同功能转述：https://www.bjnews.com.cn/detail/1795753751129101.html\n- 豆包工作帮助中心有通用插件说明，但该页更新于 2026-11-17，未点名剪映：https://www.doubao.com/work/docs/zh-cn/articles/705018132598-plugins"
+    },
+    {
+      "id": "canada-ai-compute-access-fund-2026-11-26",
+      "title": "补录：加拿大政府宣布为 AI Compute Access Fund 增资 7 亿加元，基金总额达到 10 亿加元",
+      "badge": "N",
+      "summary": "加拿大政府 11 月 26 日宣布，通过国家人工智能战略 AI for All，向 AI Compute Access Fund 追加 7 亿加元，使该基金总额达到 10 亿加元。官方同时开放新一轮针对健康与生命科学领域的项目征集，并公布向另外 45 家公司提供逾 5,200 万加元支持。昨日晚报与今日早报均未写入，故作补录。",
+      "publishedAt": "2026-11-26",
+      "sortAt": "2026-11-26T23:00:00+08:00",
+      "timeLabel": "2026-11-26",
+      "timePrecision": "date",
+      "timeNote": "加拿大创新、科学与经济发展部官方新闻稿标注 November 26, 2026 – Toronto, Ontario，未给钟点；计划指南亦写明该版本于 November 26, 2026 更新。本报只写日期。sortAt 取北京时间 11 月 26 日较晚时刻仅用于排序（以便排在当日较早条目之后、11 月 27 日条目之前），不代表官方发布时间。此条为对昨日晚报与今日早报未收录条目的补录。",
+      "source": "加拿大政府",
+      "confidence": "A",
+      "url": "https://www.canada.ca/en/innovation-science-economic-development/news/2026/11/government-of-canada-boosts-the-ai-compute-access-fund-with-700-million-expansion.html",
+      "links": [
+        {
+          "label": "加拿大政府官方新闻稿",
+          "url": "https://www.canada.ca/en/innovation-science-economic-development/news/2026/11/government-of-canada-boosts-the-ai-compute-access-fund-with-700-million-expansion.html"
+        },
+        {
+          "label": "AI Compute Access Fund 计划指南",
+          "url": "https://www.ised-isde.canada.ca/site/ised/en/canadian-sovereign-ai-compute-strategy/ai-compute-access-fund/program-guide-ai-compute-access-fund"
+        },
+        {
+          "label": "基金项目页",
+          "url": "https://www.ised-isde.canada.ca/site/ised/en/canadian-sovereign-ai-compute-strategy/ai-compute-access-fund"
+        }
+      ],
+      "detail": "## 它是什么\n\n这是加拿大联邦政府为中小企业支付 AI 算力费用提供的资助计划扩容，不是新的模型发布。官方新闻稿写明：该基金最初在加拿大主权 AI 算力战略下投入 3 亿加元，此次追加 7 亿加元后总额为 10 亿加元。宣布人为人工智能与数字创新部长 Evan Solomon。\n\n## 它做什么\n\n- 官方计划指南（2026-11-26 更新）写明：对符合条件的主权、云端算力服务，可覆盖最高 80% 的合格费用；对加拿大境内的云端算力服务，可覆盖最高 50%。\n- 申请人可就 10 万至 500 万加元之间的算力费用提出申请，项目期限最长可至 2030 年 3 月 31 日。指南强调：这不必等于申请人的全部算力开支，但只有落在该范围内的合格费用才会被考虑。\n- 本轮开放的是面向 Health and Life Sciences（健康与生命科学）的征集。申请人必须先提交意向书（Statement of Interest），截止时间为 2026 年 12 月 17 日晚上 11:59（美国东部时间），约合北京时间 12 月 18 日 12:59；完整申请截止时间为 2027 年 1 月 4 日晚上 11:59（美国东部时间），约合北京时间 1 月 5 日 12:59。\n- 主要资格（以指南为准）包括：加拿大注册的营利公司，或符合条件的非营利法人 / 注册慈善机构（含符合全部资格的高等教育机构），全职等效雇员少于 500 人；在加拿大有研发团队并在加拿大开展项目活动；正在开发 AI 产品或服务并有商业化计划；已有营业收入，或能证明投资意向；申请时已有或正在准备算力服务合同。\n- 官方新闻稿还宣布：在基金初始阶段，再向 45 家公司提供逾 5,200 万加元支持，使累计承诺额超过 1.18 亿加元，覆盖 89 家加拿大公司。新闻稿写明，这是对 2026 年 5 月 12 日向 44 家公司提供支持之宣布的延续。\n- 新闻稿还将此次扩容与 AI for All 战略、以及 2026 年预算中提出的 500 兆瓦主权 AI 算力目标联系起来，但并未把后者写成已建成的容量。\n\n## 适合谁\n\n在加拿大注册、雇员规模符合条件、需要购买云端 AI 算力以开发或商业化产品的中小企业，以及符合指南的非营利与研究机构。中国或其他海外公司不能仅凭本次宣布直接申领；是否符合资格必须以官方指南为准。\n\n## 为什么值得看\n\n这是本窗口内可核对的重大公共算力政策：基金规模从 3 亿加元扩到 10 亿加元，并给出明确的意向书与申请截止时刻，以及主权算力与加拿大境内存力的不同报销比例。昨日晚报与今日早报均未写入，故作补录。\n\n## 可以核对的事实\n\n- 官方新闻稿日期：November 26, 2026 – Toronto, Ontario；追加 7 亿加元，总额 10 亿加元：https://www.canada.ca/en/innovation-science-economic-development/news/2026/11/government-of-canada-boosts-the-ai-compute-access-fund-with-700-million-expansion.html\n- 计划指南更新于 November 26, 2026；当前征集为健康与生命科学；意向书截止 2026-12-17 23:59 ET，完整申请截止 2027-01-04 23:59 ET；报销比例 80% / 50%；申请金额区间 10 万至 500 万加元：https://www.ised-isde.canada.ca/site/ised/en/canadian-sovereign-ai-compute-strategy/ai-compute-access-fund/program-guide-ai-compute-access-fund"
+    },
+    {
+      "id": "kftc-apple-intelligence-ads-2026-11-26",
+      "title": "补录：韩国公正交易委员会就 Apple Intelligence 广告启动审议程序，审查官建议纠正措施并处以过征金",
+      "badge": "N",
+      "summary": "韩国公正交易委员会 11 月 26 日公布，其事务处已于 11 月 24 日就 Apple Inc. 与 Apple Korea 涉嫌违反《标识广告公正化法》向委员会提交审查报告，审议程序由此启动。审查官认为，公司在 iPhone 16 网站上宣传 Apple Intelligence 时，隐瞒、缩小或遗漏了部分功能能否按时提供等对购买决策重要的信息，建议发出纠正命令并处以过征金。这不是最终处罚决定。Apple 向 MacRumors 表示已配合调查，但不同意审查报告中的结论。",
+      "publishedAt": "2026-11-26",
+      "sortAt": "2026-11-26T19:19:00+08:00",
+      "timeLabel": "2026-11-26",
+      "timePrecision": "date",
+      "timeNote": "韩国公正交易委员会官网将新闻稿登记为 2026-11-26，未给钟点；附件文件名作「261127(조간)」，即供 11 月 27 日晨报使用的资料。韩国《Korea Times》稿标注 Published Nov 26, 2026 12:01 pm KST，约合北京时间 11:01；MacRumors 稿标注 Thursday November 26, 2026 3:19 am PST，约合北京时间 19:19。本报只写日期，sortAt 取 MacRumors 英文报道时刻仅用于排序，不代表官方发布时间。此条为对昨日早报与晚报未收录条目的补录。",
+      "source": "韩国公正交易委员会",
+      "confidence": "A",
+      "url": "https://www.ftc.go.kr/www/selectBbsNttView.do?bordCd=3&key=12&nttSn=48278&searchCtgry=01%2C02",
+      "links": [
+        {
+          "label": "韩国公正交易委员会官方新闻稿",
+          "url": "https://www.ftc.go.kr/www/selectBbsNttView.do?bordCd=3&key=12&nttSn=48278&searchCtgry=01%2C02"
+        },
+        {
+          "label": "韩国政策简报转载",
+          "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790945"
+        },
+        {
+          "label": "MacRumors（含 Apple 声明）",
+          "url": "https://www.macrumors.com/2026/11/26/apple-korea-regulator-iphone-16-ai-advertising/"
+        },
+        {
+          "label": "9to5Mac",
+          "url": "https://9to5mac.com/2026/11/26/south-korea-proceeds-with-case-over-allegedly-misleading-apple-intelligence-ads/"
+        },
+        {
+          "label": "《Korea Times》",
+          "url": "https://www.koreatimes.co.kr/business/companies/20261126/apple-korea-faces-potential-50-mil-fine-over-deceptive-iphone-ai-ads"
+        }
+      ],
+      "detail": "## 它是什么\n\n这是韩国竞争与广告监管机构启动的正式审议，针对的是 iPhone 16 上市前后 Apple Intelligence 功能广告是否构成「欺骗性标识或广告」，而不是新的产品发布，也还不是已生效的罚款决定。官方新闻稿写明：审查报告只代表审查官在调查中形成的违法性判断与措施意见，对委员会的最终判断没有拘束力。\n\n## 它做什么\n\n- 公正交易委员会称：审查报告已于 2026-11-24 提交委员会，并于同日送达被审人，审议程序由此开始。\n- 广告期间为 2024 年 9 月至 2025 年 3 月，载体是 iPhone 16 官网。广告曾写到「年内将先以美国英语推出」（2024 年 9 月）、「目前已提供美国英语服务」（2024 年 10 月）、「将于 4 月初支持韩语」（2025 年 2 月），并详细介绍了当时宣传的 9 项 Apple Intelligence 功能。\n- 官方点名 4 项未按广告内容提供的功能：Genmoji、Image Playground、「具备理解个人语境能力的 Siri」，以及「提供分步指引的 Siri」。\n- 以「理解个人语境的 Siri」为例：广告称将在 2024 年内先推出美国英语、2024 年 10 月已在提供美国英语、2025 年 4 月初支持韩语；官方写明实际是 2026 年 9 月才先推出美国英语，2026 年 10 月才支持韩语。\n- 审查官认为上述行为违反《标识广告公正化法》第 3 条第 1 款第 2 项（欺骗性标识或广告），属于重大违法行为，建议发出纠正命令（包括今后禁止同类行为、公布命令）并处以过征金；并将与该嫌疑相关的销售额计为约 3.3527 万亿韩元。官方未公布建议或最终的过征金金额。\n- 被审人可在收到审查报告之日起 6 周内提交书面意见、申请查阅或复制证据。委员会将再审议后，就是否违法及过征金金额作出最终判断。\n- Apple 向 MacRumors 表示：重视与韩国用户的关系；自去年为 Apple Intelligence 增加韩语支持以来，用户已能使用数十项集成功能，并提到近期推出了韩语的 Siri AI；公司已配合调查，但不同意审查报告中的结论，期待在委员会面前充分辩护。\n\n## 适合谁\n\n关注苹果设备与 Apple Intelligence 落地进度的用户，以及需要跟踪主要市场对 AI 功能宣传监管的人。对中国用户而言，这是韩国市场的行政程序，不直接改变中国大陆或香港的产品功能，但反映了「先宣传、后分期交付」的 AI 功能广告正在受到监管审查。\n\n## 为什么值得看\n\n这是主要经济体监管机构就生成式 AI 功能广告是否充分披露可用性与时间表，进入正式审议的公开案例。需要把「审查官意见」和「委员会终局决定」分开看：目前还没有罚款或纠正令生效。昨日早报与晚报均未写入，故作补录。\n\n## 可以核对的事实\n\n- 官方标题与登记日：公正交易委员会新闻稿《애플 부당 광고 사건 심의 절차 개시》，登记 2026-11-26。\n- 审查报告提交与送达日期：2026-11-24。\n- 相关销售额：官方计为约 3 조 3,527 억 원（约 3.3527 万亿韩元）。部分媒体按该法最高可达相关销售额 2% 估算过征金上限，这不是官方处罚决定。\n- 调查起因：官方称 2025 年 3 月接到举报后展开调查。\n- 最终结果尚未作出。"
+    },
+    {
+      "id": "fcc-spacex-starmind-odc-2026-11-25",
+      "title": "补录：美国 FCC 部分批准 SpaceX「轨道数据中心」系统 Starmind：最多 100 万颗卫星，附带条件与里程碑",
+      "badge": "N",
+      "summary": "美国联邦通信委员会空间局 11 月 25 日发布 DA 26-1273，对 SpaceX 的 Orbital Data Center System（又称 Starmind）申请作出「部分批准、部分暂缓」并附加条件。授权覆盖最多 100 万颗非地球静止轨道卫星；主要通信依赖光链路，并批准在特定 Ka 频段上以不受保护、不得造成有害干扰的方式进行备份与应急 TT&C。昨日晚报与今日早报均未写入，故作补录。",
+      "publishedAt": "2026-11-25",
+      "sortAt": "2026-11-25T23:00:00+08:00",
+      "timeLabel": "2026-11-25",
+      "timePrecision": "date",
+      "timeNote": "FCC 备忘意见、命令与授权令 DA 26-1273 写明 Adopted: November 25, 2026，Released: November 25, 2026，未给钟点。FCC Space Headlines 将该条登记为 November 25, 2026。本报只写日期，sortAt 取北京时间 11 月 25 日较晚时刻仅用于排序，不代表官方发布时间。此条为对昨日晚报与今日早报未收录条目的补录。",
+      "source": "美国联邦通信委员会",
+      "confidence": "A",
+      "url": "https://docs.fcc.gov/public/attachments/DA-26-1273A1.pdf",
+      "links": [
+        {
+          "label": "FCC 官方授权令 DA 26-1273（PDF）",
+          "url": "https://docs.fcc.gov/public/attachments/DA-26-1273A1.pdf"
+        },
+        {
+          "label": "FCC Space Headlines",
+          "url": "https://www.fcc.gov/news-events/headlines/13329"
+        },
+        {
+          "label": "BBC 报道",
+          "url": "https://www.bbc.co.uk/news/articles/cwp836l8n1jgo"
+        }
+      ],
+      "detail": "## 它是什么\n\n这是 FCC 空间局对无线电通信授权的行政决定，不是 SpaceX 已经开始部署百万级轨道数据中心，也不是对商业可行性的背书。授权令封面写明：申请人与被许可人为 Space Exploration Holdings, LLC，呼号 S00798，系统名称为 SpaceX Orbital Data Center System (Starmind)，档案号 SAT-LOA-20260108-00016。命令由空间局局长 Courtney Reinhard 签署。申请于 2026 年 1 月 30 日提交，并曾在 2026 年 2 月 4 日被受理征求意见。授权结论为 GRANTED-IN-PART / DEFERRED-IN-PART（部分批准、部分暂缓），并附带条件。\n\n## 它做什么\n\n- 授权令写明，这是一个最多 1,000,000 颗卫星的 NGSO 星座，部署在厚度各 50 公里的轨道壳层中，高度范围为 500 至 1,002 公里，轨道倾角包括约 30 度轨道和太阳同步轨道。封面列出了六组标称高度与倾角。需要注意：部分媒体转述仍写 500–2,000 公里，那是早期申请材料中的表述；本报以授权令封面的 500–1,002 公里为准。\n- 授权范围（Scope of Grant）写明：为该星座作为太空数据中心运行，批准备份与应急 TT&C 的无线电通信。授权令并写明：Starmind 的通信将依赖光链路；本次批准的 Ka 频段 18.8–19.3 GHz（卫星到地球）和 28.6–29.1 GHz（地球到卫星）仅用于备份 TT&C，且必须在不受保护、不得造成有害干扰的基础上使用。\n- 决定是部分批准、部分暂缓。其中，SpaceX 希望对在 2,000 公里以下结束任务的卫星不必经大气再入处置的豁免请求被暂缓；授权令写明，因公司尚未提供足够信息，委员会无法判断替代处置方式是否符合规则。在部署和运行任何不经大气再入处置的 Starmind 卫星之前，SpaceX 必须提交修改申请并充分说明理由。\n- 若未按以下节点部署并运行，授权将失效：不晚于 2033-11-25 部署并运行 1 颗已授权卫星；不晚于 2035-11-25 达到已授权卫星最大数量的 10%；不晚于 2038-11-25 达到 50%；不晚于 2040-11-25 完成其余已授权卫星的发射、入轨与运行。许可期限为 15 年，自 SpaceX 证明第一颗 Starmind 卫星已成功入轨且运行符合授权条件之日的美国东部时间上午 3 点起算。\n- 被许可人可在决定发布之日起 30 日内拒绝附条件的授权，逾期未回应视为正式接受。\n- 授权令还写明：Viasat, Inc.、Kuiper Systems LLC 和美国天文学会（American Astronomical Society）提出的否决申请被驳回。FCC 在命令正文中表示，部分关于轨道数据中心是否经济、是否必要或是否影响夜空的意见，超出其被国会赋予的无线电通信监管范围，因而拒绝代申请人做商业可行性判断。\n\n## 适合谁\n\n关注 AI 算力基础设施、卫星频谱许可和太空数据中心监管的读者。它不提供可购买的算力产品，也不等于这些卫星已经发射。\n\n## 为什么值得看\n\n这是目前可在官方 PDF 中逐条核对的、把「轨道数据中心」写入无线电授权的重大监管决定，同时也写清了这是部分批准、处置豁免被暂缓，以及 2033–2040 年的部署里程碑。把媒体标题中的「批准百万卫星」理解成「无条件、立即建设」并不准确。昨日晚报与今日早报均未写入，故作补录。\n\n## 可以核对的事实\n\n- 授权令编号 DA 26-1273；Adopted 与 Released 均为 November 25, 2026；结论为 GRANTED-IN-PART and DEFERRED-IN-PART：https://docs.fcc.gov/public/attachments/DA-26-1273A1.pdf\n- 最多 1,000,000 颗卫星；授权令封面高度范围为 500 至 1,002 公里；备份 TT&C 频段为 18.8–19.3 GHz 与 28.6–29.1 GHz。\n- 部署里程碑：2033-11-25 至少 1 颗，2035-11-25 达到 10%，2038-11-25 达到 50%，2040-11-25 完成星座。\n- FCC Space Headlines 将该条列为 2026-11-25：https://www.fcc.gov/news-events/headlines/13329"
+    },
+    {
+      "id": "jetbrains-mellum-2-1-instruct-2026-11-25",
+      "title": "补录：JetBrains 发布 Mellum2.1 Instruct：面向编码智能体的开源直接作答模型",
+      "badge": "N",
+      "summary": "JetBrains 发布 Mellum2.1 Instruct，作为 10 月已发布的 Mellum2.1 Thinking 的「直接作答」版本。两者同为总参数 120 亿、每 token 激活 25 亿的混合专家模型，训练过程相同，但 Instruct 不输出思维链。官方称，在智能体编码任务上，它生成的 token 大约只有 Thinking 版本的一半，并在 SWE-bench Verified 上较上一版 Instruct 有明显提升。权重以 Apache 2.0 在 Hugging Face 开源，同时提供 GGUF 与 MTP 头。",
+      "publishedAt": "2026-11-25",
+      "sortAt": "2026-11-25T19:00:00+08:00",
+      "timeLabel": "2026-11-25",
+      "timePrecision": "date",
+      "timeNote": "官方博客正文未在页面显著位置给出钟点；JetBrains 官方 AI 博客 RSS 的 pubDate 为 Wed, 25 Nov 2026 11:00:00 +0000，即北京时间 19:00。本报只写日期，sortAt 取该 RSS 时刻仅用于排序，不把页面未标明的钟点写成官方发布时间。此条为对昨日早报与晚报未收录条目的补录。",
+      "source": "JetBrains",
+      "confidence": "A",
+      "url": "https://blog.jetbrains.com/ai/2026/11/mellum2-1-instruct-is-out-bringing-faster-answers-for-coding-agents/",
+      "links": [
+        {
+          "label": "JetBrains 官方博客",
+          "url": "https://blog.jetbrains.com/ai/2026/11/mellum2-1-instruct-is-out-bringing-faster-answers-for-coding-agents/"
+        },
+        {
+          "label": "Hugging Face 模型卡 Mellum2.1 Instruct",
+          "url": "https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Instruct"
+        }
+      ],
+      "detail": "## 它是什么\n\n这是 JetBrains 开源的编码模型更新，不是新的 IDE 订阅计划，也不是对 Thinking 版本的替换。官方把它定位为 Thinking 的「更快兄弟姐妹」，适合子智能体、工具循环、本地推理和普通问答；对需要逐步排查的难题，官方仍建议使用 Mellum2.1 Thinking。\n\n## 它做什么\n\n- 架构与 Mellum2.1 Thinking 相同：12B 总参数的 MoE，每 token 激活 2.5B。官方 Hugging Face 模型卡还写明：28 层、64 个专家、每次激活 8 个、上下文长度 131,072，精度 bfloat16，许可证 Apache 2.0。\n- 与 Mellum2 的主要差别在后训练：在真实环境、仓库级任务上做大规模强化学习，训练栈基于 NVIDIA 开源的 NeMo RL 与 NeMo Megatron-Bridge。官方称单次训练可从 10,000 个并发沙箱收集约 50 万条智能体轨迹，使用 NVIDIA H200 与 B300 GPU。\n- Instruct 的调整是：为「不作思考、直接作答」调了长度惩罚，并把生成与训练对齐，以保持简洁、降低 token 数。\n- 官方博客称：在智能体编码任务上，Instruct 生成的 token 约为 Thinking 的一半，在 SWE-bench Verified 上表现接近 Thinking；在 LiveCodeBench、AIME 这类更难的算法与数学题上，Thinking 仍然更好。\n- 官方 Hugging Face 模型卡写明：Instruct 在 SWE-bench Verified 上解决 40.4% 的任务，上一版 Mellum2 Instruct 为 20.2%；并举例 AIME 从 32.3 升至 61.1，WorkBench 从 22.2 升至 38.0。这些是官方自报数字。\n- 官方还与同档开源模型 Qwen3.5 9B、Gemma 4 E4B（均关闭 thinking）做了比较：称 Instruct 在代码生成上领先该组，多步工具使用与 Qwen3.5 9B 相当；Qwen3.5 9B 在 SWE-bench Verified 上更高，但 Mellum2.1 每 token 只激活 2.5B，官方称单请求生成速度约快 1.4 倍、负载下约快 1.8 倍（数字引用其 10 月博文）。\n- 与 Thinking 一样，一并发布 MTP（多 token 预测）头，官方称可使生成加快最多约 1.8 倍；并提供用于本机运行的 GGUF。\n\n## 适合谁\n\n在自有基础设施或本地环境里搭建编码智能体、子智能体或需要更快直接作答的开发者。若任务更依赖逐步推理，官方建议继续用 Mellum2.1 Thinking。\n\n## 为什么值得看\n\n这是可核验的开源权重发布，明确把「直接作答」和「带思维链」拆成两个同架构变体，并给出可对照的官方基准与许可证。昨日早报与晚报均未写入，故作补录。\n\n## 可以核对的事实\n\n- 官方博客标题：Mellum2.1 Instruct Is Out, Bringing Faster Answers for Coding Agents。\n- 官方 RSS pubDate：Wed, 25 Nov 2026 11:00:00 +0000。\n- 官方模型卡给出 SWE-bench Verified 40.4%（对比上一版 Instruct 的 20.2%），以及 Apache 2.0、12B / 2.5B 激活、上下文 131,072 等规格。"
+    },
+    {
+      "id": "kioxia-nvidia-scada-ssd-memory-2026-11-25",
+      "title": "补录：Kioxia 与 NVIDIA 演示用 SSD 将 GPU 有效内存扩至拍字节级，并探索处理约 2 万亿向量",
+      "badge": "N",
+      "summary": "Kioxia 宣布与 NVIDIA 合作，用 NVIDIA SCADA 软件和 Storage-Next 相关技术，在搭载 144 块 KIOXIA XD8 7.68 TB E1.S NVMe SSD 的 GB200 NVL72 机柜上，演示把 GPU 有效内存扩展到拍字节规模，并探索处理约 2 万亿个向量。这是概念验证，不是已经上市的完整产品方案。官方写明原始 SSD 容量约 1.1 PB，并支持 512 字节访问。",
+      "publishedAt": "2026-11-25",
+      "sortAt": "2026-11-25T12:00:00+08:00",
+      "timeLabel": "2026-11-25",
+      "timePrecision": "date",
+      "timeNote": "Kioxia America 新闻稿日期为 SAN JOSE, Calif., November 25, 2026，未给钟点。日本总公司新闻稿日期为 2026 年 11 月 26 日。本报以美国英文稿日期为准，只写日期，sortAt 仅用于排序，不代表官方发布时间。此条为对昨日早报与晚报未收录条目的补录。",
+      "source": "Kioxia / NVIDIA",
+      "confidence": "A",
+      "url": "https://americas.kioxia.com/en-us/business/news/2026/ssd-20261125-1.html",
+      "links": [
+        {
+          "label": "Kioxia America 官方新闻稿",
+          "url": "https://americas.kioxia.com/en-us/business/news/2026/ssd-20261125-1.html"
+        },
+        {
+          "label": "基奥克西亚株式会社官方新闻稿",
+          "url": "https://www.kioxia.com/ja-jp/business/news/2026/20261126-1.html"
+        }
+      ],
+      "detail": "## 它是什么\n\n这是存储厂商与 NVIDIA 的联合概念验证（PoC），目的是在 HBM 容量不够用时，用 NVMe SSD 扩展 GPU 可访问的有效内存，服务更大规模的向量库与图神经网络数据。它不是新的 GPU 型号发布，也不是对已有 HBM 容量的替换承诺。美国稿注明：概念验证测试由 Kioxia 与 NVIDIA 于 2026 年 11 月 25 日进行。\n\n## 它做什么\n\n- 软件侧使用 NVIDIA SCADA（Scaled Accelerated Data Access），官方将其定义为用 NVMe SSD 扩展 GPU 有效内存的软件库，并支持小块、细粒度访问；同时提到 NVIDIA 的 Storage-Next 计划。\n- 硬件配置：NVIDIA GB200 NVL72 机柜，18 个服务器节点，每节点 8 块 SSD，共 144 块 KIOXIA XD8 Series 7.68 TB E1.S NVMe SSD；官方称原始 SSD 容量约 1.1 PB，每节点约 60 TB 基于闪存的扩展内存。\n- 官方称系统支持 512 字节访问，并有可能在该架构上支持 2 万亿个 512 字节向量。\n- NVIDIA 存储技术副总裁 Jason Hardy 在稿中表示：智能体的能力将越来越取决于它们能访问的知识，而不只是消耗的算力；NVIDIA 正与包括 Kioxia 在内的合作伙伴，借助 SCADA 和 Storage-Next 提高内存效率、扩展 GPU 有效内存。\n- 双方表示将继续评估 SCADA 与 Storage-Next 的可行性与性能。新闻稿未公布吞吐量或时延基准。\n\n## 适合谁\n\n关注大规模向量检索、智能体知识库和 GPU 内存墙的基础设施与系统工程师。普通应用开发者目前还不能把它当作一项可直接下单的成品服务。\n\n## 为什么值得看\n\n它用可核对的节点数、SSD 型号与容量，说明业界正在尝试用闪存补 HBM 的容量缺口。需要记住这是可行性演示，官方没有给出生产性能数字。昨日早报与晚报均未写入，故作补录。\n\n## 可以核对的事实\n\n- 美国官方稿日期：November 25, 2026；日本官方稿日期：2026 年 11 月 26 日。\n- 配置数字：144 块 7.68 TB XD8、18 节点、约 1.1 PB 原始容量、512 字节访问、约 2 万亿向量，均来自官方新闻稿。\n- 容量定义：官方注明按十进制（1 TB = 10^12 字节等）计算，操作系统按二进制显示时容量会更小。"
+    },
+    {
+      "id": "character-ai-ags-chat-auction-2026-11-24",
+      "title": "补录：包括哥伦比亚特区在内的 42 名美国检察长反对 Character.AI 在破产程序中拍卖用户私密对话",
+      "badge": "N",
+      "summary": "加利福尼亚州、科罗拉多州、康涅狄格州等检察长带头，包括哥伦比亚特区在内的 42 名美国检察长，在官方新闻稿中反对 Character.AI 在破产程序中拍卖其平台以及 2,100 多万个美国账户的私密聊天记录（官方称其中 210 多万个注册为未成年人账户），且拟议交易未给用户提供充分保护。拍卖定于 2026 年 12 月 1 日。检察长们要求法院拒绝当前出售条件与领先竞买方，或至少把儿童对话和其他敏感数据排除在出售范围之外。",
+      "publishedAt": "2026-11-24",
+      "sortAt": "2026-11-24T18:00:00+08:00",
+      "timeLabel": "2026-11-24",
+      "timePrecision": "date",
+      "timeNote": "加利福尼亚州检察长新闻稿标注 Tuesday, November 24, 2026；康涅狄格州检察长新闻稿标注 11/24/2026；科罗拉多州检察长新闻稿标注 Nov. 25, 2026。三份官方稿均未给钟点。《The Verge》报道标注 Nov 26, 2026, 9:54 AM UTC，约合北京时间 17:54，已在昨日晚报窗口之前。本报以加利福尼亚州、康涅狄格州官方日期为准，只写日期，sortAt 仅用于排序，不代表官方发布时间。此条为对昨日早报与晚报未收录条目的补录。",
+      "source": "美国各州检察长",
+      "confidence": "A",
+      "url": "https://coag.gov/press-releases/weiser-challenges-auction-of-millions-of-private-character-ai-conversations/",
+      "links": [
+        {
+          "label": "科罗拉多州检察长官方新闻稿",
+          "url": "https://coag.gov/press-releases/weiser-challenges-auction-of-millions-of-private-character-ai-conversations/"
+        },
+        {
+          "label": "加利福尼亚州检察长官方新闻稿",
+          "url": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-opposes-asset-sale-characterai-amid-child-safety-concerns"
+        },
+        {
+          "label": "康涅狄格州检察长官方新闻稿",
+          "url": "https://portal.ct.gov/ag/press-releases/2026-press-releases/attorney-general-tong-challenges-plan-to-auction-off-character-ai-private-chats"
+        },
+        {
+          "label": "《The Verge》",
+          "url": "https://www.theverge.com/policy/1042620/character-ai-sale-state-ags-block-selling-users-chats"
+        }
+      ],
+      "detail": "## 它是什么\n\n这是多州检察长对 Character.AI 破产资产出售方案提出的正式异议，不是最终禁令，也不是已经完成的数据交割。官方稿把此事与此前各州反对向 Disney 出售部分许可的行动区分开来：这次针对的是几乎全部剩余资产，包括聊天记录与个人信息。\n\n## 它做什么\n\n- 官方称：拟出售内容包括用户账户信息与聊天记录，以及 IP 地址等元数据；科罗拉多州稿还提到位置信息。每段对话与用户资料、标识信息相连；加利福尼亚州、康涅狄格州稿还提到 Character.AI 给其标记用户的风险评分。\n- 官方举例：聊天中包括 AI 角色将儿童与成人引入性相关对话，以及用户（含未成年人）向扮成「治疗师」「医生」等角色的聊天机器人讲述自我伤害、饮食障碍、自杀念头等私密内容。\n- 检察长列出的主要担忧包括：买方不必遵守 Character.AI 的隐私政策，也不必响应删除或退出请求，协议未限制买方如何使用数据；买方可能再次转售或转移数据；Character.AI 向竞买方披露了安全问题与潜在法律责任等信息，但未同样提供给法院、各州或用户；其聊天机器人服务可能违反各州不公平或欺骗性做法法律，且部分州的聊天机器人安全法律将于 2027 年 1 月 1 日生效；目前披露的领先竞买方 Smirks and Pangs Acquisition LLC 于 2026-11-13 在特拉华州设立，比 Character.AI 将其选为开标竞买方只早一天，协议未列明母公司或投资人，并允许只向 Character.AI 披露身份的外国投资人；协议要求雇用的唯一 Character.AI 员工是公司最高法律负责人。\n- 各州引用 Character.AI 自己的隐私政策原句：we do not sell personal information for monetary consideration。\n- 各州请求法院：拒绝拟议出售条件，拒绝 Smirks 作为领先竞买方，并拒绝其提议的 35 万美元「分手费」（若公司最终卖给他人，该竞买方可收取的费用）。退一步，也要求任何出售必须排除儿童对话和其他敏感信息，并包含可执行的隐私保护。\n- 科罗拉多州稿写明：加州、科罗拉多州、康涅狄格州检察长牵头，另有阿拉斯加、阿肯色、特拉华等州以及哥伦比亚特区检察长加入。加利福尼亚州稿标题亦作「42 attorneys general」。本报采用这一官方口径，不把哥伦比亚特区写成「州」。\n\n## 适合谁\n\nCharacter.AI 的现有或前用户，尤其是未成年人监护人；以及关注聊天机器人数据在破产程序中如何处理的开发者、产品与法律人士。若法院日后批准出售，影响的是这些用户的历史对话与个人数据，而不是某一款新模型的功能。\n\n## 为什么值得看\n\n拍卖日期已经确定为 12 月 1 日，官方异议把「公司曾承诺不出售个人信息」与「破产中拟拍卖聊天记录」直接对照，并特别强调未成年人数据。这是公开、可核对的监管行动，但结果仍取决于破产法院，尚未形成禁令。昨日早报与晚报均未写入，故作补录。\n\n## 可以核对的事实\n\n- 官方账户规模：2,100 多万个美国账户，其中 210 多万个注册为未成年人账户。\n- 拍卖日期：2026-12-01。\n- 领先竞买方名称与成立日：Smirks and Pangs Acquisition LLC，2026-11-13。\n- 拟议分手费：35 万美元。\n- 加州检察长 Rob Bonta 稿中另有一处「45 attorneys general」的表述，与同一新闻稿标题及科罗拉多州稿的「42」不一致。本报以标题与名单口径「42」为准，并写明包含哥伦比亚特区。"
+    },
+    {
+      "id": "google-workspace-mcp-cli-ga-2026-11-24",
+      "title": "补录：Google 宣布 Workspace MCP 服务器与官方 CLI 正式可用，并将对智能体访问推出标准化用量档位",
+      "badge": "N",
+      "summary": "Google 在 11 月 24 日的 Workspace 更新博客中宣布，Workspace 的 Model Context Protocol（MCP）服务器和官方 Workspace CLI 正式可用，并同步推出标准化用量档位、新的 Workspace AI Tools Addendum，以及更多针对 AI 智能体的企业管控。官方称，云端智能体可通过 MCP 使用 Gmail、Drive、Docs、Sheets、Slides、Calendar、Chat 和 Tasks 的预置工具（Keep 即将加入）；本地终端、虚拟机和容器沙箱则可用 CLI。对智能体经 REST API 直接访问 Workspace 数据的技术强制，将从 2027 年 2 月 1 日开始。",
+      "publishedAt": "2026-11-24",
+      "sortAt": "2026-11-24T12:00:00+08:00",
+      "timeLabel": "2026-11-24",
+      "timePrecision": "date",
+      "timeNote": "Google Workspace Updates 官方博客只标注 November 24, 2026，未给钟点。sortAt 仅用于排序，不代表官方发布时间。此条为对昨日早报与晚报未收录条目的补录。",
+      "source": "Google",
+      "confidence": "A",
+      "url": "https://workspaceupdates.googleblog.com/2026/11/mcp-servers-cli-standardized-usage-tiers-now-available.html",
+      "links": [
+        {
+          "label": "Google Workspace Updates 官方博客",
+          "url": "https://workspaceupdates.googleblog.com/2026/11/mcp-servers-cli-standardized-usage-tiers-now-available.html"
+        },
+        {
+          "label": "配置 Workspace MCP 服务器",
+          "url": "https://developers.google.com/workspace/guides/configure-mcp-servers"
+        },
+        {
+          "label": "Workspace CLI 开发者文档",
+          "url": "https://developers.google.com/workspace/guides/workspace-cli"
+        }
+      ],
+      "detail": "## 它是什么\n\n这是 Google 为「让智能体访问 Workspace 数据」提供的官方通道与治理方案，不是新的 Gemini 模型。官方强调：开发者不必再为这类智能体工作流自写一套集成，同时组织仍应保持对数据的控制。该更新面向所有 Google Workspace 客户与开发者。\n\n## 它做什么\n\n- Workspace MCP 服务器由 Google 托管，基于开放的 MCP 标准，供云端和网页智能体直接调用预置工具；覆盖 Gmail、Drive、Docs、Sheets、Slides、Calendar、Chat、Tasks，并写明 Keep 即将提供。\n- Workspace CLI 把 Workspace 工具带到本地环境（开发者终端、虚拟机、容器沙箱），包含打包的 agent skills、动态命令发现，以及范围受限的登录，用于读取和更新 Workspace 数据。\n- 官方对比传统 REST API：MCP 工具在 Workspace 边界内返回综合摘要，而不是一行行下载原始数据；CLI 可在终端里串联多个工具。官方称两者都有助于降低 token 成本与时延，并带有默认安全、用户确认、审计日志和管理员控制。\n- 用量分成两档，先从 Gmail、Drive 和 Calendar 开始，其他数据访问方式将在随后数月跟进。Standard 档免费，有已公布的配额（速率限制）；Scaled 档面向需要更高配额的项目。自 2027 年 4 月 1 日起，若选择 Scaled 档，只对超过每日免费额度的 API 或 MCP 用量收费；若不采取行动，项目可能被限流到已公布的 Standard 配额。\n- 对 AI 智能体的要求：必须通过 Workspace MCP 服务器或 Workspace CLI 访问 Workspace 数据，而不是直接调用 Workspace REST API。技术强制自 2027 年 2 月 1 日开始。官方还要求为智能体使用的 OAuth 2.0 客户端勾选「Use this client for an AI-powered agent (is_agentic)」。\n- 官方称：目前超过 99% 的活跃开发者处于 Standard 档，将继续免费使用这些 API。若在 2027 年 4 月 1 日前未把已有更高限额的项目改为 Scaled 或标记为组织内部项目，限额将自动回到 Standard 档，且不额外收费。\n- 治理方面：新的 Workspace AI Tools Addendum 禁止将智能体等访问工具用于某些可能带来安全风险的活动，包括把由 Workspace API 使用产生的特定数据长期存储，或用智能体刮取 Workspace API；外部智能体须在 OAuth 中表明身份并经 MCP 或 CLI 接入，以便管理员在管理控制台中像管理传统应用一样管理；管理员可设置规则，要求用户在第三方 AI 工具中确认敏感操作；现有用户级 DLP 规则自动适用，管理员审计日志记录智能体动作与用户确认。\n- 推出节奏：官方写明 Rapid Release 与 Scheduled Release 域名将在 2 周内向全部对象推出 MCP 服务器（正式可用）、Workspace CLI（正式可用）、管理控制台中的智能体访问 / 人工确认 / 审计日志控制、API 用量开发者仪表盘，以及 Scaled 档选择。\n\n## 适合谁\n\n正在把智能体接到 Gmail、日历、网盘和文档的开发者，以及需要给这些智能体设权限、确认和审计的 Workspace 管理员。普通最终用户不会在 11 月 24 日当天看到一个新的消费者应用，但他们使用的第三方或内部智能体，未来访问 Workspace 的方式会改变。\n\n## 为什么值得看\n\n这把「智能体怎么连上 Workspace」从各做各的集成，收束到官方 MCP / CLI，并给出明确的强制日期和收费起始日。对已经直接打 REST API 的智能体项目，2027 年 2 月 1 日是需要提前改接入方式的节点。昨日早报与晚报均未写入，故作补录。\n\n## 可以核对的事实\n\n- 官方博客日期：November 24, 2026；标题含 MCP servers、CLI、standardized usage tiers、admin policies。\n- 技术强制日期：2027-02-01（智能体须使用 MCP 或 CLI）。\n- Scaled 档计费起始：2027-04-01，先适用于 Gmail、Calendar、Drive API 以及 Workspace CLI 与 MCP 服务器。\n- 适用范围：官方写明向所有 Google Workspace 客户与开发者提供。"
+    }
+  ]
+}
