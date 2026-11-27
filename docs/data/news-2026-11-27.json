@@ -1,0 +1,159 @@
+{
+  "asOf": "2026-11-27",
+  "timezone": "Asia/Shanghai",
+  "preview": 10,
+  "empty": false,
+  "emptyMessage": "今日暂无重要资讯，晚间 19:30 起每日更新",
+  "note": "2026-11-27 早报（北京时间）整理：新录入 5 条，均为对昨日早报与晚报未收录的官方公告的补录（韩国公正交易委员会就 Apple Intelligence 广告启动审议程序；JetBrains 发布 Mellum2.1 Instruct；Kioxia 与 NVIDIA 演示用 SSD 扩展 GPU 有效内存；42 名美国检察长反对 Character.AI 拍卖用户对话；Google Workspace MCP 服务器与 CLI 正式可用）。按公告时间从新到旧排列。带精确钟点的条目 timeLabel 用北京时间；官方只给日期的条目 timePrecision 为 date，timeLabel 只写日期，sortAt 仅用于排序，详见各条 timeNote。置信度 A 表示来自官方原文，B 表示可靠媒体报道、官方未单独核实。",
+  "items": [
+    {
+      "id": "kftc-apple-intelligence-ads-2026-11-26",
+      "title": "补录：韩国公正交易委员会就 Apple Intelligence 广告启动审议程序，审查官建议纠正措施并处以过征金",
+      "badge": "N",
+      "summary": "韩国公正交易委员会 11 月 26 日公布，其事务处已于 11 月 24 日就 Apple Inc. 与 Apple Korea 涉嫌违反《标识广告公正化法》向委员会提交审查报告，审议程序由此启动。审查官认为，公司在 iPhone 16 网站上宣传 Apple Intelligence 时，隐瞒、缩小或遗漏了部分功能能否按时提供等对购买决策重要的信息，建议发出纠正命令并处以过征金。这不是最终处罚决定。Apple 向 MacRumors 表示已配合调查，但不同意审查报告中的结论。",
+      "publishedAt": "2026-11-26",
+      "sortAt": "2026-11-26T19:19:00+08:00",
+      "timeLabel": "2026-11-26",
+      "timePrecision": "date",
+      "timeNote": "韩国公正交易委员会官网将新闻稿登记为 2026-11-26，未给钟点；附件文件名作「261127(조간)」，即供 11 月 27 日晨报使用的资料。韩国《Korea Times》稿标注 Published Nov 26, 2026 12:01 pm KST，约合北京时间 11:01；MacRumors 稿标注 Thursday November 26, 2026 3:19 am PST，约合北京时间 19:19。本报只写日期，sortAt 取 MacRumors 英文报道时刻仅用于排序，不代表官方发布时间。此条为对昨日早报与晚报未收录条目的补录。",
+      "source": "韩国公正交易委员会",
+      "confidence": "A",
+      "url": "https://www.ftc.go.kr/www/selectBbsNttView.do?bordCd=3&key=12&nttSn=48278&searchCtgry=01%2C02",
+      "links": [
+        {
+          "label": "韩国公正交易委员会官方新闻稿",
+          "url": "https://www.ftc.go.kr/www/selectBbsNttView.do?bordCd=3&key=12&nttSn=48278&searchCtgry=01%2C02"
+        },
+        {
+          "label": "韩国政策简报转载",
+          "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790945"
+        },
+        {
+          "label": "MacRumors（含 Apple 声明）",
+          "url": "https://www.macrumors.com/2026/11/26/apple-korea-regulator-iphone-16-ai-advertising/"
+        },
+        {
+          "label": "9to5Mac",
+          "url": "https://9to5mac.com/2026/11/26/south-korea-proceeds-with-case-over-allegedly-misleading-apple-intelligence-ads/"
+        },
+        {
+          "label": "《Korea Times》",
+          "url": "https://www.koreatimes.co.kr/business/companies/20261126/apple-korea-faces-potential-50-mil-fine-over-deceptive-iphone-ai-ads"
+        }
+      ],
+      "detail": "## 它是什么\n\n这是韩国竞争与广告监管机构启动的正式审议，针对的是 iPhone 16 上市前后 Apple Intelligence 功能广告是否构成「欺骗性标识或广告」，而不是新的产品发布，也还不是已生效的罚款决定。官方新闻稿写明：审查报告只代表审查官在调查中形成的违法性判断与措施意见，对委员会的最终判断没有拘束力。\n\n## 它做什么\n\n- 公正交易委员会称：审查报告已于 2026-11-24 提交委员会，并于同日送达被审人，审议程序由此开始。\n- 广告期间为 2024 年 9 月至 2025 年 3 月，载体是 iPhone 16 官网。广告曾写到「年内将先以美国英语推出」（2024 年 9 月）、「目前已提供美国英语服务」（2024 年 10 月）、「将于 4 月初支持韩语」（2025 年 2 月），并详细介绍了当时宣传的 9 项 Apple Intelligence 功能。\n- 官方点名 4 项未按广告内容提供的功能：Genmoji、Image Playground、「具备理解个人语境能力的 Siri」，以及「提供分步指引的 Siri」。\n- 以「理解个人语境的 Siri」为例：广告称将在 2024 年内先推出美国英语、2024 年 10 月已在提供美国英语、2025 年 4 月初支持韩语；官方写明实际是 2026 年 9 月才先推出美国英语，2026 年 10 月才支持韩语。\n- 审查官认为上述行为违反《标识广告公正化法》第 3 条第 1 款第 2 项（欺骗性标识或广告），属于重大违法行为，建议发出纠正命令（包括今后禁止同类行为、公布命令）并处以过征金；并将与该嫌疑相关的销售额计为约 3.3527 万亿韩元。官方未公布建议或最终的过征金金额。\n- 被审人可在收到审查报告之日起 6 周内提交书面意见、申请查阅或复制证据。委员会将再审议后，就是否违法及过征金金额作出最终判断。\n- Apple 向 MacRumors 表示：重视与韩国用户的关系；自去年为 Apple Intelligence 增加韩语支持以来，用户已能使用数十项集成功能，并提到近期推出了韩语的 Siri AI；公司已配合调查，但不同意审查报告中的结论，期待在委员会面前充分辩护。\n\n## 适合谁\n\n关注苹果设备与 Apple Intelligence 落地进度的用户，以及需要跟踪主要市场对 AI 功能宣传监管的人。对中国用户而言，这是韩国市场的行政程序，不直接改变中国大陆或香港的产品功能，但反映了「先宣传、后分期交付」的 AI 功能广告正在受到监管审查。\n\n## 为什么值得看\n\n这是主要经济体监管机构就生成式 AI 功能广告是否充分披露可用性与时间表，进入正式审议的公开案例。需要把「审查官意见」和「委员会终局决定」分开看：目前还没有罚款或纠正令生效。昨日早报与晚报均未写入，故作补录。\n\n## 可以核对的事实\n\n- 官方标题与登记日：公正交易委员会新闻稿《애플 부당 광고 사건 심의 절차 개시》，登记 2026-11-26。\n- 审查报告提交与送达日期：2026-11-24。\n- 相关销售额：官方计为约 3 조 3,527 억 원（约 3.3527 万亿韩元）。部分媒体按该法最高可达相关销售额 2% 估算过征金上限，这不是官方处罚决定。\n- 调查起因：官方称 2025 年 3 月接到举报后展开调查。\n- 最终结果尚未作出。"
+    },
+    {
+      "id": "jetbrains-mellum-2-1-instruct-2026-11-25",
+      "title": "补录：JetBrains 发布 Mellum2.1 Instruct：面向编码智能体的开源直接作答模型",
+      "badge": "N",
+      "summary": "JetBrains 发布 Mellum2.1 Instruct，作为 10 月已发布的 Mellum2.1 Thinking 的「直接作答」版本。两者同为总参数 120 亿、每 token 激活 25 亿的混合专家模型，训练过程相同，但 Instruct 不输出思维链。官方称，在智能体编码任务上，它生成的 token 大约只有 Thinking 版本的一半，并在 SWE-bench Verified 上较上一版 Instruct 有明显提升。权重以 Apache 2.0 在 Hugging Face 开源，同时提供 GGUF 与 MTP 头。",
+      "publishedAt": "2026-11-25",
+      "sortAt": "2026-11-25T19:00:00+08:00",
+      "timeLabel": "2026-11-25",
+      "timePrecision": "date",
+      "timeNote": "官方博客正文未在页面显著位置给出钟点；JetBrains 官方 AI 博客 RSS 的 pubDate 为 Wed, 25 Nov 2026 11:00:00 +0000，即北京时间 19:00。本报只写日期，sortAt 取该 RSS 时刻仅用于排序，不把页面未标明的钟点写成官方发布时间。此条为对昨日早报与晚报未收录条目的补录。",
+      "source": "JetBrains",
+      "confidence": "A",
+      "url": "https://blog.jetbrains.com/ai/2026/11/mellum2-1-instruct-is-out-bringing-faster-answers-for-coding-agents/",
+      "links": [
+        {
+          "label": "JetBrains 官方博客",
+          "url": "https://blog.jetbrains.com/ai/2026/11/mellum2-1-instruct-is-out-bringing-faster-answers-for-coding-agents/"
+        },
+        {
+          "label": "Hugging Face 模型卡 Mellum2.1 Instruct",
+          "url": "https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Instruct"
+        }
+      ],
+      "detail": "## 它是什么\n\n这是 JetBrains 开源的编码模型更新，不是新的 IDE 订阅计划，也不是对 Thinking 版本的替换。官方把它定位为 Thinking 的「更快兄弟姐妹」，适合子智能体、工具循环、本地推理和普通问答；对需要逐步排查的难题，官方仍建议使用 Mellum2.1 Thinking。\n\n## 它做什么\n\n- 架构与 Mellum2.1 Thinking 相同：12B 总参数的 MoE，每 token 激活 2.5B。官方 Hugging Face 模型卡还写明：28 层、64 个专家、每次激活 8 个、上下文长度 131,072，精度 bfloat16，许可证 Apache 2.0。\n- 与 Mellum2 的主要差别在后训练：在真实环境、仓库级任务上做大规模强化学习，训练栈基于 NVIDIA 开源的 NeMo RL 与 NeMo Megatron-Bridge。官方称单次训练可从 10,000 个并发沙箱收集约 50 万条智能体轨迹，使用 NVIDIA H200 与 B300 GPU。\n- Instruct 的调整是：为「不作思考、直接作答」调了长度惩罚，并把生成与训练对齐，以保持简洁、降低 token 数。\n- 官方博客称：在智能体编码任务上，Instruct 生成的 token 约为 Thinking 的一半，在 SWE-bench Verified 上表现接近 Thinking；在 LiveCodeBench、AIME 这类更难的算法与数学题上，Thinking 仍然更好。\n- 官方 Hugging Face 模型卡写明：Instruct 在 SWE-bench Verified 上解决 40.4% 的任务，上一版 Mellum2 Instruct 为 20.2%；并举例 AIME 从 32.3 升至 61.1，WorkBench 从 22.2 升至 38.0。这些是官方自报数字。\n- 官方还与同档开源模型 Qwen3.5 9B、Gemma 4 E4B（均关闭 thinking）做了比较：称 Instruct 在代码生成上领先该组，多步工具使用与 Qwen3.5 9B 相当；Qwen3.5 9B 在 SWE-bench Verified 上更高，但 Mellum2.1 每 token 只激活 2.5B，官方称单请求生成速度约快 1.4 倍、负载下约快 1.8 倍（数字引用其 10 月博文）。\n- 与 Thinking 一样，一并发布 MTP（多 token 预测）头，官方称可使生成加快最多约 1.8 倍；并提供用于本机运行的 GGUF。\n\n## 适合谁\n\n在自有基础设施或本地环境里搭建编码智能体、子智能体或需要更快直接作答的开发者。若任务更依赖逐步推理，官方建议继续用 Mellum2.1 Thinking。\n\n## 为什么值得看\n\n这是可核验的开源权重发布，明确把「直接作答」和「带思维链」拆成两个同架构变体，并给出可对照的官方基准与许可证。昨日早报与晚报均未写入，故作补录。\n\n## 可以核对的事实\n\n- 官方博客标题：Mellum2.1 Instruct Is Out, Bringing Faster Answers for Coding Agents。\n- 官方 RSS pubDate：Wed, 25 Nov 2026 11:00:00 +0000。\n- 官方模型卡给出 SWE-bench Verified 40.4%（对比上一版 Instruct 的 20.2%），以及 Apache 2.0、12B / 2.5B 激活、上下文 131,072 等规格。"
+    },
+    {
+      "id": "kioxia-nvidia-scada-ssd-memory-2026-11-25",
+      "title": "补录：Kioxia 与 NVIDIA 演示用 SSD 将 GPU 有效内存扩至拍字节级，并探索处理约 2 万亿向量",
+      "badge": "N",
+      "summary": "Kioxia 宣布与 NVIDIA 合作，用 NVIDIA SCADA 软件和 Storage-Next 相关技术，在搭载 144 块 KIOXIA XD8 7.68 TB E1.S NVMe SSD 的 GB200 NVL72 机柜上，演示把 GPU 有效内存扩展到拍字节规模，并探索处理约 2 万亿个向量。这是概念验证，不是已经上市的完整产品方案。官方写明原始 SSD 容量约 1.1 PB，并支持 512 字节访问。",
+      "publishedAt": "2026-11-25",
+      "sortAt": "2026-11-25T12:00:00+08:00",
+      "timeLabel": "2026-11-25",
+      "timePrecision": "date",
+      "timeNote": "Kioxia America 新闻稿日期为 SAN JOSE, Calif., November 25, 2026，未给钟点。日本总公司新闻稿日期为 2026 年 11 月 26 日。本报以美国英文稿日期为准，只写日期，sortAt 仅用于排序，不代表官方发布时间。此条为对昨日早报与晚报未收录条目的补录。",
+      "source": "Kioxia / NVIDIA",
+      "confidence": "A",
+      "url": "https://americas.kioxia.com/en-us/business/news/2026/ssd-20261125-1.html",
+      "links": [
+        {
+          "label": "Kioxia America 官方新闻稿",
+          "url": "https://americas.kioxia.com/en-us/business/news/2026/ssd-20261125-1.html"
+        },
+        {
+          "label": "基奥克西亚株式会社官方新闻稿",
+          "url": "https://www.kioxia.com/ja-jp/business/news/2026/20261126-1.html"
+        }
+      ],
+      "detail": "## 它是什么\n\n这是存储厂商与 NVIDIA 的联合概念验证（PoC），目的是在 HBM 容量不够用时，用 NVMe SSD 扩展 GPU 可访问的有效内存，服务更大规模的向量库与图神经网络数据。它不是新的 GPU 型号发布，也不是对已有 HBM 容量的替换承诺。美国稿注明：概念验证测试由 Kioxia 与 NVIDIA 于 2026 年 11 月 25 日进行。\n\n## 它做什么\n\n- 软件侧使用 NVIDIA SCADA（Scaled Accelerated Data Access），官方将其定义为用 NVMe SSD 扩展 GPU 有效内存的软件库，并支持小块、细粒度访问；同时提到 NVIDIA 的 Storage-Next 计划。\n- 硬件配置：NVIDIA GB200 NVL72 机柜，18 个服务器节点，每节点 8 块 SSD，共 144 块 KIOXIA XD8 Series 7.68 TB E1.S NVMe SSD；官方称原始 SSD 容量约 1.1 PB，每节点约 60 TB 基于闪存的扩展内存。\n- 官方称系统支持 512 字节访问，并有可能在该架构上支持 2 万亿个 512 字节向量。\n- NVIDIA 存储技术副总裁 Jason Hardy 在稿中表示：智能体的能力将越来越取决于它们能访问的知识，而不只是消耗的算力；NVIDIA 正与包括 Kioxia 在内的合作伙伴，借助 SCADA 和 Storage-Next 提高内存效率、扩展 GPU 有效内存。\n- 双方表示将继续评估 SCADA 与 Storage-Next 的可行性与性能。新闻稿未公布吞吐量或时延基准。\n\n## 适合谁\n\n关注大规模向量检索、智能体知识库和 GPU 内存墙的基础设施与系统工程师。普通应用开发者目前还不能把它当作一项可直接下单的成品服务。\n\n## 为什么值得看\n\n它用可核对的节点数、SSD 型号与容量，说明业界正在尝试用闪存补 HBM 的容量缺口。需要记住这是可行性演示，官方没有给出生产性能数字。昨日早报与晚报均未写入，故作补录。\n\n## 可以核对的事实\n\n- 美国官方稿日期：November 25, 2026；日本官方稿日期：2026 年 11 月 26 日。\n- 配置数字：144 块 7.68 TB XD8、18 节点、约 1.1 PB 原始容量、512 字节访问、约 2 万亿向量，均来自官方新闻稿。\n- 容量定义：官方注明按十进制（1 TB = 10^12 字节等）计算，操作系统按二进制显示时容量会更小。"
+    },
+    {
+      "id": "character-ai-ags-chat-auction-2026-11-24",
+      "title": "补录：包括哥伦比亚特区在内的 42 名美国检察长反对 Character.AI 在破产程序中拍卖用户私密对话",
+      "badge": "N",
+      "summary": "加利福尼亚州、科罗拉多州、康涅狄格州等检察长带头，包括哥伦比亚特区在内的 42 名美国检察长，在官方新闻稿中反对 Character.AI 在破产程序中拍卖其平台以及 2,100 多万个美国账户的私密聊天记录（官方称其中 210 多万个注册为未成年人账户），且拟议交易未给用户提供充分保护。拍卖定于 2026 年 12 月 1 日。检察长们要求法院拒绝当前出售条件与领先竞买方，或至少把儿童对话和其他敏感数据排除在出售范围之外。",
+      "publishedAt": "2026-11-24",
+      "sortAt": "2026-11-24T18:00:00+08:00",
+      "timeLabel": "2026-11-24",
+      "timePrecision": "date",
+      "timeNote": "加利福尼亚州检察长新闻稿标注 Tuesday, November 24, 2026；康涅狄格州检察长新闻稿标注 11/24/2026；科罗拉多州检察长新闻稿标注 Nov. 25, 2026。三份官方稿均未给钟点。《The Verge》报道标注 Nov 26, 2026, 9:54 AM UTC，约合北京时间 17:54，已在昨日晚报窗口之前。本报以加利福尼亚州、康涅狄格州官方日期为准，只写日期，sortAt 仅用于排序，不代表官方发布时间。此条为对昨日早报与晚报未收录条目的补录。",
+      "source": "美国各州检察长",
+      "confidence": "A",
+      "url": "https://coag.gov/press-releases/weiser-challenges-auction-of-millions-of-private-character-ai-conversations/",
+      "links": [
+        {
+          "label": "科罗拉多州检察长官方新闻稿",
+          "url": "https://coag.gov/press-releases/weiser-challenges-auction-of-millions-of-private-character-ai-conversations/"
+        },
+        {
+          "label": "加利福尼亚州检察长官方新闻稿",
+          "url": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-opposes-asset-sale-characterai-amid-child-safety-concerns"
+        },
+        {
+          "label": "康涅狄格州检察长官方新闻稿",
+          "url": "https://portal.ct.gov/ag/press-releases/2026-press-releases/attorney-general-tong-challenges-plan-to-auction-off-character-ai-private-chats"
+        },
+        {
+          "label": "《The Verge》",
+          "url": "https://www.theverge.com/policy/1042620/character-ai-sale-state-ags-block-selling-users-chats"
+        }
+      ],
+      "detail": "## 它是什么\n\n这是多州检察长对 Character.AI 破产资产出售方案提出的正式异议，不是最终禁令，也不是已经完成的数据交割。官方稿把此事与此前各州反对向 Disney 出售部分许可的行动区分开来：这次针对的是几乎全部剩余资产，包括聊天记录与个人信息。\n\n## 它做什么\n\n- 官方称：拟出售内容包括用户账户信息与聊天记录，以及 IP 地址等元数据；科罗拉多州稿还提到位置信息。每段对话与用户资料、标识信息相连；加利福尼亚州、康涅狄格州稿还提到 Character.AI 给其标记用户的风险评分。\n- 官方举例：聊天中包括 AI 角色将儿童与成人引入性相关对话，以及用户（含未成年人）向扮成「治疗师」「医生」等角色的聊天机器人讲述自我伤害、饮食障碍、自杀念头等私密内容。\n- 检察长列出的主要担忧包括：买方不必遵守 Character.AI 的隐私政策，也不必响应删除或退出请求，协议未限制买方如何使用数据；买方可能再次转售或转移数据；Character.AI 向竞买方披露了安全问题与潜在法律责任等信息，但未同样提供给法院、各州或用户；其聊天机器人服务可能违反各州不公平或欺骗性做法法律，且部分州的聊天机器人安全法律将于 2027 年 1 月 1 日生效；目前披露的领先竞买方 Smirks and Pangs Acquisition LLC 于 2026-11-13 在特拉华州设立，比 Character.AI 将其选为开标竞买方只早一天，协议未列明母公司或投资人，并允许只向 Character.AI 披露身份的外国投资人；协议要求雇用的唯一 Character.AI 员工是公司最高法律负责人。\n- 各州引用 Character.AI 自己的隐私政策原句：we do not sell personal information for monetary consideration。\n- 各州请求法院：拒绝拟议出售条件，拒绝 Smirks 作为领先竞买方，并拒绝其提议的 35 万美元「分手费」（若公司最终卖给他人，该竞买方可收取的费用）。退一步，也要求任何出售必须排除儿童对话和其他敏感信息，并包含可执行的隐私保护。\n- 科罗拉多州稿写明：加州、科罗拉多州、康涅狄格州检察长牵头，另有阿拉斯加、阿肯色、特拉华等州以及哥伦比亚特区检察长加入。加利福尼亚州稿标题亦作「42 attorneys general」。本报采用这一官方口径，不把哥伦比亚特区写成「州」。\n\n## 适合谁\n\nCharacter.AI 的现有或前用户，尤其是未成年人监护人；以及关注聊天机器人数据在破产程序中如何处理的开发者、产品与法律人士。若法院日后批准出售，影响的是这些用户的历史对话与个人数据，而不是某一款新模型的功能。\n\n## 为什么值得看\n\n拍卖日期已经确定为 12 月 1 日，官方异议把「公司曾承诺不出售个人信息」与「破产中拟拍卖聊天记录」直接对照，并特别强调未成年人数据。这是公开、可核对的监管行动，但结果仍取决于破产法院，尚未形成禁令。昨日早报与晚报均未写入，故作补录。\n\n## 可以核对的事实\n\n- 官方账户规模：2,100 多万个美国账户，其中 210 多万个注册为未成年人账户。\n- 拍卖日期：2026-12-01。\n- 领先竞买方名称与成立日：Smirks and Pangs Acquisition LLC，2026-11-13。\n- 拟议分手费：35 万美元。\n- 加州检察长 Rob Bonta 稿中另有一处「45 attorneys general」的表述，与同一新闻稿标题及科罗拉多州稿的「42」不一致。本报以标题与名单口径「42」为准，并写明包含哥伦比亚特区。"
+    },
+    {
+      "id": "google-workspace-mcp-cli-ga-2026-11-24",
+      "title": "补录：Google 宣布 Workspace MCP 服务器与官方 CLI 正式可用，并将对智能体访问推出标准化用量档位",
+      "badge": "N",
+      "summary": "Google 在 11 月 24 日的 Workspace 更新博客中宣布，Workspace 的 Model Context Protocol（MCP）服务器和官方 Workspace CLI 正式可用，并同步推出标准化用量档位、新的 Workspace AI Tools Addendum，以及更多针对 AI 智能体的企业管控。官方称，云端智能体可通过 MCP 使用 Gmail、Drive、Docs、Sheets、Slides、Calendar、Chat 和 Tasks 的预置工具（Keep 即将加入）；本地终端、虚拟机和容器沙箱则可用 CLI。对智能体经 REST API 直接访问 Workspace 数据的技术强制，将从 2027 年 2 月 1 日开始。",
+      "publishedAt": "2026-11-24",
+      "sortAt": "2026-11-24T12:00:00+08:00",
+      "timeLabel": "2026-11-24",
+      "timePrecision": "date",
+      "timeNote": "Google Workspace Updates 官方博客只标注 November 24, 2026，未给钟点。sortAt 仅用于排序，不代表官方发布时间。此条为对昨日早报与晚报未收录条目的补录。",
+      "source": "Google",
+      "confidence": "A",
+      "url": "https://workspaceupdates.googleblog.com/2026/11/mcp-servers-cli-standardized-usage-tiers-now-available.html",
+      "links": [
+        {
+          "label": "Google Workspace Updates 官方博客",
+          "url": "https://workspaceupdates.googleblog.com/2026/11/mcp-servers-cli-standardized-usage-tiers-now-available.html"
+        },
+        {
+          "label": "配置 Workspace MCP 服务器",
+          "url": "https://developers.google.com/workspace/guides/configure-mcp-servers"
+        },
+        {
+          "label": "Workspace CLI 开发者文档",
+          "url": "https://developers.google.com/workspace/guides/workspace-cli"
+        }
+      ],
+      "detail": "## 它是什么\n\n这是 Google 为「让智能体访问 Workspace 数据」提供的官方通道与治理方案，不是新的 Gemini 模型。官方强调：开发者不必再为这类智能体工作流自写一套集成，同时组织仍应保持对数据的控制。该更新面向所有 Google Workspace 客户与开发者。\n\n## 它做什么\n\n- Workspace MCP 服务器由 Google 托管，基于开放的 MCP 标准，供云端和网页智能体直接调用预置工具；覆盖 Gmail、Drive、Docs、Sheets、Slides、Calendar、Chat、Tasks，并写明 Keep 即将提供。\n- Workspace CLI 把 Workspace 工具带到本地环境（开发者终端、虚拟机、容器沙箱），包含打包的 agent skills、动态命令发现，以及范围受限的登录，用于读取和更新 Workspace 数据。\n- 官方对比传统 REST API：MCP 工具在 Workspace 边界内返回综合摘要，而不是一行行下载原始数据；CLI 可在终端里串联多个工具。官方称两者都有助于降低 token 成本与时延，并带有默认安全、用户确认、审计日志和管理员控制。\n- 用量分成两档，先从 Gmail、Drive 和 Calendar 开始，其他数据访问方式将在随后数月跟进。Standard 档免费，有已公布的配额（速率限制）；Scaled 档面向需要更高配额的项目。自 2027 年 4 月 1 日起，若选择 Scaled 档，只对超过每日免费额度的 API 或 MCP 用量收费；若不采取行动，项目可能被限流到已公布的 Standard 配额。\n- 对 AI 智能体的要求：必须通过 Workspace MCP 服务器或 Workspace CLI 访问 Workspace 数据，而不是直接调用 Workspace REST API。技术强制自 2027 年 2 月 1 日开始。官方还要求为智能体使用的 OAuth 2.0 客户端勾选「Use this client for an AI-powered agent (is_agentic)」。\n- 官方称：目前超过 99% 的活跃开发者处于 Standard 档，将继续免费使用这些 API。若在 2027 年 4 月 1 日前未把已有更高限额的项目改为 Scaled 或标记为组织内部项目，限额将自动回到 Standard 档，且不额外收费。\n- 治理方面：新的 Workspace AI Tools Addendum 禁止将智能体等访问工具用于某些可能带来安全风险的活动，包括把由 Workspace API 使用产生的特定数据长期存储，或用智能体刮取 Workspace API；外部智能体须在 OAuth 中表明身份并经 MCP 或 CLI 接入，以便管理员在管理控制台中像管理传统应用一样管理；管理员可设置规则，要求用户在第三方 AI 工具中确认敏感操作；现有用户级 DLP 规则自动适用，管理员审计日志记录智能体动作与用户确认。\n- 推出节奏：官方写明 Rapid Release 与 Scheduled Release 域名将在 2 周内向全部对象推出 MCP 服务器（正式可用）、Workspace CLI（正式可用）、管理控制台中的智能体访问 / 人工确认 / 审计日志控制、API 用量开发者仪表盘，以及 Scaled 档选择。\n\n## 适合谁\n\n正在把智能体接到 Gmail、日历、网盘和文档的开发者，以及需要给这些智能体设权限、确认和审计的 Workspace 管理员。普通最终用户不会在 11 月 24 日当天看到一个新的消费者应用，但他们使用的第三方或内部智能体，未来访问 Workspace 的方式会改变。\n\n## 为什么值得看\n\n这把「智能体怎么连上 Workspace」从各做各的集成，收束到官方 MCP / CLI，并给出明确的强制日期和收费起始日。对已经直接打 REST API 的智能体项目，2027 年 2 月 1 日是需要提前改接入方式的节点。昨日早报与晚报均未写入，故作补录。\n\n## 可以核对的事实\n\n- 官方博客日期：November 24, 2026；标题含 MCP servers、CLI、standardized usage tiers、admin policies。\n- 技术强制日期：2027-02-01（智能体须使用 MCP 或 CLI）。\n- Scaled 档计费起始：2027-04-01，先适用于 Gmail、Calendar、Drive API 以及 Workspace CLI 与 MCP 服务器。\n- 适用范围：官方写明向所有 Google Workspace 客户与开发者提供。"
+    }
+  ]
+}
