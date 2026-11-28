@@ -1,0 +1,92 @@
+{
+  "asOf": "2026-11-28",
+  "timezone": "Asia/Shanghai",
+  "preview": 10,
+  "empty": false,
+  "emptyMessage": "今日暂无重要资讯，晚间 19:30 起每日更新",
+  "note": "2026-11-28 早报（北京时间）整理：新录入 1 条（OpenAI 在加州联邦法院反诉苹果），并补录 1 条昨日早报与晚报均未写入的官方开源（蚂蚁灵波开源 LingBot-Map 2.0 与 LingBot-Navi）。按公告时间从新到旧排列。两条官方都只给日期或仅有媒体/Git 时间戳，timePrecision 为 date，timeLabel 只写日期，sortAt 仅用于排序，详见各条 timeNote。置信度 A 表示来自官方原文，B 表示可靠媒体报道、官方未单独核实。",
+  "items": [
+    {
+      "id": "openai-apple-countersuit-2026-11-27",
+      "title": "OpenAI 在加州联邦法院反诉苹果：指控其窃取硬件商业秘密并向下游供应商施压",
+      "badge": "N",
+      "summary": "路透社、9to5Mac 和 CBS 等报道，OpenAI 于 2026 年 11 月 27 日（美国星期五）在加州联邦法院对苹果提起反诉，指控苹果窃取 OpenAI 的硬件商业秘密，并胁迫、威胁共同供应商，阻碍其消费级 AI 设备开发。这是对苹果今夏起诉 OpenAI 及前苹果员工窃密的回应。苹果向媒体发表声明，称反诉是为了转移对其原诉的注意力。上述均为媒体转述的诉状主张与公司声明，不是已判决的事实。",
+      "publishedAt": "2026-11-27",
+      "sortAt": "2026-11-28T02:28:00+08:00",
+      "timeLabel": "2026-11-27",
+      "timePrecision": "date",
+      "timeNote": "路透社、9to5Mac、CBS 均写明反诉于星期五提交，即美国时间 2026-11-27；各家报道均未给出法院收件的精确钟点。路透社稿标注 November 27, 2026 6:28 PM UTC，约合北京时间 11 月 28 日 02:28；9to5Mac 稿标注 Nov 27 2026 10:42 am PT，约合北京时间 11 月 28 日 02:42。本报只写日期，sortAt 取路透社发稿时刻仅用于排序，不代表官方立案时间。",
+      "source": "路透社",
+      "confidence": "B",
+      "url": "https://www.reuters.com/5f374b32b07b/technology/openai-countersues-apple-stealing-trade-secrets-ft-reports-2026-11-27/",
+      "links": [
+        {
+          "label": "路透社",
+          "url": "https://www.reuters.com/5f374b32b07b/technology/openai-countersues-apple-stealing-trade-secrets-ft-reports-2026-11-27/"
+        },
+        {
+          "label": "9to5Mac（含苹果向该站提供的声明）",
+          "url": "https://9to5mac.com/2026/11/27/openai-countersues-apple-alleging-trade-secret-theft-and-supplier-threats/"
+        },
+        {
+          "label": "CBS News",
+          "url": "https://www.cbsnews.com/news/openai-countersues-apple-trade-secrets-lawsuit/"
+        },
+        {
+          "label": "IT之家",
+          "url": "https://www.ithome.com/1/033/780.htm"
+        },
+        {
+          "label": "《联合早报》",
+          "url": "https://www.zaobao.com.sg/news/world/story20261128-10070803"
+        }
+      ],
+      "detail": "## 它是什么\n\n这是已有商业秘密诉讼中的反诉，不是新产品发布，也不是法院的最终裁决。路透社写明：苹果此前起诉 OpenAI，指控其通过挖角获取苹果技术；OpenAI 于星期五在加州联邦法院提交反诉。CBS 将法院写明为加利福尼亚州北区联邦地区法院。9to5Mac 转述《金融时报》称，此举是在苹果今夏指控 OpenAI 窃取高度机密信息之后，OpenAI 的反击。\n\n关于苹果原诉时间，路透社、9to5Mac 与 IT之家写明为 2026 年 7 月；CBS 写明为 6 月。路透社还写明：被告包括 OpenAI 以及前苹果员工 Tang Tan、Chang Liu；Tan 在苹果工作 24 年，曾任 iPhone 与 Apple Watch 产品设计副总裁，并参与后来被 OpenAI 于 2025 年收购的 io Products。OpenAI 与两名员工否认原诉指控，并称苹果的诉讼依赖于在 Liu 离职后未经授权查看其个人消息。本报未独立查阅原诉与反诉原文。\n\n## 它做什么\n\n据路透社对反诉文件的转述，OpenAI 的主张主要包括：\n\n- 苹果重新聘用了一名曾在 OpenAI 工作约六个月的前员工；该员工在职期间接触到一款新设备的具体信息，以及 OpenAI 未来硬件产品路线图。OpenAI 在文件中写道：「考虑到时间节点，现在看来，窃取这些文件或许正是他当初加入 OpenAI 的原因。」苹果否认利用这名返聘员工获取 OpenAI 的保密信息，也否认试图压制 AI 设备制造领域的竞争。\n- OpenAI 称，自己正在开发具备 AI 能力的个人电子设备，这些产品可能在「苹果视为自己地盘的领域」构成竞争。IT之家转述称，有关返聘员工通过个人账户带走设备图片、工程信息、供应商与制造数据等的说法，已在 10 月的法院文件中出现，并非本次首次提出。\n- OpenAI 批评苹果鼓励员工在个人设备和账户上处理工作，又在员工离职时阻碍将工作内容与个人账户有序分离；并称苹果在员工离职后仍继续访问其个人设备和账户，以便「监控并设局陷害」跳槽到竞争对手的前员工。\n- 路透社还转述：OpenAI 称迄今已有 400 名员工从苹果转投 OpenAI，并认为苹果希望以此震慑其他人离开。\n- 9to5Mac 转述《金融时报》称，OpenAI 还指控苹果「胁迫和威胁」与其合作的供应商，以不公平竞争的方式阻碍 OpenAI 的硬件筹备。\n\n苹果向 9to5Mac 和 CBS 提供的声明写明：本案涉及的是 OpenAI 员工故意窃取、访问并使用苹果未发布技术、流程和产品的秘密与保密信息，而不是无意中保留苹果信息；「OpenAI 的反诉是明显企图转移对其诉讼实质的注意力，在该诉讼中 OpenAI 已被责令停止使用苹果的保密信息。」这是苹果的单方声明，是否已有相应法院命令，本报未直接查阅裁定原文。9to5Mac 还写明：苹果已申请初步禁令，并在证据开示中获得扩大的取证范围；原诉定于 2027 年 7 月 19 日开庭。\n\n## 适合谁\n\n关注消费级 AI 硬件竞争、科技公司人才流动与商业秘密诉讼的读者，以及需要把「诉状主张」和「已裁决事实」区分开来的行业观察者。它对普通 ChatGPT 或 iPhone 用户的日常使用没有即时产品变更。\n\n## 为什么值得看\n\n这是本早报窗口内最重要的厂商级冲突：美国星期五提交的反诉，北京时间 11 月 28 日凌晨起被路透社、CBS、9to5Mac 等报道，并有苹果的书面回应。它把两家公司围绕 AI 消费设备、供应商和前员工的法律战公开升级，但目前仍是各方在诉讼中的主张，结果要以法院后续程序为准。\n\n## 可以核对的事实\n\n- 路透社 2026-11-27 报道 OpenAI 于星期五在加州联邦法院反诉苹果，并转述文件中的返聘员工、供应商竞争与「400 名员工」等主张，以及苹果否认获取机密、否认压制竞争的回应：https://www.reuters.com/5f374b32b07b/technology/openai-countersues-apple-stealing-trade-secrets-ft-reports-2026-11-27/\n- 9to5Mac 刊登苹果声明全文要点，并写明原诉定于 2027-07-19 开庭：https://9to5mac.com/2026/11/27/openai-countersues-apple-alleging-trade-secret-theft-and-supplier-threats/\n- CBS News 写明法院为加利福尼亚州北区联邦地区法院，并刊有同一苹果声明：https://www.cbsnews.com/news/openai-countersues-apple-trade-secrets-lawsuit/\n- IT之家 2026-11-28 07:12 中文报道，并指出部分返聘员工带离资料的说法已在 10 月法院文件中出现：https://www.ithome.com/1/033/780.htm"
+    },
+    {
+      "id": "robbyant-lingbot-map-2-navi-2026-11-26",
+      "title": "补录：蚂蚁灵波开源 LingBot-Map 2.0 与 LingBot-Navi，用于修正长距离建图漂移并做跨任务导航",
+      "badge": "N",
+      "summary": "蚂蚁集团旗下具身智能公司蚂蚁灵波（Robbyant）在官方新闻稿中宣布，开源流式三维重建模型 LingBot-Map 2.0，以及带空间记忆的导航模型 LingBot-Navi。官方称，前者可在推理过程中修正长距离建图的内部误差，后者可把场景记忆带到后续任务中，减少重复探索。技术报告、代码、部分模型权重，以及覆盖 511 个真实采集场景的数据集已一并公开。",
+      "publishedAt": "2026-11-26",
+      "sortAt": "2026-11-26T20:30:36+08:00",
+      "timeLabel": "2026-11-26",
+      "timePrecision": "date",
+      "timeNote": "LingBot-Navi 官方 GitHub 首次提交时间为 2026-11-26 10:02:04Z，约合北京时间 18:02；LingBot-Map 2.0 官方仓库中题为「Release LingBot-Map 2.0 Geometric Streaming Base Model」的提交时间为 2026-11-26 12:30:36Z，约合北京时间 20:30。BusinessWire 新闻稿编号以 20261126 开头。IT之家稿标注 2026/11/27 15:08:10。官方项目页未另给钟点，本报只写日期，sortAt 取 LingBot-Map 2.0 官方 Release 提交时刻仅用于排序。",
+      "source": "蚂蚁灵波",
+      "confidence": "A",
+      "url": "https://www.businesswire.com/news/home/20261126690702/en/Robbyant-Open-Sources-LingBot-Map-2.0-and-LingBot-Navi-Enabling-Long-Term-Spatial-Memory-and-Autonomous-Navigation-for-Robots",
+      "links": [
+        {
+          "label": "BusinessWire 官方新闻稿",
+          "url": "https://www.businesswire.com/news/home/20261126690702/en/Robbyant-Open-Sources-LingBot-Map-2.0-and-LingBot-Navi-Enabling-Long-Term-Spatial-Memory-and-Autonomous-Navigation-for-Robots"
+        },
+        {
+          "label": "LingBot-Map 2.0 官方项目页",
+          "url": "https://technology.robbyant.com/lingbot-map-v2"
+        },
+        {
+          "label": "LingBot-Navi 官方项目页",
+          "url": "https://technology.robbyant.com/lingbot-navi"
+        },
+        {
+          "label": "LingBot-Map 2.0 GitHub",
+          "url": "https://github.com/Robbyant/lingbot-map-v2"
+        },
+        {
+          "label": "LingBot-Navi GitHub",
+          "url": "https://github.com/Robbyant/lingbot-navi"
+        },
+        {
+          "label": "IT之家",
+          "url": "https://www.ithome.com/1/033/445.htm"
+        },
+        {
+          "label": "量子位",
+          "url": "https://www.qbitai.com/2026/11/513211.html"
+        }
+      ],
+      "detail": "## 它是什么\n\n这是面向机器人建图与导航的开源模型发布，不是语言模型，也不是消费级聊天产品。新闻稿写明：Robbyant 是蚂蚁集团旗下的具身智能公司；LingBot-Map 2.0 是在 2026 年 4 月发布的 LingBot-Map 1.0 之上的升级，重点是在模型内部完成纠偏，而不只依赖外接的回环或位姿图优化后端。LingBot-Navi 则在 LingBot-Map 2.0 的三维感知之上，提供可跨任务复用的空间记忆，并可用自然语言指令查找目标、规划路线。\n\n## 它做什么\n\n- 新闻稿写明：LingBot-Map 2.0 在推理阶段原生做内部误差修正，不必依赖外部地点检索模块或位姿图优化后端。其机制名为 Geometric Context Reshaping（GCR）：复用已提取的局部几何，重新对齐高层历史记忆并写回，而不重新编码图像；官方强调，它改写的是模型内部记忆，而不只是输出轨迹。\n- 新闻稿给出的可核对指标包括：在单张 NVIDIA RTX 5090 上推理速度为 27.51 帧/秒；在约 5.2 公里、近 1.9 万帧的 VBR 城市长轨迹测试中，平均轨迹误差（ATE）从 1.0 版的 31.12 米降至 4.72 米，降幅近 85%，并写明当时表现最佳的外部回环方案为 9.98 米；在 Oxford Spires 与 KITTI 上的 ATE 分别为 3.92 米和 9.42 米；并在 CroCoDL、EuRoC、Oxford 三项稠密三维重建基准上取得第一。\n- 关于 LingBot-Navi，新闻稿写明：首次探索时会保留物体与位置信息，后续任务可按自然语言指令检索目标并规划路线，而不必每次从零探索；并支持端侧本地部署，使场景图像和用户指令留在本地。\n- 新闻稿还列出导航评测：在由模型选择目标、由仿真器执行导航的设定下，LingBot-Navi 在 GOAT-Bench 子集上的成功率为 68.60%，比六个对比方法中最好的结果高 10.36 个百分点；在模型自主规划并直接驱动运动的端到端测试中，GOAT-Bench 成功率为 56.09%，在由 36 个真实场地重建的自建评测集上为 32.36%。衡量「是否到达且路径是否更短」的 SPL 分别为 38.04% 和 26.35%，较最好对照分别高 1.42 和 16.84 个百分点。将底层建图从 LingBot-Map 1.0 换为 2.0、但不重新训练导航模型时，两套评测集的成功率分别提高 4.15 和 2.35 个百分点，SPL 分别提高 1.89 和 1.97 个百分点。\n- 官方同步开源：技术报告与相关代码、LingBot-Map 2.0 的 Pure Streaming 权重、LingBot-Navi 权重，以及覆盖 511 个真实采集场景的数据集。LingBot-Navi 项目页将数据集写为 475 个训练场景和 36 个留出场景。\n\n## 适合谁\n\n做机器人导航、SLAM 或具身智能的研究人员与开发者，尤其是关心长距离建图漂移、以及希望在同一场地连续执行多轮自然语言导航任务的团队。普通聊天用户或只需语言大模型的开发者不必把它当作新的对话模型。\n\n## 为什么值得看\n\n这是 11 月 26 日已出现、但昨日两班资讯均未写入的官方开源发布，同时给出了项目页、代码、权重、数据集和可核对的基准数字。对跟踪具身智能开源进展的读者，可以直接在官方仓库和新闻稿里核对能力边界，而不必只看二手摘要。\n\n## 可以核对的事实\n\n- BusinessWire 新闻稿宣布开源 LingBot-Map 2.0 与 LingBot-Navi，并列出上述基准与开源范围：https://www.businesswire.com/news/home/20261126690702/en/Robbyant-Open-Sources-LingBot-Map-2.0-and-LingBot-Navi-Enabling-Long-Term-Spatial-Memory-and-Autonomous-Navigation-for-Robots\n- 官方项目页：https://technology.robbyant.com/lingbot-map-v2 、https://technology.robbyant.com/lingbot-navi\n- 官方 GitHub 发布提交：LingBot-Navi 首次提交 2026-11-26 10:02:04Z；LingBot-Map 2.0 题为 Release 的提交 2026-11-26 12:30:36Z。\n- IT之家 2026-11-27、量子位亦作报道：https://www.ithome.com/1/033/445.htm 、https://www.qbitai.com/2026/11/513211.html"
+    }
+  ]
+}
